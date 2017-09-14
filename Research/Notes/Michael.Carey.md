@@ -2,7 +2,11 @@
 
 ## Michael Carey
 Example linking to an image in .MD file.
-![alt text](https://raw.githubusercontent.com/MCLifeLeader/CS364/master/Research/Images/Michael_Image_Small.jpg)
+Standard Markup
+![Image of Michael Carey](https://raw.githubusercontent.com/MCLifeLeader/CS364/master/Research/Images/Michael_Image_Small.jpg)
+
+Use of Image tag in Markup
+<img alt="Image of Michael Resized" src="https://raw.githubusercontent.com/MCLifeLeader/CS364/master/Research/Images/Michael_Image_Small.jpg" height="25%" width="25%">
 
 ## Web Portal
 ### 2017.03.13 - Genearl Meeting Notes
