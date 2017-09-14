@@ -1,11 +1,11 @@
 # Example Notes
 
 ## Michael Carey
-Example linking to an image in .MD file.
+Example linking to an image in .MD file.<br />
 Standard Markup
-![Image of Michael Carey](https://raw.githubusercontent.com/MCLifeLeader/CS364/master/Research/Images/Michael_Image_Small.jpg)
+![Image of Michael Carey](https://raw.githubusercontent.com/MCLifeLeader/CS364/master/Research/Images/Michael_Image_Small.jpg)<br />
 
-Use of Image tag in Markup
+Use of Image tag in Markup<br />
 <img alt="Image of Michael Resized" src="https://raw.githubusercontent.com/MCLifeLeader/CS364/master/Research/Images/Michael_Image_Small.jpg" height="25%" width="25%">
 
 ## Web Portal
