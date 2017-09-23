@@ -85,12 +85,12 @@ John Memmott<br/>
 | Revision 2    |           |                           |   1.1   |
 | Revision 3    |           |                           |   1.2   |
 # 1.0 Introduction
-# 1.1 Purpose
-# 1.2 Intended Audience
-# 1.3 Glossary
-# 1.4 Glossary
-# 1.5 References
-# 1.6 Overview of Document
+## 1.1 Purpose
+## 1.2 Intended Audience
+## 1.3 Glossary
+## 1.4 Glossary
+## 1.5 References
+## 1.6 Overview of Document
 # 2.0 Overall Description
 ## 2.1 Product Perspective
 ## 2.2 Product Features
