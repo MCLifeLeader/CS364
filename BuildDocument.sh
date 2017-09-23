@@ -33,7 +33,11 @@ fi
 
 for file in "${files_to_add[@]}"
 do
-	cat "${dir_project}${dir_sep}${file}" >> "${dir_project}${dir_sep}${final_document_name}"
+	if [ -f "${dir_project}${dir_sep}${file}" ]; then
+		cat "${dir_project}${dir_sep}${file}" >> "${dir_project}${dir_sep}${final_document_name}"
+	else
+		echo "WARNING: File named \"${file}\" not find in directory \"${dir_project}\""
+	fi
 done
 
 echo "Build Complete"
