@@ -1,5 +1,5 @@
 # Software Requirements Specification
-## Verion 0.0
+## Version 0.0
 ## September 23rd, 2017
 
 # Student Calendar Integration

@@ -1,6 +1,6 @@
 # Revision History
 
-| Name          | Date      | Reason For Changes        | Version |
+| Name          | Date      | Reason for Changes        | Version |
 |:--------------|:---------:|:--------------------------|:-------:|
 | Initial       | 9/23/2017 | First Draft               |   0.0   |
 | Revision 1    |           |                           |   1.0   |
