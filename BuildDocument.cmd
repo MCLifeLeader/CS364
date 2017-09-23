@@ -31,6 +31,4 @@ type "2.8.0.0.md" >> CS364_SRS_Document.md
 
 type "3.0.0.0.md" >> CS364_SRS_Document.md
 
-type "3.0.0.0.md" >> CS364_SRS_Document.md
-
 type "Index.md" >> CS364_SRS_Document.md

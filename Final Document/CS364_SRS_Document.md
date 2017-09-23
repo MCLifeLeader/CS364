@@ -101,5 +101,4 @@ John Memmott<br/>
 ## 2.7 User Documentation
 ## 2.8 Assumptions and Dependencies
 # 3.0 Requirements Specification
-# 3.0 Requirements Specification
 # Index
