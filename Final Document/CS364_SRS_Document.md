@@ -86,8 +86,8 @@ John Memmott<br/>
 | Revision 3    |           |                           |   1.2   |
 # 1.0 Introduction
 ## 1.1 Purpose
-## 1.2 Intended Audience
-## 1.3 Glossary
+## 1.2 Scope of Project
+## 1.3 Intended Audience
 ## 1.4 Glossary
 ## 1.5 References
 ## 1.6 Overview of Document
