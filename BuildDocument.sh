@@ -24,6 +24,8 @@ files_to_add=(	"~i Title.md"
 		"2.7.0.0.md"
 		"2.8.0.0.md"
 		"3.0.0.0.md"
+		"3.1.0.0.md"
+		"3.2.0.0.md"
 		"Index.md"
 		)
 

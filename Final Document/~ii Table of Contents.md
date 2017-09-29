@@ -26,5 +26,8 @@
 ### 2.8 Assumptions and Dependencies
 
 ## 3.0 Requirements Specification
+### 3.1 External Interface Requirements
+### 3.2 Functional Requirements
+#### 3.2.1 First Feature
 
 ## Index
