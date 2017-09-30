@@ -96,34 +96,34 @@ It will explain the project's features, target audience and hardware and softwar
 The scope of this project will be the creation of a multi-platform calendar program. The program will be capable of interfacing with the BYU-I I-Learn system. In addition to the features and functionality of a standard calendar program, this program will allow BYU-I students to create events, reminders, or to do lists based off due dates from their I-Learn page. For a more detailed explanation of individual program features see section 2.2. 
 ## 1.3 Intended Audience
 
-This document is intended for project managers, team leaders, writers, developers, 
-testers, users, and any other individual interested in the design and development of 
-the Student Calendar application.
+This document is intended for project managers, team leaders, writers, developers, testers, users, and any other individual interested in the design and development of the Student Calendar application.
 
-Reading this document in the order it has been presented is highly recommended for most 
-readers. Careful attention to the glossary and overview of document sections is key to avoid 
-unnecessary confusion. The glossary contains keywords, terms, and abbreviations used 
-throughout the document. The overview of document section provides a concise description of 
-the main sections of the document.
+Reading this document in the order it has been presented is highly recommended for most readers. Careful attention to the glossary and overview of document sections is key to avoid unnecessary confusion. The glossary contains keywords, terms, and abbreviations used throughout the document. The overview of document section provides a concise description of the main sections of the document.
 ## 1.4 Glossary
 
-  BYU-I I-Learn: website that the project will interact with and read user’s calender. 
-  Calender program: a computer program that operates a calender.
-  Developers: teams of students of Brigham Young University – Idaho.
-  Event: any assignment the user declares in a specific time-frame in the calender. 
-  Stakeholder: any person who has an interest in our project, typically fellow college students and friends of developers.
-  Student Calendar Integration: application intended to fulfill requirements.
+|Keywords|Definition     |
+|-------|---------------|
+|BYU-I I-Learn|Website that the project will interact with and read user’s calender.|
+|Calender program|A computer program that operates a schedule of events.|
+|Developers|Teams of students of Brigham Young University – Idaho.|
+|Event|Any assignment the user declares in a specific time-frame in the calender.|
+|Stakeholder|Any person who has an interest in our project, typically fellow college students and friends of developers.|
+|Student Calendar Integration|Application intended to fulfill requirements.|
+|User|Students that attended Brigham Young University - Idaho.|
+|Reader|All users, developers, and stakeholders will be viewing the site.|
+|Software Requirements Specification|Also known as SRS, or this documents. A documents that contains the requirements a product must meet in order to succeed.|
+|Project Manager|The team member who oversees the project and works with the team leads to make sure the project fulfills the necessary requirements and is finished on time.|
+|Event|An item on the calendar, ie. todo, meeting, or due date.|
 ## 1.5 References
-  [1] D. Zowghil & C. Coulin, "Requirements Elicitation: A Survey of Techniques, Approaches, and Tools" Engineering and Managing Software Requirements, pp. 19-46, 2005
-[Online] Available: http://link.springer.com/chapter/10.1007%2F3-540-28244-0_2#page-1
-
-
+  [1] D. Zowghil & C. Coulin, "Requirements Elicitation: A Survey of Techniques, Approaches, and Tools" Engineering and Managing Software Requirements, pp. 19-46, 2005 [Online] Available: http://link.springer.com/chapter/10.1007%2F3-540-28244-0_2#page-1
 ## 1.6 Overview of Document
+
+This document has two primary parts following this Introduction. The first is the "Overall Description" section which generally describes the product's function purpose and design. This section is meant to give a solid conceptual baseline for the rest of the document's technical analysis. That in-depth technical analysis will be found within the "Requirements Specification" section of the document. This section gives specific instructions meant primarily for developers. It details everything that the product should do and include.
 # 2.0 Overall Description
 ## 2.1 Product Perspective
 ## 2.2 Product Features
 
-Features have been broken down into various feature categories to group like or related features together.
+Features have been broken down into various feature categories to group like or related features together. "Lorem ipsum" is being used as a visual place holder for further document development as an example place holder for that information.
 
 ### 2.2.1 - User Interface
 
