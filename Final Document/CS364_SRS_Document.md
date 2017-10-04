@@ -103,10 +103,10 @@ Reading this document in the order it has been presented is highly recommended f
 
 |Keywords|Definition     |
 |-------|---------------|
-|BYU-I I-Learn|Website that the project will interact with and read user’s calender.|
-|Calender program|A computer program that operates a schedule of events.|
+|BYU-I I-Learn|Website that the project will interact with and read user’s calendar.|
+|Calendar program|A computer program that operates a schedule of events.|
 |Developers|Teams of students of Brigham Young University – Idaho.|
-|Event|Any assignment the user declares in a specific time-frame in the calender.|
+|Event|Any assignment the user declares in a specific time-frame in the calendar.|
 |Stakeholder|Any person who has an interest in our project, typically fellow college students and friends of developers.|
 |Student Calendar Integration|Application intended to fulfill requirements.|
 |User|Students that attended Brigham Young University - Idaho.|
@@ -127,9 +127,9 @@ Features have been broken down into various feature categories to group like or 
 
 ### 2.2.1 - User Interface
 
-### 2.2.1.1 - The application shall be mobile aware and responsive in its design.
+#### 2.2.1.1 - The application shall be mobile aware and responsive in its design.
 
-### 2.2.1.2 - The applicaiton shall have a rich web page design available through a full web browser.
+#### 2.2.1.2 - The application shall have a rich web page design available through a full web browser.
 
 ### 2.2.2 - Security Features
 
@@ -142,7 +142,7 @@ Features have been broken down into various feature categories to group like or 
 ### 2.2.3 - Feature N
 ## 2.3 User Classes and Characteristics
 ## 2.4 Operating Environment
-## 2.5 Functional Requirments
+## 2.5 Functional Requirements
 ## 2.6 Technical Requirements
 ## 2.7 User Documentation
 ## 2.8 Assumptions and Dependencies
@@ -155,7 +155,90 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras semper laoreet mat
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras semper laoreet mattis. Donec dictum semper arcu et efficitur. Vivamus dictum pharetra finibus. Cras auctor iaculis tincidunt. Quisque vulputate fermentum tortor ac placerat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Donec pellentesque eleifend sem, id dapibus ante iaculis a. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec pulvinar diam id feugiat luctus. Duis ac accumsan velit, sit amet viverra tortor. Pellentesque varius, lacus congue ornare faucibus, ante tortor sollicitudin est, et blandit neque enim nec risus. 
 
-### 3.2.1 First Feature
+### 3.2.1 - 3.2.100 Team One
+
+Team one please use file 3.2.1.0.md to enter all feature requirements.
+
+### 3.2.x Feature Template
+
+| Data          | Description |
+|:--------------| :--------------|
+|Use Case Name  | Lorem ipsum dolor sit amet, consectetur adipiscing elit.|
+|XRef           | Lorem ipsum dolor sit amet, consectetur adipiscing elit.|
+|Trigger        | Lorem ipsum dolor sit amet, consectetur adipiscing elit.|
+|Precondition   | Lorem ipsum dolor sit amet, consectetur adipiscing elit.|
+|Basic Path     | Lorem ipsum dolor sit amet, consectetur adipiscing elit.|
+|Alternate Path | Lorem ipsum dolor sit amet, consectetur adipiscing elit.|
+|Post Condition | Lorem ipsum dolor sit amet, consectetur adipiscing elit.|
+|Exception Paths| Lorem ipsum dolor sit amet, consectetur adipiscing elit.|
+|Other          | Lorem ipsum dolor sit amet, consectetur adipiscing elit.|
+
+### 3.2.101 - 3.2.200 Team Two
+
+Team two please use file 3.2.101.0.md to enter all feature requirements.
+
+### 3.2.x Feature Template
+
+| Data          | Description |
+|:--------------| :--------------|
+|Use Case Name  | Lorem ipsum dolor sit amet, consectetur adipiscing elit.|
+|XRef           | Lorem ipsum dolor sit amet, consectetur adipiscing elit.|
+|Trigger        | Lorem ipsum dolor sit amet, consectetur adipiscing elit.|
+|Precondition   | Lorem ipsum dolor sit amet, consectetur adipiscing elit.|
+|Basic Path     | Lorem ipsum dolor sit amet, consectetur adipiscing elit.|
+|Alternate Path | Lorem ipsum dolor sit amet, consectetur adipiscing elit.|
+|Post Condition | Lorem ipsum dolor sit amet, consectetur adipiscing elit.|
+|Exception Paths| Lorem ipsum dolor sit amet, consectetur adipiscing elit.|
+|Other          | Lorem ipsum dolor sit amet, consectetur adipiscing elit.|
+
+### 3.2.141 Database for Account Usernames and Passwords
+
+| Data          | Description |
+|:--------------| :--------------|
+|Use Case Name  | Verify Existing Account|
+|XRef           ||
+|Trigger        | A user select the "Log In" button|
+|Precondition   | The user is on the log in page, which is first viewed when the user opens the application.|
+|Basic Path     | 1.The Username is sent to the server and is verified that it does exist among the list of users</br>2. The password is checked to verify it matches with the given username</br> 3. The Database accepts the request and grants the user privileges to their account info|
+|Alternate Path | If the password does not match up with the username, the user is notified and prompted to re-enter their information|
+|Post Condition | The main calendar view is opened for the user to view their assignments|
+|Exception Paths| If the Username does not exist within the database, the process is ended and the user is requested to create an account|
+|Other          | None|
+
+| Data          | Description |
+|:--------------| :--------------|
+|Use Case Name  | Create New Account|
+|XRef           ||
+|Trigger        | The user enters a username and password and selects the "Create Account" button|
+|Precondition   | The user is on the create account page, which is linked from the log in page.|
+|Basic Path     | 1.The Username is sent to the server and is verified that it does not currently exist in the system</br>2. The username is then added to the system using the password as the key|
+|Alternate Path | If the username already exists within the database, the user is notified and prompted to use a different one|
+|Post Condition | The user is taken to the BYUI link page where the user is asked if they would like to connect their account to a BYUI account|
+|Exception Paths| If the username uses invalid characters, the process is ended and the user is notified about which characters are invalid|
+|Other          | None|
+### 3.2.101 - 3.2.200 Team Two
+
+Team three please use file 3.2.201.0.md to enter all feature requirements.
+
+### 3.2.x Feature Template
+
+| Data          | Description |
+|:--------------| :--------------|
+|Use Case Name  | Lorem ipsum dolor sit amet, consectetur adipiscing elit.|
+|XRef           | Lorem ipsum dolor sit amet, consectetur adipiscing elit.|
+|Trigger        | Lorem ipsum dolor sit amet, consectetur adipiscing elit.|
+|Precondition   | Lorem ipsum dolor sit amet, consectetur adipiscing elit.|
+|Basic Path     | Lorem ipsum dolor sit amet, consectetur adipiscing elit.|
+|Alternate Path | Lorem ipsum dolor sit amet, consectetur adipiscing elit.|
+|Post Condition | Lorem ipsum dolor sit amet, consectetur adipiscing elit.|
+|Exception Paths| Lorem ipsum dolor sit amet, consectetur adipiscing elit.|
+|Other          | Lorem ipsum dolor sit amet, consectetur adipiscing elit.|
+
+### 3.2.101 - 3.2.200 Team Two
+
+Team four please use file 3.2.301.0.md to enter all feature requirements.
+
+### 3.2.x Feature Template
 
 | Data          | Description |
 |:--------------| :--------------|
