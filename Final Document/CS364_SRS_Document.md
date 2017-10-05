@@ -73,6 +73,9 @@ John Memmott<br/>
 ### 2.8 Assumptions and Dependencies
 
 ## 3.0 Requirements Specification
+### 3.1 External Interface Requirements
+### 3.2 Functional Requirements
+#### 3.2.1 First Feature
 
 ## Index
 # List of Figures
@@ -86,19 +89,167 @@ John Memmott<br/>
 | Revision 3    |           |                           |   1.2   |
 # 1.0 Introduction
 ## 1.1 Purpose
+The purpose of this document is to provide a detailed description of the Student Calendar Integration. 
+It will explain the project's features, target audience and hardware and software requirements. This document is intended for both the stakeholders and developers of the system.
 ## 1.2 Scope of Project
+
+The scope of this project will be the creation of a multi-platform calendar program. The program will be capable of interfacing with the BYU-I I-Learn system. In addition to the features and functionality of a standard calendar program, this program will allow BYU-I students to create events, reminders, or to do lists based off due dates from their I-Learn page. For a more detailed explanation of individual program features see section 2.2. 
 ## 1.3 Intended Audience
+
+This document is intended for project managers, team leaders, writers, developers, testers, users, and any other individual interested in the design and development of the Student Calendar application.
+
+Reading this document in the order it has been presented is highly recommended for most readers. Careful attention to the glossary and overview of document sections is key to avoid unnecessary confusion. The glossary contains keywords, terms, and abbreviations used throughout the document. The overview of document section provides a concise description of the main sections of the document.
 ## 1.4 Glossary
+
+|Keywords|Definition     |
+|-------|---------------|
+|BYU-I I-Learn|Website that the project will interact with and read user’s calendar.|
+|Calendar program|A computer program that operates a schedule of events.|
+|Developers|Teams of students of Brigham Young University – Idaho.|
+|Event|Any assignment the user declares in a specific time-frame in the calendar.|
+|Stakeholder|Any person who has an interest in our project, typically fellow college students and friends of developers.|
+|Student Calendar Integration|Application intended to fulfill requirements.|
+|User|Students that attended Brigham Young University - Idaho.|
+|Reader|All users, developers, and stakeholders will be viewing the site.|
+|Software Requirements Specification|Also known as SRS, or this documents. A documents that contains the requirements a product must meet in order to succeed.|
+|Project Manager|The team member who oversees the project and works with the team leads to make sure the project fulfills the necessary requirements and is finished on time.|
+|Event|An item on the calendar, ie. todo, meeting, or due date.|
 ## 1.5 References
+  [1] D. Zowghil & C. Coulin, "Requirements Elicitation: A Survey of Techniques, Approaches, and Tools" Engineering and Managing Software Requirements, pp. 19-46, 2005 [Online] Available: http://link.springer.com/chapter/10.1007%2F3-540-28244-0_2#page-1
 ## 1.6 Overview of Document
+
+This document has two primary parts following this Introduction. The first is the "Overall Description" section which generally describes the product's function purpose and design. This section is meant to give a solid conceptual baseline for the rest of the document's technical analysis. That in-depth technical analysis will be found within the "Requirements Specification" section of the document. This section gives specific instructions meant primarily for developers. It details everything that the product should do and include.
 # 2.0 Overall Description
 ## 2.1 Product Perspective
 ## 2.2 Product Features
+
+Features have been broken down into various feature categories to group like or related features together. "Lorem ipsum" is being used as a visual place holder for further document development as an example place holder for that information.
+
+### 2.2.1 - User Interface
+
+#### 2.2.1.1 - The application shall be mobile aware and responsive in its design.
+
+#### 2.2.1.2 - The application shall have a rich web page design available through a full web browser.
+
+### 2.2.2 - Security Features
+
+#### 2.2.2.1 - The application shall support SSO authentication
+
+#### 2.2.2.2 - The application shall support NonSSO authentication
+
+#### 2.2.2.3 - The application shall support Active Directory and LDAP validation
+
+### 2.2.3 - Feature N
 ## 2.3 User Classes and Characteristics
 ## 2.4 Operating Environment
-## 2.5 Functional Requirments
+## 2.5 Functional Requirements
 ## 2.6 Technical Requirements
 ## 2.7 User Documentation
 ## 2.8 Assumptions and Dependencies
 # 3.0 Requirements Specification
+## 3.1 External Interface Requirements
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras semper laoreet mattis. Donec dictum semper arcu et efficitur. Vivamus dictum pharetra finibus. Cras auctor iaculis tincidunt. Quisque vulputate fermentum tortor ac placerat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Donec pellentesque eleifend sem, id dapibus ante iaculis a. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec pulvinar diam id feugiat luctus. Duis ac accumsan velit, sit amet viverra tortor. Pellentesque varius, lacus congue ornare faucibus, ante tortor sollicitudin est, et blandit neque enim nec risus. 
+
+## 3.2 Functional Requirements
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras semper laoreet mattis. Donec dictum semper arcu et efficitur. Vivamus dictum pharetra finibus. Cras auctor iaculis tincidunt. Quisque vulputate fermentum tortor ac placerat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Donec pellentesque eleifend sem, id dapibus ante iaculis a. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec pulvinar diam id feugiat luctus. Duis ac accumsan velit, sit amet viverra tortor. Pellentesque varius, lacus congue ornare faucibus, ante tortor sollicitudin est, et blandit neque enim nec risus. 
+
+### 3.2.1 - 3.2.100 Team One
+
+Team one please use file 3.2.1.0.md to enter all feature requirements.
+
+### 3.2.x Feature Template
+
+| Data          | Description |
+|:--------------| :--------------|
+|Use Case Name  | Lorem ipsum dolor sit amet, consectetur adipiscing elit.|
+|XRef           | Lorem ipsum dolor sit amet, consectetur adipiscing elit.|
+|Trigger        | Lorem ipsum dolor sit amet, consectetur adipiscing elit.|
+|Precondition   | Lorem ipsum dolor sit amet, consectetur adipiscing elit.|
+|Basic Path     | Lorem ipsum dolor sit amet, consectetur adipiscing elit.|
+|Alternate Path | Lorem ipsum dolor sit amet, consectetur adipiscing elit.|
+|Post Condition | Lorem ipsum dolor sit amet, consectetur adipiscing elit.|
+|Exception Paths| Lorem ipsum dolor sit amet, consectetur adipiscing elit.|
+|Other          | Lorem ipsum dolor sit amet, consectetur adipiscing elit.|
+
+### 3.2.101 - 3.2.200 Team Two
+
+Team two please use file 3.2.101.0.md to enter all feature requirements.
+
+### 3.2.x Feature Template
+
+| Data          | Description |
+|:--------------| :--------------|
+|Use Case Name  | Lorem ipsum dolor sit amet, consectetur adipiscing elit.|
+|XRef           | Lorem ipsum dolor sit amet, consectetur adipiscing elit.|
+|Trigger        | Lorem ipsum dolor sit amet, consectetur adipiscing elit.|
+|Precondition   | Lorem ipsum dolor sit amet, consectetur adipiscing elit.|
+|Basic Path     | Lorem ipsum dolor sit amet, consectetur adipiscing elit.|
+|Alternate Path | Lorem ipsum dolor sit amet, consectetur adipiscing elit.|
+|Post Condition | Lorem ipsum dolor sit amet, consectetur adipiscing elit.|
+|Exception Paths| Lorem ipsum dolor sit amet, consectetur adipiscing elit.|
+|Other          | Lorem ipsum dolor sit amet, consectetur adipiscing elit.|
+
+### 3.2.141 Database for Account Usernames and Passwords
+
+| Data          | Description |
+|:--------------| :--------------|
+|Use Case Name  | Verify Existing Account|
+|XRef           ||
+|Trigger        | A user select the "Log In" button|
+|Precondition   | The user is on the log in page, which is first viewed when the user opens the application.|
+|Basic Path     | 1.The Username is sent to the server and is verified that it does exist among the list of users</br>2. The password is checked to verify it matches with the given username</br> 3. The Database accepts the request and grants the user privileges to their account info|
+|Alternate Path | If the password does not match up with the username, the user is notified and prompted to re-enter their information|
+|Post Condition | The main calendar view is opened for the user to view their assignments|
+|Exception Paths| If the Username does not exist within the database, the process is ended and the user is requested to create an account|
+|Other          | None|
+
+| Data          | Description |
+|:--------------| :--------------|
+|Use Case Name  | Create New Account|
+|XRef           ||
+|Trigger        | The user enters a username and password and selects the "Create Account" button|
+|Precondition   | The user is on the create account page, which is linked from the log in page.|
+|Basic Path     | 1.The Username is sent to the server and is verified that it does not currently exist in the system</br>2. The username is then added to the system using the password as the key|
+|Alternate Path | If the username already exists within the database, the user is notified and prompted to use a different one|
+|Post Condition | The user is taken to the BYUI link page where the user is asked if they would like to connect their account to a BYUI account|
+|Exception Paths| If the username uses invalid characters, the process is ended and the user is notified about which characters are invalid|
+|Other          | None|
+### 3.2.101 - 3.2.200 Team Two
+
+Team three please use file 3.2.201.0.md to enter all feature requirements.
+
+### 3.2.x Feature Template
+
+| Data          | Description |
+|:--------------| :--------------|
+|Use Case Name  | Lorem ipsum dolor sit amet, consectetur adipiscing elit.|
+|XRef           | Lorem ipsum dolor sit amet, consectetur adipiscing elit.|
+|Trigger        | Lorem ipsum dolor sit amet, consectetur adipiscing elit.|
+|Precondition   | Lorem ipsum dolor sit amet, consectetur adipiscing elit.|
+|Basic Path     | Lorem ipsum dolor sit amet, consectetur adipiscing elit.|
+|Alternate Path | Lorem ipsum dolor sit amet, consectetur adipiscing elit.|
+|Post Condition | Lorem ipsum dolor sit amet, consectetur adipiscing elit.|
+|Exception Paths| Lorem ipsum dolor sit amet, consectetur adipiscing elit.|
+|Other          | Lorem ipsum dolor sit amet, consectetur adipiscing elit.|
+
+### 3.2.101 - 3.2.200 Team Two
+
+Team four please use file 3.2.301.0.md to enter all feature requirements.
+
+### 3.2.x Feature Template
+
+| Data          | Description |
+|:--------------| :--------------|
+|Use Case Name  | Lorem ipsum dolor sit amet, consectetur adipiscing elit.|
+|XRef           | Lorem ipsum dolor sit amet, consectetur adipiscing elit.|
+|Trigger        | Lorem ipsum dolor sit amet, consectetur adipiscing elit.|
+|Precondition   | Lorem ipsum dolor sit amet, consectetur adipiscing elit.|
+|Basic Path     | Lorem ipsum dolor sit amet, consectetur adipiscing elit.|
+|Alternate Path | Lorem ipsum dolor sit amet, consectetur adipiscing elit.|
+|Post Condition | Lorem ipsum dolor sit amet, consectetur adipiscing elit.|
+|Exception Paths| Lorem ipsum dolor sit amet, consectetur adipiscing elit.|
+|Other          | Lorem ipsum dolor sit amet, consectetur adipiscing elit.|
+
 # Index
