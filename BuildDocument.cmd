@@ -33,8 +33,13 @@ type "3.0.0.0.md" >> CS364_SRS_Document.md
 type "3.1.0.0.md" >> CS364_SRS_Document.md
 type "3.2.0.0.md" >> CS364_SRS_Document.md
 
-type "3.2.1.0.md" >> CS364_SRS_Document.md
-type "3.2.101.0.md" >> CS364_SRS_Document.md
+type "3.2.001.0.md" >> CS364_SRS_Document.md
+type "3.2.002.0.md" >> CS364_SRS_Document.md
+type "3.2.003.0.md" >> CS364_SRS_Document.md
+type "3.2.004.0.md" >> CS364_SRS_Document.md
+type "3.2.005.0.md" >> CS364_SRS_Document.md
+type "3.2.006.0.md" >> CS364_SRS_Document.md
+type "3.2.107.0.md" >> CS364_SRS_Document.md
 type "3.2.201.0.md" >> CS364_SRS_Document.md
 type "3.2.301.0.md" >> CS364_SRS_Document.md
 
