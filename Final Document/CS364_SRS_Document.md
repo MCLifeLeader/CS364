@@ -737,11 +737,27 @@ This Feature allows the user to send an invitation to one or more of their calen
 |Post Condition | The people selected receive a notification, and have the option to view the user's event(s).|
 |Exception Paths| If the user has not created any events.|
 |Other          |  |
-### 3.2.24 Continuous Calendar
+### 3.2.24 Feature Name?
+
+Feature Description?
+
+#### 3.2.24.1 Use Case Name?
+
+| Data          | Description |
+|:--------------| :--------------|
+|Use Case Detail| Full Use Case Details. What, Who, Why....               |
+|XRef           | Lorem ipsum dolor sit amet, consectetur adipiscing elit.|
+|Trigger        | Lorem ipsum dolor sit amet, consectetur adipiscing elit.|
+|Precondition   | Lorem ipsum dolor sit amet, consectetur adipiscing elit.|
+|Basic Path     | Lorem ipsum dolor sit amet, consectetur adipiscing elit.|
+|Alternate Path | Lorem ipsum dolor sit amet, consectetur adipiscing elit.|
+|Post Condition | Lorem ipsum dolor sit amet, consectetur adipiscing elit.|
+|Exception Paths| Lorem ipsum dolor sit amet, consectetur adipiscing elit.|
+|Other          | Lorem ipsum dolor sit amet, consectetur adipiscing elit.|### 3.2.25 Continuous Calendar
 
 Users need to access the different months efficiently. The Calendar app will have a scrollable section where all the months can be accessed. The idea of the continuous calendar is that users will intuitively know that they can scroll to other months, weeks or days. In the case of a Month view, the last week of the prior month, and the first week of the next month will be added to the current month view as a visual cue that the section is scrollable. Text labels and color backgrounds will help the user identify the month as they scroll. 
 
-### 3.2.24.1 Continuous Calendar Month View
+### 3.2.25.1 Continuous Calendar Month View
 
 | Data          | Description |
 |:--------------| :--------------|
@@ -755,7 +771,7 @@ Users need to access the different months efficiently. The Calendar app will hav
 |Exception Paths| The user may choose another view at any time.|
 |Other          | None.|
 
-### 3.2.24.2 Continuous Calendar Month Alternating Background Color
+### 3.2.25.2 Continuous Calendar Month Alternating Background Color
 
 | Data          | Description |
 |:--------------| :--------------|
@@ -769,7 +785,7 @@ Users need to access the different months efficiently. The Calendar app will hav
 |Exception Paths| The user may choose another view at any time.|
 |Other          | None.|
 
-### 3.2.24.3 Continuous Calendar Month Label
+### 3.2.25.3 Continuous Calendar Month Label
 
 | Data          | Description |
 |:--------------| :--------------|
@@ -781,25 +797,7 @@ Users need to access the different months efficiently. The Calendar app will hav
 |Alternate Path | In step 1, the user may have already selected a view by “Month” in previous interactions. The next interaction continues to show the view selected previously. Return to step 3.|
 |Post Condition | The selected view by “Month” is presented to the user and a label will appear on top of the scrollable section.|
 |Exception Paths| The user may choose another view at any time.|
-|Other          | None.|
-### 3.2.25 Feature Name?
-
-Feature Description?
-
-#### 3.2.25.1 Use Case Name?
-
-| Data          | Description |
-|:--------------| :--------------|
-|Use Case Detail| Full Use Case Details. What, Who, Why....               |
-|XRef           | Lorem ipsum dolor sit amet, consectetur adipiscing elit.|
-|Trigger        | Lorem ipsum dolor sit amet, consectetur adipiscing elit.|
-|Precondition   | Lorem ipsum dolor sit amet, consectetur adipiscing elit.|
-|Basic Path     | Lorem ipsum dolor sit amet, consectetur adipiscing elit.|
-|Alternate Path | Lorem ipsum dolor sit amet, consectetur adipiscing elit.|
-|Post Condition | Lorem ipsum dolor sit amet, consectetur adipiscing elit.|
-|Exception Paths| Lorem ipsum dolor sit amet, consectetur adipiscing elit.|
-|Other          | Lorem ipsum dolor sit amet, consectetur adipiscing elit.|
-### 3.2.26 Holidays
+|Other          | None.|### 3.2.26 Holidays
 
 Users need to be aware of specific calendar holidays to plan events more effectively. Text labels and watermarked icons denoting each holiday will help the user identify those days at first glance.
 
