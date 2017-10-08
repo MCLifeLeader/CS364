@@ -1672,7 +1672,7 @@ Full Description?
 ### 3.2.62 Feature Name?
 
 Full Description?
-                                                                                                                     |
+
 #### 3.2.62.1 Assignment List
 
 | Data            | Description                                                                                                                          |
