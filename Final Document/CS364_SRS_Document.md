@@ -1,6 +1,6 @@
 # Software Requirements Specification
-## Version 0.0
-## September 23rd, 2017
+## Version 1.0
+## October 7th, 2017
 
 # Student Calendar Integration
 ### BYU-Idaho CS364 Software Engineering
@@ -99,6 +99,50 @@ John Memmott<br/>
 #### 3.2.16 Recurring Appointments
 #### 3.2.17 Grades
 #### 3.2.18 Widget
+#### 3.2.19 xxxxxxxxxxx
+#### 3.2.20 xxxxxxxxxxx
+#### 3.2.21 xxxxxxxxxxx
+#### 3.2.22 xxxxxxxxxxx
+#### 3.2.23 xxxxxxxxxxx
+#### 3.2.24 xxxxxxxxxxx
+#### 3.2.25 xxxxxxxxxxx
+#### 3.2.26 xxxxxxxxxxx
+#### 3.2.27 xxxxxxxxxxx
+#### 3.2.28 xxxxxxxxxxx
+#### 3.2.29 xxxxxxxxxxx
+#### 3.2.30 xxxxxxxxxxx
+#### 3.2.31 xxxxxxxxxxx
+#### 3.2.32 xxxxxxxxxxx
+#### 3.2.33 xxxxxxxxxxx
+#### 3.2.34 xxxxxxxxxxx
+#### 3.2.35 xxxxxxxxxxx
+#### 3.2.36 xxxxxxxxxxx
+#### 3.2.37 xxxxxxxxxxx
+#### 3.2.38 xxxxxxxxxxx
+#### 3.2.39 xxxxxxxxxxx
+#### 3.2.40 xxxxxxxxxxx
+#### 3.2.41 xxxxxxxxxxx
+#### 3.2.42 xxxxxxxxxxx
+#### 3.2.43 xxxxxxxxxxx
+#### 3.2.44 xxxxxxxxxxx
+#### 3.2.45 xxxxxxxxxxx
+#### 3.2.46 xxxxxxxxxxx
+#### 3.2.47 xxxxxxxxxxx
+#### 3.2.48 xxxxxxxxxxx
+#### 3.2.49 xxxxxxxxxxx
+#### 3.2.50 xxxxxxxxxxx
+#### 3.2.51 xxxxxxxxxxx
+#### 3.2.52 xxxxxxxxxxx
+#### 3.2.53 xxxxxxxxxxx
+#### 3.2.54 xxxxxxxxxxx
+#### 3.2.55 xxxxxxxxxxx
+#### 3.2.56 xxxxxxxxxxx
+#### 3.2.57 xxxxxxxxxxx
+#### 3.2.58 xxxxxxxxxxx
+#### 3.2.59 xxxxxxxxxxx
+#### 3.2.60 xxxxxxxxxxx
+#### 3.2.61 xxxxxxxxxxx
+#### 3.2.62 xxxxxxxxxxx
 ### 3.3 Usability Requirements
 ### 3.4 Performance Requirements
 ### 3.5 Logical Database Requirements
@@ -597,7 +641,6 @@ A directory system which allows the sharing of information between students. All
 |Post Condition | The user is presented with their default email client with a new email to the student selected |
 |Exception Paths| A new view may be selected |
 |Other          | |
-
 ### 3.2.20 Notification Control
 
 Settings for how the user wants to be notified by the application. Provides a user options for their personal preference of notification method.
@@ -629,7 +672,6 @@ Settings for how the user wants to be notified by the application. Provides a us
 |Post Condition | The user receives alert notifications through their devices default notification method|
 |Exception Paths| The user can navigate to a different view |
 |Other          | |
-
 ### 3.2.21 Shared Calendar
 
 This feature allows the user to select one or more of their calendars, and share them with one other person, or a group of people.
@@ -661,7 +703,6 @@ This feature allows the user to select one or more of their calendars, and share
 |Post Condition |  The people sharing a calendar with the user are notified when changes are made.|
 |Exception Paths| If the user is not sharing any calendars|
 |Other          |  |
-
 ### 3.2.22 Push Notifications
 
 This is a notification that will be seen at any time, even if the app is not being actively used.
@@ -679,8 +720,6 @@ This is a notification that will be seen at any time, even if the app is not bei
 |Post Condition | The notification closes, and the user can return to a prior activity.|
 |Exception Paths| The user has disabled notifications.|
 |Other          |  |
-
-
 ### 3.2.23 Invitations
 
 This Feature allows the user to send an invitation to one or more of their calendar events, to one other person, or a group of people.
@@ -698,7 +737,6 @@ This Feature allows the user to send an invitation to one or more of their calen
 |Post Condition | The people selected receive a notification, and have the option to view the user's event(s).|
 |Exception Paths| If the user has not created any events.|
 |Other          |  |
-
 ### 3.2.24 Continuous Calendar
 
 Users need to access the different months efficiently. The Calendar app will have a scrollable section where all the months can be accessed. The idea of the continuous calendar is that users will intuitively know that they can scroll to other months, weeks or days. In the case of a Month view, the last week of the prior month, and the first week of the next month will be added to the current month view as a visual cue that the section is scrollable. Text labels and color backgrounds will help the user identify the month as they scroll. 
@@ -731,7 +769,7 @@ Users need to access the different months efficiently. The Calendar app will hav
 |Exception Paths| The user may choose another view at any time.|
 |Other          | None.|
 
-### 3.2.25.3 Continuous Calendar Month Label
+### 3.2.24.3 Continuous Calendar Month Label
 
 | Data          | Description |
 |:--------------| :--------------|
@@ -743,8 +781,23 @@ Users need to access the different months efficiently. The Calendar app will hav
 |Alternate Path | In step 1, the user may have already selected a view by “Month” in previous interactions. The next interaction continues to show the view selected previously. Return to step 3.|
 |Post Condition | The selected view by “Month” is presented to the user and a label will appear on top of the scrollable section.|
 |Exception Paths| The user may choose another view at any time.|
-|Other          | None.|
+|Other          | None.|### 3.2.25 Feature Name?
 
+Feature Description?
+
+#### 3.2.25.1 Use Case Name?
+
+| Data          | Description |
+|:--------------| :--------------|
+|Use Case Detail| Full Use Case Details. What, Who, Why....               |
+|XRef           | Lorem ipsum dolor sit amet, consectetur adipiscing elit.|
+|Trigger        | Lorem ipsum dolor sit amet, consectetur adipiscing elit.|
+|Precondition   | Lorem ipsum dolor sit amet, consectetur adipiscing elit.|
+|Basic Path     | Lorem ipsum dolor sit amet, consectetur adipiscing elit.|
+|Alternate Path | Lorem ipsum dolor sit amet, consectetur adipiscing elit.|
+|Post Condition | Lorem ipsum dolor sit amet, consectetur adipiscing elit.|
+|Exception Paths| Lorem ipsum dolor sit amet, consectetur adipiscing elit.|
+|Other          | Lorem ipsum dolor sit amet, consectetur adipiscing elit.|
 ### 3.2.26 Holidays
 
 Users need to be aware of specific calendar holidays to plan events more effectively. Text labels and watermarked icons denoting each holiday will help the user identify those days at first glance.
@@ -776,7 +829,6 @@ Users need to be aware of specific calendar holidays to plan events more effecti
 |Post Condition | The selected view will identify holidays by showing a watermark image description of the holiday.|
 |Exception Paths| The user can select another calendar view other than the Month view.|
 |Other          | None.|
-
 ### 3.2.27 Location
 
 Because users will be able to add details to a task or event, an option to add addresses to a specific event or task will be available to coordinate group meetings or other social gatherings. This feature will help users to conveniently link addresses to events and display a map view of the addresses using Google Maps. Google Maps will also be used to display directions to a location.
@@ -795,7 +847,7 @@ Because users will be able to add details to a task or event, an option to add a
 |Exception Paths| The attempt may be abandoned at any time.|
 |Other          | None.|
 
-### 3.2.28.2 Google Maps Integration
+### 3.2.27.2 Google Maps Integration
 
 | Data          | Description |
 |:--------------| :--------------|
@@ -807,8 +859,23 @@ Because users will be able to add details to a task or event, an option to add a
 |Alternate Path | In step 1, the user may have already created an event or task in previous interactions. The user can just tap on a day, find the event, and go to the details screen of that event. Return to step 2.|
 |Post Condition | The user sees a Google Map screen of the location of the event when tapping on the icon found in the event's details screen.|
 |Exception Paths| The attempt may be abandoned at any time.|
-|Other          | None.|
+|Other          | None.|### 3.2.28 Feature Name?
 
+Feature Description?
+
+#### 3.2.28.1 Use Case Name?
+
+| Data          | Description |
+|:--------------| :--------------|
+|Use Case Detail| Full Use Case Details. What, Who, Why....               |
+|XRef           | Lorem ipsum dolor sit amet, consectetur adipiscing elit.|
+|Trigger        | Lorem ipsum dolor sit amet, consectetur adipiscing elit.|
+|Precondition   | Lorem ipsum dolor sit amet, consectetur adipiscing elit.|
+|Basic Path     | Lorem ipsum dolor sit amet, consectetur adipiscing elit.|
+|Alternate Path | Lorem ipsum dolor sit amet, consectetur adipiscing elit.|
+|Post Condition | Lorem ipsum dolor sit amet, consectetur adipiscing elit.|
+|Exception Paths| Lorem ipsum dolor sit amet, consectetur adipiscing elit.|
+|Other          | Lorem ipsum dolor sit amet, consectetur adipiscing elit.|
 ### 3.2.29 Other Maps Integration
 
 Full Description?
@@ -826,7 +893,6 @@ Full Description?
 |Post Condition | The user and their event location is sent to their DEFAULT map application which will plan a route to the location of the event from their current position.|
 |Exception Paths| The attempt may be abandoned at any time. If a user does not have a default map application then use the google maps browser for step 4. |
 |Other          | None.|
-
 ### 3.2.30 Video Tutorial
 
 Full Description?
@@ -844,7 +910,6 @@ Full Description?
 |Post Condition | After the individual has seen the popup for the first time it will not pop-up again. They will have to visit the help section to view the video again|
 |Exception Paths| The pop-up may be left by clicking continue at any time.|
 |Other          | None.|
-
 ### 3.2.31 Group Permissions
 
 Group owners should be able to set permissions for the users in the group. They will also have the ability to give announcements, chat, schedule meetings, and make group links.
@@ -876,8 +941,7 @@ Group owners should be able to set permissions for the users in the group. They 
 |Post Condition | The user see's the data that has been posted.|
 |Exception Paths| If there are no group assignments for the class the page will say: "No group work 🎉!"..|
 |Other          | None|
-
-### 3.2.32 Group Links
+s### 3.2.32 Group Links
 
 Links are used to deep link to third party technologies for collaboration tools.
 
@@ -894,7 +958,6 @@ Links are used to deep link to third party technologies for collaboration tools.
 |Post Condition | The link turns another color notifying the user that it has been selected.|
 |Exception Paths| The link does not work and takes them to a 404 page.|
 |Other          | None|
-
 ### 3.2.33 Sort & Filter
 
 Calendar items can be sorted or filters based on details about the calendar event.
@@ -926,7 +989,6 @@ Calendar items can be sorted or filters based on details about the calendar even
 |Post Condition | The user continues to see his assignments in the order determined by the sort until they reset the sort settings.|
 |Exception Paths| The user does not have any events happening and the page say "No events".|
 |Other          | Users can choose to sort by time length, grade percentage, class, etc.|
-
 ### 3.2.34 Personal Assistant
 
 A small, animated, avatar, much in the vein of “Clippy”, that suggests tasks and assignments for the user to begin work on. 
@@ -944,8 +1006,6 @@ A small, animated, avatar, much in the vein of “Clippy”, that suggests tasks
 |Post Condition | The “Personal Assistant”checkbox must remain checked if the user wants to continue to user the feature. |
 |Exception Paths| If there are no upcoming assignments to suggest, the assistant will say “Nothing ...yet!”. |
 |Other          | Assistant is a small avatar that is displayed onscreen with text in speech bubbles. |
-
-
 ### 3.2.35 Feedback
 
 User is notified if the instructor provides feedback on graded assignments.
@@ -977,7 +1037,6 @@ User is notified if the instructor provides feedback on graded assignments.
 |Post Condition | The “Notify if feedback”checkbox must remain checked if the user wants to continue to user the feature, and the “Include feedback” switch must be turned on. |
 |Exception Paths| None. |
 |Other          | None. |
-
 ### 3.2.36 Group Security
 
 If a user wants to join a group, they will be barred from doing so until they receive an invitation from the group owner or administrator.
@@ -1009,7 +1068,6 @@ If a user wants to join a group, they will be barred from doing so until they re
 |Post Condition | None. |
 |Exception Paths| If a user has been rejected from a group, they cannot elicit the group again for an invitation after a third try. |
 |Other          | None. |
-
 ### 3.2.37 Database for Account Usernames and Passwords
 
 The application will feature a database that will be used to retain usernames and password for students to access their accounts.
@@ -1042,7 +1100,6 @@ This feature requires user to log in to view their calendars and thus provides s
 |Post Condition | The user is taken to the BYUI link page where the user is asked if they would like to connect their account to a BYUI account|
 |Exception Paths| If the username uses invalid characters, the process is ended and the user is notified about which characters are invalid|
 |Other          | None|
-
 ### 3.2.38 Inspirational Quotes and Images
 
 The calendar will allow users to add inspirational quotes and images to their daily views for the purpose of motivating and encouraging the user in their assignments. This will give the users a means of customizing their own calendars. 
@@ -1074,7 +1131,6 @@ The calendar will allow users to add inspirational quotes and images to their da
 |Post Condition | The prompt window closes and the image is displayed in the calendar view.|
 |Exception Paths| If the user selects an invalid file or does not have any image on their clipboard, an error message is displayed and the user is prompted to try again or close the window.|
 |Other          | None|
-
 ### 3.2.39 Adjustable Calendar/Calendar Item Size
 
 The user will be able to adjust the size of the calendar and have the calendar items scale proportiontely. The user will be able to zoom in on text of an item by clicking the appropriate day or hovering their mouse over the item. Here an item is defined as any event or assignment.
@@ -1178,9 +1234,9 @@ Full Description?
 |XRef           |    none yet                                             |
 |Trigger        | User selects tutor request button                       |
 |Precondition   | Account created on Student Calendar app, Internet Access, and an account with BYU-I as a student                |
-|Basic Path     | 1. User selects request tutor button 2. New window opens directing to BYU-I Tutor website    |
+|Basic Path     | 1. User selects request tutor button 2. New window opens directing to BYU-I Tutor website |
 |Alternate Path | none                                                    |
-|Post Condition | Event is created and has a section where the user can add  information about the tutor session created             |
+|Post Condition | Event is created and has a section where the user can add information about the tutor session created |
 |Exception Paths|Window can be closed at any time, not setting tutor event|
 |Other          | none                                                    |
 ### 3.2.43 School Functions
@@ -1196,12 +1252,10 @@ Full Description?
 |XRef           |                                                  |
 |Trigger        | Sign in to BYU-I button                                 |
 |Precondition   | Registered student at BYU-I college                     |
-|Basic Path     | 1. Select Sign in 2. System finds event calendar on BYU-I website   3. Side panel is filled in (instead of cluttering days) |
+|Basic Path     | 1. Select Sign in 2. System finds event calendar on BYU-I website 3. Side panel is filled in (instead of cluttering days) |
 |Alternate Path | none                                                    |
-|Post Condition | Student calendar has a side panel that is updated with  |
-|               | the school functions and events
-|Exception Paths| User could decide not to sign into BYU-I and not have   |
-|               | the school event list
+|Post Condition | Student calendar has a side panel that is updated with the school functions and events |
+|Exception Paths| User could decide not to sign into BYU-I and not have the school event list |
 |Other          | none                                                    |
 ### 3.2.44 Printing
 
@@ -1213,17 +1267,12 @@ Full Description?
 |:--------------| :--------------|
 |Use Case Name  | Printing                                                |
 |Use Case Detail| xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx |
-|XRef           |  none yet                                               |
+|XRef           |                                                  |
 |Trigger        | User selects Print                                      |
-|Precondition   | Calendar is up and on current window, connected to a    |
-|               | printer                                                 |
-|Basic Path     | 1. Select print option                                  |
-|               | 2. Crop desired part of calendar                        |
-|               | 3. Select print options (ex: color, page count)         |
-|               | 4. Finish print                                         |
+|Precondition   | Calendar is up and on current window, connected to a printer |
+|Basic Path     | 1. Select print option 2. Crop desired part of calendar  3. Select print options (ex: color, page count)  4. Finish print |
 |Alternate Path | none                                                    |
-|Post Condition | Calendar is left unchanged; however, user has a printed |
-|               |  portion of desired part of the calendar                |
+|Post Condition | Calendar is left unchanged; however, user has a printed portion of desired part of the calendar |
 |Exception Paths|                                                         |
 |Other          | none                                                    |
 ### 3.2.45 Badges
@@ -1372,65 +1421,6 @@ Full Description?
 
 Full Description?
 
-#### 3.2.50.1 Search Bar
-
-| Data          | Description |
-|:--------------| :--------------|
-|Use Case Detail| As a user I want to search the calendar app.|
-|XRef           | |
-|Trigger        | User clicks on the search bar|
-|Precondition   | User is logged into the calendar app.|
-|Basic Path     | User selects the search bar and enters in keyword.|
-|Alternate Path | User selects search button and enters in keyword.|
-|Post Condition | User has searched for a keyword.|
-|Exception Paths| If the keyword is not found the user will be prompted to try a different keyword.|
-|Other          | |
-
-#### 3.2.50.2 Timer
-
-| Data          | Description |
-|:--------------| :--------------|
-|Use Case Detail| User has limited time to complete assignment, calendar app shows how long assignment will take to complete.|
-|XRef           | |
-|Trigger        | User has an assignment that needs to be completed|
-|Precondition   | User is logged into calendar app and looking assignment.|
-|Basic Path     | User selects the timer function to determine time needed to complete assignment.|
-|Alternate Path | None.|
-|Post Condition | User is given an estimate of how long it will take to complete given assignment.|
-|Exception Paths| If user hasn't completed any assignments then the timer will display a message to explain this.|
-|Other          | |
-
-#### 3.2.50.3 Assigment Progress Bar
-
-| Data          | Description |
-|:--------------| :--------------|
-|Use Case Detail| User wants to know how many assignments they have completed. |
-|XRef           | |
-|Trigger        | User has linked app with school.|
-|Precondition   | User is looking at assignments for given week.|
-|Basic Path     | User selects the assignment progress bar.|
-|Alternate Path | |
-|Post Condition | User can see how many assignments have been completed for specific class and how many are left to complete.|
-|Exception Paths| If user hasn't added classes then there will be no progress bar.|
-|Other          | |
-
-#### 3.2.50.4 Suggest Meeting Times
-
-| Data          | Description |
-|:--------------| :--------------|
-|Use Case Detail| A user needs to know when they can meet with other students.|
-|XRef           | |
-|Trigger        | A user has selected the meet with others button.|
-|Precondition   | User has added associates to calendar app.|
-|Basic Path     | User navigates to meet with others button.|
-|Alternate Path | |
-|Post Condition | User is able to see availability of associates.|
-|Exception Paths| User hasn't added anyone to app and is unable to see availability.|
-|Other          | |
-### 3.2.51 Feature Name?
-
-Full Description?
-
 #### 3.2.50.1 Priority
 
 | Data          | Description |
@@ -1445,7 +1435,6 @@ Full Description?
 |Post Condition | The assignment is shown with the priority assignments |
 |Exception Paths| User can unselect priority button|
 |Other          | None|
-
 ### 3.2.51 Google API
 
 Full Description?
@@ -1464,7 +1453,6 @@ Full Description?
 |Post Condition | Google Calender items will be Synced|
 |Exception Paths| User can logout of Google account|
 |Other          | None|
-
 ### 3.2.52 Apple API
 
 Full Description?
@@ -1483,7 +1471,6 @@ Full Description?
 |Post Condition | Apple Calender will be Synced.|
 |Exception Paths| User can logout of Apple ID|
 |Other          | None|
-
 ### 3.2.53 Outlook API
 
 Full Description?
@@ -1506,7 +1493,66 @@ Full Description?
 
 Full Description?
 
-#### 3.2.54.1 Twitter
+#### 3.2.54.1 Search Bar
+
+| Data          | Description |
+|:--------------| :--------------|
+|Use Case Detail| As a user I want to search the calendar app.|
+|XRef           | |
+|Trigger        | User clicks on the search bar|
+|Precondition   | User is logged into the calendar app.|
+|Basic Path     | User selects the search bar and enters in keyword.|
+|Alternate Path | User selects search button and enters in keyword.|
+|Post Condition | User has searched for a keyword.|
+|Exception Paths| If the keyword is not found the user will be prompted to try a different keyword.|
+|Other          | |
+
+#### 3.2.54.2 Timer
+
+| Data          | Description |
+|:--------------| :--------------|
+|Use Case Detail| User has limited time to complete assignment, calendar app shows how long assignment will take to complete.|
+|XRef           | |
+|Trigger        | User has an assignment that needs to be completed|
+|Precondition   | User is logged into calendar app and looking assignment.|
+|Basic Path     | User selects the timer function to determine time needed to complete assignment.|
+|Alternate Path | None.|
+|Post Condition | User is given an estimate of how long it will take to complete given assignment.|
+|Exception Paths| If user hasn't completed any assignments then the timer will display a message to explain this.|
+|Other          | |
+
+#### 3.2.54.3 Assigment Progress Bar
+
+| Data          | Description |
+|:--------------| :--------------|
+|Use Case Detail| User wants to know how many assignments they have completed. |
+|XRef           | |
+|Trigger        | User has linked app with school.|
+|Precondition   | User is looking at assignments for given week.|
+|Basic Path     | User selects the assignment progress bar.|
+|Alternate Path | |
+|Post Condition | User can see how many assignments have been completed for specific class and how many are left to complete.|
+|Exception Paths| If user hasn't added classes then there will be no progress bar.|
+|Other          | |
+
+#### 3.2.54.4 Suggest Meeting Times
+
+| Data          | Description |
+|:--------------| :--------------|
+|Use Case Detail| A user needs to know when they can meet with other students.|
+|XRef           | |
+|Trigger        | A user has selected the meet with others button.|
+|Precondition   | User has added associates to calendar app.|
+|Basic Path     | User navigates to meet with others button.|
+|Alternate Path | |
+|Post Condition | User is able to see availability of associates.|
+|Exception Paths| User hasn't added anyone to app and is unable to see availability.|
+|Other          | |
+### 3.2.55 Feature Name?
+
+Full Description?
+
+#### 3.2.55.1 Twitter
 
 | Data          | Description |
 |:--------------| :--------------|
@@ -1519,12 +1565,11 @@ Full Description?
 |Post Condition | The share option will not direct the user to the login page for Twitter anymore.|
 |Exception Paths| The user may select "Cancel" to exit at any point in the process.|
 |Other          | None.|
-
-### 3.2.55 Feature Name?
+### 3.2.56 Feature Name?
 
 Full Description?
 
-#### 3.2.55.1 Instagram
+#### 3.2.56.1 Instagram
 
 | Data          | Description |
 |:--------------| :--------------|
@@ -1537,12 +1582,11 @@ Full Description?
 |Post Condition | The share option will not direct the user to the login page for Instagram anymore.|
 |Exception Paths| The user may select "Cancel" to exit at any point in the process.|
 |Other          | None.|
-
-### 3.2.56 Feature Name?
+### 3.2.57 Feature Name?
 
 Full Description?
 
-#### 3.2.56.1 Custom Images and Icons
+#### 3.2.57.1 Custom Images and Icons
 
 | Data            | Description |
 | :-------------- | :--------------|
@@ -1555,12 +1599,11 @@ Full Description?
 | Post Condition  | The user will have a customized view and appearance for each class and layout.|
 | Exception Paths | The user may select "Cancel" to exit at any point in the process.|
 | Other           | None.|
-
-### 3.2.57 Feature Name?
+### 3.2.58 Feature Name?
 
 Full Description?
 
-#### 3.2.57.1 Custom Videos
+#### 3.2.58.1 Custom Videos
 
 | Data          | Description |
 |:--------------| :--------------|
@@ -1573,11 +1616,11 @@ Full Description?
 |Post Condition | The user will have a customized view and appearance for each class and layout.|
 |Exception Paths| The user may select "Cancel" to exit at any point in the process.|
 |Other          | None.|
-### 3.2.58 Feature Name?
+### 3.2.59 Feature Name?
 
 Full Description?
 
-#### 3.2.58.1 Calendar Task & ToDo Engine 
+#### 3.2.59.1 Calendar Task & ToDo Engine 
 
 | Data            | Description|
 | :-------------- | :--------------|
@@ -1589,12 +1632,12 @@ Full Description?
 | Alternate Path  | The user will click on the 'create new task' button, visible in the ToDo list view|
 | Post Condition  | The task will be added to both the calendar and the ToDo list|
 | Exception Paths | The user may select either 'cancel' while he or she is creating the task, or 'delete' to delete it after the fact|
-| Other           | None                                                                                                                                                                                                                       |
-### 3.2.59 Feature Name?
+| Other           | None |
+### 3.2.60 Feature Name?
 
 Full Description?
 
-#### 3.2.59.1 Various Calendar Views
+#### 3.2.60.1 Various Calendar Views
 
 | Data            | Description|
 | :-------------- | :--------------|
@@ -1607,12 +1650,11 @@ Full Description?
 | Post Condition  | The calendar's view setting will be updated and henceforth the calendar will be displayed in the view style that the user selected|
 | Exception Paths | If the user wishes to undo their selection, they will simply select the view that they had previously been using|
 | Other           | None|
-
-### 3.2.60 Feature Name?
+### 3.2.61 Feature Name?
 
 Full Description?
 
-#### 3.2.60.1 Goal/ XP bar
+#### 3.2.61.1 Goal/ XP bar
 
 | Data            | Description|
 | :-------------- | :--------------|
@@ -1625,12 +1667,11 @@ Full Description?
 | Post Condition  | After enabling this feature, the sidebar will include a Points and XP 'character stats' display akin to those found in videogames, the 'create task' dialogue will prompt the user for task's point values, and the app will award points upon task completion                                  |
 | Exception Paths | This setting can be disable with the same settings toggle that enabled it.|
 | Other           | In the event that it is disabled, and then later reenabled, the user should maintain their same point balance                                                 
-
-### 3.2.61 Feature Name?
+### 3.2.62 Feature Name?
 
 Full Description?
                                                                                                                      |
-#### 3.2.61.1 Assignment List
+#### 3.2.62.1 Assignment List
 
 | Data            | Description                                                                                                                          |
 | :-------------- | :--------------                                                                                                                      |

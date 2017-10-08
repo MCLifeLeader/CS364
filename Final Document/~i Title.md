@@ -1,6 +1,6 @@
 # Software Requirements Specification
-## Version 0.0
-## September 23rd, 2017
+## Version 1.0
+## October 7th, 2017
 
 # Student Calendar Integration
 ### BYU-Idaho CS364 Software Engineering
