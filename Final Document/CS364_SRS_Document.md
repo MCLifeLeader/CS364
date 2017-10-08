@@ -781,7 +781,8 @@ Users need to access the different months efficiently. The Calendar app will hav
 |Alternate Path | In step 1, the user may have already selected a view by “Month” in previous interactions. The next interaction continues to show the view selected previously. Return to step 3.|
 |Post Condition | The selected view by “Month” is presented to the user and a label will appear on top of the scrollable section.|
 |Exception Paths| The user may choose another view at any time.|
-|Other          | None.|### 3.2.25 Feature Name?
+|Other          | None.|
+### 3.2.25 Feature Name?
 
 Feature Description?
 
@@ -859,7 +860,8 @@ Because users will be able to add details to a task or event, an option to add a
 |Alternate Path | In step 1, the user may have already created an event or task in previous interactions. The user can just tap on a day, find the event, and go to the details screen of that event. Return to step 2.|
 |Post Condition | The user sees a Google Map screen of the location of the event when tapping on the icon found in the event's details screen.|
 |Exception Paths| The attempt may be abandoned at any time.|
-|Other          | None.|### 3.2.28 Feature Name?
+|Other          | None.|
+### 3.2.28 Feature Name?
 
 Feature Description?
 
@@ -941,7 +943,7 @@ Group owners should be able to set permissions for the users in the group. They 
 |Post Condition | The user see's the data that has been posted.|
 |Exception Paths| If there are no group assignments for the class the page will say: "No group work 🎉!"..|
 |Other          | None|
-s### 3.2.32 Group Links
+### 3.2.32 Group Links
 
 Links are used to deep link to third party technologies for collaboration tools.
 
