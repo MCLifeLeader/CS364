@@ -55,7 +55,7 @@
 #### 3.2.25 Continuous Calendar
 #### 3.2.26 Holidays
 #### 3.2.27 Location
-#### 3.2.28 Night Mode
+#### 3.2.28 Apple Maps Integration
 #### 3.2.29 Other Maps Integration
 #### 3.2.30 Video Tutorial
 #### 3.2.31 Group Permissions
@@ -93,6 +93,7 @@
 #### 3.2.63 School Catalog
 #### 3.2.64 Class Help
 #### 3.2.65 Travel Time
+#### 3.2.66 Night Mode
 ### 3.3 Usability Requirements
 ### 3.4 Performance Requirements
 ### 3.5 Logical Database Requirements
