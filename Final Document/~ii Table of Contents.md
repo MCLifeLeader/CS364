@@ -55,7 +55,7 @@
 #### 3.2.25 Continuous Calendar
 #### 3.2.26 Holidays
 #### 3.2.27 Location
-#### 3.2.28 xxxxxxxxxxx
+#### 3.2.28 Night Mode
 #### 3.2.29 Other Maps Integration
 #### 3.2.30 Video Tutorial
 #### 3.2.31 Group Permissions
