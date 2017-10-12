@@ -51,11 +51,11 @@
 #### 3.2.21 Shared Calendar
 #### 3.2.22 Push Notifications
 #### 3.2.23 Invitations
-#### 3.2.24 xxxxxxxxxxx
+#### 3.2.24 Simplified "To Do" assignment display
 #### 3.2.25 Continuous Calendar
 #### 3.2.26 Holidays
 #### 3.2.27 Location
-#### 3.2.28 xxxxxxxxxxx
+#### 3.2.28 Night Mode
 #### 3.2.29 Other Maps Integration
 #### 3.2.30 Video Tutorial
 #### 3.2.31 Group Permissions
@@ -82,14 +82,17 @@
 #### 3.2.52 Apple API
 #### 3.2.53 Outlook API
 #### 3.2.54 xxxxxxxxxxx
-#### 3.2.55 xxxxxxxxxxx
-#### 3.2.56 xxxxxxxxxxx
-#### 3.2.57 xxxxxxxxxxx
-#### 3.2.58 xxxxxxxxxxx
-#### 3.2.59 xxxxxxxxxxx
-#### 3.2.60 xxxxxxxxxxx
-#### 3.2.61 xxxxxxxxxxx
-#### 3.2.62 xxxxxxxxxxx
+#### 3.2.55 Twitter
+#### 3.2.56 Instagram
+#### 3.2.57 Custom Images and Icons
+#### 3.2.58 Custom Videos
+#### 3.2.59 ToDo Task Engine
+#### 3.2.60 Various Calendar Views
+#### 3.2.61 Goal/ XP bar
+#### 3.2.62 Assignment List
+#### 3.2.63 School Catalog
+#### 3.2.64 Class Help
+#### 3.2.65 Travel Time
 ### 3.3 Usability Requirements
 ### 3.4 Performance Requirements
 ### 3.5 Logical Database Requirements
