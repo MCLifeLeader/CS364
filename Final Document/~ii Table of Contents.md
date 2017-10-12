@@ -46,41 +46,41 @@
 #### 3.2.16 Recurring Appointments
 #### 3.2.17 Grades
 #### 3.2.18 Widget
-#### 3.2.19 xxxxxxxxxxx
-#### 3.2.20 xxxxxxxxxxx
-#### 3.2.21 xxxxxxxxxxx
-#### 3.2.22 xxxxxxxxxxx
-#### 3.2.23 xxxxxxxxxxx
+#### 3.2.19 Active Directory / LDAP
+#### 3.2.20 Notification Control
+#### 3.2.21 Shared Calendar
+#### 3.2.22 Push Notifications
+#### 3.2.23 Invitations
 #### 3.2.24 xxxxxxxxxxx
-#### 3.2.25 xxxxxxxxxxx
-#### 3.2.26 xxxxxxxxxxx
-#### 3.2.27 xxxxxxxxxxx
+#### 3.2.25 Continuous Calendar
+#### 3.2.26 Holidays
+#### 3.2.27 Location
 #### 3.2.28 xxxxxxxxxxx
-#### 3.2.29 xxxxxxxxxxx
-#### 3.2.30 xxxxxxxxxxx
-#### 3.2.31 xxxxxxxxxxx
-#### 3.2.32 xxxxxxxxxxx
-#### 3.2.33 xxxxxxxxxxx
-#### 3.2.34 xxxxxxxxxxx
-#### 3.2.35 xxxxxxxxxxx
-#### 3.2.36 xxxxxxxxxxx
-#### 3.2.37 xxxxxxxxxxx
-#### 3.2.38 xxxxxxxxxxx
-#### 3.2.39 xxxxxxxxxxx
-#### 3.2.40 xxxxxxxxxxx
-#### 3.2.41 xxxxxxxxxxx
-#### 3.2.42 xxxxxxxxxxx
-#### 3.2.43 xxxxxxxxxxx
-#### 3.2.44 xxxxxxxxxxx
-#### 3.2.45 xxxxxxxxxxx
-#### 3.2.46 xxxxxxxxxxx
-#### 3.2.47 xxxxxxxxxxx
+#### 3.2.29 Other Maps Integration
+#### 3.2.30 Video Tutorial
+#### 3.2.31 Group Permissions
+#### 3.2.32 Group Links
+#### 3.2.33 Sort & Filter
+#### 3.2.34 Personal Assistant
+#### 3.2.35 Feedback
+#### 3.2.36 Group Security
+#### 3.2.37 Database for Account Usernames and Passwords
+#### 3.2.38 Inspirational Quotes and Images
+#### 3.2.39 Adjustable Calendar/Calendar Item Size
+#### 3.2.40 Share Calendar Application
+#### 3.2.41 Weather
+#### 3.2.42 Tutor Integration
+#### 3.2.43 School Functions
+#### 3.2.44 Printing
+#### 3.2.45 Badges
+#### 3.2.46 Quick Access
+#### 3.2.47 Assignment Alarm
 #### 3.2.48 xxxxxxxxxxx
 #### 3.2.49 xxxxxxxxxxx
 #### 3.2.50 xxxxxxxxxxx
-#### 3.2.51 xxxxxxxxxxx
-#### 3.2.52 xxxxxxxxxxx
-#### 3.2.53 xxxxxxxxxxx
+#### 3.2.51 Google API
+#### 3.2.52 Apple API
+#### 3.2.53 Outlook API
 #### 3.2.54 xxxxxxxxxxx
 #### 3.2.55 xxxxxxxxxxx
 #### 3.2.56 xxxxxxxxxxx
