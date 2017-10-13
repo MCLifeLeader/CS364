@@ -51,113 +51,184 @@ David Harris<br/>
 Keith Wheeler<br/>
 Daniel Craig<br/>
 John Memmott<br/>
+
 # Table of Contents
-
 ## Table of Contents
-
 ## Revision History
-
 ## List of Figures
-
 ## 1.0 Introduction
-### 1.1 Purpose
-### 1.2 Scope of Project
-### 1.3 Intended Audience
-### 1.4 Glossary
-### 1.5 References
-### 1.6 Overview of Document
-
+## 1.1 Purpose
+## 1.2 Scope of Project
+## 1.3 Intended Audience
+## 1.4 Glossary
+## 1.5 References
+## 1.6 Overview of Document
 ## 2.0 Overall Description
-
-### 2.1 Product Perspective
-### 2.2 Product Features
-### 2.3 User Classes and Characteristics
-### 2.4 Operating Environment
-### 2.5 Functional Requirements
-### 2.6 Technical Requirements
-### 2.7 User Documentation
-### 2.8 Assumptions and Dependencies
-
+## 2.1 Product Perspective
+## 2.2 Product Features
+## 2.3 User Classes and Characteristics
+## 2.4 Operating Environment
+## 2.5 Functional Requirements
+## 2.6 Technical Requirements
+## 2.7 User Documentation
+## 2.8 Assumptions and Dependencies
 ## 3.0 Requirements Specification
-### 3.1 External Interface Requirements
-### 3.2 Functional Requirements
-#### 3.2.1 Calendar Application is Mobile
-#### 3.2.2 Calendar Application is Web
-#### 3.2.3 Calendar Application API
-#### 3.2.4 Priority View
-#### 3.2.5 ADA Compliant
-#### 3.2.6 Export/Import
-#### 3.2.7 Reminders
-#### 3.2.8 Links
-#### 3.2.9 Photo Import
-#### 3.2.10 Show all events, even when large number
-#### 3.2.11 Group Communication 1: message chat
-#### 3.2.12 Group Communication 2: Video Chat
-#### 3.2.13 FERPA compliant
-#### 3.2.14 Discussion Board Integration
-#### 3.2.15 Time Clock
-#### 3.2.16 Recurring Appointments
-#### 3.2.17 Grades
-#### 3.2.18 Widget
-#### 3.2.19 xxxxxxxxxxx
-#### 3.2.20 xxxxxxxxxxx
-#### 3.2.21 xxxxxxxxxxx
-#### 3.2.22 xxxxxxxxxxx
-#### 3.2.23 xxxxxxxxxxx
-#### 3.2.24 xxxxxxxxxxx
-#### 3.2.25 xxxxxxxxxxx
-#### 3.2.26 xxxxxxxxxxx
-#### 3.2.27 xxxxxxxxxxx
-#### 3.2.28 xxxxxxxxxxx
-#### 3.2.29 xxxxxxxxxxx
-#### 3.2.30 xxxxxxxxxxx
-#### 3.2.31 xxxxxxxxxxx
-#### 3.2.32 xxxxxxxxxxx
-#### 3.2.33 xxxxxxxxxxx
-#### 3.2.34 xxxxxxxxxxx
-#### 3.2.35 xxxxxxxxxxx
-#### 3.2.36 xxxxxxxxxxx
-#### 3.2.37 xxxxxxxxxxx
-#### 3.2.38 xxxxxxxxxxx
-#### 3.2.39 xxxxxxxxxxx
-#### 3.2.40 xxxxxxxxxxx
-#### 3.2.41 xxxxxxxxxxx
-#### 3.2.42 xxxxxxxxxxx
-#### 3.2.43 xxxxxxxxxxx
-#### 3.2.44 xxxxxxxxxxx
-#### 3.2.45 xxxxxxxxxxx
-#### 3.2.46 xxxxxxxxxxx
-#### 3.2.47 xxxxxxxxxxx
-#### 3.2.48 xxxxxxxxxxx
-#### 3.2.49 xxxxxxxxxxx
-#### 3.2.50 xxxxxxxxxxx
-#### 3.2.51 xxxxxxxxxxx
-#### 3.2.52 xxxxxxxxxxx
-#### 3.2.53 xxxxxxxxxxx
-#### 3.2.54 xxxxxxxxxxx
-#### 3.2.55 xxxxxxxxxxx
-#### 3.2.56 xxxxxxxxxxx
-#### 3.2.57 xxxxxxxxxxx
-#### 3.2.58 xxxxxxxxxxx
-#### 3.2.59 xxxxxxxxxxx
-#### 3.2.60 xxxxxxxxxxx
-#### 3.2.61 xxxxxxxxxxx
-#### 3.2.62 xxxxxxxxxxx
-### 3.3 Usability Requirements
-### 3.4 Performance Requirements
-### 3.5 Logical Database Requirements
-### 3.6 Design Constraints
-### 3.7 Software System Attributes
-### 3.8 Supporting Information
-
+## 3.1 External Interface Requirements
+## 3.2 Functional Requirements
+### 3.2.1 Calendar Application is Mobile
+### 3.2.2 Calendar Application is Web
+### 3.2.3 Calendar Application API
+### 3.2.4 Priority View
+### 3.2.5 ADA Compliant
+### 3.2.6 Export/Import
+### 3.2.7 Reminders
+### 3.2.8 Links
+### 3.2.9 Photo Import
+### 3.2.10 Show all events, even when large number
+### 3.2.11 Group Communication 1: message chat
+### 3.2.12 Group Communication 2: Video Chat
+### 3.2.13 FERPA compliant
+### 3.2.14 Discussion Board Integration
+### 3.2.15 Time Clock
+### 3.2.16 Recurring Appointments
+### 3.2.17 Grades
+### 3.2.18 Widget
+### 3.2.19 Active Directory / LDAP
+### 3.2.20 Notification Control
+### 3.2.21 Shared Calendar
+### 3.2.22 Push Notifications
+### 3.2.23 Invitations
+### 3.2.24 Simplified "To Do" assignment display
+### 3.2.25 Continuous Calendar
+### 3.2.26 Holidays
+### 3.2.27 Location
+### 3.2.28 Apple Maps Integration
+### 3.2.29 Other Maps Integration
+### 3.2.30 Video Tutorial
+### 3.2.31 Group Permissions
+### 3.2.32 Group Links
+### 3.2.33 Sort & Filter
+### 3.2.34 Personal Assistant
+### 3.2.35 Feedback
+### 3.2.36 Group Security
+### 3.2.37 Database for Account Usernames and Passwords
+### 3.2.38 Inspirational Quotes and Images
+### 3.2.39 Adjustable Calendar/Calendar Item Size
+### 3.2.40 Share Calendar Application
+### 3.2.41 Weather
+### 3.2.42 Tutor Integration
+### 3.2.43 School Functions
+### 3.2.44 Printing
+### 3.2.45 Badges
+### 3.2.46 Quick Access
+### 3.2.47 Assignment Alarm
+### 3.2.48 xxxxxxxxxxx
+### 3.2.49 xxxxxxxxxxx
+### 3.2.50 xxxxxxxxxxx
+### 3.2.51 Google API
+### 3.2.52 Apple API
+### 3.2.53 Outlook API
+### 3.2.54 xxxxxxxxxxx
+### 3.2.55 Twitter
+### 3.2.56 Instagram
+### 3.2.57 Custom Images and Icons
+### 3.2.58 Custom Videos
+### 3.2.59 ToDo Task Engine
+### 3.2.60 Various Calendar Views
+### 3.2.61 Goal/ XP bar
+### 3.2.62 Assignment List
+### 3.2.63 School Catalog
+### 3.2.64 Class Help
+### 3.2.65 Travel Time
+### 3.2.66 Night Mode
+## 3.3 Usability Requirements
+## 3.4 Performance Requirements
+## 3.5 Logical Database Requirements
+## 3.6 Design Constraints
+## 3.7 Software System Attributes
+## 3.8 Supporting Information
 ## 4.0 Verification
-
+## 4.1 Verify External Interface Requirements
+## 4.2 Verify Functional Requirements
+### 4.2.1 Calendar Application is Mobile
+### 4.2.2 Calendar Application is Web
+### 4.2.3 Calendar Application API
+### 4.2.4 Priority View
+### 4.2.5 ADA Compliant
+### 4.2.6 Export/Import
+### 4.2.7 Reminders
+### 4.2.8 Links
+### 4.2.9 Photo Import
+### 4.2.10 Show all events, even when large number
+### 4.2.11 Group Communication 1: message chat
+### 4.2.12 Group Communication 2: Video Chat
+### 4.2.13 FERPA compliant
+### 4.2.14 Discussion Board Integration
+### 4.2.15 Time Clock
+### 4.2.16 Recurring Appointments
+### 4.2.17 Grades
+### 4.2.18 Widget
+### 4.2.19 Active Directory / LDAP
+### 4.2.20 Notification Control
+### 4.2.21 Shared Calendar
+### 4.2.22 Push Notifications
+### 4.2.23 Invitations
+### 4.2.24 Simplified "To Do" assignment display
+### 4.2.25 Continuous Calendar
+### 4.2.26 Holidays
+### 4.2.27 Location
+### 4.2.28 Apple Maps Integration
+### 4.2.29 Other Maps Integration
+### 4.2.30 Video Tutorial
+### 4.2.31 Group Permissions
+### 4.2.32 Group Links
+### 4.2.33 Sort & Filter
+### 4.2.34 Personal Assistant
+### 4.2.35 Feedback
+### 4.2.36 Group Security
+### 4.2.37 Database for Account Usernames and Passwords
+### 4.2.38 Inspirational Quotes and Images
+### 4.2.39 Adjustable Calendar/Calendar Item Size
+### 4.2.40 Share Calendar Application
+### 4.2.41 Weather
+### 4.2.42 Tutor Integration
+### 4.2.43 School Functions
+### 4.2.44 Printing
+### 4.2.45 Badges
+### 4.2.46 Quick Access
+### 4.2.47 Assignment Alarm
+### 4.2.48 xxxxxxxxxxx
+### 4.2.49 xxxxxxxxxxx
+### 4.2.50 xxxxxxxxxxx
+### 4.2.51 Google API
+### 4.2.52 Apple API
+### 4.2.53 Outlook API
+### 4.2.54 xxxxxxxxxxx
+### 4.2.55 Twitter
+### 4.2.56 Instagram
+### 4.2.57 Custom Images and Icons
+### 4.2.58 Custom Videos
+### 4.2.59 ToDo Task Engine
+### 4.2.60 Various Calendar Views
+### 4.2.61 Goal/ XP bar
+### 4.2.62 Assignment List
+### 4.2.63 School Catalog
+### 4.2.64 Class Help
+### 4.2.65 Travel Time
+### 4.2.66 Night Mode
+## 4.3 Usability Requirements
+## 4.4 Performance Requirements
+## 4.5 Logical Database Requirements
+## 4.6 Design Constraints
+## 4.7 Software System Attributes
+## 4.8 Supporting Information
 ## 5.0 Appendices
-### 5.1 Assumptions and Dependencies
-### 5.2 Acronyms and Abbreviations
-
+## 5.1 Assumptions and Dependencies
+## 5.2 Acronyms and Abbreviations
 ## Index
+
 # List of Figures
+
 # Revision History
 
 | Name          | Date       | Reason for Changes        | Version |
@@ -166,19 +237,24 @@ John Memmott<br/>
 | Revision 1    | 10/07/2017 | Initial SRS Revision      |   1.0   |
 | Revision 2    |            |                           |   1.1   |
 | Revision 3    |            |                           |   1.2   |
+
 # 1.0 Introduction
+
 ## 1.1 Purpose
 
 The purpose of this document is to provide a detailed description of the Student Calendar Integration. 
 It will explain the project's features, target audience and hardware and software requirements. This document is intended for both the stakeholders and developers of the system.
+
 ## 1.2 Scope of Project
 
 The scope of this project will be the creation of a multi-platform calendar program. The program will be capable of interfacing with the BYU-I I-Learn system. In addition to the features and functionality of a standard calendar program, this program will allow BYU-I students to create events, reminders, or to do lists based off due dates from their I-Learn page. For a more detailed explanation of individual program features see section 2.2. 
+
 ## 1.3 Intended Audience
 
 This document is intended for project managers, team leaders, writers, developers, testers, users, and any other individual interested in the design and development of the Student Calendar application.
 
 Reading this document in the order it has been presented is highly recommended for most readers. Careful attention to the glossary and overview of document sections is key to avoid unnecessary confusion. The glossary contains keywords, terms, and abbreviations used throughout the document. The overview of document section provides a concise description of the main sections of the document.
+
 ## 1.4 Glossary
 
 |Keywords|Definition     |
@@ -194,14 +270,21 @@ Reading this document in the order it has been presented is highly recommended f
 |Software Requirements Specification|Also known as SRS, or this documents. A documents that contains the requirements a product must meet in order to succeed.|
 |Project Manager|The team member who oversees the project and works with the team leads to make sure the project fulfills the necessary requirements and is finished on time.|
 |Event|An item on the calendar, ie. todo, meeting, or due date.|
+
 ## 1.5 References
 
   [1] D. Zowghil & C. Coulin, "Requirements Elicitation: A Survey of Techniques, Approaches, and Tools" Engineering and Managing Software Requirements, pp. 19-46, 2005 [Online] Available: http://link.springer.com/chapter/10.1007%2F3-540-28244-0_2#page-1
+
 ## 1.6 Overview of Document
 
 This document has two primary parts following this Introduction. The first is the "Overall Description" section which generally describes the product's function purpose and design. This section is meant to give a solid conceptual baseline for the rest of the document's technical analysis. That in-depth technical analysis will be found within the "Requirements Specification" section of the document. This section gives specific instructions meant primarily for developers. It details everything that the product should do and include.
+
 # 2.0 Overall Description
+
 ## 2.1 Product Perspective
+
+The Student Calendar can be used as a stand alone application that gives students much of the functionality as described in the product functions section. For BYU-I students, the calendar's main benefits come from interfacing with the University's I-Learn system allowing them to access assignments and other events. Interfaces to other external systems will provide further functionality outside of basic calendar tasks. Detailed descriptions of these external systems is beyond the scope of this document. All interfacing with external systems will be done according to industry standards.
+
 ## 2.2 Product Features
 
 Features have been broken down into various feature categories to group like or related features together. "Lorem ipsum" is being used as a visual place holder for further document development as an example place holder for that information.
@@ -220,14 +303,32 @@ Features have been broken down into various feature categories to group like or 
 
 #### 2.2.2.3 - The application shall support Active Directory and LDAP validation
 
-### 2.2.3 - Feature N
+### 2.2.3 - Software Interfaces
+
+#### 2.2.3.1 - The application shall interface with BYU-Idaho's I-Learn web service
+
+#### 2.2.3.2 - 
+
+### 2.2.4 - Notification Features
+
+#### 2.2.4.1 - The application shall notify users of invites from other users
+
+#### 2.2.4.2 - 
+
 ## 2.3 User Classes and Characteristics
+
 ## 2.4 Operating Environment
+
 ## 2.5 Functional Requirements
+
 ## 2.6 Technical Requirements
+
 ## 2.7 User Documentation
+
 ## 2.8 Assumptions and Dependencies
+
 # 3.0 Requirements Specification
+
 ## 3.1 External Interface Requirements
 
 We have a number of external services and COTS applications that will be integrated into our application.
@@ -235,8 +336,6 @@ We have a number of external services and COTS applications that will be integra
 ### 3.1.1 External System 1
 
 ### 3.1.2 External System 2
-
-
 
 ## 3.2 Functional Requirements
 
@@ -285,60 +384,61 @@ Examples:
 |Post Condition | Lorem ipsum dolor sit amet, consectetur adipiscing elit.|
 |Exception Paths| Lorem ipsum dolor sit amet, consectetur adipiscing elit.|
 |Other          | Lorem ipsum dolor sit amet, consectetur adipiscing elit.|
+
 ### 3.2.1 Calendar Application is Mobile
 
-Full Description?
+The calendar application will be usable and readable in mobile form factors. It will allow easy access from a mobile application to the user's school calendar.
 
-#### 3.2.1.1 Use Case Name?
+#### 3.2.1.1 Smartphone Application
 
 | Data          | Description |
 |:--------------| :--------------|
-|Use Case Name  | Using the Calendar App on a smart phone|
-|Use Case Detail| xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx |
+|Use Case Detail| As a user, I want to be able to access the calendar from my mobile device |
 |XRef           ||
-|Trigger        | The User Opens the calendar app on their smart phone.|
-|Precondition   | The User must have the app installed.|
-|Basic Path	| 1. The User opens the calendar app on their smart phone. 2. The app displays the users upcoming items.|
+|Trigger        | The user opens the calendar app on their smart phone.|
+|Precondition   | The user must have the app installed.|
+|Basic Path	| <li type='1'>The user opens the calendar app on their smart phone. </li><li type='1'>The app displays the users upcoming items.</li>|
 |Alternate Path | None|
 |Post Condition	| The calendar app opens and displays the users assignments.|
 |Exception Paths| The app can be closed at any time.|
-|Other		| None|
+|Other		      | None|
+
 ### 3.2.2 Calendar Application is Web
 
-Full Description?
+The calendar application will have a responsive design capable of displaying on any web browser and screen. The user will be able to access the calendar application from anywhere that has a web browser.
 
-#### 3.2.2.1 Use Case Name?
+#### 3.2.2.1 Access From Web Browser
 
 | Data          | Description |
 |:--------------|:----------------|
-|Use Case Name  | Using the Calendar App on the Web|
-|Use Case Detail| xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx |
+|Use Case Detail| As a user, I want to access the application from any web broswer |
 |XRef           ||
-|Trigger	| The User opens the app on a web browser.|
-|Precondition   | The User's web browser has the calendar app installed.|
-|Basic Path     | 1. The User opens the app on their web browser.</br>2. The app displays the users upcoming items.|            
+|Trigger	      | The user navigates to the calendar application url on a web browser.|
+|Precondition   | The user has a web browser available.|
+|Basic Path     | <li type='1'>The user navigates to the calendar application url on a web browser</li> <li type='1'>The app displays the users upcoming items.</li>|            
 |Alternate Path | None|
-|Post Condition | The calendar app opens on the Users web browser.|
-|Exception Paths| The User may abandon this task at any time.|
+|Post Condition | The calendar app opens on the user's web browser.|
+|Exception Paths| The user may abandon this task at any time.|
 |Other	        | None|
+
 ### 3.2.3 Calendar Application API
 
-Full Description?
+This application will allow users to write plugins that integrate with the calendar application. This will enable users to expand the capabilities of the calendar application to fit their needs.
 
-#### 3.2.3.1 Use Case Name?
+#### 3.2.3.1 Add a Plugin
 
 | Data          | Description |
 |:--------------|:-----------------|
-|Use Case Name  | Adding a plugin|
-|Use Case Detail| xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx |
+|Use Case Detail| As a user, I want to add extra capabilities to the calendar application |
 |XRef           ||
-|Trigger	    | The User has written or downloaded a plugin for the app</br>and will add it to the calendar.| 
-|Precondition   | The User has a compatible plugin for the app.| 
-|Basic Path     | 1. The User installs the plugin to the calendar.</br>2. The User opens the calendar app.|
-|Alternate Path | 2. The plugin is not compatible and the system notifies the User.|
+|Trigger	      | The user has written or downloaded a plugin for the app and will add it to the calendar.| 
+|Precondition   | The user has a compatible plugin for the app.| 
+|Basic Path     | <li type='1'>The user installs the plugin to the calendar.</li><li type='1'>The user opens the calendar app.</li>|
+|Alternate Path | The plugin is not compatible and the system notifies the user.|
 |Post Condition | The plugin makes changes to the app.|
-|Exception Paths| As long as the plugin is not installed the attempt can be</br>abandoned at any time.|
-|Other	     | None|
+|Exception Paths| As long as the plugin is not installed the attempt can be abandoned at any time.|
+|Other	        | None|
+
 ### 3.2.4 Priority View
 
 Full Description?
@@ -357,6 +457,7 @@ Full Description?
 |Post Condition | None|
 |Exception Paths| This feature can be turned off in the settings.|
 |Other		| None|
+
 ### 3.2.5 ADA Compliant
 
 Full Description?
@@ -375,6 +476,7 @@ Full Description?
 |Post Condition	| In this situation the app had to play</br> audio of the items in the User's calendar.|
 |Exception Paths|These settings can be turned off at any time.|
 |Other		| To be ADA Complient the calendar app will need to have audio</br>descriptions. Any Color significate notifications will have to have text as well.|
+
 ### 3.2.6 Export/Import 
 
 Full Description?
@@ -408,114 +510,115 @@ Full Description?
 | Post Condition | The new calendar will gain the items from the old calendar.|
 | Exception Paths| The user may cancel the operation any time before the items have been transfered.|
 | Other          | None|
+
 ### 3.2.7 Reminders
 
-Full Description?
+Within the application the user should be able to set Reminders for assignments and events. The user can choose to have these reminder alerts happen at several different intervals before the assignment/event occurs. Ex: 10 min before, 1 hour before, 3 hours before, 1 day before, etc.
 
-#### 3.2.7.1 Use Case Name?
+#### 3.2.7.1 The user oftens forgets about assignments
 
 |Data           | Description |
 |:--------------|:-----------------|
-|Use Case Name  | Setting a reminder|
-|Use Case Detail| xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx |
+|Use Case Detail| As a user, I want to be alerted before an assignment is do in case I have forgotten to turn in the assignment. |
 |XRef           ||
-|Trigger	| The User selects the day or activity to add a reminder to.|		
-|Precondition 	| The User has accessed the calendar apps main screen.|
-|Basic Path	| 1.The system presents a blank form to enter the time and text into the reminder.</br>2.The Editor enters the information and submits the form.</br>3.The system checks that the time and text fields are not blank and sets the reminder</br> to the specified time.|
-|Alternate Paths| If in step 3 no time has been specified the user will be reprompted for an entry.|
-|Postconditions	| The reminder will be added and will go off at the specified time.|
-|Exection Paths	| The Editor may abandon this operaton at any time.|
+|Trigger	| The User selects the bell icon on an activity to add a reminder.|		
+|Precondition 	| The User has accessed the calendar apps main screen, and has events or assingments showing.|
+|Basic Path	| 1. The user logs into I-Learn through the app. 2. The users taps on an event or assignment. 3. The user taps the 'bell' icon. 4. The user sets the settings for the given reminder.|
+|Alternate Paths| In step 2 the user can go to settings and turn on reminders for all assignments.|
+|Post Condition| The user can edit the reminder by tapping on the 'bell' icon again.|
+|Exection Paths	| The Editor may abandon this operaton at any time, the user does not have any events.|
 |Other		| The reminder information includes time, reason, and notification type.|
+
 ### 3.2.8 Links
 
-Full Description?
+The application will be able to accept several different types of links as input for events, assignments, or messages. The link could be anything from a website url to a phone number.
 
-#### 3.2.8.1 Use Case Name?
+#### 3.2.8.1 The users group uses outside resources like google docs.
 
 | Data          | Description |
 |:--------------| :--------------|
-|Use Case Name  | Links|
-|Use Case Detail| xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx |
+|Use Case Detail| As a user, I want to be able to link to different web pages, address, phone numbers, or applications that will help me and my group complete our assignments. |
 |XRef           | |
-|Trigger        | A user clicks on a link|
-|Precondition   | The user is on the calendar page|
-|Basic Path	    | 1. The user is taken to the destination of the link|
-|Alternate Path | None|
-|Post Condition	| The user is taken to the destination of the link|
+|Trigger        | A taps on a link.|
+|Precondition   | The user is on the calendar page, and is viewing an event or assignment.|
+|Basic Path	    | 1. The user logs into I-Learn through the app. 2. The users taps on an event or assignment. 3. The user taps on a link. 4. The application will automatically take them to the website, address, or application.|
+|Alternate Path | 3. the link type could be a phone number and a call would begin when tapped. |
+|Post Condition	| The user is taken to the destination of the link, the link turns purple signifying it has been tapped before. |
 |Exception Paths| If the link is invalid, the user is displayed an error message|
 |Other		      | None|
+
 ### 3.2.9 Photo Import
 
-Full Description?
+The application will be able to import photos that can be attached to events, assignments, or discussion threads. This can allow more context to be provided for events or discussion threads. 
 
-#### 3.2.9.1 Use Case Name?
-
-| Data          | Description |
-|:--------------| :--------------|
-|Use Case Name  | Photo Import|
-|Use Case Detail| xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx |
-|XRef           | |
-|Trigger        | The user selects to import a photo from their phone to their calendar|
-|Precondition   | The user has a photo to import from their phone and has given permission for the app to use their local media|
-|Basic Path	    | 1. The user selects to import a photo</br>2. The user selects a photo from thier phone</br>3. The user selects which day on the calendar to add the photo to|
-|Alternate Path | None|
-|Post Condition	| The calendar will update and show the user's photo on their calendar.|
-|Exception Paths| None|
-|Other		      | None|
-### 3.2.10 Show all events, even when large number
-
-Full Description?
-
-#### 3.2.10.1 Use Case Name?
+#### 3.2.9.1 The user wants to upload a photo to clarify their message
 
 | Data          | Description |
 |:--------------| :--------------|
-|Use Case Name  | Show all events|
-|Use Case Detail| xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx |
+|Use Case Detail| As a user, I want to be able to upload photos to my assignments or discussion threads to provide more detail on various subjects. |
 |XRef           | |
-|Trigger        | A user clicks on the show all events button for one day|
-|Precondition   | The user is on the calendar page|
-|Basic Path	    | 1. The calendar is expanded for that one day, listing all the events for that day</br>2. When done, the user can return the calendar to the normal view|
-|Alternate Path | None|
-|Post Condition	| The user's calendar is expanded for the day they selected|
-|Exception Paths| If their is nothing to show for that day, the user's calendar won't have the show all button|
+|Trigger        | The user selects the photo button on an event or thread. |
+|Precondition   | The user has a photo to import from their phone and has given permission for the app to use their local media. |
+|Basic Path	    | 1. The user logs into I-Learn through the app. 2. The users taps on an event, assignment, or thread. 3. The the 'photo' button. 4. The user allows permission to camera role (happens once). 5. The user selects or take the desired photo to upload. |
+|Alternate Path | Step 3. The user could also choose to take a photo instead of upload one. |
+|Post Condition	| The event or message will update and show the user's photo.|
+|Exception Paths| The user does not allow access to their camera role or camera. |
 |Other		      | None|
+
+### 3.2.10 Collapsible calender
+
+When the user views the calender, each day will contain a list of events for that given day. At first, only one event is shown, but the user can choose to show all of them by tapping a button labeled 'Show all'.
+
+#### 3.2.10.1 Calender list of events extended.
+
+| Data          | Description |
+|:--------------| :--------------|
+|Use Case Detail  | As a mobile user, I want to be able to expand or condense a list of events to fit my small screen. |
+|XRef           | |
+|Trigger        | A user taps on the ‘Show all’ event button for one day. |
+|Precondition   | The user has already logged into the app with their Ilearn accounts and is viewing the calendar page. |
+|Basic Path	    | 1. User logs into Ilearn through app. 2. The user tapes the ‘calender’ icon. 3. The user tapes a ‘See all’ button on one day in the calender. 4. The list of events for that day is expanded. |
+|Alternate Path | None|
+|Post Condition	| If the button is tapped again, the list of events collapses to save screen space. |
+|Exception Paths| If there is nothing to show for that day, the user's calendar will not have the ‘Show all’ button. |
+|Other		      | None. |
+
 ### 3.2.11 Group Communication 1: message chat
 
-Full Description?
+When a user has joined a group on the app, they will want to be in contact with their group members through text or email. The app will provide this information upon request and load it into the appropriate messaging app.
 
-#### 3.2.11.1 Use Case Name?
+#### 3.2.11.1  Group Message Chat
 
 | Data          | Description |
 |:--------------| :--------------|
-|Use Case Name  | Group Message Chat|
-|Use Case Detail| xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx |
+|Use Case Detail| As a classmate, I want to be able to text members of my study group. |
 |XRef           | |
-|Trigger        | A user clicks on Group Message Chat button|
-|Precondition   | The user is in a group|
-|Basic Path	    | 1. The user is taken to the Group Message Chat screen</br>2. The user can view/reply to the group|
-|Alternate Path | The user is displayed the phone numbers/emails for the members of his/her group|
-|Post Condition	| The user is in contact with his/her group|
-|Exception Paths| If the user is not in a group, the user is prompted to create/join a group|
+|Trigger        | A user taps the ‘Contact’ button on a member of a group from a list. |
+|Precondition   | User has been accepted into a group|
+|Basic Path	    | 1. The user taps a button labeled ‘Groups’. 2. User navigates through the list of group members and taps on one they want to text. 3. App switches over to default messaging app with group member’s phone number. |
+|Alternate Path | If the group member the user has selected has not provided a phone number, then the default email app will load with the email. |
+|Post Condition	| The user is in contact with his/her group. |
+|Exception Paths| If the group member the user has selected has not provided a phone number or an email, the app will display a message stating such. |
 |Other		      | None|
+
 ### 3.2.12 Group Communication 2: Video Chat
 
-Full Description?
+With the press of a single button, a user can start a video conference call with their group from the app. The app will utilize Skype or Google Hangouts to perform the task for the user. 
 
-#### 3.2.12.1 Use Case?
+#### 3.2.12.1Video Chat
 
 | Data          | Description |
 |:--------------| :--------------|
-|Use Case Name  | Video Chat|
-|Use Case Detail| xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx |
+|Use Case Detail| As a user, I want to easily start a video call with a fellow group members from the app. |
 |XRef           | |
-|Trigger        | A user clicks on the Group Video Chat button|
-|Precondition   | The user is in a group|
-|Basic Path	    | 1. The user joins a Group Video Chat session, hosted by a 3rd-party service|
+|Trigger        | A user clicks on the Group Video Chat button. |
+|Precondition   | The user is accepted into a group. |
+|Basic Path	    | The user taps the ‘Groups’ button. 2. The user taps the ‘Group video chat’ button. 3. A 3rd party video app, such as Skype or Google Hangouts, is started with all members of the group invited to join a video conference call. |
 |Alternate Path | None|
 |Post Condition	| The user is in a Group Video Chat session|
-|Exception Paths| If the user isn't in a group, the user is prompted to create/join a group|
-|Other		      | None|
+|Exception Paths| If members of the group have not provided the necessary information for the app to contact them, an error is displayed stating so. |
+|Other		      | Every user who uses the app will need to provide their Gmail or Skype names so this feature works properly. |
+
 ### 3.2.13 FERPA compliant
 
 Full Description?
@@ -534,6 +637,7 @@ Full Description?
 |Post Condition	| None|
 |Exception Paths| None|
 |Other		      | The Family Educational Rights and Privacy Act (FERPA) is a Federal law designed to protect the privacy of student education records.
+
 ### 3.2.14 Discussion Board Integration
 
 Full Description?
@@ -552,6 +656,7 @@ Full Description?
 |Post Condition | User is able to use their Discussion Boards via the calendar|
 |Exception Paths| None|
 |Other		      | The user will also receive notifications of new messages in the Discussion Boards|
+
 ### 3.2.15 Time Clock
 
 Full Description?
@@ -570,6 +675,7 @@ Full Description?
 |Post Condition | None|
 |Exception Paths| None|
 |Other		| None|
+
 ### 3.2.16 Recurring Appointments
 
 Full Description?
@@ -588,6 +694,7 @@ Full Description?
 |Post Condition | None|
 |Exception Paths| None|
 |Other		| None |
+
 ### 3.2.17 Grades
 
 Full Description?
@@ -606,6 +713,7 @@ Full Description?
 |Post Condition | None|
 |Exception Paths| None|
 |Other		| None |
+
 ### 3.2.18 Widget
 
 Full Description?
@@ -624,6 +732,7 @@ Full Description?
 |Post Condition | None|
 |Exception Paths| None|
 |Other		| None |
+
 ### 3.2.19 Active Directory / LDAP
 
 A directory system which allows the sharing of information between students. Allows for many features like the sharing of contact information or schedules, providing contact methods and meeting planning for groups. 
@@ -641,6 +750,7 @@ A directory system which allows the sharing of information between students. All
 |Post Condition | The user is presented with their default email client with a new email to the student selected |
 |Exception Paths| A new view may be selected |
 |Other          | |
+
 ### 3.2.20 Notification Control
 
 Settings for how the user wants to be notified by the application. Provides a user options for their personal preference of notification method.
@@ -672,6 +782,7 @@ Settings for how the user wants to be notified by the application. Provides a us
 |Post Condition | The user receives alert notifications through their devices default notification method|
 |Exception Paths| The user can navigate to a different view |
 |Other          | |
+
 ### 3.2.21 Shared Calendar
 
 This feature allows the user to select one or more of their calendars, and share them with one other person, or a group of people.
@@ -703,6 +814,7 @@ This feature allows the user to select one or more of their calendars, and share
 |Post Condition |  The people sharing a calendar with the user are notified when changes are made.|
 |Exception Paths| If the user is not sharing any calendars|
 |Other          |  |
+
 ### 3.2.22 Push Notifications
 
 This is a notification that will be seen at any time, even if the app is not being actively used.
@@ -720,6 +832,7 @@ This is a notification that will be seen at any time, even if the app is not bei
 |Post Condition | The notification closes, and the user can return to a prior activity.|
 |Exception Paths| The user has disabled notifications.|
 |Other          |  |
+
 ### 3.2.23 Invitations
 
 This Feature allows the user to send an invitation to one or more of their calendar events, to one other person, or a group of people.
@@ -735,13 +848,60 @@ This Feature allows the user to send an invitation to one or more of their calen
 |Basic Path     | <li type='1'>In the settings the user selects “share event(s)”.</li><li type='1'>The user selects the event(s) they want to share.</li><li type='1'>The user selects the people to share the event(s) with.</li>|
 |Alternate Path |  |
 |Post Condition | The people selected receive a notification, and have the option to view the user's event(s).|
-|Exception Paths| If the user has not created any events.|
+|Exception Paths| Only Available if events exist.|
 |Other          |  |
-### 3.2.24 Continuous Calendar
+
+### 3.2.24 Simplified "To Do" assignment display
+
+The simplified assignment display allows users to view one task as a time in order to reduce stress and help them focus on the task at hand. The screen will display the title of the assignment, two arrow buttons at the bottom, and a green check mark button centered between the arrows. 
+
+#### 3.2.24.1 Completing an assignment
+
+| Data          | Description |
+|:--------------| :--------------|
+|Use Case Detail| As a user, I want to mark an assignment as complete and remove it from my assignment list |
+|XRef           | |
+|Trigger        | The user selects the green check mark button at the bottom of the screen|
+|Precondition   | The user is on the simplified display page |
+|Basic Path     | 1. The assignment is marked as completed<br/> 2.The assignment is remove from the current list of assignments|
+|Alternate Path | The user may reselect an assignment as uncomplete in the event that they need to work on it further |
+|Post Condition | The next assignment in the list is display on the screen. The assignment will be marked as completed on the main calendar |
+|Exception Paths| If the user presses an arrow button and the check mark button at the same time, the path will not be executed and the assignment will not be marked as complete|
+|Other          | None|
+
+#### 3.2.24.2 Navigating through assignments
+
+| Data          | Description |
+|:--------------| :--------------|
+|Use Case Detail| As a user, I want to search through the list of assignments to view what is remaining|
+|XRef           | |
+|Trigger        | The user selects the right arrow button at the bottom of the screen|
+|Precondition   | The user is on the simplified display page |
+|Basic Path     | The next assignment in the list is display on screen|
+|Alternate Path | The user may select the left arrow to move to preceeding assignments in the list |
+|Post Condition | The corresponding assignment is display on the screen |
+|Exception Paths| If the user presses both arrow buttons at the same time, the path will not be executed and the screen will remain on the current assignment|
+|Other          | None|
+
+#### 3.2.24.3 Adding assignments to the list
+
+| Data          | Description |
+|:--------------| :--------------|
+|Use Case Detail| As a user, I want to add class assignments to my to do list|
+|XRef           | |
+|Trigger        | The user selects the "add to my to-do list" button|
+|Precondition   | The user is viewing a individual assignment on the individual assignment detail page |
+|Basic Path     | The assignment title is added to the end of the list|
+|Alternate Path | The user may insert alternative text for the assignment to be display in the list |
+|Post Condition | The user may now view that assignment in the list |
+|Exception Paths| If the assignment does not have a title, the user will be prompted to enter alternative text. If the user does not enter any text when prompted, an error message is displayed prompting them to try again or cancel.|
+|Other          | None|
+
+### 3.2.25 Continuous Calendar
 
 Users need to access the different months efficiently. The Calendar app will have a scrollable section where all the months can be accessed. The idea of the continuous calendar is that users will intuitively know that they can scroll to other months, weeks or days. In the case of a Month view, the last week of the prior month, and the first week of the next month will be added to the current month view as a visual cue that the section is scrollable. Text labels and color backgrounds will help the user identify the month as they scroll. 
 
-### 3.2.24.1 Continuous Calendar Month View
+### 3.2.25.1 Continuous Calendar Month View
 
 | Data          | Description |
 |:--------------| :--------------|
@@ -755,7 +915,7 @@ Users need to access the different months efficiently. The Calendar app will hav
 |Exception Paths| The user may choose another view at any time.|
 |Other          | None.|
 
-### 3.2.24.2 Continuous Calendar Month Alternating Background Color
+### 3.2.25.2 Continuous Calendar Month Alternating Background Color
 
 | Data          | Description |
 |:--------------| :--------------|
@@ -769,7 +929,7 @@ Users need to access the different months efficiently. The Calendar app will hav
 |Exception Paths| The user may choose another view at any time.|
 |Other          | None.|
 
-### 3.2.24.3 Continuous Calendar Month Label
+### 3.2.25.3 Continuous Calendar Month Label
 
 | Data          | Description |
 |:--------------| :--------------|
@@ -782,23 +942,7 @@ Users need to access the different months efficiently. The Calendar app will hav
 |Post Condition | The selected view by “Month” is presented to the user and a label will appear on top of the scrollable section.|
 |Exception Paths| The user may choose another view at any time.|
 |Other          | None.|
-### 3.2.25 Feature Name?
 
-Feature Description?
-
-#### 3.2.25.1 Use Case Name?
-
-| Data          | Description |
-|:--------------| :--------------|
-|Use Case Detail| Full Use Case Details. What, Who, Why....               |
-|XRef           | Lorem ipsum dolor sit amet, consectetur adipiscing elit.|
-|Trigger        | Lorem ipsum dolor sit amet, consectetur adipiscing elit.|
-|Precondition   | Lorem ipsum dolor sit amet, consectetur adipiscing elit.|
-|Basic Path     | Lorem ipsum dolor sit amet, consectetur adipiscing elit.|
-|Alternate Path | Lorem ipsum dolor sit amet, consectetur adipiscing elit.|
-|Post Condition | Lorem ipsum dolor sit amet, consectetur adipiscing elit.|
-|Exception Paths| Lorem ipsum dolor sit amet, consectetur adipiscing elit.|
-|Other          | Lorem ipsum dolor sit amet, consectetur adipiscing elit.|
 ### 3.2.26 Holidays
 
 Users need to be aware of specific calendar holidays to plan events more effectively. Text labels and watermarked icons denoting each holiday will help the user identify those days at first glance.
@@ -830,6 +974,7 @@ Users need to be aware of specific calendar holidays to plan events more effecti
 |Post Condition | The selected view will identify holidays by showing a watermark image description of the holiday.|
 |Exception Paths| The user can select another calendar view other than the Month view.|
 |Other          | None.|
+
 ### 3.2.27 Location
 
 Because users will be able to add details to a task or event, an option to add addresses to a specific event or task will be available to coordinate group meetings or other social gatherings. This feature will help users to conveniently link addresses to events and display a map view of the addresses using Google Maps. Google Maps will also be used to display directions to a location.
@@ -861,49 +1006,67 @@ Because users will be able to add details to a task or event, an option to add a
 |Post Condition | The user sees a Google Map screen of the location of the event when tapping on the icon found in the event's details screen.|
 |Exception Paths| The attempt may be abandoned at any time.|
 |Other          | None.|
-### 3.2.28 Feature Name?
 
-Feature Description?
+### 3.2.28 Apple Maps Integration
 
-#### 3.2.28.1 Use Case Name?
+
+Have support for point locations to pop up in the calendar when you need to be somewhere. This support is specific to Apple maps for those that use MAC or IOS.
+
+#### 3.2.28.1 Support for Apple Maps on Iphone
 
 | Data          | Description |
 |:--------------| :--------------|
-|Use Case Detail| Full Use Case Details. What, Who, Why....               |
+|Use Case Detail| As an iphone user, I want to be able to see where I'm meeting at so that I can arrive at the time scheduled. I will be on the move so I need it to work on my phone.|
 |XRef           | Lorem ipsum dolor sit amet, consectetur adipiscing elit.|
-|Trigger        | Lorem ipsum dolor sit amet, consectetur adipiscing elit.|
-|Precondition   | Lorem ipsum dolor sit amet, consectetur adipiscing elit.|
-|Basic Path     | Lorem ipsum dolor sit amet, consectetur adipiscing elit.|
-|Alternate Path | Lorem ipsum dolor sit amet, consectetur adipiscing elit.|
-|Post Condition | Lorem ipsum dolor sit amet, consectetur adipiscing elit.|
-|Exception Paths| Lorem ipsum dolor sit amet, consectetur adipiscing elit.|
-|Other          | Lorem ipsum dolor sit amet, consectetur adipiscing elit.|
+|Trigger        | A scheduled item with an address is clicked.|
+|Precondition   | The user is an apple maps user. The user schedules an item with an address or recognized location.|
+|Basic Path     | The user clicks an item with a scheduled meeting place, they click on a location icon, and the location is then used in apple maps.|
+|Alternate Path | None.|
+|Post Condition | Apple maps brings up the location and directions.|
+|Exception Paths| If there is not a location entered then no icon will appear. Apple maps will handle invalid locations.|
+|Other          | None.|
+
+#### 3.2.28.1 Support for Apple Maps on MAC computers
+
+| Data          | Description |
+|:--------------| :--------------|
+|Use Case Detail| As a MAC computer user, I want to be able to see where I'm meeting at so that I can arrive at the time scheduled. I need to be able to plan ahead of time how long I need to get there.|
+|XRef           | Lorem ipsum dolor sit amet, consectetur adipiscing elit.|
+|Trigger        | An item is scheduled with a location.|
+|Precondition   | The user is an apple maps user. The user creates a new calendar item.|
+|Basic Path     | The user schedules an item, and sets a location. A small help balloon pops up that asks if they want to see the time to reach their destination. Once they click the balloon then Apple Maps is brought up with the location and the time to arrive.|
+|Alternate Path | The user clicks an item with a scheduled meeting place, they click on a location icon, and the location is then used in apple maps.|
+|Post Condition | Apple maps must show the time required to reach the destination.|
+|Exception Paths| If there is not a location entered then no icon will appear. Apple maps will handle invalid locations.|
+|Other          | None.|
+
 ### 3.2.29 Other Maps Integration
 
-Full Description?
+The calendar application will provide support for locations with the following different applications to help a variety of map users: Here WeGo, Waze, MapFactor, Mapquest, Scout GPS, Maps.Me and InRoute.
 
-#### 3.2.29.1 Use Case Name?
+#### 3.2.29.1 Find a location
 
 | Data          | Description |
 |:--------------| :--------------|
-|Use Case Name  | Have support for point locations to pop up in the calendar if you need to go and be somewhere|
+|Use Case Detail  | As a user of one of the map applications I want to be able to find where I need to go when I schedule it on my calendar.|
 |XRef           | |
-|Trigger        | Clicking or tapping on the “Where” item when creating an event or task.|
+|Trigger        | Clicking or tapping on the “Where” icon when creating an event or task.|
 |Precondition   | By default, the user will see an option to create an event or task for a specific day.|
 |Basic Path     | 1. The user creates an event on a specific day by clicking or tapping on the “create event.”<br>2. The user adds an address on the “Where” item of the create event screen.<br>3. The application goes back to the calendar view and shows an icon (map with a pin) next to the added event.<br>4. If user clicks or taps on the map/pin icon, application sends address of event as a destination too user's DEFAULT map application|
 |Alternate Path | In step 1, the user may have already created an event or task in previous interactions. The user can just click on the event and add a location. Return to step 4. If a user does not have a default map application then use the google maps browser for step 4.|
 |Post Condition | The user and their event location is sent to their DEFAULT map application which will plan a route to the location of the event from their current position.|
 |Exception Paths| The attempt may be abandoned at any time. If a user does not have a default map application then use the google maps browser for step 4. |
 |Other          | None.|
+
 ### 3.2.30 Video Tutorial
 
-Full Description?
+The calendar application will provide a video tutorial on how to use the application. The goal is to help new users to become familiar with how to use the basic parts of the application. This will make users feel more comfortable adjusting to our application.
 
-#### 3.2.30.1 Use Case Name?
+#### 3.2.30.1 Learning Application Capabilities
 
 | Data          | Description |
 |:--------------| :--------------|
-|Use Case Name  | Our application should have a short video tutorial available to help new users|
+|Use Case Detail  | Our application should have a short video tutorial available to help new users learn our application.|
 |XRef           | |
 |Trigger        | Entering the Application for the first time.|
 |Precondition   | The user must be signing into the app for the first time.|
@@ -912,6 +1075,7 @@ Full Description?
 |Post Condition | After the individual has seen the popup for the first time it will not pop-up again. They will have to visit the help section to view the video again|
 |Exception Paths| The pop-up may be left by clicking continue at any time.|
 |Other          | None.|
+
 ### 3.2.31 Group Permissions
 
 Group owners should be able to set permissions for the users in the group. They will also have the ability to give announcements, chat, schedule meetings, and make group links.
@@ -943,6 +1107,7 @@ Group owners should be able to set permissions for the users in the group. They 
 |Post Condition | The user see's the data that has been posted.|
 |Exception Paths| If there are no group assignments for the class the page will say: "No group work 🎉!"..|
 |Other          | None|
+
 ### 3.2.32 Group Links
 
 Links are used to deep link to third party technologies for collaboration tools.
@@ -960,6 +1125,7 @@ Links are used to deep link to third party technologies for collaboration tools.
 |Post Condition | The link turns another color notifying the user that it has been selected.|
 |Exception Paths| The link does not work and takes them to a 404 page.|
 |Other          | None|
+
 ### 3.2.33 Sort & Filter
 
 Calendar items can be sorted or filters based on details about the calendar event.
@@ -991,6 +1157,7 @@ Calendar items can be sorted or filters based on details about the calendar even
 |Post Condition | The user continues to see his assignments in the order determined by the sort until they reset the sort settings.|
 |Exception Paths| The user does not have any events happening and the page say "No events".|
 |Other          | Users can choose to sort by time length, grade percentage, class, etc.|
+
 ### 3.2.34 Personal Assistant
 
 A small, animated, avatar, much in the vein of “Clippy”, that suggests tasks and assignments for the user to begin work on. 
@@ -1008,6 +1175,7 @@ A small, animated, avatar, much in the vein of “Clippy”, that suggests tasks
 |Post Condition | The “Personal Assistant”checkbox must remain checked if the user wants to continue to user the feature. |
 |Exception Paths| If there are no upcoming assignments to suggest, the assistant will say “Nothing ...yet!”. |
 |Other          | Assistant is a small avatar that is displayed onscreen with text in speech bubbles. |
+
 ### 3.2.35 Feedback
 
 User is notified if the instructor provides feedback on graded assignments.
@@ -1039,6 +1207,7 @@ User is notified if the instructor provides feedback on graded assignments.
 |Post Condition | The “Notify if feedback”checkbox must remain checked if the user wants to continue to user the feature, and the “Include feedback” switch must be turned on. |
 |Exception Paths| None. |
 |Other          | None. |
+
 ### 3.2.36 Group Security
 
 If a user wants to join a group, they will be barred from doing so until they receive an invitation from the group owner or administrator.
@@ -1070,6 +1239,7 @@ If a user wants to join a group, they will be barred from doing so until they re
 |Post Condition | None. |
 |Exception Paths| If a user has been rejected from a group, they cannot elicit the group again for an invitation after a third try. |
 |Other          | None. |
+
 ### 3.2.37 Database for Account Usernames and Passwords
 
 The application will feature a database that will be used to retain usernames and password for students to access their accounts.
@@ -1102,6 +1272,7 @@ This feature requires user to log in to view their calendars and thus provides s
 |Post Condition | The user is taken to the BYUI link page where the user is asked if they would like to connect their account to a BYUI account|
 |Exception Paths| If the username uses invalid characters, the process is ended and the user is notified about which characters are invalid|
 |Other          | None|
+
 ### 3.2.38 Inspirational Quotes and Images
 
 The calendar will allow users to add inspirational quotes and images to their daily views for the purpose of motivating and encouraging the user in their assignments. This will give the users a means of customizing their own calendars. 
@@ -1133,6 +1304,7 @@ The calendar will allow users to add inspirational quotes and images to their da
 |Post Condition | The prompt window closes and the image is displayed in the calendar view.|
 |Exception Paths| If the user selects an invalid file or does not have any image on their clipboard, an error message is displayed and the user is prompted to try again or close the window.|
 |Other          | None|
+
 ### 3.2.39 Adjustable Calendar/Calendar Item Size
 
 The user will be able to adjust the size of the calendar and have the calendar items scale proportiontely. The user will be able to zoom in on text of an item by clicking the appropriate day or hovering their mouse over the item. Here an item is defined as any event or assignment.
@@ -1164,6 +1336,7 @@ The user will be able to adjust the size of the calendar and have the calendar i
 |Post Condition |The user is able to view the full details of the item|
 |Exception Paths| If an item that is selected does not contain a description. The zoom window displays "No item description" |
 |Other          | None |
+
 ### 3.2.40 Share Calendar Application
 
 User shares the application through their Facebook, Google Plus, and Twitter accounts. The user may also share the application through email.
@@ -1209,38 +1382,43 @@ User shares the application through their Facebook, Google Plus, and Twitter acc
 |Post Condition | The user is presented with a notification that the calendar is sent.|
 |Exception Paths| The user may select "Cancel" to exit at any point in the process.|
 |Other          | None.|
+
 ### 3.2.41 Weather
 
-Full Description?
+When you click on an event it will include the predicted weather for that day
 
-#### 3.2.41.1 Use Case Name?
+#### 3.2.41.1 Weather for Specific Days
 
-| Weather for Specific Days  | When you click on an event it will include the predicted weather that day             |
-|:--------------| :--------------|
-|Use Case Name  | Weather for Specific Days                               |
-|Use Case Detail| xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx |
-|XRef           |   none yet                                              |
+| Data          | Description |
+|:--------------|:----------------|
+|Use Case Detail| A user wants to know what the weather will be like for a specific day. |
+|XRef           |         |
 |Trigger        | When the user selects an event that they have planned, then on the window that shows that even will also appear the predicted weather that day. Also when planning the event you can see the predicted weather on that window   |
 |Precondition   | Have an account created and/or have an even planned     |
-|Basic Path     | 1. Create account with Student Calendar 2. Select day where user would like to plan an event 3. System displays event creation window and on there the weather predicted shows up as well               |
+|Basic Path     | 1. Create account with Student Calendar <br> 2. Select day where user would like to plan an event <br> 3. System displays event creation window and on there the weather predicted shows up as well               |
 |Alternate Path | 1. Select an event that has been created 2. System displays the event window along with the predicted weather that day.                          |
 |Post Condition | User is updated with information about that days weather|
 |Exception Paths| User can close event window at any time                 |
 |Other          | none                                                    |
+
 ### 3.2.42 Tutor Integration
 
-| Tutor Integration| Select a tutor appointment form BYU-I website        |
-|:--------------| :--------------|
-|Use Case Name  | Tutor Integration                                       |
-|Use Case Detail| xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx |
-|XRef           |    none yet                                             |
-|Trigger        | User selects tutor request button                       |
-|Precondition   | Account created on Student Calendar app, Internet Access, and an account with BYU-I as a student                |
-|Basic Path     | 1. User selects request tutor button 2. New window opens directing to BYU-I Tutor website |
-|Alternate Path | none                                                    |
+Full Description?
+
+#### 3.2.42.1 Use Case Name
+
+| Data          | Description |
+|:--------------|:----------------|
+|Use Case Detail| Select a tutor appointment form BYU-I website |
+|XRef           | none yet |
+|Trigger        | User selects tutor request button |
+|Precondition   | Account created on Student Calendar app, Internet Access, and an account with BYU-I as a student |
+|Basic Path     | 1. User selects request tutor button <br /> 2. New window opens directing to BYU-I Tutor website |
+|Alternate Path | none |
 |Post Condition | Event is created and has a section where the user can add information about the tutor session created |
-|Exception Paths|Window can be closed at any time, not setting tutor event|
-|Other          | none                                                    |
+|Exception Paths| Window can be closed at any time, not setting tutor event|
+|Other          | none |
+
 ### 3.2.43 School Functions
 
 Full Description?
@@ -1259,6 +1437,7 @@ Full Description?
 |Post Condition | Student calendar has a side panel that is updated with the school functions and events |
 |Exception Paths| User could decide not to sign into BYU-I and not have the school event list |
 |Other          | none                                                    |
+
 ### 3.2.44 Printing
 
 Full Description?
@@ -1277,24 +1456,25 @@ Full Description?
 |Post Condition | Calendar is left unchanged; however, user has a printed portion of desired part of the calendar |
 |Exception Paths|                                                         |
 |Other          | none                                                    |
+
 ### 3.2.45 Badges
 
 Full Description?
 
-#### 3.2.45.1 Use Case Name?
+#### 3.2.45.1 Badges?
 
 | Badges | Show badges indicating how many messages, notifications, or tasks that have not been seen                                                       |
-|:--------------| :--------------|
-|Use Case Name  | Badges                                                  |
+|:--------------| :--------------|                                        
 |Use Case Detail| xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx |
 |XRef           |  none yet                                               |
 |Trigger        |  User chooses to check badges                           |
 |Precondition   | Events created, School functions connected              |
-|Basic Path     | 1. Select a badge 2. Select from badges event or notification to view 3. Continue looking through badges until out or until user has seen what they wanted to. |
+|Basic Path     | 1. Select a badge <br>2. Select from badges event or notification to view 3. Continue looking through badges until out or until user has seen what they wanted to. |
 |Alternate Path | none                                                    |
 |Post Condition | Badges are cleared and system is ready to set more      |
 |Exception Paths| User may not check all the badges which would leave some notifications still up. |
 |Other          | none                                                    |
+
 ### 3.2.46 Quick Access
 
 The user has the option to be quickly directed to I-Learn and specifically individual classes within I-Learn.
@@ -1312,6 +1492,7 @@ The user has the option to be quickly directed to I-Learn and specifically indiv
 |Post Condition | The user is presented with a notification that the calendar is sent.|
 |Exception Paths| If there is no internet access the user will receive an error message saying "No Internet Connection".|
 |Other          | None.|
+
 ### 3.2.47 Assignment Alarm
 
 The user has the option to set an alarm for individual assignments that will let the user know when they should begin working on the assignment.
@@ -1324,11 +1505,12 @@ The user has the option to set an alarm for individual assignments that will let
 |XRef           | |
 |Trigger        | The user clicks an existing assignment event on the calendar.|
 |Precondition   | An assignment event must already be created.|
-|Basic Path     | 1. After clicking an assignment event a window will pop up displaying the details of the event. The user will click the "Alarm" button. 2. The alarm interface will give the user drop-down options for date and time for the alarm to trigger. After selecting the date and time the user will have the option of clicking "Set" or "Cancel".  "Cancel" closes the alarm interface and "Set" sets the alarm.|
+|Basic Path     | 1. After clicking an assignment event a window will pop up displaying the details of the event. The user will click the "Alarm" button. <br>2. The alarm interface will give the user drop-down options for date and time for the alarm to trigger. After selecting the date and time the user will have the option of clicking "Set" or "Cancel".  "Cancel" closes the alarm interface and "Set" sets the alarm.|
 |Alternate Path | None.|
 |Post Condition | The user will receive a notification that the alarm has been set for a specified date and time.  When the alarm triggers, the notification will include the name of the assignment for which the alarm was set.|
 |Exception Paths| None.|
 |Other          | None.|
+
 ### 3.2.48 Feature Name?
 
 Full Description?
@@ -1346,6 +1528,7 @@ Full Description?
 |Post Condition | User can select shared calendars to view along side school calendar/events and can selectively view one or all calendars through a toggle |
 |Exception Paths| The preferred social media service is not supported. Authentication fails even if proper credentials are entered. Shared calendar data does not update. |
 |Other          | None |
+
 ### 3.2.49 Feature Name?
 
 Full Description?
@@ -1419,6 +1602,7 @@ Full Description?
 |Post Condition ||
 |Exception Paths| Can't authenticate to post to Facebook|
 |Other          ||
+
 ### 3.2.50 Feature Name?
 
 Full Description?
@@ -1437,6 +1621,7 @@ Full Description?
 |Post Condition | The assignment is shown with the priority assignments |
 |Exception Paths| User can unselect priority button|
 |Other          | None|
+
 ### 3.2.51 Google API
 
 Full Description?
@@ -1455,6 +1640,7 @@ Full Description?
 |Post Condition | Google Calender items will be Synced|
 |Exception Paths| User can logout of Google account|
 |Other          | None|
+
 ### 3.2.52 Apple API
 
 Full Description?
@@ -1473,6 +1659,7 @@ Full Description?
 |Post Condition | Apple Calender will be Synced.|
 |Exception Paths| User can logout of Apple ID|
 |Other          | None|
+
 ### 3.2.53 Outlook API
 
 Full Description?
@@ -1491,6 +1678,7 @@ Full Description?
 |Post Condition | Outlook Calender will be Synced.|
 |Exception Paths| User can logout of Outlook account|
 |Other          | None|
+
 ### 3.2.54 Feature Name?
 
 Full Description?
@@ -1550,9 +1738,10 @@ Full Description?
 |Post Condition | User is able to see availability of associates.|
 |Exception Paths| User hasn't added anyone to app and is unable to see availability.|
 |Other          | |
-### 3.2.55 Feature Name?
 
-Full Description?
+### 3.2.55 Twitter
+
+User will be able to use twitter while having their calendar up. This will allow the user to connect to other people sharing similar assignments, groups, or just something inspirational or motivational.
 
 #### 3.2.55.1 Twitter
 
@@ -1567,9 +1756,10 @@ Full Description?
 |Post Condition | The share option will not direct the user to the login page for Twitter anymore.|
 |Exception Paths| The user may select "Cancel" to exit at any point in the process.|
 |Other          | None.|
-### 3.2.56 Feature Name?
 
-Full Description?
+### 3.2.56 Instagram
+
+User can connect to Instagram one the calendar to share pictures of their calendar
 
 #### 3.2.56.1 Instagram
 
@@ -1584,9 +1774,10 @@ Full Description?
 |Post Condition | The share option will not direct the user to the login page for Instagram anymore.|
 |Exception Paths| The user may select "Cancel" to exit at any point in the process.|
 |Other          | None.|
-### 3.2.57 Feature Name?
 
-Full Description?
+### 3.2.57 Custom Images and Icons
+
+The calendar should be personalized. The user will have the ability to interact with the app to change things to their favorite images for the display options on their calendar.
 
 #### 3.2.57.1 Custom Images and Icons
 
@@ -1601,9 +1792,10 @@ Full Description?
 | Post Condition  | The user will have a customized view and appearance for each class and layout.|
 | Exception Paths | The user may select "Cancel" to exit at any point in the process.|
 | Other           | None.|
-### 3.2.58 Feature Name?
 
-Full Description?
+### 3.2.58 Custom Videos
+
+The calendar will ask for camera permissions so that the user can videos to customize their display options.
 
 #### 3.2.58.1 Custom Videos
 
@@ -1618,11 +1810,12 @@ Full Description?
 |Post Condition | The user will have a customized view and appearance for each class and layout.|
 |Exception Paths| The user may select "Cancel" to exit at any point in the process.|
 |Other          | None.|
-### 3.2.59 Feature Name?
 
-Full Description?
+### 3.2.59 ToDo Task Engine
 
-#### 3.2.59.1 Calendar Task & ToDo Engine 
+The user is going to be able to create their tasks, events and notifications. There will be a ToDo list view where the user can check to see what they have planned for their calendar. 
+
+#### 3.2.59.1 Calendar Task & ToDo Engine
 
 | Data            | Description|
 | :-------------- | :--------------|
@@ -1635,6 +1828,7 @@ Full Description?
 | Post Condition  | The task will be added to both the calendar and the ToDo list|
 | Exception Paths | The user may select either 'cancel' while he or she is creating the task, or 'delete' to delete it after the fact|
 | Other           | None |
+
 ### 3.2.60 Feature Name?
 
 Full Description?
@@ -1652,6 +1846,7 @@ Full Description?
 | Post Condition  | The calendar's view setting will be updated and henceforth the calendar will be displayed in the view style that the user selected|
 | Exception Paths | If the user wishes to undo their selection, they will simply select the view that they had previously been using|
 | Other           | None|
+
 ### 3.2.61 Feature Name?
 
 Full Description?
@@ -1666,24 +1861,852 @@ Full Description?
 | Precondition    | The feature will only enable if the user so chooses|
 | Basic Path      | The user clicks 'Settings', then 'Adventure Mode', then toggles the mode's setting toggle to 'on'|
 | Alternate Path  | None|
-| Post Condition  | After enabling this feature, the sidebar will include a Points and XP 'character stats' display akin to those found in videogames, the 'create task' dialogue will prompt the user for task's point values, and the app will award points upon task completion                                  |
+| Post Condition  | After enabling this feature, the sidebar will include a Points and XP 'character stats' display akin to those found in videogames, the 'create task' dialogue will prompt the user for task's point values, and the app will award points upon task completion |
 | Exception Paths | This setting can be disable with the same settings toggle that enabled it.|
-| Other           | In the event that it is disabled, and then later reenabled, the user should maintain their same point balance                                                 
+| Other           | In the event that it is disabled, and then later reenabled, the user should maintain their same point balance|
+
 ### 3.2.62 Feature Name?
 
 Full Description?
 
 #### 3.2.62.1 Assignment List
 
-| Data            | Description                                                                                                                          |
-| :-------------- | :--------------                                                                                                                      |
-| Use Case Detail | The app includes a list view where all the user's tasks from all classes and categories are visible                                  |
-| XRef            |                                                                                                                                      |
-| Trigger         | The user presses the 'list view' button                                                                                              |
-| Precondition    | This feature has no precondition - If the user has not added any tasks yet, then the list will be empty                              |
-| Basic Path      | 'List view' button visible on main view of app                                                                                       |
-| Alternate Path  | 'List view' button visible in app navigation drawer                                                                                  |
-| Post Condition  | The list view is displayed                                                                                                           |
+| Data            | Description|
+| :-------------- | :--------------|
+| Use Case Detail | The app includes a list view where all the user's tasks from all classes and categories are visible|
+| XRef            ||
+| Trigger         | The user presses the 'list view' button|
+| Precondition    | This feature has no precondition - If the user has not added any tasks yet, then the list will be empty|
+| Basic Path      | 'List view' button visible on main view of app|
+| Alternate Path  | 'List view' button visible in app navigation drawer|
+| Post Condition  | The list view is displayed|
 | Exception Paths | The user can navigate back to the calendar view by simply pressing the 'calendar' button visible at the top of the list view display |
-| Other           | None                                                                                                                                 |
+| Other           | None|
+
+### 3.2.63 School Catalog
+
+This feature allows the user to view the entire catalog for their respective school.
+
+#### 3.2.63.1 View School Catalog
+| Data          | Description |
+|:--------------| :--------------|
+|Use Case Detail| A user is wanting to view the available courses offered at their school.|
+|XRef           | |
+|Trigger        | A user selects the view catalog button.|
+|Precondition   | A user must be enrolled at a school and connect that school with the app.|
+|Basic Path     | Go to the view catalog button and select it.|
+|Post Condition | The user is in the catalog view for their school.|
+|Exception Paths| A user is not registered for a school and recieves an error message stating so.|
+|Other          | |
+
+### 3.2.64 Class Help
+
+This feature provides some links to websites that would be helpful for a given assignment or task.
+
+#### 3.2.64.1 Help with class
+
+| Data          | Description |
+|:--------------| :--------------|
+|Use Case Detail| A user is looking for more information to help with an assignment.|
+|XRef           | |
+|Trigger        | A user selects the class help button.|
+|Precondition   | A user must have registered for classes and must be linnked up properly with the application.|
+|Basic Path     | A user navigates to the class help button and selects it.|
+|Post Condition | A user is viewing a selection of links.|
+|Exception Paths| No avalable links have been connected to this assignment and user recieves an error message to alert them.|
+|Exception Paths| No assignment has been selected so no links are found, user is asked to select an assignment.|
+|Other          | |
+
+### 3.2.65 Travel Time
+
+This feature shows the user the expected travel time for a particular event that is stored on the calendar.
+
+#### 3.2.65.1 Travel Time
+
+| Data          | Description |
+|:--------------| :--------------|
+|Use Case Detail| A user has an upcoming event and wants to find out how long it will take them to get there.|
+|XRef           | |
+|Trigger        | The user has selected an event on their calendar.|
+|Precondition   | A user must have a valid event stored in calendar.|
+|Basic Path     | A user selects an event on their calendar.|
+|Post Condition | A user is viewing the expected travel time for the selected event.|
+|Exception Paths| No valid event was selected.|
+|Exception Paths| The application is unable to determine the distance to the event and an error message is displayed to the user.|
+|Other          | |
+
+### 3.2.28 Feature Name?
+
+Night mode is a setting that allows the user to toggle a blue light filter to reduce eye strain. 
+
+#### 3.2.28.1 Night Mode
+
+| Data          | Description |
+|:--------------| :--------------|
+|Use Case Detail| As a user, I want to apply a blue light filter to reduce the strain on my eyes from the screen, especially at night.|
+|XRef           | |
+|Trigger        | A user toggles night mode in the settings.|
+|Precondition   | A user opens the settings menu and toggles night mode.|
+|Basic Path     | 1. User chooses to toggle night mode. <br> 2. User enters settings page. <br> 3. The user presses the night mode button. <br> 4. The application applies a blue light filter.|
+|Alternate Path | A brief description of the purpose for night mode will appear on first activation. |
+|Post Condition | A blue light filter has been added.|
+|Exception Paths| None.|
+|Other          | Blue light has been proven to alter circadian rhythm and increase eye-strain. |
+
+# 4.0 Verification
+
+## 4.1 Verify External Interface Requirements
+
+## 4.2 Verification Functional Requirements
+
+In this section of the document we will provide high level details on how we will verify that the functional feature requirements are being met. The specific Test Cases will be descripted in the SDD portion of the document. This section is not intended to contain the test case specifics.
+
+### 4.2.x Feature Name Goes Here
+
+Example Description: When filling out the the verification section of the document you will only need to describe the high level for what will be done to verify that the feature requirements are being met. No more than high level 3 sentances. 
+
+### 4.2.x.y Use Case Name Goes Here
+
+Example Description: When describing how to test the Use Case attempt to keep it to a single sentance. The setup for the description should be found in the high level feature.
+
+### 4.2.1 Calendar Application is Mobile
+
+
+
+#### 4.2.1.1 Smartphone Application
+
+### 4.2.2 Calendar Application is Web
+
+
+
+
+#### 4.2.2.1 Access From Web Browser
+
+
+
+### 4.2.3 Calendar Application API
+
+
+
+#### 4.2.3.1 Add a Plugin
+
+
+
+
+### 4.2.4 Priority View
+
+
+
+
+#### 4.2.4.1 Use Case Name?
+
+
+
+
+### 4.2.5 ADA Compliant
+
+
+
+
+#### 4.2.5.1 Use Case Name?
+
+
+### 4.2.6 Export/Import 
+
+
+
+
+#### 4.2.6.1 Use Case Name?
+
+
+
+
+#### 4.2.6.2 Use Case Name?
+
+
+
+
+### 4.2.7 Reminders
+
+
+
+
+#### 4.2.7.1 The user oftens forgets about assignments
+
+
+
+
+### 4.2.8 Links
+
+
+
+
+#### 4.2.8.1 The users group uses outside resources like google docs.
+
+
+
+### 4.2.9 Photo Import
+
+
+
+
+#### 4.2.9.1 The user wants to upload a photo to clarify their message
+
+
+
+
+### 4.2.10 Collapsible calender
+
+
+
+
+#### 4.2.10.1 Calender list of events extended.
+
+
+
+
+### 4.2.11 Group Communication 1: message chat
+
+
+
+
+#### 4.2.11.1  Group Message Chat
+
+
+
+### 4.2.12 Group Communication 2: Video Chat
+
+
+ 
+
+#### 4.2.12.1Video Chat
+
+
+
+### 4.2.13 FERPA compliant
+
+
+
+
+#### 4.2.13.1 Use Case Name?
+
+
+
+### 4.2.14 Discussion Board Integration
+
+
+
+
+#### 4.2.14.1 Use Case?
+
+
+### 4.2.15 Time Clock
+
+
+
+
+#### 4.2.16.1 Use Case?
+
+
+
+
+### 4.2.16 Recurring Appointments
+
+
+
+
+#### 4.2.16.1 Use Case?
+
+
+
+
+### 4.2.17 Grades
+
+
+
+
+#### 4.2.17.1 Use Case?
+
+
+
+
+### 4.2.18 Widget
+
+
+
+
+#### 4.2.18.1 Use Case?
+
+
+
+
+### 4.2.19 Active Directory / LDAP
+
+
+
+
+#### 4.2.19.1 Contact Class Member
+
+
+
+
+### 4.2.20 Notification Control
+
+
+
+#### 4.2.20.1 Notifications On/Off
+
+
+
+
+
+#### 4.2.20.2 Notification Method
+
+
+
+
+### 4.2.21 Shared Calendar
+
+
+
+
+#### 4.2.21.1 Shared Calendar Group Creation
+
+
+
+
+#### 4.2.21.2 Send Shared Calendar Update Notification
+
+
+
+
+### 4.2.22 Push Notifications
+
+
+
+
+#### 4.2.22.1 Recieve Push Notification
+
+
+
+
+### 4.2.23 Invitations
+
+
+
+#### 4.2.23.1 Send Event Invitations
+
+
+
+
+### 4.2.24 Simplified "To Do" assignment display
+
+
+ 
+
+#### 4.2.24.1 Completing an assignment
+
+
+
+
+#### 4.2.24.2 Navigating through assignments
+
+
+
+
+#### 4.2.24.3 Adding assignments to the list
+
+
+
+
+### 4.2.25 Continuous Calendar
+
+
+
+
+### 4.2.25.1 Continuous Calendar Month View
+
+
+
+
+### 4.2.25.2 Continuous Calendar Month Alternating Background Color
+
+
+
+
+### 4.2.25.3 Continuous Calendar Month Label
+
+
+
+
+### 4.2.26 Holidays
+
+
+
+### 4.2.26.1 Labels for Holidays
+
+
+
+
+### 4.2.26.2 Watermark on Holidays
+
+
+
+
+### 4.2.27 Location
+
+
+
+
+### 4.2.27.1 Event Location
+
+
+
+
+### 4.2.27.2 Google Maps Integration
+
+
+
+
+### 4.2.28 Apple Maps Integration
+
+
+
+
+#### 4.2.28.1 Support for Apple Maps on Iphone
+
+
+
+
+#### 4.2.28.1 Support for Apple Maps on MAC computers
+
+
+
+
+### 4.2.29 Other Maps Integration
+
+
+
+
+#### 4.2.29.1 Find a location
+
+
+
+
+### 4.2.30 Video Tutorial
+
+
+
+
+#### 4.2.30.1 Learning Application Capabilities
+
+
+
+
+### 4.2.31 Group Permissions
+
+
+
+#### 4.2.31.1 Group owners have access to all the groups resources
+
+
+
+
+#### 4.2.31.2 Group members can be aware of what is happening in their group
+
+
+
+
+### 4.2.32 Group Links
+
+
+
+#### 4.2.32.1 Group has a link to a collaborative tool
+
+
+
+
+### 4.2.33 Sort & Filter
+
+
+
+
+#### 4.2.33.1 Filter by class
+
+
+
+
+#### 4.2.33.2 Sort by Time Length
+
+
+
+
+### 4.2.34 Personal Assistant
+
+
+
+#### 4.2.34.1 Assistant recommends an assignment that is due.
+
+
+
+### 4.2.35 Feedback
+
+
+
+#### 4.2.35.1 User is notified of feedback on assignment.
+
+
+
+
+#### 4.2.35.2 Feedback is included in notification.
+
+
+
+
+### 4.2.36 Group Security
+
+
+
+#### 4.2.36.1 Secured groups.
+
+
+
+
+#### 4.2.36.2 Group invitation.
+
+
+
+
+### 4.2.37 Database for Account Usernames and Passwords
+
+
+
+#### 4.2.37.1 Verifying Existing Account
+
+
+
+
+#### 4.2.37.2 Create New Account
+
+
+
+
+### 4.2.38 Inspirational Quotes and Images
+
+
+
+
+#### 4.2.38.1 Enter quote text
+
+
+
+
+#### 4.2.38.2 Insert an inspirational image
+
+
+
+
+
+### 4.2.39 Adjustable Calendar/Calendar Item Size
+
+
+
+#### 4.2.39.1 Mobile tilting functionality
+
+
+
+
+#### 4.2.39.2 Desktop calendar item zooming
+
+
+
+### 4.2.40 Share Calendar Application
+
+
+
+#### 4.2.40.1 Connect to Social Media
+
+
+
+
+#### 4.2.40.2 Share Calendar Application Through Social Media
+
+
+
+
+#### 4.2.40.3 Share Calendar Through Email
+
+
+
+
+### 4.2.41 Weather
+
+
+
+#### 4.2.41.1 Weather for Specific Days
+
+
+
+### 4.2.42 Tutor Integration
+
+
+
+#### 4.2.42.1 Use Case Name?
+
+
+### 4.2.43 School Functions
+
+
+
+#### 4.2.43.1 Use Case Name?
+
+
+### 4.2.44 Printing
+
+
+
+
+#### 4.2.44.1 Use Case Name?
+
+
+### 4.2.45 Badges
+
+
+
+
+#### 4.2.45.1 Badges?
+
+
+
+### 4.2.46 Quick Access
+
+
+
+### 4.2.46.1 Quick Access Class Selection
+
+
+
+
+### 4.2.47 Assignment Alarm
+
+
+
+### 4.2.47.1 Setting the Assignment Alarm
+
+
+
+### 4.2.48 Feature Name?
+
+
+
+#### 4.2.48.1 Use Case Name?
+
+
+
+### 4.2.49 Feature Name?
+
+
+
+
+#### 4.2.49.1 Enable Synchronization with ILearn
+
+
+
+
+#### 4.2.49.1 Google Chrome Addon add to Calendar
+
+
+
+
+#### 4.2.49.2 Google Chrome Addon remind about upcoming deadline
+
+
+
+
+#### 4.2.49.1 Share success to Google Plus
+
+
+
+
+#### 4.2.49.1 Share success to Facebook
+
+
+
+
+### 4.2.50 Feature Name?
+
+
+
+
+#### 4.2.50.1 Priority
+
+
+### 4.2.51 Google API
+
+
+
+
+#### 4.2.51.1 Use Case Name?
+
+
+
+
+### 4.2.52 Apple API
+
+
+
+
+#### 4.2.52.1 Use Case Name?
+
+
+
+
+### 4.2.53 Outlook API
+
+
+
+
+#### 4.2.53.1 Use Case Name?
+
+
+
+
+### 4.2.54 Feature Name?
+
+
+
+
+#### 4.2.54.1 Search Bar
+
+
+
+
+#### 4.2.54.2 Timer
+
+
+
+
+#### 4.2.54.3 Assigment Progress Bar
+
+
+
+
+#### 4.2.54.4 Suggest Meeting Times
+
+
+
+
+### 4.2.55 Twitter
+
+
+
+
+#### 4.2.55.1 Twitter
+
+
+
+
+### 4.2.56 Instagram
+
+
+
+#### 4.2.56.1 Instagram
+
+
+
+### 4.2.57 Custom Images and Icons
+
+
+
+#### 4.2.57.1 Custom Images and Icons
+
+
+
+
+### 4.2.58 Custom Videos
+
+
+
+#### 4.2.58.1 Custom Videos
+
+
+
+
+### 4.2.59 ToDo Task Engine
+
+
+
+
+#### 4.2.59.1 Calendar Task & ToDo Engine
+
+
+
+### 4.2.60 Feature Name?
+
+
+
+
+#### 4.2.60.1 Various Calendar Views
+
+
+
+### 4.2.61 Feature Name?
+
+
+
+
+#### 4.2.61.1 Goal/ XP bar
+
+
+
+### 4.2.62 Feature Name?
+
+
+
+
+#### 4.2.62.1 Assignment List
+
+
+
+
+### 4.2.63 School Catalog
+
+
+
+#### 4.2.63.1 View School Catalog
+
+
+
+### 4.2.64 Class Help
+
+
+
+#### 4.2.64.1 Help with class
+
+
+
+
+### 4.2.65 Travel Time
+
+
+
+#### 4.2.65.1 Travel Time
+
+
+
+
+### 4.2.28 Feature Name?
+
+
+
+#### 4.2.28.1 Night Mode
+
+
+
+## 5.0 Appendices
+
+## 5.1 Assumptions and Dependencies
+
+## 5.2 Acronyms and Abbreviations
+
 # Index
