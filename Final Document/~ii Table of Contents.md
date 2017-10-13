@@ -68,8 +68,8 @@
 ### 3.2.45 Badges
 ### 3.2.46 Quick Access
 ### 3.2.47 Assignment Alarm
-### 3.2.48 xxxxxxxxxxx
-### 3.2.49 xxxxxxxxxxx
+### 3.2.48 Share Option
+### 3.2.49 Sync and Success Share 
 ### 3.2.50 xxxxxxxxxxx
 ### 3.2.51 Google API
 ### 3.2.52 Apple API
