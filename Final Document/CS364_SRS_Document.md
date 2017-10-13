@@ -848,7 +848,7 @@ This Feature allows the user to send an invitation to one or more of their calen
 |Basic Path     | <li type='1'>In the settings the user selects “share event(s)”.</li><li type='1'>The user selects the event(s) they want to share.</li><li type='1'>The user selects the people to share the event(s) with.</li>|
 |Alternate Path |  |
 |Post Condition | The people selected receive a notification, and have the option to view the user's event(s).|
-|Exception Paths| If the user has not created any events.|
+|Exception Paths| Only Available if events exist.|
 |Other          |  |
 
 ### 3.2.24 Simplified "To Do" assignment display
@@ -1883,6 +1883,76 @@ Full Description?
 | Exception Paths | The user can navigate back to the calendar view by simply pressing the 'calendar' button visible at the top of the list view display |
 | Other           | None|
 
+### 3.2.63 School Catalog
+
+This feature allows the user to view the entire catalog for their respective school.
+
+#### 3.2.63.1 View School Catalog
+| Data          | Description |
+|:--------------| :--------------|
+|Use Case Detail| A user is wanting to view the available courses offered at their school.|
+|XRef           | |
+|Trigger        | A user selects the view catalog button.|
+|Precondition   | A user must be enrolled at a school and connect that school with the app.|
+|Basic Path     | Go to the view catalog button and select it.|
+|Post Condition | The user is in the catalog view for their school.|
+|Exception Paths| A user is not registered for a school and recieves an error message stating so.|
+|Other          | |
+
+### 3.2.64 Class Help
+
+This feature provides some links to websites that would be helpful for a given assignment or task.
+
+#### 3.2.64.1 Help with class
+
+| Data          | Description |
+|:--------------| :--------------|
+|Use Case Detail| A user is looking for more information to help with an assignment.|
+|XRef           | |
+|Trigger        | A user selects the class help button.|
+|Precondition   | A user must have registered for classes and must be linnked up properly with the application.|
+|Basic Path     | A user navigates to the class help button and selects it.|
+|Post Condition | A user is viewing a selection of links.|
+|Exception Paths| No avalable links have been connected to this assignment and user recieves an error message to alert them.|
+|Exception Paths| No assignment has been selected so no links are found, user is asked to select an assignment.|
+|Other          | |
+
+### 3.2.65 Travel Time
+
+This feature shows the user the expected travel time for a particular event that is stored on the calendar.
+
+#### 3.2.65.1 Travel Time
+
+| Data          | Description |
+|:--------------| :--------------|
+|Use Case Detail| A user has an upcoming event and wants to find out how long it will take them to get there.|
+|XRef           | |
+|Trigger        | The user has selected an event on their calendar.|
+|Precondition   | A user must have a valid event stored in calendar.|
+|Basic Path     | A user selects an event on their calendar.|
+|Post Condition | A user is viewing the expected travel time for the selected event.|
+|Exception Paths| No valid event was selected.|
+|Exception Paths| The application is unable to determine the distance to the event and an error message is displayed to the user.|
+|Other          | |
+
+### 3.2.28 Feature Name?
+
+Night mode is a setting that allows the user to toggle a blue light filter to reduce eye strain. 
+
+#### 3.2.28.1 Night Mode
+
+| Data          | Description |
+|:--------------| :--------------|
+|Use Case Detail| As a user, I want to apply a blue light filter to reduce the strain on my eyes from the screen, especially at night.|
+|XRef           | |
+|Trigger        | A user toggles night mode in the settings.|
+|Precondition   | A user opens the settings menu and toggles night mode.|
+|Basic Path     | 1. User chooses to toggle night mode. <br> 2. User enters settings page. <br> 3. The user presses the night mode button. <br> 4. The application applies a blue light filter.|
+|Alternate Path | A brief description of the purpose for night mode will appear on first activation. |
+|Post Condition | A blue light filter has been added.|
+|Exception Paths| None.|
+|Other          | Blue light has been proven to alter circadian rhythm and increase eye-strain. |
+
 # 4.0 Verification
 
 ## 4.1 Verify External Interface Requirements
@@ -1898,6 +1968,7 @@ Example Description: When filling out the the verification section of the docume
 ### 4.2.x.y Use Case Name Goes Here
 
 Example Description: When describing how to test the Use Case attempt to keep it to a single sentance. The setup for the description should be found in the high level feature.
+
 ### 4.2.1 Calendar Application is Mobile
 
 
@@ -2595,6 +2666,40 @@ Example Description: When describing how to test the Use Case attempt to keep it
 
 #### 4.2.62.1 Assignment List
 
+
+
+
+### 4.2.63 School Catalog
+
+
+
+#### 4.2.63.1 View School Catalog
+
+
+
+### 4.2.64 Class Help
+
+
+
+#### 4.2.64.1 Help with class
+
+
+
+
+### 4.2.65 Travel Time
+
+
+
+#### 4.2.65.1 Travel Time
+
+
+
+
+### 4.2.28 Feature Name?
+
+
+
+#### 4.2.28.1 Night Mode
 
 
 
