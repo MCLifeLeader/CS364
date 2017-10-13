@@ -53,114 +53,178 @@ Daniel Craig<br/>
 John Memmott<br/>
 
 # Table of Contents
-
 ## Table of Contents
-
 ## Revision History
-
 ## List of Figures
-
 ## 1.0 Introduction
-### 1.1 Purpose
-### 1.2 Scope of Project
-### 1.3 Intended Audience
-### 1.4 Glossary
-### 1.5 References
-### 1.6 Overview of Document
-
+## 1.1 Purpose
+## 1.2 Scope of Project
+## 1.3 Intended Audience
+## 1.4 Glossary
+## 1.5 References
+## 1.6 Overview of Document
 ## 2.0 Overall Description
-
-### 2.1 Product Perspective
-### 2.2 Product Features
-### 2.3 User Classes and Characteristics
-### 2.4 Operating Environment
-### 2.5 Functional Requirements
-### 2.6 Technical Requirements
-### 2.7 User Documentation
-### 2.8 Assumptions and Dependencies
-
+## 2.1 Product Perspective
+## 2.2 Product Features
+## 2.3 User Classes and Characteristics
+## 2.4 Operating Environment
+## 2.5 Functional Requirements
+## 2.6 Technical Requirements
+## 2.7 User Documentation
+## 2.8 Assumptions and Dependencies
 ## 3.0 Requirements Specification
-### 3.1 External Interface Requirements
-### 3.2 Functional Requirements
-#### 3.2.1 Calendar Application is Mobile
-#### 3.2.2 Calendar Application is Web
-#### 3.2.3 Calendar Application API
-#### 3.2.4 Priority View
-#### 3.2.5 ADA Compliant
-#### 3.2.6 Export/Import
-#### 3.2.7 Reminders
-#### 3.2.8 Links
-#### 3.2.9 Photo Import
-#### 3.2.10 Show all events, even when large number
-#### 3.2.11 Group Communication 1: message chat
-#### 3.2.12 Group Communication 2: Video Chat
-#### 3.2.13 FERPA compliant
-#### 3.2.14 Discussion Board Integration
-#### 3.2.15 Time Clock
-#### 3.2.16 Recurring Appointments
-#### 3.2.17 Grades
-#### 3.2.18 Widget
-#### 3.2.19 Active Directory / LDAP
-#### 3.2.20 Notification Control
-#### 3.2.21 Shared Calendar
-#### 3.2.22 Push Notifications
-#### 3.2.23 Invitations
-#### 3.2.24 Simplified "To Do" assignment display
-#### 3.2.25 Continuous Calendar
-#### 3.2.26 Holidays
-#### 3.2.27 Location
-#### 3.2.28 Apple Maps Integration
-#### 3.2.29 Other Maps Integration
-#### 3.2.30 Video Tutorial
-#### 3.2.31 Group Permissions
-#### 3.2.32 Group Links
-#### 3.2.33 Sort & Filter
-#### 3.2.34 Personal Assistant
-#### 3.2.35 Feedback
-#### 3.2.36 Group Security
-#### 3.2.37 Database for Account Usernames and Passwords
-#### 3.2.38 Inspirational Quotes and Images
-#### 3.2.39 Adjustable Calendar/Calendar Item Size
-#### 3.2.40 Share Calendar Application
-#### 3.2.41 Weather
-#### 3.2.42 Tutor Integration
-#### 3.2.43 School Functions
-#### 3.2.44 Printing
-#### 3.2.45 Badges
-#### 3.2.46 Quick Access
-#### 3.2.47 Assignment Alarm
-#### 3.2.48 xxxxxxxxxxx
-#### 3.2.49 xxxxxxxxxxx
-#### 3.2.50 xxxxxxxxxxx
-#### 3.2.51 Google API
-#### 3.2.52 Apple API
-#### 3.2.53 Outlook API
-#### 3.2.54 xxxxxxxxxxx
-#### 3.2.55 Twitter
-#### 3.2.56 Instagram
-#### 3.2.57 Custom Images and Icons
-#### 3.2.58 Custom Videos
-#### 3.2.59 ToDo Task Engine
-#### 3.2.60 Various Calendar Views
-#### 3.2.61 Goal/ XP bar
-#### 3.2.62 Assignment List
-#### 3.2.63 School Catalog
-#### 3.2.64 Class Help
-#### 3.2.65 Travel Time
-#### 3.2.66 Night Mode
-### 3.3 Usability Requirements
-### 3.4 Performance Requirements
-### 3.5 Logical Database Requirements
-### 3.6 Design Constraints
-### 3.7 Software System Attributes
-### 3.8 Supporting Information
-
+## 3.1 External Interface Requirements
+## 3.2 Functional Requirements
+### 3.2.1 Calendar Application is Mobile
+### 3.2.2 Calendar Application is Web
+### 3.2.3 Calendar Application API
+### 3.2.4 Priority View
+### 3.2.5 ADA Compliant
+### 3.2.6 Export/Import
+### 3.2.7 Reminders
+### 3.2.8 Links
+### 3.2.9 Photo Import
+### 3.2.10 Show all events, even when large number
+### 3.2.11 Group Communication 1: message chat
+### 3.2.12 Group Communication 2: Video Chat
+### 3.2.13 FERPA compliant
+### 3.2.14 Discussion Board Integration
+### 3.2.15 Time Clock
+### 3.2.16 Recurring Appointments
+### 3.2.17 Grades
+### 3.2.18 Widget
+### 3.2.19 Active Directory / LDAP
+### 3.2.20 Notification Control
+### 3.2.21 Shared Calendar
+### 3.2.22 Push Notifications
+### 3.2.23 Invitations
+### 3.2.24 Simplified "To Do" assignment display
+### 3.2.25 Continuous Calendar
+### 3.2.26 Holidays
+### 3.2.27 Location
+### 3.2.28 Apple Maps Integration
+### 3.2.29 Other Maps Integration
+### 3.2.30 Video Tutorial
+### 3.2.31 Group Permissions
+### 3.2.32 Group Links
+### 3.2.33 Sort & Filter
+### 3.2.34 Personal Assistant
+### 3.2.35 Feedback
+### 3.2.36 Group Security
+### 3.2.37 Database for Account Usernames and Passwords
+### 3.2.38 Inspirational Quotes and Images
+### 3.2.39 Adjustable Calendar/Calendar Item Size
+### 3.2.40 Share Calendar Application
+### 3.2.41 Weather
+### 3.2.42 Tutor Integration
+### 3.2.43 School Functions
+### 3.2.44 Printing
+### 3.2.45 Badges
+### 3.2.46 Quick Access
+### 3.2.47 Assignment Alarm
+### 3.2.48 xxxxxxxxxxx
+### 3.2.49 xxxxxxxxxxx
+### 3.2.50 xxxxxxxxxxx
+### 3.2.51 Google API
+### 3.2.52 Apple API
+### 3.2.53 Outlook API
+### 3.2.54 xxxxxxxxxxx
+### 3.2.55 Twitter
+### 3.2.56 Instagram
+### 3.2.57 Custom Images and Icons
+### 3.2.58 Custom Videos
+### 3.2.59 ToDo Task Engine
+### 3.2.60 Various Calendar Views
+### 3.2.61 Goal/ XP bar
+### 3.2.62 Assignment List
+### 3.2.63 School Catalog
+### 3.2.64 Class Help
+### 3.2.65 Travel Time
+### 3.2.66 Night Mode
+## 3.3 Usability Requirements
+## 3.4 Performance Requirements
+## 3.5 Logical Database Requirements
+## 3.6 Design Constraints
+## 3.7 Software System Attributes
+## 3.8 Supporting Information
 ## 4.0 Verification
-
+## 4.1 Verify External Interface Requirements
+## 4.2 Verify Functional Requirements
+### 4.2.1 Calendar Application is Mobile
+### 4.2.2 Calendar Application is Web
+### 4.2.3 Calendar Application API
+### 4.2.4 Priority View
+### 4.2.5 ADA Compliant
+### 4.2.6 Export/Import
+### 4.2.7 Reminders
+### 4.2.8 Links
+### 4.2.9 Photo Import
+### 4.2.10 Show all events, even when large number
+### 4.2.11 Group Communication 1: message chat
+### 4.2.12 Group Communication 2: Video Chat
+### 4.2.13 FERPA compliant
+### 4.2.14 Discussion Board Integration
+### 4.2.15 Time Clock
+### 4.2.16 Recurring Appointments
+### 4.2.17 Grades
+### 4.2.18 Widget
+### 4.2.19 Active Directory / LDAP
+### 4.2.20 Notification Control
+### 4.2.21 Shared Calendar
+### 4.2.22 Push Notifications
+### 4.2.23 Invitations
+### 4.2.24 Simplified "To Do" assignment display
+### 4.2.25 Continuous Calendar
+### 4.2.26 Holidays
+### 4.2.27 Location
+### 4.2.28 Apple Maps Integration
+### 4.2.29 Other Maps Integration
+### 4.2.30 Video Tutorial
+### 4.2.31 Group Permissions
+### 4.2.32 Group Links
+### 4.2.33 Sort & Filter
+### 4.2.34 Personal Assistant
+### 4.2.35 Feedback
+### 4.2.36 Group Security
+### 4.2.37 Database for Account Usernames and Passwords
+### 4.2.38 Inspirational Quotes and Images
+### 4.2.39 Adjustable Calendar/Calendar Item Size
+### 4.2.40 Share Calendar Application
+### 4.2.41 Weather
+### 4.2.42 Tutor Integration
+### 4.2.43 School Functions
+### 4.2.44 Printing
+### 4.2.45 Badges
+### 4.2.46 Quick Access
+### 4.2.47 Assignment Alarm
+### 4.2.48 xxxxxxxxxxx
+### 4.2.49 xxxxxxxxxxx
+### 4.2.50 xxxxxxxxxxx
+### 4.2.51 Google API
+### 4.2.52 Apple API
+### 4.2.53 Outlook API
+### 4.2.54 xxxxxxxxxxx
+### 4.2.55 Twitter
+### 4.2.56 Instagram
+### 4.2.57 Custom Images and Icons
+### 4.2.58 Custom Videos
+### 4.2.59 ToDo Task Engine
+### 4.2.60 Various Calendar Views
+### 4.2.61 Goal/ XP bar
+### 4.2.62 Assignment List
+### 4.2.63 School Catalog
+### 4.2.64 Class Help
+### 4.2.65 Travel Time
+### 4.2.66 Night Mode
+## 4.3 Usability Requirements
+## 4.4 Performance Requirements
+## 4.5 Logical Database Requirements
+## 4.6 Design Constraints
+## 4.7 Software System Attributes
+## 4.8 Supporting Information
 ## 5.0 Appendices
-### 5.1 Assumptions and Dependencies
-### 5.2 Acronyms and Abbreviations
-
+## 5.1 Assumptions and Dependencies
+## 5.2 Acronyms and Abbreviations
 ## Index
 
 # List of Figures
@@ -536,6 +600,7 @@ When a user has joined a group on the app, they will want to be in contact with 
 |Post Condition	| The user is in contact with his/her group. |
 |Exception Paths| If the group member the user has selected has not provided a phone number or an email, the app will display a message stating such. |
 |Other		      | None|
+
 ### 3.2.12 Group Communication 2: Video Chat
 
 With the press of a single button, a user can start a video conference call with their group from the app. The app will utilize Skype or Google Hangouts to perform the task for the user. 
@@ -1338,18 +1403,21 @@ When you click on an event it will include the predicted weather for that day
 
 ### 3.2.42 Tutor Integration
 
-| Tutor Integration| Select a tutor appointment form BYU-I website        |
-|:--------------| :--------------|
-|Use Case Name  | Tutor Integration                                       |
-|Use Case Detail| xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx |
-|XRef           |    none yet                                             |
-|Trigger        | User selects tutor request button                       |
-|Precondition   | Account created on Student Calendar app, Internet Access, and an account with BYU-I as a student                |
-|Basic Path     | 1. User selects request tutor button 2. New window opens directing to BYU-I Tutor website |
-|Alternate Path | none                                                    |
+Full Description?
+
+#### 3.2.42.1 Use Case Name
+
+| Data          | Description |
+|:--------------|:----------------|
+|Use Case Detail| Select a tutor appointment form BYU-I website |
+|XRef           | none yet |
+|Trigger        | User selects tutor request button |
+|Precondition   | Account created on Student Calendar app, Internet Access, and an account with BYU-I as a student |
+|Basic Path     | 1. User selects request tutor button <br /> 2. New window opens directing to BYU-I Tutor website |
+|Alternate Path | none |
 |Post Condition | Event is created and has a section where the user can add information about the tutor session created |
-|Exception Paths|Window can be closed at any time, not setting tutor event|
-|Other          | none                                                    |
+|Exception Paths| Window can be closed at any time, not setting tutor event|
+|Other          | none |
 
 ### 3.2.43 School Functions
 
@@ -1814,5 +1882,726 @@ Full Description?
 | Post Condition  | The list view is displayed|
 | Exception Paths | The user can navigate back to the calendar view by simply pressing the 'calendar' button visible at the top of the list view display |
 | Other           | None|
+
+# 4.0 Verification
+
+## 4.1 Verify External Interface Requirements
+
+## 4.2 Verification Functional Requirements
+
+In this section of the document we will provide high level details on how we will verify that the functional feature requirements are being met. The specific Test Cases will be descripted in the SDD portion of the document. This section is not intended to contain the test case specifics.
+
+### 4.2.x Feature Name Goes Here
+
+Example Description: When filling out the the verification section of the document you will only need to describe the high level for what will be done to verify that the feature requirements are being met. No more than high level 3 sentances. 
+
+### 4.2.x.y Use Case Name Goes Here
+
+Example Description: When describing how to test the Use Case attempt to keep it to a single sentance. The setup for the description should be found in the high level feature.
+### 4.2.1 Calendar Application is Mobile
+
+
+
+#### 4.2.1.1 Smartphone Application
+
+### 4.2.2 Calendar Application is Web
+
+
+
+
+#### 4.2.2.1 Access From Web Browser
+
+
+
+### 4.2.3 Calendar Application API
+
+
+
+#### 4.2.3.1 Add a Plugin
+
+
+
+
+### 4.2.4 Priority View
+
+
+
+
+#### 4.2.4.1 Use Case Name?
+
+
+
+
+### 4.2.5 ADA Compliant
+
+
+
+
+#### 4.2.5.1 Use Case Name?
+
+
+### 4.2.6 Export/Import 
+
+
+
+
+#### 4.2.6.1 Use Case Name?
+
+
+
+
+#### 4.2.6.2 Use Case Name?
+
+
+
+
+### 4.2.7 Reminders
+
+
+
+
+#### 4.2.7.1 The user oftens forgets about assignments
+
+
+
+
+### 4.2.8 Links
+
+
+
+
+#### 4.2.8.1 The users group uses outside resources like google docs.
+
+
+
+### 4.2.9 Photo Import
+
+
+
+
+#### 4.2.9.1 The user wants to upload a photo to clarify their message
+
+
+
+
+### 4.2.10 Collapsible calender
+
+
+
+
+#### 4.2.10.1 Calender list of events extended.
+
+
+
+
+### 4.2.11 Group Communication 1: message chat
+
+
+
+
+#### 4.2.11.1  Group Message Chat
+
+
+
+### 4.2.12 Group Communication 2: Video Chat
+
+
+ 
+
+#### 4.2.12.1Video Chat
+
+
+
+### 4.2.13 FERPA compliant
+
+
+
+
+#### 4.2.13.1 Use Case Name?
+
+
+
+### 4.2.14 Discussion Board Integration
+
+
+
+
+#### 4.2.14.1 Use Case?
+
+
+### 4.2.15 Time Clock
+
+
+
+
+#### 4.2.16.1 Use Case?
+
+
+
+
+### 4.2.16 Recurring Appointments
+
+
+
+
+#### 4.2.16.1 Use Case?
+
+
+
+
+### 4.2.17 Grades
+
+
+
+
+#### 4.2.17.1 Use Case?
+
+
+
+
+### 4.2.18 Widget
+
+
+
+
+#### 4.2.18.1 Use Case?
+
+
+
+
+### 4.2.19 Active Directory / LDAP
+
+
+
+
+#### 4.2.19.1 Contact Class Member
+
+
+
+
+### 4.2.20 Notification Control
+
+
+
+#### 4.2.20.1 Notifications On/Off
+
+
+
+
+
+#### 4.2.20.2 Notification Method
+
+
+
+
+### 4.2.21 Shared Calendar
+
+
+
+
+#### 4.2.21.1 Shared Calendar Group Creation
+
+
+
+
+#### 4.2.21.2 Send Shared Calendar Update Notification
+
+
+
+
+### 4.2.22 Push Notifications
+
+
+
+
+#### 4.2.22.1 Recieve Push Notification
+
+
+
+
+### 4.2.23 Invitations
+
+
+
+#### 4.2.23.1 Send Event Invitations
+
+
+
+
+### 4.2.24 Simplified "To Do" assignment display
+
+
+ 
+
+#### 4.2.24.1 Completing an assignment
+
+
+
+
+#### 4.2.24.2 Navigating through assignments
+
+
+
+
+#### 4.2.24.3 Adding assignments to the list
+
+
+
+
+### 4.2.25 Continuous Calendar
+
+
+
+
+### 4.2.25.1 Continuous Calendar Month View
+
+
+
+
+### 4.2.25.2 Continuous Calendar Month Alternating Background Color
+
+
+
+
+### 4.2.25.3 Continuous Calendar Month Label
+
+
+
+
+### 4.2.26 Holidays
+
+
+
+### 4.2.26.1 Labels for Holidays
+
+
+
+
+### 4.2.26.2 Watermark on Holidays
+
+
+
+
+### 4.2.27 Location
+
+
+
+
+### 4.2.27.1 Event Location
+
+
+
+
+### 4.2.27.2 Google Maps Integration
+
+
+
+
+### 4.2.28 Apple Maps Integration
+
+
+
+
+#### 4.2.28.1 Support for Apple Maps on Iphone
+
+
+
+
+#### 4.2.28.1 Support for Apple Maps on MAC computers
+
+
+
+
+### 4.2.29 Other Maps Integration
+
+
+
+
+#### 4.2.29.1 Find a location
+
+
+
+
+### 4.2.30 Video Tutorial
+
+
+
+
+#### 4.2.30.1 Learning Application Capabilities
+
+
+
+
+### 4.2.31 Group Permissions
+
+
+
+#### 4.2.31.1 Group owners have access to all the groups resources
+
+
+
+
+#### 4.2.31.2 Group members can be aware of what is happening in their group
+
+
+
+
+### 4.2.32 Group Links
+
+
+
+#### 4.2.32.1 Group has a link to a collaborative tool
+
+
+
+
+### 4.2.33 Sort & Filter
+
+
+
+
+#### 4.2.33.1 Filter by class
+
+
+
+
+#### 4.2.33.2 Sort by Time Length
+
+
+
+
+### 4.2.34 Personal Assistant
+
+
+
+#### 4.2.34.1 Assistant recommends an assignment that is due.
+
+
+
+### 4.2.35 Feedback
+
+
+
+#### 4.2.35.1 User is notified of feedback on assignment.
+
+
+
+
+#### 4.2.35.2 Feedback is included in notification.
+
+
+
+
+### 4.2.36 Group Security
+
+
+
+#### 4.2.36.1 Secured groups.
+
+
+
+
+#### 4.2.36.2 Group invitation.
+
+
+
+
+### 4.2.37 Database for Account Usernames and Passwords
+
+
+
+#### 4.2.37.1 Verifying Existing Account
+
+
+
+
+#### 4.2.37.2 Create New Account
+
+
+
+
+### 4.2.38 Inspirational Quotes and Images
+
+
+
+
+#### 4.2.38.1 Enter quote text
+
+
+
+
+#### 4.2.38.2 Insert an inspirational image
+
+
+
+
+
+### 4.2.39 Adjustable Calendar/Calendar Item Size
+
+
+
+#### 4.2.39.1 Mobile tilting functionality
+
+
+
+
+#### 4.2.39.2 Desktop calendar item zooming
+
+
+
+### 4.2.40 Share Calendar Application
+
+
+
+#### 4.2.40.1 Connect to Social Media
+
+
+
+
+#### 4.2.40.2 Share Calendar Application Through Social Media
+
+
+
+
+#### 4.2.40.3 Share Calendar Through Email
+
+
+
+
+### 4.2.41 Weather
+
+
+
+#### 4.2.41.1 Weather for Specific Days
+
+
+
+### 4.2.42 Tutor Integration
+
+
+
+#### 4.2.42.1 Use Case Name?
+
+
+### 4.2.43 School Functions
+
+
+
+#### 4.2.43.1 Use Case Name?
+
+
+### 4.2.44 Printing
+
+
+
+
+#### 4.2.44.1 Use Case Name?
+
+
+### 4.2.45 Badges
+
+
+
+
+#### 4.2.45.1 Badges?
+
+
+
+### 4.2.46 Quick Access
+
+
+
+### 4.2.46.1 Quick Access Class Selection
+
+
+
+
+### 4.2.47 Assignment Alarm
+
+
+
+### 4.2.47.1 Setting the Assignment Alarm
+
+
+
+### 4.2.48 Feature Name?
+
+
+
+#### 4.2.48.1 Use Case Name?
+
+
+
+### 4.2.49 Feature Name?
+
+
+
+
+#### 4.2.49.1 Enable Synchronization with ILearn
+
+
+
+
+#### 4.2.49.1 Google Chrome Addon add to Calendar
+
+
+
+
+#### 4.2.49.2 Google Chrome Addon remind about upcoming deadline
+
+
+
+
+#### 4.2.49.1 Share success to Google Plus
+
+
+
+
+#### 4.2.49.1 Share success to Facebook
+
+
+
+
+### 4.2.50 Feature Name?
+
+
+
+
+#### 4.2.50.1 Priority
+
+
+### 4.2.51 Google API
+
+
+
+
+#### 4.2.51.1 Use Case Name?
+
+
+
+
+### 4.2.52 Apple API
+
+
+
+
+#### 4.2.52.1 Use Case Name?
+
+
+
+
+### 4.2.53 Outlook API
+
+
+
+
+#### 4.2.53.1 Use Case Name?
+
+
+
+
+### 4.2.54 Feature Name?
+
+
+
+
+#### 4.2.54.1 Search Bar
+
+
+
+
+#### 4.2.54.2 Timer
+
+
+
+
+#### 4.2.54.3 Assigment Progress Bar
+
+
+
+
+#### 4.2.54.4 Suggest Meeting Times
+
+
+
+
+### 4.2.55 Twitter
+
+
+
+
+#### 4.2.55.1 Twitter
+
+
+
+
+### 4.2.56 Instagram
+
+
+
+#### 4.2.56.1 Instagram
+
+
+
+### 4.2.57 Custom Images and Icons
+
+
+
+#### 4.2.57.1 Custom Images and Icons
+
+
+
+
+### 4.2.58 Custom Videos
+
+
+
+#### 4.2.58.1 Custom Videos
+
+
+
+
+### 4.2.59 ToDo Task Engine
+
+
+
+
+#### 4.2.59.1 Calendar Task & ToDo Engine
+
+
+
+### 4.2.60 Feature Name?
+
+
+
+
+#### 4.2.60.1 Various Calendar Views
+
+
+
+### 4.2.61 Feature Name?
+
+
+
+
+#### 4.2.61.1 Goal/ XP bar
+
+
+
+### 4.2.62 Feature Name?
+
+
+
+
+#### 4.2.62.1 Assignment List
+
+
+
+
+## 5.0 Appendices
+
+## 5.1 Assumptions and Dependencies
+
+## 5.2 Acronyms and Abbreviations
 
 # Index
