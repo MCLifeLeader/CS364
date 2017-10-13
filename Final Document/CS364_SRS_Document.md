@@ -122,8 +122,8 @@ John Memmott<br/>
 ### 3.2.45 Badges
 ### 3.2.46 Quick Access
 ### 3.2.47 Assignment Alarm
-### 3.2.48 xxxxxxxxxxx
-### 3.2.49 xxxxxxxxxxx
+### 3.2.48 Share Option
+### 3.2.49 Sync and Success Share 
 ### 3.2.50 xxxxxxxxxxx
 ### 3.2.51 Google API
 ### 3.2.52 Apple API
@@ -412,8 +412,8 @@ The calendar application will have a responsive design capable of displaying on 
 | Data          | Description |
 |:--------------|:----------------|
 |Use Case Detail| As a user, I want to access the application from any web broswer |
-|XRef           ||
-|Trigger	      | The user navigates to the calendar application url on a web browser.|
+|XRef           | Verification: 4.2.2.1|
+|Trigger	    | The user navigates to the calendar application url on a web browser.|
 |Precondition   | The user has a web browser available.|
 |Basic Path     | <li type='1'>The user navigates to the calendar application url on a web browser</li> <li type='1'>The app displays the users upcoming items.</li>|            
 |Alternate Path | None|
@@ -439,76 +439,86 @@ This application will allow users to write plugins that integrate with the calen
 |Exception Paths| As long as the plugin is not installed the attempt can be abandoned at any time.|
 |Other	        | None|
 
-### 3.2.4 Priority View
+### 3.2.4 Priority List
 
-Full Description?
+Students need to prioritize tasks and assignments so that they can focus on the most important taks and give those tasks proper time and attention. This feature will help students plan ahead by seeing list of assignments and tasks ranked by due dates and, in the case of custom tasks, ranked by priority level and due date.
 
-#### 3.2.4.1 Use Case Name?
+#### 3.2.4.1 Task Priority Labels
 
 | Data          | Description |
 |:--------------|:-----------------|
-|Use Case Name  | Setting priorities|
-|Use Case Detail| xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx |
+|Use Case Detail  | As a student I want to be able to prioritize tasks and assignments to improve my work quality and get urgent work done in a timely manner.|
 |XRef           ||
 |Trigger        | The User opens the calendar app.|
-|Precondition   | The system has access to the Users assignments on I-Learn.|                       
-|Basic Path	| 1. The system begins to start and accesses the User's current grade in each class.</br>2. Sorts the classes in ascending order.</br>3. Loads the assignments due in each class and places them on the correct day.|
-|Alternate Path	| None|			
-|Post Condition | None|
-|Exception Paths| This feature can be turned off in the settings.|
+|Precondition   | The system has access to the user's assignments on I-Learn.|                       
+|Basic Path	| 1. The user taps on the monthly view of the calendar.</br>2. The user taps on a specific day and sees a list of assignments sorted by due date and a list of tasks (if any) labeled : high, medium, and low priority. </br>3. The user can click on each assignment or task and see the corresponding information if available.|
+|Alternate Path	| If the user has not added custom tasks, then:</br>1. The user taps on "add task" on the main calendar view.</br>2. The user adds the task and then sets a priority level: high, medium, or low.</br>3. The user sets a time as deadline for the completion of the task.|			
+|Post Condition | The user sees a list of time sensitive assignments and tasks.|
+|Exception Paths| The user can cancel this process at any time.|
 |Other		| None|
 
 ### 3.2.5 ADA Compliant
 
-Full Description?
+The Americans with Disabilities Act (ADA) has standards for all electronic and information technology to be accessible to people with disabilities. Students may have disabilities that can prevent them from using this application as intended. The purpose of this feature is to help all those students that can't perform general software usage functions such as clicking, tapping, or reading instructions. This feature is intended to diminish the difficulties that students with disabilities may face when attempting to use the software. 
 
-#### 3.2.5.1 Use Case Name?
+#### 3.2.5.1 Speech Recognition
 
 | Data          | Description |
 |:--------------|:-----------------|
-|Use Case Name  | Screen reader|
-|Use Case Detail| xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx |
+|Use Case Detail| As a student with disabilities, I would like to speak to the application so that I can add tasks to the calendar.|
 |XRef           ||
-|Trigger	| The User enters a combination of buttons or turns on</br>settings to help them with their disibility. In this</br> case they are unable to read the screen.|
-|Precondition 	| ADA Compliant settings are on and the User is on the</br> main page of the calendar.|
-|Basic Path	| 1. The user opens that calendar app and the assignments are read  to the User.|
-|Alternate Path | The user skips a section of assignments because they already know what is due that day.|
-|Post Condition	| In this situation the app had to play</br> audio of the items in the User's calendar.|
-|Exception Paths|These settings can be turned off at any time.|
-|Other		| To be ADA Complient the calendar app will need to have audio</br>descriptions. Any Color significate notifications will have to have text as well.|
+|Trigger	| The user opens the application by saying out loud: "Open BYI-I Calendar."|
+|Precondition 	| With the help of a family member or school official, the student's account was set up to apply ADA settings when using the application.|
+|Basic Path	| 1. After opening the app, the user says out loud: "Add task".<br/>2. The system responds by saying: "What is the new task?"<br/>3. The user says the name of the task to which the system prompts the user for the month, day, year, and priority level. <br/> 4. The system adds the information to the calendar and finalizes the interaction by saying: "Your task has been added, would you like to add another task?"<br/>5. If the user wants to add another task, then the process starts all over.|
+|Alternate Path | None.|
+|Post Condition	| The task is added to the calendar through speech recognition.|
+|Exception Paths| The user can cancel the process at any time by saying "Cancel process" out loud.|
+|Other		| None.|
+
+#### 3.2.5.2 Auto Reading
+
+| Data          | Description |
+|:--------------|:-----------------|
+|Use Case Detail| As a student with disabilities, I would like the application to read me the calendar assignments and tasks.|
+|XRef           ||
+|Trigger	| The user opens the application by saying out loud: "Open BYI-I Calendar."|
+|Precondition 	| With the help of a family member or school official, the student's account was set up to apply ADA settings when using the application.|
+|Basic Path	| 1. After opening the app, the user says out loud: "Read assignments".<br/>2. The system responds by saying: "Would you like me to read all the assignments and tasks due today, this week, or this month?"<br/>3. The user chooses one of the prompted options: today, this week, or this month. <br/> 4. The system reads the assignments according the user's choice.<br/> The system finalizes the interaction by saying: "Would you like me to read your tasks and assignments again?"<br/>5. If the user says "No" then the systems says: "Ok," if the user says "Yes," then the process will be repeated from step 2.|
+|Alternate Path | None.|
+|Post Condition	| The system reads all the assignments and tasks according to the specifications given by the user.|
+|Exception Paths| The user can cancel the process at any time by saying "Cancel process" out loud.|
+|Other		| None.|
 
 ### 3.2.6 Export/Import 
 
-Full Description?
+The Calendar application will sync with I-Learn's calendar so that all class assignments are added automatically to the application. This is a very important feature because it keeps the user from manually adding all the assignments. 
 
-#### 3.2.6.1 Use Case Name?
+#### 3.2.6.1 I-Learn Import
 
 | Data          | Description |
 |:--------------|:-----------------|
-|Use Case Name  | Import|
-|Use Case Detail| xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx |
+|Use Case Detail| As a user I want the app to automatically download all the assingments listed on I-Learn for each specific task.|
 |XRef           ||
-|Trigger	| The User presses the import button.|
-|Precondition 	| The User has aceess to another calendar to import from.|
-|Basic Path	| 1. The User selects to import calendar items from the other calendar application.</br>2. Once the import is complete the calendar will update to</br> show the added items.|                      
-|Alternate Path | If the import fails  the user will be notified.|
+|Trigger	| The user taps on the import button.|
+|Precondition 	| The user has aceess to another calendar to import from.|
+|Basic Path	| 1. The User selects to import calendar items from the other calendar application.</br>2. Once the import is complete the calendar will update to show all added items.|                      
+|Alternate Path | 1. If the import fails, the user will be notified.|
 |Post Condition	| The calendar app will update and show new activities.|
-|Exception Paths| The User may cancel the operation any time before the items have been transfered.|
+|Exception Paths| The User may cancel the operation any time before the items have been transferred.|
 |Other		| None| 
 
-#### 3.2.6.2 Use Case Name?
+#### 3.2.6.2 Export
 
 | Data           | Description |
 |:---------------|:-----------------|
-| Use Case Name  | Export|
-|Use Case Detail| xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx |
+|Use Case Detail| As a user I want to export my calendar data to other calendars of my choosing such as Google Calendar or Outlook.|
 | Xref           ||
 | Trigger        | User presses the export calendar button.|
 | Precondition   | The User has a compatible calendar to export to.|
-| Basic Path     | 1. After the User presses the export button they will be promted for a calendar to export to.</br>2. After the new calendar is selected the system will export the selected items to the new calendar.|
+| Basic Path     | 1. After the User presses the export button they will be prompted for a calendar to export to.</br>2. After the new calendar is selected the system will export the selected items to the new calendar.|
 | Alternate Path | If the new calendar is not compatible with the export the User will be notified.|
 | Post Condition | The new calendar will gain the items from the old calendar.|
-| Exception Paths| The user may cancel the operation any time before the items have been transfered.|
+| Exception Paths| The user may cancel the operation any time before the items have been transferred.|
 | Other          | None|
 
 ### 3.2.7 Reminders
@@ -605,7 +615,7 @@ When a user has joined a group on the app, they will want to be in contact with 
 
 With the press of a single button, a user can start a video conference call with their group from the app. The app will utilize Skype or Google Hangouts to perform the task for the user. 
 
-#### 3.2.12.1Video Chat
+#### 3.2.12.1 Video Chat
 
 | Data          | Description |
 |:--------------| :--------------|
@@ -621,61 +631,69 @@ With the press of a single button, a user can start a video conference call with
 
 ### 3.2.13 FERPA compliant
 
-Full Description?
+The Family Educational Rights and Privacy Act (FERPA) is a Federal law designed to protect the privacy of student education records. In order for our app to conform to federal law, out app must meet certain standards.
 
-#### 3.2.13.1 Use Case Name?
+#### 3.2.13.1 Be FERPA compliant
 
 | Data          | Description |
 |:--------------| :--------------|
-|Use Case Name  | FERPA compliant|
-|Use Case Detail| xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx |
-|XRef           | |
-|Trigger        | None|
-|Precondition   | None|
-|Basic Path	    | None|
-|Alternate Path | None|
-|Post Condition	| None|
-|Exception Paths| None|
-|Other		      | The Family Educational Rights and Privacy Act (FERPA) is a Federal law designed to protect the privacy of student education records.
-
+|Use Case Detail| This app will maintain FERPA compliance at all times|
+|XRef           |  |
+|Trigger        | Any time the app us used FERPA rules will be met.|
+|Precondition   |  |
+|Basic Path     |  |
+|Alternate Path |  |
+|Post Condition |  |
+|Exception Paths|  |
+|Other          |  |
 ### 3.2.14 Discussion Board Integration
 
-Full Description?
+This feature allows access to the I-Learn discussion boards through the calendar app. It's a quick way to keep up to date on class and group discussions, and make quick feedback.
 
-#### 3.2.14.1 Use Case?
+#### 3.2.14.1 View discussion board
 
 | Data          | Description |
-|:--------------|:-----------------|
-|Use Case Name  | Discussion Board Integration|
-|Use Case Detail| xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx |
-|XRef           ||
-|Trigger        | User clicks on a Discussion Board event|
-|Precondition   | None|                       
-|Basic Path	    | 1. User is taken to the Discussion Board</br>2. User can view/reply to Discussion Board Topics|
-|Alternate Path	| None|			
-|Post Condition | User is able to use their Discussion Boards via the calendar|
-|Exception Paths| None|
-|Other		      | The user will also receive notifications of new messages in the Discussion Boards|
+|:--------------| :--------------|
+|Use Case Detail| View posts in the discussion boards on I-Learn.|
+|XRef           |  |
+|Trigger        |  |
+|Precondition   | The app must have an internet connection, and be connected to I-Learn.|
+|Basic Path     | <li type='1'>The user will navigate to one of their classes.</li><li type='1'>The user will select a discussion board to view.</li>|
+|Alternate Path |  |
+|Post Condition |  |
+|Exception Paths| The user has no classes, or no open discussions available to them.|
+|Other          |  |
 
+#### 3.2.14.2 Post to discussion board
+
+| Data          | Description |
+|:--------------| :--------------|
+|Use Case Detail| Make new posts in the discussion boards on I-Learn.|
+|XRef           |  |
+|Trigger        |  |
+|Precondition   | The app must have an internet connection, and be connected to I-Learn.|
+|Basic Path     | <li type='1'>The user will navigate to one of their classes.</li><li type='1'>The user will select a discussion board to view.</li><li type='1'>The user will press the reply, or start new thread button to create a new post.</li>|
+|Alternate Path |  |
+|Post Condition |  |
+|Exception Paths| The user has no classes, or no open discussions available to them.|
+|Other          |  |
 ### 3.2.15 Time Clock
 
-Full Description?
+This app allows the user to pick a time zone so that any times recieved from I-Learn can be converted to the users time zone for greatest ease of use, and less confusion.
 
-#### 3.2.16.1 Use Case?
+#### 3.2.15.1 Set time zone
 
 | Data          | Description |
-|:--------------|:-----------------|
-|Use Case Name  | Time Clock|
-|Use Case Detail| xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx |
-|XRef           | None|
-|Trigger        | User is in a different place. Default: Mountain Time |
-|Precondition   | Must share GPS data with application |                       
-|Basic Path	    | The location is compared with the time one for making changes|
-|Alternate Path	| None|			
-|Post Condition | None|
-|Exception Paths| None|
-|Other		| None|
-
+|:--------------| :--------------|
+|Use Case Detail| Set the time zone|
+|XRef           |  |
+|Trigger        | Every time the app recieves a time from I-Learn, it is automatically converted to the users prefered time zone.|
+|Precondition   |  |
+|Basic Path     | <li type='1'>Enter the app settings.</li><li type='1'>Enter the time and date settings.</li><li type='1'>Select the time zone setting and select time zone.</li>|
+|Alternate Path |  |
+|Post Condition |  |
+|Exception Paths|  |
+|Other          |  |
 ### 3.2.16 Recurring Appointments
 
 Full Description?
@@ -735,7 +753,7 @@ Full Description?
 
 ### 3.2.19 Active Directory / LDAP
 
-A directory system which allows the sharing of information between students. Allows for many features like the sharing of contact information or schedules, providing contact methods and meeting planning for groups. 
+A directory system which allows the sharing of information between students. Allows for many features like the sharing of contact information or schedules, providing contact methods and meeting planning for groups.
 
 #### 3.2.19.1 Contact Class Member
 
@@ -745,7 +763,7 @@ A directory system which allows the sharing of information between students. All
 |XRef           | |
 |Trigger        | The user clicks on the "Email" button in the student they wish to contacts profile |
 |Precondition   | The user is on the student list of the class page |
-|Basic Path     | <li type='1'>The user is presented with a list of students, which are sorted alphabetically</li><li type='1'>The user selects the student they wish to contact by clicking on the row the student is located</li><li type='1'>The user is presented with a dialouge box displaying the available options of communication</li><li type='1'>The user selects the "Email" option, which opens the users default email program with a new message to the student the user selected.</li>|
+|Basic Path     | <li type='1'>The user is presented with a list of students, which are sorted alphabetically</li><li type='1'>The user selects the student they wish to contact by clicking on the row the student is located</li><li type='1'>The user is presented with a dialogue box displaying the available options of communication</li><li type='1'>The user selects the "Email" option, which opens the users default email program with a new message to the student the user selected.</li>|
 |Alternate Path | In step 4 the user may have been presented with a "Phone" or "Text" option |
 |Post Condition | The user is presented with their default email client with a new email to the student selected |
 |Exception Paths| A new view may be selected |
@@ -763,7 +781,7 @@ Settings for how the user wants to be notified by the application. Provides a us
 |XRef           | |
 |Trigger        | The user clicks the toggle labeled "Notifications" to the on position |
 |Precondition   | The user is on the settings page |
-|Basic Path     | <li type='1'>The user is presented with a list of settings</li><li type='1'>The user locates the setting which is labeled "Notifications"</li><li type='1'>The users clicks the slider next to the "Notifications" label to the right</li>|
+|Basic Path     | <li type='1'>The user is presented with a list of settings</li><li type='1'>The user locates the setting which is labeled "Notifications"</li><li type='1'>The user clicks the slider next to the "Notifications" label to the right</li>|
 |Alternate Path | The user can toggle the selection to the left to turn notification off |
 |Post Condition | Notifications are enabled for the user |
 |Exception Paths| The user can navigate to a different view |
@@ -776,11 +794,11 @@ Settings for how the user wants to be notified by the application. Provides a us
 |Use Case Detail| As a user, I want to select how I'm notified|
 |XRef           | |
 |Trigger        | The user clicks the toggle labeled "Alerts" |
-|Precondition   | The user is on the setttings page |
-|Basic Path     | <li type='1'>The user is presented with a list of settings</li><li type='1'>The user locates the setting which is labeled "Alerts"</li><li type='1'>The users clicks the slider next to the "Alerts" label to the right</li>|
+|Precondition   | The user is on the settings page |
+|Basic Path     | <li type='1'>The user is presented with a list of settings</li><li type='1'>The user locates the setting which is labeled "Alerts"</li><li type='1'>The user clicks the slider next to the "Alerts" label to the right</li>|
 |Alternate Path | The user can perform the same function on the "Email" and "Text" settings.|
-|Post Condition | The user receives alert notifications through their devices default notification method|
-|Exception Paths| The user can navigate to a different view |
+|Post Condition | The user receives alert notifications through their device's default notification method.|
+|Exception Paths| The user can navigate to a different view. |
 |Other          | |
 
 ### 3.2.21 Shared Calendar
@@ -1337,9 +1355,12 @@ The user will be able to adjust the size of the calendar and have the calendar i
 |Exception Paths| If an item that is selected does not contain a description. The zoom window displays "No item description" |
 |Other          | None |
 
-### 3.2.40 Share Calendar Application
+### 3.2 Functional Requirements
+//TODO: Add requirements here, per the template
 
-User shares the application through their Facebook, Google Plus, and Twitter accounts. The user may also share the application through email.
+### 3.2.40 Share Calendar Feature
+The user can share their calendar and task data through their Facebook, Google Plus, and Twitter accounts. The user may also share their data through email. In addition to this, the user will also be able to post an advertisement for the app itself on their social media.
+
 
 #### 3.2.40.1 Connect to Social Media
 
@@ -1349,21 +1370,22 @@ User shares the application through their Facebook, Google Plus, and Twitter acc
 |XRef           | |
 |Trigger        | The user clicks the "Share" button.|
 |Precondition   | By default the user will see an option to share.|
-|Basic Path     | 1. A window opens and four choices are presented after clicking "Share": "Facebook", "Google Plus", "Twitter", and "email". The user chooses any of the first three options. 2. Depending on the social media selected the user will be presented with a login screen associated with the selected media where the user will enter their associated username and password. 3. The user selects the "Login" button and is presented with a message notifying the user that the application is connected to the chosen social media.|
+|Basic Path     | A window opens and four choices are presented after clicking "Share": "Facebook", "Google Plus", "Twitter", and "email". The user chooses any of the first three options. Depending on the social media selected the user will be presented with a login screen associated with the selected media where the user will enter their associated username and password. The user will then select the "Login" button and be presented with a message notifying the user that the application is connected to the chosen social media.|
 |Alternate Path | None.|
 |Post Condition | The share option will not direct the user to the login page for the specified social media anymore.|
 |Exception Paths| The user may select "Cancel" to exit at any point in the process.|
 |Other          | None.|
 
-#### 3.2.40.2 Share Calendar Application Through Social Media
+
+### 3.2.201.2 Share Calendar Application Advertisement Through Social Media
 
 | Data          | Description |
 |:--------------| :--------------|
-|Use Case Detail| As a user I can share the application on social media. |
+|Use Case Detail| As a user I can share the an advertisement for the application on social media. |
 |XRef           | |
 |Trigger        | The user clicks the "Share" button.|
 |Precondition   | The user has already connected the application to social media.|
-|Basic Path     | 1. A window opens and four choices are presented after clicking "Share": "Facebook", "Google Plus", "Twitter", and "email". The user chooses any of the first three options. 2. The user selects the social media they would like to share to. 3. The user can then select to "Share" or "Cancel". If the user chose to share, they will be notified that the app has been shared. If they cancel, the share window will be closed.|
+|Basic Path     | A window opens and four choices are presented after clicking "Share": "Facebook", "Google Plus", "Twitter", and "email". The user selects the social media they would like to share to. The user will then be asked to confirm whether they want to "Share" or "Cancel". If the user chooses to share, then they will be notified that the advertisement for the app has been shared. If they cancel, the share window will be closed.|
 |Alternate Path | None.|
 |Post Condition | The user is presented with a notification that the calendar is shared.|
 |Exception Paths| The user may select "Cancel" to exit at any point in the process.|
@@ -1377,7 +1399,7 @@ User shares the application through their Facebook, Google Plus, and Twitter acc
 |XRef           | |
 |Trigger        | The user clicks the "Share" button.|
 |Precondition   | By default the user will see an option to share.|
-|Basic Path     | 1. A window opens and four choices are presented after clicking "Share": "Facebook", "Google Plus", "Twitter", and "email". The user chooses any of the first three options. The user chooses "email" and is presented with an email interface including a section for the recipient's email address and a text box for entering any messages to the recipient. 2. The user fills out both of these fields and then clicks the "Send" button. The user is then presented with a notification saying "Message Sent".|
+|Basic Path     | A window opens and four choices are presented after clicking "Share": "Facebook", "Google Plus", "Twitter", and "email". The user chooses "email" and is presented with an email interface including a section for the recipient's email address and a text box for entering any messages to the recipient. 2. The user fills out both of these fields and then clicks the "Send" button. The user is then presented with a notification saying "Message Sent".|
 |Alternate Path | None.|
 |Post Condition | The user is presented with a notification that the calendar is sent.|
 |Exception Paths| The user may select "Cancel" to exit at any point in the process.|
@@ -1428,52 +1450,54 @@ Full Description?
 | School Functions | Remind students of upcoming social events functions  |
 |:--------------| :--------------|
 |Use Case Name  | School Functions                                        |
-|Use Case Detail| xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx |
-|XRef           |                                                  |
+|XRef           |                                                         |
 |Trigger        | Sign in to BYU-I button                                 |
 |Precondition   | Registered student at BYU-I college                     |
-|Basic Path     | 1. Select Sign in 2. System finds event calendar on BYU-I website 3. Side panel is filled in (instead of cluttering days) |
-|Alternate Path | none                                                    |
-|Post Condition | Student calendar has a side panel that is updated with the school functions and events |
-|Exception Paths| User could decide not to sign into BYU-I and not have the school event list |
-|Other          | none                                                    |
+|Basic Path     | 1. Select Sign in                                       |
+|               | 2. System finds event calendar on BYU-I website         |
+|               | 3. Side panel is filled in (instead of cluttering days) |
+|Alternate Path |                                                         |
+|Post Condition | Student calendar has a side panel that is updated with  |
+|               | the school functions and events
+|Exception Paths| User could decide not to sign into BYU-I and not have   |
+|               | the school event list
+|Other          |                                                         |
+### 3.2.044 Printing
 
-### 3.2.44 Printing
+Teh feature of the user to be able to print off a schedule 
 
-Full Description?
-
-#### 3.2.44.1 Use Case Name?
+#### 3.2.044 Printing
 
 | Printing | Allow users to print calendar                                |
 |:--------------| :--------------|
-|Use Case Name  | Printing                                                |
-|Use Case Detail| xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx |
-|XRef           |                                                  |
-|Trigger        | User selects Print                                      |
-|Precondition   | Calendar is up and on current window, connected to a printer |
-|Basic Path     | 1. Select print option 2. Crop desired part of calendar  3. Select print options (ex: color, page count)  4. Finish print |
+|Use Case Name  | Printing|
+|Use Case Detail| The user wishes to print off their schedule to view offline/out of app. |
+|XRef           | None|
+|Trigger        | User selects "Print" button at top of screen to print weekly or monthly view.|
+|Precondition   | Calendar is being viewed in monthly or weekly view and is connected to a printer. |
+|Basic Path     | 1. Select print option <br>2. Crop desired part of calendar  <br>3. Select print options (ex: color, page count)  <br>4. Finish print |
 |Alternate Path | none                                                    |
 |Post Condition | Calendar is left unchanged; however, user has a printed portion of desired part of the calendar |
 |Exception Paths|                                                         |
 |Other          | none                                                    |
 
-### 3.2.45 Badges
+### 3.2.045 Badges
 
-Full Description?
+The option to show badges indicating how many messages, notifications, or tasks that have not been seen.
+                                                       
+#### 3.2.045 Badges
 
-#### 3.2.45.1 Badges?
-
-| Badges | Show badges indicating how many messages, notifications, or tasks that have not been seen                                                       |
+| Data          | Description    |
 |:--------------| :--------------|                                        
-|Use Case Detail| xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx |
-|XRef           |  none yet                                               |
-|Trigger        |  User chooses to check badges                           |
-|Precondition   | Events created, School functions connected              |
-|Basic Path     | 1. Select a badge <br>2. Select from badges event or notification to view 3. Continue looking through badges until out or until user has seen what they wanted to. |
-|Alternate Path | none                                                    |
-|Post Condition | Badges are cleared and system is ready to set more      |
-|Exception Paths| User may not check all the badges which would leave some notifications still up. |
-|Other          | none                                                    |
+|Use Case Detail| The user wants to be able to see that there are new notifications in the app while outside of it. |
+|XRef           | None|
+|Trigger        | User checks device to check if there are any notifications currently in their calander (badges).|                          
+|Precondition   | Events created, School functions connected.|
+|Basic Path     | 1. Select a badge <br>2. Select from badges event or notification to view <br>3. Continue looking through badges until out or until user has seen what they wanted to.|
+|Alternate Path | none|
+|Post Condition | Badges are cleared and system is ready to set more.|
+|Exception Paths| User may not check all the badges which would leave some notifications still up.|
+|Other          | none|
 
 ### 3.2.46 Quick Access
 
@@ -1484,13 +1508,13 @@ The user has the option to be quickly directed to I-Learn and specifically indiv
 | Data          | Description |
 |:--------------| :--------------|
 |Use Case Detail| As a user I can access my classes in I-Learn through links.|
-|XRef           | |
+|XRef           | None|
 |Trigger        | The user clicks the "Quick Access" button.|
 |Precondition   | The user must be logged into the calendar application and be synced with I-Learn.|
 |Basic Path     | 1. After clicking "Quick Access" a drop down menu is displayed with the user's current I-Learn courses. The user clicks one of these courses and is redirected to the I-Learn website and more specifically the class selected within the site using the device's default web browser.|
 |Alternate Path | None.|
 |Post Condition | The user is presented with a notification that the calendar is sent.|
-|Exception Paths| If there is no internet access the user will receive an error message saying "No Internet Connection".|
+|Exception Paths| 1.If there is no internet access the user will receive an error message saying "No Internet Connection".|
 |Other          | None.|
 
 ### 3.2.47 Assignment Alarm
@@ -1501,8 +1525,8 @@ The user has the option to set an alarm for individual assignments that will let
 
 | Data          | Description |
 |:--------------| :--------------|
-|Use Case Detail| As a user I can set an alarm for when to work on an assignment. |
-|XRef           | |
+|Use Case Detail| As a user I can set an alarm that lets me know when to work on an assignment. |
+|XRef           | None|
 |Trigger        | The user clicks an existing assignment event on the calendar.|
 |Precondition   | An assignment event must already be created.|
 |Basic Path     | 1. After clicking an assignment event a window will pop up displaying the details of the event. The user will click the "Alarm" button. <br>2. The alarm interface will give the user drop-down options for date and time for the alarm to trigger. After selecting the date and time the user will have the option of clicking "Set" or "Cancel".  "Cancel" closes the alarm interface and "Set" sets the alarm.|
@@ -1511,27 +1535,27 @@ The user has the option to set an alarm for individual assignments that will let
 |Exception Paths| None.|
 |Other          | None.|
 
-### 3.2.48 Feature Name?
+### 3.2.48 Share Option
 
-Full Description?
+The calendar app can sync with other calendars via social media.
 
-#### 3.2.48.1 Use Case Name?
+#### 3.2.48.1 Sharing Calendars
 
-| Data          | Description |
+| Data          | Description    |
 |:--------------| :--------------|
-|Use Case Detail| As a user, I want to connect to other people's calendars and social media events so I can view all my life's related events in one place              |
-|XRef           | oauth into social media and supporting calendar accounts|
+|Use Case Detail| As a user, I want to connect to other people's calendars and social media events so I can view all my life's related events in one place.|
+|XRef           | None|
 |Trigger        | User clicks a button similar to "add external calendar" |
 |Precondition   | User logged in to calendar application|
 |Basic Path     | User is presented with a window or form where "request to shared calendar" can be requested or supported social media account selected and credentials entered |
 |Alternate Path | None|
-|Post Condition | User can select shared calendars to view along side school calendar/events and can selectively view one or all calendars through a toggle |
+|Post Condition | User can select shared calendars to view alongside school calendar/events and can selectively view one or all calendars through a toggle |
 |Exception Paths| The preferred social media service is not supported. Authentication fails even if proper credentials are entered. Shared calendar data does not update. |
-|Other          | None |
+|Other          | None|
 
-### 3.2.49 Feature Name?
+#### 3.2.49 Sync and Success Share
 
-Full Description?
+The Calendar app is able to sync and be updated from the browser or a compatible site. The user should also be able to share their success on social media.
 
 #### 3.2.49.1 Enable Synchronization with ILearn
 
@@ -1542,10 +1566,10 @@ Full Description?
 |Trigger        | User clicks on ILearn Synchronization button in Settings |
 |Precondition   | User knows ILearn username and password, and is connected to the internet|
 |Basic Path     | Settings -> ILearn Calendar Synchronization|
-|Alternate Path ||
+|Alternate Path | None|
 |Post Condition | ILearn assignments are imported successfuly |
 |Exception Paths| Incorrect credentials, ILearn authentication not responding|
-|Other          ||
+|Other          | None|
 
 #### 3.2.49.1 Google Chrome Addon add to Calendar
 
@@ -1556,10 +1580,10 @@ Full Description?
 |Trigger        | User clicks add to calendar in context menu|
 |Precondition   | Chrome extension installed & signed in|
 |Basic Path     | User highlights a date or phrase in Chrome, then right clicks |
-|Alternate Path ||
+|Alternate Path | None|
 |Post Condition | Desired event is added to calendar|
 |Exception Paths| Highlighted data can't be parsed, extension not authenticated |
-|Other          ||
+|Other          | None|
 
 #### 3.2.49.2 Google Chrome Addon remind about upcoming deadline
 
@@ -1569,11 +1593,11 @@ Full Description?
 |XRef           | Google Chrome Extension |
 |Trigger        | An assignment is due within the configured reminder time|
 |Precondition   | Chrome extension installed, signed in, and configured to give reminders|
-|Basic Path     ||
-|Alternate Path ||
-|Post Condition ||
+|Basic Path     | None|
+|Alternate Path | None|
+|Post Condition | None|
 |Exception Paths| API unavailable|
-|Other          ||
+|Other          | None|
 
 #### 3.2.49.1 Share success to Google Plus
 
@@ -1585,9 +1609,9 @@ Full Description?
 |Precondition   | User has created & completed an assignment|
 |Basic Path     | Widget appears after marking an assignment complete |
 |Alternate Path | Widget appears on page of completed assignment|
-|Post Condition ||
+|Post Condition | None|
 |Exception Paths| Can't authenticate to post to Google Plus|
-|Other          ||
+|Other          | None|
 
 #### 3.2.49.1 Share success to Facebook
 
@@ -1599,13 +1623,14 @@ Full Description?
 |Precondition   | User has created & completed an assignment|
 |Basic Path     | Widget appears after marking an assignment complete |
 |Alternate Path | Widget appears on page of completed assignment|
-|Post Condition ||
+|Post Condition | None|
 |Exception Paths| Can't authenticate to post to Facebook|
-|Other          ||
+|Other          | None|
 
-### 3.2.50 Feature Name?
+### 3.2.50 Priority Assignments
 
-Full Description?
+This will allow users to mark certain assignments as 'Priority'. Will help users
+identify quickly important assignments.
 
 #### 3.2.50.1 Priority
 
@@ -1624,9 +1649,9 @@ Full Description?
 
 ### 3.2.51 Google API
 
-Full Description?
+The user will be able to sync their Google Calendar with our Student Calendar App.
 
-#### 3.2.51.1 Use Case Name?
+#### 3.2.51.1 Sync Google calendar
 
 | Data          | Description |
 |:--------------| :--------------|
@@ -1643,9 +1668,9 @@ Full Description?
 
 ### 3.2.52 Apple API
 
-Full Description?
+The user can sync thier Apple Calendar with their Student Calendar App.
 
-#### 3.2.52.1 Use Case Name?
+#### 3.2.52.1 Sync Apple Calendar
 
 | Data          | Description |
 |:--------------| :--------------|
@@ -1662,9 +1687,9 @@ Full Description?
 
 ### 3.2.53 Outlook API
 
-Full Description?
+The user can sync their Outlook Calendar with our Student Calendar App.
 
-#### 3.2.53.1 Use Case Name?
+#### 3.2.53.1 Sync Outlook Calendar
 
 | Data          | Description |
 |:--------------| :--------------|
@@ -1679,9 +1704,9 @@ Full Description?
 |Exception Paths| User can logout of Outlook account|
 |Other          | None|
 
-### 3.2.54 Feature Name?
+### 3.2.54 Toolbox Bar
 
-Full Description?
+This bar will have many others buttons and bars related to searching, timer, progress and meeting times 
 
 #### 3.2.54.1 Search Bar
 
@@ -1749,9 +1774,9 @@ User will be able to use twitter while having their calendar up. This will allow
 |:--------------| :--------------|
 |Use Case Detail| The user can connect to and use Twitter in the calander application to post and share their thoughts from the app itself.|
 |XRef           | |
-|Trigger        | The user would click the "Share" button and then chosse the platform they wish to share from. In this case Twitter|
+|Trigger        | The user would click the "Share" button and then choose the platform they wish to share from. In this case Twitter|
 |Precondition   | By default the user will see an option to share.|
-|Basic Path     | A window opens and four choices are presented after clicking "Share": "Facebook", "Google Plus", "Twitter", and "email". The user chooses any of the first three options. 2. Depending on the social media selected the user will be presented with a login screen associated with the selected media where the user will enter their associated username and password. 3. The user selects the "Login" button and is presented with a message notifying the user that the application is connected to the chosen social media.|
+|Basic Path     | 1. A window opens and four choices are presented after clicking "Share": "Facebook", "Google Plus", "Twitter", and "Email". The user chooses any of the first three options.<br> 2. Depending on the social media selected the user will be presented with a login screen associated with the selected media where the user will enter their associated username and password. <br>3. The user selects the "Login" button and is presented with a message notifying the user that the application is connected to the chosen social media.|
 |Alternate Path | No alternate path.|
 |Post Condition | The share option will not direct the user to the login page for Twitter anymore.|
 |Exception Paths| The user may select "Cancel" to exit at any point in the process.|
@@ -1765,11 +1790,11 @@ User can connect to Instagram one the calendar to share pictures of their calend
 
 | Data          | Description |
 |:--------------| :--------------|
-|Use Case Detail| The user can connect to and use Instagram in the calander application to post and share their thoughts from the app itself.|
+|Use Case Detail| The user can connect to and use Instagram in the calendar application to post and share their thoughts from the app itself.|
 |XRef           | |
-|Trigger        | The user would click the "Share" button and then chosse the platform they wish to share from. In this case "Instagram".|
+|Trigger        | The user would click the "Share" button and then choose the platform they wish to share from. In this case "Instagram".|
 |Precondition   | By default the user will see an option to share.|
-|Basic Path     |A window opens and four choices are presented after clicking "Share": "Facebook", "Google Plus", "Twitter", and "email". The user chooses any of the first three options. 2. Depending on the social media selected the user will be presented with a login screen associated with the selected media where the user will enter their associated username and password. 3. The user selects the "Login" button and is presented with a message notifying the user that the application is connected to the chosen social media.|
+|Basic Path     | 1. A window opens and four choices are presented after clicking "Share": "Facebook", "Google Plus", "Twitter", and "Email". The user chooses any of the first three options. <br>2. Depending on the social media selected the user will be presented with a login screen associated with the selected media where the user will enter their associated username and password. <br>3. The user selects the "Login" button and is presented with a message notifying the user that the application is connected to the chosen social media.|
 |Alternate Path | No alternate path.|
 |Post Condition | The share option will not direct the user to the login page for Instagram anymore.|
 |Exception Paths| The user may select "Cancel" to exit at any point in the process.|
@@ -1935,20 +1960,20 @@ This feature shows the user the expected travel time for a particular event that
 |Exception Paths| The application is unable to determine the distance to the event and an error message is displayed to the user.|
 |Other          | |
 
-### 3.2.28 Feature Name?
+### 3.2.066 Night Mode
 
 Night mode is a setting that allows the user to toggle a blue light filter to reduce eye strain. 
 
-#### 3.2.28.1 Night Mode
+#### 3.2.066 Night Mode
 
 | Data          | Description |
 |:--------------| :--------------|
-|Use Case Detail| As a user, I want to apply a blue light filter to reduce the strain on my eyes from the screen, especially at night.|
-|XRef           | |
-|Trigger        | A user toggles night mode in the settings.|
-|Precondition   | A user opens the settings menu and toggles night mode.|
+|Use Case Detail| The user wishes to apply a blue light filter to reduce the strain on my eyes from the screen, especially at night.|
+|XRef           |None|
+|Trigger        | A user toggles night mode in the settings. Additionally the calander can automatically switch to "Night Mode" at sunset according to location.|
+|Precondition   | A user opens the settings menu and toggles night mode or configures automatic option.|
 |Basic Path     | 1. User chooses to toggle night mode. <br> 2. User enters settings page. <br> 3. The user presses the night mode button. <br> 4. The application applies a blue light filter.|
-|Alternate Path | A brief description of the purpose for night mode will appear on first activation. |
+|Alternate Path | A brief description of the purpose for night mode will appear on first activation with the option of configuring the option according to time. |
 |Post Condition | A blue light filter has been added.|
 |Exception Paths| None.|
 |Other          | Blue light has been proven to alter circadian rhythm and increase eye-strain. |
@@ -1977,12 +2002,11 @@ Example Description: When describing how to test the Use Case attempt to keep it
 
 ### 4.2.2 Calendar Application is Web
 
-
-
+Validation will be successful if the application is able to be pulled up in a web browser.
 
 #### 4.2.2.1 Access From Web Browser
 
-
+We will use multiple web browser clients to verify that it is web compatible.
 
 ### 4.2.3 Calendar Application API
 
@@ -2057,59 +2081,50 @@ Example Description: When describing how to test the Use Case attempt to keep it
 
 ### 4.2.10 Collapsible calender
 
-
-
+| Validation is successful if user is able to adjust the list of calender items for a day from few to all. |
 
 #### 4.2.10.1 Calender list of events extended.
 
-
-
-
+| Simple UI testing post-completion, by tapping a button labeled 'Show all', will prove the functionality of this feature. |
 ### 4.2.11 Group Communication 1: message chat
 
-
-
+| Validation is successful if user is able to message group members from app by clicking a single button. |
 
 #### 4.2.11.1  Group Message Chat
 
-
-
+| This feature will be tested by having a tester join a group and tap the ‘Contact’ button for a single group member. |
 ### 4.2.12 Group Communication 2: Video Chat
 
-
+| Testing is successful if user opens a group video chat in Skype or Google Hangouts though the app. |
  
+#### 4.2.12.1 Video Chat
 
-#### 4.2.12.1Video Chat
-
-
-
+| We will have a tester attempt to start a video chat after joining a group. If the third-party video chat app opens and the tester can talk to all other members, the feature is successfully implimented. |
 ### 4.2.13 FERPA compliant
 
+Validation will be successfull when app functions are found to meet FERPA guidelines.
 
+#### 4.2.13.1 Be FERPA compliant
 
-
-#### 4.2.13.1 Use Case Name?
-
-
-
+App will be FERPA compliant at all times.
 ### 4.2.14 Discussion Board Integration
 
+Validation will be successful if the app is able to access the discussion boards.
 
+#### 4.2.14.1 View discussion board
 
+We will test discussion board access to multiple courses on multiple accounts.
 
-#### 4.2.14.1 Use Case?
+#### 4.2.14.2 Post to discussion board
 
-
+Posting to discussion boards will be verified by making a post with one account on one device, then checking on another account and device to make sure it was posted.
 ### 4.2.15 Time Clock
 
+Validation will be successful if the times the student sees in their calndar app is accurately adjusted according to the time zone they entered.
 
+#### 4.2.15.1 Set time zone
 
-
-#### 4.2.16.1 Use Case?
-
-
-
-
+The correct time zone value will be verified by comparing the app time, to the actual time in that time zone.
 ### 4.2.16 Recurring Appointments
 
 
@@ -2182,43 +2197,35 @@ Example Description: When describing how to test the Use Case attempt to keep it
 
 ### 4.2.22 Push Notifications
 
-
-
+Validation will be successful if push notifications are recieved.
 
 #### 4.2.22.1 Recieve Push Notification
 
-
-
-
+Test notifications will be sent from multiple accounts on multiple devices to verify push notifications are working.
 ### 4.2.23 Invitations
 
-
+Validation will be successful if invitations are recieved.
 
 #### 4.2.23.1 Send Event Invitations
 
-
+Invitations will be sent from multiple accounts on multiple devices to verify Invitations are working.
 
 
 ### 4.2.24 Simplified "To Do" assignment display
 
-
- 
+Validation will be successful if the user is able to go to the Simplified "To Do" assignment page of the app, and view their assignments one at a time.
 
 #### 4.2.24.1 Completing an assignment
 
-
-
+The Simplified "To Do" assignment display will be tested to make sure that when the button that marks an assignment as complete is pressed, that item will no longer show up on the "To Do" list.
 
 #### 4.2.24.2 Navigating through assignments
 
-
-
+This will be verified by using the navigations buttons to cycle through the to do list, and make sure all items on the list are shown.
 
 #### 4.2.24.3 Adding assignments to the list
 
-
-
-
+Adding items to the list will be tested by selecting the "add to my to-do list" button, and verifying their presence on the to do list. 
 ### 4.2.25 Continuous Calendar
 
 
@@ -2495,14 +2502,34 @@ Example Description: When describing how to test the Use Case attempt to keep it
 
 
 
-### 4.2.48 Feature Name?
+### 4.2.48 Non-SSO
+The user will be required to log into the application with a single ID and password which will only give them access to the calendar application, no other domains.
 
+#### 4.2.48.1 Non-SSO Log In
+| Data          | Description |
+|:--------------| :--------------|
+|Use Case Detail| As a user I can log in to the calendar application with a username and password.|
+|XRef           | 3.2.37|
+|Trigger        | The application is executed for the first time.|
+|Precondition   | The user is viewing the log in page.|
+|Basic Path     | 1. The user enters their username and password into the appropriate fields. 2. The user then selects the "Log In" button.|
+|Alternate Path | If the password entered does not match, the user is prompted to re-enter it again.|
+|Post Condition | The user's calendar is opened and functional.|
+|Exception Paths| If the username is not contained within the server database, the user will be asked to create a new account.|
+|Other          | None|
 
-
-#### 4.2.48.1 Use Case Name?
-
-
-
+#### 4.2.48.2 Non-SSO Log Out
+| Data          | Description |
+|:--------------| :--------------|
+|Use Case Detail| As a user I can log out of the calendar application.|
+|XRef           | 3.2.37|
+|Trigger        | The user clicks the "Log Out" button.|
+|Precondition   | The user is currently logged in to the calendar application.|
+|Basic Path     | 1. The user clicks the "Log Out" button. 2. The user is then asked if they are certain they want to log out. If the user selects yes, then they are logged out. If they select no, they will be returned to the calendar.|
+|Alternate Path | None|
+|Post Condition | The user is presented with the log in screen as if they had first launched the application for the first time.|
+|Exception Paths| None|
+|Other          | None|
 ### 4.2.49 Feature Name?
 
 
