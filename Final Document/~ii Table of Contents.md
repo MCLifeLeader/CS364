@@ -69,12 +69,12 @@
 ### 3.2.46 Quick Access
 ### 3.2.47 Assignment Alarm
 ### 3.2.48 Share Option
-### 3.2.49 Sync and Success Share 
-### 3.2.50 xxxxxxxxxxx
+### 3.2.49 Sync and Success Share
+### 3.2.50 Priority Assignments
 ### 3.2.51 Google API
 ### 3.2.52 Apple API
 ### 3.2.53 Outlook API
-### 3.2.54 xxxxxxxxxxx
+### 3.2.54 Toolbox Bar
 ### 3.2.55 Twitter
 ### 3.2.56 Instagram
 ### 3.2.57 Custom Images and Icons
@@ -87,6 +87,10 @@
 ### 3.2.64 Class Help
 ### 3.2.65 Travel Time
 ### 3.2.66 Night Mode
+### 3.2.67 Tutor Integration
+### 3.2.68 Quick Add
+### 3.2.69 Edit Event
+### 3.2.70 Non-SSO
 ## 3.3 Usability Requirements
 ## 3.4 Performance Requirements
 ## 3.5 Logical Database Requirements
@@ -143,13 +147,13 @@
 ### 4.2.45 Badges
 ### 4.2.46 Quick Access
 ### 4.2.47 Assignment Alarm
-### 4.2.48 xxxxxxxxxxx
-### 4.2.49 xxxxxxxxxxx
-### 4.2.50 xxxxxxxxxxx
+### 4.2.48 Share Option
+### 4.2.49 Sync and Success Share
+### 4.2.50 Priority Assignments
 ### 4.2.51 Google API
 ### 4.2.52 Apple API
 ### 4.2.53 Outlook API
-### 4.2.54 xxxxxxxxxxx
+### 4.2.54 Toolbox Bar
 ### 4.2.55 Twitter
 ### 4.2.56 Instagram
 ### 4.2.57 Custom Images and Icons
@@ -162,6 +166,10 @@
 ### 4.2.64 Class Help
 ### 4.2.65 Travel Time
 ### 4.2.66 Night Mode
+### 4.2.67 Tutor Integration
+### 4.2.68 Quick Add
+### 4.2.69 Edit Event
+### 4.2.70 Non-SSO
 ## 4.3 Usability Requirements
 ## 4.4 Performance Requirements
 ## 4.5 Logical Database Requirements
@@ -172,4 +180,3 @@
 ## 5.1 Assumptions and Dependencies
 ## 5.2 Acronyms and Abbreviations
 ## Index
-
