@@ -123,12 +123,12 @@ John Memmott<br/>
 ### 3.2.46 Quick Access
 ### 3.2.47 Assignment Alarm
 ### 3.2.48 Share Option
-### 3.2.49 Sync and Success Share 
-### 3.2.50 xxxxxxxxxxx
+### 3.2.49 Sync and Success Share
+### 3.2.50 Priority Assignments
 ### 3.2.51 Google API
 ### 3.2.52 Apple API
 ### 3.2.53 Outlook API
-### 3.2.54 xxxxxxxxxxx
+### 3.2.54 Toolbox Bar
 ### 3.2.55 Twitter
 ### 3.2.56 Instagram
 ### 3.2.57 Custom Images and Icons
@@ -141,6 +141,10 @@ John Memmott<br/>
 ### 3.2.64 Class Help
 ### 3.2.65 Travel Time
 ### 3.2.66 Night Mode
+### 3.2.67 Tutor Integration
+### 3.2.68 Quick Add
+### 3.2.69 Edit Event
+### 3.2.70 Non-SSO
 ## 3.3 Usability Requirements
 ## 3.4 Performance Requirements
 ## 3.5 Logical Database Requirements
@@ -197,13 +201,13 @@ John Memmott<br/>
 ### 4.2.45 Badges
 ### 4.2.46 Quick Access
 ### 4.2.47 Assignment Alarm
-### 4.2.48 xxxxxxxxxxx
-### 4.2.49 xxxxxxxxxxx
-### 4.2.50 xxxxxxxxxxx
+### 4.2.48 Share Option
+### 4.2.49 Sync and Success Share
+### 4.2.50 Priority Assignments
 ### 4.2.51 Google API
 ### 4.2.52 Apple API
 ### 4.2.53 Outlook API
-### 4.2.54 xxxxxxxxxxx
+### 4.2.54 Toolbox Bar
 ### 4.2.55 Twitter
 ### 4.2.56 Instagram
 ### 4.2.57 Custom Images and Icons
@@ -216,6 +220,10 @@ John Memmott<br/>
 ### 4.2.64 Class Help
 ### 4.2.65 Travel Time
 ### 4.2.66 Night Mode
+### 4.2.67 Tutor Integration
+### 4.2.68 Quick Add
+### 4.2.69 Edit Event
+### 4.2.70 Non-SSO
 ## 4.3 Usability Requirements
 ## 4.4 Performance Requirements
 ## 4.5 Logical Database Requirements
@@ -226,7 +234,6 @@ John Memmott<br/>
 ## 5.1 Assumptions and Dependencies
 ## 5.2 Acronyms and Abbreviations
 ## Index
-
 # List of Figures
 
 # Revision History
@@ -259,18 +266,23 @@ Reading this document in the order it has been presented is highly recommended f
 
 |Keywords|Definition     |
 |-------|---------------|
+|API|A set of functions and procedures that allow the creation of applications which access the features or data of an operating system, application, or other service.|
 |BYU-I I-Learn|Website that the project will interact with and read user’s calendar.|
 |Calendar program|A computer program that operates a schedule of events.|
+|Calendar location|An address or place that is associated with an event.|
 |Developers|Teams of students of Brigham Young University – Idaho.|
 |Event|Any assignment the user declares in a specific time-frame in the calendar.|
+|LDAP|(Lightweight Directory Access Protocol) is a software protocol for enabling anyone to locate organizations, individuals, and other resources on a corporate internet or public internet.|
+|Link|A link (short for hyperlink) is an HTML object that allows you to jump to a new location when you click or tap it.|
+|Project Manager|The team member who oversees the project and works with the team leads to make sure the project fulfills the necessary requirements and is finished on time.|
 |Stakeholder|Any person who has an interest in our project, typically fellow college students and friends of developers.|
 |Student Calendar Integration|Application intended to fulfill requirements.|
-|User|Students that attended Brigham Young University - Idaho.|
 |Reader|All users, developers, and stakeholders will be viewing the site.|
 |Software Requirements Specification|Also known as SRS, or this documents. A documents that contains the requirements a product must meet in order to succeed.|
-|Project Manager|The team member who oversees the project and works with the team leads to make sure the project fulfills the necessary requirements and is finished on time.|
-|Event|An item on the calendar, ie. todo, meeting, or due date.|
-
+|SSO|Single sign-on is an authentication process that allows a user to access multiple applications with one set of login credentials.|
+|Toggle|To switch from one effect, feature, or state to another.|
+|Tutorial|Self-paced instructional material that provides step by step information in presenting a concept or learning unit. Computer based tutorials use interactive methods such as hyperlinks, and audio and visual presentation of the subject matter, and provide feedback through question-answer exercises.|
+|User|Students that attended Brigham Young University - Idaho.|
 ## 1.5 References
 
   [1] D. Zowghil & C. Coulin, "Requirements Elicitation: A Survey of Techniques, Approaches, and Tools" Engineering and Managing Software Requirements, pp. 19-46, 2005 [Online] Available: http://link.springer.com/chapter/10.1007%2F3-540-28244-0_2#page-1
@@ -283,7 +295,8 @@ This document has two primary parts following this Introduction. The first is th
 
 ## 2.1 Product Perspective
 
-The Student Calendar can be used as a stand alone application that gives students much of the functionality as described in the product functions section. For BYU-I students, the calendar's main benefits come from interfacing with the University's I-Learn system allowing them to access assignments and other events. Interfaces to other external systems will provide further functionality outside of basic calendar tasks. Detailed descriptions of these external systems is beyond the scope of this document. All interfacing with external systems will be done according to industry standards.
+The Student Calendar can be used as a stand alone application that gives students much of the functionality as described in the product functions section. For BYU-I students, the calendar's main benefits come from interfacing with the University's I-Learn system allowing them to access assignments and other events. Interfaces to other external systems will provide further functionality outside of basic calendar tasks. Detailed descriptions of these external systems is beyond the scope of this document. All interfacing with external systems will be done according to industry standards.</br>
+<img  src="https://github.com/MCLifeLeader/CS364/blob/master/Final%20Document/Images/Product%20perspective.jpg" height="50%" width="50%">
 
 ## 2.2 Product Features
 
@@ -294,6 +307,8 @@ Features have been broken down into various feature categories to group like or 
 #### 2.2.1.1 - The application shall be mobile aware and responsive in its design.
 
 #### 2.2.1.2 - The application shall have a rich web page design available through a full web browser.
+
+#### 2.2.1.3 - The application shall have app support for android and iOS with an interface similiar to the web application.
 
 ### 2.2.2 - Security Features
 
@@ -307,27 +322,48 @@ Features have been broken down into various feature categories to group like or 
 
 #### 2.2.3.1 - The application shall interface with BYU-Idaho's I-Learn web service
 
-#### 2.2.3.2 - 
-
 ### 2.2.4 - Notification Features
 
 #### 2.2.4.1 - The application shall notify users of invites from other users
 
-#### 2.2.4.2 - 
+#### 2.2.4.2 - The application shall notify users of upcoming due dates
 
 ## 2.3 User Classes and Characteristics
 
+### 2.3.1 - Students: The majority of users will be students during the school year. The application will be simple enough that students from all technical backgrounds can easily navigate the interface.
+
+### 2.3.2 - Professors: There will be some features that professors may want to access. The interface will be simple enough to accommodate all tecnhical backgrounds.
+
+### 2.3.3 - ITS Staff: The ITS Staff will maintain the application and keep it updated. The ITS Staff will have a sufficient technical background to perform all maintance duties.
+
 ## 2.4 Operating Environment
 
+The software being developed will run as a web application, will be
+be able to work on all web browsers, and on most devices.
 ## 2.5 Functional Requirements
 
+### 2.5.1 - Must Authenticate with BYU-I student web site
+### 2.5.2 - Must run on all web browsers
+### 2.5.3 - Must work on most devices
+### 2.5.4 - Must access some permissions on devices
+### 2.5.5 - Authentication/Link with social media platforms
 ## 2.6 Technical Requirements
 
 ## 2.7 User Documentation
 
 ## 2.8 Assumptions and Dependencies
 
-# 3.0 Requirements Specification
+### 2.8.1 - Assumptions
+
+An assumption made is that the devices that access the application will have the requisite hardware resources to properly access the content.
+
+The student calendar requirements highlight optional features that are not critical to the function of the application. They consist of various improvements to usability and convenience and may or may not be added after the development of the core features based on the discretion of the stakeholders.
+
+### 2.8.2 - Dependencies
+
+Some of the application's features are dependant on hardware components that are more commonly found in mobile handsets. For example, the video calling integration would depend on a physical camera and the travel-time indicator will benefit from the inclusion of a GPS antenna.
+
+Several features in this document will depend wholly on the existence and maintenance of various APIs.  # 3.0 Requirements Specification
 
 ## 3.1 External Interface Requirements
 
@@ -441,21 +477,36 @@ This application will allow users to write plugins that integrate with the calen
 
 ### 3.2.4 Priority List
 
-Students need to prioritize tasks and assignments so that they can focus on the most important taks and give those tasks proper time and attention. This feature will help students plan ahead by seeing list of assignments and tasks ranked by due dates and, in the case of custom tasks, ranked by priority level and due date.
+Students need to prioritize tasks and assignments so that they can focus on the most important tasks. This feature will help students plan ahead by seeing a list of assignments and tasks ranked by due-date and by priority level (High, Medium, Low).
 
-#### 3.2.4.1 Task Priority Labels
+#### 3.2.4.1 Assignment Priority List
+
+| Data          | Description |
+|:--------------|:-----------------|
+|Use Case Detail  | As a student I want to be able to see I-Learn assigments ordered by due-date and priority label|
+|XRef           ||
+|Trigger        | The user opens the calendar app.|
+|Precondition   | The system has access to the user's assignments on I-Learn.|                       
+|Basic Path	| 1. The user taps on the monthly view of the calendar.</br>2. The user taps on a specific day and sees a list of assignments sorted by due date and level of priority.</br>3. The user can click on each assignment see the corresponding information if available.|
+|Alternate Path	| If the user has not added a level of priority, then the system will only display the list according to the corresponding due-dates for each assignment. Otherwise, the user can assign a level of priority by tapping on the assignment and then choosing "prioritize."|			
+|Post Condition | The user sees a list of time sensitive and prioritized assignments.|
+|Exception Paths| The user can cancel this process at any time.|
+|Other		| None|
+
+#### 3.2.4.2 Task Priority Labels
 
 | Data          | Description |
 |:--------------|:-----------------|
 |Use Case Detail  | As a student I want to be able to prioritize tasks and assignments to improve my work quality and get urgent work done in a timely manner.|
 |XRef           ||
-|Trigger        | The User opens the calendar app.|
-|Precondition   | The system has access to the user's assignments on I-Learn.|                       
+|Trigger        | The user opens the calendar app.|
+|Precondition   | The user has added custom tasks previously.|                       
 |Basic Path	| 1. The user taps on the monthly view of the calendar.</br>2. The user taps on a specific day and sees a list of assignments sorted by due date and a list of tasks (if any) labeled : high, medium, and low priority. </br>3. The user can click on each assignment or task and see the corresponding information if available.|
 |Alternate Path	| If the user has not added custom tasks, then:</br>1. The user taps on "add task" on the main calendar view.</br>2. The user adds the task and then sets a priority level: high, medium, or low.</br>3. The user sets a time as deadline for the completion of the task.|			
 |Post Condition | The user sees a list of time sensitive assignments and tasks.|
 |Exception Paths| The user can cancel this process at any time.|
 |Other		| None|
+
 
 ### 3.2.5 ADA Compliant
 
@@ -1044,7 +1095,7 @@ Have support for point locations to pop up in the calendar when you need to be s
 |Exception Paths| If there is not a location entered then no icon will appear. Apple maps will handle invalid locations.|
 |Other          | None.|
 
-#### 3.2.28.1 Support for Apple Maps on MAC computers
+#### 3.2.28.2 Support for Apple Maps on MAC computers
 
 | Data          | Description |
 |:--------------| :--------------|
@@ -1052,12 +1103,11 @@ Have support for point locations to pop up in the calendar when you need to be s
 |XRef           | Lorem ipsum dolor sit amet, consectetur adipiscing elit.|
 |Trigger        | An item is scheduled with a location.|
 |Precondition   | The user is an apple maps user. The user creates a new calendar item.|
-|Basic Path     | The user schedules an item, and sets a location. A small help balloon pops up that asks if they want to see the time to reach their destination. Once they click the balloon then Apple Maps is brought up with the location and the time to arrive.|
+|Basic Path     | The user schedules an event, and sets a location. A small help balloon pops up that asks if they want to see the time to reach their destination. Once they click the balloon then Apple Maps is brought up with the location and the time to arrive.|
 |Alternate Path | The user clicks an item with a scheduled meeting place, they click on a location icon, and the location is then used in apple maps.|
 |Post Condition | Apple maps must show the time required to reach the destination.|
 |Exception Paths| If there is not a location entered then no icon will appear. Apple maps will handle invalid locations.|
 |Other          | None.|
-
 ### 3.2.29 Other Maps Integration
 
 The calendar application will provide support for locations with the following different applications to help a variety of map users: Here WeGo, Waze, MapFactor, Mapquest, Scout GPS, Maps.Me and InRoute.
@@ -1070,12 +1120,11 @@ The calendar application will provide support for locations with the following d
 |XRef           | |
 |Trigger        | Clicking or tapping on the “Where” icon when creating an event or task.|
 |Precondition   | By default, the user will see an option to create an event or task for a specific day.|
-|Basic Path     | 1. The user creates an event on a specific day by clicking or tapping on the “create event.”<br>2. The user adds an address on the “Where” item of the create event screen.<br>3. The application goes back to the calendar view and shows an icon (map with a pin) next to the added event.<br>4. If user clicks or taps on the map/pin icon, application sends address of event as a destination too user's DEFAULT map application|
+|Basic Path     | 1. The user creates an event on a specific day by clicking or tapping on the “create event.”<br>2. The user adds an address on the “Where” item of the create event screen.<br>3. The application goes back to the calendar view and shows an icon (map with a pin) next to the added event.<br>4. If user clicks or taps on the map/pin icon, application sends address of event as a destination to user's DEFAULT map application|
 |Alternate Path | In step 1, the user may have already created an event or task in previous interactions. The user can just click on the event and add a location. Return to step 4. If a user does not have a default map application then use the google maps browser for step 4.|
 |Post Condition | The user and their event location is sent to their DEFAULT map application which will plan a route to the location of the event from their current position.|
 |Exception Paths| The attempt may be abandoned at any time. If a user does not have a default map application then use the google maps browser for step 4. |
 |Other          | None.|
-
 ### 3.2.30 Video Tutorial
 
 The calendar application will provide a video tutorial on how to use the application. The goal is to help new users to become familiar with how to use the basic parts of the application. This will make users feel more comfortable adjusting to our application.
@@ -1087,13 +1136,12 @@ The calendar application will provide a video tutorial on how to use the applica
 |Use Case Detail  | Our application should have a short video tutorial available to help new users learn our application.|
 |XRef           | |
 |Trigger        | Entering the Application for the first time.|
-|Precondition   | The user must be signing into the app for the first time.|
-|Basic Path     | 1. The user signs into the application<br />2. A pop up apears before the use instructing them to follow a link to learn how to better use the app.<br />3. The user clicks on the link which takes them to Youtube or they click cancel and continue to the app|
+|Precondition   | The user must be signing into the application for the first time.|
+|Basic Path     | 1. The user signs into the application<br />2. A pop up appears before the use instructing them to follow a link to learn how to better use the app.<br />3. The user clicks on the link which takes them to Youtube or they click cancel and continue to the app|
 |Alternate Path | Include a location labeled "help" which has the link to the tutorial video for those who would like to watch it again.|
 |Post Condition | After the individual has seen the popup for the first time it will not pop-up again. They will have to visit the help section to view the video again|
 |Exception Paths| The pop-up may be left by clicking continue at any time.|
 |Other          | None.|
-
 ### 3.2.31 Group Permissions
 
 Group owners should be able to set permissions for the users in the group. They will also have the ability to give announcements, chat, schedule meetings, and make group links.
@@ -1146,7 +1194,7 @@ Links are used to deep link to third party technologies for collaboration tools.
 
 ### 3.2.33 Sort & Filter
 
-Calendar items can be sorted or filters based on details about the calendar event.
+Calendar items can be sorted or filtered based on details about the calendar event.
 
 #### 3.2.33.1 Filter by class
 
@@ -1156,25 +1204,25 @@ Calendar items can be sorted or filters based on details about the calendar even
 |XRef           | |
 |Trigger        | The user taps on the 'filter' button on any calendar events view.|
 |Precondition   | The user must have calendar events for the date range showing.|
-|Basic Path     | 1. User logs into I-Learn through app. 2. User clicks the “Events” icon and the app shows his current calendar events. 3. The user taps the "Filter" button. 4. The user selects a class to filter by.|
-|Alternate Path | 4. the user selects multiple classes the filter by.|
-|Post Condition | The user is only seeing his assignments based on the filter query until they reset the filter.|
-|Exception Paths| The user does not have any events happening and the page say "No events".|
-|Other          | Users can choose to filter by 1 class or multiple classes.|
+|Basic Path     | 1. User clicks the “Events” icon and the app shows all current calendar events. <br>2. The user taps the "Filter" button. <br>3. The user selects the class(es) to filter by.|
+|Alternate Path | None |
+|Post Condition | The user sees only assignments selected by the filter query until they reset the filter.|
+|Exception Paths| None|
+|Other          | Users can choose to filter by one or multiple classes.|
 
 #### 3.2.33.2 Sort by Time Length
 
 | Data          | Description |
 |:--------------| :--------------|
-|Use Case Detail| As a user, I want to be able to sort my calendar items by the amount of time they take to complete.|
+|Use Case Detail| As a user, I want to be able to sort my calendar items by time to complete, grade percentage, or class. |
 |XRef           | |
-|Trigger        | The user taps on the 'sort' button on any calendar events view.|
-|Precondition   | The user must have calendar events for the date range showing.|
-|Basic Path     | 1. User logs into I-Learn through app. 2. User clicks the “Events” icon and the app shows his current calendar events. 3. The user taps the "Sort" button. 4. The user selects a to sort by Time Length.|
-|Alternate Path | 4. the user selects descending to show the shortest events first.|
-|Post Condition | The user continues to see his assignments in the order determined by the sort until they reset the sort settings.|
-|Exception Paths| The user does not have any events happening and the page say "No events".|
-|Other          | Users can choose to sort by time length, grade percentage, class, etc.|
+|Trigger        | The user taps on the 'sort' button on the calendar events list view.|
+|Precondition   | None|
+|Basic Path     | 1. User clicks the “Events” icon and the app shows all current calendar events. <br>2. The user taps the "Sort" button. <br>3. The user selects the sort criteria.|
+|Alternate Path | None |
+|Post Condition | The user sees assignments in the order determined by the sort criteria until the sort settings are changed or reset.|
+|Exception Paths| None |
+|Other          | Users can choose to sort by time to complete, grade percentage, or class. Sort order can be changed from ascending to descending.|
 
 ### 3.2.34 Personal Assistant
 
@@ -1354,9 +1402,6 @@ The user will be able to adjust the size of the calendar and have the calendar i
 |Post Condition |The user is able to view the full details of the item|
 |Exception Paths| If an item that is selected does not contain a description. The zoom window displays "No item description" |
 |Other          | None |
-
-### 3.2 Functional Requirements
-//TODO: Add requirements here, per the template
 
 ### 3.2.40 Share Calendar Feature
 The user can share their calendar and task data through their Facebook, Google Plus, and Twitter accounts. The user may also share their data through email. In addition to this, the user will also be able to post an advertisement for the app itself on their social media.
@@ -1706,7 +1751,7 @@ The user can sync their Outlook Calendar with our Student Calendar App.
 
 ### 3.2.54 Toolbox Bar
 
-This bar will have many others buttons and bars related to searching, timer, progress and meeting times 
+This bar will have many other buttons and bars related to searching, timer, progress and meeting times.
 
 #### 3.2.54.1 Search Bar
 
@@ -1714,13 +1759,13 @@ This bar will have many others buttons and bars related to searching, timer, pro
 |:--------------| :--------------|
 |Use Case Detail| As a user I want to search the calendar app.|
 |XRef           | |
-|Trigger        | User clicks on the search bar|
+|Trigger        | User clicks on the search bar.|
 |Precondition   | User is logged into the calendar app.|
-|Basic Path     | User selects the search bar and enters in keyword.|
+|Basic Path     | 1. User selects the search bar and enters in keyword.|
 |Alternate Path | User selects search button and enters in keyword.|
 |Post Condition | User has searched for a keyword.|
 |Exception Paths| If the keyword is not found the user will be prompted to try a different keyword.|
-|Other          | |
+|Other          | None.|
 
 #### 3.2.54.2 Timer
 
@@ -1728,15 +1773,15 @@ This bar will have many others buttons and bars related to searching, timer, pro
 |:--------------| :--------------|
 |Use Case Detail| User has limited time to complete assignment, calendar app shows how long assignment will take to complete.|
 |XRef           | |
-|Trigger        | User has an assignment that needs to be completed|
+|Trigger        | User has an assignment that needs to be completed.|
 |Precondition   | User is logged into calendar app and looking assignment.|
-|Basic Path     | User selects the timer function to determine time needed to complete assignment.|
+|Basic Path     | 1. User selects the timer function to determine time needed to complete assignment.|
 |Alternate Path | None.|
 |Post Condition | User is given an estimate of how long it will take to complete given assignment.|
 |Exception Paths| If user hasn't completed any assignments then the timer will display a message to explain this.|
-|Other          | |
+|Other          | None.|
 
-#### 3.2.54.3 Assigment Progress Bar
+#### 3.2.54.3 Assignment Progress Bar
 
 | Data          | Description |
 |:--------------| :--------------|
@@ -1744,11 +1789,11 @@ This bar will have many others buttons and bars related to searching, timer, pro
 |XRef           | |
 |Trigger        | User has linked app with school.|
 |Precondition   | User is looking at assignments for given week.|
-|Basic Path     | User selects the assignment progress bar.|
-|Alternate Path | |
+|Basic Path     | 1. User selects the assignment progress bar.|
+|Alternate Path | None.|
 |Post Condition | User can see how many assignments have been completed for specific class and how many are left to complete.|
 |Exception Paths| If user hasn't added classes then there will be no progress bar.|
-|Other          | |
+|Other          | None.|
 
 #### 3.2.54.4 Suggest Meeting Times
 
@@ -1758,11 +1803,11 @@ This bar will have many others buttons and bars related to searching, timer, pro
 |XRef           | |
 |Trigger        | A user has selected the meet with others button.|
 |Precondition   | User has added associates to calendar app.|
-|Basic Path     | User navigates to meet with others button.|
-|Alternate Path | |
+|Basic Path     | 1. User navigates to meet with others button.|
+|Alternate Path | None.|
 |Post Condition | User is able to see availability of associates.|
 |Exception Paths| User hasn't added anyone to app and is unable to see availability.|
-|Other          | |
+|Other          | None.|
 
 ### 3.2.55 Twitter
 
@@ -1772,19 +1817,19 @@ User will be able to use twitter while having their calendar up. This will allow
 
 | Data          | Description |
 |:--------------| :--------------|
-|Use Case Detail| The user can connect to and use Twitter in the calander application to post and share their thoughts from the app itself.|
+|Use Case Detail| The user can connect to and use Twitter in the calendar application to post and share their thoughts from the app itself.|
 |XRef           | |
-|Trigger        | The user would click the "Share" button and then choose the platform they wish to share from. In this case Twitter|
+|Trigger        | The user would click the "Share" button and then choose the platform they wish to share from, in this case, Twitter.|
 |Precondition   | By default the user will see an option to share.|
 |Basic Path     | 1. A window opens and four choices are presented after clicking "Share": "Facebook", "Google Plus", "Twitter", and "Email". The user chooses any of the first three options.<br> 2. Depending on the social media selected the user will be presented with a login screen associated with the selected media where the user will enter their associated username and password. <br>3. The user selects the "Login" button and is presented with a message notifying the user that the application is connected to the chosen social media.|
-|Alternate Path | No alternate path.|
+|Alternate Path | None.|
 |Post Condition | The share option will not direct the user to the login page for Twitter anymore.|
 |Exception Paths| The user may select "Cancel" to exit at any point in the process.|
 |Other          | None.|
 
 ### 3.2.56 Instagram
 
-User can connect to Instagram one the calendar to share pictures of their calendar
+User can connect to Instagram on the calendar to share pictures of their calendar.
 
 #### 3.2.56.1 Instagram
 
@@ -1792,17 +1837,17 @@ User can connect to Instagram one the calendar to share pictures of their calend
 |:--------------| :--------------|
 |Use Case Detail| The user can connect to and use Instagram in the calendar application to post and share their thoughts from the app itself.|
 |XRef           | |
-|Trigger        | The user would click the "Share" button and then choose the platform they wish to share from. In this case "Instagram".|
+|Trigger        | The user would click the "Share" button and then choose the platform they wish to share from, in this case, Instagram.|
 |Precondition   | By default the user will see an option to share.|
 |Basic Path     | 1. A window opens and four choices are presented after clicking "Share": "Facebook", "Google Plus", "Twitter", and "Email". The user chooses any of the first three options. <br>2. Depending on the social media selected the user will be presented with a login screen associated with the selected media where the user will enter their associated username and password. <br>3. The user selects the "Login" button and is presented with a message notifying the user that the application is connected to the chosen social media.|
-|Alternate Path | No alternate path.|
+|Alternate Path | None.|
 |Post Condition | The share option will not direct the user to the login page for Instagram anymore.|
 |Exception Paths| The user may select "Cancel" to exit at any point in the process.|
 |Other          | None.|
 
 ### 3.2.57 Custom Images and Icons
 
-The calendar should be personalized. The user will have the ability to interact with the app to change things to their favorite images for the display options on their calendar.
+The calendar should be able to be personalized. The user will have the ability to interact with the app to change things to their favorite images for the display options on their calendar.
 
 #### 3.2.57.1 Custom Images and Icons
 
@@ -1812,15 +1857,15 @@ The calendar should be personalized. The user will have the ability to interact 
 | XRef            ||
 | Trigger         | The user would click the "Settings" button and then choose the option that offers customization. In this case it would be "Appearance"|
 | Precondition    | By default the user will have option to the settings menu throughout the app.|
-| Basic Path      | The user would select teh settings button and scroll to the "Appearance" option. Then they will be given choices of customixation with images for class icons, backgrounds and layout. |
-| Alternate Path  | The user can have the ability to select a class and go to settings in each different class to customize the appearnance.|
+| Basic Path      | 1. The user would select the settings button and scroll to the "Appearance" option. Then they will be given choices of customization with images for class icons, backgrounds and layout. |
+| Alternate Path  | The user can have the ability to select a class and go to settings in each different class to customize the appearance.|
 | Post Condition  | The user will have a customized view and appearance for each class and layout.|
 | Exception Paths | The user may select "Cancel" to exit at any point in the process.|
 | Other           | None.|
 
 ### 3.2.58 Custom Videos
 
-The calendar will ask for camera permissions so that the user can videos to customize their display options.
+The calendar will ask for camera permissions so that the user can use videos to customize their display options.
 
 #### 3.2.58.1 Custom Videos
 
@@ -1828,85 +1873,85 @@ The calendar will ask for camera permissions so that the user can videos to cust
 |:--------------| :--------------|
 |Use Case Detail| While interacting inside the app, the user can utilize and imbed videos to customize the display options.|
 |XRef           | |
-|Trigger        | The user would click the "Settings" button and then choose the option that offers customization. In this case it would be "Appearance"|
+|Trigger        | The user would click the "Settings" button and then choose the option that offers customization. In this case it would be "Appearance".|
 |Precondition   | By default the user will have option to the settings menu throughout the app.|
-|Basic Path     |The user would select teh settings button and scroll to the "Appearance" option. Then they will be given choices of customixation with images for class icons, backgrounds and layout.|
-|Alternate Path | The user can have the ability to select a class and go to settings in each different class to customize the appearnance.|
+|Basic Path     | 1. The user would select the settings button and scroll to the "Appearance" option. Then they will be given choices of customization with images for class icons, backgrounds and layout.|
+|Alternate Path | The user can have the ability to select a class and go to settings in each different class to customize the appearance.|
 |Post Condition | The user will have a customized view and appearance for each class and layout.|
 |Exception Paths| The user may select "Cancel" to exit at any point in the process.|
 |Other          | None.|
 
-### 3.2.59 ToDo Task Engine
+### 3.2.59 To-Do Task Engine
 
-The user is going to be able to create their tasks, events and notifications. There will be a ToDo list view where the user can check to see what they have planned for their calendar. 
+The user is going to be able to create their tasks, events and notifications. There will be a To-Do list view where the user can check to see what they have planned for their calendar. 
 
-#### 3.2.59.1 Calendar Task & ToDo Engine
+#### 3.2.59.1 Calendar Task & To-Do Engine
 
 | Data            | Description|
 | :-------------- | :--------------|
-| Use Case Detail | The user can make use of the ToDo/Task engine in order to create tasks, events, and notifications. These will be visible in the calendar and in a ToDo list view. Also supported will be tasks without a specific deadline |
+| Use Case Detail | The user can make use of the To-Do and Task engine in order to create tasks, events, and notifications. These will be visible in the calendar and in a To-Do list view. It will also support tasks without a specific deadline.|
 | XRef            ||
-| Trigger         | The user will click a 'create new task' button|
-| Precondition    | The UI will include a 'create new task' button|
-| Basic Path      | The user will click on the 'create new task' button, visible in the main calendar view|
-| Alternate Path  | The user will click on the 'create new task' button, visible in the ToDo list view|
-| Post Condition  | The task will be added to both the calendar and the ToDo list|
-| Exception Paths | The user may select either 'cancel' while he or she is creating the task, or 'delete' to delete it after the fact|
-| Other           | None |
+| Trigger         | The user will click a 'create new task' button.|
+| Precondition    | The UI will include a 'create new task' button.|
+| Basic Path      | 1. The user will click on the 'create new task' button, visible in the main calendar view.|
+| Alternate Path  | The user will click on the 'create new task' button, visible in the To-Do list view.|
+| Post Condition  | The task will be added to both the calendar and the To-Do list.|
+| Exception Paths | The user may select either 'cancel' while he or she is creating the task, or 'delete' to delete it after the fact.|
+| Other           | None.|
 
-### 3.2.60 Feature Name?
+### 3.2.60 Calendar View
 
-Full Description?
+The User will be able to select the calendar view style that suits them best.
 
 #### 3.2.60.1 Various Calendar Views
 
 | Data            | Description|
 | :-------------- | :--------------|
-| Use Case Detail | The calendar includes Day, 5 day Week, 7 day Week, Month, Semester, and Year views. The user can easily switch views, and the current date will be highlighted.|
+| Use Case Detail | The calendar includes Day, 5-day Week, 7-day Week, Month, Semester, and Year views. The user can easily switch views, and the current date will be highlighted.|
 | XRef            ||
-| Trigger         | The selected view will be used to display the calendar whenever the user opens the calendar portion of the app|
-| Precondition    | The default view will be 'Month', and the user will have the ability to select their preferance in Settings|
-| Basic Path      | Above the top of the calendar, their will be dedicated buttons to switch to Month, Week, and Day view.  For the other views, the user will click 'Calendar Settings', and then 'Calendar View' |
-| Alternate Path  | In the main settings, the user will click 'Calendar Settings', and then ' Calendar View'.  They will then make their selection from the available views|
-| Post Condition  | The calendar's view setting will be updated and henceforth the calendar will be displayed in the view style that the user selected|
-| Exception Paths | If the user wishes to undo their selection, they will simply select the view that they had previously been using|
-| Other           | None|
+| Trigger         | The selected view will be used to display the calendar whenever the user opens the calendar portion of the app.|
+| Precondition    | The default view will be 'Month', and the user will have the ability to select their preferance in Settings.|
+| Basic Path      | 1. Above the top of the calendar, there will be dedicated buttons to switch to Month, 7-day Week, and Day view.|
+| Alternate Path  | For the other views, the user will click 'Calendar Settings', and then 'Calendar View'. They will then make their selection from the available views.|
+| Post Condition  | The calendar's view setting will be updated and henceforth the calendar will be displayed in the view style that the user selected.|
+| Exception Paths | If the user wishes to undo their selection, they will simply select the view that they had previously been using.|
+| Other           | None.|
 
-### 3.2.61 Feature Name?
+### 3.2.61 Task Rewards
 
-Full Description?
+The User has the option of enabling a rewards system to encompass different real-world tasks.
 
 #### 3.2.61.1 Goal/ XP bar
 
 | Data            | Description|
 | :-------------- | :--------------|
-| Use Case Detail | The user can opt to use a video-game-like point system, where they are rewarded with virtual points when they complete tasks.  These points are used to defeat virtual game enemies.  They also gain XP, which grows cumulatively. The user will enter the point value of each task they create |
+| Use Case Detail | The user can opt to use a video-game-like point system, where they are rewarded with virtual points when they complete tasks.  These points are used to defeat virtual game enemies.  They also gain XP, which grows cumulatively. The user will enter the point value of each task they create.|
 | XRef            ||
-| Trigger         | This feature will be enabled if the user decides to enable it from the settings menu, and it will be present when they create tasks, and when they mark them complete|
-| Precondition    | The feature will only enable if the user so chooses|
-| Basic Path      | The user clicks 'Settings', then 'Adventure Mode', then toggles the mode's setting toggle to 'on'|
-| Alternate Path  | None|
-| Post Condition  | After enabling this feature, the sidebar will include a Points and XP 'character stats' display akin to those found in videogames, the 'create task' dialogue will prompt the user for task's point values, and the app will award points upon task completion |
+| Trigger         | This feature will be enabled if the user decides to enable it from the settings menu, and it will be present when they create tasks, and when they mark them complete.|
+| Precondition    | The feature will only enable if the user wants to.|
+| Basic Path      | 1. The user clicks 'Settings'.<br> 2. The user clicks 'Adventure Mode'.<br> 3. The user toggles the mode's setting toggle to 'on'.|
+| Alternate Path  | None.|
+| Post Condition  | After enabling this feature, the sidebar will include a Points and XP 'character stats' display akin to those found in videogames, the 'create task' dialogue will prompt the user for task's point values, and the app will award points upon task completion.|
 | Exception Paths | This setting can be disable with the same settings toggle that enabled it.|
-| Other           | In the event that it is disabled, and then later reenabled, the user should maintain their same point balance|
+| Other           | In the event that it is disabled, and then later reenabled, the user should maintain their same point balance.|
 
-### 3.2.62 Feature Name?
+### 3.2.62 User Task List
 
-Full Description?
+The User has the option to view all upcoming tasks in their courses.
 
 #### 3.2.62.1 Assignment List
 
 | Data            | Description|
 | :-------------- | :--------------|
-| Use Case Detail | The app includes a list view where all the user's tasks from all classes and categories are visible|
+| Use Case Detail | The app includes a list view where all the user's tasks from all classes and categories are visible.|
 | XRef            ||
-| Trigger         | The user presses the 'list view' button|
-| Precondition    | This feature has no precondition - If the user has not added any tasks yet, then the list will be empty|
-| Basic Path      | 'List view' button visible on main view of app|
-| Alternate Path  | 'List view' button visible in app navigation drawer|
-| Post Condition  | The list view is displayed|
-| Exception Paths | The user can navigate back to the calendar view by simply pressing the 'calendar' button visible at the top of the list view display |
-| Other           | None|
+| Trigger         | The user presses the 'list view' button.|
+| Precondition    | This feature has no precondition - If the user has not added any tasks yet, then the list will be empty.|
+| Basic Path      | 1. 'List view' button visible on main view of app.|
+| Alternate Path  | 'List view' button visible in app navigation drawer.|
+| Post Condition  | The list view is displayed.|
+| Exception Paths | The user can navigate back to the calendar view by simply pressing the 'calendar' button visible at the top of the list view display.|
+| Other           | None.|
 
 ### 3.2.63 School Catalog
 
@@ -1978,6 +2023,81 @@ Night mode is a setting that allows the user to toggle a blue light filter to re
 |Exception Paths| None.|
 |Other          | Blue light has been proven to alter circadian rhythm and increase eye-strain. |
 
+#### 3.2.067.0 Tutor Integration
+
+| Tutor Integration| Select a tutor appointment from BYU-I website        |
+|:--------------| :--------------|
+|Use Case Name  | Tutor Integration                                       |
+|XRef           |                                                         |
+|Trigger        | User selects tutor request button                       |
+|Precondition   | Account created on Student Calendar app, Internet Access|
+|               | , and an account with BYU-I as a student                |
+|Basic Path     | 1. User selects request tutor button                    |
+|               | 2. New window opens directing to BYU-I Tutor website    |
+|Alternate Path |                                                         |
+|Post Condition | Event is created and has a section where the user can add|
+|               | information about the tutor session created             |
+|Exception Paths|Window can be closed at any time, not setting tutor event|
+|Other          |                                                         |
+#### 3.2.068.0 Quick Add
+
+| Tutor Integration| Adds an event to a calendar day with only a name        |
+|:--------------| :--------------|
+|Use Case Name  | Quick add                                               |
+|XRef           |                                                         |
+|Trigger        | User selects quick add button                           |
+|Precondition   | A quick add button is on the screen                     |
+|Basic Path     | 1. User selects quick add button                        |
+|               | 2. Form opens and asks for name of file                 |
+|               | 3. Program adds event to selected day                   |
+|Alternate Path |                                                         |
+|Post Condition | Event is created on selected day                        |
+|Exception Paths|Window can be closed at any time, not creating event     |
+|Other          |                                                         |
+#### 3.2.069.0 Edit Event
+
+| Edit Event    | Edits an event that has been scheduled                  |
+|:--------------| :--------------|
+|Use Case Name  | Edit event                                              |
+|XRef           |                                                         |
+|Trigger        | User selects edit button on event                       |
+|Precondition   | An edit button is on event                              |
+|Basic Path     | 1. User selects edit button                             |
+|               | 2. Form with event information opens                    |
+|               | 3. User changes event information                       |
+|               | 4. Program changes event information in calendar        |
+|Alternate Path |                                                         |
+|Post Condition | Event that is selected is changed                       |
+|Exception Paths|Window can be closed at any time, not editing event      |
+|Other          |                                                         |
+### 3.2.70 Non-SSO
+The user will be required to log into the application with a single ID and password which will only give them access to the calendar application, no other domains.
+
+#### 3.2.70.1 Non-SSO Log In
+| Data          | Description |
+|:--------------| :--------------|
+|Use Case Detail| As a user I can log in to the calendar application with a username and password.|
+|XRef           | 3.2.37|
+|Trigger        | The application is executed for the first time.|
+|Precondition   | The user is viewing the log in page.|
+|Basic Path     | 1. The user enters their username and password into the appropriate fields. 2. The user then selects the "Log In" button.|
+|Alternate Path | If the password entered does not match, the user is prompted to re-enter it again.|
+|Post Condition | The user's calendar is opened and functional.|
+|Exception Paths| If the username is not contained within the server database, the user will be asked to create a new account.|
+|Other          | None|
+
+#### 3.2.70.2 Non-SSO Log Out
+| Data          | Description |
+|:--------------| :--------------|
+|Use Case Detail| As a user I can log out of the calendar application.|
+|XRef           | 3.2.37|
+|Trigger        | The user clicks the "Log Out" button.|
+|Precondition   | The user is currently logged in to the calendar application.|
+|Basic Path     | 1. The user clicks the "Log Out" button. 2. The user is then asked if they are certain they want to log out. If the user selects yes, then they are logged out. If they select no, they will be returned to the calendar.|
+|Alternate Path | None|
+|Post Condition | The user is presented with the log in screen as if they had first launched the application for the first time.|
+|Exception Paths| None|
+|Other          | None|
 # 4.0 Verification
 
 ## 4.1 Verify External Interface Requirements
@@ -1996,10 +2116,11 @@ Example Description: When describing how to test the Use Case attempt to keep it
 
 ### 4.2.1 Calendar Application is Mobile
 
-
+Validation will be successful if the application is available and usable on mobile platforms
 
 #### 4.2.1.1 Smartphone Application
 
+We will check if the application is available on iOS and Android, as well as usable on mobile web browsers.
 ### 4.2.2 Calendar Application is Web
 
 Validation will be successful if the application is able to be pulled up in a web browser.
@@ -2010,73 +2131,79 @@ We will use multiple web browser clients to verify that it is web compatible.
 
 ### 4.2.3 Calendar Application API
 
-
+Validation will be successful if the application's capabilities can be expanded by any user
 
 #### 4.2.3.1 Add a Plugin
 
-
+We will write a custom plugin and add it to the application to verify the application's capabilities can be expanded by any user
 
 
 ### 4.2.4 Priority View
 
+Validation will be successful if the application is able to display a priority list when the user taps on a specific day.
 
+#### 4.2.4.1 Assignment Priority List
 
+We will test multiple days on the calendar to verify that a list is shown containing assignments ranked by due-date and level of priority. 
 
-#### 4.2.4.1 Use Case Name?
+#### 4.2.4.2 Task Priority Labels
 
+We will add task labels (High, Medium, Low) to custom tasks and verify that the tasks are properly ranked showing the appropriate priority label.
 
 
 
 ### 4.2.5 ADA Compliant
 
+Validation will be successful if the application responds to the user's voice and performs the intended requests, and if it reads content to user.
 
+#### 4.2.5.1 Speech Recognition
 
+We will test multiple voice commands to make sure the application responds accurately to the user's requests.
 
-#### 4.2.5.1 Use Case Name?
+#### 4.2.5.2 Auto Reading
 
+We will test the "Read Assignments" voice command to make sure that the application performs the intended request on specific days. We will also test the appllication's response after the user chooses an option: Today, This Week, This Month.### 4.2.6 Export/Import 
 
-### 4.2.6 Export/Import 
+Validation will be successful if the application can export to and import content from other third-party applications.
 
+#### 4.2.6.1 I-Learn Import
 
+We will test the I-Learn import functionality and verify that all content from I-Learn's calendar is added to the application.
 
+#### 4.2.6.2 Export
 
-#### 4.2.6.1 Use Case Name?
-
-
-
-
-#### 4.2.6.2 Use Case Name?
+We will test the export functionality and verify that the application's content is successfully added to other third-party applications such as Google Calendar and Apple Calendar.
 
 
 
 
 ### 4.2.7 Reminders
 
-
+Validation is achieved if the user is able to achieve alerts for events/assignments before they are due.
 
 
 #### 4.2.7.1 The user oftens forgets about assignments
 
-
+This feature can be tested by giving a user assignments and seeing if they are able to complete all assignments.
 
 
 ### 4.2.8 Links
 
-
+We are able to receive validation if users are posting links to assignments or events.
 
 
 #### 4.2.8.1 The users group uses outside resources like google docs.
 
-
+This can be tested by tapping on different links and confirming that the app deep links to the expected app or website.
 
 ### 4.2.9 Photo Import
 
-
+Validation is achieved when a user can upload the desired photo whether from their camera or photo library.
 
 
 #### 4.2.9.1 The user wants to upload a photo to clarify their message
 
-
+This feature can be tested by uploading a photo to an event, and then taking a photo to upload and verifying that the photo uploaded successfully.
 
 
 ### 4.2.10 Collapsible calender
@@ -2157,42 +2284,36 @@ The correct time zone value will be verified by comparing the app time, to the a
 
 ### 4.2.19 Active Directory / LDAP
 
-
+Validation will be successful if the user is able to see a student list from the class page and is allowed to send and receive data from students on that list.
 
 
 #### 4.2.19.1 Contact Class Member
 
-
-
-
+We will use multiple email clients, web browsers, and operating systems between two students to confirm that an email can be sent and received with the correct data.
 ### 4.2.20 Notification Control
 
-
+Validation will be successful if the application notification settings can be set and then present notifications according to those settings.
 
 #### 4.2.20.1 Notifications On/Off
 
-
-
-
+We will turn notifications on and set a series of alarms and events to see if they send notifications at the appropriate times. We will also turn notifications off and repeat the process to verify that notifications are not sent.
 
 #### 4.2.20.2 Notification Method
 
-
-
-
+We will set notifications to alerts on multiple devices to see that they trigger accordingly.  We will do the same for text messages and emails.
 ### 4.2.21 Shared Calendar
 
-
+Validation will be successful if the user is able to share events from their individual calendars with other users.
 
 
 #### 4.2.21.1 Shared Calendar Group Creation
 
-
+This feature will be verified by placing multiple users into a group and displaying the saved group on the group page.
 
 
 #### 4.2.21.2 Send Shared Calendar Update Notification
 
-
+Will be validated by sending a notification and having it successfully recieved by each member in a group.
 
 
 ### 4.2.22 Push Notifications
@@ -2276,40 +2397,26 @@ Adding items to the list will be tested by selecting the "add to my to-do list" 
 
 
 ### 4.2.28 Apple Maps Integration
-
-
+Validation will be successful if apple device users can have locations that are in the calendar pulled up on Apple Maps.
 
 
 #### 4.2.28.1 Support for Apple Maps on Iphone
-
+We will use an Iphone and see if calendar locations can be pulled up in Apple Maps.
 
 
 
 #### 4.2.28.1 Support for Apple Maps on MAC computers
-
-
-
-
+We will use a MAC computer and see if calendar locations can be pulled up in Apple Maps.
 ### 4.2.29 Other Maps Integration
-
-
-
+Validation will be successful if calendar locations can be pulled up in various map applications.
 
 #### 4.2.29.1 Find a location
-
-
-
-
+We will test that calendar location can be pulled up in each of the different map applications, including: Here WeGo, Waze, MapFactor, Mapquest, Scout GPS, Maps.Me and InRoute.
 ### 4.2.30 Video Tutorial
-
-
-
+Validation will be successful if we have a video, 10 minutes or less in length, that explains basic functionality for new calendar users. The video should cover how to create and edit a calendar item, how to use group events, and how to access different calendar views. The video should be displayed when a new user opens the application for the first time.
 
 #### 4.2.30.1 Learning Application Capabilities
-
-
-
-
+We will test this by having a new user open the calendar, and verifying that the link to the tutorial video pops up. They will click the link, and after watching the new user will create a new calendar item, join a group event, and access different calendar views to verify that the tutorial was clear. If they fail then adjustment to the tutorial video is needed.
 ### 4.2.31 Group Permissions
 
 
@@ -2371,60 +2478,42 @@ Adding items to the list will be tested by selecting the "add to my to-do list" 
 
 
 ### 4.2.36 Group Security
-
-
+Verification is successful if a guest can only see an event after being invited by the host.
 
 #### 4.2.36.1 Secured groups.
-
-
-
+A private group will be formed between various users. An uninvited user will attempt to view the event. The uninvited user will not see the event nor it's details.
 
 #### 4.2.36.2 Group invitation.
-
-
-
-
-### 4.2.37 Database for Account Usernames and Passwords
-
-
+A host will create an event, then send various invites to guests so that they can access the event. ### 4.2.37 Database for Account Usernames and Passwords
+Validation will be successful if the database contains all the users of the application stored in a secure manner.
 
 #### 4.2.37.1 Verifying Existing Account
-
-
-
+A user will create a new account. The user will then login to their account with the credentials they created. 
 
 #### 4.2.37.2 Create New Account
-
+A user will create a new account. The account will be inserted into the database in a secure manner.
 
 
 
 ### 4.2.38 Inspirational Quotes and Images
-
-
-
+Validation will be successful if the event has a designated area for the insertion of inspirational quotes and images.
 
 #### 4.2.38.1 Enter quote text
-
-
-
+The user will add inspirational text to the designated area of the calendar event.
 
 #### 4.2.38.2 Insert an inspirational image
-
-
+The user will add an inspirational image to the designated area of the calendar event.
 
 
 
 ### 4.2.39 Adjustable Calendar/Calendar Item Size
-
-
+Validation will be successful if all user interface elements scale dynamically in size according to the window size.
 
 #### 4.2.39.1 Mobile tilting functionality
-
-
-
+The user will rotate their phone horizontally, and the application will reorient into landscape mode.
 
 #### 4.2.39.2 Desktop calendar item zooming
-
+The user hovers their mouse over an event or clicks and the details are presented in an enlarge interface.
 
 
 ### 4.2.40 Share Calendar Application
@@ -2502,34 +2591,11 @@ Adding items to the list will be tested by selecting the "add to my to-do list" 
 
 
 
-### 4.2.48 Non-SSO
-The user will be required to log into the application with a single ID and password which will only give them access to the calendar application, no other domains.
+### 4.2.48 Share Option
 
-#### 4.2.48.1 Non-SSO Log In
-| Data          | Description |
-|:--------------| :--------------|
-|Use Case Detail| As a user I can log in to the calendar application with a username and password.|
-|XRef           | 3.2.37|
-|Trigger        | The application is executed for the first time.|
-|Precondition   | The user is viewing the log in page.|
-|Basic Path     | 1. The user enters their username and password into the appropriate fields. 2. The user then selects the "Log In" button.|
-|Alternate Path | If the password entered does not match, the user is prompted to re-enter it again.|
-|Post Condition | The user's calendar is opened and functional.|
-|Exception Paths| If the username is not contained within the server database, the user will be asked to create a new account.|
-|Other          | None|
 
-#### 4.2.48.2 Non-SSO Log Out
-| Data          | Description |
-|:--------------| :--------------|
-|Use Case Detail| As a user I can log out of the calendar application.|
-|XRef           | 3.2.37|
-|Trigger        | The user clicks the "Log Out" button.|
-|Precondition   | The user is currently logged in to the calendar application.|
-|Basic Path     | 1. The user clicks the "Log Out" button. 2. The user is then asked if they are certain they want to log out. If the user selects yes, then they are logged out. If they select no, they will be returned to the calendar.|
-|Alternate Path | None|
-|Post Condition | The user is presented with the log in screen as if they had first launched the application for the first time.|
-|Exception Paths| None|
-|Other          | None|
+
+#### 4.2.48.1 Sharing Calendars
 ### 4.2.49 Feature Name?
 
 
@@ -2730,6 +2796,17 @@ The user will be required to log into the application with a single ID and passw
 
 
 
+### 4.2.70 Non-SSO
+
+Validation will be successful if application is able to provide the user with calendar functionality beyond that of the log in screen.
+
+#### 4.2.70.1 Non-SSO Log In
+
+We will access the calendar from multiple devices and browsers to verify that a log in is required each time.
+
+#### 4.2.70.2 Non-SSO Log Out
+
+We will log out from multiple devices and browsers to verify that logging out is required in each case.
 ## 5.0 Appendices
 
 ## 5.1 Assumptions and Dependencies
