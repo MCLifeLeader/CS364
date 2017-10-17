@@ -2,12 +2,10 @@
 cd "Final Document"
 
 type "~i Title.md" > CS364_SRS_Document.md
-
-type "~ii Table of Contents.md" >> CS364_SRS_Document.md
-
-type "~iii List of Figures.md" >> CS364_SRS_Document.md
-
-type "~iv Revision History.md" >> CS364_SRS_Document.md
+type "~ii Authors.md" >> CS364_SRS_Document.md
+type "~iii Revision History.md" >> CS364_SRS_Document.md
+type "~iv Table of Contents.md" >> CS364_SRS_Document.md
+type "~v List of Figures.md" >> CS364_SRS_Document.md
 
 type "1.0.0.0.md" >> CS364_SRS_Document.md
 
@@ -104,6 +102,13 @@ type "3.2.068.0.md" >> CS364_SRS_Document.md
 type "3.2.069.0.md" >> CS364_SRS_Document.md
 type "3.2.070.0.md" >> CS364_SRS_Document.md
 
+type "3.3.0.0.md" >> CS364_SRS_Document.md
+type "3.4.0.0.md" >> CS364_SRS_Document.md
+type "3.5.0.0.md" >> CS364_SRS_Document.md
+type "3.6.0.0.md" >> CS364_SRS_Document.md
+type "3.7.0.0.md" >> CS364_SRS_Document.md
+type "3.8.0.0.md" >> CS364_SRS_Document.md
+
 type "4.0.0.0.md" >> CS364_SRS_Document.md
 type "4.1.0.0.md" >> CS364_SRS_Document.md
 type "4.2.0.0.md" >> CS364_SRS_Document.md
@@ -178,6 +183,12 @@ type "4.2.067.0.md" >> CS364_SRS_Document.md
 type "4.2.068.0.md" >> CS364_SRS_Document.md
 type "4.2.069.0.md" >> CS364_SRS_Document.md
 type "4.2.070.0.md" >> CS364_SRS_Document.md
+
+type "4.3.0.0.md" >> CS364_SRS_Document.md
+type "4.4.0.0.md" >> CS364_SRS_Document.md
+type "4.5.0.0.md" >> CS364_SRS_Document.md
+type "4.6.0.0.md" >> CS364_SRS_Document.md
+type "4.7.0.0.md" >> CS364_SRS_Document.md
 
 type "5.0.0.0.md" >> CS364_SRS_Document.md
 type "5.1.0.0.md" >> CS364_SRS_Document.md

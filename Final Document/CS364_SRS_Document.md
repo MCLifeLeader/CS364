@@ -1,6 +1,6 @@
 # Software Requirements Specification
-## Version 1.0
-## October 7th, 2017
+## Version 1.2
+## October 16th, 2017
 
 # Student Calendar Integration
 ### BYU-Idaho CS364 Software Engineering
@@ -51,6 +51,20 @@ David Harris<br/>
 Keith Wheeler<br/>
 Daniel Craig<br/>
 John Memmott<br/>
+
+# Revision History
+
+| Name          | Date       | Reason for Changes        | Version |
+|:--------------|:----------:|:--------------------------|:-------:|
+| Initial       | 9/23/2017  | First Draft               |   1.0   |
+| Revision 1    | 10/07/2017 | Initial SRS Revision      |   1.1   |
+| Revision 2    | 10/16/2017 | Pre-Final Draft           |   1.2   |
+| Revision 3    | 10/17/2017 | Feedback on Sections 1.0 to 3.1 |   1.3   |
+| Revision 4    | 10/18/2017 | Feedback on Section 3.x |   1.4   |
+| Revision 5    | 10/19/2017 | Feedback on Section 4.x |   1.5   |
+| Revision 6    | 10/20/2017 | Feedback on Sections 3.3 to 3.8 |   1.6   |
+| Revision 7    | 10/21/2017 | Final Version of the Document to be submitted for Grading |   1.7   |
+| Revision 8    | 10/23/2017 | IFF we absolutly need all of Saturday to Monday morning to complete |   1.8   |
 
 # Table of Contents
 ## Table of Contents
@@ -224,26 +238,17 @@ John Memmott<br/>
 ### 4.2.68 Quick Add
 ### 4.2.69 Edit Event
 ### 4.2.70 Non-SSO
-## 4.3 Usability Requirements
-## 4.4 Performance Requirements
-## 4.5 Logical Database Requirements
-## 4.6 Design Constraints
-## 4.7 Software System Attributes
-## 4.8 Supporting Information
+## 4.3 Validate Usability Requirements
+## 4.4 Verify Performance Requirements
+## 4.5 Validate Logical Database Requirements
+## 4.6 Validate Design Constraints
+## 4.7 Validate Software System Attributes
 ## 5.0 Appendices
 ## 5.1 Assumptions and Dependencies
 ## 5.2 Acronyms and Abbreviations
 ## Index
+
 # List of Figures
-
-# Revision History
-
-| Name          | Date       | Reason for Changes        | Version |
-|:--------------|:----------:|:--------------------------|:-------:|
-| Initial       | 9/23/2017  | First Draft               |   1.0   |
-| Revision 1    | 10/07/2017 | Initial SRS Revision      |   1.1   |
-| Revision 2    | 10/16/2017 | Pre-Final Draft           |   1.2   |
-| Revision 3    |            |                           |   x.x   |
 
 # 1.0 Introduction
 
@@ -295,6 +300,39 @@ Reading this document in the order it has been presented is highly recommended f
 ## 1.6 Overview of Document
 
 This document has two primary parts following this Introduction. The first is the "Overall Description" section which generally describes the product's function purpose and design. This section is meant to give a solid conceptual baseline for the rest of the document's technical analysis. That in-depth technical analysis will be found within the "Requirements Specification" section of the document. This section gives specific instructions meant primarily for developers. It details everything that the product should do and include.
+
+As part of the overall structure of the document, section 3.2 has various features and use case details listed to identify how a feature is related to and built upon by various use cases. To facilitate this process a table structure was created to help visually explain the neccisary details and provide an easier format for readers of this document to consume those details.
+
+To better understand how this is created the following Feature Template was used to create each feature and use case.
+
+### 3.2.x Feature Template
+
+Full Feature Description. What the feature is. Who is going to use it. Why is this feature needed or wanted.
+
+*************************
+These examples are to be used in the "Use Case Detail" section of the feature use case.
+Example Template: As a < type of user >, I want < some goal > so that < some reason >.
+
+Examples:
+ - As a user, I can backup my entire hard drive.
+ - As a power user, I can specify files or folders to backup based on file size, date created and date modified.
+ - As a user, I can indicate folders not to backup so that my backup drive isn't filled up with things I don't need saved.
+*************************
+
+
+#### 3.2.x.y Use Case Name
+
+| Data          | Description |
+|:--------------| :--------------|
+|Use Case Detail| Full Use Case Details. What, Who, Why.               As a User, I want to xxxxx because I am looking for an easier way to do my task|
+|XRef           | This references each related section. 2.x, 4.x, and SDD sections.|
+|Trigger        | Behavior events that happen based on automated or user input.|
+|Precondition   | Conditions, visually, data, logic, or other things that must exist prior to this feature or use case being able to be executed, used, or seen.|
+|Basic Path     | This is the path on how the user gets to this feature or use case. How did I get here?|
+|Alternate Path | There are often alternate ways to get to this feature or use case. "I used the help / search feature".|
+|Post Condition | What happens when the user or process is triggered. What states exist afterward.|
+|Exception Paths| In what cases are there exceptions to how or what something should or should not be doing. This is to be communicated as inclusive ideas.|
+|Other          | This is for anything that was not covered in the previous table descriptions and in most cases will not contain details.|
 
 # 2.0 Overall Description
 
@@ -407,7 +445,7 @@ The calendar application will have a responsive design capable of displaying on 
 
 | Data          | Description |
 |:--------------|:----------------|
-|Use Case Detail| As a user, I want to access the application from any web broswer |
+|Use Case Detail| As a user, I want to access the application from any web broswer. |
 |XRef           | Verification: 4.2.2.1|
 |Trigger	    | The user navigates to the calendar application url on a web browser.|
 |Precondition   | The user has a web browser available.|
@@ -437,7 +475,7 @@ This application will allow users to write plugins that integrate with the calen
 
 ### 3.2.4 Priority List
 
-Students need to prioritize tasks and assignments so that they can focus on the most important tasks. This feature will help students plan ahead by seeing a list of assignments and tasks ranked by due-date and by priority level (High, Medium, Low).
+Students need to prioritize tasks and assignments so they can focus on the most important tasks. This feature will help students plan ahead by listing assignments and tasks ranked by their due-date and priority level (High, Medium, Low).
 
 #### 3.2.4.1 Assignment Priority List
 
@@ -508,7 +546,7 @@ The Calendar application will sync with I-Learn's calendar so that all class ass
 
 | Data          | Description |
 |:--------------|:-----------------|
-|Use Case Detail| As a user I want the app to automatically download all the assignments listed on I-Learn for each specific task.|
+|Use Case Detail| As a user, I want the app to automatically download all the assignments listed on I-Learn for each specific task.|
 |XRef           ||
 |Trigger	| The user taps on the import button.|
 |Precondition 	| The user has access to another calendar to import from.|
@@ -522,7 +560,7 @@ The Calendar application will sync with I-Learn's calendar so that all class ass
 
 | Data           | Description |
 |:---------------|:-----------------|
-|Use Case Detail| As a user I want to export my calendar data to other calendars of my choosing such as Google Calendar or Outlook.|
+|Use Case Detail| As a user, I want to export my calendar data to other calendars of my choosing, such as Google Calendar or Outlook.|
 | Xref           ||
 | Trigger        | User presses the export calendar button.|
 | Precondition   | The User has a compatible calendar to export to.|
@@ -534,20 +572,20 @@ The Calendar application will sync with I-Learn's calendar so that all class ass
 
 ### 3.2.7 Reminders
 
-Within the application the user should be able to set Reminders for assignments and events. The user can choose to have these reminder alerts happen at several different intervals before the assignment/event occurs. Ex: 10 min before, 1 hour before, 3 hours before, 1 day before, etc.
+Within the application, the user should be able to set reminders for assignments and events. The user can choose to have these reminder alerts occur at several different time intervals before the assignment/event is due.
 
-#### 3.2.7.1 The user oftens forgets about assignments
+#### 3.2.7.1 The user often forgets about assignments
 
 |Data           | Description |
 |:--------------|:-----------------|
-|Use Case Detail| As a user, I want to be alerted before an assignment is do in case I have forgotten to turn in the assignment. |
+|Use Case Detail| As a user, I want to be alerted before an assignment is due in case I have forgotten to turn in the assignment. |
 |XRef           ||
-|Trigger	| The User selects the bell icon on an activity to add a reminder.|		
-|Precondition 	| The User has accessed the calendar apps main screen, and has events or assingments showing.|
+|Trigger	| The user selects the bell icon on an activity to add a reminder.|		
+|Precondition 	| The user has accessed the calendar app's main screen, and has events or assingments are displayed.|
 |Basic Path	| 1. The user logs into I-Learn through the app. 2. The users taps on an event or assignment. 3. The user taps the 'bell' icon. 4. The user sets the settings for the given reminder.|
 |Alternate Paths| In step 2 the user can go to settings and turn on reminders for all assignments.|
 |Post Condition| The user can edit the reminder by tapping on the 'bell' icon again.|
-|Exection Paths	| The Editor may abandon this operaton at any time, the user does not have any events.|
+|Exection Paths	| If the user does not have any events, they will not be able to create any reminders.|
 |Other		| The reminder information includes time, reason, and notification type.|
 
 ### 3.2.8 Links
@@ -848,13 +886,13 @@ This feature allows the user to select one or more of their calendars, and share
 
 This is a notification that will be seen at any time, even if the app is not being actively used.
 
-#### 3.2.22.1 Recieve Push Notification
+#### 3.2.22.1 Receive Push Notification
 
 | Data          | Description |
 |:--------------| :--------------|
-|Use Case Detail| Notifications show up at the top of the screen, and can be viewed on a roll down menu.|
+|Use Case Detail| As a user, I want to receive push notifications so I can receive up to date info without having the calendar app open at all times.|
 |XRef           |  |
-|Trigger        | Automatic when the user receives a notifications.|
+|Trigger        | When the user receives a notifications.|
 |Precondition   | The user must have notifications enabled.|
 |Basic Path     | <li type='1'>A notification shows up on the top of the users screen.</li><li type='1'>The user either selects the notification to view its contents, or dismisses it.</li>|
 |Alternate Path |  |
@@ -893,7 +931,7 @@ The simplified assignment display allows users to view one task as a time in ord
 |Trigger        | The user selects the green check mark button at the bottom of the screen|
 |Precondition   | The user is on the simplified display page |
 |Basic Path     | 1. The assignment is marked as completed<br/> 2.The assignment is remove from the current list of assignments|
-|Alternate Path | The user may reselect an assignment as uncomplete in the event that they need to work on it further |
+|Alternate Path | The user may reselect an assignment as incomplete in the event that they need to work on it further |
 |Post Condition | The next assignment in the list is display on the screen. The assignment will be marked as completed on the main calendar |
 |Exception Paths| If the user presses an arrow button and the check mark button at the same time, the path will not be executed and the assignment will not be marked as complete|
 |Other          | None|
@@ -907,7 +945,7 @@ The simplified assignment display allows users to view one task as a time in ord
 |Trigger        | The user selects the right arrow button at the bottom of the screen|
 |Precondition   | The user is on the simplified display page |
 |Basic Path     | The next assignment in the list is display on screen|
-|Alternate Path | The user may select the left arrow to move to preceeding assignments in the list |
+|Alternate Path | The user may select the left arrow to move to preceding assignments in the list |
 |Post Condition | The corresponding assignment is display on the screen |
 |Exception Paths| If the user presses both arrow buttons at the same time, the path will not be executed and the screen will remain on the current assignment|
 |Other          | None|
@@ -919,7 +957,7 @@ The simplified assignment display allows users to view one task as a time in ord
 |Use Case Detail| As a user, I want to add class assignments to my to do list|
 |XRef           | |
 |Trigger        | The user selects the "add to my to-do list" button|
-|Precondition   | The user is viewing a individual assignment on the individual assignment detail page |
+|Precondition   | The user is viewing an individual assignment on the individual assignment detail page |
 |Basic Path     | The assignment title is added to the end of the list|
 |Alternate Path | The user may insert alternative text for the assignment to be display in the list |
 |Post Condition | The user may now view that assignment in the list |
@@ -1038,35 +1076,34 @@ Because users will be able to add details to a task or event, an option to add a
 
 ### 3.2.28 Apple Maps Integration
 
+Have support for point locations to pop up in the calendar when you need to be somewhere. This support is specific to Apple Maps for those that use Mac or iOS.
 
-Have support for point locations to pop up in the calendar when you need to be somewhere. This support is specific to Apple maps for those that use MAC or IOS.
-
-#### 3.2.28.1 Support for Apple Maps on Iphone
+#### 3.2.28.1 Support for Apple Maps on iPhone
 
 | Data          | Description |
 |:--------------| :--------------|
-|Use Case Detail| As an iphone user, I want to be able to see where I'm meeting at so that I can arrive at the time scheduled. I will be on the move so I need it to work on my phone.|
-|XRef           | Lorem ipsum dolor sit amet, consectetur adipiscing elit.|
+|Use Case Detail| As an iPhone user, I want to be able to see where I'm meeting at so that I can arrive at the time scheduled. I will be on the move so I need it to work on my phone.|
+|XRef           | |
 |Trigger        | A scheduled item with an address is clicked.|
-|Precondition   | The user is an apple maps user. The user schedules an item with an address or recognized location.|
-|Basic Path     | The user clicks an item with a scheduled meeting place, they click on a location icon, and the location is then used in apple maps.|
+|Precondition   | The user schedules an item with an address or recognized location.|
+|Basic Path     | The user clicks an item with a scheduled meeting place, they click on a location icon, and the location is then used in Apple Maps.|
 |Alternate Path | None.|
-|Post Condition | Apple maps brings up the location and directions.|
-|Exception Paths| If there is not a location entered then no icon will appear. Apple maps will handle invalid locations.|
+|Post Condition | Apple Maps brings up the location and directions.|
+|Exception Paths| If there is not a location entered then no icon will appear. Apple Maps will handle invalid locations.|
 |Other          | None.|
 
-#### 3.2.28.2 Support for Apple Maps on MAC computers
+#### 3.2.28.2 Support for Apple Maps on Mac computers
 
 | Data          | Description |
 |:--------------| :--------------|
-|Use Case Detail| As a MAC computer user, I want to be able to see where I'm meeting at so that I can arrive at the time scheduled. I need to be able to plan ahead of time how long I need to get there.|
-|XRef           | Lorem ipsum dolor sit amet, consectetur adipiscing elit.|
+|Use Case Detail| As a Mac computer user, I want to be able to see where I'm meeting at so that I can arrive at the time scheduled. I need to be able to plan ahead of time how long I need to get there.|
+|XRef           | |
 |Trigger        | An item is scheduled with a location.|
-|Precondition   | The user is an apple maps user. The user creates a new calendar item.|
+|Precondition   | The user creates a new calendar item.|
 |Basic Path     | The user schedules an event, and sets a location. A small help balloon pops up that asks if they want to see the time to reach their destination. Once they click the balloon then Apple Maps is brought up with the location and the time to arrive.|
-|Alternate Path | The user clicks an item with a scheduled meeting place, they click on a location icon, and the location is then used in apple maps.|
-|Post Condition | Apple maps must show the time required to reach the destination.|
-|Exception Paths| If there is not a location entered then no icon will appear. Apple maps will handle invalid locations.|
+|Alternate Path | The user clicks an item with a scheduled meeting place, they click on a location icon, and the location is then used in Apple Maps.|
+|Post Condition | Apple Maps must show the time required to reach the destination.|
+|Exception Paths| If there is not a location entered then no icon will appear. Apple Maps will handle invalid locations.|
 |Other          | None.|
 ### 3.2.29 Other Maps Integration
 
@@ -1093,14 +1130,14 @@ The calendar application will provide a video tutorial on how to use the applica
 
 | Data          | Description |
 |:--------------| :--------------|
-|Use Case Detail  | Our application should have a short video tutorial available to help new users learn our application.|
+|Use Case Detail| As a user, I want a short video tutorial on how to use the calendar application.|
 |XRef           | |
 |Trigger        | Entering the Application for the first time.|
 |Precondition   | The user must be signing into the application for the first time.|
-|Basic Path     | 1. The user signs into the application<br />2. A pop up appears before the use instructing them to follow a link to learn how to better use the app.<br />3. The user clicks on the link which takes them to Youtube or they click cancel and continue to the app|
+|Basic Path     | 1. The user signs into the application<br />2. A pop up appears instructing the user: "Click The Link to Learn How to Use the App" <br />3. The user clicks on the link which takes them to Youtube|
 |Alternate Path | Include a location labeled "help" which has the link to the tutorial video for those who would like to watch it again.|
 |Post Condition | After the individual has seen the popup for the first time it will not pop-up again. They will have to visit the help section to view the video again|
-|Exception Paths| The pop-up may be left by clicking continue at any time.|
+|Exception Paths| The pop-up may be left by clicking cancel at any time.|
 |Other          | None.|
 ### 3.2.31 Group Permissions
 
@@ -1142,9 +1179,9 @@ Links are used to deep link to third party technologies for collaboration tools.
 
 | Data          | Description |
 |:--------------| :--------------|
-|Use Case Detail| As a user, I want to be able to easily be taken the the group chat that is happening in Google Hangouts.|
+|Use Case Detail| As a user, I want to be able to click a link that takes me to a group chat in Google Hangouts.|
 |XRef           | |
-|Trigger        | The user opens a announcement or meeting and taps on the provided link.|
+|Trigger        | The user opens an announcement or meeting and taps on the provided link.|
 |Precondition   | After the user has connected to I-Learn and has a group that is working on a project. |
 |Basic Path     | 1. User logs into I-Learn through app.<br> 2. User clicks the “Group” icon and the app shows his group.<br> 3. The user selects an announcement or meeting.<br> 4. The user taps on the provided link.|
 |Alternate Path | None|
@@ -1194,8 +1231,8 @@ A small, animated, avatar, much in the vein of “Clippy”, that suggests tasks
 |Use Case Detail| As a user, I want to be reminded of upcoming assignments.|
 |XRef           | |
 |Trigger        | Automatic. |
-|Precondition   | After the user has synced app with Ilearn and selected the assistant option. |
-|Basic Path     | 1. User logs into Ilearn through app. 2. User clicks the “Settings” icon and checks the “Personal Assistant” checkbox. 3. The assistant is loaded onto the screen and offers suggestions. |
+|Precondition   | After the user has synced app with I-Learn and selected the assistant option. |
+|Basic Path     | 1. User logs into I-Learn through app. 2. User clicks the “Settings” icon and checks the “Personal Assistant” checkbox. 3. The assistant is loaded onto the screen and offers suggestions. |
 |Alternate Path | If the user has already checked the “Personal Assistant” checkbox, the app will load the assistant automatically when the app is started. |
 |Post Condition | The “Personal Assistant”checkbox must remain checked if the user wants to continue to user the feature. |
 |Exception Paths| If there are no upcoming assignments to suggest, the assistant will say “Nothing ...yet!”. |
@@ -1244,8 +1281,8 @@ If a user wants to join a group, they will be barred from doing so until they re
 |Use Case Detail| As a user, I would like to form private groups with other users and keep out any interlopers until I say so. |
 |XRef           | |
 |Trigger        | When a user has created a group. |
-|Precondition   | After the user has logged into their Ilearn account in the app. |
-|Basic Path     | 1. User logs into Ilearn through app. 2. User clicks the “Group” icon and creates a group. |
+|Precondition   | After the user has logged into their I-Learn account in the app. |
+|Basic Path     | 1. User logs into I-Learn through app.<br> 2. User clicks the “Group” icon and creates a group. |
 |Alternate Path | None. |
 |Post Condition | If another user tries to join the group, they will not be allowed until the user who created the group sends them an invitation. |
 |Exception Paths| None. |
@@ -1259,7 +1296,7 @@ If a user wants to join a group, they will be barred from doing so until they re
 |XRef           | |
 |Trigger        | When a user asks to join a group. |
 |Precondition   | A user needs to have created a group before another user can elicit them to join. |
-|Basic Path     | 1. User logs into Ilearn through app. 2. User clicks the “Group” icon and and clicks a group to join. 3. The user waits until the group administrator sends them the invitation via email. 4. The user accepts the invitation and joins the group in the app. |
+|Basic Path     | 1. User logs into I-Learn through app.<br> 2. User clicks the “Group” icon and clicks a group to join.<br> 3. The user waits until the group administrator sends them the invitation via email.<br> 4. The user accepts the invitation and joins the group in the app. |
 |Alternate Path | The user is rejected from the group and cannot join. |
 |Post Condition | None. |
 |Exception Paths| If a user has been rejected from a group, they cannot elicit the group again for an invitation after a third try. |
@@ -1274,7 +1311,7 @@ This feature requires user to log in to view their calendars and thus provides s
 
 | Data          | Description |
 |:--------------| :--------------|
-|Use Case Detail| As a student, I want to log in to my existing acount and gain access to my information|
+|Use Case Detail| As a student, I want to log in to my existing account and gain access to my information|
 |XRef           ||
 |Trigger        | A user select the "Log In" button|
 |Precondition   | The user is on the log in page, which is first viewed when the user opens the application.|
@@ -1288,7 +1325,7 @@ This feature requires user to log in to view their calendars and thus provides s
 
 | Data          | Description |
 |:--------------| :--------------|
-|Use Case Detail| As a student, I want to create an account and reatain my personal information inside the system|
+|Use Case Detail| As a student, I want to create an account and retain my personal information inside the system|
 |XRef           ||
 |Trigger        | The user enters a username and password and selects the "Create Account" button|
 |Precondition   | The user is on the create account page, which is linked from the log in page.|
@@ -1332,7 +1369,7 @@ The calendar will allow users to add inspirational quotes and images to their da
 
 ### 3.2.39 Adjustable Calendar/Calendar Item Size
 
-The user will be able to adjust the size of the calendar and have the calendar items scale proportiontely. The user will be able to zoom in on text of an item by clicking the appropriate day or hovering their mouse over the item. Here an item is defined as any event or assignment.
+The user will be able to adjust the size of the calendar and have the calendar items scale proportionately. The user will be able to zoom in on text of an item by clicking the appropriate day or hovering their mouse over the item. Here an item is defined as any event or assignment.
 
 #### 3.2.39.1 Mobile tilting functionality
 
@@ -1493,14 +1530,14 @@ The option to show badges indicating how many messages, notifications, or tasks 
 
 | Data          | Description    |
 |:--------------| :--------------|                                        
-|Use Case Detail| The user wants to be able to see that there are new notifications in the app while outside of it. |
+|Use Case Detail| As a user, I want to see if there are new notifications in the app while outside of it. |
 |XRef           | None|
-|Trigger        | User checks device to check if there are any notifications currently in their calander (badges).|                          
+|Trigger        | User checks device to see if there are any notifications from the calendar app(badges).|                          
 |Precondition   | Events created, School functions connected.|
 |Basic Path     | 1. Select a badge <br>2. Select from badges event or notification to view <br>3. Continue looking through badges until out or until user has seen what they wanted to.|
 |Alternate Path | none|
 |Post Condition | Badges are cleared and system is ready to set more.|
-|Exception Paths| User may not check all the badges which would leave some notifications still up.|
+|Exception Paths| User may not check all the badges which leaves some notifications still up.|
 |Other          | none|
 
 ### 3.2.46 Quick Access
@@ -1561,21 +1598,21 @@ The calendar app can sync with other calendars via social media.
 
 The Calendar app is able to sync and be updated from the browser or a compatible site. The user should also be able to share their success on social media.
 
-#### 3.2.49.1 Enable Synchronization with ILearn
+#### 3.2.49.1 Enable Synchronization with I-Learn
 
 | Data          | Description |
 |:--------------| :--------------|
-|Use Case Detail| As a user, I want to synchronize my calendar with ILearn so I don't have to manually enter all my assignments|
-|XRef           | ILearn Calendar API Integration |
-|Trigger        | User clicks on ILearn Synchronization button in Settings |
-|Precondition   | User knows ILearn username and password, and is connected to the internet|
-|Basic Path     | Settings -> ILearn Calendar Synchronization|
+|Use Case Detail| As a user, I want to synchronize my calendar with I-Learn so I don't have to manually enter all my assignments|
+|XRef           | I-Learn Calendar API Integration |
+|Trigger        | User clicks on I-Learn Synchronization button in Settings |
+|Precondition   | User knows I-Learn username and password, and is connected to the internet|
+|Basic Path     | Settings -> I-Learn Calendar Synchronization|
 |Alternate Path | None|
-|Post Condition | ILearn assignments are imported successfuly |
-|Exception Paths| Incorrect credentials, ILearn authentication not responding|
+|Post Condition | I-Learn assignments are imported successfully |
+|Exception Paths| Incorrect credentials, I-Learn authentication not responding|
 |Other          | None|
 
-#### 3.2.49.1 Google Chrome Addon add to Calendar
+#### 3.2.49.1 Google Chrome Add-on Add to Calendar
 
 | Data          | Description |
 |:--------------| :--------------|
@@ -1589,7 +1626,7 @@ The Calendar app is able to sync and be updated from the browser or a compatible
 |Exception Paths| Highlighted data can't be parsed, extension not authenticated |
 |Other          | None|
 
-#### 3.2.49.2 Google Chrome Addon remind about upcoming deadline
+#### 3.2.49.2 Google Chrome Add-on Reminder About Upcoming Deadline
 
 | Data          | Description |
 |:--------------| :--------------|
@@ -1603,7 +1640,7 @@ The Calendar app is able to sync and be updated from the browser or a compatible
 |Exception Paths| API unavailable|
 |Other          | None|
 
-#### 3.2.49.1 Share success to Google Plus
+#### 3.2.49.1 Share Success to Google Plus
 
 | Data          | Description |
 |:--------------| :--------------|
@@ -1617,7 +1654,7 @@ The Calendar app is able to sync and be updated from the browser or a compatible
 |Exception Paths| Can't authenticate to post to Google Plus|
 |Other          | None|
 
-#### 3.2.49.1 Share success to Facebook
+#### 3.2.49.1 Share Success to Facebook
 
 | Data          | Description |
 |:--------------| :--------------|
@@ -1634,21 +1671,34 @@ The Calendar app is able to sync and be updated from the browser or a compatible
 ### 3.2.50 Priority Assignments
 
 This will allow users to mark certain assignments as 'Priority'. Will help users
-identify quickly important assignments.
+quickly identify important assignments.
 
-#### 3.2.50.1 Priority
+#### 3.2.50.1 Set Assignment Priority
 
 | Data          | Description |
 |:--------------| :--------------|
-|Use Case Name  | User sets a priority |
-|Use Case Detail| xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx |
+|Use Case Detail| As a user, I want to set an assignment as high priority |
 |XRef           | None|
-|Trigger        | User hits the priority button. |
-|Precondition   | priorityTag is false |
-|Basic Path     | 1.User clicks priority button. 2.System sets assignment priorityTag to true.|
-|Alternate Path | None|
-|Post Condition | The assignment is shown with the priority assignments |
-|Exception Paths| User can unselect priority button|
+|Trigger        | The user clicks the "Priority" button. |
+|Precondition   | The user is in the assignment detail view |
+|Basic Path     | 1. The user clicks the "Priority" button in the assignment detail view <br> 2. The user is presented with the options "High", "Medium" and "Low"<br> 3. The user selects the "High" option |
+|Alternate Path | The user can select "Medium" or "Low" as the assignment priority |
+|Post Condition | The assignment detail view is shown, with the assignment set to high priority |
+|Exception Paths| The user can exit priority selection or set the assignment back to default low priority. |
+|Other          | None|
+
+#### 3.2.50.1 Priority View
+
+| Data          | Description |
+|:--------------| :--------------|
+|Use Case Detail| As a user, I want to view my assignments based on priority |
+|XRef           | None|
+|Trigger        | The user clicks the "Priority View" button. |
+|Precondition   | The user is in the calendar view |
+|Basic Path     | 1. The user clicks the "Priority View" button |
+|Alternate Path |  |
+|Post Condition | The calendar view displays assignments sorted by priority |
+|Exception Paths| The user can change the calendar view back to assignments sorted by due date. |
 |Other          | None|
 
 ### 3.2.51 Google API
@@ -1659,34 +1709,32 @@ The user will be able to sync their Google Calendar with our Student Calendar Ap
 
 | Data          | Description |
 |:--------------| :--------------|
-|Use Case Name  | The User would like to sync their Google Calender into the app|
-|Use Case Detail| xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx |
+|Use Case Detail| As a user, I would like to sync my Google Calendar with the app|
 |XRef           | None|
-|Trigger        | User login to Google Calender|
-|Precondition   | User must have Google account|
-|Basic Path     | 1.Ask User for Google sign in. 2.Login using Google API. 3.Sync calender items.|
+|Trigger        | The user clicks "Google Login"|
+|Precondition   | The user must have a Google account|
+|Basic Path     | 1. The user clicks on "Google Login" <br>2. The user is presented with an Google login page <br>3. The user enters their login information, and clicks "Login" <br>4. The user is brought back to the calendar view |
 |Alternate Path | None|
-|Post Condition | Google Calender items will be Synced|
-|Exception Paths| User can logout of Google account|
+|Post Condition | The user's Google calendar events with be synced and displayed in the calendar view. |
+|Exception Paths| The user can exit the login process or logout of their Google account. |
 |Other          | None|
 
 ### 3.2.52 Apple API
 
-The user can sync thier Apple Calendar with their Student Calendar App.
+The user can sync their Apple Calendar with their Student Calendar App.
 
 #### 3.2.52.1 Sync Apple Calendar
 
 | Data          | Description |
 |:--------------| :--------------|
-|Use Case Name  | The User would like to sync their Apple Calender into the app|
-|Use Case Detail| xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx |
+|Use Case Detail| As a user, I would like to sync my Outlook Calendar with the app |
 |XRef           | None|
-|Trigger        | User clicks Apple Login|
-|Precondition   | User must have Apple ID|
-|Basic Path     | 1.Ask User for Apple sign in. 2.Login using Apple API. 3.Sync calender items.|
+|Trigger        | The user clicks "Apple Login"|
+|Precondition   | The user must have an Apple ID |
+|Basic Path     | 1. The user clicks on "Apple Login" <br> 2. The user is presented with an Apple login page <br> 3. The user enters their login information, and clicks "Login" <br> 4. The user is brought back to the calendar view|
 |Alternate Path | None|
-|Post Condition | Apple Calender will be Synced.|
-|Exception Paths| User can logout of Apple ID|
+|Post Condition | The user's Apple calendar events with be synced and displayed in the calendar view. |
+|Exception Paths| The user can exit the login process or logout of their Apple account. |
 |Other          | None|
 
 ### 3.2.53 Outlook API
@@ -1697,15 +1745,14 @@ The user can sync their Outlook Calendar with our Student Calendar App.
 
 | Data          | Description |
 |:--------------| :--------------|
-|Use Case Name  | The User would like to sync their Outlook Calender into the app|
-|Use Case Detail| xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx |
+|Use Case Detail| As a user, I would like to sync my Outlook Calendar with the app|
 |XRef           | None|
-|Trigger        | User clicks Outlook Login|
-|Precondition   | User must have Outlook login|
-|Basic Path     | 1.Ask User for Outlook sign in. 2.Login using Outlook API. 3.Sync calender items.|
+|Trigger        | The user clicks "Outlook Login"|
+|Precondition   | The user must have an Outlook account|
+|Basic Path     | 1. The user clicks on "Outlook Login" <br>2. The user is presented with an Outlook login page <br> 3. The user enters their login information, and clicks "Login" <br> 4. The user is brought back to the calendar view |
 |Alternate Path | None|
-|Post Condition | Outlook Calender will be Synced.|
-|Exception Paths| User can logout of Outlook account|
+|Post Condition | The user's Outlook calendar events with be synced and displayed in the calendar view. |
+|Exception Paths| The user can exit the login process or logout of their Outlook account. |
 |Other          | None|
 
 ### 3.2.54 Toolbox Bar
@@ -1770,13 +1817,13 @@ This bar will have many other buttons and bars related to searching, timer, prog
 
 ### 3.2.55 Twitter
 
-User will be able to use twitter while having their calendar up. This will allow the user to connect to other people sharing similar assignments, groups, or just something inspirational or motivational.
+User will be able to use Twitter while having their calendar up. This will allow the user to connect to other people sharing similar assignments, groups, or just something inspirational or motivational.
 
 #### 3.2.55.1 Twitter
 
 | Data          | Description |
 |:--------------| :--------------|
-|Use Case Detail| The user can connect to and use Twitter in the calendar application to post and share their thoughts from the app itself.|
+|Use Case Detail| As a user, I want to connect the calendar application with my Twitter account to post and share groups, assignments or thoughts directly from the app.|
 |XRef           | |
 |Trigger        | The user would click the "Share" button and then choose the platform they wish to share from, in this case, Twitter.|
 |Precondition   | By default the user will see an option to share.|
@@ -1812,12 +1859,12 @@ The calendar should be able to be personalized. The user will have the ability t
 
 | Data            | Description |
 | :-------------- | :--------------|
-| Use Case Detail | While interacting inside the app, the user can utilize custom images and icons to customize the display options.|
+| Use Case Detail | As a user, I want to utilize custom images and icons to personalize the appearance of the calendar app|
 | XRef            ||
-| Trigger         | The user would click the "Settings" button and then choose the option that offers customization. In this case it would be "Appearance"|
+| Trigger         | The user clicks the "Settings" button and then chooses the "Appearance" option|
 | Precondition    | By default the user will have option to the settings menu throughout the app.|
-| Basic Path      | 1. The user would select the settings button and scroll to the "Appearance" option. Then they will be given choices of customization with images for class icons, backgrounds and layout. |
-| Alternate Path  | The user can have the ability to select a class and go to settings in each different class to customize the appearance.|
+| Basic Path      | 1. The user selects the settings button and scroll to the "Appearance" option.<br/> 2. The user selects custom images for class icons, backgrounds and layout. |
+| Alternate Path  | The user can customize the appearance for other classes.|
 | Post Condition  | The user will have a customized view and appearance for each class and layout.|
 | Exception Paths | The user may select "Cancel" to exit at any point in the process.|
 | Other           | None.|
@@ -1878,21 +1925,21 @@ The User will be able to select the calendar view style that suits them best.
 
 ### 3.2.61 Task Rewards
 
-The User has the option of enabling a rewards system to encompass different real-world tasks.
+The user has the option of enabling a rewards system to encompass different real-world tasks.
 
 #### 3.2.61.1 Goal/ XP bar
 
 | Data            | Description|
 | :-------------- | :--------------|
-| Use Case Detail | The user can opt to use a video-game-like point system, where they are rewarded with virtual points when they complete tasks.  These points are used to defeat virtual game enemies.  They also gain XP, which grows cumulatively. The user will enter the point value of each task they create.|
+| Use Case Detail | As a user, I want to use a video game-like point system, where I am rewarded with virtual points when I complete tasks.|
 | XRef            ||
 | Trigger         | This feature will be enabled if the user decides to enable it from the settings menu, and it will be present when they create tasks, and when they mark them complete.|
 | Precondition    | The feature will only enable if the user wants to.|
 | Basic Path      | 1. The user clicks 'Settings'.<br> 2. The user clicks 'Adventure Mode'.<br> 3. The user toggles the mode's setting toggle to 'on'.|
 | Alternate Path  | None.|
-| Post Condition  | After enabling this feature, the sidebar will include a Points and XP 'character stats' display akin to those found in videogames, the 'create task' dialogue will prompt the user for task's point values, and the app will award points upon task completion.|
+| Post Condition  | After enabling this feature, the sidebar will include a Points and XP 'character stats' display akin to those found in video games, the 'create task' dialogue will prompt the user for task's point values, and the app will award points upon task completion.|
 | Exception Paths | This setting can be disable with the same settings toggle that enabled it.|
-| Other           | In the event that it is disabled, and then later reenabled, the user should maintain their same point balance.|
+| Other           | If point system is disabled, points should be saved in the event the system is reenabled. |
 
 ### 3.2.62 User Task List
 
@@ -1919,13 +1966,13 @@ This feature allows the user to view the entire catalog for their respective sch
 #### 3.2.63.1 View School Catalog
 | Data          | Description |
 |:--------------| :--------------|
-|Use Case Detail| A user is wanting to view the available courses offered at their school.|
+|Use Case Detail| As a user, I want to view the courses offered at my school.|
 |XRef           | |
 |Trigger        | A user selects the view catalog button.|
 |Precondition   | A user must be enrolled at a school and connect that school with the app.|
 |Basic Path     | Go to the view catalog button and select it.|
 |Post Condition | The user is in the catalog view for their school.|
-|Exception Paths| A user is not registered for a school and recieves an error message stating so.|
+|Exception Paths| A user is not registered for a school and receives an error message stating so.|
 |Other          | |
 
 ### 3.2.64 Class Help
@@ -1936,13 +1983,13 @@ This feature provides some links to websites that would be helpful for a given a
 
 | Data          | Description |
 |:--------------| :--------------|
-|Use Case Detail| A user is looking for more information to help with an assignment.|
+|Use Case Detail| As a user, I want to find help and information for an assignment.|
 |XRef           | |
 |Trigger        | A user selects the class help button.|
-|Precondition   | A user must have registered for classes and must be linnked up properly with the application.|
+|Precondition   | A user must have registered for classes and must be linked up properly with the application.|
 |Basic Path     | A user navigates to the class help button and selects it.|
 |Post Condition | A user is viewing a selection of links.|
-|Exception Paths| No avalable links have been connected to this assignment and user recieves an error message to alert them.|
+|Exception Paths| No available links have been connected to this assignment and user receives an error message to alert them.|
 |Exception Paths| No assignment has been selected so no links are found, user is asked to select an assignment.|
 |Other          | |
 
@@ -1972,9 +2019,9 @@ Night mode is a setting that allows the user to toggle a blue light filter to re
 
 | Data          | Description |
 |:--------------| :--------------|
-|Use Case Detail| The user wishes to apply a blue light filter to reduce the strain on my eyes from the screen, especially at night.|
+|Use Case Detail| As a user, I want to apply a blue light filter to reduce the strain on my eyes from the screen, especially at night.|
 |XRef           |None|
-|Trigger        | A user toggles night mode in the settings. Additionally the calander can automatically switch to "Night Mode" at sunset according to location.|
+|Trigger        | A user toggles night mode in the settings. Additionally the calendar can automatically switch to "Night Mode" at sunset according to location.|
 |Precondition   | A user opens the settings menu and toggles night mode or configures automatic option.|
 |Basic Path     | 1. User chooses to toggle night mode. <br> 2. User enters settings page. <br> 3. The user presses the night mode button. <br> 4. The application applies a blue light filter.|
 |Alternate Path | A brief description of the purpose for night mode will appear on first activation with the option of configuring the option according to time. |
@@ -2060,6 +2107,18 @@ The user will be required to log into the application with a single ID and passw
 |Post Condition | The user is presented with the log in screen as if they had first launched the application for the first time.|
 |Exception Paths| None|
 |Other          | None|
+## 3.3 Usability Requirements
+
+## 3.4 Performance Requirements
+
+## 3.5 Logical Database Requirements
+
+## 3.6 Design Constraints
+
+## 3.7 Software System Attributes
+
+## 3.8 Supporting Information
+
 # 4.0 Verification
 
 ## 4.1 Verify External Interface Requirements
@@ -2762,6 +2821,28 @@ We will access the calendar from multiple devices and browsers to verify that a 
 #### 4.2.70.2 Non-SSO Log Out
 
 We will log out from multiple devices and browsers to verify that logging out is required in each case.
+## 4.3 Validate Usability Requirements
+
+## 4.4 Verify Performance Requirements
+
+Authors / Editors please SEE: 
+https://msdn.microsoft.com/en-us/library/bb924357.aspx
+https://www.radview.com/blog/4-types-of-load-testing-and-when-each-should-be-used/
+http://www.softwaretestinghelp.com/what-is-performance-testing-load-testing-stress-testing/
+
+
+### 4.4.1 Load Testing
+
+### 4.4.2 Stress Testing
+
+### 4.4.3 Capactiy Testing
+
+## 4.5 Verify Logical Database Requirements
+
+## 4.6 Verify Design Constraints
+
+4.7 Verify Software System Attributes
+
 ## 5.0 Appendices
 
 ## 5.1 Assumptions and Dependencies
@@ -2769,3 +2850,4 @@ We will log out from multiple devices and browsers to verify that logging out is
 ## 5.2 Acronyms and Abbreviations
 
 # Index
+
