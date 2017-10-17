@@ -240,10 +240,10 @@ John Memmott<br/>
 
 | Name          | Date       | Reason for Changes        | Version |
 |:--------------|:----------:|:--------------------------|:-------:|
-| Initial       | 9/23/2017  | First Draft               |   0.0   |
-| Revision 1    | 10/07/2017 | Initial SRS Revision      |   1.0   |
-| Revision 2    |            |                           |   1.1   |
-| Revision 3    |            |                           |   1.2   |
+| Initial       | 9/23/2017  | First Draft               |   1.0   |
+| Revision 1    | 10/07/2017 | Initial SRS Revision      |   1.1   |
+| Revision 2    | 10/16/2017 | Pre-Final Draft           |   1.2   |
+| Revision 3    |            |                           |   x.x   |
 
 # 1.0 Introduction
 
@@ -272,14 +272,19 @@ Reading this document in the order it has been presented is highly recommended f
 |Calendar location|An address or place that is associated with an event.|
 |Developers|Teams of students of Brigham Young University – Idaho.|
 |Event|Any assignment the user declares in a specific time-frame in the calendar.|
+|Group|Two or more users who are separated from other users and posses each other’s contact information.|
+|Ilearn|Brigham Young University – Idaho’s website for online students. |
+|Ilearn account|An online student’s account on Ilearn.|
 |LDAP|(Lightweight Directory Access Protocol) is a software protocol for enabling anyone to locate organizations, individuals, and other resources on a corporate internet or public internet.|
 |Link|A link (short for hyperlink) is an HTML object that allows you to jump to a new location when you click or tap it.|
+|Mobile User|A user using the program on their mobile device.|
 |Project Manager|The team member who oversees the project and works with the team leads to make sure the project fulfills the necessary requirements and is finished on time.|
 |Stakeholder|Any person who has an interest in our project, typically fellow college students and friends of developers.|
 |Student Calendar Integration|Application intended to fulfill requirements.|
 |Reader|All users, developers, and stakeholders will be viewing the site.|
 |Software Requirements Specification|Also known as SRS, or this documents. A documents that contains the requirements a product must meet in order to succeed.|
 |SSO|Single sign-on is an authentication process that allows a user to access multiple applications with one set of login credentials.|
+| Third Party Technology | A provider of outsourced logistics. examples: Google-Hangouts, Zoom |
 |Toggle|To switch from one effect, feature, or state to another.|
 |Tutorial|Self-paced instructional material that provides step by step information in presenting a concept or learning unit. Computer based tutorials use interactive methods such as hyperlinks, and audio and visual presentation of the subject matter, and provide feedback through question-answer exercises.|
 |User|Students that attended Brigham Young University - Idaho.|
@@ -376,51 +381,6 @@ We have a number of external services and COTS applications that will be integra
 ## 3.2 Functional Requirements
 
 This section represents the list of functional requriements and use cases that define each of the  various features within the system. Each feature will contain a short description and a detailed list of functional requirements.
-
-### 3.2.x Feature Template
-
-Full Feature Description. What the feature is. Who is going to use it. Why is this feature needed or wanted.
-
-
-*************************
-These examples are to be used in the "Use Case Detail" section of the feature use case.
-Example Template: As a < type of user >, I want < some goal > so that < some reason >.
-
-Examples:
- - As a user, I can backup my entire hard drive.
- - As a power user, I can specify files or folders to backup based on file size, date created and date modified.
- - As a user, I can indicate folders not to backup so that my backup drive isn't filled up with things I don't need saved.
-*************************
-
-
-#### 3.2.x.y Use Case Name
-
-| Data          | Description |
-|:--------------| :--------------|
-|Use Case Detail| Full Use Case Details. What, Who, Why....               |
-|XRef           | Lorem ipsum dolor sit amet, consectetur adipiscing elit.|
-|Trigger        | Lorem ipsum dolor sit amet, consectetur adipiscing elit.|
-|Precondition   | Lorem ipsum dolor sit amet, consectetur adipiscing elit.|
-|Basic Path     | Lorem ipsum dolor sit amet, consectetur adipiscing elit.|
-|Alternate Path | Lorem ipsum dolor sit amet, consectetur adipiscing elit.|
-|Post Condition | Lorem ipsum dolor sit amet, consectetur adipiscing elit.|
-|Exception Paths| Lorem ipsum dolor sit amet, consectetur adipiscing elit.|
-|Other          | Lorem ipsum dolor sit amet, consectetur adipiscing elit.|
-
-#### 3.2.x.yy Use Case Name
-
-| Data          | Description |
-|:--------------| :--------------|
-|Use Case Detail| Full Use Case Details. What, Who, Why....               |
-|XRef           | Lorem ipsum dolor sit amet, consectetur adipiscing elit.|
-|Trigger        | Lorem ipsum dolor sit amet, consectetur adipiscing elit.|
-|Precondition   | Lorem ipsum dolor sit amet, consectetur adipiscing elit.|
-|Basic Path     | Lorem ipsum dolor sit amet, consectetur adipiscing elit.|
-|Alternate Path | Lorem ipsum dolor sit amet, consectetur adipiscing elit.|
-|Post Condition | Lorem ipsum dolor sit amet, consectetur adipiscing elit.|
-|Exception Paths| Lorem ipsum dolor sit amet, consectetur adipiscing elit.|
-|Other          | Lorem ipsum dolor sit amet, consectetur adipiscing elit.|
-
 ### 3.2.1 Calendar Application is Mobile
 
 The calendar application will be usable and readable in mobile form factors. It will allow easy access from a mobile application to the user's school calendar.
@@ -483,7 +443,7 @@ Students need to prioritize tasks and assignments so that they can focus on the 
 
 | Data          | Description |
 |:--------------|:-----------------|
-|Use Case Detail  | As a student I want to be able to see I-Learn assigments ordered by due-date and priority label|
+|Use Case Detail  | As a student I want to be able to see I-Learn assignments ordered by due-date and priority label|
 |XRef           ||
 |Trigger        | The user opens the calendar app.|
 |Precondition   | The system has access to the user's assignments on I-Learn.|                       
@@ -548,10 +508,10 @@ The Calendar application will sync with I-Learn's calendar so that all class ass
 
 | Data          | Description |
 |:--------------|:-----------------|
-|Use Case Detail| As a user I want the app to automatically download all the assingments listed on I-Learn for each specific task.|
+|Use Case Detail| As a user I want the app to automatically download all the assignments listed on I-Learn for each specific task.|
 |XRef           ||
 |Trigger	| The user taps on the import button.|
-|Precondition 	| The user has aceess to another calendar to import from.|
+|Precondition 	| The user has access to another calendar to import from.|
 |Basic Path	| 1. The User selects to import calendar items from the other calendar application.</br>2. Once the import is complete the calendar will update to show all added items.|                      
 |Alternate Path | 1. If the import fails, the user will be notified.|
 |Post Condition	| The calendar app will update and show new activities.|
@@ -1186,12 +1146,11 @@ Links are used to deep link to third party technologies for collaboration tools.
 |XRef           | |
 |Trigger        | The user opens a announcement or meeting and taps on the provided link.|
 |Precondition   | After the user has connected to I-Learn and has a group that is working on a project. |
-|Basic Path     | 1. User logs into I-Learn through app. 2. User clicks the “Group” icon and the app shows his group. 3. The user selects an announcement or meeting. 4. The user taps on the provided link.|
+|Basic Path     | 1. User logs into I-Learn through app.<br> 2. User clicks the “Group” icon and the app shows his group.<br> 3. The user selects an announcement or meeting.<br> 4. The user taps on the provided link.|
 |Alternate Path | None|
 |Post Condition | The link turns another color notifying the user that it has been selected.|
 |Exception Paths| The link does not work and takes them to a 404 page.|
 |Other          | None|
-
 ### 3.2.33 Sort & Filter
 
 Calendar items can be sorted or filtered based on details about the calendar event.
@@ -2025,8 +1984,11 @@ Night mode is a setting that allows the user to toggle a blue light filter to re
 
 #### 3.2.067.0 Tutor Integration
 
+
+!!MARKED FOR DELETE!!
+
 | Tutor Integration| Select a tutor appointment from BYU-I website        |
-|:--------------| :--------------|
+ :--------------|
 |Use Case Name  | Tutor Integration                                       |
 |XRef           |                                                         |
 |Trigger        | User selects tutor request button                       |
@@ -2105,14 +2067,6 @@ The user will be required to log into the application with a single ID and passw
 ## 4.2 Verification Functional Requirements
 
 In this section of the document we will provide high level details on how we will verify that the functional feature requirements are being met. The specific Test Cases will be descripted in the SDD portion of the document. This section is not intended to contain the test case specifics.
-
-### 4.2.x Feature Name Goes Here
-
-Example Description: When filling out the the verification section of the document you will only need to describe the high level for what will be done to verify that the feature requirements are being met. No more than high level 3 sentances. 
-
-### 4.2.x.y Use Case Name Goes Here
-
-Example Description: When describing how to test the Use Case attempt to keep it to a single sentance. The setup for the description should be found in the high level feature.
 
 ### 4.2.1 Calendar Application is Mobile
 
@@ -2419,42 +2373,36 @@ Validation will be successful if we have a video, 10 minutes or less in length, 
 We will test this by having a new user open the calendar, and verifying that the link to the tutorial video pops up. They will click the link, and after watching the new user will create a new calendar item, join a group event, and access different calendar views to verify that the tutorial was clear. If they fail then adjustment to the tutorial video is needed.
 ### 4.2.31 Group Permissions
 
-
+Validation will be successful if the user can set restrictions and permissions within their groups.
 
 #### 4.2.31.1 Group owners have access to all the groups resources
 
-
+This will be tested by creating a group and setting certain permissions. After those are set we will see if the group owner can still access all the resources in the group.
 
 
 #### 4.2.31.2 Group members can be aware of what is happening in their group
 
-
-
-
+Validation will be successful when permissions are set and group is aware of those permissions given or set.
 ### 4.2.32 Group Links
 
-
+Validation will be successful when third party technologies for group work are linked and accessed from the calendar.
 
 #### 4.2.32.1 Group has a link to a collaborative tool
 
-
-
-
+When the link is used the group will be able to access the third party technologies preferred from the calendar.
 ### 4.2.33 Sort & Filter
 
-
+Validation will be successful when calendar items are sorted or filtered based on details of the events on the calendar.
 
 
 #### 4.2.33.1 Filter by class
 
-
+Calendar items can be filtered for and found based on the class they are listed under in the event.
 
 
 #### 4.2.33.2 Sort by Time Length
 
-
-
-
+Calendar items can be filtered for and found based the time they need to be completed by.
 ### 4.2.34 Personal Assistant
 
 
@@ -2576,117 +2524,124 @@ The user hovers their mouse over an event or clicks and the details are presente
 
 ### 4.2.46 Quick Access
 
-
+When the quick access button is clicked the system needs to redirect to I-Learn�s main page. This process has to be significantly faster than the normal I-Learn login process.
 
 ### 4.2.46.1 Quick Access Class Selection
 
-
+The User can select a class to go directly to from the app. Once again this process has to be faster than the normal process.
 
 
 ### 4.2.47 Assignment Alarm
 
-
+The Assignment alarm feature needs to be precise and go off at the correct time. 
 
 ### 4.2.47.1 Setting the Assignment Alarm
 
+The alarm set by the user has to go off at the exact time the user specifies.
 
+### 4.2.48 Share
 
-### 4.2.48 Share Option
+The user will beable to go to a calendar on social media and have the calendar app sync with
+the specified calendar.
 
+### 4.2.48.1
 
+The calendar app is able to import events from an existing calendar from a social media site.
 
-#### 4.2.48.1 Sharing Calendars
-### 4.2.49 Feature Name?
+### 4.2.49 Sync and Success Share
 
-
+Use a compatible site and the app itself to test the sync and success feature. The calendar app has to be able to be updated from these compatible sites. The calendar app also needs to be able to share a success on social media.
 
 
 #### 4.2.49.1 Enable Synchronization with ILearn
 
-
+The app can be synced with ILearn and automatically pull in the users assignments.
 
 
 #### 4.2.49.1 Google Chrome Addon add to Calendar
 
-
+The app can have items added to it by the user highlighting them right clicking and selecting add to my calendar. The user will have to pick a date to add the item to.
 
 
 #### 4.2.49.2 Google Chrome Addon remind about upcoming deadline
 
-
+A notification will pop up to let the user know that an upcoming deadline is approaching. 
 
 
 #### 4.2.49.1 Share success to Google Plus
 
-
+The app can send a success that the user had to google plus.
 
 
 #### 4.2.49.1 Share success to Facebook
 
+The app can send a success that the user had to Facebook. 
 
 
+### 4.2.50 Priority Assignments 
 
-### 4.2.50 Feature Name?
-
-
-
+The assignments set as priority are quicker to identify then the normal assignments.
 
 #### 4.2.50.1 Priority
 
-
+An assignment can be set as a priority and then unset.
 ### 4.2.51 Google API
 
+The calendar app is able to sync with a Google calendar.
 
 
+#### 4.2.51.1 Sync Google Calendar
 
-#### 4.2.51.1 Use Case Name?
+The calendar app correctly syncs with the selected Google calendar.
 
 
 
 
 ### 4.2.52 Apple API
 
+The calendar app is able to sync with an apple calendar
 
 
+#### 4.2.52.1 Sync Apple Calendar
 
-#### 4.2.52.1 Use Case Name?
-
-
+The app correctly syncs to an apple calendar
 
 
 ### 4.2.53 Outlook API
 
+The calendar app is able to sync with an outlook calendar.
+
+
+#### 4.2.53.1 Sync Outlook Calendar
+
+The calendar syncs to the selected outlook calendar.
 
 
 
-#### 4.2.53.1 Use Case Name?
 
+### 4.2.54 Toolbox Bar
 
-
-
-### 4.2.54 Feature Name?
-
-
+When the app is open the toolbox bar is present in the app.
 
 
 #### 4.2.54.1 Search Bar
 
-
+The tool box bar will have a search bar and it must be able to search for various items in the calendar app.
 
 
 #### 4.2.54.2 Timer
 
+After the timer function is selected the app displays the time left to complete the assignment.
 
 
+#### 4.2.54.3 Assignment Progress Bar
 
-#### 4.2.54.3 Assigment Progress Bar
-
-
+After the assignment process bar is selected the app displays the user�s assignment progress.
 
 
 #### 4.2.54.4 Suggest Meeting Times
 
-
+When this function is selected and associates calendars are checked the app will display the best times for the group to meet.
 
 
 ### 4.2.55 Twitter
