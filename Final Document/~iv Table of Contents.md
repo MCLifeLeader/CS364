@@ -170,13 +170,13 @@
 ### 4.2.68 Quick Add
 ### 4.2.69 Edit Event
 ### 4.2.70 Non-SSO
-## 4.3 Usability Requirements
-## 4.4 Performance Requirements
-## 4.5 Logical Database Requirements
-## 4.6 Design Constraints
-## 4.7 Software System Attributes
-## 4.8 Supporting Information
+## 4.3 Validate Usability Requirements
+## 4.4 Verify Performance Requirements
+## 4.5 Validate Logical Database Requirements
+## 4.6 Validate Design Constraints
+## 4.7 Validate Software System Attributes
 ## 5.0 Appendices
 ## 5.1 Assumptions and Dependencies
 ## 5.2 Acronyms and Abbreviations
 ## Index
+
