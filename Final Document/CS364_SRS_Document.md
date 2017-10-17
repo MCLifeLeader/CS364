@@ -240,10 +240,10 @@ John Memmott<br/>
 
 | Name          | Date       | Reason for Changes        | Version |
 |:--------------|:----------:|:--------------------------|:-------:|
-| Initial       | 9/23/2017  | First Draft               |   0.0   |
-| Revision 1    | 10/07/2017 | Initial SRS Revision      |   1.0   |
-| Revision 2    |            |                           |   1.1   |
-| Revision 3    |            |                           |   1.2   |
+| Initial       | 9/23/2017  | First Draft               |   1.0   |
+| Revision 1    | 10/07/2017 | Initial SRS Revision      |   1.1   |
+| Revision 2    | 10/16/2017 | Pre-Final Draft           |   1.2   |
+| Revision 3    |            |                           |   x.x   |
 
 # 1.0 Introduction
 
@@ -381,51 +381,6 @@ We have a number of external services and COTS applications that will be integra
 ## 3.2 Functional Requirements
 
 This section represents the list of functional requriements and use cases that define each of the  various features within the system. Each feature will contain a short description and a detailed list of functional requirements.
-
-### 3.2.x Feature Template
-
-Full Feature Description. What the feature is. Who is going to use it. Why is this feature needed or wanted.
-
-
-*************************
-These examples are to be used in the "Use Case Detail" section of the feature use case.
-Example Template: As a < type of user >, I want < some goal > so that < some reason >.
-
-Examples:
- - As a user, I can backup my entire hard drive.
- - As a power user, I can specify files or folders to backup based on file size, date created and date modified.
- - As a user, I can indicate folders not to backup so that my backup drive isn't filled up with things I don't need saved.
-*************************
-
-
-#### 3.2.x.y Use Case Name
-
-| Data          | Description |
-|:--------------| :--------------|
-|Use Case Detail| Full Use Case Details. What, Who, Why....               |
-|XRef           | Lorem ipsum dolor sit amet, consectetur adipiscing elit.|
-|Trigger        | Lorem ipsum dolor sit amet, consectetur adipiscing elit.|
-|Precondition   | Lorem ipsum dolor sit amet, consectetur adipiscing elit.|
-|Basic Path     | Lorem ipsum dolor sit amet, consectetur adipiscing elit.|
-|Alternate Path | Lorem ipsum dolor sit amet, consectetur adipiscing elit.|
-|Post Condition | Lorem ipsum dolor sit amet, consectetur adipiscing elit.|
-|Exception Paths| Lorem ipsum dolor sit amet, consectetur adipiscing elit.|
-|Other          | Lorem ipsum dolor sit amet, consectetur adipiscing elit.|
-
-#### 3.2.x.yy Use Case Name
-
-| Data          | Description |
-|:--------------| :--------------|
-|Use Case Detail| Full Use Case Details. What, Who, Why....               |
-|XRef           | Lorem ipsum dolor sit amet, consectetur adipiscing elit.|
-|Trigger        | Lorem ipsum dolor sit amet, consectetur adipiscing elit.|
-|Precondition   | Lorem ipsum dolor sit amet, consectetur adipiscing elit.|
-|Basic Path     | Lorem ipsum dolor sit amet, consectetur adipiscing elit.|
-|Alternate Path | Lorem ipsum dolor sit amet, consectetur adipiscing elit.|
-|Post Condition | Lorem ipsum dolor sit amet, consectetur adipiscing elit.|
-|Exception Paths| Lorem ipsum dolor sit amet, consectetur adipiscing elit.|
-|Other          | Lorem ipsum dolor sit amet, consectetur adipiscing elit.|
-
 ### 3.2.1 Calendar Application is Mobile
 
 The calendar application will be usable and readable in mobile form factors. It will allow easy access from a mobile application to the user's school calendar.
@@ -2112,14 +2067,6 @@ The user will be required to log into the application with a single ID and passw
 ## 4.2 Verification Functional Requirements
 
 In this section of the document we will provide high level details on how we will verify that the functional feature requirements are being met. The specific Test Cases will be descripted in the SDD portion of the document. This section is not intended to contain the test case specifics.
-
-### 4.2.x Feature Name Goes Here
-
-Example Description: When filling out the the verification section of the document you will only need to describe the high level for what will be done to verify that the feature requirements are being met. No more than high level 3 sentances. 
-
-### 4.2.x.y Use Case Name Goes Here
-
-Example Description: When describing how to test the Use Case attempt to keep it to a single sentance. The setup for the description should be found in the high level feature.
 
 ### 4.2.1 Calendar Application is Mobile
 
