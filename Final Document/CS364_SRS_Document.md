@@ -2562,7 +2562,7 @@ The user hovers their mouse over an event or clicks and the details are presente
 
 ### 4.2.46 Quick Access
 
-When the quick access button is clicked the system needs to redirect to I-Learnï¿½s main page. This process has to be significantly faster than the normal I-Learn login process.
+When the quick access button is clicked the system needs to redirect to I-Learn’s main page. This process has to be significantly faster than the normal I-Learn login process.
 
 ### 4.2.46.1 Quick Access Class Selection
 
@@ -2674,7 +2674,7 @@ After the timer function is selected the app displays the time left to complete 
 
 #### 4.2.54.3 Assignment Progress Bar
 
-After the assignment process bar is selected the app displays the userï¿½s assignment progress.
+After the assignment process bar is selected the app displays the user’s assignment progress.
 
 
 #### 4.2.54.4 Suggest Meeting Times
