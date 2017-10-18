@@ -107,7 +107,6 @@ type "3.4.0.0.md" >> CS364_SRS_Document.md
 type "3.5.0.0.md" >> CS364_SRS_Document.md
 type "3.6.0.0.md" >> CS364_SRS_Document.md
 type "3.7.0.0.md" >> CS364_SRS_Document.md
-type "3.8.0.0.md" >> CS364_SRS_Document.md
 
 type "4.0.0.0.md" >> CS364_SRS_Document.md
 type "4.1.0.0.md" >> CS364_SRS_Document.md
