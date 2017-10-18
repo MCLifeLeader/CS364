@@ -631,9 +631,9 @@ When the user views the Calendar, each day will contain a list of events for tha
 |:--------------| :--------------|
 |Use Case Detail  | As a mobile user, I want to be able to expand or condense a list of events to fit my small screen. |
 |XRef           | Validation for this feature can be found at 4.2.10. |
-|Trigger        | A user taps on the ‘Show all’ event button for one day. |
+|Trigger        | A user taps on the 'Show all' event button for one day. |
 |Precondition   | The user has already logged into the app with their Ilearn accounts and is viewing the calendar page. |
-|Basic Path	    | 1. The user logs into Ilearn through app. 2. The user taps the ‘calender’ icon. 3. The user taps a ‘See all’ button on one day in the calender. 4. The list of events for that day is expanded. |
+|Basic Path	    | 1. The user logs into Ilearn through app. 2. The user taps the 'calender' icon. 3. The user taps a 'See all' button on one day in the calender. 4. The list of events for that day is expanded. |
 |Alternate Path | None. |
 |Post Condition	| If the button is tapped again, the list of events collapses to save screen space. |
 |Exception Paths| If there is nothing to show for that day, the user's calendar will not have the 'Show all' button. |
@@ -648,9 +648,9 @@ When a user has joined a group on the app, they will want to be in contact with 
 |:--------------| :--------------|
 |Use Case Detail| As a classmate, I want to be able to text members of my study group. |
 |XRef           | Validation for this feature can be found at 4.2.11. |
-|Trigger        | A user taps the ‘Contact’ button on a member of a group from a list. |
+|Trigger        | A user taps the 'Contact' button on a member of a group from a list. |
 |Precondition   | User has been accepted into a group.|
-|Basic Path	    | 1. The user taps a button labeled ‘Groups’. 2. User navigates through the list of group members and taps on one they want to text. 3. App switches over to default messaging app with group member’s phone number. |
+|Basic Path	    | 1. The user taps a button labeled 'Groups'. 2. User navigates through the list of group members and taps on one they want to text. 3. App switches over to default messaging app with group member's phone number. |
 |Alternate Path | If the group member the user has selected has not provided a phone number, then the default email app will load with the email. |
 |Post Condition	| The user is in contact with his/her group. |
 |Exception Paths| If the group member the user has selected has not provided a phone number or an email, the app will display a message stating such. |
@@ -668,7 +668,7 @@ With the press of a single button, a user can start a video conference call with
 |XRef           | Validation for this feature can be found at 4.2.12. |
 |Trigger        | A user clicks on the Group Video Chat button. |
 |Precondition   | The user is accepted into a group. |
-|Basic Path	    | The user taps the ‘Groups’ button. 2. The user taps the ‘Group video chat’ button. 3. A 3rd party video app, such as Skype or Google Hangouts, is started with all members of the group invited to join a video conference call. |
+|Basic Path	    | The user taps the 'Groups' button. 2. The user taps the 'Group video chat' button. 3. A 3rd party video app, such as Skype or Google Hangouts, is started with all members of the group invited to join a video conference call. |
 |Alternate Path | None.|
 |Post Condition	| The user is in a Group Video Chat session.|
 |Exception Paths| If members of the group have not provided the necessary information for the app to contact them, an error is displayed stating so. |
@@ -759,7 +759,7 @@ A user can setup recurring appointments and events in the calender for multiple 
 |Other		| None. |
 ### 3.2.17 Grades
 
-When an assignment is graded by the user’s instructor, the user will see the grade of the assignment on the assignment calender item.
+When an assignment is graded by the user's instructor, the user will see the grade of the assignment on the assignment calender item.
 
 #### 3.2.17.1  Scores in every assignments and overall grades
 | Data          | Description |
@@ -767,8 +767,8 @@ When an assignment is graded by the user’s instructor, the user will see the g
 |Use Case Detail| As a student, I want to see the grade I got on assignments after I complete them. |
 |XRef           | Validation for this feature can be found at 4.2.17.|
 |Trigger        | Every time that an assignment is graded. |
-|Precondition   | Completed assignments are graded by user’s instructor.|                       
-|Basic Path	| 1. User completes and submits an assignment. 2. user’s instructor grades the assignment. 3. User navigates to the calender. |
+|Precondition   | Completed assignments are graded by user's instructor.|                       
+|Basic Path	| 1. User completes and submits an assignment. 2. user's instructor grades the assignment. 3. User navigates to the calender. |
 |Alternate Path	| None.|			
 |Post Condition | None.|
 |Exception Paths| No assignments have been submitted for grading.|
@@ -2562,7 +2562,7 @@ The user hovers their mouse over an event or clicks and the details are presente
 
 ### 4.2.46 Quick Access
 
-When the quick access button is clicked the system needs to redirect to I-Learn�s main page. This process has to be significantly faster than the normal I-Learn login process.
+When the quick access button is clicked the system needs to redirect to I-Learn�s main page. This process has to be significantly faster than the normal I-Learn login process.
 
 ### 4.2.46.1 Quick Access Class Selection
 
@@ -2674,7 +2674,7 @@ After the timer function is selected the app displays the time left to complete 
 
 #### 4.2.54.3 Assignment Progress Bar
 
-After the assignment process bar is selected the app displays the user�s assignment progress.
+After the assignment process bar is selected the app displays the user�s assignment progress.
 
 
 #### 4.2.54.4 Suggest Meeting Times
