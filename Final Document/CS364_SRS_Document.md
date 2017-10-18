@@ -383,14 +383,16 @@ Features have been broken down into various feature categories to group like or 
 
 The software being developed will run as a web application, will be
 be able to work on all web browsers, and on most devices.
-## 2.5 Functional Requirements
+## 2.5 Image References
 
-### 2.5.1 - Must Authenticate with BYU-I student web site
-### 2.5.2 - Must run on all web browsers
-### 2.5.3 - Must work on most devices
-### 2.5.4 - Must access some permissions on devices
-### 2.5.5 - Authentication/Link with social media platforms
-## 2.6 Technical Requirements
+### 2.5.1 - Main Calendar View:<br/>
+<img  src="https://github.com/MCLifeLeader/CS364/blob/master/Final%20Document/Images/Main_Calendar_View_Remastered.png" height="50%" width="50%"><br/>
+### 2.5.2 - Assignment Priority List View:<br/>
+<img  src="https://github.com/MCLifeLeader/CS364/blob/master/Final%20Document/Images/3.2.004.0_Diagram_attempt2.jpg"><br/>
+### 2.5.3 - Simplified "To-Do" List View:<br/>
+<img  src="https://github.com/MCLifeLeader/CS364/blob/master/Final%20Document/Images/Simplified%20to%20do%20list.jpg" height="50%" width="50%"><br/>
+### 2.5.4 - Login Page View:<br/>
+<img  src="https://github.com/MCLifeLeader/CS364/blob/master/Final%20Document/Images/Login-Page.jpg" height="50%" width="50%"><br/>## 2.6 Technical Requirements
 
 ## 2.7 User Documentation
 
@@ -628,11 +630,11 @@ When the user views the Calendar, each day will contain a list of events for tha
 | Data          | Description |
 |:--------------| :--------------|
 |Use Case Detail  | As a mobile user, I want to be able to expand or condense a list of events to fit my small screen. |
-|XRef           | |
-|Trigger        | A user taps on the 'Show all' event button for one day. |
-|Precondition   | The user has already logged into the app with their I-Learn accounts and is viewing the calendar page. |
-|Basic Path	    | 1. User logs into I-Learn through app. 2. The user taps the 'Calendar' icon. 3. The user taps a 'See all' button on one day in the Calendar. 4. The list of events for that day is expanded. |
-|Alternate Path | None|
+|XRef           | Validation for this feature can be found at 4.2.10. |
+|Trigger        | A user taps on the ‘Show all’ event button for one day. |
+|Precondition   | The user has already logged into the app with their Ilearn accounts and is viewing the calendar page. |
+|Basic Path	    | 1. The user logs into Ilearn through app. 2. The user taps the ‘calender’ icon. 3. The user taps a ‘See all’ button on one day in the calender. 4. The list of events for that day is expanded. |
+|Alternate Path | None. |
 |Post Condition	| If the button is tapped again, the list of events collapses to save screen space. |
 |Exception Paths| If there is nothing to show for that day, the user's calendar will not have the 'Show all' button. |
 |Other		      | None. |
@@ -645,14 +647,15 @@ When a user has joined a group on the app, they will want to be in contact with 
 | Data          | Description |
 |:--------------| :--------------|
 |Use Case Detail| As a classmate, I want to be able to text members of my study group. |
-|XRef           | |
-|Trigger        | A user taps the 'Contact' button on a member of a group from a list. |
-|Precondition   | User has been accepted into a group|
-|Basic Path	    | 1. The user taps a button labeled 'Groups'. 2. User navigates through the list of group members and taps on one they want to text. 3. App switches over to default messaging app with group member's phone number. |
+|XRef           | Validation for this feature can be found at 4.2.11. |
+|Trigger        | A user taps the ‘Contact’ button on a member of a group from a list. |
+|Precondition   | User has been accepted into a group.|
+|Basic Path	    | 1. The user taps a button labeled ‘Groups’. 2. User navigates through the list of group members and taps on one they want to text. 3. App switches over to default messaging app with group member’s phone number. |
 |Alternate Path | If the group member the user has selected has not provided a phone number, then the default email app will load with the email. |
 |Post Condition	| The user is in contact with his/her group. |
 |Exception Paths| If the group member the user has selected has not provided a phone number or an email, the app will display a message stating such. |
-|Other		      | None|
+|Other		      | None.|
+
 ### 3.2.12 Group Communication 2: Video Chat
 
 With the press of a single button, a user can start a video conference call with their group from the app. The app will utilize Skype or Google Hangouts to perform the task for the user.
@@ -662,12 +665,12 @@ With the press of a single button, a user can start a video conference call with
 | Data          | Description |
 |:--------------| :--------------|
 |Use Case Detail| As a user, I want to easily start a video call with fellow group members from the app. |
-|XRef           | |
+|XRef           | Validation for this feature can be found at 4.2.12. |
 |Trigger        | A user clicks on the Group Video Chat button. |
 |Precondition   | The user is accepted into a group. |
-|Basic Path	    | The user taps the 'Groups' button. 2. The user taps the 'Group video chat' button. 3. A 3rd party video app, such as Skype or Google Hangouts, is started with all members of the group invited to join a video conference call. |
-|Alternate Path | None|
-|Post Condition	| The user is in a Group Video Chat session|
+|Basic Path	    | The user taps the ‘Groups’ button. 2. The user taps the ‘Group video chat’ button. 3. A 3rd party video app, such as Skype or Google Hangouts, is started with all members of the group invited to join a video conference call. |
+|Alternate Path | None.|
+|Post Condition	| The user is in a Group Video Chat session.|
 |Exception Paths| If members of the group have not provided the necessary information for the app to contact them, an error is displayed stating so. |
 |Other		      | Every user who uses the app will need to provide their Gmail or Skype names so this feature works properly. |
 ### 3.2.13 FERPA compliant
@@ -727,8 +730,13 @@ This app allows the user to pick a time zone so all timestamps from I-Learn will
 | Data          | Description |
 |:--------------| :--------------|
 |Use Case Detail| Set the time zone|
+<<<<<<< HEAD
+|XRef           |  |
+|Trigger        | Every time the app receives a timestamp from I-Learn, it is automatically converted to the users prefered time zone.|
+=======
 |XRef           | Validation for this Feature is located at 4.2.15 |
 |Trigger        | Every time the app recieves a timestamp from I-Learn, it is automatically converted to the users prefered time zone.|
+>>>>>>> upstream/master
 |Precondition   | None. |
 |Basic Path     | 1. Enter the app settings. 2. Enter the time and date settings. 3. Select the time zone setting and select time zone. |
 |Alternate Path | None. |
@@ -741,44 +749,44 @@ A user can setup recurring appointments and events in the calender for multiple 
 | Data          | Description |
 |:--------------|:-----------------|
 |Use Case Detail| As a user, I want to set up appointments so they recur every day, week, or month, and receive reminders for them. |
-|XRef           | |
+|XRef           | Validation for this feature can be found at 4.2.16. |
 |Trigger        | User selects a day, creates an event, and defines the recurring times for the event.|
-|Precondition   | User has logged into the app with their Ilearn account and synced their calender. |                       
+|Precondition   | User has logged into the app with their Ilearn account and synced their calendar. |                       
 |Basic Path	| 1. User accesses the calender. 2. User taps a day in the calender and creates an event. 3. User defines the number of times the event repeats.|
-|Alternate Path	| None|			
-|Post Condition | None|
-|Exception Paths| None|
-|Other		| None |
+|Alternate Path	| None.|			
+|Post Condition | None.|
+|Exception Paths| None.|
+|Other		| None. |
 ### 3.2.17 Grades
 
-The calendar application will link to I-Learn and fill in the grades received on assignments and classes.
+When an assignment is graded by the user’s instructor, the user will see the grade of the assignment on the assignment calender item.
 
-#### 3.2.17.1 View grades on assignments
-
+#### 3.2.17.1  Scores in every assignments and overall grades
 | Data          | Description |
 |:--------------|:-----------------|
-|Use Case Detail  |As a student I want to see the grades that I received on my assignments.|
-|XRef           ||
-|Trigger        | 1. Every time the user logs in, and checks grades every hour while logged in. 2. The student can click "Check now" to check their grades at that moment.|
-|Precondition   | The calendar application must have permission and be linked to student's I-Learn account.|                       
-|Basic Path	|1. Assignments that received grades are fetched from I-Learn. 2. The grades with their corresponding assignments are displayed as notifications to the user.|
-|Alternate Path	|1. The user clicks on a graded assignment. 2. The grade for the assignment is shown.|			
-|Post Condition |The assignment grade is shown. The system displays the time that it last checked for grades.|
-|Exception Paths|If the grade is not successfully retrieved from I-Learn, then no grade will be shown.|
+|Use Case Detail| As a student, I want to see the grade I got on assignments after I complete them. |
+|XRef           | Validation for this feature can be found at 4.2.17.|
+|Trigger        | Every time that an assignment is graded. |
+|Precondition   | Completed assignments are graded by user’s instructor.|                       
+|Basic Path	| 1. User completes and submits an assignment. 2. user’s instructor grades the assignment. 3. User navigates to the calender. |
+|Alternate Path	| None.|			
+|Post Condition | None.|
+|Exception Paths| No assignments have been submitted for grading.|
+|Other		| None. |
 ### 3.2.18 Widget
 The app will support the Android Widget feature. This widget will allow for easy and quick access to the app at all times.
 #### 3.2.18.1  Widget support for Android
 | Data          | Description |
 |:--------------|:-----------------|
 |Use Case Detail| As a mobile user, I want to have constant and immediate access to the app through a Widget. |
-|XRef           | |
+|XRef           | Validation for this feature can be found at 4.2.18.|
 |Trigger        | Setup by the user on Android.|
 |Precondition   | App is installed on an Android device. |                       
 |Basic Path	| 1. User installs the app on their Android device. 2. In the Android app screen menu, the user navigates to the Widgets menu. 3. User selects the Widget for the app.|
-|Alternate Path	| None|			
-|Post Condition | None|
+|Alternate Path	| None.|			
+|Post Condition | None.|
 |Exception Paths| The app is installed on a non-Android device, in which case, support for Widgets is unavailable. |
-|Other		| None |
+|Other		| None. |
 ### 3.2.19 Active Directory / LDAP
 
 A directory system which allows the sharing of information between students. Allows for many features like the sharing of contact information or schedules, providing contact methods and meeting planning for groups.
@@ -805,25 +813,25 @@ Settings for how the user wants to be notified by the application. Provides a us
 
 | Data          | Description |
 |:--------------| :--------------|
-|Use Case Detail| As a user, I want to turn notification on |
+|Use Case Detail| As a user, I want to turn notification on. |
 |XRef           | |
 |Trigger        | The user clicks the toggle labeled "Notifications" to the on position |
-|Precondition   | The user is on the settings page |
-|Basic Path     | <li type='1'>The user is presented with a list of settings</li><li type='1'>The user locates the setting which is labeled "Notifications"</li><li type='1'>The user clicks the slider next to the "Notifications" label to the right</li>|
-|Alternate Path | The user can toggle the selection to the left to turn notification off |
-|Post Condition | Notifications are enabled for the user |
-|Exception Paths| The user can navigate to a different view |
+|Precondition   | The user is on the settings page. |
+|Basic Path     | <li type='1'>The user is presented with a list of settings.</li><li type='1'>The user locates the setting which is labeled "Notifications."</li><li type='1'>The user clicks the slider next to the "Notifications" label to the right.</li>|
+|Alternate Path | The user can toggle the selection to the left to turn notifications off. |
+|Post Condition | Notifications are enabled for the user. |
+|Exception Paths| The user can navigate to a different view. |
 |Other          | |
 
 #### 3.2.20.2 Notification Method
 
 | Data          | Description |
 |:--------------| :--------------|
-|Use Case Detail| As a user, I want to select how I'm notified|
+|Use Case Detail| As a user, I want to select how I'm notified.|
 |XRef           | |
-|Trigger        | The user clicks the toggle labeled "Alerts" |
-|Precondition   | The user is on the settings page |
-|Basic Path     | <li type='1'>The user is presented with a list of settings</li><li type='1'>The user locates the setting which is labeled "Alerts"</li><li type='1'>The user clicks the slider next to the "Alerts" label to the right</li>|
+|Trigger        | The user clicks the toggle labeled "Alerts." |
+|Precondition   | The user is on the settings page. |
+|Basic Path     | <li type='1'>The user is presented with a list of settings.</li><li type='1'>The user locates the setting which is labeled "Alerts."</li><li type='1'>The user clicks the slider next to the "Alerts" label to the right.</li>|
 |Alternate Path | The user can perform the same function on the "Email" and "Text" settings.|
 |Post Condition | The user receives alert notifications through their device's default notification method.|
 |Exception Paths| The user can navigate to a different view. |
@@ -905,7 +913,7 @@ The simplified assignment display allows users to view one task as a time in ord
 | Data          | Description |
 |:--------------| :--------------|
 |Use Case Detail| As a user, I want to mark an assignment as complete and remove it from my assignment list |
-|XRef           | |
+|XRef           | An image reference for this feature is found at 2.5.3. Validation for this feature is located at 4.2.24.|
 |Trigger        | The user selects the green check mark button at the bottom of the screen|
 |Precondition   | The user is on the simplified display page |
 |Basic Path     | 1. The assignment is marked as completed<br/> 2.The assignment is remove from the current list of assignments|
@@ -919,7 +927,7 @@ The simplified assignment display allows users to view one task as a time in ord
 | Data          | Description |
 |:--------------| :--------------|
 |Use Case Detail| As a user, I want to search through the list of assignments to view what is remaining|
-|XRef           | |
+|XRef           | An image reference for this feature is found at 2.5.3. Validation for this feature is located at 4.2.24.|
 |Trigger        | The user selects the right arrow button at the bottom of the screen|
 |Precondition   | The user is on the simplified display page |
 |Basic Path     | The next assignment in the list is display on screen|
@@ -933,7 +941,7 @@ The simplified assignment display allows users to view one task as a time in ord
 | Data          | Description |
 |:--------------| :--------------|
 |Use Case Detail| As a user, I want to add class assignments to my to do list|
-|XRef           | |
+|XRef           | An image reference for this feature is found at 2.5.3. Validation for this feature is located at 4.2.24.|
 |Trigger        | The user selects the "add to my to-do list" button|
 |Precondition   | The user is viewing an individual assignment on the individual assignment detail page |
 |Basic Path     | The assignment title is added to the end of the list|
@@ -2082,10 +2090,19 @@ New Users will be introduced to the Student Calendar functionality through tutor
 The application will offer a help menu that the user may select to learn how to find commonly used features.
 ## 3.4 Performance Requirements
 
+The Student Calendar must be interactive with delays in action-response functionality kept to a minimum. When opening window forms or displaying error messages, the delay shall be shorter than 2 seconds. When accessing the user account database, the operation of opening user preferences, sorting user items, and displaying the user calendar will be performed within 10 seconds 95% of the time. This is provided the user has a reliable internet connection. Time to Connect to the server will be based on the distance between the user's machine and the server but the application will determine if the connection is successful within 20 seconds. 
 ## 3.5 Logical Database Requirements
 
+There are three data entities involved with the application and the user account database: Calendar Assignments, Calendar Events, and Users. These entities and the information associated with them will be stored in their respective relational tables on the web server. The following is a brief classification of each of these entities and their attributes:
+
+| Data          | Attributes | Use       |
+|:--------------| :--------------|:---------------|
+|Calendar Assignments| <ul><li>ASSIGNMENT_ID<li>User_ID<li>ASSIGNMENT_NAME<li>ASSIGNMENT_CLASS<li>ASSIGNMENT_DESCRIPTION<li>ASSIGNMENT_DUE_DATE<li/>ASSIGNMENT_DUE_TIME<ul/>|The calendar assignments entity is used to organize assignments that are gathered from the I-learn website into the Student Calendar. Assignment data can also be created by the user within the application. |
+|Calendar Events|<ul><li>EVENT_ID<li/>USER_ID<li/>EVENT_NAME<li/>EVENT_TIME<li/>EVENT_LOCATION<li/>EVENT_DESCRIPTION<ul/>|The calendar events data are user created items that are saved in the database for future user access.|
+|Users        |<ul><li>USER_ID<li/>GROUP_ID<li/>USER_FIRST_NAME<li/>USER_LAST_NAME<li/>USER_EMAIL<li/>USER_PHONE<li/>USER_LOGIN_NAME<li/>USER_PASSWORD<ul/> |The User data are the collection of information pertaining to each user including group memberships and contact information.|
 ## 3.6 Design Constraints
 
+The main design constraints of the Student Calendar will be its web based platform. The user will be required to have an web browser to access the application. The application will not be able to run on all web browsers, so system design will be tailored to work with the more popular web browsers. The application will also be subject to standards of compliance for FERPA, ADA, and BYU-Idaho. This will place constraints on how data may be transferred between the application and I-learn. It will also require added functionality, such as voice recognition, so that disabled students may use the application. All text and language used in the software must comply with BYU-Idaho's honor code.
 ## 3.7 Software System Attributes
 
 ## 3.8 Supporting Information
@@ -2238,34 +2255,25 @@ Validation will be successful if the times the student sees in their calndar app
 The correct time zone value will be verified by comparing the app time, to the actual time in that time zone.
 ### 4.2.16 Recurring Appointments
 
+Validation is successful if user is able to set and adjust recurring events in the calender
 
+#### 4.2.16.1 User defines an appointment to repeat a certain number of times.
 
-
-#### 4.2.16.1 Use Case?
-
-
-
-
+Post-completion testing will have a tester attempt to create an event on one day in the calender and set it to repeat every day, week, month, or year.
 ### 4.2.17 Grades
 
+Validation is successful if the user is able to see the grade their instructor has given an assignment that has been completed.
 
+#### 4.2.17.1 Scores in every assignments and overall grades
 
-
-#### 4.2.17.1 Use Case?
-
-
-
-
+A tester will submit a test assignment, another tester will “grade” it, and the original test  will confirm whether they see the grade in the calender or not.
 ### 4.2.18 Widget
 
+Validation is successful if the user is able to create an Android Widget for the app on their device.
 
+#### 4.2.18.1 Widget support for Android
 
-
-#### 4.2.18.1 Use Case?
-
-
-
-
+Installing app on Android device and creating a widget will satisfy testing.
 ### 4.2.19 Active Directory / LDAP
 
 Validation will be successful if the user is able to see a student list from the class page and is allowed to send and receive data from students on that list.
