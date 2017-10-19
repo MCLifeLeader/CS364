@@ -1,8 +1,13 @@
 # Software Requirements Specification
+
+
 ## Version 1.3
+
 ## October 17th, 2017
 
-# Student Calendar Integration
+# Student Calendar Integration Application
+
+
 ### BYU-Idaho CS364 Software Engineering
 
 # Authors
@@ -300,35 +305,29 @@ Reading this document in the order it has been presented is highly recommended f
 
 ## 1.6 Overview of Document
 
-This document has two primary parts following this Introduction. The first is the "Overall Description" section which generally describes the product's function purpose and design. This section is meant to give a solid conceptual baseline for the rest of the document's technical analysis. That in-depth technical analysis will be found within the "Requirements Specification" section of the document. This section gives specific instructions meant primarily for developers. It details everything that the product should do and include.
+This document is broken out into multiple sections and each section covers different topics related to the overall design and specification of this application. Section 1.0 of this document covers the introduction and highlevel outline for the document. Section 2.0 provides an overview of the application that will be implemented where as section 3.0 begins the deeper technical specifications and functionality of the application. Section 4.0 of the document will cover the validation of the functional requirements.
 
-As part of the overall structure of the document, section 3.2 has various features and use case details listed to identify how a feature is related to and built upon by various use cases. To facilitate this process a table structure was created to help visually explain the neccisary details and provide an easier format for readers of this document to consume those details.
+The main section of the SRS portion of the document will be seciton 3.2. This section does a deeper dive into each feature and use case specification that makes up the application as a whole. To help reduce confusion on how this works we have provided below a template or example of what each feature and use case may look like. This template provides quick and easy bullet style details about each feature and use case that creates that particular feature.
 
-To better understand how this is created the following Feature Template was used to create each feature and use case.
+Each feature will contain a feature name / title followed by a description of the feature. This will then be followed by a use case or user story which defines a key functional aspect of the specified feature. See below on how the table breaks apart the indivudal feature in the specified use case.
 
-### 3.2.x Feature Template
+
+In the table below the definition is on the right of the words on the left.
+
+Define the words on the left in more details.
+
+### 3.2.x Feature Template Example
 
 Full Feature Description. What the feature is. Who is going to use it. Why is this feature needed or wanted.
 
-*************************
-These examples are to be used in the "Use Case Detail" section of the feature use case.
-Example Template: As a < type of user >, I want < some goal > so that < some reason >.
-
-Examples:
- - As a user, I can backup my entire hard drive.
- - As a power user, I can specify files or folders to backup based on file size, date created and date modified.
- - As a user, I can indicate folders not to backup so that my backup drive isn't filled up with things I don't need saved.
-*************************
-
-
-#### 3.2.x.y Use Case Name
+#### 3.2.x.y Use Case Name Example
 
 | Data          | Description |
 |:--------------| :--------------|
-|Use Case Detail| Full Use Case Details. What, Who, Why.               As a User, I want to xxxxx because I am looking for an easier way to do my task|
-|XRef           | This references each related section. 2.x, 4.x, and SDD sections.|
-|Trigger        | Behavior events that happen based on automated or user input.|
-|Precondition   | Conditions, visually, data, logic, or other things that must exist prior to this feature or use case being able to be executed, used, or seen.|
+|Use Case Detail| The use case detail outlines the What, Who, Why of the use case. Example: As a User, I want to xxxxx because I am looking for an easier way to do my task.|
+|XRef           | This is short for Cross Reference and links to different sections of the document. For example you may have a reference to a genearal diagram above in section 2.0. You should also have a reference to the validation section of the document that covers the verifiable portions of the use case functionality. Lastly, when the SDD portion of the document is created a link to that section will then be found here.|
+|Trigger        | User, application, or external driven behavior events that happen based on automated or user input.|
+|Precondition   | Represents the conditions, visually, data, logic, or other things that must exist prior to this feature or use case being able to be executed, used, or seen.|
 |Basic Path     | This is the path on how the user gets to this feature or use case. How did I get here?|
 |Alternate Path | There are often alternate ways to get to this feature or use case. "I used the help / search feature".|
 |Post Condition | What happens when the user or process is triggered. What states exist afterward.|
@@ -344,7 +343,7 @@ The Student Calendar can be used as a stand-alone application that gives student
 
 ## 2.2 Product Features
 
-Features have been broken down into various feature categories to group like or related features together. "Lorem ipsum" is being used as a visual place holder for further document development as an example place holder for that information.
+Features have been broken down into various feature categories to group like or related features together.
 
 ### 2.2.1 - User Interface
 
@@ -1815,10 +1814,10 @@ The user can sync their Outlook Calendar with our Student Calendar App.
 
 | Data          | Description |
 |:--------------| :--------------|
-|Use Case Detail| As a user, I would like to sync my Outlook Calendar with the app|
+|Use Case Detail| As a user, I would like to sync my Outlook Calendar with the app.|
 |XRef           | None|
-|Trigger        | The user clicks "Outlook Login"|
-|Precondition   | The user must have an Outlook account|
+|Trigger        | The user clicks "Outlook Login".|
+|Precondition   | The user must have an Outlook account.|
 |Basic Path     | 1. The user clicks on "Outlook Login" <br>2. Login using Outlook API. <br> 3. The calendar syncs. |
 |Alternate Path | None|
 |Post Condition | The user's Outlook calendar events with be synced and displayed in the calendar view. |
@@ -2138,20 +2137,21 @@ Night mode is a setting that allows the user to toggle a blue light filter to re
 
 #### 3.2.069.0 Edit Event
 
-| Edit Event    | Edits an event that has been scheduled                  |
+| Edit Event    | Edits an event that has been scheduled.                  |
 |:--------------| :--------------|
-|Use Case Detail| Edit event                                              |
+|Use Case Detail| A user wants to edit an event.                                             |
 |XRef           |                                                         |
-|Trigger        | User selects edit button on event                       |
-|Precondition   | An edit button is on event                              |
-|Basic Path     | 1. User selects edit button                             |
-|               | 2. Form with event information opens                    |
-|               | 3. User changes event information                       |
-|               | 4. Program changes event information in calendar        |
-|Alternate Path |                                                         |
+|Trigger        | User selects edit button on event.                       |
+|Precondition   | An edit button is on event.                              |
+|Basic Path     | 1. User selects edit button.                             |
+|               | 2. Form with event information opens.                    |
+|               | 3. User changes event information.                       |
+|               | 4. Program changes event information in calendar.        |
+|Alternate Path | None.                                                        |
 |Post Condition | Event that is selected is changed                       |
-|Exception Paths|Window can be closed at any time, not editing event      |
-|Other          |                                                         |
+|Exception Paths| The window can be closed at any time, not editing event.      |
+|Other          | None.                                                       |
+
 
 ### 3.2.70 Non-SSO
 The user will be required to log into the application with a single ID and password which will only give them access to the calendar application, no other domains.
@@ -2820,6 +2820,18 @@ We will use several assignments to verify that tasks are loaded correctly into t
 ### 4.2.28 Feature Name?
 
 #### 4.2.28.1 Night Mode
+
+### 4.2.28 Feature Name?
+
+#### 4.2.28.1 xxxxxxxxxx
+
+### 4.2.28 Feature Name?
+
+#### 4.2.28.1 xxxxxxxxxx
+
+### 4.2.28 Feature Name?
+
+#### 4.2.28.1 xxxxxxxxxx
 
 ### 4.2.70 Non-SSO
 
