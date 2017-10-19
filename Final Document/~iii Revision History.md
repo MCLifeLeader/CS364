@@ -10,5 +10,5 @@
 | Revision 5    | 10/19/2017 | Feedback on Section 4.x |   1.5   |
 | Revision 6    | 10/20/2017 | Feedback on Sections 3.3 to 3.8 |   1.6   |
 | Revision 7    | 10/21/2017 | Final Version of the Document to be submitted for Grading |   1.7   |
-| Revision 8    | 10/23/2017 | IFF we absolutly need all of Saturday to Monday morning to complete |   1.8   |
+| Revision 8    | 10/23/2017 | IFF we absolutely need all of Saturday to Monday morning to complete |   1.8   |
 
