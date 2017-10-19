@@ -17,6 +17,7 @@ Jacob Keene<br/>
 Joseph Keene<br/>
 Dallin Snell<br/>
 Jonah Green<br/>
+Jonathan Comeau<br/>
 
 ## Team 2
 
