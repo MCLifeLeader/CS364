@@ -1,9 +1,9 @@
 # Software Requirements Specification
 
 
-## Version 1.3
+## Version 1.4
 
-## October 17th, 2017
+## October 18th, 2017
 
 # Student Calendar Integration Application
 
@@ -29,6 +29,7 @@ Jacob Keene<br/>
 Joseph Keene<br/>
 Dallin Snell<br/>
 Jonah Green<br/>
+Jonathan Comeau<br/>
 
 ## Team 2
 
@@ -268,7 +269,7 @@ The scope of this project will be the creation of a multi-platform calendar prog
 
 ## 1.3 Intended Audience
 
-This document is intended for project managers, team leaders, writers, developers, testers, users, and any other individual interested in the design and development of the Student Calendar application.
+This document is intended for project managers, team leaders, writers, developers, testers, and users who are interested in the design and development of the Student Calendar application.
 
 Reading this document in the order it has been presented is highly recommended for most readers. Careful attention to the glossary and overview of document sections is key to avoid unnecessary confusion. The glossary contains keywords, terms, and abbreviations used throughout the document. The overview of document section provides a concise description of the main sections of the document.
 
@@ -281,12 +282,12 @@ Reading this document in the order it has been presented is highly recommended f
 |Calendar program|A computer program that operates a schedule of events.|
 |Calendar location|An address or place that is associated with an event.|
 |Developers|Teams of students of Brigham Young University - Idaho.|
-|Event|Any assignment the user declares in a specific time-frame in the calendar.|
-|Group|Two or more users who are separated from other users and possess each other's contact information.|
+|Event|Any assignment or activity that the user declares with a specific time associated in the calendar.|
+|Group|Two or more users who have a single app page separate from other users in addition to the regular pages dedicated towards planning and working jointly on assignments.|
 |I-Learn|Brigham Young University – Idaho's website for online students. |
 |I-Learn account|An online student's account on I-Learn.|
 |LDAP|(Lightweight Directory Access Protocol) is a software protocol for enabling anyone to locate organizations, individuals, and other resources on a corporate internet or public internet.|
-|Link|A link (short for hyperlink) is an HTML object that allows you to jump to a new location when you click or tap it.|
+|Link|A link (short for hyperlink) is an HTML object that allows you to jump to a new website, a digital location in the app, or to another app when you click or tap it.|
 |Mobile User|A user using the program on their mobile device.|
 |Project Manager|The team member who oversees the project and works with the team leads to make sure the project fulfills the necessary requirements and is finished on time.|
 |Stakeholder|Any person who has an interest in our project, typically fellow college students and friends of developers.|
@@ -294,7 +295,7 @@ Reading this document in the order it has been presented is highly recommended f
 |Reader|All users, developers, and stakeholders will be viewing the site.|
 |Software Requirements Specification|Also known as SRS in this document. A document that contains the requirements a product must meet in order to succeed.|
 |SSO|Single sign-on is an authentication process that allows a user to access multiple applications with one set of login credentials.|
-| Third Party Technology | A provider of outsourced logistics. examples: Google-Hangouts, Zoom |
+|Third Party Technology| A provider of outsourced logistics. examples: Google-Hangouts, Zoom |
 |Toggle|To switch from one effect, feature, or state to another.|
 |Tutorial|Self-paced instructional material that provides step by step information in presenting a concept or learning unit. Computer based tutorials use interactive methods such as hyperlinks, and audio and visual presentation of the subject matter, and provide feedback through question-answer exercises.|
 |User|Students that attended Brigham Young University - Idaho.|
@@ -381,8 +382,16 @@ Features have been broken down into various feature categories to group like or 
 
 ## 2.4 Operating Environment
 
-The software being developed will run as a web application on all web browsers and on most devices.
+The software being developed will run as a web application on selected web browsers and on most devices.
 
+The selected browser technologies that will be developed for are as follows:
+
+* Chrome
+* Firefox
+* Safari
+* IE / Edge
+
+Validation for these will be performed through Automated UI testing.
 ## 2.5 Image References
 
 ### 2.5.1 - Main Calendar View:<br/>
@@ -396,10 +405,21 @@ The software being developed will run as a web application on all web browsers a
 
 ## 2.6 Technical Requirements
 
-### 2.6.1 - Will require a Database, probably with Oracle or Firebase
-### 2.6.2 - Coding practices will follow common coding standards
-### 2.6.3 - Will need system permissions (ex: camera) for some requirements
-### 2.6.4 - Access and link with BYU-I I-Learn
+### 2.6.1 - Database Integration
+
+The project will implement a database to store the User's information. The database will be written using a Database Management System like Oracle or Firebase. 
+
+### 2.6.2 - Coding Standards
+
+All of the project's code shall follow coding conventions and standards based on the project's chosen coding language. These standards will be finalized by the Developers to help with readability and maintainability. Every Developer will follow these standards.
+
+### 2.6.3 - System Permissions
+
+This project will need access to system resources like the device's camera or file system. These permissions are directly based off of features outlined in this document.
+
+### 2.6.4 - I-Learn Access
+
+The application will connect to services at BYU-Idaho in order to connect to I-Learn.
 
 ## 2.7 User Documentation
 
@@ -510,16 +530,15 @@ The calendar application will be usable and readable in mobile form factors. It 
 
 | Data          | Description |
 |:--------------| :--------------|
-|Use Case Detail| As a user, I want to be able to access the calendar from my mobile device |
+|Use Case Detail| As a user, I want to be able to access the calendar from my mobile device. |
 |XRef           ||
 |Trigger        | The user opens the calendar app on their smart phone.|
 |Precondition   | The user must have the app installed.|
 |Basic Path	| <li type='1'>The user opens the calendar app on their smart phone. </li><li type='1'>The app displays the users upcoming items.</li>|
-|Alternate Path | None|
+|Alternate Path | None.|
 |Post Condition	| The calendar app opens and displays the user's assignments.|
 |Exception Paths| The app can be closed at any time.|
-|Other		      | None|
-
+|Other		      | None.|
 ### 3.2.2 Calendar Application is Web
 
 The calendar application will have a responsive design capable of displaying on any web browser and screen. The user will be able to access the calendar application from anywhere that has a web browser.
@@ -532,12 +551,11 @@ The calendar application will have a responsive design capable of displaying on 
 |XRef           | Verification: 4.2.2.1|
 |Trigger	    | The user navigates to the calendar application's URL on a web browser.|
 |Precondition   | The user has a web browser available.|
-|Basic Path     | <li type='1'>The user navigates to the calendar application's URL on a web browser</li> <li type='1'>The app displays the users upcoming items.</li>|            
-|Alternate Path | None|
+|Basic Path     | <li type='1'>The user navigates to the calendar application's URL on a web browser.</li> <li type='1'>The app displays the users upcoming items.</li>|            
+|Alternate Path | None.|
 |Post Condition | The calendar app opens on the user's web browser.|
 |Exception Paths| The user may abandon this task at any time.|
-|Other	        | None|
-
+|Other	        | None.|
 ### 3.2.3 Calendar Application API
 
 This application will allow users to write plugins that integrate with the calendar application. This will enable users to expand the capabilities of the calendar application to fit their needs.
@@ -546,16 +564,15 @@ This application will allow users to write plugins that integrate with the calen
 
 | Data          | Description |
 |:--------------|:-----------------|
-|Use Case Detail| As a user, I want to add extra capabilities to the calendar application |
+|Use Case Detail| As a user, I want to add extra capabilities to the calendar application. |
 |XRef           ||
-|Trigger	      | The user has written or downloaded a plugin for the app and will add it to the calendar.| 
-|Precondition   | The user has a compatible plugin for the app.| 
+|Trigger	      | The user has written or downloaded a plugin for the app and will add it to the calendar.|
+|Precondition   | The user has a compatible plugin for the app.|
 |Basic Path     | <li type='1'>The user installs the plugin to the calendar.</li><li type='1'>The user opens the calendar app.</li>|
 |Alternate Path | The plugin is not compatible and the system notifies the user.|
 |Post Condition | The plugin makes changes to the app.|
 |Exception Paths| As long as the plugin is not installed the attempt can be abandoned at any time.|
-|Other	        | None|
-
+|Other	        | None.|
 ### 3.2.4 Priority List
 
 Students need to prioritize tasks and assignments so they can focus on the most important tasks. This feature will help students plan ahead by listing assignments and tasks ranked by their due-date and priority level (High, Medium, Low).
@@ -572,7 +589,7 @@ Students need to prioritize tasks and assignments so they can focus on the most 
 |Alternate Path	| If the user has not added a level of priority, then the system will only display the list according to the corresponding due-dates for each assignment. Otherwise, the user can assign a level of priority by tapping on the assignment and then choosing "prioritize."|			
 |Post Condition | The user sees a list of time sensitive and prioritized assignments.|
 |Exception Paths| The user can cancel this process at any time.|
-|Other		| None|
+|Other		| None.|
 
 #### 3.2.4.2 Task Priority Labels
 
@@ -586,8 +603,7 @@ Students need to prioritize tasks and assignments so they can focus on the most 
 |Alternate Path	| If the user has not added custom tasks, then:</br>1. The user taps on "add task" on the main calendar view.</br>2. The user adds the task and then sets a priority level: high, medium, or low.</br>3. The user sets a time as deadline for the completion of the task.|			
 |Post Condition | The user sees a list of time sensitive assignments and tasks.|
 |Exception Paths| The user can cancel this process at any time.|
-|Other		| None|
-
+|Other		| None.|
 ### 3.2.5 ADA Compliant
 
 The Americans with Disabilities Act (ADA) has standards for all electronic and information technology to be accessible to people with disabilities. Students may have disabilities that can prevent them from using this application as intended. The purpose of this feature is to help all those students that can't perform general software usage functions such as clicking, tapping, or reading instructions. This feature is intended to diminish the difficulties that students with disabilities may face when attempting to use the software. 
@@ -620,9 +636,9 @@ The Americans with Disabilities Act (ADA) has standards for all electronic and i
 |Exception Paths| The user can cancel the process at any time by saying "Cancel process" out loud.|
 |Other		| None.|
 
-### 3.2.6 Export/Import 
+### 3.2.6 Export/Import
 
-The Calendar application will sync with I-Learn's calendar so that all class assignments are added automatically to the application. This is a very important feature because it keeps the user from manually adding all the assignments. 
+The Calendar application will sync with I-Learn's calendar so that all class assignments are added automatically to the application. This is a very important feature because it keeps the user from manually adding all the assignments.
 
 #### 3.2.6.1 I-Learn Import
 
@@ -636,7 +652,7 @@ The Calendar application will sync with I-Learn's calendar so that all class ass
 |Alternate Path | 1. If the import fails, the user will be notified.|
 |Post Condition	| The calendar app will update and show new activities.|
 |Exception Paths| The User may cancel the operation any time before the items have been transferred.|
-|Other		| None| 
+|Other		| None.|
 
 #### 3.2.6.2 Export
 
@@ -650,13 +666,12 @@ The Calendar application will sync with I-Learn's calendar so that all class ass
 | Alternate Path | If the new calendar is not compatible with the export the User will be notified.|
 | Post Condition | The new calendar will gain the items from the old calendar.|
 | Exception Paths| The user may cancel the operation any time before the items have been transferred.|
-| Other          | None|
-
+| Other          | None.|
 ### 3.2.7 Reminders
 
 Within the application, the user should be able to set reminders for assignments and events. The user can choose to have these reminder alerts occur at several different time intervals before the assignment/event is due.
 
-#### 3.2.7.1 The user often forgets about assignments
+#### 3.2.7.1 Remind about assignments
 
 |Data           | Description |
 |:--------------|:-----------------|
@@ -669,26 +684,27 @@ Within the application, the user should be able to set reminders for assignments
 |Post Condition| The user can edit the reminder by tapping on the 'bell' icon again.|
 |Exception Paths	| If the user does not have any events, they will not be able to create any reminders.|
 |Other		| The reminder information includes time, reason, and notification type.|
-
 ### 3.2.8 Links
 
 The application will be able to accept several different types of links as input for events, assignments, or messages. The link could be anything from a website URL to a phone number.
 
-#### 3.2.8.1 The users group uses outside resources like google docs.
+#### 3.2.8.1 Outside Resources
 
 | Data          | Description |
 |:--------------| :--------------|
 |Use Case Detail| As a user, I want to be able to link to different web pages, addresses, phone numbers, or applications that will help me and my group complete our assignments. |
 |XRef           | |
-|Trigger        | User taps on a link in a calendat item.|
+|Trigger        | User taps on a link in a calendar item.|
 |Precondition   | The user is on the calendar page, and is viewing an event or assignment.|
 |Basic Path	    | 1. The user logs into I-Learn through the app. 2. The users taps on an event or assignment. 3. The user taps on a link. 4. The application will automatically take them to the website, address, or application.|
-|Alternate Path | 3. the link type could be a phone number and a call would begin when tapped. |
+|Alternate Path |1. The user logs into I-Learn through the app. 2. The users taps on an event or assignment. 3. The link type could be a phone number and a call would begin when tapped. |
 |Post Condition	| The user is taken to the destination of the link, the link turns purple signifying it has been tapped before. |
-|Exception Paths| If the link is invalid, the user is displayed an error message|
-|Other		      | None|
+|Exception Paths| If the link is invalid, An error message is displayed.|
+|Other		      | None.|
+### 3.2.9 Photo Upload Capabilities
+The application should have the ability to upload photos with the following extensions: JPEG, GIF, BMP, PNG, and TIFF.
 
-#### 3.2.9.1 The user wants to upload a photo to clarify their message
+#### 3.2.9.1 Use Photos for Clarification
 
 | Data          | Description |
 |:--------------| :--------------|
@@ -713,7 +729,7 @@ When the user views the Calendar, each day will contain a list of events for tha
 |Use Case Detail  | As a mobile user, I want to be able to expand or condense a list of events to fit my small screen. |
 |XRef           | Validation for this feature can be found at 4.2.10. |
 |Trigger        | A user taps on the 'Show all' event button for one day. |
-|Precondition   | The user has already logged into the app with their Ilearn accounts and is viewing the calendar page. |
+|Precondition   | The user has already logged into the app with their I-Learn accounts and is viewing the calendar page. |
 |Basic Path	    | 1. The user logs into I-Learn through app. 2. The user taps the 'calendar' icon. 3. The user taps a 'See all' button on one day in the calendar. 4. The list of events for that day is expanded. |
 |Alternate Path | None. |
 |Post Condition	| If the button is tapped again, the list of events collapses to save screen space. |
@@ -833,7 +849,7 @@ A user can setup recurring appointments and events in the calender for multiple 
 |XRef           | Validation for this feature can be found at 4.2.16. |
 |Trigger        | User selects a day, creates an event, and defines the recurring times for the event.|
 |Precondition   | User has logged into the app with their Ilearn account and synced their calendar. |                       
-|Basic Path	| 1. User accesses the calender. 2. User taps a day in the calender and creates an event. 3. User defines the number of times the event repeats.|
+|Basic Path	| 1. User accesses the calender. <br>2. User taps a day in the calender and creates an event. <br>3. User defines the number of times the event repeats.|
 |Alternate Path	| None.|			
 |Post Condition | None.|
 |Exception Paths| None.|
@@ -850,7 +866,7 @@ When an assignment is graded by the user's instructor, the user will see the gra
 |XRef           | Validation for this feature can be found at 4.2.17.|
 |Trigger        | Every time that an assignment is graded. |
 |Precondition   | Completed assignments are graded by user's instructor.|                       
-|Basic Path	| 1. User completes and submits an assignment. 2. user's instructor grades the assignment. 3. User navigates to the calender. |
+|Basic Path	| 1. User completes and submits an assignment. <br>2. user's instructor grades the assignment. <br>3. User navigates to the calender. |
 |Alternate Path	| None.|			
 |Post Condition | None.|
 |Exception Paths| No assignments have been submitted for grading.|
@@ -865,7 +881,7 @@ The app will support the Android Widget feature. This widget will allow for easy
 |XRef           | Validation for this feature can be found at 4.2.18.|
 |Trigger        | Setup by the user on Android.|
 |Precondition   | App is installed on an Android device. |                       
-|Basic Path	| 1. User installs the app on their Android device. 2. In the Android app screen menu, the user navigates to the Widgets menu. 3. User selects the Widget for the app.|
+|Basic Path	| 1. User installs the app on their Android device. <br>2. In the Android app screen menu, the user navigates to the Widgets menu. <br>3. User selects the Widget for the app.|
 |Alternate Path	| None.|			
 |Post Condition | None.|
 |Exception Paths| The app is installed on a non-Android device, in which case, support for Widgets is unavailable. |
@@ -880,10 +896,10 @@ A directory system which allows the sharing of information between students. All
 | Data          | Description |
 |:--------------| :--------------|
 |Use Case Detail| As a user, I want to contact someone else in my class.|
-|XRef           | |
+|XRef           | Validation for this feature can be found at 4.2.19|
 |Trigger        | The user clicks on the "Email" button found in the student's contact profile |
 |Precondition   | The user is on the student list of the class page |
-|Basic Path     | <li type='1'>The user is presented with a list of students sorted alphabetically.</li><li type='1'>The user selects the student they wish to contact by clicking on the row the student is located.</li><li type='1'>The user is presented with a dialogue box displaying the available options of communication.</li><li type='1'>The user selects the "Email" option, which opens the user's default email program with a new message to the student selected.</li>|
+|Basic Path     | 1.The user is presented with a list of students sorted alphabetically.<br>2.The user selects the student they wish to contact by clicking on the row the student is located.<br>3.The user is presented with a dialogue box displaying the available options of communication.<br>4.The user selects the "Email" option, which opens the user's default email program with a new message to the student selected.</li>|
 |Alternate Path | In step 4, the user may have been presented with a "Phone" or "Text" option.|
 |Post Condition | The user is presented with their default email client with a new email to the student selected.|
 |Exception Paths| A new view may be selected.|
@@ -898,10 +914,10 @@ Settings for how the user wants to be notified by the application. Provides a us
 | Data          | Description |
 |:--------------| :--------------|
 |Use Case Detail| As a user, I want to turn notification on. |
-|XRef           | |
+|XRef           | Validation for this feature can be found at 4.2.20.1|
 |Trigger        | The user clicks the toggle labeled "Notifications" to the on position |
 |Precondition   | The user is on the settings page. |
-|Basic Path     | <li type='1'>The user is presented with a list of settings.</li><li type='1'>The user locates the setting which is labeled "Notifications."</li><li type='1'>The user clicks the slider next to the "Notifications" label to the right.</li>|
+|Basic Path     | 1.The user is presented with a list of settings.<br>2.The user locates the setting which is labeled "Notifications."<br>3.The user clicks the slider next to the "Notifications" label to the right.|
 |Alternate Path | The user can toggle the selection to the left to turn notifications off. |
 |Post Condition | Notifications are enabled for the user. |
 |Exception Paths| The user can navigate to a different view. |
@@ -912,10 +928,10 @@ Settings for how the user wants to be notified by the application. Provides a us
 | Data          | Description |
 |:--------------| :--------------|
 |Use Case Detail| As a user, I want to select how I'm notified.|
-|XRef           | |
+|XRef           | Validation for this feature can be found at 4.2.20.2|
 |Trigger        | The user clicks the toggle labeled "Alerts." |
 |Precondition   | The user is on the settings page. |
-|Basic Path     | <li type='1'>The user is presented with a list of settings.</li><li type='1'>The user locates the setting which is labeled "Alerts."</li><li type='1'>The user clicks the slider next to the "Alerts" label to the right.</li>|
+|Basic Path     | 1.The user is presented with a list of settings.<br>2.The user locates the setting which is labeled "Alerts."<br>3.The user clicks the slider next to the "Alerts" label to the right.|
 |Alternate Path | The user can perform the same function on the "Email" and "Text" settings.|
 |Post Condition | The user receives alert notifications through their device's default notification method.|
 |Exception Paths| The user can navigate to a different view. |
@@ -933,7 +949,7 @@ This feature allows the user to select one or more of their calendars, and share
 |XRef           |  |
 |Trigger        | The user navigates to Shared Calendar Group Creation section in the settings menu.|
 |Precondition   | The user must have already created one or more calendars. And have one or more contacts|
-|Basic Path     | 1. The user will be prompted to select which calendars they want to add. 2. The user will be prompted to select which contacts they want to share with. 3. The user will be asked to confirm their selection.|
+|Basic Path     | 1. The user will be prompted to select which calendars they want to add.<br> 2. The user will be prompted to select which contacts they want to share with. <br>3. The user will be asked to confirm their selection.|
 |Alternate Path |  |
 |Post Condition | The people selected receive a notification, and have the option to view the user's calendar(s).|
 |Exception Paths| If the user has not created any calendars. Or if the user has no contacts|
@@ -947,7 +963,7 @@ This feature allows the user to select one or more of their calendars, and share
 |XRef           |  |
 |Trigger        | The user updates or changes anything on a calendar they share with others.|
 |Precondition   | The user must have already shared one or more calendars with one or more contacts.|
-|Basic Path     | 1. The user updates or changes anything on a calendar they share with others. 2. Notifications are automatically sent to contacts that share the changed calendar.|
+|Basic Path     | 1. The user updates or changes anything on a calendar they share with others. <br>2. Notifications are automatically sent to contacts that share the changed calendar.|
 |Alternate Path |  |
 |Post Condition |  The people sharing a calendar with the user are notified when changes are made.|
 |Exception Paths| If the user is not sharing any calendars|
@@ -965,7 +981,7 @@ This is a notification that will be seen at any time, even if the app is not bei
 |XRef           |  |
 |Trigger        | When the user receives a notifications.|
 |Precondition   | The user must have notifications enabled.|
-|Basic Path     | <li type='1'>A notification shows up on the top of the users screen.</li><li type='1'>The user either selects the notification to view its contents, or dismisses it.</li>|
+|Basic Path     | 1. A notification shows up on the top of the users screen.<br>The user either selects the notification to view its contents, or dismisses it.| 
 |Alternate Path |  |
 |Post Condition | The notification closes, and the user can return to a prior activity.|
 |Exception Paths| The user has disabled notifications.|
@@ -983,7 +999,7 @@ This Feature allows the user to send an invitation to one or more of their calen
 |XRef           |  |
 |Trigger        | The user selects event(s), and who to share them with.|
 |Precondition   | The user must have already created one or more events.|
-|Basic Path     | <li type='1'>In the settings the user selects "share event(s)".</li><li type='1'>The user selects the event(s) they want to share.</li><li type='1'>The user selects the people to share the event(s) with.</li>|
+|Basic Path     | 1.In the settings the user selects "share event(s)".<br>2.The user selects the event(s) they want to share.<br>3.The user selects the people to share the event(s) with.|
 |Alternate Path |  |
 |Post Condition | The people selected receive a notification, and have the option to view the user's event(s).|
 |Exception Paths| The feature is only available if events exist.|
@@ -2731,13 +2747,11 @@ After the timer function is selected the app displays the time left to complete 
 
 #### 4.2.54.3 Assignment Progress Bar
 
-After the assignment process bar is selected the app displays the user�s assignment progress.
+After the assignment process bar is selected the app displays the user's assignment progress.
 
 #### 4.2.54.4 Suggest Meeting Times
 
-When this function is selected and associates calendars are checked the app will display the best times for the group to meet.
-
-### 4.2.55 Twitter
+When this function is selected and associates calendars are checked the app will display the best times for the group to meet.### 4.2.55 Twitter
 
 When the app is open and the user clicks the 'Share' button,
 the Twitter button is one of the options they can share their thoughts/assignments on.
