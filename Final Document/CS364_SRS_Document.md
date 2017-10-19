@@ -2735,76 +2735,75 @@ When this function is selected and associates calendars are checked the app will
 
 
 ### 4.2.55 Twitter
-
+When the app is open and the user clicks the 'Share' button,
+the Twitter button is one of the options they can share their thoughts/assignments on.
 
 
 
 #### 4.2.55.1 Twitter
-
+User is successfully able to share what they wanted to from the app via tweet.
 
 
 
 ### 4.2.56 Instagram
-
+Validation will be successful if the user can successfully share an image from the app via Instragram.
 
 
 #### 4.2.56.1 Instagram
-
+We will use an Instagram account to verify that information from our app is sent and posted to the Instragram account.
 
 
 ### 4.2.57 Custom Images and Icons
-
+Validation will be successful if the user can upload custom images and they are displayed successfully to the app.
 
 
 #### 4.2.57.1 Custom Images and Icons
-
+We will use multiple custom images and icons to verify this users can use their custom images to personalize their app.
 
 
 
 ### 4.2.58 Custom Videos
-
+Validation will be successful if the user is first prompted to allow the app camera permissions.
+Then if the app displays custom videos successfully, it has been succesfully validated.
 
 
 #### 4.2.58.1 Custom Videos
-
+We will use several custom videos to verify that users can use their own custom videos.
 
 
 
 ### 4.2.59 ToDo Task Engine
-
-
+Validation will be successful if the user can view their To-Do list and see what they have
+planned for their calendar.
 
 
 #### 4.2.59.1 Calendar Task & ToDo Engine
+We will use several tasks, events, and notifications to verify the ToDo Engine is working, displaying, and updating properly.
 
 
-
-### 4.2.60 Feature Name?
-
+### 4.2.60 Calendar View
+Validation will be success if the application loads the user's personal calendar style.
 
 
 
 #### 4.2.60.1 Various Calendar Views
+We will test each calendar view, to verify the user can use each view successfully when viewing their own calendar.
 
 
-
-### 4.2.61 Feature Name?
-
-
+### 4.2.61 Task Rewards
+Verification will be successful task points are awarded succesfully for completing tasks.
 
 
 #### 4.2.61.1 Goal/ XP bar
+We will use several task assignments to verify that task points are awarded correctly for completing assignments.
 
 
-
-### 4.2.62 Feature Name?
-
-
+### 4.2.62 User Task List
+Validation will be successful if all tasks are listed correctly in task list view.
 
 
 #### 4.2.62.1 Assignment List
-
-
+We will use several assignments to verify that tasks are loaded correctly into the task list view.
 
 
 ### 4.2.63 School Catalog
