@@ -1772,10 +1772,10 @@ The user can sync their Outlook Calendar with our Student Calendar App.
 
 | Data          | Description |
 |:--------------| :--------------|
-|Use Case Detail| As a user, I would like to sync my Outlook Calendar with the app|
+|Use Case Detail| As a user, I would like to sync my Outlook Calendar with the app.|
 |XRef           | None|
-|Trigger        | The user clicks "Outlook Login"|
-|Precondition   | The user must have an Outlook account|
+|Trigger        | The user clicks "Outlook Login".|
+|Precondition   | The user must have an Outlook account.|
 |Basic Path     | 1. The user clicks on "Outlook Login" <br>2. Login using Outlook API. <br> 3. The calendar syncs. |
 |Alternate Path | None|
 |Post Condition | The user's Outlook calendar events with be synced and displayed in the calendar view. |
@@ -2091,20 +2091,20 @@ Night mode is a setting that allows the user to toggle a blue light filter to re
 |Other          |                                                         |
 #### 3.2.069.0 Edit Event
 
-| Edit Event    | Edits an event that has been scheduled                  |
+| Edit Event    | Edits an event that has been scheduled.                  |
 |:--------------| :--------------|
-|Use Case Detail| Edit event                                              |
+|Use Case Detail| A user wants to edit an event.                                             |
 |XRef           |                                                         |
-|Trigger        | User selects edit button on event                       |
-|Precondition   | An edit button is on event                              |
-|Basic Path     | 1. User selects edit button                             |
-|               | 2. Form with event information opens                    |
-|               | 3. User changes event information                       |
-|               | 4. Program changes event information in calendar        |
-|Alternate Path |                                                         |
+|Trigger        | User selects edit button on event.                       |
+|Precondition   | An edit button is on event.                              |
+|Basic Path     | 1. User selects edit button.                             |
+|               | 2. Form with event information opens.                    |
+|               | 3. User changes event information.                       |
+|               | 4. Program changes event information in calendar.        |
+|Alternate Path | None.                                                        |
 |Post Condition | Event that is selected is changed                       |
-|Exception Paths|Window can be closed at any time, not editing event      |
-|Other          |                                                         |
+|Exception Paths| The window can be closed at any time, not editing event.      |
+|Other          | None.                                                       |
 ### 3.2.70 Non-SSO
 The user will be required to log into the application with a single ID and password which will only give them access to the calendar application, no other domains.
 
