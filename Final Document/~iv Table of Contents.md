@@ -30,21 +30,21 @@
 ### 3.2.7 Reminders
 ### 3.2.8 Links
 ### 3.2.9 Photo Import
-### 3.2.10 Show all events, even when large number
-### 3.2.11 Group Communication 1: message chat
+### 3.2.10 Collapsible Calendar
+### 3.2.11 Group Communication 1: Message Chat
 ### 3.2.12 Group Communication 2: Video Chat
-### 3.2.13 FERPA compliant
+### 3.2.13 FERPA Compliant
 ### 3.2.14 Discussion Board Integration
 ### 3.2.15 Time Clock
 ### 3.2.16 Recurring Appointments
 ### 3.2.17 Grades
 ### 3.2.18 Widget
-### 3.2.19 Active Directory / LDAP
+### 3.2.19 Active Directory/LDAP
 ### 3.2.20 Notification Control
 ### 3.2.21 Shared Calendar
 ### 3.2.22 Push Notifications
 ### 3.2.23 Invitations
-### 3.2.24 Simplified "To Do" assignment display
+### 3.2.24 Simplified To-Do Assignment Display
 ### 3.2.25 Continuous Calendar
 ### 3.2.26 Holidays
 ### 3.2.27 Location
@@ -79,9 +79,9 @@
 ### 3.2.56 Instagram
 ### 3.2.57 Custom Images and Icons
 ### 3.2.58 Custom Videos
-### 3.2.59 ToDo Task Engine
+### 3.2.59 To-Do Task Engine
 ### 3.2.60 Various Calendar Views
-### 3.2.61 Goal/ XP bar
+### 3.2.61 Task Rewards
 ### 3.2.62 Assignment List
 ### 3.2.63 School Catalog
 ### 3.2.64 Class Help
@@ -109,21 +109,21 @@
 ### 4.2.7 Reminders
 ### 4.2.8 Links
 ### 4.2.9 Photo Import
-### 4.2.10 Show all events, even when large number
-### 4.2.11 Group Communication 1: message chat
+### 4.2.10 Collapsible Calendar
+### 4.2.11 Group Communication 1: Message Chat
 ### 4.2.12 Group Communication 2: Video Chat
-### 4.2.13 FERPA compliant
+### 4.2.13 FERPA Compliant
 ### 4.2.14 Discussion Board Integration
 ### 4.2.15 Time Clock
 ### 4.2.16 Recurring Appointments
 ### 4.2.17 Grades
 ### 4.2.18 Widget
-### 4.2.19 Active Directory / LDAP
+### 4.2.19 Active Directory/LDAP
 ### 4.2.20 Notification Control
 ### 4.2.21 Shared Calendar
 ### 4.2.22 Push Notifications
 ### 4.2.23 Invitations
-### 4.2.24 Simplified "To Do" assignment display
+### 4.2.24 Simplified To-Do assignment display
 ### 4.2.25 Continuous Calendar
 ### 4.2.26 Holidays
 ### 4.2.27 Location
@@ -158,9 +158,9 @@
 ### 4.2.56 Instagram
 ### 4.2.57 Custom Images and Icons
 ### 4.2.58 Custom Videos
-### 4.2.59 ToDo Task Engine
+### 4.2.59 To-Do Task Engine
 ### 4.2.60 Various Calendar Views
-### 4.2.61 Goal/ XP bar
+### 4.2.61 Task Rewards
 ### 4.2.62 Assignment List
 ### 4.2.63 School Catalog
 ### 4.2.64 Class Help
