@@ -284,7 +284,7 @@ Reading this document in the order it has been presented is highly recommended f
 |Developers|Teams of students of Brigham Young University - Idaho.|
 |Event|Any assignment or activity that the user declares with a specific time associated in the calendar.|
 |Group|Two or more users who have a single app page separate from other users in addition to the regular pages dedicated towards planning and working jointly on assignments.|
-|I-Learn|Brigham Young University – Idaho's website for online students. |
+|I-Learn|Brigham Young University – Idaho's website for online students.|
 |I-Learn account|An online student's account on I-Learn.|
 |LDAP|(Lightweight Directory Access Protocol) is a software protocol for enabling anyone to locate organizations, individuals, and other resources on a corporate internet or public internet.|
 |Link|A link (short for hyperlink) is an HTML object that allows you to jump to a new website, a digital location in the app, or to another app when you click or tap it.|
@@ -295,7 +295,7 @@ Reading this document in the order it has been presented is highly recommended f
 |Reader|All users, developers, and stakeholders will be viewing the site.|
 |Software Requirements Specification|Also known as SRS in this document. A document that contains the requirements a product must meet in order to succeed.|
 |SSO|Single sign-on is an authentication process that allows a user to access multiple applications with one set of login credentials.|
-|Third Party Technology| A provider of outsourced logistics. examples: Google-Hangouts, Zoom |
+|Third Party Technology| A provider of outsourced logistics. examples: Google-Hangouts, Zoom.|
 |Toggle|To switch from one effect, feature, or state to another.|
 |Tutorial|Self-paced instructional material that provides step by step information in presenting a concept or learning unit. Computer based tutorials use interactive methods such as hyperlinks, and audio and visual presentation of the subject matter, and provide feedback through question-answer exercises.|
 |User|Students that attended Brigham Young University - Idaho.|
@@ -306,7 +306,7 @@ Reading this document in the order it has been presented is highly recommended f
 
 ## 1.6 Overview of Document
 
-This document is broken out into multiple sections and each section covers different topics related to the overall design and specification of this application. Section 1.0 of this document covers the introduction and high-level outline for the document. Section 2.0 provides an overview of the application that will be implemented where as section 3.0 begins the deeper technical specifications and functionality of the application. Section 4.0 of the document will cover the validation of the functional requirements.
+This document is broken out into multiple sections and each section covers different topics related to the overall design and specification of this application. Section 1.0 of this document covers the introduction and high-level outline for the document. Section 2.0 provides an overview of the application that will be implemented whereas section 3.0 begins the deeper technical specifications and functionality of the application. Section 4.0 of the document will cover the validation of the functional requirements.
 
 The main section of the SRS portion of the document will be section 3.2. This section does a deeper dive into each feature and use case specification that makes up the application as a whole. To help reduce confusion on how this works we have provided below a template or example of what each feature and use case may look like. This template provides quick and easy bullet style details about each feature and use case that creates that particular feature.
 
@@ -365,32 +365,36 @@ Features have been broken down into various feature categories to group like or 
 
 ### 2.2.2 - Security Features
 
-#### 2.2.2.1 - The application shall support SSO authentication
+#### 2.2.2.1 - The application shall support SSO authentication.
 
-#### 2.2.2.2 - The application shall support non-SSO authentication
+#### 2.2.2.2 - The application shall support non-SSO authentication.
 
-#### 2.2.2.3 - The application shall support Active Directory and LDAP validation
+#### 2.2.2.3 - The application shall support Active Directory and LDAP validation.
 
 ### 2.2.3 - Software Interfaces
 
-#### 2.2.3.1 - The application shall interface with BYU-Idaho's I-Learn web service
+#### 2.2.3.1 - The application shall interface with BYU-Idaho's I-Learn web service.
 
 ### 2.2.4 - Notification Features
 
-#### 2.2.4.1 - The application shall notify users of invites from other users
+#### 2.2.4.1 - The application shall notify users of invites from other users.
 
-#### 2.2.4.2 - The application shall notify users of upcoming due dates
+#### 2.2.4.2 - The application shall notify users of upcoming due dates.
 
 ## 2.3 User Classes and Characteristics
 
 ### 2.3.1 - Students:
+
 The majority of users will be students during the school year. The application will be simple enough that students from all technical backgrounds can easily navigate the interface.
 
 ### 2.3.2 - Professors:
+
 There will be some features that professors may want to access. The interface will be simple enough to accommodate all technical backgrounds.
 
 ### 2.3.3 - ITS Staff: 
+
 The ITS Staff will maintain the application and keep it updated. The ITS Staff will have a sufficient technical background to perform all maintenance duties.
+
 ## 2.4 Operating Environment
 
 The software being developed will run as a web application on selected web browsers and on most devices.
@@ -426,18 +430,18 @@ The project will implement a database to store the User's information. The datab
 
 ### 2.6.2 - Coding Standards
 
-All of the project's code shall follow coding conventions and standards based on the project's chosen coding language. These standards will be finalized by the Developers to help with readability and maintainability. Every Developer will follow these standards.
+All the project's code shall follow coding conventions and standards based on the project's chosen coding language. These standards will be finalized by the Developers to help with readability and maintainability. Every Developer will follow these standards.
 
 ### 2.6.3 - System Permissions
 
-This project will need access to system resources like the device's camera or file system. These permissions are directly based off of features outlined in this document.
+This project will need access to system resources like the device's camera or file system. These permissions are directly based off features outlined in this document.
 
 ### 2.6.4 - I-Learn Access
 
 The application will connect to services at BYU-Idaho in order to connect to I-Learn.
 ## 2.7 User Documentation
 
-When a user creates an account with the Student Calendar application, a video tutorial will be the first thing that they encounter in the application. This tutorial will quickly run the user through the most important features to get started on using the calendar. Additionally there will be separate tutorials on the other features not covered in the initial tutorial that the user can look at when they need some extra help.
+When a user creates an account with the Student Calendar application, a video tutorial will be the first thing that they encounter in the application. This tutorial will quickly run the user through the most important features to get started on using the calendar. Additionally, there will be separate tutorials on the other features not covered in the initial tutorial that the user can look at when they need some extra help.
 
 ## 2.8 Assumptions and Dependencies
 
@@ -537,57 +541,57 @@ We have a number of external services and COTS applications that will be integra
 This section represents the list of functional requirements and use cases that define each of the  various features within the system. Each feature will contain a short description and a detailed list of functional requirements.
 ### 3.2.1 Calendar Application is Mobile
 
-The calendar application will be usable and readable in mobile form factors. It will allow easy access from a mobile application to the user's school calendar.
+The calendar application will activated and run on a mobile platform such as a smart phone or tablet device. The calendar application will provide access to their calendar and event data on a mobile smart device or computer to the user's school calendar. The application will function in a mobile container for mobile aware web pages.
 
 #### 3.2.1.1 Smartphone Application
 
 | Data          | Description |
 |:--------------| :--------------|
-|Use Case Detail| As a user, I want to be able to access the calendar from my mobile device. |
+|Use Case Detail| As a user, I want to be able to access the calendar from my mobile device because I want to be able to access my calendar data anywhere I have mobile Internet service. |
 |Cross Reference | See 4.2.1.1 for verification details of this use case.| 
-|Trigger        | The user opens the calendar app on their smart phone.|
-|Precondition   | The user must have the app installed.|
-|Basic Path	| <li type='1'>The user opens the calendar app on their smart phone. </li><li type='1'>The app displays the users upcoming items.</li>|
-|Alternate Path | None.|
-|Post Condition	| The calendar app opens and displays the user's assignments.|
-|Exception Paths| The app can be closed at any time.|
+|Trigger        | The user locates the application icon on their smart phone and then taps the icon. See basic path for details.|
+|Precondition   | The user must have the app installed from their app store.|
+|Basic Path	| 1. The user opens the calendar application on their smart phone. <br/>2. The calendar application displays the users upcoming items.<br/>
+|Alternate Path | User recieved a notification icon on their lock screen and when tapped launches the calendar application.|
+|Post Condition	| The calendar application opens and displays the user's default user configured screen.|
+|Exception Paths| The calendar application when erroring out will request to send crash data to us.|
 |Other		      | None.|
 
 ### 3.2.2 Calendar Application is Web
 
-The calendar application will have a responsive design capable of displaying on any web browser and screen. The user will be able to access the calendar application from anywhere that has a web browser.
+The calendar application will be activated and run on a desktop platform such as a desktop computer or laptop. The calendar application will provide access to a student's calendar and event data on a desktop browser. The application will function by complying with design standards for desktop web design.
 
 #### 3.2.2.1 Access From Web Browser
 
 | Data          | Description |
 |:--------------|:----------------|
-|Use Case Detail| As a user, I want to access the application from any web browser. |
+|Use Case Detail| As a user, I want to access the application from any web browser because I own many devices that need to access my schedule. |
 |Cross Reference | See 4.2.2.1 for verification details of this use case.| 
 |Trigger	    | The user navigates to the calendar application's URL on a web browser.|
 |Precondition   | The user has a web browser available.|
-|Basic Path     | <li type='1'>The user navigates to the calendar application's URL on a web browser.</li> <li type='1'>The app displays the users upcoming items.</li>|            
-|Alternate Path | None.|
-|Post Condition | The calendar app opens on the user's web browser.|
-|Exception Paths| The user may abandon this task at any time.|
+|Basic Path     | 1. The user navigates to the calendar application's URL on a web browser. <br> 2. The user provides any credentials the application needs such as username and password. <br> 3. The app displays the user's default calendar view. |            
+|Alternate Path | The user clicks on an event reminder sent via email which launches the application.|
+|Post Condition | The calendar app opens on the user's web browser and displays the default calendar.|
+|Exception Paths| The user application notifies the user of incorrect credentials used for sign-in.|
 |Other	        | None.|
 
 ### 3.2.3 Calendar Application API
 
-This application will allow users to write plugins that integrate with the calendar application. This will enable users to expand the capabilities of the calendar application to fit their needs.
+This application will allow users to write plugins that integrate with the calendar application. This will enable users to expand the capabilities of the calendar application to fit their needs. This feature will be used by student users that understand how to use plugins. 
 
 #### 3.2.3.1 Add a Plugin
 
 | Data          | Description |
 |:--------------|:-----------------|
-|Use Case Detail| As a user, I want to add extra features to the calendar application. |
+|Use Case Detail| As a user, I want to add extra features to the calendar application because the calendar application does not have a current feature I want. |
 |XRef           | See 4.2.3.1 for verification details of this use case.|
-|Trigger	      | The user has written or downloaded a plugin for the app and will add it to the calendar.| 
+|Trigger	      | The user has written or downloaded a plugin for the app and will add it to the calendar. See basic path for details.| 
 |Precondition   | The user has a compatible plugin for the app.| 
-|Basic Path     | 1. The user installs the plugin to the calendar. 2. The user opens the calendar app.|
-|Alternate Path | The plugin is not compatible and the system notifies the user.|
+|Basic Path     | 1. The user installs the plugin to the calendar.<br/> 2. The user opens the calendar app.<br/> 3.The user verifies that the plugin is functioning as intended.<br/>|
+|Alternate Path | The user installs the plugin from within the application.|
 |Post Condition | The plugin makes changes to the app.|
-|Exception Paths| As long as the plugin is not installed the attempt can be abandoned at any time.|
-|Other	        | None. |
+|Exception Paths| If the plugin is not compatible and the system notifies the user. As long as the plugin is not installed the attempt can be abandoned at any time.|
+|Other	        | None.  |
 
 ### 3.2.4 Priority List
 
@@ -2109,7 +2113,7 @@ The User has the option to view all upcoming tasks in their courses.
 | Other           | None.|
 ### 3.2.63 School Catalog
 
-This feature allows the user to view the entire catalog for their respective school.
+This feature allows the user to view the entire catalog for BYU-Idaho students. Ideally this would work for other schools as well, but is not required.
 
 #### 3.2.63.1 View School Catalog
 
@@ -2122,7 +2126,7 @@ This feature allows the user to view the entire catalog for their respective sch
 |Basic Path     | Go to the view catalog button and select it.|
 |Post Condition | The user is in the catalog view for their school.|
 |Exception Paths| A user is not registered for a school and receives an error message stating so.|
-|Other          | |
+|Other          | If the functionality is not available for other schools, then the view catalog button will only show for BYU-Idaho students.|
 ### 3.2.64 Class Help
 
 This feature provides some links to websites that would be helpful for a given assignment or task.
@@ -2131,34 +2135,14 @@ This feature provides some links to websites that would be helpful for a given a
 
 | Data          | Description |
 |:--------------| :--------------|
-|Use Case Detail| As a user, I want to find help and information for an assignment.|
-|Cross Reference | See 4.2.64.1 for verification details of this use case.| 
+|Use Case Detail| As a user, I want to find help and information for my classes.|
+|Cross Reference | See 4.2.64.1 for verification details of this use case.|
 |Trigger        | A user selects the class help button.|
-|Precondition   | A user must have registered for classes and must be linked up properly with the application.|
+|Precondition   | A user must have registered for classes. These classes must be recorded in the application.|
 |Basic Path     | A user navigates to the class help button and selects it.|
 |Post Condition | A user is viewing a selection of links.|
 |Exception Paths| No available links have been connected to this assignment and user receives an error message to alert them.|
 |Exception Paths| No assignment has been selected so no links are found, user is asked to select an assignment.|
-|Other          | |
-
-
-### 3.2.65 Travel Time
-
-Marked for deletion! Section 3.2.027 - 3.2.029 already uses 3rd party applications to find this.
-This feature shows the user the expected travel time for a particular event that is stored on the calendar.
-
-#### 3.2.65.1 Travel Time
-
-| Data          | Description |
-|:--------------| :--------------|
-|Use Case Detail| A user has an upcoming event and wants to find out how long it will take them to get there.|
-|Cross Reference | See 4.2.65.1 for verification details of this use case.|
-|Trigger        | The user has selected an event on their calendar.|
-|Precondition   | A user must have a valid event stored in calendar.|
-|Basic Path     | A user selects an event on their calendar.|
-|Post Condition | A user is viewing the expected travel time for the selected event.|
-|Exception Paths| No valid event was selected.|
-|Exception Paths| The application is unable to determine the distance to the event and an error message is displayed to the user.|
 |Other          | |
 ### 3.2.66 Night Mode
 
@@ -2177,27 +2161,6 @@ Night mode is a setting that allows the user to toggle a blue light filter to re
 |Post Condition | A blue light filter has been added.|
 |Exception Paths| None.|
 |Other          | Blue light has been proven to alter circadian rhythm and increase eye-strain. |
-#### 3.2.067.0 Tutor Integration - Duplicate of 3.2.043 Marked For Deletion
-
-
-!!MARKED FOR DELETE!!
-
-| Tutor Integration| Select a tutor appointment from BYU-I website        |
-|:--------------| :--------------|
-|Use Case Detail  | Todo                                      |
-|Cross Reference | See 4.2.067.0 for verification details of this use case.| 
-|Trigger        | User selects tutor request button                       |
-|Precondition   | Account created on Student Calendar app, Internet Access|
-|               | , and an account with BYU-I as a student                |
-|Basic Path     | 1. User selects request tutor button                    |
-|               | 2. New window opens directing to BYU-I Tutor website    |
-|Alternate Path |                                                         |
-|Post Condition | Event is created and has a section where the user can add|
-|               | information about the tutor session created             |
-|Exception Paths|Window can be closed at any time, not setting tutor event|
-|Other          |                                                         |
-
-
 #### 3.2.068.0 Quick Add
 
 | Tutor Integration| Adds an event to a calendar day with only a name        |
@@ -2269,19 +2232,24 @@ The user will be required to log into the application with a single ID and passw
 
 The Student calendar must be uniform in its appearance and functionality to improve learnability for the user. This will be accomplished through the following criteria:
 
-### Simple GUI
+* Simple GUI
+* Navigation
+* Tutorial
+* ADA
+
+### 3.3.1 Simple GUI
 
 The application will have large functional icons visible to the user whenever they are viewing the Main or daily calendar pages.
 
 The process of adding, removing, and modifying events should require similar steps to make easy to remember and perform those actions.
 
-### Navigation
+### 3.3.2 Navigation
 
 The Student Calendar will be able to move from each view to another with no more than one click.
 
 Each window must feature a close 'X' icon to make it simple for the user to cancel any action and return to the previous view
 
-### Tutorial
+### 3.3.3 Tutorial
 
 New Users will be introduced to the Student Calendar functionality through tutorial message windows.
 
@@ -2289,11 +2257,15 @@ The application will offer a help menu that the user may select to learn how to 
 
 ## 3.4 Performance Requirements
 
-The Student Calendar must be interactive with delays in action-response functionality kept to a minimum. When opening window forms or displaying error messages, the delay shall be shorter than 2 seconds. When accessing the user account database, the operation of opening user preferences, sorting user items, and displaying the user calendar will be performed within 10 seconds 95% of the time. This is provided the user has a reliable internet connection. Time to Connect to the server will be based on the distance between the user's machine and the server but the application will determine if the connection is successful within 20 seconds. 
+These performance metrics are dependant upon the user having a stable and reliable Internet connection.
+
+The Student Calendar must be interactive with delays in action-response functionality kept to a minimum. When opening window forms or displaying error messages, the delay should be less than 5 seconds. When accessing the user account database, the operation of opening user preferences, sorting user items, and displaying the user calendar will be performed under 5 seconds. Time to Connect to the server will be based on the distance between the user's machine and the server but the application will determine if the connection is successful within 20 seconds.
 
 ## 3.5 Logical Database Requirements
 
 There are three data entities involved with the application and the user account database: Calendar Assignments, Calendar Events, and Users. These entities and the information associated with them will be stored in their respective relational tables on the web server. The following is a brief classification of each of these entities and their attributes:
+
+[EDITORS / AUTHORS: We are not attempting to define or create the database and tables. We need to describe the kinds of data that will be required in the schema. More high level. Include type and limitations of the kinds of data to be used. This should not look like database schema.]
 
 | Data          | Attributes | Use       |
 |:--------------| :--------------|:---------------|
@@ -2303,18 +2275,32 @@ There are three data entities involved with the application and the user account
 
 ## 3.6 Design Constraints
 
+[EDITORS / AUTHORS: Look at what the document says about design constrains in IEEE document. pg: 60]
+
 The main design constraints of the Student Calendar will be its web based platform. The user will be required to have an web browser to access the application. The application will not be able to run on all web browsers, so system design will be tailored to work with the more popular web browsers. The application will also be subject to standards of compliance for FERPA, ADA, and BYU-Idaho. This will place constraints on how data may be transferred between the application and I-learn. It will also require added functionality, such as voice recognition, so that disabled students may use the application. All text and language used in the software must comply with BYU-Idaho's honor code.
 
 ## 3.7 Software System Attributes
 
-#### Availability:
+### 3.7.1 Availability
+
 The Student Calendar should be available to users twenty-four hours a day, seven days a week unless the software is undergoing scheduled maintenance.
-#### Correctness:
+
+### 3.7.2 Correctness
+
 The Student Calendar must display all user assignments and events in their correct times and dates. User groups must display correct contact information.
-#### Maintainability:
+
+### 3.7.3 Maintainability
+
 Developers shall be able to be maintain and update the system after its initial release. Modifications should be able to be made while the system is live. Major changes shall require scheduled maintenance and the application will not be accessible to users. Maintenance notices must be sent to all users at least two days prior to going offline.
-#### Security:
+
+### 3.7.4 Security
+
 The systems security requirements shall conform to FERPA standards.
+
+### 3.7.5 Data Integerty
+
+[How the data is protected and kept clean. How it's maintained. Crash conditions. Bad data entered. Bad data from external sources.]
+
 # 4.0 Verification
 
 ## 4.1 Verify External Interface Requirements
@@ -2324,6 +2310,8 @@ The systems security requirements shall conform to FERPA standards.
 In this section of the document we will provide high level details on how we will verify that the functional feature requirements are being met. The specific Test Cases will be descripted in the SDD portion of the document. This section is not intended to contain the test case specifics.
 
 ### 4.2.1 Calendar Application is Mobile
+
+[EDITORS / AUTHORS: What about the error path]
 
 Validation will be successful if the application is available and usable on mobile platforms
 
@@ -2352,6 +2340,11 @@ We will write a custom plugin and add it to the application to verify the applic
 Validation will be successful if the application is able to display a priority list when the user taps on a specific day.
 
 #### 4.2.4.1 Assignment Priority List
+
+[EDITORS / AUTHORS: No personal pronouns. Which days to verify? What happens on weekend or holiday? Leap Year? How many multiple days]
+[EDITORS / AUTHORS: What are the unhappy path testing?]
+[EDITORS / AUTHORS: Validation should be for these things of priority?]
+[EDITORS / AUTHORS: What happens on the negative path testing.]
 
 We will test multiple days on the calendar to verify that a list is shown containing assignments ranked by due-date and level of priority. 
 
@@ -2928,7 +2921,6 @@ This will be tested by accessing a BYU-I catalogue.
 #### 4.2.63.1 View School Catalog
 
 Validation will be successfull if the BYU-I catalogue is available through the app.
-
 ### 4.2.64 Class Help
 
 This will be tested by following the links provided.
@@ -2937,18 +2929,13 @@ This will be tested by following the links provided.
 
 Validation will be successfull if various help links are provided.
 
-### 4.2.65 Travel Time
+### 4.2.66 Night Mode
 
-#### 4.2.65.1 Travel Time
+Verification will be successful upon having a blue light filter that can be toggled.
 
-### 4.2.28 Feature Name?
+#### 4.2.66.1 Night Mode
 
-#### 4.2.28.1 Night Mode
-
-### 4.2.28 Feature Name?
-
-#### 4.2.28.1 xxxxxxxxxx
-
+A tester will toggle night mode on, and verify that the blue light filter appears.
 ### 4.2.28 Feature Name?
 
 #### 4.2.28.1 xxxxxxxxxx
