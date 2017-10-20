@@ -278,16 +278,12 @@ Reading this document in the order it has been presented is highly recommended f
 |Keywords|Definition     |
 |-------|---------------|
 |API|A set of functions and procedures that allow the creation of applications which access the features or data of an operating system, application, or other service.|
-|BYU-I I-Learn|Website that the project will interact with and read user's calendar.|
-|Calendar program|A computer program that operates a schedule of events.|
-|Calendar location|An address or place that is associated with an event.|
-|Developers|Teams of students of Brigham Young University - Idaho.|
-|Event|Any assignment or activity that the user declares with a specific time associated in the calendar.|
-|Group|Two or more users who have a single app page separate from other users in addition to the regular pages dedicated towards planning and working jointly on assignments.|
-|I-Learn|Brigham Young University – Idaho's website for online students.|
-|I-Learn account|An online student's account on I-Learn.|
+|Developers|The developers for this project are a team of students at Brigham Young University - Idaho.|
+|Event|An event is an activity that a user can create with a specific time saved into the Student calendar application.|
+|Group| A group is two or more users who have a single app page separate from other users. In addition groups are users that work together on assignments.|
+|I-Learn|I-Learn is a website service for students of BYU-Idaho. The website contains each student's classes and assignments. I-Learn can be used by the student to turn in homework and access course materials.|
 |LDAP|(Lightweight Directory Access Protocol) is a software protocol for enabling anyone to locate organizations, individuals, and other resources on a corporate internet or public internet.|
-|Link|A link (short for hyperlink) is an HTML object that allows you to jump to a new website, a digital location in the app, or to another app when you click or tap it.|
+|Link|A link (short for hyperlink) is an clickable section of text that allows you to move from either one website to another, or from one specific location on an application page to another when clicked or tapped.|
 |Mobile User|A user using the program on their mobile device.|
 |Project Manager|The team member who oversees the project and works with the team leads to make sure the project fulfills the necessary requirements and is finished on time.|
 |Stakeholder|Any person who has an interest in our project, typically fellow college students and friends of developers.|
@@ -751,16 +747,15 @@ When the user views the Calendar, each day will contain a list of events for tha
 
 | Data          | Description |
 |:--------------| :--------------|
-|Use Case Detail  | As a mobile user, I want to be able to expand or condense a list of events to fit my small screen. |
-|Cross Reference | See 4.2.10.1 for verification details of this use case.| 
-|Trigger        | A user taps on the 'Show all' event button for one day. |
+|Use Case Detail  | As a mobile user, I want to be able to expand or condense a list of events to fit my small screen. Mobile phones have smaller screens than desktop computers. |
+|Cross Reference  | See 4.2.10.1 for verification details of this use case. |
+|Trigger        | A user taps on the 'Show all' event button for one day. See basic path for details.|
 |Precondition   | The user has already logged into the app with their I-Learn accounts and is viewing the calendar page. |
-|Basic Path	    | 1. The user logs into I-Learn through app. 2. The user taps the 'calendar' icon. 3. The user taps a 'See all' button on one day in the calendar. 4. The list of events for that day is expanded. |
+|Basic Path	    | 1. The user logs into I-Learn through app.<br/> 2. The user taps the 'calendar' icon.<br/> 3. The user taps a 'See all' button on one day in the calendar.<br/> 4. The list of events for that day is expanded.<br/> |
 |Alternate Path | None. |
 |Post Condition	| If the button is tapped again, the list of events collapses to save screen space. |
 |Exception Paths| If there is nothing to show for that day, the user's calendar will not have the 'Show all' button. |
 |Other		      | None. |
-
 
 ### 3.2.11 Group Communication 1: Message Chat
 
@@ -770,16 +765,15 @@ When a user has joined a group on the app, they will want to be in contact with 
 
 | Data          | Description |
 |:--------------| :--------------|
-|Use Case Detail| As a classmate, I want to be able to text members of my study group. |
+|Use Case Detail| As a classmate, I want to be able to text members of my study group because strong communication will be necessary for group projects.|
 |Cross Reference | See 4.2.11.1 for verification details of this use case.| 
-|Trigger        | A user taps the 'Contact' button on a member of a group from a list. |
-|Precondition   | User has been accepted into a group.|
-|Basic Path	    | 1. The user taps a button labeled 'Groups'. 2. User navigates through the list of group members and taps on one they want to text. 3. App switches over to default messaging app with group member's phone number. |
+|Trigger        | A user taps the 'Contact' button on a member of a group from a list. See basic path for details.|
+|Precondition   | User must be accepted into a group and the group members must upload their numbers into the app.|
+|Basic Path	    | 1. The user taps a button labeled 'Groups'.<br/> 2. User navigates through the list of group members and taps on one they want to text.<br/> 3. App switches over to default messaging app with group member's phone number.<br/> |
 |Alternate Path | If the group member the user has selected has not provided a phone number, then the default email app will load with the email. |
-|Post Condition	| The user is in contact with his/her group. |
+|Post Condition	| The user is in contact with his/her group member. |
 |Exception Paths| If the group member the user has selected has not provided a phone number or an email, the app will display a message stating such. |
 |Other		      | None.|
-
 
 ### 3.2.12 Group Communication 2: Video Chat
 
@@ -789,16 +783,15 @@ With the press of a single button, a user can start a video conference call with
 
 | Data          | Description |
 |:--------------| :--------------|
-|Use Case Detail| As a user, I want to easily start a video call with fellow group members from the app. |
+|Use Case Detail| As a user, I want to easily start a video call with fellow group members from the app because we will need to meet face-to-face for group work. |
 |Cross Reference | See 4.2.12.1 for verification details of this use case.| 
-|Trigger        | A user clicks on the Group Video Chat button. |
-|Precondition   | The user is accepted into a group. |
-|Basic Path	    | The user taps the 'Groups' button. 2. The user taps the 'Group video chat' button. 3. A 3rd party video app, such as Skype or Google Hangouts, is started with all members of the group invited to join a video conference call. |
-|Alternate Path | None.|
-|Post Condition	| The user is in a Group Video Chat session.|
+|Trigger        | A user clicks on the Group Video Chat button. See basic path for details.|
+|Precondition   | The user is accepted into a group, the user and all group members have uploaded their 3rd party app contact information (Gmail address or Skype names), and the appropriate 3rd party video communications apps installed on their devices. See basic path for details. |
+|Basic Path	    | 1. The user taps the 'Groups' button.<br/> 2. The user taps the 'Group video chat' button.<br/> 3. A 3rd party video app, such as Skype or Google Hangouts, is started with all members of the group invited to join a video conference call.</br> |
+|Alternate Path | The user opens the 3rd party video communications app they used previously, and starts a call from there.|
+|Post Condition	| The user is in a group video chat session.|
 |Exception Paths| If members of the group have not provided the necessary information for the app to contact them, an error is displayed stating so. |
-|Other		      | Every user who uses the app will need to provide their Gmail or Skype names so this feature works properly. |
-
+|Other		      | Every user who uses the app will need to provide their Gmail address or Skype names so this feature works properly. |
 
 ### 3.2.13 FERPA Compliant
 
@@ -831,7 +824,7 @@ This feature allows access to the I-Learn discussion boards through the calendar
 |Cross Reference | See 4.2.14.1 for verification details of this use case.|
 |Trigger        |  |
 |Precondition   | The app must have an internet connection, and be connected to I-Learn.|
-|Basic Path     | 1.The user will navigate to one of their classes. 2.The user will select a discussion board to view.|
+|Basic Path     | 1.The user will navigate to one of their classes. <br>2.The user will select a discussion board to view.|
 |Alternate Path |  |
 |Post Condition |  |
 |Exception Paths| The user has no classes, or no open discussions available to them.|
@@ -845,7 +838,7 @@ This feature allows access to the I-Learn discussion boards through the calendar
 |Cross Reference | See 4.2.14.2 for verification details of this use case.|
 |Trigger        |  |
 |Precondition   | The app must have an internet connection, and be connected to I-Learn.|
-|Basic Path     | 1.The user will navigate to one of their classes. 2.The user will select a discussion board to view. 3.The user will press the reply, or start new thread button to create a new post.|
+|Basic Path     | 1.The user will navigate to one of their classes. <br>2.The user will select a discussion board to view. <br>3.The user will press the reply, or start new thread button to create a new post.|
 |Alternate Path |  |
 |Post Condition |  |
 |Exception Paths| The user has no classes, or no open discussions available to them.|
@@ -862,7 +855,7 @@ This app allows the user to pick a time zone so all timestamps from I-Learn will
 |Cross Reference | See 4.2.15.1 for verification details of this use case.| 
 |Trigger        | Every time the app recieves a timestamp from I-Learn, it is automatically converted to the users prefered time zone.|
 |Precondition   | None. |
-|Basic Path     | 1. Enter the app settings. 2. Enter the time and date settings. 3. Select the time zone setting and select time zone. |
+|Basic Path     | 1. Enter the app settings. <br>2. Enter the time and date settings. <br>3. Select the time zone setting and select time zone. |
 |Alternate Path | None. |
 |Post Condition | All timestamps are converted to reflect the user's timezone.|
 |Exception Paths| None. |
@@ -921,22 +914,21 @@ The app will support the Android Widget feature. This widget will allow for easy
 
 ### 3.2.19 Active Directory/LDAP
 
-A directory system which allows the sharing of information between students. Allows for many features like the sharing of contact information or schedules, providing contact methods and meeting planning for groups.
+A directory system which allows the sharing of information between students. The directory will list any student information that the student has set to be public on the Student Calendar Application. This will improve student communication and give users information necessary for forming groups.
 
 #### 3.2.19.1 Contact Class Member
 
 | Data          | Description |
 |:--------------| :--------------|
-|Use Case Detail| As a user, I want to contact someone else in my class.|
+|Use Case Detail| As a user, I want to contact someone else in my class because I would like to work with them.|
 |Cross Reference | See 4.2.19.1 for verification details of this use case.| 
-|Trigger        | The user clicks on the "Email" button found in the student's contact profile |
+|Trigger        | The user clicks on the "Student Directory" button found in the student's contact profile. See basic path for details.|
 |Precondition   | The user is on the student list of the class page |
-|Basic Path     | 1.The user is presented with a list of students sorted alphabetically.<br>2.The user selects the student they wish to contact by clicking on the row the student is located.<br>3.The user is presented with a dialogue box displaying the available options of communication.<br>4.The user selects the "Email" option, which opens the user's default email program with a new message to the student selected.</li>|
+|Basic Path     | 1.The user is presented with a list of students sorted alphabetically.<br>2.The user selects the student they wish to contact by clicking on the row the student is located.<br>3.The user is presented with a dialogue box displaying the available options of communication.<br>4.The user selects the "Email" option, which opens the user's default email program with a new message to the student selected.<br/>|
 |Alternate Path | In step 4, the user may have been presented with a "Phone" or "Text" option.|
-|Post Condition | The user is presented with their default email client with a new email to the student selected.|
-|Exception Paths| A new view may be selected.|
-|Other          | |
-
+|Post Condition | The user is presented with their default email application with the desired student's email address.|
+|Exception Paths| If the student selected does not have any contact information available, the user is notified and returned to the main directory view.|
+|Other          | None |
 
 ### 3.2.20 Notification Control
 
@@ -1297,7 +1289,33 @@ Group owners should be able to set permissions for the users in the group. They 
 |Exception Paths| If there are no group assignments for the class the page will say: "No group work!"|
 |Other          | None|
 
+#### 3.2.31.3 Creation of Secured Group
 
+| Data          | Description |
+|:--------------| :--------------|
+|Use Case Detail| As a user, I would like to form private groups with other users for the purpose of working with them. |
+|Cross Reference | See 4.2.36.1 for verification details of this use case.| 
+|Trigger        | A user creates a group. |
+|Precondition   | The user has logged into their I-Learn account in the app. |
+|Basic Path     | 1. User logs into I-Learn through app.<br> 2. User clicks the "Group" icon and creates a group. |
+|Alternate Path | None. |
+|Post Condition | If another user tries to join the group, they will not be allowed until the user who created the group sends them an invitation. |
+|Exception Paths| None. |
+|Other          | Users receive invitations through their email. |
+
+#### 3.2.31.4 Group Invitation
+
+| Data          | Description |
+|:--------------| :--------------|
+|Use Case Detail| As a user, I want to join private groups through an invitation from the group creator or administrator. |
+|Cross Reference | See 4.2.36.2 for verification details of this use case.| 
+|Trigger        | A user asks to join a group. |
+|Precondition   | A user needs to have created a group before another user can elicit them to join. |
+|Basic Path     | 1. User logs into I-Learn through app.<br> 2. User clicks the "Group" icon and clicks a group to join.<br> 3. The user waits until the group administrator sends them the invitation via email.<br> 4. The user accepts the invitation and joins the group in the app. |
+|Alternate Path | The user is rejected from the group and cannot join. |
+|Post Condition | None. |
+|Exception Paths| If a user has been rejected from a group, they cannot elicit the group again for an invitation after a third try. |
+|Other          | None. |
 ### 3.2.32 Group Links
 
 Links are used to deep link to third party technologies for collaboration tools.
@@ -1399,39 +1417,6 @@ User is notified if the instructor provides feedback on graded assignments.
 |Alternate Path | If the user has already checked the "Notify of feedback" checkbox and turned the "Include feedback" switch on, the app will remember the setting and continue to include the feedback in notifications until the user turns the switch off. |
 |Post Condition | The "Notify of feedback" checkbox must remain checked if the user wants to continue to user the feature, and the "Include feedback" switch must be turned on. |
 |Exception Paths| None. |
-|Other          | None. |
-
-
-### 3.2.36 Group Security
-
-If a user wants to join a group, they will be barred from doing so until they receive an invitation from the group owner or administrator.
-
-#### 3.2.36.1 Secured Groups
-
-| Data          | Description |
-|:--------------| :--------------|
-|Use Case Detail| As a user, I would like to form private groups with other users and keep out any interlopers until I say so. |
-|Cross Reference | See 4.2.36.1 for verification details of this use case.| 
-|Trigger        | A user creates a group. |
-|Precondition   | The user has logged into their I-Learn account in the app. |
-|Basic Path     | 1. User logs into I-Learn through app.<br> 2. User clicks the "Group" icon and creates a group. |
-|Alternate Path | None. |
-|Post Condition | If another user tries to join the group, they will not be allowed until the user who created the group sends them an invitation. |
-|Exception Paths| None. |
-|Other          | Users receive invitations through their email. |
-
-#### 3.2.36.2 Group Invitation
-
-| Data          | Description |
-|:--------------| :--------------|
-|Use Case Detail| As a user, I want to join private groups through an invitation from the group creator or administrator. |
-|Cross Reference | See 4.2.36.2 for verification details of this use case.| 
-|Trigger        | A user asks to join a group. |
-|Precondition   | A user needs to have created a group before another user can elicit them to join. |
-|Basic Path     | 1. User logs into I-Learn through app.<br> 2. User clicks the "Group" icon and clicks a group to join.<br> 3. The user waits until the group administrator sends them the invitation via email.<br> 4. The user accepts the invitation and joins the group in the app. |
-|Alternate Path | The user is rejected from the group and cannot join. |
-|Post Condition | None. |
-|Exception Paths| If a user has been rejected from a group, they cannot elicit the group again for an invitation after a third try. |
 |Other          | None. |
 
 
@@ -1714,25 +1699,6 @@ The user has the option to set an alarm for individual assignments that will let
 |Other          | None.|
 
 
-### 3.2.48 Share Option
-
-The calendar app can sync with other calendars via social media.
-
-#### 3.2.48.1 Sharing Calendars
-
-| Data          | Description    |
-|:--------------| :--------------|
-|Use Case Detail| As a user, I want to connect to other people's calendars and social media events so I can view all my life's related events in one place.|
-|Cross Reference | See 4.2.48.1 for verification details of this use case.| 
-|Trigger        | User clicks on the "Share" button. |
-|Precondition   | User logged in to the calendar application. |
-|Basic Path     | User is presented with a window or form where "request to shared calendar" can be requested or supported social media account selected and credentials entered. |
-|Alternate Path | None.|
-|Post Condition | User can select shared calendars to view alongside school calendar/events and can selectively view one or all calendars through a toggle. |
-|Exception Paths| The preferred social media service is not supported. Authentication fails even if proper credentials are entered. Shared calendar data does not update. |
-|Other          | None.|
-
-
 #### 3.2.49 Sync and Success Share
 
 The Calendar app is able to sync and be updated from the browser or a compatible site. The user should also be able to share their success on social media.
@@ -1806,40 +1772,6 @@ The Calendar app is able to sync and be updated from the browser or a compatible
 |Alternate Path | Widget appears on page of completed assignment|
 |Post Condition | None|
 |Exception Paths| Can't authenticate to post to Facebook|
-|Other          | None|
-
-
-### 3.2.50 Priority Assignments
-
-This will allow users to mark certain assignments as 'Priority'. Will help users
-quickly identify important assignments.
-
-#### 3.2.50.1 Set Assignment Priority
-
-| Data          | Description |
-|:--------------| :--------------|
-|Use Case Detail| As a user, I want to set an assignment as high priority |
-|Cross Reference | See 4.2.50.1 for verification details of this use case.| 
-|Trigger        | The user clicks the "Priority" button. |
-|Precondition   | The user is in the assignment detail view |
-|Basic Path     | 1. The user clicks the "Priority" button in the assignment detail view <br> 2. The user is presented with the options "High", "Medium" and "Low"<br> 3. The user selects the "High" option |
-|Alternate Path | The user can select "Medium" or "Low" as the assignment priority |
-|Post Condition | The assignment detail view is shown, with the assignment set to high priority |
-|Exception Paths| The user can exit priority selection or set the assignment back to default low priority. |
-|Other          | None|
-
-#### 3.2.50.2 Priority View
-
-| Data          | Description |
-|:--------------| :--------------|
-|Use Case Detail| As a user, I want to view my assignments based on priority |
-|Cross Reference | See 4.2.50.2 for verification details of this use case.| 
-|Trigger        | The user clicks the "Priority View" button. |
-|Precondition   | The user is in the calendar view |
-|Basic Path     | 1. The user clicks the "Priority View" button |
-|Alternate Path |  |
-|Post Condition | The calendar view displays assignments sorted by priority |
-|Exception Paths| The user can change the calendar view back to assignments sorted by due date. |
 |Other          | None|
 
 
@@ -2034,25 +1966,6 @@ The calendar will ask for camera permissions so that the user can use videos to 
 |Post Condition | The user will have a customized view and appearance for each class and layout.|
 |Exception Paths| The user may select "Cancel" to exit at any point in the process.|
 |Other          | None.|
-
-
-### 3.2.59 To-Do Task Engine
-
-The user is going to be able to create their tasks, events and notifications. There will be a To-Do list view where the user can check to see what they have planned for their calendar. 
-
-#### 3.2.59.1 Calendar Task & To-Do Engine
-
-| Data            | Description|
-| :-------------- | :--------------|
-| Use Case Detail | The user can make use of the To-Do and Task engine in order to create tasks, events, and notifications. These will be visible in the calendar and in a To-Do list view. It will also support tasks without a specific deadline.|
-|Cross Reference | See 4.2.59.1 for verification details of this use case.| 
-| Trigger         | The user will click a 'create new task' button.|
-| Precondition    | The UI will include a 'create new task' button.|
-| Basic Path      | 1. The user will click on the 'create new task' button, visible in the main calendar view.|
-| Alternate Path  | The user will click on the 'create new task' button, visible in the To-Do list view.|
-| Post Condition  | The task will be added to both the calendar and the To-Do list.|
-| Exception Paths | The user may select either 'cancel' while he or she is creating the task, or 'delete' to delete it after the fact.|
-| Other           | None.|
 
 
 ### 3.2.60 Calendar View
@@ -2967,9 +2880,9 @@ http://www.softwaretestinghelp.com/what-is-performance-testing-load-testing-stre
 
 ### 4.4.1 Load Testing
 
-### 4.4.2 Stress Testing
+BYU-Idaho has about 45k students and faculty. Our plan will be to test for memory leaks, and possible issues with bandwitdth, network, and database components as we progressively increase the load on the system. As we perform this test, we will determine how the system behaves with a low, moderate, and large amount of users. Specifically, we will discover the amount of users that can perform tasks simultaneously. These tasks include: loading the application on different web browsers, creating an account, creating a custom calendar, adding and removing tasks, and using the chat and messaging feature. 
 
-For stress testing the calendar app, it will be subjected to numerous and repeated UI tests. Each component of the app will be activated programmatically to check if fast sequential access to different features crashes the app, any delays will also be noted. Connection to the server will also be tested, Simulated connections to the server will test prolonged continuous access by a low, medium, and high loads. Sudden spikes in server load will be tested. Any crashes or errors at any point during stress testing will be carefully analyzed, then used to fix errors, and make sure the app remains secure even in the event of overload.
+### 4.4.2 Stress Testing
 
 ### 4.4.3 Capactiy Testing
 
