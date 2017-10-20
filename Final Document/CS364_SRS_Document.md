@@ -2969,6 +2969,8 @@ http://www.softwaretestinghelp.com/what-is-performance-testing-load-testing-stre
 
 ### 4.4.2 Stress Testing
 
+For stress testing the calendar app, it will be subjected to numerous and repeated UI tests. Each component of the app will be activated programmatically to check if fast sequential access to different features crashes the app, any delays will also be noted. Connection to the server will also be tested, Simulated connections to the server will test prolonged continuous access by a low, medium, and high loads. Sudden spikes in server load will be tested. Any crashes or errors at any point during stress testing will be carefully analyzed, then used to fix errors, and make sure the app remains secure even in the event of overload.
+
 ### 4.4.3 Capactiy Testing
 
 ## 4.5 Verify Logical Database Requirements
