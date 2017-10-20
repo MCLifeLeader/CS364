@@ -279,8 +279,8 @@ Reading this document in the order it has been presented is highly recommended f
 |-------|---------------|
 |API|A set of functions and procedures that allow the creation of applications which access the features or data of an operating system, application, or other service.|
 |BYU-I I-Learn|Website that the project will interact with and read user's calendar.|
-|Calendar program|A computer program that operates a schedule of events.|
-|Calendar location|An address or place that is associated with an event.|
+|Calendar program|A digital recreation of a calendar, A computer program that operates a schedule of events, and keeps track of your tasks and assignments|
+|Calendar location|An address or place that is associated with an event. For example, your home address could be the location for a party|
 |Developers|Teams of students of Brigham Young University - Idaho.|
 |Event|Any assignment or activity that the user declares with a specific time associated in the calendar.|
 |Group|Two or more users who have a single app page separate from other users in addition to the regular pages dedicated towards planning and working jointly on assignments.|
@@ -288,7 +288,7 @@ Reading this document in the order it has been presented is highly recommended f
 |I-Learn account|An online student's account on I-Learn.|
 |LDAP|(Lightweight Directory Access Protocol) is a software protocol for enabling anyone to locate organizations, individuals, and other resources on a corporate internet or public internet.|
 |Link|A link (short for hyperlink) is an HTML object that allows you to jump to a new website, a digital location in the app, or to another app when you click or tap it.|
-|Mobile User|A user using the program on their mobile device.|
+|Mobile User|Anyone using the calendar app on a mobile device, such as a phone or tablet.|
 |Project Manager|The team member who oversees the project and works with the team leads to make sure the project fulfills the necessary requirements and is finished on time.|
 |Stakeholder|Any person who has an interest in our project, typically fellow college students and friends of developers.|
 |Student Calendar Integration|Application intended to fulfill requirements.|
@@ -296,9 +296,9 @@ Reading this document in the order it has been presented is highly recommended f
 |Software Requirements Specification|Also known as SRS in this document. A document that contains the requirements a product must meet in order to succeed.|
 |SSO|Single sign-on is an authentication process that allows a user to access multiple applications with one set of login credentials.|
 |Third Party Technology| A provider of outsourced logistics. examples: Google-Hangouts, Zoom.|
-|Toggle|To switch from one effect, feature, or state to another.|
+|Toggle|To switch from one effect, feature, or state to another. For example, turning notifications on or off.|
 |Tutorial|Self-paced instructional material that provides step by step information in presenting a concept or learning unit. Computer based tutorials use interactive methods such as hyperlinks, and audio and visual presentation of the subject matter, and provide feedback through question-answer exercises.|
-|User|Students that attended Brigham Young University - Idaho.|
+|User|Anyone using the calendar app on any device. Most likely users are students that attended Brigham Young University - Idaho.|
 
 ## 1.5 References
 
