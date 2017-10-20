@@ -306,11 +306,11 @@ Reading this document in the order it has been presented is highly recommended f
 
 ## 1.6 Overview of Document
 
-This document is broken out into multiple sections and each section covers different topics related to the overall design and specification of this application. Section 1.0 of this document covers the introduction and highlevel outline for the document. Section 2.0 provides an overview of the application that will be implemented where as section 3.0 begins the deeper technical specifications and functionality of the application. Section 4.0 of the document will cover the validation of the functional requirements.
+This document is broken out into multiple sections and each section covers different topics related to the overall design and specification of this application. Section 1.0 of this document covers the introduction and high-level outline for the document. Section 2.0 provides an overview of the application that will be implemented where as section 3.0 begins the deeper technical specifications and functionality of the application. Section 4.0 of the document will cover the validation of the functional requirements.
 
-The main section of the SRS portion of the document will be seciton 3.2. This section does a deeper dive into each feature and use case specification that makes up the application as a whole. To help reduce confusion on how this works we have provided below a template or example of what each feature and use case may look like. This template provides quick and easy bullet style details about each feature and use case that creates that particular feature.
+The main section of the SRS portion of the document will be section 3.2. This section does a deeper dive into each feature and use case specification that makes up the application as a whole. To help reduce confusion on how this works we have provided below a template or example of what each feature and use case may look like. This template provides quick and easy bullet style details about each feature and use case that creates that particular feature.
 
-Each feature will contain a feature name / title followed by a description of the feature. This will then be followed by a use case or user story which defines a key functional aspect of the specified feature. See below on how the table breaks apart the indivudal feature in the specified use case.
+Each feature will contain a feature name / title followed by a description of the feature. This will then be followed by a use case or user story which defines a key functional aspect of the specified feature. See below on how the table breaks apart the individual feature in the specified use case.
 
 
 In the table below the definition is on the right of the words on the left.
@@ -326,7 +326,7 @@ Full Feature Description. What the feature is. Who is going to use it. Why is th
 | Data          | Description |
 |:--------------| :--------------|
 |Use Case Detail| The use case detail outlines the What, Who, Why of the use case. Example: As a User, I want to xxxxx because I am looking for an easier way to do my task.|
-|XRef           | This is short for Cross Reference and links to different sections of the document. For example you may have a reference to a genearal diagram above in section 2.0. You should also have a reference to the validation section of the document that covers the verifiable portions of the use case functionality. Lastly, when the SDD portion of the document is created a link to that section will then be found here.|
+|Cross Reference| This links to different sections of the document. For example you may have a reference to a general diagram above in section 2.0. You should also have a reference to the validation section of the document that covers the verifiable portions of the use case functionality. Lastly, when the SDD portion of the document is created a link to that section will then be found here.|
 |Trigger        | User, application, or external driven behavior events that happen based on automated or user input.|
 |Precondition   | Represents the conditions, visually, data, logic, or other things that must exist prior to this feature or use case being able to be executed, used, or seen.|
 |Basic Path     | This is the path on how the user gets to this feature or use case. How did I get here?|
@@ -334,14 +334,23 @@ Full Feature Description. What the feature is. Who is going to use it. Why is th
 |Post Condition | What happens when the user or process is triggered. What states exist afterward.|
 |Exception Paths| In what cases are there exceptions to how or what something should or should not be doing. This is to be communicated as inclusive ideas.|
 |Other          | This is for anything that was not covered in the previous table descriptions and in most cases will not contain details.|
-
 # 2.0 Overall Description
+Section 2 provides a general overview of the calendar application. The topics covered in the sub-sections are listed below.
 
+| Section | Description |
+| ------------ | ------------ |
+| Section 2.1| This section gives an overview of the product perspective.|
+| Section 2.2| An overview of the product features is given.|
+| Section 2.3| This section describes the types of calendar application users and their characteristics.|
+| Section 2.4| This section describes the web browsers and operating platforms that the calendar application will function on.|
+|Section 2.5| This section contains images of typical user interface screens while using the calendar application.|
+|Section 2.6| An overview of technical requirements is given.|
+|Section 2.7| This section describes the user documentation.|
+|Section 2.8| Assumptions and Dependencies are listed.|
 ## 2.1 Product Perspective
 
-The Student Calendar can be used as a stand-alone application that gives students much of the functionality as described in the product functions section. For BYU-I students, the calendar's main benefits come from interfacing with the University's I-Learn system allowing them to access assignments and other events. Interfaces to other external systems will provide further functionality outside of basic calendar tasks. Detailed descriptions of these external systems are beyond the scope of this document. All interfacing with external systems will be done according to industry standards.</br>
+The Student Calendar can be used as a stand-alone application that gives students all of the functionality as described in the product functions section. For BYU-I students, the calendar's main benefits come from interfacing with the University's I-Learn system allowing them to access assignments and other events. Interfaces to other external systems will provide further functionality outside of basic calendar tasks. Detailed descriptions of these external systems are beyond the scope of this document. All interfacing with external systems will be done according to industry standards.</br>
 <img  src="https://github.com/MCLifeLeader/CS364/blob/master/Final%20Document/Images/Product%20perspective.jpg" height="50%" width="50%">
-
 ## 2.2 Product Features
 
 Features have been broken down into various feature categories to group like or related features together.
@@ -374,12 +383,14 @@ Features have been broken down into various feature categories to group like or 
 
 ## 2.3 User Classes and Characteristics
 
-### 2.3.1 - Students: The majority of users will be students during the school year. The application will be simple enough that students from all technical backgrounds can easily navigate the interface.
+### 2.3.1 - Students:
+The majority of users will be students during the school year. The application will be simple enough that students from all technical backgrounds can easily navigate the interface.
 
-### 2.3.2 - Professors: There will be some features that professors may want to access. The interface will be simple enough to accommodate all technical backgrounds.
+### 2.3.2 - Professors:
+There will be some features that professors may want to access. The interface will be simple enough to accommodate all technical backgrounds.
 
-### 2.3.3 - ITS Staff: The ITS Staff will maintain the application and keep it updated. The ITS Staff will have a sufficient technical background to perform all maintenance duties.
-
+### 2.3.3 - ITS Staff: 
+The ITS Staff will maintain the application and keep it updated. The ITS Staff will have a sufficient technical background to perform all maintenance duties.
 ## 2.4 Operating Environment
 
 The software being developed will run as a web application on selected web browsers and on most devices.
@@ -411,7 +422,7 @@ Validation for these will be performed through Automated UI testing. The applica
 
 ### 2.6.1 - Database Integration
 
-The project will implement a database to store the User's information. The database will be written using a Database Management System like Oracle or Firebase. 
+The project will implement a database to store the User's information. The database will be written using a Database Management System like Oracle or Firebase.
 
 ### 2.6.2 - Coding Standards
 
@@ -424,7 +435,6 @@ This project will need access to system resources like the device's camera or fi
 ### 2.6.4 - I-Learn Access
 
 The application will connect to services at BYU-Idaho in order to connect to I-Learn.
-
 ## 2.7 User Documentation
 
 When a user creates an account with the Student Calendar application, a video tutorial will be the first thing that they encounter in the application. This tutorial will quickly run the user through the most important features to get started on using the calendar. Additionally there will be separate tutorials on the other features not covered in the initial tutorial that the user can look at when they need some extra help.
@@ -1080,12 +1090,12 @@ The simplified assignment display allows users to view one task as a time to red
 
 Users need to access the different months efficiently. The Calendar app will have a scrollable section where all the months can be accessed. The idea of the continuous calendar is that users will intuitively know that they can scroll to other months, weeks, or days. In the case of a Month view, the last week of the prior month, and the first week of the next month will be added to the current month view as a visual cue that the section is scrollable. Text labels and color backgrounds will help the user identify the month as they scroll.
 
-### 3.2.25.1 Continuous Calendar Month View
+#### 3.2.25.1 Continuous Calendar Month View
 
 | Data          | Description |
 |:--------------| :--------------|
 |Use Case Detail  | As a user, I want to see the last week of the previous month, all the weeks of the current month, and the first week of the following month when using the "Month" view of the calendar. This feature will allow me to access other months by scrolling up or down.|
-|Cross Reference | See 4.2.24.3 for verification details of this use case.| 
+|Cross Reference | See 4.2.25.1 for verification details of this use case.|
 |Trigger        | The user clicks or taps on the "Month" option of the calendar.|
 |Precondition   | By default, the user will see a calendar view by "Week" after login.|
 |Basic Path     | 1. The user chooses to view the calendar. The choices are by Day, by Week, and by Month.<br>2. If the user chooses to see the calendar by Month, the application will present a calendar view from the last week of the previous month to the first week of the subsequent month.<br>3. The application shows all assignments and events added for the month.<br>4. The user can scroll up or down to see other months.<br>5. The user selects an assignment or task.<br>6. The application displays a screen with detailed information about the assignment or task.|
@@ -1094,12 +1104,12 @@ Users need to access the different months efficiently. The Calendar app will hav
 |Exception Paths| The user may choose another view at any time.|
 |Other          | None.|
 
-### 3.2.25.2 Continuous Calendar Month Alternating Background Color
+#### 3.2.25.2 Continuous Calendar Month Alternating Background Color
 
 | Data          | Description |
 |:--------------| :--------------|
 |Use Case Detail  | As a user, I want to distinguish the month I am looking at as I scroll up or down to different months.|
-|Cross Reference | See 4.2.24.3 for verification details of this use case.| 
+|Cross Reference | See 4.2.25.2 for verification details of this use case.|
 |Trigger        | The user clicks or taps on the "Month" option of the calendar.|
 |Precondition   | By default, the user will see a calendar view by "Week" after login.|
 |Basic Path     | 1. The user picks the "Month" view of the calendar. <br>2. The application will present a calendar view from the last week of the previous month to the first week of the subsequent month.<br>3. The application will divide the months by adding darker and lighter background colors so that no month color is the same.<br> 4. The calendar shows all assignments and events added for the month.<br>5. The user can scroll up or down to see other months and see the background colors alternating to identify the start of a new month.|
@@ -1108,12 +1118,12 @@ Users need to access the different months efficiently. The Calendar app will hav
 |Exception Paths| The user may choose another view at any time.|
 |Other          | None.|
 
-### 3.2.25.3 Continuous Calendar Month Label
+#### 3.2.25.3 Continuous Calendar Month Label
 
 | Data          | Description |
 |:--------------| :--------------|
 |Use Case Detail  | As a user, I want to know which month I am looking at by seeing a label of the month. This label will remain on a header section on top of the Calendar and will change when the user scrolls to a different month.|
-|Cross Reference | See 4.2.24.3 for verification details of this use case.| 
+|Cross Reference | See 4.2.25.3 for verification details of this use case.|
 |Trigger        | The user opens the Calendar application and chooses the Month option.|
 |Precondition   | By default, the user will see a calendar view by "Week" after login.|
 |Basic Path     | 1. The user picks the "Month" view of the calendar. <br>2. The application will present a calendar view from the last week of the previous month to the first week of the subsequent month.<br>3. A label describing the month will be on top of the calendar<br> 4. The label will change as the user scrolls to different months.|
@@ -1121,18 +1131,16 @@ Users need to access the different months efficiently. The Calendar app will hav
 |Post Condition | The selected view by "Month" is presented to the user and a label will appear on top of the scrollable section.|
 |Exception Paths| The user may choose another view at any time.|
 |Other          | None.|
-
-
 ### 3.2.26 Holidays
 
 Users need to be aware of specific calendar holidays to plan events more effectively. Text labels and watermarked icons denoting each holiday will help the user identify those days at first glance.
 
-### 3.2.26.1 Labels for Holidays
+#### 3.2.26.1 Labels for Holidays
 
 | Data          | Description |
 |:--------------| :--------------|
 |Use Case Detail  | As a user, I want to see a text label on the most common holiday calendar dates - such as Thanksgiving, Christmas, and Easter. The small text label will be placed next to the date.
-|Cross Reference | See 4.2.24.3 for verification details of this use case.| 
+|Cross Reference | See 4.2.26.1 for verification details of this use case.|
 |Trigger        | The user clicks or taps on a calendar view option and sees text labels on calendar holidays. |
 |Precondition   | By default, the calendar will show text labels for holidays on any calendar view.|
 |Basic Path     | 1. The user chooses to view the calendar by Day, by Week, and by Month.<br />2. The user will see a text label on national holidays.|
@@ -1141,12 +1149,12 @@ Users need to be aware of specific calendar holidays to plan events more effecti
 |Exception Paths| None.|
 |Other          | None.|
 
-### 3.2.26.2 Watermark on Holidays
+#### 3.2.26.2 Watermark on Holidays
 
 | Data          | Description |
 |:--------------| :--------------|
 |Use Case Detail  | As a user, I want to see a watermark depicting the national holiday. This serves as a second description of the holiday.
-|Cross Reference | See 4.2.24.3 for verification details of this use case.| 
+|Cross Reference | See 4.2.26.2 for verification details of this use case.|
 |Trigger        | The user clicks or taps on a calendar view option and sees text labels on calendar holidays. |
 |Precondition   | By default, the calendar will show text labels for holidays on any calendar view.|
 |Basic Path     | 1. The user chooses to view the calendar by Month.<br />2. The user will see a text label on national holidays along with a watermark image depicting the holiday. For example, a Christmas tree would be watermarked into the specific date box.|
@@ -1154,18 +1162,16 @@ Users need to be aware of specific calendar holidays to plan events more effecti
 |Post Condition | The selected view will identify holidays by showing a watermark image description of the holiday.|
 |Exception Paths| The user can select another calendar view other than the Month view.|
 |Other          | None.|
-
-
 ### 3.2.27 Location
 
 Because users will be able to add details to a task or event, an option to add addresses to a specific event or task will be available to coordinate group meetings or other social gatherings. This feature will help users to conveniently link addresses to events and display a map view of the addresses using user's Map application. The Map application will also be used to display directions to a location.
 
-### 3.2.27.1 Event Location
+#### 3.2.27.1 Event Location
 
 | Data          | Description |
 |:--------------| :--------------|
 |Use Case Detail  | As a user, I want to add addresses to the group events that I have created. |
-|Cross Reference | See 4.2.24.3 for verification details of this use case.| 
+|Cross Reference | See 4.2.27.1 for verification details of this use case.|
 |Trigger        | User clicks or taps on a calendar date.|
 |Precondition   | By default, the user will be able to tap on a specific date and be taken to a details page showing each event on that day. Each event or task can be tapped to go to a details screen of that event or task.|
 |Basic Path     | 1. The user taps on a date.<br />2. A new details screen will show and the user will be allowed to see all the tasks for the day.<br>3. The user can tap on each task and a new details screen will show for that task or event.<br />4. The user can edit the event and fill up the "Location" section if an address is necessary for the event or task.<br />5. The application goes back to the calendar view.|
@@ -1174,12 +1180,12 @@ Because users will be able to add details to a task or event, an option to add a
 |Exception Paths| The attempt may be abandoned at any time.|
 |Other          | None.|
 
-### 3.2.27.2 Google Maps Integration
+#### 3.2.27.2 Google Maps Integration
 
 | Data          | Description |
 |:--------------| :--------------|
 |Use Case Detail  | As a user, I want to click on addresses and see the location on Google Maps. |
-|Cross Reference | See 4.2.24.3 for verification details of this use case.| 
+|Cross Reference | See 4.2.27.2 for verification details of this use case.|
 |Trigger        | Clicking or tapping on the "Location" item in the details page of an event or task.|
 |Precondition   | By default, the user will see an option to create an event or task for a specific day.|
 |Basic Path     | 1. The user creates an event on a specific day by clicking or tapping on the "create event.<br />2. The user adds an address on the "Location" item of the details screen.<br>3. Once the address has been added, the user will see an icon (map with a pin) next to address of the event.<br />4. If user clicks or taps on the map/pin icon, a Google Maps screen will load showing the exact location of the event.|
@@ -1187,8 +1193,6 @@ Because users will be able to add details to a task or event, an option to add a
 |Post Condition | The user sees a Google Map screen of the location of the event when tapping on the icon found in the event's details screen.|
 |Exception Paths| The attempt may be abandoned at any time.|
 |Other          | None.|
-
-
 ### 3.2.28 Apple Maps Integration
 
 User's will have location support in the calendar when the user has an address listed under a calendar event. This support is specific to Apple Maps for those that use Mac or iOS.
@@ -2303,11 +2307,14 @@ The main design constraints of the Student Calendar will be its web based platfo
 
 ## 3.7 Software System Attributes
 
-#### AVAILABILITY: The Student Calendar should be available to users twenty-four hours a day, seven days a week unless the software is undergoing scheduled maintenance. 
-#### CORRECTNESS: The Student Calendar must display all user assignments and events in their correct times and dates. User groups must display correct contact information.
-#### MAINTAINABILITY: Developers shall be able to be maintain and update the system after its intial release. Modifications should be able to be made while the system is live. Major changes shall require scheduled maintenance and the application will not be accesible to users. Maintenance notices must be sent to all users at least two days prior to going offline.
-#### SECURITY: The systems security requirements shall conform to FERPA standards.
-
+#### Availability:
+The Student Calendar should be available to users twenty-four hours a day, seven days a week unless the software is undergoing scheduled maintenance.
+#### Correctness:
+The Student Calendar must display all user assignments and events in their correct times and dates. User groups must display correct contact information.
+#### Maintainability:
+Developers shall be able to be maintain and update the system after its initial release. Modifications should be able to be made while the system is live. Major changes shall require scheduled maintenance and the application will not be accessible to users. Maintenance notices must be sent to all users at least two days prior to going offline.
+#### Security:
+The systems security requirements shall conform to FERPA standards.
 # 4.0 Verification
 
 ## 4.1 Verify External Interface Requirements
@@ -2543,44 +2550,37 @@ Adding items to the list will be tested by selecting the "add to my to-do list" 
 
 ### 4.2.25 Continuous Calendar
 
-This will be tested by going to each calendar view and making sure they can all be scrolled.
+Verification will be complete if the user's can continuously scroll the calendar month view. Each of the months currently on screen will be different background colors. A header label will show which month the calendar is currently on.
 
-### 4.2.25.1 Continuous Calendar Month View
+#### 4.2.25.1 Continuous Calendar Month View
 
-Validation will be successfull if in the moth view, at least the previous months last week, and the next months first week are visable.
+Tester will open the month view of the calendar, and verify that they can see the last week of the previous month, and the first week of the next month. They will scroll down, and verify that the month changes to the next month. The tester will scroll up, and verify that the previous month appears.
 
-### 4.2.25.2 Continuous Calendar Month Alternating Background Color
+#### 4.2.25.2 Continuous Calendar Month Alternating Background Color
 
-Validation will be successfull if each month viewed has an alternating background color.
+The tester will verify that the background of last month's last week is a different color than the current month. They will also verify that the background of the first week of next month is a different background color. They will scroll down, and verify that the background color shifts with the month it corresponds to. For example, if June has a light green background and is the current month, then when scrolling down the light green will be on the last week of June displayed at the top of the view. July and it's corresponding color will be displayed as the current month view.
 
-### 4.2.25.3 Continuous Calendar Month Label
-
-This will be tested by making sure the month is displayed at the top of the calendar durring month view.
-
+#### 4.2.25.3 Continuous Calendar Month Label
+The tester will verify that the current month is displayed at the top of the month view.
 ### 4.2.26 Holidays
 
-This will be tested by checking the calendar to make sure major holidays are marked on the calendar.
+Verification will be complete when the user can see all major holidays as given by the following link: https://www.opm.gov/policy-data-oversight/pay-leave/pay-administration/fact-sheets/holidays-work-schedules-and-pay.
 
-### 4.2.26.1 Labels for Holidays
+#### 4.2.26.1 Labels for Holidays
+The tester will verify that each of the holidays mentioned in the above website under the heading "Holidays for Federal Employees" are on the calendar with the name given, and that the day corresponds to the description on the website.
 
-Validation will be successfull if major holidays are marked with a small text lable naming the holiday.
+#### 4.2.26.2 Watermark on Holidays
+The tester will verify that there is a watermark on each of the holidays, and that the image corresponds to the holiday.### 4.2.27 Location
 
-### 4.2.26.2 Watermark on Holidays
+Verification will be successful when users can add an address to an event, and then click a map icon next to that event that opens the address in their map application.
 
-Validation will be successfull if national holidays on the calendar are also have watermarks on the days of the holidays.
+#### 4.2.27.1 Event Location
 
-### 4.2.27 Location
+Tester will create a calendar event and verify that they can add an address to the event.
 
-This will be tested by adding a location to the calendar, and opening a calendar location in the map application to make sure it works both ways.
+#### 4.2.27.2 Google Maps Integration
 
-### 4.2.27.1 Event Location
-
-Validation will be successfull if you can add addresses to events you create.
-
-### 4.2.27.2 Google Maps Integration
-
-Validation will be successfull if you can open a location in the calendar with google maps.
-
+Tester will Create a calendar event, and add an address as done in 4.2.27.1. The tester will exit the event details, and then click on the item in the calendar. They will verify that a map with a pin icon is shown and click it. They will verify that the address is the same that they typed in, and that it opens in Google Maps.
 ### 4.2.28 Apple Maps Integration
 
 Validation will be successful if apple device users can have locations that are in the calendar pulled up on Apple Maps.
