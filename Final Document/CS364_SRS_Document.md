@@ -574,7 +574,6 @@ The calendar application will be activated and run on a desktop platform such as
 |Post Condition | The calendar app opens on the user's web browser and displays the default calendar.|
 |Exception Paths| The user application notifies the user of incorrect credentials used for sign-in.|
 |Other	        | None.|
-
 ### 3.2.3 Calendar Application API
 
 This application will allow users to write plugins that integrate with the calendar application. This will enable users to expand the capabilities of the calendar application to fit their needs. This feature will be used by student users that understand how to use plugins. 
@@ -829,10 +828,10 @@ This feature allows access to the I-Learn discussion boards through the calendar
 | Data          | Description |
 |:--------------| :--------------|
 |Use Case Detail| View posts in the discussion boards on I-Learn.|
-|Cross Reference | See 4.2.14.1 for verification details of this use case.| 
+|Cross Reference | See 4.2.14.1 for verification details of this use case.|
 |Trigger        |  |
 |Precondition   | The app must have an internet connection, and be connected to I-Learn.|
-|Basic Path     | <li type='1'>The user will navigate to one of their classes.</li><li type='1'>The user will select a discussion board to view.</li>|
+|Basic Path     | 1.The user will navigate to one of their classes. 2.The user will select a discussion board to view.|
 |Alternate Path |  |
 |Post Condition |  |
 |Exception Paths| The user has no classes, or no open discussions available to them.|
@@ -843,16 +842,14 @@ This feature allows access to the I-Learn discussion boards through the calendar
 | Data          | Description |
 |:--------------| :--------------|
 |Use Case Detail| Make new posts in the discussion boards on I-Learn.|
-|Cross Reference | See 4.2.14.2 for verification details of this use case.| 
+|Cross Reference | See 4.2.14.2 for verification details of this use case.|
 |Trigger        |  |
 |Precondition   | The app must have an internet connection, and be connected to I-Learn.|
-|Basic Path     | <li type='1'>The user will navigate to one of their classes.</li><li type='1'>The user will select a discussion board to view.</li><li type='1'>The user will press the reply, or start new thread button to create a new post.</li>|
+|Basic Path     | 1.The user will navigate to one of their classes. 2.The user will select a discussion board to view. 3.The user will press the reply, or start new thread button to create a new post.|
 |Alternate Path |  |
 |Post Condition |  |
 |Exception Paths| The user has no classes, or no open discussions available to them.|
 |Other          |  |
-
-
 ### 3.2.15 Time Clock
 
 This app allows the user to pick a time zone so all timestamps from I-Learn will be converted to the user's time zone for ease of use and minimal confusion.
@@ -2269,15 +2266,15 @@ There are three data entities involved with the application and the user account
 
 | Data          | Attributes | Use       |
 |:--------------| :--------------|:---------------|
-|Calendar Assignments| <ul><li>ASSIGNMENT_ID<li>User_ID<li>ASSIGNMENT_NAME<li>ASSIGNMENT_CLASS<li>ASSIGNMENT_DESCRIPTION<li>ASSIGNMENT_DUE_DATE<li/>ASSIGNMENT_DUE_TIME<ul/>|The calendar assignments entity is used to organize assignments that are gathered from the I-learn website into the Student Calendar. Assignment data can also be created by the user within the application. |
-|Calendar Events|<ul><li>EVENT_ID<li/>USER_ID<li/>EVENT_NAME<li/>EVENT_TIME<li/>EVENT_LOCATION<li/>EVENT_DESCRIPTION<ul/>|The calendar events data are user created items that are saved in the database for future user access.|
-|Users        |<ul><li>USER_ID<li/>GROUP_ID<li/>USER_FIRST_NAME<li/>USER_LAST_NAME<li/>USER_EMAIL<li/>USER_PHONE<li/>USER_LOGIN_NAME<li/>USER_PASSWORD<ul/> |The User data are the collection of information pertaining to each user including group memberships and contact information.|
+|Calendar Assignments| <ul><li>Assignment ID - This is an integer value to identify an assignment.<li>User ID - This is an integer value to Identify the user to whom the assignment belongs,<li>Assignment name - This is the text name of the assignment.<li>Assignment class - This is the text name of the class the assignment is from.<li>Assignment description - This is a text description about the assignment.<li>Assignment due date - This is a date signifying when the assignment is due.<li/>Assignment due time - This is a time marker indicating when the assignment is due.<ul/>|The calendar assignments entity is used to organize assignments that are gathered from the I-learn website into the Student Calendar. Assignment data can also be created by the user within the application. |
+|Calendar Events|<ul><li>Event ID - This is an integer value to identify an event. <li/>User ID - This is an integer value to Identify the user to whom the event belongs.<li/>Event name - This is the text name of the assignment.<li/>Event time - This is a time marker indicating when the event is taking place.<li/>Event description - This is a text description about the event.<ul/>|The calendar events data are user created items that are saved in the database for future user access.|
+|Users        |<ul><li>User ID - This is an integer value to identify a user. <li/>Group ID - This is an integer value to Identify the group that a user belongs to.<li/>User name - This is a text field to hold the user's name.<li/>User email - This is a text field indicating the user's email.<li/>User phone number - This is a text field indicating a user's number. The phone number must contain at least 10 digits. <li/>User login name - This is a text field for the user's name used to log in to the system.<li/>User password - This is a text field that contains the user's login password. It must contain an uppercase character and a number.<ul/> |The User data are the collection of information pertaining to each user including group memberships and contact information.|
 
 ## 3.6 Design Constraints
 
 [EDITORS / AUTHORS: Look at what the document says about design constrains in IEEE document. pg: 60]
 
-The main design constraints of the Student Calendar will be its web based platform. The user will be required to have an web browser to access the application. The application will not be able to run on all web browsers, so system design will be tailored to work with the more popular web browsers. The application will also be subject to standards of compliance for FERPA, ADA, and BYU-Idaho. This will place constraints on how data may be transferred between the application and I-learn. It will also require added functionality, such as voice recognition, so that disabled students may use the application. All text and language used in the software must comply with BYU-Idaho's honor code.
+Standards of compliance for FERPA, ADA, and BYU-Idaho must be met by the Student Calendar application. The FERPA standards will place constraints on how data may be transferred between the application and I-learn. ADA standards will require added functionality, such as voice recognition, so that disabled students may use the application. The Student Calendar system design must work with the Google Chrome and Mozilla Firefox web browsers. The user will be required to have an web browser to access the application.
 
 ## 3.7 Software System Attributes
 
@@ -2554,6 +2551,7 @@ Tester will open the month view of the calendar, and verify that they can see th
 The tester will verify that the background of last month's last week is a different color than the current month. They will also verify that the background of the first week of next month is a different background color. They will scroll down, and verify that the background color shifts with the month it corresponds to. For example, if June has a light green background and is the current month, then when scrolling down the light green will be on the last week of June displayed at the top of the view. July and it's corresponding color will be displayed as the current month view.
 
 #### 4.2.25.3 Continuous Calendar Month Label
+
 The tester will verify that the current month is displayed at the top of the month view.
 ### 4.2.26 Holidays
 
