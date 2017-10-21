@@ -600,7 +600,7 @@ This application will allow users to write plugins that integrate with the calen
 | Data          | Description |
 |:--------------|:-----------------|
 |Use Case Detail| As a user, I want to add extra features to the calendar application because the calendar application does not have a current feature I want. |
-|XRef           | See 4.2.3.1 for verification details of this use case.|
+|Cross Reference| See 4.2.3.1 for verification details of this use case.|
 |Trigger	      | The user has written or downloaded a plugin for the app and will add it to the calendar. See basic path for details.| 
 |Precondition   | The user has a compatible plugin for the app.| 
 |Basic Path     | 1. The user installs the plugin to the calendar.<br/> 2. The user opens the calendar app.<br/> 3.The user verifies that the plugin is functioning as intended.<br/>|
@@ -886,7 +886,7 @@ Allows the user to establish their time zone so all assignment due dates from I-
 
 A user can setup recurring appointments and events in the calendar for multiple days.
 
-#### 3.2.16.1  User defines a calender event to repeat a certain number of times.
+#### 3.2.16.1  User defines a calendar event to repeat a certain number of times.
 | Data          | Description |
 |:--------------|:-----------------|
 |Use Case Detail| As a user, I want to set up appointments so they recur every day, week, or month, and receive reminders for them. I want this because I will sometimes have appointments once a week at repeating times. |
@@ -895,7 +895,7 @@ A user can setup recurring appointments and events in the calendar for multiple 
 |Precondition   | User has logged into the app with their I-Learn account and the app has synced the user’s calendar. |                       
 |Basic Path	| 1. User accesses the calendar.<br/> 2. User taps a day in the calendar and creates an event.<br/> 3. User defines the number of times the event repeats.<br/> |
 |Alternate Path	| None.|			
-|Post Condition | The user’s appointment is now repeating every day, week, or month, reflecting their prefrence.|
+|Post Condition | The user’s appointment is now repeating every day, week, or month, reflecting their preference.|
 |Exception Paths| If the user has not created an event that is to be repeated, this feature will not be utilized.|
 |Other		| None. |
 
@@ -943,7 +943,7 @@ An application protocol that will work to access and modify items in the calenda
 | Data          | Description |
 |:--------------| :--------------|
 |Use Case Detail| As a user, I want to contact other BYU-I students and teachers associated with my currently enrolled classes through email.|
-|XRef           | |
+|Cross Reference| |
 |Trigger        | The user clicks on the "Contacts" button found in the student's contact profile. |
 |Precondition   | The user must have an accessible and current BYU-I account. |
 |Basic Path     | 1. The user is presented with a list of students that are enrolled in the same classes as the user. Their names are displayed alphabetically.<br> 2. The user selects an individual by clicking or tapping on the student's name.<br> 3. A menu with three options is displayed. These options include "Email", "Text", and "Phone". The user will select the "Email" option.<br> 4. The default email client on the user's device is opened and the recipient field is populated with the selected student's email address.|
@@ -957,7 +957,7 @@ An application protocol that will work to access and modify items in the calenda
 | Data          | Description |
 |:--------------| :--------------|
 |Use Case Detail| As a user, I want to contact other BYU-I students and teachers associated with my currently enrolled classes through text messaging.|
-|XRef           | |
+|Cross Reference| |
 |Trigger        | The user clicks on the "Contacts" button found in the student's contact profile. |
 |Precondition   | The user must have an accessible and current BYU-I account. |
 |Basic Path     | 1. The user is presented with a list of students that are enrolled in the same classes as the user. Their names are displayed alphabetically.<br> 2. The user selects an individual by clicking or tapping on the student's name.<br> 3. A menu with three options is displayed. These options include "Email", "Text", and "Phone". The user will select the "Text" option.<br> 4. The default text messaging client on the user's device is opened with the previously selected student recipient. The user types a message into the text field and sends the message.|
@@ -971,7 +971,7 @@ An application protocol that will work to access and modify items in the calenda
 | Data          | Description |
 |:--------------| :--------------|
 |Use Case Detail| As a user, I want to contact other BYU-I students and teachers associated with my currently enrolled classes through phone communication.|
-|XRef           | |
+|Cross Reference| |
 |Trigger        | The user clicks on the "Contacts" button found in the student's contact profile. |
 |Precondition   | The user must have an accessible and current BYU-I account. |
 |Basic Path     | 1. The user is presented with a list of students that are enrolled in the same classes as the user. Their names are displayed alphabetically.<br> 2. The user selects an individual by clicking or tapping on the student's name.<br> 3. A menu with three options is displayed. These options include "Email", "Text", and "Phone". The user will select the "Phone" option.<br> 4. The default phone application on the user's device is opened with the previously selected student's phone number entered. The user may then call the contact.|
@@ -989,7 +989,7 @@ Settings for how the user wants to be notified by the application. These setting
 | Data          | Description |
 |:--------------| :--------------|
 |Use Case Detail| As a user, I want to turn notifications on or off. |
-|XRef           | |
+|Cross Reference| |
 |Trigger        | The user clicks the settings option. |
 |Precondition   | The user is currently logged into the application. |
 |Basic Path     | 1. The user is presented with a list of settings.<br> 2. The user locates the setting which is labeled "Notifications" and selects it.<br> 3. A page with notification specific settings is displayed. The user finds a toggle switch at the top of the page labeled "Notifications ON/OFF". The user selects this toggle switch and a message is displayed saying "Notifications On" or "Notifications off" depending on the state of the toggle. When the toggle switch is highlighted, notifications are on.  When is not highlighted, notifications are off.
@@ -1003,7 +1003,7 @@ Settings for how the user wants to be notified by the application. These setting
 | Data          | Description |
 |:--------------| :--------------|
 |Use Case Detail| As a user, I want to select how I'm notified.|
-|XRef           | |
+|Cross Reference| |
 |Trigger        | The user clicks the settings option. |
 |Precondition   | The user is currently logged into the application. |
 |Basic Path     | 1. 1. The user is presented with a list of settings.<br> 2. The user locates the setting which is labeled "Notifications" and selects it.<br> 3. A page with notification specific settings is displayed. The user selects "Notification Method" from the settings page.<br> 4. A menu of checkboxes with the labels "Email Notification", "Text Notification", and "Device Notification" is presented. The user may select any combination of checkboxes as a preference for notification methods.<br> 5. After selecting the preferred methods, the user selects the "Apply" button to accept these changes.|
@@ -1053,14 +1053,14 @@ The notification will be a reminder for the user of an upcoming event or assignm
 
 | Data          | Description |
 |:--------------| :--------------|
-|Use Case Detail| As a user, I want to receive push notifications so I can receive information even if I am not currently using the Student Calendat app. This will prevent me from missing any important notifications.|
-|Cross Reference | See 4.2.22.1 for verification details of this use case. For an image refernce see 2.5.6.| 
+|Use Case Detail| As a user, I want to receive push notifications so I can receive information even if I am not currently using the Student Calendar app. This will prevent me from missing any important notifications.|
+|Cross Reference | See 4.2.22.1 for verification details of this use case. For an image reference see 2.5.6.| 
 |Trigger        | The time for which a notification is set to be sent has arrived. See basic path for details.|
 |Precondition   | The user must have notifications enabled within their personal Student Calendar app settings.|
 |Basic Path     | 1. A notification shows up on the top of the users screen.<br>2. The user selects the notification to view its contents.| 
 |Alternate Path | If the Student Calendar application is not running on the user's device when the notification is received, the user may receive an email with the notification details if the user has selected that option in their personal settings. If the user is using a mobile device and the Student Calendar application is not running, the notification will be sent to the top screen of their device.|
 |Post Condition | The user may read the notification. The notification  is closed, and the user can return to a prior activity.|
-|Exception Paths| If The user has disabled notifications or does not have a valid email address, The notification will remain in a list of unopened notifications and will be displayed the next time the Studet Calendar Application is opened.|
+|Exception Paths| If The user has disabled notifications or does not have a valid email address, The notification will remain in a list of unopened notifications and will be displayed the next time the Student Calendar Application is opened.|
 |Other          | Once a notification has been viewed, it is removed from the notification list and is no longer visible from the notification window. The user must look up the event or assignment from the calendar. |
 
 #### 3.2.22.1 Create Notification
@@ -1073,7 +1073,7 @@ The notification will be a reminder for the user of an upcoming event or assignm
 |Precondition   | From the main calendar view, the user selects the notification icon. The notification window appears and the user selects the "create notification" button.|
 |Basic Path     | 1.A notification form appears and prompts the user to fill in information about the new notification.<br>2.The user fills in the information and sets the time for the notification to be sent.<br/>3.The User selects the "save notification" button.| 
 |Alternate Path | The user may select a pre-existing event in the calendar and choose to have the Student Calendar app create a notification about the event to send at a later time.|
-|Post Condition | A new notification is saved to a list of calendar notfications. |
+|Post Condition | A new notification is saved to a list of calendar notifications. |
 |Exception Paths| If the user does not enter any information about the notification, he Application will display an error message and prompt the user to enter information. If the notification time is set to a date in the past, the application will display "invalid date" ad the user will be prompted to enter another date.|
 |Other          | Notifications cannot be modified once they are created. If the user wishes to make any changes the notification will need to be deleted and a new one must be created.|
 ### 3.2.23 Invitations
@@ -1250,7 +1250,7 @@ Because users will be able to add details to a task or event, an option to add a
 
 User's will have location support in the calendar when the user has an address listed under a calendar event. This support is specific to Apple Maps for those that use Mac or iOS.
 
-#### 3.2.28.1 Support for Apple Maps on IPhone
+#### 3.2.28.1 Support for Apple Maps on iPhone
 
 | Data          | Description |
 |:--------------| :--------------|
@@ -1286,7 +1286,7 @@ The calendar application will provide support for locations with the following d
 
 | Data          | Description |
 |:--------------| :--------------|
-|Use Case Detail  | As a user, I want to be able to use any map navigation app to direct me to the destination of an event in my calender.|
+|Use Case Detail  | As a user, I want to be able to use any map navigation app to direct me to the destination of an event in my calendar.|
 |Cross Reference | See 4.2.29.1 for verification details of this use case.| 
 |Trigger        | A scheduled event with an address is clicked.|
 |Precondition   | By default, the user will see an option to create an event or task for a specific day.|
@@ -2218,7 +2218,7 @@ The application will offer a help menu that the user may select to learn how to 
 
 ## 3.4 Performance Requirements
 
-These performance metrics are dependant upon the user having a stable and reliable Internet connection.
+These performance metrics are dependent upon the user having a stable and reliable Internet connection.
 
 The Student Calendar must be interactive with delays in action-response functionality kept to a minimum. When opening window forms or displaying error messages, the delay should be less than 5 seconds. When accessing the user account database, the operation of opening user preferences, sorting user items, and displaying the user calendar will be performed under 5 seconds. Time to Connect to the server will be based on the distance between the user's machine and the server but the application will determine if the connection is successful within 20 seconds.
 
@@ -2264,7 +2264,7 @@ User data shall be backed up continuously as the user is running the application
 
 ## 4.2 Verification Functional Requirements
 
-In this section of the document we will provide high level details on how we will verify that the functional feature requirements are being met. The specific Test Cases will be descripted in the SDD portion of the document. This section is not intended to contain the test case specifics.
+In this section of the document we will provide high level details on how we will verify that the functional feature requirements are being met. The specific Test Cases will be described in the SDD portion of the document. This section is not intended to contain the test case specifics.
 
 ### 4.2.1 Calendar Application is Mobile
 
@@ -2356,11 +2356,11 @@ This feature can be tested by uploading a photo to an event, and then taking a p
 
 ### 4.2.10 Collapsible Calendar
 
-Validation is successful if a tester is able to adjust the list of calendar items for a day from few to all when there are multiple items or if the ‘Show all’ button does not appear when there is only one item. Validation will fail if a tester is unable to expand the list of calender items, despite there being multiple items.
+Validation is successful if a tester is able to adjust the list of calendar items for a day from few to all when there are multiple items or if the ‘Show all’ button does not appear when there is only one item. Validation will fail if a tester is unable to expand the list of calendar items, despite there being multiple items.
 
 #### 4.2.10.1 Calendar list of events extended.
 
-A tester should tap a button labeled 'Show all' in a day in the app calender, which will prove the functionality of this feature.
+A tester should tap a button labeled 'Show all' in a day in the app calendar, which will prove the functionality of this feature.
 
 ### 4.2.11 Group Communication 1: Message Chat
 
@@ -2400,7 +2400,7 @@ Posting to discussion boards will be verified by making a post with one account 
 
 ### 4.2.15 Time Clock
 
-Validation will be successful if the times the student sees in their calndar app is accurately adjusted according to the time zone they entered.
+Validation will be successful if the times the student sees in their calendar app is accurately adjusted according to the time zone they entered.
 
 #### 4.2.15.1 Set time zone
 
@@ -2408,11 +2408,11 @@ The correct time zone value will be verified by comparing the app time, to the a
 
 ### 4.2.16 Recurring Appointments
 
-Validation is successful if user is able to set and adjust recurring events in the calender
+Validation is successful if user is able to set and adjust recurring events in the calendar
 
 #### 4.2.16.1 User defines an appointment to repeat a certain number of times.
 
-Post-completion testing will have a tester attempt to create an event on one day in the calender and set it to repeat every day, week, month, or year.
+Post-completion testing will have a tester attempt to create an event on one day in the calendar and set it to repeat every day, week, month, or year.
 
 ### 4.2.17 Grades
 
@@ -2420,7 +2420,7 @@ Validation is successful if the user is able to see the grade their instructor h
 
 #### 4.2.17.1 Scores in every assignments and overall grades
 
-A tester will submit a test assignment, another tester will “grade” it, and the original test  will confirm whether they see the grade in the calender or not.
+A tester will submit a test assignment, another tester will “grade” it, and the original test  will confirm whether they see the grade in the calendar or not.
 
 ### 4.2.18 Widget
 
@@ -2460,15 +2460,15 @@ This feature will be verified by placing multiple users into a group and display
 
 #### 4.2.21.2 Send Shared Calendar Update Notification
 
-Will be validated by sending a notification and having it successfully recieved by each member in a group.
+Will be validated by sending a notification and having it successfully received by each member in a group.
 
 ### 4.2.22 Push Notifications
 
-Validation will be tested by sending notifications while the application is not running to verify that the push notifications are recieved either through email or the mobile device's notification bar. It will also be verified that if the user does not have email or mobile notification permissions turned on, the push notification will remain active inside of the application and will be visible to the user the next time the application is opened. The application will be tested to verify that the user may successfully create and add a new notification to their Calendar. It will be verified that invalid input from the user will not be accepted. Please see 3.2.22.1 for details on invalid input.
+Validation will be tested by sending notifications while the application is not running to verify that the push notifications are received either through email or the mobile device's notification bar. It will also be verified that if the user does not have email or mobile notification permissions turned on, the push notification will remain active inside of the application and will be visible to the user the next time the application is opened. The application will be tested to verify that the user may successfully create and add a new notification to their Calendar. It will be verified that invalid input from the user will not be accepted. Please see 3.2.22.1 for details on invalid input.
 
 ### 4.2.23 Invitations
 
-The application will be tested to verify that users may receieve invitations about calendar events from other users. The application will verify that if the user attempts to send an invitation before selecting any users the proper error message will be displayed. See 3.2.23.1 for details of the error message. The application will verify that a user will not be able to send notifications to another user if invitation permissions have not been given.
+The application will be tested to verify that users may receive invitations about calendar events from other users. The application will verify that if the user attempts to send an invitation before selecting any users the proper error message will be displayed. See 3.2.23.1 for details of the error message. The application will verify that a user will not be able to send notifications to another user if invitation permissions have not been given.
 
 ### 4.2.24 Simplified To-Do Assignment Display
 
@@ -2524,13 +2524,13 @@ Tester will Create a calendar event, and add an address as done in 4.2.27.1. The
 
 Validation will be successful if Apple device testers can have locations for events that are in the calendar pulled up on Apple Maps, or if they are not able to load an event’s location when there isn’t one. Validation fails if tester is able to load and event into Apple Maps without a location. Apple Maps handles location verification. 
 
-#### 4.2.28.1 Support for Apple Maps on Iphone
+#### 4.2.28.1 Support for Apple Maps on iPhone
 
 Tester will use an iPhone to see if calendar locations can be pulled up in Apple Maps.
 
-#### 4.2.28.1 Support for Apple Maps on MAC computers
+#### 4.2.28.1 Support for Apple Maps on Mac computers
 
-Tester will use a MAC computer to see if calendar locations can be pulled up in Apple Maps.
+Tester will use a Mac computer to see if calendar locations can be pulled up in Apple Maps.
 
 ### 4.2.29 Other Maps Integration
 
@@ -2586,19 +2586,19 @@ This will be tested by activating the personal assistant, and performing several
 
 #### 4.2.34.1 Assistant recommends an assignment that is due.
 
-Validation will be successfull if the assistant reccoments assignments that are nearing their due date.
+Validation will be successful if the assistant reccomends assignments that are nearing their due date.
 
 ### 4.2.35 Feedback
 
-This will be tested by checking to make sure notifications are recieved when new grades or feedback is posted by the instructor.
+This will be tested by checking to make sure notifications are received when new grades or feedback is posted by the instructor.
 
 #### 4.2.35.1 User is notified of feedback on assignment.
 
-Validation will be successfull if notifications are recieved when new feedback is posted by the instructor.
+Validation will be successful if notifications are received when new feedback is posted by the instructor.
 
 #### 4.2.35.2 Feedback is included in notification.
 
-Validation will be successfull if notifications are recieved when new grades are posted by the instructor.
+Validation will be successful if notifications are received when new grades are posted by the instructor.
 
 ### 4.2.36 Group Security
 
@@ -2654,15 +2654,15 @@ This will be tested by making sure events from this calendar can be shared with 
 
 #### 4.2.40.1 Connect to Social Media
 
-Validation will be successfull if you are able to connect to social media sites.
+Validation will be successful if you are able to connect to social media sites.
 
 #### 4.2.40.2 Share Calendar Application Through Social Media
 
-Validation will be successfull if you can share your calendars through social media sites.
+Validation will be successful if you can share your calendars through social media sites.
 
 #### 4.2.40.3 Share Calendar Through Email
 
-Validation will be successfull if you can share your calendars through email.
+Validation will be successful if you can share your calendars through email.
 
 ### 4.2.41 Weather
 
@@ -2723,13 +2723,13 @@ Use a compatible site and the app itself to test the sync and success feature. T
 
 #### 4.2.49.1 Enable Synchronization with I-Learn
 
-The app can be synced with ILearn and automatically pull in the users assignments.
+The app can be synced with I-Learn and automatically pull in the users assignments.
 
-#### 4.2.49.1 Google Chrome Addon add to Calendar
+#### 4.2.49.1 Google Chrome Add-on add to Calendar
 
 The app can have items added to it by the user highlighting them right clicking and selecting add to my calendar. The user will have to pick a date to add the item to.
 
-#### 4.2.49.2 Google Chrome Addon remind about upcoming deadline
+#### 4.2.49.2 Google Chrome Add-on remind about upcoming deadline
 
 A notification will pop up to let the user know that an upcoming deadline is approaching. 
 
@@ -2804,11 +2804,11 @@ User is successfully able to share what they wanted to from the app via tweet.
 
 ### 4.2.56 Instagram
 
-Validation will be successful if the user can successfully share an image from the app via Instragram.
+Validation will be successful if the user can successfully share an image from the app via Instagram.
 
 #### 4.2.56.1 Instagram
 
-We will use an Instagram account to verify that information from our app is sent and posted to the Instragram account.
+We will use an Instagram account to verify that information from our app is sent and posted to the Instagram account.
 
 ### 4.2.57 Custom Images and Icons
 
@@ -2821,7 +2821,7 @@ We will use multiple custom images and icons to verify this users can use their 
 ### 4.2.58 Custom Videos
 
 Validation will be successful if the user is first prompted to allow the app camera permissions.
-Then if the app displays custom videos successfully, it has been succesfully validated.
+Then if the app displays custom videos successfully, it has been successfully validated.
 
 #### 4.2.58.1 Custom Videos
 
@@ -2846,7 +2846,7 @@ We will test each calendar view, to verify the user can use each view successful
 
 ### 4.2.61 Task Rewards
 
-Verification will be successful task points are awarded succesfully for completing tasks.
+Verification will be successful task points are awarded successfully for completing tasks.
 
 #### 4.2.61.1 Goal/XP Bar
 
@@ -2866,14 +2866,14 @@ This will be tested by accessing a BYU-I catalogue.
 
 #### 4.2.63.1 View School Catalog
 
-Validation will be successfull if the BYU-I catalogue is available through the app.
+Validation will be successful if the BYU-I catalogue is available through the app.
 ### 4.2.64 Class Help
 
 This will be tested by following the links provided.
 
 #### 4.2.64.1 Help with class
 
-Validation will be successfull if various help links are provided.
+Validation will be successful if various help links are provided.
 
 ### 4.2.66 Night Mode
 
@@ -2909,7 +2909,7 @@ Logging out from multiple devices and browsers will be performed to verify that 
 
 ## 4.3 Validate Usability Requirements
 
-Gathering a group of 20 users, the usablilty requirements will be validated by having each of them successfully add, modify, and remove an assignment.The users must also successfully add, modify, and remove an event item. Finally, the users must be able to navigate between the main calendar view, daily calendar view, to-do list, and help menu.
+Gathering a group of 20 users, the usability requirements will be validated by having each of them successfully add, modify, and remove an assignment.The users must also successfully add, modify, and remove an event item. Finally, the users must be able to navigate between the main calendar view, daily calendar view, to-do list, and help menu.
 
 ## 4.4 Verify Performance Requirements
 
@@ -2920,7 +2920,7 @@ http://www.softwaretestinghelp.com/what-is-performance-testing-load-testing-stre
 
 ### 4.4.1 Load Testing
 
-BYU-Idaho has about 45k students and faculty. Our plan will be to test for memory leaks, and possible issues with bandwitdth, network, and database components as we progressively increase the load on the system. As we perform this test, we will determine how the system behaves with a low, moderate, and large amount of users. Specifically, we will discover the amount of users that can perform tasks simultaneously. These tasks include: loading the application on different web browsers, creating an account, creating a custom calendar, adding and removing tasks, and using the chat and messaging feature. 
+BYU-Idaho has about 45k students and faculty. Our plan will be to test for memory leaks, and possible issues with bandwidth, network, and database components as we progressively increase the load on the system. As we perform this test, we will determine how the system behaves with a low, moderate, and large amount of users. Specifically, we will discover the amount of users that can perform tasks simultaneously. These tasks include: loading the application on different web browsers, creating an account, creating a custom calendar, adding and removing tasks, and using the chat and messaging feature. 
 
 ### 4.4.2 Stress Testing
 
@@ -2935,7 +2935,7 @@ The logical database requirements will be verified by using the Calendar Assignm
 
 ## 4.6 Verify Design Constraints
 
-To verify the application meets web platform design constraints, the tester will use multiple web browser clients to verify that the application operates within the browser. The tester must successfully use the application in the Goolge Chrome, Mozilla Firefox, and Safari web browsers. The system will be verified that it fulfills FERPA and ADA standards of compliance.
+To verify the application meets web platform design constraints, the tester will use multiple web browser clients to verify that the application operates within the browser. The tester must successfully use the application in the Google Chrome, Mozilla Firefox, and Safari web browsers. The system will be verified that it fulfills FERPA and ADA standards of compliance.
 
 ## 4.7 Verify Software System Attributes
 
@@ -2943,7 +2943,7 @@ Availability: Verification will be successful when the testers demonstrate that 
 
 Correctness: Verification will be successful when the system displays all assignments and events in their proper date and time slots. The tester will be able to select group members and verify that contact information is correct.
 
-Maintainabililty: Verification will be successful when the tester is able to make a modification and add it to the system while it is running.
+Maintainability: Verification will be successful when the tester is able to make a modification and add it to the system while it is running.
 
 Security: Verification will be successful when the system meets FERPA standards of compliance.
 
