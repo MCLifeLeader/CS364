@@ -273,6 +273,7 @@ This document is intended for project managers, team leaders, writers, developer
 
 Reading this document in the order it has been presented is highly recommended for most readers. Careful attention to the glossary and overview of document sections is key to avoid unnecessary confusion. The glossary contains keywords, terms, and abbreviations used throughout the document. The overview of document section provides a concise description of the main sections of the document.
 
+
 ## 1.4 Glossary
 
 |Keywords|Definition     |
@@ -281,11 +282,17 @@ Reading this document in the order it has been presented is highly recommended f
 |API|A set of functions and procedures that allow the creation of applications which access the features or data of an operating system, application, or other service.|
 |Calendar program|A digital recreation of a calendar, A computer program that operates a schedule of events, and keeps track of your tasks and assignments|
 |Calendar location|An address or place that is associated with an event. For example, your home address could be the location for a party|
+|Client| In this context, the University or Brigham Young University - Idaho. |
+|Data| All information that the User provides to the Calander program through the Client and/or Third Party Technologies in order to utilize the Calander program's features. |
+|De-Identified Data| Data that has had all Identifying Information removed from it. This Data is safe for Third-Party organizations and Technologies to use/recive so long as they do not attempt to identify the owner of the Data or to study/advertise/use the Data for any purpose other than those agreed to by the parties. |
 |Developers|The developers for this project are a team of students at Brigham Young University - Idaho.|
+|Disclosure Agreement| an legal document in which the User waives certain defined rights protecting their Data explicitly for the purpose of utilizing the Data in the Calender application.|
 |Discussion Board|An online forum for students of BYU-I to lead discussions, ask questions, and work with other students.|
 |Event|An event is an activity that a user can create with a specific time saved into the Student calendar application.|
+|FERPA| Family Educational Rights and Privacy Act - a law designed to protect the educational records and personal information of students and parents. |
 |Group| A group is two or more users who have the ability to engage in a calendar created and shared by one of the users. In addition groups are users that work together on assignments.|
 |I-Learn|I-Learn is a website service for students of BYU-Idaho. The website contains each student's classes and assignments. I-Learn can be used by the student to turn in homework and access course materials.|
+|Identifying Information| Data that includes but is not restricted to Name, ID numbers (SSN), date of Birth, demographic information, location information, phone number, and school ID. If it can be used to isolate an individual from a group of people than it falls under this category. |
 |LDAP|(Lightweight Directory Access Protocol) is a software protocol for enabling anyone to locate organizations, individuals, and other resources on a corporate intranet or public internet.|
 |Link|A link (short for hyperlink) is an clickable section of text that allows you to move from either one website to another, or from one specific location on an application page to another when clicked or tapped.|
 |Mobile User|Anyone using the calendar app on a mobile device, such as a phone or tablet.|
@@ -295,10 +302,12 @@ Reading this document in the order it has been presented is highly recommended f
 |Student Calendar Integration|Application intended to fulfill requirements.|
 |Software Requirements Specification|Also known as SRS in this document. A document that contains the requirements a product must meet in order to succeed.|
 |SSO|Single Sign-On is an authentication process that allows a user to access multiple applications with one set of login credentials.|
+|Sync| the process to update/create one store of Data using a more current version of Data stored in one or more different locations. |
+|Third-Party| An organization that is not a part of the Client's organization structure nor a part of our own organization but whom we may work with in our application. |
 |Third Party Technology| A provider of technology that is distributed or sold by another entity. For example: Google-Hangouts, Google Maps, Skype, or Zoom.|
 |Toggle|To switch from one effect, feature, or state to another.|
 |Tutorial|Self-paced instructional material that provides step by step information in presenting a concept or learning unit. Computer based tutorials use interactive methods such as hyperlinks, and audio and visual presentation of the subject matter, and provide feedback through question-answer exercises.|
-|User|Students that attend Brigham Young University - Idaho.|
+|User|Students that attend Brigham Young University - Idaho and who use our application.|
 
 ## 1.5 References
 
@@ -334,6 +343,7 @@ Full Feature Description. What the feature is. Who is going to use it. Why is th
 |Post Condition | What happens when the user or process is triggered. What states exist afterward.|
 |Exception Paths| In what cases are there exceptions to how or what something should or should not be doing. This is to be communicated as inclusive ideas.|
 |Other          | This is for anything that was not covered in the previous table descriptions and in most cases, will not contain details.|
+
 # 2.0 Overall Description
 
 Section 2 provides a general overview of the calendar application. The topics covered in the sub-sections are listed below.
@@ -544,6 +554,7 @@ The Student Calendar Application replies upon the Facebook, Google Plus, and Twi
 # 3.0 Requirements Specification
 
 This section contains all of the functional and quality requirements of the Student Calendar Application. It gives a detailed description of the application and its features.
+
 ## 3.1 External Interface Requirements
 
 We have a number of external services and COTS applications that will be integrated into our application.
@@ -555,6 +566,7 @@ We have a number of external services and COTS applications that will be integra
 ## 3.2 Functional Requirements
 
 This section represents the list of functional requirements and use cases that define each of the  various features within the system. Each feature will contain a short description and a detailed list of functional requirements.
+
 ### 3.2.1 Calendar Application is Mobile
 
 The calendar application will activated and run on a mobile platform such as a smart phone or tablet device. The calendar application will provide access to their calendar and event data on a mobile smart device or computer to the user's school calendar. The application will function in a mobile container for mobile aware web pages.
@@ -673,7 +685,6 @@ The Americans with Disabilities Act (ADA) has standards for all electronic and i
 |Exception Paths| The user can cancel the process at any time by saying "Cancel process" out loud.|
 |Other		| None.|
 
-
 ### 3.2.6 Export/Import
 
 The Calendar application will sync with I-Learn's calendar so that all class assignments are added automatically to the application. This is a very important feature because it keeps the user from manually adding all of the assignments.
@@ -759,7 +770,6 @@ The application should have the ability to upload photos with the following exte
 |Exception Paths| The user does not allow access to their camera role or camera. |
 |Other		      | None|
 
-
 ### 3.2.10 Collapsible Calendar
 
 When the user views the Calendar, each day will contain a list of events for that given day. At first, only one event is shown, but the user can choose to show all of them by tapping a button labeled 'Show all'.
@@ -816,21 +826,63 @@ With the press of a single button, a user can start a video conference call with
 
 ### 3.2.13 FERPA Compliant
 
-The Family Educational Rights and Privacy Act (FERPA) is a Federal law designed to protect the privacy of student education records. In order for our app to conform to federal law, out app must meet security standards.
+The Family Educational Rights and Privacy Act (FERPA) is a Federal law designed to protect the privacy of student education and personal records. Some examples of the information protected under FERPA are: grades after they are submitted, grade point average (GPA), location, courses, attendence, and all other information mantained by the university directly related to a student. In order for our app to conform to federal law, out app must meet the following security standards.
 
-#### 3.2.13.1 Student information security.
+#### 3.2.13.1 Prevent Legal Complications.
 
 | Data          | Description |
 |:--------------| :--------------|
-|Use Case Detail| As a student, I want to keep all my student information confidential unless I choose to reveal it because there are times I don’t want people knowing what my grades are.|
+|Use Case Detail| As an administrator, I want to avoid the risks of not complying to FERPA like a lawsuit and the loss of government-funding for students.|
 |Cross Reference | See 4.2.13.1 for verification details of this use case.| 
-|Trigger information| When the user logs into their I-Learn account through the app and syncs their student information. See basic path for more detail. |
-|Precondition   | The user is a student at BYU-I.|
-|Basic Path     | 1. The user logs in at the login screen.<br/> 2. The user taps the ‘Sync’ button.<br/>|
+|Trigger information| When the user accesses this information. |
+|Precondition   | Personal or educational information is required for User to access this application and for it to function.|
+|Basic Path     | Application is reviewed by legal professionals specializing in FERPA applications|
 |Alternate Path | None. |
-|Post Condition | All of the student’s information the app needs to access is kept secure from 3rd parties who might try to access it. |
+|Post Condition | All recommendations or requirements given by legal council are followed  |
 |Exception Paths| None. |
 |Other          | This feature primarily concerns integrity and confidentiality of data. |
+
+#### 3.2.13.1.1 Disclosure Statements.
+
+| Data          | Description |
+|:--------------| :--------------|
+|Use Case Detail| As a third-party developer, one is required by law to issue a disclosure document before any personal information  about a currently enrolled student is shared between one's self and the educational organization one works with. |
+|Cross Reference | See 4.2.13.1.1 for verification details of this use case and a sample disclosure agreement. FERPA Regulation 99.30, and 99.31| 
+|Trigger information| When the user logs into their I-Learn account through the app and chooses to share their student information by selecting the option and agree to the disclosure agreement. See basic path for more detail. |
+|Precondition   | The user is a student at BYU-I.|
+|Basic Path     | 1. The user logs in at the login screen.<br/> 2. The user taps the ‘Sync’ button.<br/> 3. The disclosure agreement pops-up on the screen (see 4.2.13.1.1 for an example of of a disclosure agreement). <br/> 4. User reads disclosure agreement and selects "I agree option"<br/>|
+|Alternate Path | 1. User chooses option to use a third-party company to improve experience using the calander app.<br/> 2. Disclosure agreement for third-party company pops-up. <br/> 3. If user agrees to the disclosure agreement share only information neccesary for calander application to work with third-party application.|
+|Post Condition | Information that the user has shared with us remains isolated from any interaction with 3rd party companies like Google or Microsoft unless user gives these third parties permission to use their personal information. |
+|Exception Paths| 1. If user has already agreed to the disclosure agreement than that step of the process is skipped. <br/> 2. If a user does not agree to the disclosure agreement then the app returns to the login screen.|
+|Other          | This feature primarily concerns integrity and confidentiality of data. |
+
+#### 3.2.13.1.2 Data De-Identification
+
+| Data          | Description |
+|:--------------| :--------------|
+|Use Case Detail| Third-Party organizations only may use de-identified data for marketing, research, development of products, and other purposes. Third-parties must agree to not attempting to identify the owner of de-identified data and may not share de-identified data unless the party they share the data with agrees to not attempt to identify the de-identified data. |
+|Cross Reference |See 4.2.13.1.2 for verification details of this use case. Glossery for Definition of De-Identified Data and Identifying Information. FERPA Regulations 99.20, 99.21, and 99.22 | 
+|Trigger information|The user syncs their data with our app using the "sync" function. |
+|Precondition   | Information being recieved is not already de-identified data or information is being sent to a non-unverstiy organization who has already agreed to not attempt to identify the owner of the information. |
+|Basic Path     | 1. User "syncs" information with third-party organiztion <br/> 2. Trigger above requirement for disclosure of information <br/> 3. Identifying Information is removed from the information to be sent to the third-party. <br/> 4. De-identified data is sent to third-party organization for its use.  |
+|Alternate Path | None. |
+|Post Condition | Third-party organization may use de-identified data as they wish. |
+|Exception Paths| If User refuses to agree to disclosure agreement then the de-identified data is not sent to the third-party organization and User is unable to use that particular third-party organization's services in support of this application unless disclosure agreement is agreed to. |
+|Other          | None. |
+
+#### 3.2.13.1.3 University Access
+
+| Data          | Description |
+|:--------------| :--------------|
+|Use Case Detail| The User and the Client must be able to, upon request, freely obtain any data belonging to them that our organization holds. |
+|Cross Reference |See 4.2.13.1.3 for verification details of this use case. | 
+|Trigger information|The User or Client requests data that we hold that has been holding. |
+|Precondition   | Data belongs to the User requesting it. The Client requests a User's data that has been provided by the Client. |
+|Basic Path     | 1. Request is made by Client/User <br/> 2. Data requested is confirmed to belong to Client/User <br/> 3. Client/User is identified and confirmed to be who they say they are (in case of the Client they must be authorized to speak for the Client as an organization) <br/> 4. Data is sent to Client/User in a format and method that is convienent for them and secure for protection purposes.  |
+|Alternate Path | None.|
+|Post Condition | Client/User obtains requested Data |
+|Exception Paths| If the User is under the age of 18 years old then their Legal Guardian may act as the User for this interaction. |
+|Other          | Any provisions that may limit access to data will lead to legal complications. |
 
 ### 3.2.14 Discussion Board Integration
 
@@ -1044,7 +1096,6 @@ This feature allows the user to select one or more of their calendars, and share
 |Exception Paths| If the user is not sharing any calendars|
 |Other          |  |
 
-
 ### 3.2.22 Push Notifications
 
 The notification will be a reminder for the user of an upcoming event or assignment. The Student Calendar app will send notifications to the user, even if the app is not being used at the time the notification is set to be sent.   
@@ -1076,6 +1127,7 @@ The notification will be a reminder for the user of an upcoming event or assignm
 |Post Condition | A new notification is saved to a list of calendar notifications. |
 |Exception Paths| If the user does not enter any information about the notification, he Application will display an error message and prompt the user to enter information. If the notification time is set to a date in the past, the application will display "invalid date" ad the user will be prompted to enter another date.|
 |Other          | Notifications cannot be modified once they are created. If the user wishes to make any changes the notification will need to be deleted and a new one must be created.|
+
 ### 3.2.23 Invitations
 
 This Feature allows the user to send an invitation to another user or a group of users. An invitation is a written message that is created by the user for the purpose of notifying other users about an event.
@@ -1139,6 +1191,7 @@ The simplified assignment display allows users to view one task as a time to red
 |Post Condition | The user may now view that assignment in the list.|
 |Exception Paths| If the assignment does not have a title, the user will be prompted to enter alternative text. If the user does not enter any text when prompted, an error message is displayed prompting them to try again or cancel.|
 |Other          | None|
+
 ### 3.2.25 Continuous Calendar
 
 Users need to access the different months efficiently. The Calendar app will have a scrollable section where all the months can be accessed. The idea of the continuous calendar is that users will intuitively know that they can scroll to other months, weeks, or days. In the case of a Month view, the last week of the prior month, and the first week of the next month will be added to the current month view as a visual cue that the section is scrollable. Text labels and color backgrounds will help the user identify the month as they scroll.
@@ -1184,6 +1237,7 @@ Users need to access the different months efficiently. The Calendar app will hav
 |Post Condition | The selected view by "Month" is presented to the user and a label will appear on top of the scrollable section.|
 |Exception Paths| The user may choose another view at any time.|
 |Other          | None.|
+
 ### 3.2.26 Holidays
 
 Users need to be aware of specific calendar holidays to plan events more effectively. Text labels and watermarked icons denoting each holiday will help the user identify those days at first glance.
@@ -1215,6 +1269,7 @@ Users need to be aware of specific calendar holidays to plan events more effecti
 |Post Condition | The selected view will identify holidays by showing a watermark image description of the holiday.|
 |Exception Paths| The user can select another calendar view other than the Month view.|
 |Other          | None.|
+
 ### 3.2.27 Location
 
 Because users will be able to add details to a task or event, an option to add addresses to a specific event or task will be available to coordinate group meetings or other social gatherings. This feature will help users to conveniently link addresses to events and display a map view of the addresses using user's Map application. The Map application will also be used to display directions to a location.
@@ -1246,6 +1301,7 @@ Because users will be able to add details to a task or event, an option to add a
 |Post Condition | The user sees a Google Map screen of the location of the event when tapping on the icon found in the event's details screen.|
 |Exception Paths| The attempt may be abandoned at any time.|
 |Other          | None.|
+
 ### 3.2.28 Apple Maps Integration
 
 User's will have location support in the calendar when the user has an address listed under a calendar event. This support is specific to Apple Maps for those that use Mac or iOS.
@@ -1373,6 +1429,7 @@ Group owners should be able to set permissions for the users in the group. They 
 |Post Condition | None. |
 |Exception Paths| If a user has been rejected from a group, they cannot elicit the group again for an invitation after a third try. |
 |Other          | None. |
+
 ### 3.2.32 Group Links
 
 Links are used to deep link to third party technologies for collaboration tools.
@@ -1570,7 +1627,6 @@ The user will be able to adjust the size of the calendar and have the calendar i
 |Exception Paths| If an item that is selected does not contain a description, the zoom window displays "No item description." |
 |Other          | None. |
 
-
 ### 3.2.40 Share Calendar Feature
 The user can share their calendar and task data through their Facebook, Google Plus, and Twitter accounts. The user may also share their data through email. In addition to this, the user will also be able to post an advertisement for the app itself on their social media.
 
@@ -1617,7 +1673,6 @@ The user can share their calendar and task data through their Facebook, Google P
 |Exception Paths| The user may select "Cancel" to exit at any point in the process.|
 |Other          | None.|
 
-
 ### 3.2.41 Weather
 
 When you click on an event it will include the predicted weather for that day.
@@ -1635,7 +1690,6 @@ When you click on an event it will include the predicted weather for that day.
 |Post Condition | User is updated with information about that days weather.|
 |Exception Paths| User can close event window at any time.                 |
 |Other          | None.                                                    |
-
 
 ### 3.2.42 Tutor Integration
 
@@ -1655,7 +1709,6 @@ The user will be able to schedule a tutor from the BYU-I website.
 |Exception Paths| The window can be closed at any time, thereby cancelling the tutor event.|
 |Other          | None.|
 
-
 ### 3.2.43 School Functions
 
 The user will be reminded of upcoming social events.
@@ -1674,8 +1727,7 @@ The user will be reminded of upcoming social events.
 |Exception Paths| User could decide not to sign into BYU-I and therefore not have the school event list.
 |Other          |None.|
  
- 
-### 3.2.044 Printing
+ ### 3.2.044 Printing
 
 The user will be able to print off a schedule.
 
@@ -1692,7 +1744,6 @@ The user will be able to print off a schedule.
 |Post Condition | The calendar is left unchanged. The user has printed selection of the calendar.|
 |Exception Paths| None.|
 |Other          | None.|
-
 
 ### 3.2.45 Badges
 
@@ -1730,7 +1781,6 @@ The user has the option to be quickly directed to I-Learn and specifically indiv
 |Exception Paths| 1. If there is no internet access the user will receive an error message saying "No Internet Connection".|
 |Other          | None.|
 
-
 ### 3.2.47 Assignment Alarm
 
 The user has the option to set an alarm for individual assignments that will let the user know when they should begin working on the assignment.
@@ -1748,7 +1798,6 @@ The user has the option to set an alarm for individual assignments that will let
 |Post Condition | The user will receive a notification that the alarm has been set for a specified date and time.  When the alarm triggers, the notification will include the name of the assignment for which the alarm was set.|
 |Exception Paths| None.|
 |Other          | None.|
-
 
 #### 3.2.49 Sync and Success Share
 
@@ -1825,7 +1874,6 @@ The Calendar app is able to sync and be updated from the browser or a compatible
 |Exception Paths| Can't authenticate to post to Facebook|
 |Other          | None|
 
-
 ### 3.2.51 Google API
 
 The user will be able to sync their Google Calendar with our Student Calendar App.
@@ -1844,7 +1892,6 @@ The user will be able to sync their Google Calendar with our Student Calendar Ap
 |Exception Paths| User can logout of Google account|
 |Other          | None|
 
-
 ### 3.2.52 Apple API
 
 The user can sync their Apple Calendar with their Student Calendar App.
@@ -1861,7 +1908,6 @@ The user can sync their Apple Calendar with their Student Calendar App.
 |Alternate Path | None|
 |Post Condition | The user's Apple calendar events with be synced and displayed in the calendar view. |
 |Exception Paths| The user can exit the login process or logout of their Apple account. |
-
 
 ### 3.2.53 Outlook API
 
@@ -1880,7 +1926,6 @@ The user can sync their Outlook Calendar with our Student Calendar App.
 |Post Condition | The user's Outlook calendar events with be synced and displayed in the calendar view. |
 |Exception Paths| The user can exit the login process or logout of their Outlook account. |
 |Other          | None|
-
 
 ### 3.2.54 Toolbox Bar
 
@@ -1942,7 +1987,6 @@ This bar will have many other buttons and bars related to searching, timer, prog
 |Exception Paths| User hasn't added anyone to app and is unable to see availability.|
 |Other          | None.|
 
-
 ### 3.2.55 Twitter
 
 User will be able to use Twitter while having their calendar up. This will allow the user to connect to other people sharing similar assignments, groups, or just something inspirational or motivational.
@@ -1960,7 +2004,6 @@ User will be able to use Twitter while having their calendar up. This will allow
 |Post Condition | The share option will not direct the user to the login page for Twitter anymore.|
 |Exception Paths| The user may select "Cancel" to exit at any point in the process.|
 |Other          | None.|
-
 
 ### 3.2.56 Instagram
 
@@ -1980,7 +2023,6 @@ User can connect to Instagram on the calendar to share pictures of their calenda
 |Exception Paths| The user may select "Cancel" to exit at any point in the process.|
 |Other          | None.|
 
-
 ### 3.2.57 Custom Images and Icons
 
 The calendar should be able to be personalized. The user will have the ability to interact with the app to change things to their favorite images for the display options on their calendar.
@@ -1998,7 +2040,6 @@ The calendar should be able to be personalized. The user will have the ability t
 | Post Condition  | The user will have a customized view and appearance for each class and layout.|
 | Exception Paths | The user may select "Cancel" to exit at any point in the process.|
 | Other           | None.|
-
 
 ### 3.2.58 Custom Videos
 
@@ -2018,7 +2059,6 @@ The calendar will ask for camera permissions so that the user can use videos to 
 |Exception Paths| The user may select "Cancel" to exit at any point in the process.|
 |Other          | None.|
 
-
 ### 3.2.60 Calendar View
 
 The User will be able to select the calendar view style that suits them best.
@@ -2037,7 +2077,6 @@ The User will be able to select the calendar view style that suits them best.
 | Exception Paths | If the user wishes to undo their selection, they will simply select the view that they had previously been using.|
 | Other           | None.|
 
-
 ### 3.2.61 Task Rewards
 
 The user has the option of enabling a rewards system to encompass different real-world tasks.
@@ -2055,6 +2094,7 @@ The user has the option of enabling a rewards system to encompass different real
 | Post Condition  | After enabling this feature, the sidebar will include a Points and XP 'character stats' display akin to those found in video games, the 'create task' dialogue will prompt the user for task's point values, and the app will award points upon task completion.|
 | Exception Paths | This setting can be disable with the same settings toggle that enabled it.|
 | Other           | If point system is disabled, points should be saved in the event the system is re-enabled. |
+
 ### 3.2.62 User Task List
 
 The User has the option to view all upcoming tasks in their courses.
@@ -2072,6 +2112,7 @@ The User has the option to view all upcoming tasks in their courses.
 | Post Condition  | The list view is displayed.|
 | Exception Paths | The user can navigate back to the calendar view by simply pressing the 'calendar' button visible at the top of the list view display.|
 | Other           | None.|
+
 ### 3.2.63 School Catalog
 
 This feature allows the user to view the entire catalog for BYU-Idaho students. Ideally this would work for other schools as well, but is not required.
@@ -2088,6 +2129,7 @@ This feature allows the user to view the entire catalog for BYU-Idaho students. 
 |Post Condition | The user is in the catalog view for their school.|
 |Exception Paths| A user is not registered for a school and receives an error message stating so.|
 |Other          | If the functionality is not available for other schools, then the view catalog button will only show for BYU-Idaho students.|
+
 ### 3.2.64 Class Help
 
 This feature provides some links to websites that would be helpful for a given assignment or task.
@@ -2105,6 +2147,7 @@ This feature provides some links to websites that would be helpful for a given a
 |Exception Paths| No available links have been connected to this assignment and user receives an error message to alert them.|
 |Exception Paths| No assignment has been selected so no links are found, user is asked to select an assignment.|
 |Other          | |
+
 ### 3.2.66 Night Mode
 
 Night mode is a setting that allows the user to toggle a blue light filter to reduce eye strain.
@@ -2122,6 +2165,7 @@ Night mode is a setting that allows the user to toggle a blue light filter to re
 |Post Condition | A blue light filter has been added.|
 |Exception Paths| None.|
 |Other          | Blue light has been proven to alter circadian rhythm and increase eye-strain. |
+
 #### 3.2.068.0 Quick Add
 
 | Tutor Integration| Adds a ToDo event to a calendar day with only a name        |
@@ -2137,7 +2181,6 @@ Night mode is a setting that allows the user to toggle a blue light filter to re
 |Post Condition | Todo event is created on selected day                        |
 |Exception Paths| Window can be closed at any time, not creating event     |
 |Other          |                                                         |
-
 
 #### 3.2.069.0 Edit Event
 
@@ -2155,8 +2198,6 @@ Night mode is a setting that allows the user to toggle a blue light filter to re
 |Post Condition | Event that is selected is changed                       |
 |Exception Paths| The window can be closed at any time, not editing event.      |
 |Other          | None.                                                       |
-
-
 
 ### 3.2.70 Non-SSO
 
@@ -2189,6 +2230,7 @@ The user will be required to log into the application with a single ID and passw
 |Post Condition | The user is presented with the log in screen as if they had launched the application for the first time.|
 |Exception Paths| None|
 |Other          | None|
+
 ## 3.3 Usability Requirements
 
 The Student calendar must be uniform in its appearance and functionality to improve learnability for the user. This will be accomplished through the following criteria:
@@ -2328,7 +2370,7 @@ The testers will test the I-Learn import functionality and verify that all assig
 
 #### 4.2.6.2 Export
 
-We will test the export functionality and verify that the application's content is successfully added to other third-party applications such as Google Calendar and Apple Calendar.The application will be tested to verify that if the user attempts to export information from the Student Calendar app to another application without the proper permissions, an error message will notify the user that they must acquire permissions before exporting the information. 
+ The export functionality will be tested to verify that the application's content is successfully added to other third-party applications such as Google Calendar and Apple Calendar. The application will be tested to verify that if the user attempts to export information from the Student Calendar app to another application without the proper permissions, an error message will notify the user that they must acquire permissions before exporting the information. 
 
 ### 4.2.7 Reminders
 
@@ -2380,11 +2422,25 @@ We will have a tester attempt to start a video chat after joining a group. If th
 
 ### 4.2.13 FERPA Compliant
 
-Validation will be successful when app securely handles student's education information.
+Validation will be successful when app securely and legally handles student's education information.
 
-#### 4.2.13.1 Student information security
+#### 4.2.13.1 Prevent Legal Complications
 
-Simple security testing with a dummy student account will prove this feature.
+A legal expert's positive evaluation of our application and its interactions with third-party applications in relation to the FERPA laws will successfully validate this requirement
+
+#### 4.2.13.1.1 Disclosure Statements
+
+If disclosure agreements are provided to the user whenever confidential or educational information is shared to and from our application and so long as we can see that those disclosure agreements comply with FERPA guidelines then this requirement will be successfully validated.   
+
+This Document created by the Family Policy Compliance Office of the Department of Education is a model of what our Disclosure Agreement may look like and would need to include to be valid:   http://familypolicy.ed.gov/content/model-notifications-rights-under-ferpa-postsecondary-institutions
+
+#### 3.2.13.1.2 Data De-Identification
+
+Validation will be successful when it can be confirmed that all Identifying Information is not included in the De-Identifed Data that would be sent out to a third-party organization.
+
+#### 3.2.13.1.3 University Access
+
+Validation will be successful when it can be confirmed that the process to request Data and recieve it can be completed without the Data going to the wrong person or without the incorrect Data being sent to Client/User. 
 
 ### 4.2.14 Discussion Board Integration
 
@@ -2501,15 +2557,22 @@ The tester will verify that the background of last month's last week is a differ
 #### 4.2.25.3 Continuous Calendar Month Label
 
 The tester will verify that the current month is displayed at the top of the month view.
+
 ### 4.2.26 Holidays
+
+[EDITORS / REVIEWERS: Below is a reference that should be put in the references section.]
 
 Verification will be complete when the user can see all major holidays as given by the following link: https://www.opm.gov/policy-data-oversight/pay-leave/pay-administration/fact-sheets/holidays-work-schedules-and-pay.
 
 #### 4.2.26.1 Labels for Holidays
+
 The tester will verify that each of the holidays mentioned in the above website under the heading "Holidays for Federal Employees" are on the calendar with the name given, and that the day corresponds to the description on the website.
 
 #### 4.2.26.2 Watermark on Holidays
-The tester will verify that there is a watermark on each of the holidays, and that the image corresponds to the holiday.### 4.2.27 Location
+
+The tester will verify that there is a watermark on each of the holidays, and that the image corresponds to the holiday.
+
+### 4.2.27 Location
 
 Verification will be successful when users can add an address to an event, and then click a map icon next to that event that opens the address in their map application.
 
@@ -2520,6 +2583,7 @@ Tester will create a calendar event and verify that they can add an address to t
 #### 4.2.27.2 Google Maps Integration
 
 Tester will Create a calendar event, and add an address as done in 4.2.27.1. The tester will exit the event details, and then click on the item in the calendar. They will verify that a map with a pin icon is shown and click it. They will verify that the address is the same that they typed in, and that it opens in Google Maps.
+
 ### 4.2.28 Apple Maps Integration
 
 Validation will be successful if Apple device testers can have locations for events that are in the calendar pulled up on Apple Maps, or if they are not able to load an event’s location when there isn’t one. Validation fails if tester is able to load and event into Apple Maps without a location. Apple Maps handles location verification. 
@@ -2867,6 +2931,7 @@ This will be tested by accessing a BYU-I catalogue.
 #### 4.2.63.1 View School Catalog
 
 Validation will be successful if the BYU-I catalogue is available through the app.
+
 ### 4.2.64 Class Help
 
 This will be tested by following the links provided.
@@ -2882,6 +2947,7 @@ Verification will be successful upon having a blue light filter that can be togg
 #### 4.2.66.1 Night Mode
 
 A tester will toggle night mode on, and verify that the blue light filter appears.
+
 ### 4.2.68 Quick Add
 
 When the quick add todo button is clicked, a form opens allowing the user to add a todo event name.
@@ -2889,13 +2955,16 @@ When the quick add todo button is clicked, a form opens allowing the user to add
 ### 4.2.68.1 Quick Add ToDo
 
 When the User is presented with the form for todo even name, the user can "X" (close) out of the window with no change reflected in the calendar.  In the scenario that an event todo name is entered and the form completed, it is possible that the todo event will not be immediately visible in the calendar. If a calendar refresh does not resolve the issue and a secondary quick add does not result in a viewable todo event, a support ticket should be submitted. 
+
 ### 4.2.69 Edit Event
 
 A User with a desire to edit an existing event, selects the event and then selects the edit button to enable event edits.  With the event edit options enabled, the user proceeds to edit event details and saves edits. Edited event is now visible in the calendar. If, while in an edit, the user no longer desires to make an event change, the user can simply close the edit dialog and no changes will be committed. 
 
 ### 4.2.69.1 Edit Event Failure
 
-While unlikely, it is possible for the edit options to fail to engage. In this scenario, close the calendar, reopen, and attempt the edit again. If repeated failed edit attempts occur, submit a ticket with support.### 4.2.70 Non-SSO
+While unlikely, it is possible for the edit options to fail to engage. In this scenario, close the calendar, reopen, and attempt the edit again. If repeated failed edit attempts occur, submit a ticket with support.
+
+### 4.2.70 Non-SSO
 
 Validation will be successful if application is able to provide the user with calendar functionality beyond that of the log in screen.
 
@@ -2913,7 +2982,7 @@ Gathering a group of 20 users, the usability requirements will be validated by h
 
 ## 4.4 Verify Performance Requirements
 
-Authors / Editors please SEE: 
+[Authors / Editors please SEE: These also can be placed in the references section.] 
 https://msdn.microsoft.com/en-us/library/bb924357.aspx
 https://www.radview.com/blog/4-types-of-load-testing-and-when-each-should-be-used/
 http://www.softwaretestinghelp.com/what-is-performance-testing-load-testing-stress-testing/
@@ -2929,6 +2998,7 @@ For stress testing the calendar app, it will be subjected to numerous and repeat
 ### 4.4.3 Capacity Testing
 
 The goal is to be able to support all 45k of BYU-Idaho's students through this application, while allowing no more than 5 seconds of latency on any given request. We will test capacity by making requests as if we had all 45k students using the app throughout the day. If network requests are taking longer then another server will be added to the load balancer and the tests will be run again until the the desired results are demonstrated. This will allow minimized downtime and will help us have a better understanding of the capacity we can support as more users begin to use the application.
+
 ## 4.5 Verify Logical Database Requirements
 
 The logical database requirements will be verified by using the Calendar Assignments, Calendar Events, and Users relational tables as defined in section 3.5 to successfully store information from the I-learn system and retrieve the data for displaying user assignments and events on the Student Calendar. The tester will create a new assignment and event within the application which will be saved to the database. The tester will then log off of the application and sign back in to verify that the items where stored and retrieved successfully.
@@ -2948,15 +3018,22 @@ Maintainability: Verification will be successful when the tester is able to make
 Security: Verification will be successful when the system meets FERPA standards of compliance.
 
 Data Integrity: The application will be tested to verify that changes made from the user are immediately stored into the user account database. The testers will simulate a power outage to verify that all finished changes made by the user are recoverable from the database.
+
 # 5.0 Appendices
+
+[EDITORS / REVIEWERS: Let's remove seciton 5]
 
 ## 5.1 Assumptions and Dependencies
 
 ## 5.2 Acronyms and Abbreviations
+
+[EDITORS / REVIEWERS: Lets move this section into section 1]
+
 | Acronym | Description |
 | ------------ | ------------ |
 | SSO | Single Sign-On; A user signs in with one ID and gains access to multiple systems. |
 | non-SSO |  Non-SSO, or Non-Single Sign-On, is an authentication process that doesn't give access to multiple systems. |
 | URL | Uniform Resource Locator; colloquially known as a website or web address. |
+
 # Index
 
