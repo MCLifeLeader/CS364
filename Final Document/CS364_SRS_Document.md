@@ -2124,18 +2124,18 @@ Night mode is a setting that allows the user to toggle a blue light filter to re
 |Other          | Blue light has been proven to alter circadian rhythm and increase eye-strain. |
 #### 3.2.068.0 Quick Add
 
-| Tutor Integration| Adds an event to a calendar day with only a name        |
+| Tutor Integration| Adds a ToDo event to a calendar day with only a name        |
 |:--------------| :--------------|
-|Use Case Detail  | Quick add   todo                                       |
+|Use Case Detail  | Quick add todo                                       |
 |Cross Reference | See 4.2.068.0 for verification details of this use case.| 
 |Trigger        | User selects quick add button                           |
 |Precondition   | A quick add button is on the screen                     |
 |Basic Path     | 1. User selects quick add button                        |
-|               | 2. Form opens and asks for name of file                 |
-|               | 3. Program adds event to selected day                   |
+|               | 2. Form opens and asks for name of the todo                 |
+|               | 3. Program adds todo event to selected day                   |
 |Alternate Path |                                                         |
-|Post Condition | Event is created on selected day                        |
-|Exception Paths|Window can be closed at any time, not creating event     |
+|Post Condition | Todo event is created on selected day                        |
+|Exception Paths| Window can be closed at any time, not creating event     |
 |Other          |                                                         |
 
 
@@ -2882,15 +2882,20 @@ Verification will be successful upon having a blue light filter that can be togg
 #### 4.2.66.1 Night Mode
 
 A tester will toggle night mode on, and verify that the blue light filter appears.
-### 4.2.28 Feature Name?
+### 4.2.68 Quick Add
 
-#### 4.2.28.1 xxxxxxxxxx
+When the quick add todo button is clicked, a form opens allowing the user to add a todo event name.
 
-### 4.2.28 Feature Name?
+### 4.2.68.1 Quick Add ToDo
 
-#### 4.2.28.1 xxxxxxxxxx
+When the User is presented with the form for todo even name, the user can "X" (close) out of the window with no change reflected in the calendar.  In the scenario that an event todo name is entered and the form completed, it is possible that the todo event will not be immediately visible in the calendar. If a calendar refresh does not resolve the issue and a secondary quick add does not result in a viewable todo event, a support ticket should be submitted. 
+### 4.2.69 Edit Event
 
-### 4.2.70 Non-SSO
+A User with a desire to edit an existing event, selects the event and then selects the edit button to enable event edits.  With the event edit options enabled, the user proceeds to edit event details and saves edits. Edited event is now visible in the calendar. If, while in an edit, the user no longer desires to make an event change, the user can simply close the edit dialog and no changes will be committed. 
+
+### 4.2.69.1 Edit Event Failure
+
+While unlikely, it is possible for the edit options to fail to engage. In this scenario, close the calendar, reopen, and attempt the edit again. If repeated failed edit attempts occur, submit a ticket with support.### 4.2.70 Non-SSO
 
 Validation will be successful if application is able to provide the user with calendar functionality beyond that of the log in screen.
 
