@@ -273,6 +273,7 @@ This document is intended for project managers, team leaders, writers, developer
 
 Reading this document in the order it has been presented is highly recommended for most readers. Careful attention to the glossary and overview of document sections is key to avoid unnecessary confusion. The glossary contains keywords, terms, and abbreviations used throughout the document. The overview of document section provides a concise description of the main sections of the document.
 
+
 ## 1.4 Glossary
 
 |Keywords|Definition     |
@@ -281,11 +282,17 @@ Reading this document in the order it has been presented is highly recommended f
 |API|A set of functions and procedures that allow the creation of applications which access the features or data of an operating system, application, or other service.|
 |Calendar program|A digital recreation of a calendar, A computer program that operates a schedule of events, and keeps track of your tasks and assignments|
 |Calendar location|An address or place that is associated with an event. For example, your home address could be the location for a party|
+|Client| In this context, the University or Brigham Young University - Idaho. |
+|Data| All information that the User provides to the Calander program through the Client and/or Third Party Technologies in order to utilize the Calander program's features. |
+|De-Identified Data| Data that has had all Identifying Information removed from it. This Data is safe for Third-Party organizations and Technologies to use/recive so long as they do not attempt to identify the owner of the Data or to study/advertise/use the Data for any purpose other than those agreed to by the parties. |
 |Developers|The developers for this project are a team of students at Brigham Young University - Idaho.|
+|Disclosure Agreement| an legal document in which the User waives certain defined rights protecting their Data explicitly for the purpose of utilizing the Data in the Calender application.|
 |Discussion Board|An online forum for students of BYU-I to lead discussions, ask questions, and work with other students.|
 |Event|An event is an activity that a user can create with a specific time saved into the Student calendar application.|
+|FERPA| Family Educational Rights and Privacy Act - a law designed to protect the educational records and personal information of students and parents. |
 |Group| A group is two or more users who have the ability to engage in a calendar created and shared by one of the users. In addition groups are users that work together on assignments.|
 |I-Learn|I-Learn is a website service for students of BYU-Idaho. The website contains each student's classes and assignments. I-Learn can be used by the student to turn in homework and access course materials.|
+|Identifying Information| Data that includes but is not restricted to Name, ID numbers (SSN), date of Birth, demographic information, location information, phone number, and school ID. If it can be used to isolate an individual from a group of people than it falls under this category. |
 |LDAP|(Lightweight Directory Access Protocol) is a software protocol for enabling anyone to locate organizations, individuals, and other resources on a corporate intranet or public internet.|
 |Link|A link (short for hyperlink) is an clickable section of text that allows you to move from either one website to another, or from one specific location on an application page to another when clicked or tapped.|
 |Mobile User|Anyone using the calendar app on a mobile device, such as a phone or tablet.|
@@ -295,10 +302,12 @@ Reading this document in the order it has been presented is highly recommended f
 |Student Calendar Integration|Application intended to fulfill requirements.|
 |Software Requirements Specification|Also known as SRS in this document. A document that contains the requirements a product must meet in order to succeed.|
 |SSO|Single Sign-On is an authentication process that allows a user to access multiple applications with one set of login credentials.|
+|Sync| the process to update/create one store of Data using a more current version of Data stored in one or more different locations. |
+|Third-Party| An organization that is not a part of the Client's organization structure nor a part of our own organization but whom we may work with in our application. |
 |Third Party Technology| A provider of technology that is distributed or sold by another entity. For example: Google-Hangouts, Google Maps, Skype, or Zoom.|
 |Toggle|To switch from one effect, feature, or state to another.|
 |Tutorial|Self-paced instructional material that provides step by step information in presenting a concept or learning unit. Computer based tutorials use interactive methods such as hyperlinks, and audio and visual presentation of the subject matter, and provide feedback through question-answer exercises.|
-|User|Students that attend Brigham Young University - Idaho.|
+|User|Students that attend Brigham Young University - Idaho and who use our application.|
 
 ## 1.5 References
 
@@ -816,22 +825,64 @@ With the press of a single button, a user can start a video conference call with
 
 ### 3.2.13 FERPA Compliant
 
-The Family Educational Rights and Privacy Act (FERPA) is a Federal law designed to protect the privacy of student education records. In order for our app to conform to federal law, out app must meet security standards.
+The Family Educational Rights and Privacy Act (FERPA) is a Federal law designed to protect the privacy of student education and personal records. Some examples of the information protected under FERPA are: grades after they are submitted, grade point average (GPA), location, courses, attendence, and all other information mantained by the university directly related to a student. In order for our app to conform to federal law, out app must meet the following security standards.
 
-#### 3.2.13.1 Student information security.
+#### 3.2.13.1 Prevent Legal Complications.
 
 | Data          | Description |
 |:--------------| :--------------|
-|Use Case Detail| As a student, I want to keep all my student information confidential unless I choose to reveal it because there are times I don’t want people knowing what my grades are.|
+|Use Case Detail| As an administrator, I want to avoid the risks of not complying to FERPA like a lawsuit and the loss of government-funding for students.|
 |Cross Reference | See 4.2.13.1 for verification details of this use case.| 
-|Trigger information| When the user logs into their I-Learn account through the app and syncs their student information. See basic path for more detail. |
-|Precondition   | The user is a student at BYU-I.|
-|Basic Path     | 1. The user logs in at the login screen.<br/> 2. The user taps the ‘Sync’ button.<br/>|
+|Trigger information| When the user accesses this information. |
+|Precondition   | Personal or educational information is required for User to access this application and for it to function.|
+|Basic Path     | Application is reviewed by legal professionals specializing in FERPA applications|
 |Alternate Path | None. |
-|Post Condition | All of the student’s information the app needs to access is kept secure from 3rd parties who might try to access it. |
+|Post Condition | All recommendations or requirements given by legal council are followed  |
 |Exception Paths| None. |
 |Other          | This feature primarily concerns integrity and confidentiality of data. |
 
+#### 3.2.13.1.1 Disclosure Statements.
+
+| Data          | Description |
+|:--------------| :--------------|
+|Use Case Detail| As a third-party developer, one is required by law to issue a disclosure document before any personal information  about a currently enrolled student is shared between one's self and the educational organization one works with. |
+|Cross Reference | See 4.2.13.1.1 for verification details of this use case and a sample disclosure agreement. FERPA Regulation 99.30, and 99.31| 
+|Trigger information| When the user logs into their I-Learn account through the app and chooses to share their student information by selecting the option and agree to the disclosure agreement. See basic path for more detail. |
+|Precondition   | The user is a student at BYU-I.|
+|Basic Path     | 1. The user logs in at the login screen.<br/> 2. The user taps the ‘Sync’ button.<br/> 3. The disclosure agreement pops-up on the screen (see 4.2.13.1.1 for an example of of a disclosure agreement). <br/> 4. User reads disclosure agreement and selects "I agree option"<br/>|
+|Alternate Path | 1. User chooses option to use a third-party company to improve experience using the calander app.<br/> 2. Disclosure agreement for third-party company pops-up. <br/> 3. If user agrees to the disclosure agreement share only information neccesary for calander application to work with third-party application.|
+|Post Condition | Information that the user has shared with us remains isolated from any interaction with 3rd party companies like Google or Microsoft unless user gives these third parties permission to use their personal information. |
+|Exception Paths| 1. If user has already agreed to the disclosure agreement than that step of the process is skipped. <br/> 2. If a user does not agree to the disclosure agreement then the app returns to the login screen.|
+|Other          | This feature primarily concerns integrity and confidentiality of data. |
+
+#### 3.2.13.1.2 Data De-Identification
+
+| Data          | Description |
+|:--------------| :--------------|
+|Use Case Detail| Third-Party organizations only may use de-identified data for marketing, research, development of products, and other purposes. Third-parties must agree to not attempting to identify the owner of de-identified data and may not share de-identified data unless the party they share the data with agrees to not attempt to identify the de-identified data. |
+|Cross Reference |See 4.2.13.1.2 for verification details of this use case. Glossery for Definition of De-Identified Data and Identifying Information. FERPA Regulations 99.20, 99.21, and 99.22 | 
+|Trigger information|The user syncs their data with our app using the "sync" function. |
+|Precondition   | Information being recieved is not already de-identified data or information is being sent to a non-unverstiy organization who has already agreed to not attempt to identify the owner of the information. |
+|Basic Path     | 1. User "syncs" information with third-party organiztion <br/> 2. Trigger above requirement for disclosure of information <br/> 3. Identifying Information is removed from the information to be sent to the third-party. <br/> 4. De-identified data is sent to third-party organization for its use.  |
+|Alternate Path | None. |
+|Post Condition | Third-party organization may use de-identified data as they wish. |
+|Exception Paths| If User refuses to agree to disclosure agreement then the de-identified data is not sent to the third-party organization and User is unable to use that particular third-party organization's services in support of this application unless disclosure agreement is agreed to. |
+|Other          | None. |
+
+
+#### 3.2.13.1.3 University Access
+
+| Data          | Description |
+|:--------------| :--------------|
+|Use Case Detail| The User and the Client must be able to, upon request, freely obtain any data belonging to them that our organization holds. |
+|Cross Reference |See 4.2.13.1.3 for verification details of this use case. | 
+|Trigger information|The User or Client requests data that we hold that has been holding. |
+|Precondition   | Data belongs to the User requesting it. The Client requests a User's data that has been provided by the Client. |
+|Basic Path     | 1. Request is made by Client/User <br/> 2. Data requested is confirmed to belong to Client/User <br/> 3. Client/User is identified and confirmed to be who they say they are (in case of the Client they must be authorized to speak for the Client as an organization) <br/> 4. Data is sent to Client/User in a format and method that is convienent for them and secure for protection purposes.  |
+|Alternate Path | None.|
+|Post Condition | Client/User obtains requested Data |
+|Exception Paths| If the User is under the age of 18 years old then their Legal Guardian may act as the User for this interaction. |
+|Other          | Any provisions that may limit access to data will lead to legal complications. |
 ### 3.2.14 Discussion Board Integration
 
 This feature allows access to the I-Learn discussion boards through the calendar app. It's a quick way to keep up to date on class and group discussions, and make quick feedback.
@@ -2328,7 +2379,7 @@ The testers will test the I-Learn import functionality and verify that all assig
 
 #### 4.2.6.2 Export
 
-We will test the export functionality and verify that the application's content is successfully added to other third-party applications such as Google Calendar and Apple Calendar.The application will be tested to verify that if the user attempts to export information from the Student Calendar app to another application without the proper permissions, an error message will notify the user that they must acquire permissions before exporting the information. 
+ The export functionality will be tested to verify that the application's content is successfully added to other third-party applications such as Google Calendar and Apple Calendar. The application will be tested to verify that if the user attempts to export information from the Student Calendar app to another application without the proper permissions, an error message will notify the user that they must acquire permissions before exporting the information. 
 
 ### 4.2.7 Reminders
 
@@ -2380,12 +2431,25 @@ We will have a tester attempt to start a video chat after joining a group. If th
 
 ### 4.2.13 FERPA Compliant
 
-Validation will be successful when app securely handles student's education information.
+Validation will be successful when app securely and legally handles student's education information.
 
-#### 4.2.13.1 Student information security
+#### 4.2.13.1 Prevent Legal Complications
 
-Simple security testing with a dummy student account will prove this feature.
+A legal expert's positive evaluation of our application and its interactions with third-party applications in relation to the FERPA laws will successfully validate this requirement
 
+#### 4.2.13.1.1 Disclosure Statements
+
+If disclosure agreements are provided to the user whenever confidential or educational information is shared to and from our application and so long as we can see that those disclosure agreements comply with FERPA guidelines then this requirement will be successfully validated.   
+
+This Document created by the Family Policy Compliance Office of the Department of Education is a model of what our Disclosure Agreement may look like and would need to include to be valid:   http://familypolicy.ed.gov/content/model-notifications-rights-under-ferpa-postsecondary-institutions
+
+#### 3.2.13.1.2 Data De-Identification
+
+Validation will be successful when it can be confirmed that all Identifying Information is not included in the De-Identifed Data that would be sent out to a third-party organization.
+
+#### 3.2.13.1.3 University Access
+
+Validation will be successful when it can be confirmed that the process to request Data and recieve it can be completed without the Data going to the wrong person or without the incorrect Data being sent to Client/User. 
 ### 4.2.14 Discussion Board Integration
 
 Validation will be successful if the app is able to access the discussion boards.
