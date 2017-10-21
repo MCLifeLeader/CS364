@@ -9,4 +9,4 @@
 |Settings Page View| Section 2.5.5|
 |Notifications Window View| Section 2.5.6|
 |Daily Calendar Window View| Section 2.5.7|
-
+|Product Perspective Diagram| Section 2.5.8 (Pg #)|
