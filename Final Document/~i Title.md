@@ -1,9 +1,9 @@
 # Software Requirements Specification
 
 
-## Version 1.4
+## Version 1.7
 
-## October 18th, 2017
+## October 21th, 2017
 
 # Student Calendar Integration Application
 

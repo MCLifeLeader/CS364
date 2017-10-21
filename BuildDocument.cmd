@@ -15,6 +15,7 @@ type "1.3.0.0.md" >> CS364_SRS_Document.md
 type "1.4.0.0.md" >> CS364_SRS_Document.md
 type "1.5.0.0.md" >> CS364_SRS_Document.md
 type "1.6.0.0.md" >> CS364_SRS_Document.md
+type "1.7.0.0.md" >> CS364_SRS_Document.md
 
 type "2.0.0.0.md" >> CS364_SRS_Document.md
 
@@ -87,20 +88,6 @@ type "3.2.053.0.md" >> CS364_SRS_Document.md
 type "3.2.054.0.md" >> CS364_SRS_Document.md
 type "3.2.055.0.md" >> CS364_SRS_Document.md
 type "3.2.056.0.md" >> CS364_SRS_Document.md
-type "3.2.057.0.md" >> CS364_SRS_Document.md
-type "3.2.058.0.md" >> CS364_SRS_Document.md
-type "3.2.059.0.md" >> CS364_SRS_Document.md
-type "3.2.060.0.md" >> CS364_SRS_Document.md
-type "3.2.061.0.md" >> CS364_SRS_Document.md
-type "3.2.062.0.md" >> CS364_SRS_Document.md
-type "3.2.063.0.md" >> CS364_SRS_Document.md
-type "3.2.064.0.md" >> CS364_SRS_Document.md
-type "3.2.065.0.md" >> CS364_SRS_Document.md
-type "3.2.066.0.md" >> CS364_SRS_Document.md
-type "3.2.067.0.md" >> CS364_SRS_Document.md
-type "3.2.068.0.md" >> CS364_SRS_Document.md
-type "3.2.069.0.md" >> CS364_SRS_Document.md
-type "3.2.070.0.md" >> CS364_SRS_Document.md
 
 type "3.3.0.0.md" >> CS364_SRS_Document.md
 type "3.4.0.0.md" >> CS364_SRS_Document.md
@@ -168,29 +155,11 @@ type "4.2.053.0.md" >> CS364_SRS_Document.md
 type "4.2.054.0.md" >> CS364_SRS_Document.md
 type "4.2.055.0.md" >> CS364_SRS_Document.md
 type "4.2.056.0.md" >> CS364_SRS_Document.md
-type "4.2.057.0.md" >> CS364_SRS_Document.md
-type "4.2.058.0.md" >> CS364_SRS_Document.md
-type "4.2.059.0.md" >> CS364_SRS_Document.md
-type "4.2.060.0.md" >> CS364_SRS_Document.md
-type "4.2.061.0.md" >> CS364_SRS_Document.md
-type "4.2.062.0.md" >> CS364_SRS_Document.md
-type "4.2.063.0.md" >> CS364_SRS_Document.md
-type "4.2.064.0.md" >> CS364_SRS_Document.md
-type "4.2.065.0.md" >> CS364_SRS_Document.md
-type "4.2.066.0.md" >> CS364_SRS_Document.md
-type "4.2.067.0.md" >> CS364_SRS_Document.md
-type "4.2.068.0.md" >> CS364_SRS_Document.md
-type "4.2.069.0.md" >> CS364_SRS_Document.md
-type "4.2.070.0.md" >> CS364_SRS_Document.md
 
 type "4.3.0.0.md" >> CS364_SRS_Document.md
 type "4.4.0.0.md" >> CS364_SRS_Document.md
 type "4.5.0.0.md" >> CS364_SRS_Document.md
 type "4.6.0.0.md" >> CS364_SRS_Document.md
 type "4.7.0.0.md" >> CS364_SRS_Document.md
-
-type "5.0.0.0.md" >> CS364_SRS_Document.md
-type "5.1.0.0.md" >> CS364_SRS_Document.md
-type "5.2.0.0.md" >> CS364_SRS_Document.md
 
 type "Index.md" >> CS364_SRS_Document.md
