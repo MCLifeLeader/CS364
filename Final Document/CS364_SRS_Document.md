@@ -1807,7 +1807,7 @@ The user can share their calendar and task data through their Facebook, Google P
 |Cross Reference | See 4.2.39.3 for verification details of this use case.| 
 |Trigger        | The user clicks the "Share" button.|
 |Precondition   | By default, the user will see an option to share.|
-|Basic Path     | A window opens and four choices are presented after clicking "Share": "Facebook", "Google Plus", "Twitter", and "email". The user chooses "email" and is presented with an email interface including a section for the recipient's email address and a text box for entering any messages to the recipient. 2. The user fills out both of these fields and then clicks the "Send" button. The user is then presented with a notification saying "Message Sent".|
+|Basic Path     | A window opens and four choices are presented after clicking "Share": "Facebook", "Google Plus", "Twitter", and "email". 1. The user chooses "email" and is presented with an email interface including a section for the recipient's email address and a text box for entering any messages to the recipient.<br> 2. The user fills out both of these fields and then clicks the "Send" button. The user is then presented with a notification saying "Message Sent".|
 |Alternate Path | None.|
 |Post Condition | The user is presented with a notification that the calendar is sent.|
 |Exception Paths| The user may select "Cancel" to exit at any point in the process.|
@@ -1894,11 +1894,11 @@ Show badges indicating how many messages, notifications, or tasks that have not 
 | Data          | Description |
 |:--------------| :--------------|
 |Use Case Detail| As a user, I want to see if there are new notifications in the app while outside of it.|
-|Cross Reference | See 4.2.44.1 for verification details of this use case.| 
+|Cross Reference | See 4.2.44.1 for verification details of this use case.|
 |Trigger        | User checks device to see if there are any notifications from the calendar app (badges).|
-|Precondition   | Events created, School functions connected.|
-|Basic Path     | 1. Select a badge <br/>2. Select from badges event or notification to view <br/>3. Continue looking through badges until out or until user has seen what they wanted to.<br/>|
-|Alternate Path |None.| 
+|Precondition   | Events are created, and school functions are connected.|
+|Basic Path     | 1. Select a badge. <br/>2. Select from badges event or notification to view. <br/>3. Continue looking through badges until out or until user has seen what they wanted to.<br/>|
+|Alternate Path |None.|
 |Post Condition | Badges are cleared and system is ready to set more.|
 |Exception Paths| User may not check all the badges which leaves some notifications still up.|
 |Other          |None.|
@@ -2264,11 +2264,11 @@ In this section of the document we will provide high level details on how we wil
 
 [EDITORS / AUTHORS: What about the error path]
 
-Validation will be successful if the application is available and usable on mobile platforms. The application will be tested to verify that in the event of a system crash, the user will be prompted to send an error report to the developers.
+Validation will be successful if the application is available and usable on mobile platforms. The application will be tested to verify that in the event of a system crash, the user will be prompted to send an error report to the developers. 
 
 #### 4.2.1.1 Smartphone Application
 
-We will check if the application is available on iOS and Android, as well as usable on mobile web browsers. The application will be verified that it functions according to the specifications found in 3.2.1
+Testers will check that the application is viable on iOS and Android, as well as on mobile web browsers. The application will be verified that it functions according to the specifications found in 3.2.1. An error message will appear if the app is unable to launch on any of the approved platforms.
 
 ### 4.2.2 Calendar Application is Web
 
@@ -2276,7 +2276,7 @@ Validation will be successful if the application is able to be pulled up in a we
 
 #### 4.2.2.1 Access from Web Browser
 
-The application will be tested on the Google Chrome and Mozilla Firefox web browsers to verify that it is web compatible.
+The application will be tested on the Google Chrome and Mozilla Firefox web browsers to verify that it is web compatible. If the app fails to load on these platforms then an error message will alert the user that the program has failed to launch.
 
 ### 4.2.3 Calendar Application API
 
@@ -2665,11 +2665,11 @@ Validation will be successful if the event has a designated area for the inserti
 
 #### 4.2.37.1 Enter quote text
 
-The user will add inspirational text to the designated area of the calendar event.
+The tester will add inspirational text to the designated area of the calendar event. They will test using many different languages to verify that it is displayed correctly.
 
 #### 4.2.37.2 Insert an inspirational image
 
-The user will add an inspirational image to the designated area of the calendar event.
+The user will add an inspirational image to the designated area of the calendar event. If an image can't be uploaded, an error message will be given to the user explaining why. The tester will verify that image will be scaled to fit inside the designated area. 
 
 ### 4.2.38 Night Mode
 
@@ -2685,64 +2685,62 @@ This will be tested by making sure events from this calendar can be shared with 
 
 #### 4.2.39.1 Connect to Social Media
 
-Validation will be successful if you are able to connect to social media sites.
+Validation will be successful if you are able to connect to social media sites.  Testers will test this feature by connecting the app to a social media account.  An error message will be displayed if the app fails to connect with the account because the user entered the wrong credentials.  If there is no network connectivity then the app will alert the user that they will need to try again later.
 
 #### 4.2.39.2 Share Calendar Application Through Social Media
 
-Validation will be successful if you can share your calendars through social media sites.
+Validation will be successful if you can share your calendars through social media sites.  Testers will test this feature by sharing a calendar through a social media service that they have successfully connected with the app.  If there is no network connectivity then the app will alert the user that they will need to try again later.
 
 #### 4.2.39.3 Share Calendar Through Email
 
-Validation will be successful if you can share your calendars through email.
-
+Validation will be successful if you can share your calendars through email.  Testers will test this feature by sharing their calendar through an email application.  If there is no network connectivity then the app will alert the user that they will need to try again later.
 ### 4.2.40 Weather
 
-The calendar should correctly display the predicted weather.
+The calendar will correctly display the predicted weather based on the user's location. If the user's location can't be determined then a corresponding message will be displayed. If weather services are not functioning then the calendar application will inform the user that weather services are down.
 
 #### 4.2.40.1 Weather for Specific Days
 
-Should be able to click the weather section on the calendar and check the projected weather. Additionally, when creating an event on a certain day the predicted weather should appear for that day as well. 
+To verify, the tester will click the weather section on the calendar and check the projected weather. Additionally, when creating an event on a certain day the predicted weather should appear for that day as well, or an error message if the weather was not retrieved.
 
 ### 4.2.41 Tutor Integration
 
-Validation is successful when user clicks on link and is taken to the BYU-I tutor page.
+Validation is successful when user clicks on link and is taken to the BYU-I tutor page. If the BYU-I page is down, then an error page will be displayed.
 
 #### 4.2.41.1 Schedule a Tutor
 
-When the user returns to the calendar after scheduling with their tutor on the BYU-I page then the calendar should open a window so the user can put their tutor session in as an event.
+When the user returns to the calendar after scheduling with their tutor on the BYU-I page then the calendar should open a window so the user can put their tutor session in as an event. If the BYU-I network is down, then the window won't be opened. 
 
 ### 4.2.42 Class Help
 
-This will be tested by following the links provided.
+This will be tested by following the links provided.  Validation will be successful if various help links are provided.
 
 #### 4.2.42.1 Help with class
 
-Validation will be successful if various help links are provided.
+Testers will test this feature to ensure that only appropriate links are listed under the class help.  If a user has not enrolled in any classes then this feature will not contain any links and will instead alert the user that they have no class help available.  An error message will be displayed if a link is broken alerting the user that the link is broken.  If there is no help available for a given class then the user will recieve an alert letting them know that no help is available for that class.
 
 ### 4.2.43 Printing
 
-Validation is successful when highlighted part of calendar chosen by the user is correctly printed out.
+Validation is successful when the selected part of calendar chosen by the user is correctly printed out. If no printer is connected the print button will grayed out and the user will be unable to select it.
 
 #### 4.2.43.1 Printing
 
-The tester should sign into a dummy I-Learn account and print out a faux schedule.
+The tester should sign into a dummy I-Learn account and print out a faux schedule. If the user is unable to log-in to I-Learn then the schedule won't be printed. If the network to I-Learn is down then the error message will be displayed "Unable to connect to I-Learn."
 
-### 4.2.44 Badges
+﻿### 4.2.44 Badges
 
 When the user needs to be notified of events, deadlines, group work or messages then badges should show up with the correct count of any of the above that have not been seen by the user. Additionally, when the user goes through the badges the count should decrease as the badges are seen. If they have all been seen then that badge should disappear.
 
 #### 4.2.44.1 View badges
 
-The tester will simple load the app onto a mobile device and then tap the “Badge” button to view the badges for notifications.
- 
+The tester will load the app onto a mobile device and then tap the “Badge” button to view the badges for notifications.  If there are no notifications then the user will receive an message saying "All caught up". 
  
 ### 4.2.45 Quick Access
 
-When the quick access button is clicked the system needs to redirect to I-Learn's main page. This process has to be significantly faster than the normal I-Learn login process.
+The quick access feature will contain links to the users classes.  Validation will be successful if links redirect correctly to the specific classes.  This feature will also be tested to ensure that the links redirect to the correct classes.
 
 ### 4.2.45.1 Quick Access Class Selection
 
-The User can select a class to go directly to from the app. Once again this process has to be faster than the normal process.
+Testers will test this feature by ensuring that each link contained in the quick access feature redirect to the correct class.  If the user has no classes then they will receive an error message alerting them that there are no availble classes.  If a link is broken then there will be an error message that tells the user that the link is not working.
 
 ### 4.2.46 Assignment Alarm
 
