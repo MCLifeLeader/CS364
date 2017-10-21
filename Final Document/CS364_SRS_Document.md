@@ -3021,9 +3021,14 @@ Data Integrity: The application will be tested to verify that changes made from 
 
 # 5.0 Appendices
 
+[EDITORS / REVIEWERS: Let's remove seciton 5]
+
 ## 5.1 Assumptions and Dependencies
 
 ## 5.2 Acronyms and Abbreviations
+
+[EDITORS / REVIEWERS: Lets move this section into section 1]
+
 | Acronym | Description |
 | ------------ | ------------ |
 | SSO | Single Sign-On; A user signs in with one ID and gains access to multiple systems. |
