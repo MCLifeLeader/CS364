@@ -309,7 +309,15 @@ Reading this document in the order it has been presented is highly recommended f
 |Tutorial|Self-paced instructional material that provides step by step information in presenting a concept or learning unit. Computer based tutorials use interactive methods such as hyperlinks, and audio and visual presentation of the subject matter, and provide feedback through question-answer exercises.|
 |User|Students that attend Brigham Young University - Idaho and who use our application.|
 
-## 1.5 References
+## 1.5 Acronyms
+
+| Acronym | Description |
+| ------------ | ------------ |
+| SSO | Single Sign-On; A user signs in with one ID and gains access to multiple systems. |
+| non-SSO |  Non-SSO, or Non-Single Sign-On, is an authentication process that doesn't give access to multiple systems. |
+| URL | Uniform Resource Locator; colloquially known as a website or web address. |
+
+## 1.6 References
 
   [1] D. Zowghil & C. Coulin, "Requirements Elicitation: A Survey of Techniques, Approaches, and Tools" Engineering and Managing Software Requirements, pp. 19-46, 2005 [Online] Available: http://link.springer.com/chapter/10.1007%2F3-540-28244-0_2#page-1
 
@@ -366,7 +374,7 @@ The Student Calendar can be used as a stand-alone application that gives student
 
 ## 2.2 Product Features
 
-Features have been broken down into various feature categories to group like or related features together.
+Features have been broken down into various categories:
 
 ### 2.2.1 - User Interface
 
@@ -1362,9 +1370,9 @@ The calendar application will provide a video tutorial on how to use the applica
 |:--------------| :--------------|
 |Use Case Detail| As a user, I want a short video tutorial on how to use the calendar application to help me learn how to use the application.|
 |Cross Reference | See 4.2.30.1 for verification details of this use case.| 
-|Trigger        | Entering the Application for the first time.|
-|Precondition   | The user must be signing into the application for the first time. See basic path for more detail.|
-|Basic Path     | 1. The user signs into the application.<br />2. A pop-up appears instructing the user: "Click The Link to Learn How to Use the App." <br />3. The user clicks on the link which takes them to Youtube.|
+|Trigger        | Entering the Application for the first time. See basic path for more detail.|
+|Precondition   | The user must be signing into the application for the first time.|
+|Basic Path     | 1. The user signs into the application.<br />2. A pop-up appears instructing the user: "Click The Link to Learn How to Use the App." <br />3. The user clicks on the link which takes them to Youtube.<br/>|
 |Alternate Path | Include a location labeled "help" which has the link to the tutorial video for those who would like to watch it again.|
 |Post Condition | After the individual has seen the pop-up for the first time it will not pop-up again. They will have to visit the help section to view the video again.|
 |Exception Paths| The pop-up may be left by clicking cancel at any time.|
@@ -1530,17 +1538,17 @@ User is notified if the instructor provides feedback on graded assignments.
 |Exception Paths| None. |
 |Other          | None. |
 
-### 3.2.37 Database for Account Usernames and Passwords
+### 3.2.36 Database for Account Usernames and Passwords
 
 The application will feature a database that will be used to retain usernames and password for students to access their accounts.
 This feature requires the user to log in to view their calendars which provides security for the student's personal information.
 
-#### 3.2.37.1 Verifying Existing Account
+#### 3.2.36.1 Verifying Existing Account
 
 | Data          | Description |
 |:--------------| :--------------|
 |Use Case Detail| As a student, I want to log in to my existing account and gain access to my information.|
-|Cross Reference | See 4.2.37.1 for verification details of this use case.| 
+|Cross Reference | See 4.2.36.1 for verification details of this use case.| 
 |Trigger        | A user selects the "Log In" button.|
 |Precondition   | The user is on the log-in page, which is first viewed when the user opens the application.|
 |Basic Path     | 1.The Username is sent to the server and is verified that it does exist among the list of users.<br />2. The password is checked to verify it matches with the given username.<br /> 3. The Database accepts the request and grants the user privileges to their account data.|
@@ -1549,12 +1557,12 @@ This feature requires the user to log in to view their calendars which provides 
 |Exception Paths| If the Username does not exist within the database, the process is ended and the user is requested to create an account.|
 |Other          | None|
 
-#### 3.2.37.2 Create New Account
+#### 3.2.36.2 Create New Account
 
 | Data          | Description |
 |:--------------| :--------------|
 |Use Case Detail| As a student, I want to create an account and retain my personal information inside the system.|
-|Cross Reference | See 4.2.37.2 for verification details of this use case.| 
+|Cross Reference | See 4.2.36.2 for verification details of this use case.| 
 |Trigger        | The user enters a username and password and selects the "Create Account" button.|
 |Precondition   | The user is on the create account page, which is linked from the log in page.|
 |Basic Path     | 1.The Username is sent to the server and is verified that it does not currently exist in the system.<br />2. The username is then added to the system using the password as the key.|
@@ -1645,7 +1653,7 @@ The user can share their calendar and task data through their Facebook, Google P
 |Exception Paths| The user may select "Cancel" to exit at any point in the process.|
 |Other          | None.|
 
-### 3.2.40.2 Share Calendar Application Advertisement Through Social Media
+#### 3.2.40.2 Share Calendar Application Advertisement Through Social Media
 
 | Data          | Description |
 |:--------------| :--------------|
@@ -1799,81 +1807,6 @@ The user has the option to set an alarm for individual assignments that will let
 |Exception Paths| None.|
 |Other          | None.|
 
-#### 3.2.49 Sync and Success Share
-
-The Calendar app is able to sync and be updated from the browser or a compatible site. The user should also be able to share their success on social media.
-
-#### 3.2.49.1 Enable Synchronization with I-Learn
-
-| Data          | Description |
-|:--------------| :--------------|
-|Use Case Detail| As a user, I want to synchronize my calendar with I-Learn so I don't have to manually enter all my assignments|
-|Cross Reference | See 4.2.49.1 for verification details of this use case.| 
-|Trigger        | User clicks on I-Learn Synchronization button in Settings |
-|Precondition   | User knows I-Learn username and password, and is connected to the internet|
-|Basic Path     | None. I-Learn Calendar app will automatically synchronize. |
-|Alternate Path | None|
-|Post Condition | I-Learn assignments are imported successfully.|
-|Exception Paths| Incorrect credentials, I-Learn authentication not responding|
-|Other          | None|
-
-
-#### 3.2.49.2 Google Chrome Add-on Add to Calendar
-
-| Data          | Description |
-|:--------------| :--------------|
-|Use Case Detail| As a user, I want to add items to my calendar from websites to save time entering them|
-|Cross Reference | See 4.2.49.2 for verification details of this use case.| 
-|Trigger        | User clicks add to calendar in context menu|
-|Precondition   | Chrome extension installed & signed in|
-|Basic Path     | User highlights a date or phrase in Chrome, then right clicks |
-|Alternate Path | None|
-|Post Condition | Desired event is added to calendar|
-|Exception Paths| Highlighted data can't be parsed, extension not authenticated |
-|Other          | None|
-
-#### 3.2.49.3 Google Chrome Add-on Reminder About Upcoming Deadline
-
-| Data          | Description |
-|:--------------| :--------------|
-|Use Case Detail| As a user, I want to get reminders about upcoming deadlines as a popup in Chrome to help me meet deadlines|
-|Cross Reference | See 4.2.49.3 for verification details of this use case.| 
-|Trigger        | An assignment is due within the configured reminder time|
-|Precondition   | Chrome extension installed, signed in, and configured to give reminders|
-|Basic Path     | None|
-|Alternate Path | None|
-|Post Condition | None|
-|Exception Paths| API unavailable|
-|Other          | None|
-
-#### 3.2.49.4 Share User's school success to Google Plus
-
-| Data          | Description |
-|:--------------| :--------------|
-|Use Case Detail| As a user, I want to share my success on Google Plus|
-|Cross Reference | See 4.2.49.4 for verification details of this use case.| 
-|Trigger        | User clicks Google Plus widget|
-|Precondition   | User has created and completed an assignment|
-|Basic Path     | Widget appears after marking an assignment complete |
-|Alternate Path | Widget appears on page of completed assignment|
-|Post Condition | None|
-|Exception Paths| Can't authenticate to post to Google Plus|
-|Other          | None|
-
-#### 3.2.49.5 Share Success to Facebook
-
-| Data          | Description |
-|:--------------| :--------------|
-|Use Case Detail| As a user, I want to share my success on Facebook|
-|Cross Reference | See 4.2.49.5 for verification details of this use case.| 
-|Trigger        | User clicks Facebook widget|
-|Precondition   | User has created and completed an assignment|
-|Basic Path     | Widget appears after marking an assignment complete |
-|Alternate Path | Widget appears on page of completed assignment|
-|Post Condition | None|
-|Exception Paths| Can't authenticate to post to Facebook|
-|Other          | None|
-
 ### 3.2.51 Google API
 
 The user will be able to sync their Google Calendar with our Student Calendar App.
@@ -1985,42 +1918,6 @@ This bar will have many other buttons and bars related to searching, timer, prog
 |Alternate Path | None.|
 |Post Condition | User is able to see availability of associates.|
 |Exception Paths| User hasn't added anyone to app and is unable to see availability.|
-|Other          | None.|
-
-### 3.2.55 Twitter
-
-User will be able to use Twitter while having their calendar up. This will allow the user to connect to other people sharing similar assignments, groups, or just something inspirational or motivational.
-
-#### 3.2.55.1 Twitter
-
-| Data          | Description |
-|:--------------| :--------------|
-|Use Case Detail| As a user, I want to connect the calendar application with my Twitter account to post and share groups, assignments or thoughts directly from the app.|
-|Cross Reference | See 4.2.55.1 for verification details of this use case.| 
-|Trigger        | The user would click the "Share" button and then choose the platform they wish to share from, in this case, Twitter.|
-|Precondition   | By default, the user will see an option to share.|
-|Basic Path     | 1. A window opens and four choices are presented after clicking "Share": "Facebook", "Google Plus", "Twitter", and "Email". The user chooses any of the first three options.<br> 2. Depending on the social media selected the user will be presented with a login screen associated with the selected media where the user will enter their associated username and password. <br>3. The user selects the "Login" button and is presented with a message notifying the user that the application is connected to the chosen social media.|
-|Alternate Path | None.|
-|Post Condition | The share option will not direct the user to the login page for Twitter anymore.|
-|Exception Paths| The user may select "Cancel" to exit at any point in the process.|
-|Other          | None.|
-
-### 3.2.56 Instagram
-
-User can connect to Instagram on the calendar to share pictures of their calendar.
-
-#### 3.2.56.1 Instagram
-
-| Data          | Description |
-|:--------------| :--------------|
-|Use Case Detail| The user can connect to and use Instagram in the calendar application to post and share their thoughts from the app itself.|
-|Cross Reference | See 4.2.56.1 for verification details of this use case.| 
-|Trigger        | The user would click the "Share" button and then choose the platform they wish to share from, in this case, Instagram.|
-|Precondition   | By default, the user will see an option to share.|
-|Basic Path     | 1. A window opens and four choices are presented after clicking "Share": "Facebook", "Google Plus", "Twitter", and "Email". The user chooses any of the first three options. <br>2. Depending on the social media selected the user will be presented with a login screen associated with the selected media where the user will enter their associated username and password. <br>3. The user selects the "Login" button and is presented with a message notifying the user that the application is connected to the chosen social media.|
-|Alternate Path | None.|
-|Post Condition | The share option will not direct the user to the login page for Instagram anymore.|
-|Exception Paths| The user may select "Cancel" to exit at any point in the process.|
 |Other          | None.|
 
 ### 3.2.57 Custom Images and Icons
@@ -2165,39 +2062,6 @@ Night mode is a setting that allows the user to toggle a blue light filter to re
 |Post Condition | A blue light filter has been added.|
 |Exception Paths| None.|
 |Other          | Blue light has been proven to alter circadian rhythm and increase eye-strain. |
-
-#### 3.2.068.0 Quick Add
-
-| Tutor Integration| Adds a ToDo event to a calendar day with only a name        |
-|:--------------| :--------------|
-|Use Case Detail  | Quick add todo                                       |
-|Cross Reference | See 4.2.068.0 for verification details of this use case.| 
-|Trigger        | User selects quick add button                           |
-|Precondition   | A quick add button is on the screen                     |
-|Basic Path     | 1. User selects quick add button                        |
-|               | 2. Form opens and asks for name of the todo                 |
-|               | 3. Program adds todo event to selected day                   |
-|Alternate Path |                                                         |
-|Post Condition | Todo event is created on selected day                        |
-|Exception Paths| Window can be closed at any time, not creating event     |
-|Other          |                                                         |
-
-#### 3.2.069.0 Edit Event
-
-| Edit Event    | Edits an event that has been scheduled.                  |
-|:--------------| :--------------|
-|Use Case Detail| A user wants to edit an event.                                             |
-|Cross Reference | See 4.2.069.0 for verification details of this use case.| 
-|Trigger        | User selects edit button on event.                       |
-|Precondition   | An edit button is on event.                              |
-|Basic Path     | 1. User selects edit button.                             |
-|               | 2. Form with event information opens.                    |
-|               | 3. User changes event information.                       |
-|               | 4. Program changes event information in calendar.        |
-|Alternate Path | None.                                                        |
-|Post Condition | Event that is selected is changed                       |
-|Exception Paths| The window can be closed at any time, not editing event.      |
-|Other          | None.                                                       |
 
 ### 3.2.70 Non-SSO
 
@@ -2664,27 +2528,15 @@ Validation will be successful if notifications are received when new feedback is
 
 Validation will be successful if notifications are received when new grades are posted by the instructor.
 
-### 4.2.36 Group Security
-
-Verification is successful if a guest can only see an event after being invited by the host.
-
-#### 4.2.36.1 Secured groups.
-
-A private group will be formed between various users. An uninvited user will attempt to view the event. The uninvited user will not see the event nor it's details.
-
-#### 4.2.36.2 Group invitation.
-
-A host will create an event, then send various invites to guests so that they can access the event. 
-
-### 4.2.37 Database for Account Usernames and Passwords
+### 4.2.36 Database for Account Usernames and Passwords
 
 Validation will be successful if the database contains all the users of the application stored in a secure manner.
 
-#### 4.2.37.1 Verifying Existing Account
+#### 4.2.36.1 Verifying Existing Account
 
 A user will create a new account. The user will then login to their account with the credentials they created. 
 
-#### 4.2.37.2 Create New Account
+#### 4.2.36.2 Create New Account
 
 A user will create a new account. The account will be inserted into the database in a secure manner.
 
@@ -2699,18 +2551,6 @@ The user will add inspirational text to the designated area of the calendar even
 #### 4.2.38.2 Insert an inspirational image
 
 The user will add an inspirational image to the designated area of the calendar event.
-
-### 4.2.39 Adjustable Calendar/Calendar Item Size
-
-Validation will be successful if all user interface elements scale dynamically in size according to the window size.
-
-#### 4.2.39.1 Mobile tilting functionality
-
-The user will rotate their phone horizontally, and the application will reorient into landscape mode.
-
-#### 4.2.39.2 Desktop calendar item zooming
-
-The user hovers their mouse over an event or clicks and the details are presented in an enlarge interface.
 
 ### 4.2.40 Share Calendar Application
 
@@ -2772,47 +2612,6 @@ The Assignment alarm feature needs to be precise and go off at the correct time.
 
 The alarm set by the user has to go off at the exact time the user specifies.
 
-### 4.2.48 Share
-
-The user will be able to go to a calendar on social media and have the calendar app sync with
-the specified calendar.
-
-### 4.2.48.1 Sharing Calendars
-
-The calendar app is able to import events from an existing calendar from a social media site.
-
-### 4.2.49 Sync and Success Share
-
-Use a compatible site and the app itself to test the sync and success feature. The calendar app has to be able to be updated from these compatible sites. The calendar app also needs to be able to share a success on social media.
-
-#### 4.2.49.1 Enable Synchronization with I-Learn
-
-The app can be synced with I-Learn and automatically pull in the users assignments.
-
-#### 4.2.49.1 Google Chrome Add-on add to Calendar
-
-The app can have items added to it by the user highlighting them right clicking and selecting add to my calendar. The user will have to pick a date to add the item to.
-
-#### 4.2.49.2 Google Chrome Add-on remind about upcoming deadline
-
-A notification will pop up to let the user know that an upcoming deadline is approaching. 
-
-#### 4.2.49.1 Share success to Google Plus
-
-The app can send a success that the user had to google plus.
-
-#### 4.2.49.1 Share success to Facebook
-
-The app can send a success that the user had to Facebook. 
-
-### 4.2.50 Priority Assignments 
-
-The assignments set as priority are quicker to identify then the normal assignments.
-
-#### 4.2.50.1 Priority
-
-An assignment can be set as a priority and then unset.
-
 ### 4.2.51 Google API
 
 The calendar app is able to sync with a Google calendar.
@@ -2857,23 +2656,6 @@ After the assignment process bar is selected the app displays the user's assignm
 
 When this function is selected and associates calendars are checked the app will display the best times for the group to meet.
 
-### 4.2.55 Twitter
-
-When the app is open and the user clicks the 'Share' button,
-the Twitter button is one of the options they can share their thoughts/assignments on.
-
-#### 4.2.55.1 Twitter
-
-User is successfully able to share what they wanted to from the app via tweet.
-
-### 4.2.56 Instagram
-
-Validation will be successful if the user can successfully share an image from the app via Instagram.
-
-#### 4.2.56.1 Instagram
-
-We will use an Instagram account to verify that information from our app is sent and posted to the Instagram account.
-
 ### 4.2.57 Custom Images and Icons
 
 Validation will be successful if the user can upload custom images and they are displayed successfully to the app.
@@ -2890,15 +2672,6 @@ Then if the app displays custom videos successfully, it has been successfully va
 #### 4.2.58.1 Custom Videos
 
 We will use several custom videos to verify that users can use their own custom videos.
-
-### 4.2.59 ToDo Task Engine
-
-Validation will be successful if the user can view their To-Do list and see what they have
-planned for their calendar.
-
-#### 4.2.59.1 Calendar Task & ToDo Engine
-
-We will use several tasks, events, and notifications to verify the ToDo Engine is working, displaying, and updating properly.
 
 ### 4.2.60 Calendar View
 
@@ -2947,22 +2720,6 @@ Verification will be successful upon having a blue light filter that can be togg
 #### 4.2.66.1 Night Mode
 
 A tester will toggle night mode on, and verify that the blue light filter appears.
-
-### 4.2.68 Quick Add
-
-When the quick add todo button is clicked, a form opens allowing the user to add a todo event name.
-
-### 4.2.68.1 Quick Add ToDo
-
-When the User is presented with the form for todo even name, the user can "X" (close) out of the window with no change reflected in the calendar.  In the scenario that an event todo name is entered and the form completed, it is possible that the todo event will not be immediately visible in the calendar. If a calendar refresh does not resolve the issue and a secondary quick add does not result in a viewable todo event, a support ticket should be submitted. 
-
-### 4.2.69 Edit Event
-
-A User with a desire to edit an existing event, selects the event and then selects the edit button to enable event edits.  With the event edit options enabled, the user proceeds to edit event details and saves edits. Edited event is now visible in the calendar. If, while in an edit, the user no longer desires to make an event change, the user can simply close the edit dialog and no changes will be committed. 
-
-### 4.2.69.1 Edit Event Failure
-
-While unlikely, it is possible for the edit options to fail to engage. In this scenario, close the calendar, reopen, and attempt the edit again. If repeated failed edit attempts occur, submit a ticket with support.
 
 ### 4.2.70 Non-SSO
 
@@ -3018,22 +2775,6 @@ Maintainability: Verification will be successful when the tester is able to make
 Security: Verification will be successful when the system meets FERPA standards of compliance.
 
 Data Integrity: The application will be tested to verify that changes made from the user are immediately stored into the user account database. The testers will simulate a power outage to verify that all finished changes made by the user are recoverable from the database.
-
-# 5.0 Appendices
-
-[EDITORS / REVIEWERS: Let's remove seciton 5]
-
-## 5.1 Assumptions and Dependencies
-
-## 5.2 Acronyms and Abbreviations
-
-[EDITORS / REVIEWERS: Lets move this section into section 1]
-
-| Acronym | Description |
-| ------------ | ------------ |
-| SSO | Single Sign-On; A user signs in with one ID and gains access to multiple systems. |
-| non-SSO |  Non-SSO, or Non-Single Sign-On, is an authentication process that doesn't give access to multiple systems. |
-| URL | Uniform Resource Locator; colloquially known as a website or web address. |
 
 # Index
 
