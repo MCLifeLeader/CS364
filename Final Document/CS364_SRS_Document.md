@@ -1,9 +1,9 @@
 # Software Requirements Specification
 
 
-## Version 1.4
+## Version 1.6
 
-## October 18th, 2017
+## October 20th, 2017
 
 # Student Calendar Integration Application
 
@@ -282,6 +282,7 @@ Reading this document in the order it has been presented is highly recommended f
 |Calendar program|A digital recreation of a calendar, A computer program that operates a schedule of events, and keeps track of your tasks and assignments|
 |Calendar location|An address or place that is associated with an event. For example, your home address could be the location for a party|
 |Developers|The developers for this project are a team of students at Brigham Young University - Idaho.|
+|Discussion Board|An online forum for students of BYU-I to lead discussions, ask questions, and work with other students.|
 |Event|An event is an activity that a user can create with a specific time saved into the Student calendar application.|
 |Group| A group is two or more users who have the ability to engage in a calendar created and shared by one of the users. In addition groups are users that work together on assignments.|
 |I-Learn|I-Learn is a website service for students of BYU-Idaho. The website contains each student's classes and assignments. I-Learn can be used by the student to turn in homework and access course materials.|
@@ -418,7 +419,7 @@ Validation for these will be performed through Automated UI testing. The applica
 ## 2.5 Image References
 
 ### 2.5.1 - Main Calendar View:<br/>
-<img  src="https://github.com/MCLifeLeader/CS364/blob/master/Final%20Document/Images/Main_Calendar_View_Remastered.png" height="50%" width="50%"><br/>
+<img  src="https://github.com/MCLifeLeader/CS364/blob/master/Final%20Document/Images/Main%20Calendar%20View.jpg" height="50%" width="50%"><br/>
 ### 2.5.2 - Assignment Priority List View:<br/>
 <img  src="https://github.com/MCLifeLeader/CS364/blob/master/Final%20Document/Images/3.2.004.0_Diagram_attempt2.jpg"><br/>
 ### 2.5.3 - Simplified "To-Do" List View:<br/>
@@ -427,6 +428,10 @@ Validation for these will be performed through Automated UI testing. The applica
 <img  src="https://github.com/MCLifeLeader/CS364/blob/master/Final%20Document/Images/Login-Page.jpg" height="50%" width="50%"><br/>
 ### 2.5.5 - Settings Page View:<br/>
 <img  src="https://github.com/MCLifeLeader/CS364/blob/master/Final%20Document/Images/settings_window.png" height="50%" width="50%"><br/>
+### 2.5.6 - Notifications Window View:<br/>
+<img  src="https://github.com/MCLifeLeader/CS364/blob/master/Final%20Document/Images/Notifications%20View.jpg" height="50%" width="50%"><br/>
+### 2.5.7 - Daily Calendar Window View:<br/>
+<img  src="https://github.com/MCLifeLeader/CS364/blob/master/Final%20Document/Images/Today%20View.jpg" height="50%" width="50%"><br/>
 
 ## 2.6 Technical Requirements
 
@@ -565,7 +570,7 @@ The calendar application will activated and run on a mobile platform such as a s
 |Basic Path	| 1. The user opens the calendar application on their smart phone. <br/>2. The calendar application displays the users upcoming items.<br/>
 |Alternate Path | User recieved a notification icon on their lock screen and when tapped launches the calendar application.|
 |Post Condition	| The calendar application opens and displays the user's default user configured screen.|
-|Exception Paths| The calendar application when erroring out will request to send crash data to us.|
+|Exception Paths| The calendar application when erroring out will request the user to send crash data to us.|
 |Other		      | None.|
 
 ### 3.2.2 Calendar Application is Web
@@ -583,12 +588,12 @@ The calendar application will be activated and run on a desktop platform such as
 |Basic Path     | 1. The user navigates to the calendar application's URL on a web browser. <br> 2. The user provides any credentials the application needs such as username and password. <br> 3. The app displays the user's default calendar view. |            
 |Alternate Path | The user clicks on an event reminder sent via email which launches the application.|
 |Post Condition | The calendar app opens on the user's web browser and displays the default calendar.|
-|Exception Paths| The user application notifies the user of incorrect credentials used for sign-in.|
+|Exception Paths| If the user's web browser is outdated or the browser is not supported by the Student Calendar app, an error message is sent to the user notifying them of the basic requirements needed to successfully run the application.|
 |Other	        | None.|
 
 ### 3.2.3 Calendar Application API
 
-This application will allow users to write plugins that integrate with the calendar application. This will enable users to expand the capabilities of the calendar application to fit their needs. This feature will be used by student users that understand how to use plugins. 
+This application will allow users to write plugins that integrate with the calendar application. A plugin is software that can be added to an existing computer program to add new functionality. This will enable users to expand the capabilities of the calendar application to fit their needs. This feature will be used by student users that understand how to use plugins. 
 
 #### 3.2.3.1 Add a Plugin
 
@@ -601,7 +606,7 @@ This application will allow users to write plugins that integrate with the calen
 |Basic Path     | 1. The user installs the plugin to the calendar.<br/> 2. The user opens the calendar app.<br/> 3.The user verifies that the plugin is functioning as intended.<br/>|
 |Alternate Path | The user installs the plugin from within the application.|
 |Post Condition | The plugin makes changes to the app.|
-|Exception Paths| If the plugin is not compatible and the system notifies the user. As long as the plugin is not installed the attempt can be abandoned at any time.|
+|Exception Paths| If the plugin is not compatible, the system notifies the user and the plugin is not installed into the application. The attempt to install a plugin can be abandoned at any time.|
 |Other	        | None.  |
 
 ### 3.2.4 Priority List
@@ -613,7 +618,7 @@ Students need to prioritize tasks and assignments so they can focus on the most 
 | Data          | Description |
 |:--------------|:-----------------|
 |Use Case Detail  | As a student, I want to be able to see I-Learn assignments ordered by due-date and priority label.|
-|Cross Reference | See 4.2.4.1 for verification details of this use case.| 
+|Cross Reference | See 4.2.4.1 for verification details of this use case. For an image reference see 2.5.2| 
 |Trigger        | The user opens the calendar app.|
 |Precondition   | The system has access to the user's assignments on I-Learn.|                       
 |Basic Path	| 1. The user taps on the monthly view of the calendar.</br>2. The user taps on a specific day and sees a list of assignments sorted by due date and level of priority.</br>3. The user can click on each assignment see the corresponding information if available.|
@@ -627,13 +632,13 @@ Students need to prioritize tasks and assignments so they can focus on the most 
 | Data          | Description |
 |:--------------|:-----------------|
 |Use Case Detail  | As a student, I want to be able to prioritize tasks and assignments to improve my work quality and get urgent work done in a timely manner.|
-|Cross Reference | See 4.2.4.2 for verification details of this use case.| 
+|Cross Reference | See 4.2.4.2 for verification details of this use case. For an image reference see 2.5.2| 
 |Trigger        | The user opens the calendar app.|
 |Precondition   | The user has added custom tasks previously.|                       
 |Basic Path	| 1. The user taps on the monthly view of the calendar.</br>2. The user taps on a specific day and sees a list of assignments sorted by due date and a list of tasks (if any) labeled: high, medium, and low priority. </br>3. The user can click on each assignment or task and see the corresponding information if available.|
 |Alternate Path	| If the user has not added custom tasks, then:</br>1. The user taps on "add task" on the main calendar view.</br>2. The user adds the task and then sets a priority level: high, medium, or low.</br>3. The user sets a time as deadline for the completion of the task.|			
 |Post Condition | The user sees a list of time sensitive assignments and tasks.|
-|Exception Paths| The user can cancel this process at any time.|
+|Exception Paths| If the user attempts to add a task without setting the priority level, an error message notifies the user and they are prompted to choose a priority level. If the user attempts to set a due date that is in the past, an error message notifies the user that the date is invalid. The user can cancel this process at any time.|
 |Other		| None.|
 
 ### 3.2.5 ADA Compliant
@@ -671,7 +676,7 @@ The Americans with Disabilities Act (ADA) has standards for all electronic and i
 
 ### 3.2.6 Export/Import
 
-The Calendar application will sync with I-Learn's calendar so that all class assignments are added automatically to the application. This is a very important feature because it keeps the user from manually adding all the assignments.
+The Calendar application will sync with I-Learn's calendar so that all class assignments are added automatically to the application. This is a very important feature because it keeps the user from manually adding all of the assignments.
 
 #### 3.2.6.1 I-Learn Import
 
@@ -680,11 +685,11 @@ The Calendar application will sync with I-Learn's calendar so that all class ass
 |Use Case Detail| As a user, I want the app to automatically download all the assignments listed on I-Learn for each specific task.|
 |Cross Reference | See 4.2.6.1 for verification details of this use case.| 
 |Trigger	| The user taps on the import button.|
-|Precondition 	| The user has access to another calendar to import from.|
+|Precondition 	| The user has access permission from the I-Learn website to import assignment information.|
 |Basic Path	| 1. The User selects to import calendar items from the other calendar application.</br>2. Once the import is complete the calendar will update to show all added items.|                      
 |Alternate Path | 1. If the import fails, the user will be notified.|
 |Post Condition	| The calendar app will update and show new activities.|
-|Exception Paths| The User may cancel the operation any time before the items have been transferred.|
+|Exception Paths| If the user attempts to import assignments from I-learn without the proper permissions, an error message will notify the user that they must acquire permission by linking to their school account with the Student Calendar app. The User may cancel the operation any time before the items have been transferred.|
 |Other		| None.| 
 
 #### 3.2.6.2 Export
@@ -698,7 +703,7 @@ The Calendar application will sync with I-Learn's calendar so that all class ass
 | Basic Path     | 1. After the User presses the export button they will be prompted for a calendar to export to.</br>2. After the new calendar is selected the system will export the selected items to the new calendar.|
 | Alternate Path | If the new calendar is not compatible with the export the User will be notified.|
 | Post Condition | The new calendar will gain the items from the old calendar.|
-| Exception Paths| The user may cancel the operation any time before the items have been transferred.|
+| Exception Paths| If the user attempts to export information from the Student Calendar app to another application without the proper permissions, an error message will notify the user that they must acquire permissions before exporting the information. The user may cancel the operation any time before the items have been transferred.|
 | Other          | None.|
 
 ### 3.2.7 Reminders
@@ -801,9 +806,9 @@ With the press of a single button, a user can start a video conference call with
 |:--------------| :--------------|
 |Use Case Detail| As a user, I want to easily start a video call with fellow group members from the app because we will need to meet face-to-face for group work. |
 |Cross Reference | See 4.2.12.1 for verification details of this use case.| 
-|Trigger        | A user clicks on the Group Video Chat button. See basic path for details.|
+|Trigger        | A user taps on the 'Group Video Chat' button. See basic path for details.|
 |Precondition   | The user is accepted into a group, the user and all group members have uploaded their 3rd party app contact information (Gmail address or Skype names), and the appropriate 3rd party video communications apps installed on their devices. See basic path for details. |
-|Basic Path	    | 1. The user taps the 'Groups' button.<br/> 2. The user taps the 'Group video chat' button.<br/> 3. A 3rd party video app, such as Skype or Google Hangouts, is started with all members of the group invited to join a video conference call.</br> |
+|Basic Path	    | 1. The user taps the 'Groups' button.<br/> 2. The user taps the 'Group Video Chat' button.<br/> 3. A 3rd party video app, such as Skype or Google Hangouts, is started with all members of the group invited to join a video conference call.</br> |
 |Alternate Path | The user opens the 3rd party video communications app they used previously, and starts a call from there.|
 |Post Condition	| The user is in a group video chat session.|
 |Exception Paths| If members of the group have not provided the necessary information for the app to contact them, an error is displayed stating so. |
@@ -1049,7 +1054,7 @@ The notification will be a reminder for the user of an upcoming event or assignm
 | Data          | Description |
 |:--------------| :--------------|
 |Use Case Detail| As a user, I want to receive push notifications so I can receive information even if I am not currently using the Student Calendat app. This will prevent me from missing any important notifications.|
-|Cross Reference | See 4.2.22.1 for verification details of this use case.| 
+|Cross Reference | See 4.2.22.1 for verification details of this use case. For an image refernce see 2.5.6.| 
 |Trigger        | The time for which a notification is set to be sent has arrived. See basic path for details.|
 |Precondition   | The user must have notifications enabled within their personal Student Calendar app settings.|
 |Basic Path     | 1. A notification shows up on the top of the users screen.<br>2. The user selects the notification to view its contents.| 
@@ -1073,21 +1078,21 @@ The notification will be a reminder for the user of an upcoming event or assignm
 |Other          | Notifications cannot be modified once they are created. If the user wishes to make any changes the notification will need to be deleted and a new one must be created.|
 ### 3.2.23 Invitations
 
-This Feature allows the user to send an invitation to one or more of their calendar events, to one other person, or a group of people.
+This Feature allows the user to send an invitation to another user or a group of users. An invitation is a written message that is created by the user for the purpose of notifying other users about an event.
 
 #### 3.2.23.1 Send Event Invitations
 
 | Data          | Description |
 |:--------------| :--------------|
-|Use Case Detail| Users can invite others to events on their calendar because it is important for group coordination.|
+|Use Case Detail| As a user, I want to send out an invitation to notify my group about an upcoming calendar event so my group will remember to attend the event.|
 |Cross Reference | See 4.2.23.1 for verification details of this use case.| 
-|Trigger        | The user selects event(s), and who to share them with.|
-|Precondition   | The user must have already created one or more events.|
-|Basic Path     | 1.In the settings the user selects "share event(s)".<br>2.The user selects the event(s) they want to share.<br>3.The user selects the people to share the event(s) with.|
-|Alternate Path |  |
-|Post Condition | The people selected receive a notification, and have the option to view the user's event(s).|
-|Exception Paths| The feature is only available if events exist.|
-|Other          |  |
+|Trigger        | The user has selected an event from their calendar and has chosen to share it with one of their groups. See basic path for details.|
+|Precondition   | The user must have already created an event. The user must have permission from another user to send them invitations.|
+|Basic Path     | 1.The user selects an event to view the event details..<br>2.The event window is displayed and the user selects the "Invite" button.<br>3.The user selects the group or individual users to share the event with.<br/>4. The user selects the "send invitation" button.|
+|Alternate Path |  The user may create an invitation that is not associated with a calendar event.|
+|Post Condition | The users to whom the invitation was sent receive a notification in their calendar, and have the option to view the invitation.|
+|Exception Paths| If the user does not select any users before attempting to send the notification, the application displays "You must select at least one user". |
+|Other          | None |
 
 ### 3.2.24 Simplified To-Do Assignment Display
 
@@ -1251,12 +1256,12 @@ User's will have location support in the calendar when the user has an address l
 |:--------------| :--------------|
 |Use Case Detail| As an iPhone user, I want to be able to see where I'm meeting at so that I can arrive at the time scheduled. I will be on the move so I need it to work on my phone.|
 |Cross Reference | See 4.2.28.1 for verification details of this use case.| 
-|Trigger        | A scheduled event with an address is clicked.|
+|Trigger        | A scheduled event with an address is tapped. See basic path for more detail.|
 |Precondition   | The user schedules an event with an address or recognized location.|
-|Basic Path     | The user clicks an event with a scheduled meeting place, they click on a location icon, and the location is then used in Apple Maps.|
+|Basic Path     | 1. The user taps on an event with a scheduled meeting place. <br/> 2. The user taps on a location icon.<br/> 3. The location is then opened in Apple Maps.<br/> |
 |Alternate Path | None.|
 |Post Condition | Apple Maps brings up the location and directions.|
-|Exception Paths| If there is not a location entered then no icon will appear. Apple Maps will handle invalid locations.|
+|Exception Paths| If there is not a location entered, then no icon will appear. Apple Maps will handle invalid locations.|
 |Other          | None.|
 
 #### 3.2.28.2 Support for Apple Maps on Mac Computers
@@ -1267,12 +1272,11 @@ User's will have location support in the calendar when the user has an address l
 |Cross Reference | See 4.2.28.2 for verification details of this use case.| 
 |Trigger        | An item is scheduled with a location.|
 |Precondition   | The user creates a new calendar item.|
-|Basic Path     | The user schedules an event, and sets a location. A small help balloon pops up that asks if they want to see the time to reach their destination. Once they click the balloon then Apple Maps is brought up with the location and the time to arrive.|
+|Basic Path     | 1. The user schedules an event, and sets a location.<br/> 2. A small help balloon appears on the screen that prompts if user wants to see the time to reach their destination.<br/> 3. Once user click the balloon, Apple Maps is opened with the location and the time to arrive.<br/>|
 |Alternate Path | The user clicks an item with a scheduled meeting place, they click on a location icon, and the location is then used in Apple Maps.|
 |Post Condition | Apple Maps must show the time required to reach the destination.|
 |Exception Paths| If there is not a location entered then no icon will appear. Apple Maps will handle invalid locations.|
 |Other          | None.|
-
 
 ### 3.2.29 Other Maps Integration
 
@@ -1282,16 +1286,15 @@ The calendar application will provide support for locations with the following d
 
 | Data          | Description |
 |:--------------| :--------------|
-|Use Case Detail  | As a user of one of the map applications I want to be able to find where I need to go when I schedule it on my calendar.|
+|Use Case Detail  | As a user, I want to be able to use any map navigation app to direct me to the destination of an event in my calender.|
 |Cross Reference | See 4.2.29.1 for verification details of this use case.| 
 |Trigger        | A scheduled event with an address is clicked.|
 |Precondition   | By default, the user will see an option to create an event or task for a specific day.|
-|Basic Path     | 1. The user creates an event on a specific day by clicking or tapping on "create event."<br>2. The user adds an address on the "Where" item of the create event screen.<br>3. The application goes back to the calendar view and shows an icon (map with a pin) next to the added event.<br>4. If user clicks or taps on the map/pin icon, application sends address of event as a destination to user's DEFAULT map application|
+|Basic Path     | 1. The user creates an event on a specific day by clicking or tapping on "create event."<br>2. The user adds an address on the "Where" item of the create event screen.<br>3. The application goes back to the calendar view and shows an icon (map with a pin) next to the added event.<br>4. If user clicks or taps on the map/pin icon, application sends address of event as a destination to user's default map application|
 |Alternate Path | In step 1, the user may have already created an event or task in previous interactions. The user can just click on the event and add a location. Return to step 4. If a user does not have a default map application then use the google maps browser for step 4.|
-|Post Condition | The user and their event location is sent to their DEFAULT map application which will plan a route to the location of the event from their current position.|
+|Post Condition | The user and their event location is sent to their default map application which will plan a route to the location of the event from their current position.|
 |Exception Paths| The attempt may be abandoned at any time. If a user does not have a default map application then use the google maps browser for step 4. |
 |Other          | None.|
-
 
 ### 3.2.30 Video Tutorial
 
@@ -1304,7 +1307,7 @@ The calendar application will provide a video tutorial on how to use the applica
 |Use Case Detail| As a user, I want a short video tutorial on how to use the calendar application to help me learn how to use the application.|
 |Cross Reference | See 4.2.30.1 for verification details of this use case.| 
 |Trigger        | Entering the Application for the first time.|
-|Precondition   | The user must be signing into the application for the first time.|
+|Precondition   | The user must be signing into the application for the first time. See basic path for more detail.|
 |Basic Path     | 1. The user signs into the application.<br />2. A pop-up appears instructing the user: "Click The Link to Learn How to Use the App." <br />3. The user clicks on the link which takes them to Youtube.|
 |Alternate Path | Include a location labeled "help" which has the link to the tutorial video for those who would like to watch it again.|
 |Post Condition | After the individual has seen the pop-up for the first time it will not pop-up again. They will have to visit the help section to view the video again.|
@@ -2251,9 +2254,9 @@ Developers shall be able to be maintain and update the system after its initial 
 
 The systems security requirements shall conform to FERPA standards.
 
-### 3.7.5 Data Integerty
+### 3.7.5 Data Integrity
 
-[How the data is protected and kept clean. How it's maintained. Crash conditions. Bad data entered. Bad data from external sources.]
+User data shall be backed up continuously as the user is running the application. Any changes made by the user will be immediately stored into the user account database. This will ensure that the data is not lost in the event of a power outage.
 
 # 4.0 Verification
 
@@ -2267,38 +2270,33 @@ In this section of the document we will provide high level details on how we wil
 
 [EDITORS / AUTHORS: What about the error path]
 
-Validation will be successful if the application is available and usable on mobile platforms
+Validation will be successful if the application is available and usable on mobile platforms. The application will be tested to verify that in the event of a system crash, the user will be prompted to send an error report to the developers.
 
 #### 4.2.1.1 Smartphone Application
 
-We will check if the application is available on iOS and Android, as well as usable on mobile web browsers.
+We will check if the application is available on iOS and Android, as well as usable on mobile web browsers. The application will be verified that it functions according to the specifications found in 3.2.1
 
 ### 4.2.2 Calendar Application is Web
 
-Validation will be successful if the application is able to be pulled up in a web browser.
+Validation will be successful if the application is able to be pulled up in a web browser. The Student Calendar app will also verify that if the user's web browser is outdated or the browser is not supported by the Student Calendar app, an error message is sent to the user notifying them of the basic requirements needed to successfully run the application. See 3.2.2 for details
 
 #### 4.2.2.1 Access From Web Browser
 
-We will use multiple web browser clients to verify that it is web compatible.
+The application will be tested on the Google Chrome and Mozilla Firefox web browsers to verify that it is web compatible.
 
 ### 4.2.3 Calendar Application API
 
-Validation will be successful if the application's capabilities can be expanded by any user
+Validation will be successful if the application's capabilities can be expanded by any user. The application will be tested to verify that if the plugin is not compatible with the system, the user is notified with an error message.
 
 #### 4.2.3.1 Add a Plugin
 
-We will write a custom plugin and add it to the application to verify the application's capabilities can be expanded by any user
+The testers will write a custom plugin and add it to the application to verify the application's capabilities can be expanded by users. The testers will also attempt to add an incompatible plugin to verify it is not accepted and downloaded into the application.
 
 ### 4.2.4 Priority View
 
 Validation will be successful if the application is able to display a priority list when the user taps on a specific day.
 
 #### 4.2.4.1 Assignment Priority List
-
-[EDITORS / AUTHORS: No personal pronouns. Which days to verify? What happens on weekend or holiday? Leap Year? How many multiple days]
-[EDITORS / AUTHORS: What are the unhappy path testing?]
-[EDITORS / AUTHORS: Validation should be for these things of priority?]
-[EDITORS / AUTHORS: What happens on the negative path testing.]
 
 A test will be performed to ensure that clicking on every week-day displays a list view of assignments and tasks for the day. If a day does not contain any assignments or tasks, then a message should be shown to the user stating that there are no assignments or tasks for the day. In addition, the list view must show the items ranked by due-date and level of priority. For example, if there are several assignments due on a specific day, and all have different deadlines, then the assignment with the earliest deadline with be on top of the list and will have a level of priority label (High, Medium, or Low) that was previously assigned by the user. 
 
@@ -2322,15 +2320,15 @@ A test will be performed on the system's response when the user does not clearly
 
 ### 4.2.6 Export/Import 
 
-Validation will be successful if the application can export to and import content from other third-party applications.
+Validation will be successful if the application can export to and import content from other third-party applications. The system will also be tested to verify that users cannot export or import to third-party applications without proper access permissions.
 
 #### 4.2.6.1 I-Learn Import
 
-We will test the I-Learn import functionality and verify that all content from I-Learn's calendar is added to the application.
+The testers will test the I-Learn import functionality and verify that all assignments from I-Learn's calendar is added to the application.The application will be tested to verify that if the user attempts to import assignments from I-learn without the proper permissions, an error message will notify the user that they must acquire permission by linking to their school account with the Student Calendar app. 
 
 #### 4.2.6.2 Export
 
-We will test the export functionality and verify that the application's content is successfully added to other third-party applications such as Google Calendar and Apple Calendar.
+We will test the export functionality and verify that the application's content is successfully added to other third-party applications such as Google Calendar and Apple Calendar.The application will be tested to verify that if the user attempts to export information from the Student Calendar app to another application without the proper permissions, an error message will notify the user that they must acquire permissions before exporting the information. 
 
 ### 4.2.7 Reminders
 
@@ -2358,7 +2356,7 @@ This feature can be tested by uploading a photo to an event, and then taking a p
 
 ### 4.2.10 Collapsible Calendar
 
-Validation is successful if a tester is able to adjust the list of calendar items for a day from few to all when there are multiple items. 
+Validation is successful if a tester is able to adjust the list of calendar items for a day from few to all when there are multiple items or if the ‘Show all’ button does not appear when there is only one item. Validation will fail if a tester is unable to expand the list of calender items, despite there being multiple items.
 
 #### 4.2.10.1 Calendar list of events extended.
 
@@ -2366,19 +2364,19 @@ A tester should tap a button labeled 'Show all' in a day in the app calender, wh
 
 ### 4.2.11 Group Communication 1: Message Chat
 
-Validation is successful if test is able to message placeholder group members from app by taping a single button. 
+Validation is successful if tester is able to message placeholder group members from app by tapping the ‘Contact’ button, and the message is sent through the device’s default messaging app. Validation fails if the tester is able to tap the ‘Contact’ button for a user without contact information, and the messaging app loads anyway.
 
 #### 4.2.11.1  Group Message Chat
 
-This feature will be validated by having a tester join a placeholder group, where no contact information has been added by any group members, taping the 'Contact' button for a group member, and the message “This user has not provided their information!” appears.
+This feature will be validated by having a tester join a placeholder group, where no contact information has been added by any group members, tapping the 'Contact' button for a group member, and the message “This user has not provided their information!” appears.
 
 ### 4.2.12 Group Communication 2: Video Chat
 
-| Testing is successful if user opens a group video chat in Skype or Google Hangouts though the app. |
+Testing is successful if tester is able to open a group video chat in Skype or Google Hangouts though the app with all members of the group invited to answer the call. Validation is also successful if a member has not provided their contact information and the call does not proceed. Validation fails if Skype or Google Hangouts opens anyway, despite group members not having added their contact information.
  
 #### 4.2.12.1 Video Chat
 
-| We will have a tester attempt to start a video chat after joining a group. If the third-party video chat app opens and the tester can talk to all other members, the feature is successfully implemented. |
+We will have a tester attempt to start a video chat after joining a group. If the third-party video chat app opens and the tester can talk to all other members, the feature is successfully implemented.
 
 ### 4.2.13 FERPA Compliant
 
@@ -2466,35 +2464,27 @@ Will be validated by sending a notification and having it successfully recieved 
 
 ### 4.2.22 Push Notifications
 
-Validation will be successful if push notifications are recieved.
-
-#### 4.2.22.1 Recieve Push Notification
-
-Test notifications will be sent from multiple accounts on multiple devices to verify push notifications are working.
+Validation will be tested by sending notifications while the application is not running to verify that the push notifications are recieved either through email or the mobile device's notification bar. It will also be verified that if the user does not have email or mobile notification permissions turned on, the push notification will remain active inside of the application and will be visible to the user the next time the application is opened. The application will be tested to verify that the user may successfully create and add a new notification to their Calendar. It will be verified that invalid input from the user will not be accepted. Please see 3.2.22.1 for details on invalid input.
 
 ### 4.2.23 Invitations
 
-Validation will be successful if invitations are recieved.
-
-#### 4.2.23.1 Send Event Invitations
-
-Invitations will be sent from multiple accounts on multiple devices to verify Invitations are working.
+The application will be tested to verify that users may receieve invitations about calendar events from other users. The application will verify that if the user attempts to send an invitation before selecting any users the proper error message will be displayed. See 3.2.23.1 for details of the error message. The application will verify that a user will not be able to send notifications to another user if invitation permissions have not been given.
 
 ### 4.2.24 Simplified To-Do Assignment Display
 
-Validation will be successful if the user is able to go to the simplified to-do assignment page of the app, and view their assignments one at a time.
+Validation will be successful if the user is able to go to the simplified to-do assignment page of the app, and view their assignments one at a time. It will be verified that the exception paths for this feature will execute as defined in the 3.2.24 exception path details.
 
 #### 4.2.24.1 Completing an assignment
 
-The simplified to-do assignment display will be tested to make sure that when the button that marks an assignment as complete is pressed, that item will no longer show up on the to-do list.
+The simplified to-do assignment display will be tested to verify that when the button that marks an assignment as complete is pressed, that item will no longer show up on the to-do list. It will be verified that if the user presses an arrow button and the check mark button at the same time, the path will not be executed and the assignment will not be marked as complete.
 
 #### 4.2.24.2 Navigating through assignments
 
-This will be verified by using the navigations buttons to cycle through the to-do list, and make sure all items on the list are shown.
+The application will be verified by using the navigations buttons to cycle through the to-do list, and make sure all items on the list are shown. The feature will be tested to verify that when both arrow buttons are pressed together, the action will be nullified. 
 
 #### 4.2.24.3 Adding assignments to the list
 
-Adding items to the list will be tested by selecting the "add to my to-do list" button, and verifying their presence on the to-do list. 
+Adding items to the list will be tested by selecting the "add to my to-do list" button, and verifying the assignment is added to the to-do list. It will be verified that if the user does not enter any text for the assignment to be added, an error message is displayed prompting them to try again.
 
 ### 4.2.25 Continuous Calendar
 
@@ -2532,19 +2522,19 @@ Tester will create a calendar event and verify that they can add an address to t
 Tester will Create a calendar event, and add an address as done in 4.2.27.1. The tester will exit the event details, and then click on the item in the calendar. They will verify that a map with a pin icon is shown and click it. They will verify that the address is the same that they typed in, and that it opens in Google Maps.
 ### 4.2.28 Apple Maps Integration
 
-Validation will be successful if apple device users can have locations that are in the calendar pulled up on Apple Maps.
+Validation will be successful if Apple device testers can have locations for events that are in the calendar pulled up on Apple Maps, or if they are not able to load an event’s location when there isn’t one. Validation fails if tester is able to load and event into Apple Maps without a location. Apple Maps handles location verification. 
 
 #### 4.2.28.1 Support for Apple Maps on Iphone
 
-We will use an Iphone and see if calendar locations can be pulled up in Apple Maps.
+Tester will use an iPhone to see if calendar locations can be pulled up in Apple Maps.
 
 #### 4.2.28.1 Support for Apple Maps on MAC computers
 
-We will use a MAC computer and see if calendar locations can be pulled up in Apple Maps.
+Tester will use a MAC computer to see if calendar locations can be pulled up in Apple Maps.
 
 ### 4.2.29 Other Maps Integration
 
-Validation will be successful if calendar locations can be pulled up in various map applications.
+Validation will be successful if calendar locations can be pulled up in various map applications or in the Google Maps browser application. Validation fails if the user does not have any map applications or web browsers installed on their device. Map applications will handle location validation.
 
 #### 4.2.29.1 Find a location
 
@@ -2952,6 +2942,7 @@ Maintainabililty: Verification will be successful when the tester is able to mak
 
 Security: Verification will be successful when the system meets FERPA standards of compliance.
 
+Data Integrity: The application will be tested to verify that changes made from the user are immediately stored into the user account database. The testers will simulate a power outage to verify that all finished changes made by the user are recoverable from the database.
 # 5.0 Appendices
 
 ## 5.1 Assumptions and Dependencies
