@@ -293,14 +293,14 @@ Reading this document in the order it has been presented is highly recommended f
 |Calendar program|A digital recreation of a calendar, A computer program that operates a schedule of events, and keeps track of your tasks and assignments|
 |Calendar location|An address or place that is associated with an event. For example, your home address could be the location for a party|
 |Client| In this context, the University or Brigham Young University - Idaho. |
-|Data| All information that the User provides to the Calendar program through the Client and/or Third Party Technologies in order to utilize the Calendar program's features. |
+|Data| All information that the User provides to the Calendar program through the Client and/or Third-Party Technologies in order to utilize the Calendar program's features. |
 |De-Identified Data| Data that has had all Identifying Information removed from it. This Data is safe for Third-Party organizations and Technologies to use/receive so long as they do not attempt to identify the owner of the Data or to study/advertise/use the Data for any purpose other than those agreed to by the parties. |
 |Developers|The developers for this project are a team of students at Brigham Young University - Idaho.|
-|Disclosure Agreement| an legal document in which the User waives certain defined rights protecting their Data explicitly for the purpose of utilizing the Data in the Calendar application.|
+|Disclosure Agreement| A legal document in which the User waives certain defined rights protecting their Data explicitly for the purpose of utilizing the Data in the Calendar application.|
 |Discussion Board|An online forum for students of BYU-I to lead discussions, ask questions, and work with other students.|
 |Event|An event is an activity that a user can create with a specific time saved into the Student calendar application.|
 |FERPA| Family Educational Rights and Privacy Act - a law designed to protect the educational records and personal information of students and parents. |
-|Group| A group is two or more users who have the ability to engage in a calendar created and shared by one of the users. In addition groups are users that work together on assignments.|
+|Group| A group is two or more users who have the ability to engage in a calendar created and shared by one of the users. In addition, groups are users that work together on assignments.|
 |I-Learn|I-Learn is a website service for students of BYU-Idaho. The website contains each student's classes and assignments. I-Learn can be used by the student to turn in homework and access course materials.|
 |Identifying Information| Data that includes but is not restricted to Name, ID numbers (SSN), date of Birth, demographic information, location information, phone number, and school ID. If it can be used to isolate an individual from a group of people than it falls under this category. |
 |LDAP|(Lightweight Directory Access Protocol) is a software protocol for enabling anyone to locate organizations, individuals, and other resources on a corporate intranet or public internet.|
@@ -347,7 +347,7 @@ Define the words on the left in more details.
 
 ### 3.2.x Feature Template Example
 
-Full Feature Description. What the feature is. Who is going to use it. Why is this feature needed or wanted.
+Full Feature Description answering the questions of what the feature is, who is going to use it, why is this feature needed or wanted.
 
 #### 3.2.x.y Use Case Name Example
 
@@ -487,7 +487,7 @@ The notification window is displayed whenever a notification is sent the user. S
 
 ### 2.5.7 - Example Daily Calendar Window View:<br/>
 
-The Daily Calendar Window view is displayed when the user selects the a specific day from the Main Calendar View. Any calendar events or assignments for the day will be enlarged and the name of the event or assignment will be displayed.  
+The Daily Calendar Window view is displayed when the user selects a specific day from the Main Calendar View. Any calendar events or assignments for the day will be enlarged and the name of the event or assignment will be displayed.
 
 <img  src="https://github.com/MCLifeLeader/CS364/blob/master/Final%20Document/Images/Today%20View.jpg" height="50%" width="50%"><br/>
 
@@ -617,7 +617,7 @@ This section represents the list of functional requirements and use cases that d
 
 ### 3.2.1 Calendar Application is Mobile
 
-The calendar application will activated and run on a mobile platform such as a smart phone or tablet device. The calendar application will provide access to their calendar and event data on a mobile smart device or computer to the user's school calendar. The application will function in a mobile container for mobile aware web pages.
+The calendar application will be activated and run on a mobile platform such as a smart phone or tablet device. The calendar application will provide access to their calendar and event data on a mobile smart device or computer to the user's school calendar. The application will function in a mobile container for mobile aware web pages.
 
 #### 3.2.1.1 Smartphone Application
 
@@ -735,7 +735,7 @@ The Americans with Disabilities Act (ADA) has standards for all electronic and i
 
 ### 3.2.6 Export/Import
 
-The Calendar application will sync with I-Learn's calendar so that all class assignments are added automatically to the application. This is a very important feature because it keeps the user from manually adding all of the assignments.
+The Calendar application will sync with the I-Learn calendar so that all class assignments are added automatically to the application. This is a very important feature because it keeps the user from manually adding all of the assignments.
 
 #### 3.2.6.1 I-Learn Import
 
@@ -798,7 +798,7 @@ The application will be able to accept several different types of links as input
 |Basic Path	    | 1. The user logs into I-Learn through the app. 2. The user taps on an event or assignment. 3. The user taps on a link. 4. The application will automatically take them to the website, address, or application.|
 |Alternate Path |1. The user logs into I-Learn through the app. 2. The user taps on an event or assignment. 3. The link type could be a phone number and a call would begin when tapped. |
 |Post Condition	| The user is taken to the destination of the link, the link turns purple signifying it has been tapped before. |
-|Exception Paths| If the link is invalid, An error message is displayed.|
+|Exception Paths| If the link is invalid, an error message is displayed to the user.|
 |Other		      | None.|
 
 
@@ -816,10 +816,10 @@ The application will be able to accept several different types of links as input
 |Exception Paths| The link does not work and takes them to a 404 page.|
 |Other          | None|
 
-### 3.2.9 Photo Upload Capabilities
-The application should have the ability to upload photos with the following extensions: JPEG, GIF, BMP, PNG, and TIFF.
+### 3.2.9 Photo Upload
+The application should have the ability to upload photos with the following extensions: JPEG, GIF, BMP, PNG, and TIFF. Photos will be visible to the user in the daily calendar view.
 
-#### 3.2.9.1 Use Photos for Clarification
+#### 3.2.9.1 Upload photo to Calendar
 
 | Data          | Description |
 |:--------------| :--------------|
@@ -827,10 +827,24 @@ The application should have the ability to upload photos with the following exte
 |Cross Reference | See 4.2.9.1 for verification details of this use case.| 
 |Trigger        | The user selects the photo button on an event or thread. |
 |Precondition   | The user has a photo to import from their phone and has given permission for the app to use their local media. |
-|Basic Path	    | 1. The user logs into I-Learn through the app. 2. The users tap on an event, assignment, or thread. 3. The user taps the 'photo' button. 4. The user give the app permission to access device's photos or camera (happens once). 5. The user selects or take the desired photo to upload. |
+|Basic Path	    | 1. The user logs into I-Learn through the app.<br/> 2. The users tap on an event, assignment, or thread.<br/> 3. The user taps the 'photo' button.<br/> 4. The user give the app permission to access device's photos or camera (happens once).<br/>5. The user selects or take the desired photo to upload. |
 |Alternate Path | Step 3. The user could also choose to take a photo instead of upload one. |
-|Post Condition	| The event or message will update and show the user's photo.|
-|Exception Paths| The user does not allow access to their camera role or camera. |
+|Post Condition	| The Calendar view will update and show the user's photo.|
+|Exception Paths| If a mobile user does not allow access to their camera, the application will notify the user to allow camera access to the application. If the photo is an incompatible file type, the file is rejected and the user is notified with an error message.|
+|Other		      | None|
+
+#### 3.2.9.2 Photo File Size Checking
+
+| Data          | Description |
+|:--------------| :--------------|
+|Use Case Detail| As an Administrator, I want to ensure that users cannot add files that are too large to the database.|
+|Cross Reference | See 4.2.9.2 for verification details of this use case.| 
+|Trigger        | The user attempts to upload a photo into the Student Calendar Application.|
+|Precondition   | The user has a photo to import from their phone and has given permission for the app to use their local media. |
+|Basic Path	    | 1. The application checks the size of the file.<br/> 2.The file is verified to be smaller than the max allowable file size.<br/>3.The photo is accepted and uploaded into the database.|
+|Alternate Path | The user has submitted a file size that is too large and the photo is rejected. The user is notified and prompted to try again. The user may send another photo that meets the file size requirements.|
+|Post Condition	| The Calendar view will update and show the user's photo.|
+|Exception Paths| If the user submits a file that has no size, the file is rejected and the user is notified with an error message.|
 |Other		      | None|
 
 ### 3.2.10 Collapsible Calendar
@@ -929,44 +943,44 @@ The Family Educational Rights and Privacy Act (FERPA) is a Federal law designed 
 |Precondition   | Personal or educational information is required for User to access this application and for it to function.|
 |Basic Path     | Application is reviewed by legal professionals specializing in FERPA applications|
 |Alternate Path | None. |
-|Post Condition | All recommendations or requirements given by legal council are followed  |
+|Post Condition | All recommendations or requirements given by legal counsel are followed  |
 |Exception Paths| None. |
 |Other          | This feature primarily concerns integrity and confidentiality of data. |
 
-#### 3.2.13.1.1 Disclosure Statements.
+#### 3.2.13.2 Disclosure Statements.
 
 | Data          | Description |
 |:--------------| :--------------|
 |Use Case Detail| As a third-party developer, one is required by law to issue a disclosure document before any personal information  about a currently enrolled student is shared between one's self and the educational organization one works with. |
-|Cross Reference | See 4.2.13.1.1 for verification details of this use case and a sample disclosure agreement. FERPA Regulation 99.30, and 99.31| 
+|Cross Reference | See 4.2.13.2 for verification details of this use case and a sample disclosure agreement. FERPA Regulation 99.30, and 99.31| 
 |Trigger information| When the user logs into their I-Learn account through the app and chooses to share their student information by selecting the option and agree to the disclosure agreement. See basic path for more detail. |
 |Precondition   | The user is a student at BYU-I.|
-|Basic Path     | 1. The user logs in at the login screen.<br/> 2. The user taps the ‘Sync’ button.<br/> 3. The disclosure agreement pops-up on the screen (see 4.2.13.1.1 for an example of of a disclosure agreement). <br/> 4. User reads disclosure agreement and selects "I agree option"<br/>|
+|Basic Path     | 1. The user logs in at the login screen.<br/> 2. The user taps the ‘Sync’ button.<br/> 3. The disclosure agreement pops-up on the screen (see 4.2.13.2 for an example of of a disclosure agreement). <br/> 4. User reads disclosure agreement and selects "I agree option"<br/>|
 |Alternate Path | 1. User chooses option to use a third-party company to improve experience using the calendar app.<br/> 2. Disclosure agreement for third-party company pops-up. <br/> 3. If user agrees to the disclosure agreement share only information necessary for calendar application to work with third-party application.|
 |Post Condition | Information that the user has shared with us remains isolated from any interaction with 3rd party companies like Google or Microsoft unless user gives these third parties permission to use their personal information. |
 |Exception Paths| 1. If user has already agreed to the disclosure agreement than that step of the process is skipped. <br/> 2. If a user does not agree to the disclosure agreement then the app returns to the login screen.|
 |Other          | This feature primarily concerns integrity and confidentiality of data. |
 
-#### 3.2.13.1.2 Data De-Identification
+#### 3.2.13.3 Data De-Identification
 
 | Data          | Description |
 |:--------------| :--------------|
 |Use Case Detail| Third-Party organizations only may use de-identified data for marketing, research, development of products, and other purposes. Third-parties must agree to not attempting to identify the owner of de-identified data and may not share de-identified data unless the party they share the data with agrees to not attempt to identify the de-identified data. |
-|Cross Reference |See 4.2.13.1.2 for verification details of this use case. Glossary for Definition of De-Identified Data and Identifying Information. FERPA Regulations 99.20, 99.21, and 99.22 | 
+|Cross Reference |See 4.2.13.3 for verification details of this use case. Glossary for Definition of De-Identified Data and Identifying Information. FERPA Regulations 99.20, 99.21, and 99.22 | 
 |Trigger information|The user syncs their data with our app using the "sync" function. |
-|Precondition   | Information being received is not already de-identified data or information is being sent to a non-unverstiy organization who has already agreed to not attempt to identify the owner of the information. |
+|Precondition   | Information being received is not already de-identified data or information is being sent to a non-university organization who has already agreed to not attempt to identify the owner of the information. |
 |Basic Path     | 1. User "syncs" information with third-party organization <br/> 2. Trigger above requirement for disclosure of information <br/> 3. Identifying Information is removed from the information to be sent to the third-party. <br/> 4. De-identified data is sent to third-party organization for its use.  |
 |Alternate Path | None. |
 |Post Condition | Third-party organization may use de-identified data as they wish. |
 |Exception Paths| If User refuses to agree to disclosure agreement then the de-identified data is not sent to the third-party organization and User is unable to use that particular third-party organization's services in support of this application unless disclosure agreement is agreed to. |
 |Other          | None. |
 
-#### 3.2.13.1.3 University Access
+#### 3.2.13.4 University Access
 
 | Data          | Description |
 |:--------------| :--------------|
 |Use Case Detail| The User and the Client must be able to, upon request, freely obtain any data belonging to them that our organization holds. |
-|Cross Reference |See 4.2.13.1.3 for verification details of this use case. | 
+|Cross Reference |See 4.2.13.4 for verification details of this use case. | 
 |Trigger information|The User or Client requests data that we hold that has been holding. |
 |Precondition   | Data belongs to the User requesting it. The Client requests a User's data that has been provided by the Client. |
 |Basic Path     | 1. Request is made by Client/User <br/> 2. Data requested is confirmed to belong to Client/User <br/> 3. Client/User is identified and confirmed to be who they say they are (in case of the Client they must be authorized to speak for the Client as an organization) <br/> 4. Data is sent to Client/User in a format and method that is convenient for them and secure for protection purposes.  |
@@ -1125,7 +1139,7 @@ An application protocol that will work to access and modify items in the calenda
 
 ### 3.2.20 Notification Control
 
-Settings for how the user wants to be notified by the application. These settings provides a user with options for their personal preference of notification methods.
+Settings for how the user wants to be notified by the application. These settings provide a user with options for their personal preference of notification methods.
 
 #### 3.2.20.1 Notifications On/Off
 
@@ -1199,18 +1213,18 @@ The notification will be a reminder for the user of an upcoming event or assignm
 |Cross Reference | See 4.2.22.1 for verification details of this use case. For an image reference see 2.5.6.| 
 |Trigger        | The time for which a notification is set to be sent has arrived. See basic path for details.|
 |Precondition   | The user must have notifications enabled within their personal Student Calendar app settings.|
-|Basic Path     | 1. A notification shows up on the top of the users screen.<br>2. The user selects the notification to view its contents.| 
+|Basic Path     | 1. A notification shows up on the top of the user screen.<br>2. The user selects the notification to view its contents.| 
 |Alternate Path | If the Student Calendar application is not running on the user's device when the notification is received, the user may receive an email with the notification details if the user has selected that option in their personal settings. If the user is using a mobile device and the Student Calendar application is not running, the notification will be sent to the top screen of their device.|
 |Post Condition | The user may read the notification. The notification  is closed, and the user can return to a prior activity.|
-|Exception Paths| If The user has disabled notifications or does not have a valid email address, The notification will remain in a list of unopened notifications and will be displayed the next time the Student Calendar Application is opened.|
+|Exception Paths| If The user has disabled notifications or does not have a valid email address, the notification will remain in a list of unopened notifications and will be displayed the next time the Student Calendar Application is opened.|
 |Other          | Once a notification has been viewed, it is removed from the notification list and is no longer visible from the notification window. The user must look up the event or assignment from the calendar. |
 
-#### 3.2.22.1 Create Notification
+#### 3.2.22.2 Create Notification
 
 | Data          | Description |
 |:--------------| :--------------|
 |Use Case Detail| As a user, I want to set a time in the future to be notified of an important event or assignment. This will improve my ability to remember my tasks and get work done.|
-|Cross Reference | See 4.2.22.1 for verification details of this use case.| 
+|Cross Reference | See 4.2.22.2 for verification details of this use case.| 
 |Trigger        | The user fills out the notification information and selects the "save notification" button. See basic path for details.|
 |Precondition   | From the main calendar view, the user selects the notification icon. The notification window appears and the user selects the "create notification" button.|
 |Basic Path     | 1. A notification form appears and prompts the user to fill in information about the new notification.<br>2. The user fills in the information and sets the time for the notification to be sent.<br/>3. The User selects the "save notification" button.| 
@@ -1231,7 +1245,7 @@ This Feature allows the user to send an invitation to another user or a group of
 |Cross Reference | See 4.2.23.1 for verification details of this use case.| 
 |Trigger        | The user has selected an event from their calendar and has chosen to share it with one of their groups. See basic path for details.|
 |Precondition   | The user must have already created an event. The user must have permission from another user to send them invitations.|
-|Basic Path     | 1. The user selects an event to view the event details..<br>2. The event window is displayed and the user selects the "Invite" button.<br>3. The user selects the group or individual users to share the event with.<br/>4. The user selects the "send invitation" button.|
+|Basic Path     | 1. The user selects an event to view the event details.<br>2. The event window is displayed and the user selects the "Invite" button.<br>3. The user selects the group or individual users to share the event with.<br/>4. The user selects the "send invitation" button.|
 |Alternate Path |  The user may create an invitation that is not associated with a calendar event.|
 |Post Condition | The users to whom the invitation was sent receive a notification in their calendar, and have the option to view the invitation.|
 |Exception Paths| If the user does not select any users before attempting to send the notification, the application displays "You must select at least one user". |
@@ -1523,7 +1537,7 @@ Group owners should be able to set permissions for the users in the group. They 
 
 ### 3.2.32 Non-SSO
 
-The user will be required to log into the application with a single ID and password which will only give them access to the calendar application, no other domains.See 2.5.4 for an image reference of this feature.
+The user will be required to log into the application with a single ID and password which will only give them access to the calendar application, no other domains. See 2.5.4 for an image reference of this feature.
 
 #### 3.2.32.1 Non-SSO Log In
 
@@ -1544,7 +1558,7 @@ The user will be required to log into the application with a single ID and passw
 | Data          | Description |
 |:--------------| :--------------|
 |Use Case Detail| As a user I can log out of the calendar application.|
-|Cross Reference | See 4.2.32.2 for verification details of this use case.See 2.5.4 for an image reference of this feature.|
+|Cross Reference | See 4.2.32.2 for verification details of this use case. See 2.5.4 for an image reference of this feature.|
 |Trigger        | The user clicks the "Log Out" button.|
 |Precondition   | The user is currently logged in to the calendar application.|
 |Basic Path     | 1. The user clicks the "Log Out" button.<br> 2. The user is then asked if they are certain they want to log out. If the user selects yes, then they are logged out. If they select no, they will be returned to the calendar.|
@@ -1778,7 +1792,7 @@ When you click on an event it will include the predicted weather for that day.
 |Precondition   | Have an account created and/or have an event planned.   |
 |Basic Path     | 1. Create account with Student Calendar. <br> 2. Select day where user would like to plan an event. <br> 3. System displays event creation window and on there the weather predicted shows up as well.               |
 |Alternate Path | 1. Select an event that has been created. 2. System displays the event window along with the predicted weather that day.                          |
-|Post Condition | User is updated with information about that days weather.|
+|Post Condition | User is updated with information about that day's weather.|
 |Exception Paths| User can close event window at any time.                 |
 |Other          | None.                                                    |
 
@@ -1828,7 +1842,7 @@ The user will be able to print off a schedule.
 |:--------------| :--------------|
 |Use Case Detail| The user wishes to print off their schedule to view offline/out of app. |
 |Cross Reference | See 4.2.43.1 for verification details of this use case.| 
-|Trigger        | The user clicks "Print" button after signing into their I-Learn accoutn. See basic path for more detail.|
+|Trigger        | The user clicks "Print" button after signing into their I-Learn account. See basic path for more detail.|
 |Precondition   | Registered student at BYU-I college and Calendar is being viewed in monthly or weekly view and is connected to a printer.|
 |Basic Path     |1. The user signs in with their I-Learn account.<br/> 2. The user selects print option.<br/>3. The user crops desired part of calendar. <br/>4. The user selects print options (ex: color, page count).  <br/>5. User selects print.<br/>|
 |Alternate Path |None.| 
@@ -2169,7 +2183,7 @@ The Student Calendar shall be available to users twenty-four hours a day, seven 
 
 ### 3.7.2 Correctness
 
-The Student Calendar must display all user assignments and events in their correct times and dates. User groups must display correct contact information.
+The Student Calendar must display all user assignments and events in their correct times and dates. User groups must display correct contact information. Assignments and Events will be required at minimum to have a title and time slot in order to be accepted as valid and placed into the Calendar. 
 
 Redundancies,
 Mitigation of correctness / error handling. Data errors.
@@ -2277,17 +2291,20 @@ This can be tested by tapping on different links and confirming that the app dee
 
 #### 4.2.8.2 Group has a link to a collaborative tool
 
-When the link is used the group will be able to access the third party technologies preferred from the calendar.
+When the link is used the group will be able to access the third-party technologies preferred from the calendar.
 
 ### 4.2.9 Photo Import
 
-Validation is achieved when a user can upload the desired photo whether from their camera or photo library.
+Validation is achieved when a user can upload the desired photo whether from their camera or photo library. The application will be tested to verify if  If the photo is an incompatible file type, the file is rejected and the user is notified with an error message.
 
-[EDITORS / REVIEWERS: Negative Case handling for validation]
 
-#### 4.2.9.1 The user wants to upload a photo to clarify their message
+#### 4.2.9.1 Upload photo to Calendar
 
-This feature can be tested by uploading a photo to an event, and then taking a photo to upload and verifying that the photo uploaded successfully.
+This feature will be tested by uploading a photo to an event, and then taking a photo to upload and verifying that the photo uploaded successfully. The application will be tested to verify that if a mobile user does not allow access to their camera, the application will notify the user to allow camera access to the application.
+
+#### 4.2.9.2 Photo File Size Checking
+
+The application will be tested to verify that photos are only uploaded to the database if the file size is within the boundaries of an acceptable size, and that the user is notified with an error message if the file exceeds those bounds. The application will be tested to verify that if the user submits a file that has no size, the file is rejected and the user is notified with an error message.
 
 ### 4.2.10 Collapsible Calendar
 
@@ -2303,7 +2320,7 @@ A tester should load the app onto a mobile phone and turn the screen sideways.
 
 #### 4.2.10.3 Desktop Calendar Item Zooming
 
-A tester will hover their desktop mouse over a calender item to test for the description window to appear.
+A tester will hover their desktop mouse over a calendar item to test for the description window to appear.
 
 ### 4.2.11 Group Communication 1: Message Chat
 
@@ -2329,19 +2346,19 @@ Validation will be successful when app securely and legally handles student's ed
 
 A legal expert's positive evaluation of our application and its interactions with third-party applications in relation to the FERPA laws will successfully validate this requirement
 
-#### 4.2.13.1.1 Disclosure Statements
+#### 4.2.13.2 Disclosure Statements
 
 If disclosure agreements are provided to the user whenever confidential or educational information is shared to and from our application and so long as we can see that those disclosure agreements comply with FERPA guidelines then this requirement will be successfully validated.   
 
 This Document created by the Family Policy Compliance Office of the Department of Education is a model of what our Disclosure Agreement may look like and would need to include to be valid:   http://familypolicy.ed.gov/content/model-notifications-rights-under-ferpa-postsecondary-institutions
 
-#### 3.2.13.1.2 Data De-Identification
+#### 4.2.13.3 Data De-Identification
 
-Validation will be successful when it can be confirmed that all Identifying Information is not included in the De-Identifed Data that would be sent out to a third-party organization.
+Validation will be successful when it can be confirmed that all Identifying Information is not included in the De-Identified Data that would be sent out to a third-party organization.
 
-#### 3.2.13.1.3 University Access
+#### 4.2.13.4 University Access
 
-Validation will be successful when it can be confirmed that the process to request Data and recieve it can be completed without the Data going to the wrong person or without the incorrect Data being sent to Client/User. 
+Validation will be successful when it can be confirmed that the process to request Data and receive it can be completed without the Data going to the wrong person or without the incorrect Data being sent to Client/User. 
 
 ### 4.2.14 Discussion Board Integration
 
@@ -2555,7 +2572,7 @@ This will be tested by activating the personal assistant, and performing several
 
 #### 4.2.34.1 Assistant recommends an assignment that is due.
 
-Validation will be successful if the assistant reccomends assignments that are nearing their due date.
+Validation will be successful if the assistant recommends assignments that are nearing their due date.
 
 ### 4.2.35 Feedback
 
@@ -2623,7 +2640,7 @@ The calendar should correctly display the predicted weather.
 
 #### 4.2.40.1 Weather for Specific Days
 
-Should be able to click the weather section on the calendar and check the projected weather. Additionally when creating an event on a certain day the predicted weather should appear for that day as well. 
+Should be able to click the weather section on the calendar and check the projected weather. Additionally, when creating an event on a certain day the predicted weather should appear for that day as well. 
 
 ### 4.2.41 Tutor Integration
 
@@ -2651,7 +2668,7 @@ The tester should sign into a dummy I-Learn account and print out a faux schedul
 
 ### 4.2.44 Badges
 
-When the user needs to be notified of events, deadlines, group work or messages then badges should show up with the correct count of any of the above that have not been seen by the user. Additionally when the user goes through the badges the count should decrease as the badges are seen. If they have all been seen then that badge should disappear.
+When the user needs to be notified of events, deadlines, group work or messages then badges should show up with the correct count of any of the above that have not been seen by the user. Additionally, when the user goes through the badges the count should decrease as the badges are seen. If they have all been seen then that badge should disappear.
 
 #### 4.2.44.1 View badges
 
@@ -2700,7 +2717,7 @@ The calendar syncs to the selected Outlook calendar.
 
 ### 4.2.50 Toolbox Bar
 
-When the app is open the toolbox bar is present in the app.
+When the app is open the toolbox, bar is present in the app.
 
 #### 4.2.50.1 Search Bar
 
@@ -2724,7 +2741,7 @@ Validation will be successful if the user can upload custom images and they are 
 
 #### 4.2.51.1 Custom Images and Icons
 
-We will use multiple custom images and icons to verify this users can use their custom images to personalize their app.
+We will use multiple custom images and icons to verify the users can use their custom images to personalize their app.
 
 ### 4.2.52 Custom Videos
 
@@ -2780,11 +2797,11 @@ http://www.softwaretestinghelp.com/what-is-performance-testing-load-testing-stre
 
 ### 4.4.1 Load Testing
 
-BYU-Idaho has about 45k students and faculty. Our plan will be to test for memory leaks, and possible issues with bandwidth, network, and database components as we progressively increase the load on the system. As we perform this test, we will determine how the system behaves with a low, moderate, and large amount of users. Specifically, we will discover the amount of users that can perform tasks simultaneously. These tasks include: loading the application on different web browsers, creating an account, creating a custom calendar, adding and removing tasks, and using the chat and messaging feature. 
+BYU-Idaho has about 45k students and faculty. Our plan will be to test for memory leaks, and possible issues with bandwidth, network, and database components as we progressively increase the load on the system. As we perform this test, we will determine how the system behaves with a low, moderate, and large number  of users. Specifically, we will discover the number  of users that can perform tasks simultaneously. These tasks include: loading the application on different web browsers, creating an account, creating a custom calendar, adding and removing tasks, and using the chat and messaging feature. 
 
 ### 4.4.2 Stress Testing
 
-For stress testing the calendar app, it will be subjected to numerous and repeated UI tests. Each component of the app will be activated programmatically to check if fast sequential access to different features crashes the app, any delays will also be noted. Connection to the server will also be tested. Simulated connections to the server will test prolonged continuous access by a low, medium, and high loads. Sudden spikes in server load will be tested. Any crashes or errors at any point during stress testing will be carefully analyzed, then used to fix errors, and make sure the app remains secure even in the event of overload.
+For stress testing the calendar app, it will be subjected to numerous and repeated UI tests. Each component of the app will be activated programmatically to check if fast sequential access to different features crashes the app, any delays will also be noted. Connection to the server will also be tested. Simulated connections to the server will test prolonged continuous access by low, medium, and high loads. Sudden spikes in server load will be tested. Any crashes or errors at any point during stress testing will be carefully analyzed, then used to fix errors, and make sure the app remains secure even in the event of overload.
 
 ### 4.4.3 Capacity Testing
 
