@@ -283,15 +283,15 @@ This document is intended for project managers, team leaders, writers, developer
 
 Reading this document in the order it has been presented is highly recommended for most readers. Careful attention to the glossary and overview of document sections is key to avoid unnecessary confusion. The glossary contains keywords, terms, and abbreviations used throughout the document. The overview of document section provides a concise description of the main sections of the document.
 
-
 ## 1.4 Glossary
 
 |Keywords|Definition     |
 |-------|---------------|
 |Active Directory|A directory service that Microsoft developed for Windows domain networks. It is a centralized and standardized system that automates network management of user data, security, and distributed resources.|
 |API|A set of functions and procedures that allow the creation of applications which access the features or data of an operating system, application, or other service.|
-|Calendar program|A digital recreation of a calendar, A computer program that operates a schedule of events, and keeps track of your tasks and assignments|
-|Calendar location|An address or place that is associated with an event. For example, your home address could be the location for a party|
+|AWS| Amazon Web Service. |
+|Calendar program|A digital recreation of a calendar, A computer program that operates a schedule of events, and keeps track of your tasks and assignments.|
+|Calendar location|An address or place that is associated with an event. For example, your home address could be the location for a party.|
 |Client| In this context, the University or Brigham Young University - Idaho. |
 |Data| All information that the User provides to the Calendar program through the Client and/or Third-Party Technologies in order to utilize the Calendar program's features. |
 |De-Identified Data| Data that has had all Identifying Information removed from it. This Data is safe for Third-Party organizations and Technologies to use/receive so long as they do not attempt to identify the owner of the Data or to study/advertise/use the Data for any purpose other than those agreed to by the parties. |
@@ -323,15 +323,43 @@ Reading this document in the order it has been presented is highly recommended f
 
 | Acronym | Description |
 | ------------ | ------------ |
+| API | Application Programmers Interface. |
+| AWS | Amazon Web Service. |
+| COTS | Commercial Off The Shelf. This is a term used for third-party applications or services. |
+| HREF | Hyper Text Reference. Another term for URL. |
+| LDAP | Lightweight Directory Access Protocol |
 | SSO | Single Sign-On; A user signs in with one ID and gains access to multiple systems. |
 | non-SSO |  Non-SSO, or Non-Single Sign-On, is an authentication process that doesn't give access to multiple systems. |
 | URL | Uniform Resource Locator; colloquially known as a website or web address. |
-
-
-
 ## 1.6 References
 
-  [1] D. Zowghil & C. Coulin, "Requirements Elicitation: A Survey of Techniques, Approaches, and Tools" Engineering and Managing Software Requirements, pp. 19-46, 2005 [Online] Available: http://link.springer.com/chapter/10.1007%2F3-540-28244-0_2#page-1
+### 1.6.1 Requirements Elicitation Reference
+
+D. Zowghil & C. Coulin, "Requirements Elicitation: A Survey of Techniques, Approaches, and Tools" Engineering and Managing Software Requirements, pp. 19-46, 2005 [Online] Available: http://link.springer.com/chapter/10.1007%2F3-540-28244-0_2#page-1
+See Section: x.x.x.x
+
+### 1.6.2 ADA Compliance Reference
+
+ADA Compliance [Online] Available: http://www.byui.edu/legal/ada
+See Section: 3.3.4 ADA
+
+### 1.6.3 FERPA Disclosure Statements Reference
+
+http://familypolicy.ed.gov/content/model-notifications-rights-under-ferpa-postsecondary-institutions
+See Section: 4.2.13.2 Disclosure Statements
+
+### 1.6.4 Holidays Reference
+
+https://www.opm.gov/policy-data-oversight/pay-leave/pay-administration/fact-sheets/holidays-work-schedules-and-pay.
+See Section: 4.2.26 Holidays
+
+### 1.6.5 Performance Requirements Reference
+
+https://msdn.microsoft.com/en-us/library/bb924357.aspx
+https://www.radview.com/blog/4-types-of-load-testing-and-when-each-should-be-used/
+http://www.softwaretestinghelp.com/what-is-performance-testing-load-testing-stress-testing/ 
+See Section: 4.4 Verify Performance Requirements
+
 ## 1.7 Overview of Document
 
 This document is broken out into multiple sections and each section covers different topics related to the overall design and specification of this application. Section 1.0 of this document covers the introduction and high-level outline for the document. Section 2.0 provides an overview of the application that will be implemented whereas section 3.0 begins the deeper technical specifications and functionality of the application. Section 4.0 of the document will cover the validation of the functional requirements.
@@ -373,10 +401,10 @@ Section 2 provides a general overview of the calendar application. The topics co
 | Section 2.2| An overview of the product features is given.|
 | Section 2.3| This section describes the types of calendar application users and their characteristics.|
 | Section 2.4| This section describes the web browsers and operating platforms that the calendar application will function on.|
-|Section 2.5| This section contains images of typical user interface screens while using the calendar application.|
-|Section 2.6| An overview of technical requirements is given.|
-|Section 2.7| This section describes the user documentation.|
-|Section 2.8| Assumptions and Dependencies are listed.|
+| Section 2.5| This section contains images of typical user interface screens while using the calendar application.|
+| Section 2.6| An overview of technical requirements is given.|
+| Section 2.7| This section describes the user documentation.|
+| Section 2.8| Assumptions and Dependencies are listed.|
 
 ## 2.1 Product Perspective
 
@@ -605,11 +633,17 @@ This section contains all of the functional and quality requirements of the Stud
 
 ## 3.1 External Interface Requirements
 
-We have a number of external services and COTS applications that will be integrated into our application.
+The calendar application is integrated with a number of third-party applications and services. These COTS applications and services are designed to enhance the user's experience when using our application. Below is a list of those systems that will be integrated into the Calendar Application.
 
-### 3.1.1 External System 1
-
-### 3.1.2 External System 2
+* Facebook
+* Google Calendar
+* Google Hangouts
+* Google Maps
+* Instagram
+* I-Learn
+* Outlook
+* Skype 
+* Twitter
 
 ## 3.2 Functional Requirements
 
@@ -1477,14 +1511,14 @@ The calendar application will provide a video tutorial on how to use the applica
 
 ### 3.2.31 Group Permissions
 
-Group owners should be able to set permissions for the users in the group. They will also have the ability to give announcements, chat, schedule meetings, and make group links.
+Group owners should be able to set permissions for the users in the group. They will also have the ability to give announcements, chat, schedule meetings, accept group members, and make group links.
 
 #### 3.2.31.1 Group Ownership
 
 | Data          | Description |
 |:--------------| :--------------|
 |Use Case Detail| As a user, I want to be able to communicate with my group I am working with, and set how I communicate with them.|
-|Cross Reference | See 4.2.31.1 for verification details of this use case.| 
+|Cross Reference | See 4.2.31.1 for verification details of this use case.|
 |Trigger        | Group owner goes to the group's page.|
 |Precondition   | The user must be a group owner. |
 |Basic Path     | 1. User logs into I-Learn through app. 2. User clicks the "Group" icon and the app shows his group. 3. The user can begin scheduling meetings, chatting, or posting announcements.|
@@ -1498,11 +1532,11 @@ Group owners should be able to set permissions for the users in the group. They 
 | Data          | Description |
 |:--------------| :--------------|
 |Use Case Detail| As a user, I want to be able to communicate with groups I am working with and see what the owner has posted.|
-|Cross Reference | See 4.2.31.2 for verification details of this use case.| 
+|Cross Reference | See 4.2.31.2 for verification details of this use case.|
 |Trigger        | The user clicks on the group's page.|
 |Precondition   | Once the user has selected or been placed in a group.|
 |Basic Path     | 1. User logs into I-Learn through app. 2. User clicks the "Group" icon and the app shows his group. 3. The user can begin reading announcements, look at scheduled events, or group chat.|
-|Alternate Path | In step 2, the user may not be in a group yet and will have to join an existing group that is not full yet.|
+|Alternate Path | In step 2, the user may not be in a group yet and will have to join an existing group.|
 |Post Condition | The user see's the data that has been posted.|
 |Exception Paths| If there are no group assignments for the class the page will say: "No group work!"|
 |Other          | None|
@@ -1512,7 +1546,7 @@ Group owners should be able to set permissions for the users in the group. They 
 | Data          | Description |
 |:--------------| :--------------|
 |Use Case Detail| As a user, I would like to form private groups with other users for the purpose of working with them. |
-|Cross Reference | See 4.2.36.1 for verification details of this use case.| 
+|Cross Reference | See 4.2.36.3 for verification details of this use case.| 
 |Trigger        | A user creates a group. |
 |Precondition   | The user has logged into their I-Learn account in the app. |
 |Basic Path     | 1. User logs into I-Learn through app.<br> 2. User clicks the "Group" icon and creates a group. |
@@ -1526,7 +1560,7 @@ Group owners should be able to set permissions for the users in the group. They 
 | Data          | Description |
 |:--------------| :--------------|
 |Use Case Detail| As a user, I want to join private groups through an invitation from the group creator or administrator. |
-|Cross Reference | See 4.2.36.2 for verification details of this use case.| 
+|Cross Reference | See 4.2.36.4 for verification details of this use case.| 
 |Trigger        | A user asks to join a group. |
 |Precondition   | A user needs to have created a group before another user can elicit them to join. |
 |Basic Path     | 1. User logs into I-Learn through app.<br> 2. User clicks the "Group" icon and clicks a group to join.<br> 3. The user waits until the group administrator sends them the invitation via email.<br> 4. The user accepts the invitation and joins the group in the app. |
@@ -1562,9 +1596,9 @@ The user will be required to log into the application with a single ID and passw
 |Trigger        | The user clicks the "Log Out" button.|
 |Precondition   | The user is currently logged in to the calendar application.|
 |Basic Path     | 1. The user clicks the "Log Out" button.<br> 2. The user is then asked if they are certain they want to log out. If the user selects yes, then they are logged out. If they select no, they will be returned to the calendar.|
-|Alternate Path | None|
+|Alternate Path | The session will time out and log out after an hour of inactivity.|
 |Post Condition | The user is presented with the log in screen as if they had launched the application for the first time.|
-|Exception Paths| None|
+|Exception Paths| If the user is not connected to the internet or our servers are down, then the user will not be able to log in and an error message will be displayed.|
 |Other          | None|
 
 ### 3.2.33 Sort & Filter
@@ -1733,6 +1767,7 @@ Night mode is a setting that allows the user to toggle a blue light filter to re
 |Other          | Blue light has been proven to alter circadian rhythm and increase eye-strain. |
 
 ### 3.2.39 Share Calendar Feature
+
 The user can share their calendar and task data through their Facebook, Google Plus, and Twitter accounts. The user may also share their data through email. In addition to this, the user will also be able to post an advertisement for the app itself on their social media.
 
 
@@ -2109,7 +2144,7 @@ The User has the option to view all upcoming tasks in their courses.
 
 ### 3.2.56 School Catalog
 
-This feature allows the user to view the entire catalog for BYU-Idaho students. Ideally this would work for other schools as well, but is not required.
+This feature allows the user to view the entire catalog for BYU-Idaho students. 
 
 #### 3.2.56.1 View School Catalog
 
@@ -2124,6 +2159,22 @@ This feature allows the user to view the entire catalog for BYU-Idaho students. 
 |Exception Paths| A user is not registered for a school and receives an error message stating so.|
 |Other          | If the functionality is not available for other schools, then the view catalog button will only show for BYU-Idaho students.|
 
+### 3.2.57 User Profile Settings
+
+The user can manage all user settings and control
+
+#### 3.2.57.1 User Profile Settings
+
+| Data          | Description |
+|:--------------| :--------------|
+|Use Case Detail| As a user, I want to change profile appearance and settings so that I can make the app friendlier to use.|
+|Cross Reference | See 4.2.57.1 for verification details of this use case.|
+|Trigger        | User selects Profile Settings button|
+|Precondition   | App installed and User creates profile.|
+|Basic Path     | Profile Settings button will be in toolbox section at top of page|
+|Post Condition | User changes settings needing saved|
+|Exception Paths| User is not registered for profile on app|
+|Other          | None|
 ## 3.3 Usability Requirements
 
 The Student calendar must be uniform in its appearance and functionality to improve learnability for the user. This will be accomplished through the following criteria:
@@ -2153,9 +2204,11 @@ The application will offer a help menu that the user may select to learn how to 
 
 ### 3.3.4 ADA
 
-[EDITORS / REVIEWERS: Add Text to fill in details for ADA]
+In accordance with federal disability law, the Calendar Application provides users with disabilities access to its various pages and services. Pages will be designed to be ADA complient and compatible. (See 1.6.1)
 
 ## 3.4 Performance Requirements
+
+The calendar application will be hosted in the cloud using elastic services that will provide automatic scaleability of required resources for the application to remain performant. This means that when load on the system increases servers and resources will automatically be allocated by the cloud hosting service such as AWS or Azure and reduced when they are no longer required.
 
 These performance metrics are dependent upon the user having a stable and reliable Internet connection.
 
@@ -2179,19 +2232,17 @@ Standards of compliance for FERPA, ADA, and BYU-Idaho must be met by the Student
 
 ### 3.7.1 Availability
 
-The Student Calendar shall be available to users twenty-four hours a day, seven days a week unless the software is undergoing scheduled maintenance.
+The Student Calendar shall be available to users twenty-four hours a day, seven days a week unless the software is undergoing scheduled maintenance. The calendar errors of availability shall be shown to users when the system is down with maintenance or a catastrophic outage. These errors shall be shown as pop-up windows while in the application.
+
 
 ### 3.7.2 Correctness
 
-The Student Calendar must display all user assignments and events in their correct times and dates. User groups must display correct contact information. Assignments and Events will be required at minimum to have a title and time slot in order to be accepted as valid and placed into the Calendar. 
+The Student Calendar must display all user assignments and events in their correct times and dates. User groups must display correct contact information. Assignments and Events will be required at minimum to have a title and time slot in order to be accepted as valid and placed into the Calendar. In an event where the content is not correct or not syncing properly, the system will notify the user via pop-up window.
 
-Redundancies,
-Mitigation of correctness / error handling. Data errors.
-[EDITORS / REVIEWERS: How do we handle the negative case for correctness]
 
 ### 3.7.3 Maintainability
 
-Developers shall be able to be maintain and update the system after its initial release. Modifications should be able to be made while the system is live. Major changes shall require scheduled maintenance and the application will not be accessible to users. Maintenance notices must be sent to all users at least two days prior to going offline.
+Developers shall be able to be maintain and update the system after its initial release. Modifications should be able to be made while the system is live. Major changes shall require scheduled maintenance and the application will not be accessible to users. Maintenance notices must be sent to all users at least two days prior to going offline. 
 
 ### 3.7.4 Security
 
@@ -2200,7 +2251,7 @@ The systems security requirements shall conform to FERPA standards.
 ### 3.7.5 Data Integrity
 
 User data shall be backed up continuously as the user is running the application. Any changes made by the user will be immediately stored into the user account database. This will ensure that the data is not lost in the event of a power outage.
-
+    
 # 4.0 Verification
 
 ## 4.1 Verify External Interface Requirements
@@ -2438,8 +2489,12 @@ Will be validated by sending a notification and having it successfully received 
 
 ### 4.2.22 Push Notifications
 
-Validation will be tested by sending notifications while the application is not running to verify that the push notifications are received either through email or the mobile device's notification bar. It will also be verified that if the user does not have email or mobile notification permissions turned on, the push notification will remain active inside of the application and will be visible to the user the next time the application is opened. The application will be tested to verify that the user may successfully create and add a new notification to their Calendar. It will be verified that invalid input from the user will not be accepted. Please see 3.2.22.1 for details on invalid input.
+Validation will be successful if push notifications are received.
 
+#### 4.2.22.1 Receive Push Notification
+
+Test notifications will be sent from multiple accounts on multiple devices to verify push notifications are working.
+Validation will be tested by sending notifications while the application is not running to verify that the push notifications are received either through email or the mobile device's notification bar. It will also be verified that if the user does not have email or mobile notification permissions turned on, the push notification will remain active inside of the application and will be visible to the user the next time the application is opened. The application will be tested to verify that the user may successfully create and add a new notification to their Calendar. It will be verified that invalid input from the user will not be accepted. Please see 3.2.22.1 for details on invalid input.
 ### 4.2.23 Invitations
 
 The application will be tested to verify that users may receive invitations about calendar events from other users. The application will verify that if the user attempts to send an invitation before selecting any users the proper error message will be displayed. See 3.2.23.1 for details of the error message. The application will verify that a user will not be able to send notifications to another user if invitation permissions have not been given.
@@ -2532,15 +2587,21 @@ We will test this by having a new user open the calendar, and verifying that the
 
 ### 4.2.31 Group Permissions
 
-Validation will be successful if the user can set restrictions and permissions within their groups.
+Validation will be successful if the user can set restrictions and permissions within their groups. These permissions include the ability to do the following tasks, and will each be tested for.
+ 1. The user can give group announcements.
+ 2. The user can write in group chat.
+ 3. The user can schedule meetings.
+ 4. The user can accept members into the group.
+ 5. The user can make group links.
+ 6. The user can give group permissions to other users.
 
 #### 4.2.31.1 Group owners have access to all the groups resources
 
-This will be tested by creating a group and setting certain permissions. After those are set we will see if the group owner can still access all the resources in the group.
+This will be tested by creating a group, becoming the group owner, and inviting another tester to the group. The tester will verify that they can perform each of the group tasks as listed above. They will verify that the permissions can be given to the group member. The tester will verify that if there are no assignments that the group page says: "No group work!"
 
 #### 4.2.31.2 Group members can be aware of what is happening in their group
 
-Validation will be successful when permissions are set and group is aware of those permissions given or set.
+Validation will be successful when permissions are set and group is aware of those permissions given or set. In addition, the group member verifies they can see the announcements from the group. If there are no assignments they will verify that the page says: "No group work!"
 
 ### 4.2.32 Non-SSO
 
@@ -2548,11 +2609,11 @@ Validation will be successful if application is able to provide the user with ca
 
 #### 4.2.32.1 Non-SSO Log In
 
-The calendar will be accessed from multiple devices and browsers to verify that a log-in is required each time.
+The calendar will be accessed from multiple devices and browsers to verify that a log-in is required each time. The tester will verify that access is given to valid username and passwords that match. If the user forgets their username or password, they can receive their username through the e-mail or through a phone text. The user can reset their password through e-mail or a phone text.
 
 #### 4.2.32.2 Non-SSO Log Out
 
-Logging out from multiple devices and browsers will be performed to verify that logging out is required on each device.
+Logging out from multiple devices and browsers will be performed to verify that logging out is possible on each device. The tester will verify that the user is automatically logged off after an hour of inactivity. If the network connection fails then a "Lost Connectivity" error message will be displayed.
 
 ### 4.2.33 Sort & Filter
 
@@ -2560,43 +2621,43 @@ Validation will be successful when calendar items are sorted or filtered based o
 
 #### 4.2.33.1 Filter by class
 
-Calendar items can be filtered for and found based on the class they are listed under in the event.
+Calendar items can be filtered for and found based on the class they are listed under in the event. Items with no class entered will be listed at the bottom.
 
 #### 4.2.33.2 Sort by Time Length
 
-Calendar items can be filtered for and found based the time they need to be completed by.
+Calendar items can be filtered for and found based the time they need to be completed by. Items with no time length entered will be listed at the bottom.
 
 ### 4.2.34 Personal Assistant
 
-This will be tested by activating the personal assistant, and performing several basic tasks to make sure it is working.
+This will be tested by activating the personal assistant, and performing basic tasks to make sure it is working.
 
-#### 4.2.34.1 Assistant recommends an assignment that is due.
+#### 4.2.34.1 Assistant Recommends Assignments
 
-Validation will be successful if the assistant recommends assignments that are nearing their due date.
+Validation will be successful if the assistant recommends the next upcoming assignment. If there are no assignments, the tester will verify that the assistant says "Nothing ...yet!"
 
 ### 4.2.35 Feedback
 
 This will be tested by checking to make sure notifications are received when new grades or feedback is posted by the instructor.
 
-#### 4.2.35.1 User is notified of feedback on assignment.
+#### 4.2.35.1 Notification of Feedback on Assignments
 
-Validation will be successful if notifications are received when new feedback is posted by the instructor.
+Validation will be successful if notifications are received when new feedback is posted by the instructor. If the user is not synced with I-Learn then it will display a message telling the user to sync with I-Learn first.
 
-#### 4.2.35.2 Feedback is included in notification.
+#### 4.2.35.2 Feedback Included in Notification
 
-Validation will be successful if notifications are received when new grades are posted by the instructor.
+Validation will be successful if the instructor's feedback is in the notification received when new grades are posted by the instructor. If the user is not synced with I-Learn then it will display a message telling the user to sync with I-Learn first.
 
 ### 4.2.36 Database for Account Usernames and Passwords
 
-Validation will be successful if the database contains all the users of the application stored in a secure manner.
+Validation will be successful if the database contains all the users of the application stored in a secure manner. If for any reason the account usernames or passwords are compromised, the database will be locked until the database security is reinsured and users reset their username and password.
 
 #### 4.2.36.1 Verifying Existing Account
 
-A user will create a new account. The user will then login to their account with the credentials they created. 
+A tester will create a new account. The user will then login to their account with the credentials they created. If the user is unable to remember their username or password they may recover it through the phone or e-mail that is connected with the account. After failing to correctly log in 10 times within 5 minutes from the same session, then the account will be locked from that session for 24 hours or until the user resets their password. The user will be notified through their e-mail of the attempt.
 
 #### 4.2.36.2 Create New Account
 
-A user will create a new account. The account will be inserted into the database in a secure manner.
+A tester will create a new account. The account will be inserted into the database in a secure manner. If the username already exists, the web page will display a message informing the user that the username is taken, and to try again with another username.
 
 ### 4.2.37 Inspirational Quotes and Images
 
@@ -2693,55 +2754,55 @@ The alarm set by the user has to go off at the exact time the user specifies.
 
 ### 4.2.47 Google API
 
-The calendar app is able to sync with a Google calendar.
+The calendar app is able to sync with a Google calendar. Validation will be successful if the application can sync with a user's Google calendar. The system will also be tested to verify that Google calendars doesn't automatically sync without proper access permissions. 
 
 #### 4.2.47.1 Sync Google Calendar
 
-The calendar app correctly syncs with the selected Google calendar.
+The testers will test the sync functionality between an I-Learn calendar and a Google calendar. The application will be tested to verify that Google calendars only syncs with proper permissions, an error message will notify the user that Google calendars must acquire permission by linking a Google account with the Student Calendar app.  If there is no network connectivity then the user will receive an error message stating that sync will try again later.
 
 ### 4.2.48 Apple API
 
-The calendar app is able to sync with an Apple calendar
+The calendar app is able to sync with a Apple calendar. Validation will be successful if the application can sync with a user's Apple calendar. The system will also be tested to verify that Apple calendars doesn't automatically sync without proper access permissions. 
 
 #### 4.2.48.1 Sync Apple Calendar
 
-The app correctly syncs to an Apple calendar
+The testers will test the sync functionality between an I-Learn calendar and an Apple calendar. The application will be tested to verify that Apple calendars only syncs with proper permissions,an error message will notify the user that Apple calendars must acquire permission by linking an Apple account with the Student Calendar app.  If there is no network connectivity then the user will receive an error message stating that sync will try again later.
 
 ### 4.2.49 Outlook API
 
-The calendar app is able to sync with an Outlook calendar.
+The calendar app is able to sync with a Outlook calendar. Validation will be successful if the application can sync with a user's Outlook calendar. The system will also be tested to verify that Outlook calendars doesn't automatically sync without proper access permissions. 
 
 #### 4.2.49.1 Sync Outlook Calendar
 
-The calendar syncs to the selected Outlook calendar.
+The testers will test the sync functionality between an I-Learn calendar and an Outlook calendar. The application will be tested to verify that Outlook calendars only syncs with proper permissions, an error message will notify the user that Outlook calendars must acquire permission by linking an Outlook account with the Student Calendar app.  If there is no network connectivity then the user will receive an error message stating that sync will try again later.
 
 ### 4.2.50 Toolbox Bar
 
-When the app is open the toolbox, bar is present in the app.
+When the app is open the toolbox bar is present in the app. Validation will be successful if the application on opening displays the toolbox bar. The system will also be tested to verify that the toolbox bar opens correctly while the app is in use. 
 
 #### 4.2.50.1 Search Bar
 
-The tool box bar will have a search bar and it must be able to search for various items in the calendar app.
+The tool box bar will have a search bar and it must be able to search for various items in the calendar app.  Testers will test that the search bar is accessible from the toolbox bar.  They will also validate that the bar allows users to search for specific keywords.  An error message will be displayed if the keyword is not found.
 
 #### 4.2.50.2 Timer
 
-After the timer function is selected the app displays the time left to complete the assignment.
+The toolbox bar will have a timer button that will display the time the user has left to complete an assignment.  Testers will test that the timer function is actually accessible from the toolbox bar.  An error will be displayed if a user has no assignments due, or if they have not enrolled in any classes. 
 
 #### 4.2.50.3 Assignment Progress Bar
 
-After the assignment process bar is selected the app displays the user's assignment progress.
+The toolbox bar will have an assignment progress bar that will display the user's assignment progress.  Testers will ensure that this feature is accessible from the toolbox bar.  An error message will be displayed if there is no valid assignments, or if the user is not enrolled in any classes.
 
 #### 4.2.50.4 Suggest Meeting Times
 
-When this function is selected and associates calendars are checked the app will display the best times for the group to meet.
+The toolbox bar will have a suggest meeting time button that will display the best times for setting up a group meeting.  Testers will ensure that this feature is accessible from the toolbox bar.  An error message will be displayed if a user tries to use this feature but is not part of a group.
 
 ### 4.2.51 Custom Images and Icons
 
-Validation will be successful if the user can upload custom images and they are displayed successfully to the app.
+Validation will be successful if the user can upload custom images and they are displayed successfully to the app.  The system will be tested to ensure that the user can upload images to the app and they display correctly.
 
 #### 4.2.51.1 Custom Images and Icons
 
-We will use multiple custom images and icons to verify the users can use their custom images to personalize their app.
+We will use multiple custom images and icons to verify the users can use their custom images to personalize their app.  Testers will test that images upload correctly to app and that they are also viewable.  An error message will alert the user if the image doesn't upload properly or if it is an unaccepted file type.  If there is no network connectivity an error message will alert the user and ask them to try again later.  If images don't display properly there will be an error where the image should be alerting the user that the image is unviewable.
 
 ### 4.2.52 Custom Videos
 
@@ -2750,15 +2811,17 @@ Then if the app displays custom videos successfully, it has been successfully va
 
 #### 4.2.52.1 Custom Videos
 
-We will use several custom videos to verify that users can use their own custom videos.
+We will use several custom videos to verify that users can use their own custom videos.  Testers will verify that custom videos can be uploaded to the app and that they recieve the appropriate prompts.  Testers will also ensure that these videos display properly within the app.  An error message will be displayed if the user hasn't granted the proper permissions for the app to use their camera.  An error message will be displayed if there is not connectivity and the video is unable to upload.  An error message will display if the video fails to play properly within the app.
 
 ### 4.2.53 Calendar View
 
-Validation will be success if the application loads the user's personal calendar style.
+Validation will be success if the application loads the user's personal calendar style.  Style options include Day, 5-Day Week, 7-Day Week, Month, Semester, and Year views.
 
 #### 4.2.53.1 Various Calendar Views
 
-We will test each calendar view, to verify the user can use each view successfully when viewing their own calendar.
+Each view style is validated by the user selecting the calendar view style of choice from the dedicated buttons at the top of the calendar display window.  The default style is Month.  The default style is validated upon the initial opening of the calendar application when no previous default has been set in user configuration. If the user desires a different view, the preferred style will be enabled by pressing the respective view style button (i.e. 7-Day Week). When the view style changes to reflect the selected option. 
+
+In the event the preferred style does not change when it's corresponding button has been interacted with, the user will first exit out of the application and attempt the operation again. If, after subsequent attempts, the perferred style is not enabled, the user can contact support for further troubleshooting.
 
 ### 4.2.54 Task Rewards
 
@@ -2770,19 +2833,31 @@ We will use several task assignments to verify that task points are awarded corr
 
 ### 4.2.55 User Task List
 
-Validation will be successful if all tasks are listed correctly in task list view.
+Validation will be successful if the user has added tasks to be shown in this list then it is shown on the main screen of the app. As an example, I add 2 assignments to show on the top of the main page of the app they should come  up in a list at the top so that they can be clicked on to show details.
 
 #### 4.2.55.1 Assignment List
 
-We will use several assignments to verify that tasks are loaded correctly into the task list view.
+Adding Assignments - Assignments need to have a button to be able to display on main screen.
 
+Displaying Assignments - Assignments should be displayed by order of priority and class. If i have two assignments, one has priority the other does not, then the one with priority shows first. As well if there are several assignments from one class they should all be shown together.
+
+Empty List - If there are no assignments to display in the User Task list, then a page should be displayed that says "No assignments to display".
 ### 4.2.56 School Catalog
 
 This will be tested by accessing a BYU-I catalogue.
 
 #### 4.2.56.1 View School Catalog
 
-Validation will be successful if the BYU-I catalogue is available through the app.
+Validation will be successful if the BYU-I catalogue is available through the app.  Availability is attained when the application is able to display the BYU-Idaho catalogue. In the event the catalog is not accessible, an error message is returned to the user, "The Catalog is not found or cannot be displayed".
+
+
+### 4.2.57 User Profile Settings
+
+There will need to be a page to view profile settings.
+
+#### 4.2.57.1 User Profile Settings
+
+The page will include Name, Address, Phone #, Email, School, a button for Accounts page(accounts page holds info for accounts connected like google and twitter), button for Images,and a button for Delete Profile. When the user clicks the button the app should ask for username and password for verification. If the user enters wrong username or password the app will state "Invalid credentials". If user enters information wrong the app will state "Invalid input". If the user does not have an account the app will state "No Account". There should be a button to import settings from file. If the file imported is succesful then all settings will be changed. If it is unsuccessful then the app should display "file could not be read" and prompt for different file.
 
 ## 4.3 Validate Usability Requirements
 
@@ -2790,10 +2865,8 @@ Gathering a group of 20 users, the usability requirements will be validated by h
 
 ## 4.4 Verify Performance Requirements
 
-[Authors / Editors please SEE: These also can be placed in the references section.] 
-https://msdn.microsoft.com/en-us/library/bb924357.aspx
-https://www.radview.com/blog/4-types-of-load-testing-and-when-each-should-be-used/
-http://www.softwaretestinghelp.com/what-is-performance-testing-load-testing-stress-testing/
+Performance is an important aspect of the application's usability for online students. The ability for the application to handle all active and inactive users interacing with the service is key to its use and adoptability by students. 
+See 1.6.5 Performance Requirements Reference
 
 ### 4.4.1 Load Testing
 
@@ -2823,7 +2896,7 @@ Correctness: Verification will be successful when the system displays all assign
 
 Maintainability: Verification will be successful when the tester is able to make a modification and add it to the system while it is running.
 
-Security: Verification will be successful when the system meets FERPA standards of compliance.
+Security: Verification will be successful when the system meets FERPA standards of compliance.  User grades or other personal information without the user's direct authorization and login/authentication. 
 
 Data Integrity: The application will be tested to verify that changes made from the user are immediately stored into the user account database. The testers will simulate a power outage to verify that all finished changes made by the user are recoverable from the database.
 
