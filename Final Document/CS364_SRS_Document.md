@@ -1,9 +1,9 @@
 # Software Requirements Specification
 
 
-## Version 1.6
+## Version 1.7
 
-## October 20th, 2017
+## October 21th, 2017
 
 # Student Calendar Integration Application
 
@@ -256,6 +256,16 @@ John Memmott<br/>
 
 # List of Figures
 
+| Name          | Image Item       | 
+|:--------------|:----------:|
+|Main Calendar View | Section 2.5.1 (Pg #)|
+|Assignment Priority List View| Section 2.5.2 |
+|Simplified "To-Do" List View| Section 2.5.3|
+|Login Page View| Section 2.5.4|
+|Settings Page View| Section 2.5.5|
+|Notifications Window View| Section 2.5.6|
+|Daily Calendar Window View| Section 2.5.7|
+|Product Perspective Diagram| Section 2.5.8 (Pg #)|
 # 1.0 Introduction
 
 ## 1.1 Purpose
@@ -283,10 +293,10 @@ Reading this document in the order it has been presented is highly recommended f
 |Calendar program|A digital recreation of a calendar, A computer program that operates a schedule of events, and keeps track of your tasks and assignments|
 |Calendar location|An address or place that is associated with an event. For example, your home address could be the location for a party|
 |Client| In this context, the University or Brigham Young University - Idaho. |
-|Data| All information that the User provides to the Calander program through the Client and/or Third Party Technologies in order to utilize the Calander program's features. |
-|De-Identified Data| Data that has had all Identifying Information removed from it. This Data is safe for Third-Party organizations and Technologies to use/recive so long as they do not attempt to identify the owner of the Data or to study/advertise/use the Data for any purpose other than those agreed to by the parties. |
+|Data| All information that the User provides to the Calendar program through the Client and/or Third Party Technologies in order to utilize the Calendar program's features. |
+|De-Identified Data| Data that has had all Identifying Information removed from it. This Data is safe for Third-Party organizations and Technologies to use/receive so long as they do not attempt to identify the owner of the Data or to study/advertise/use the Data for any purpose other than those agreed to by the parties. |
 |Developers|The developers for this project are a team of students at Brigham Young University - Idaho.|
-|Disclosure Agreement| an legal document in which the User waives certain defined rights protecting their Data explicitly for the purpose of utilizing the Data in the Calender application.|
+|Disclosure Agreement| an legal document in which the User waives certain defined rights protecting their Data explicitly for the purpose of utilizing the Data in the Calendar application.|
 |Discussion Board|An online forum for students of BYU-I to lead discussions, ask questions, and work with other students.|
 |Event|An event is an activity that a user can create with a specific time saved into the Student calendar application.|
 |FERPA| Family Educational Rights and Privacy Act - a law designed to protect the educational records and personal information of students and parents. |
@@ -294,7 +304,7 @@ Reading this document in the order it has been presented is highly recommended f
 |I-Learn|I-Learn is a website service for students of BYU-Idaho. The website contains each student's classes and assignments. I-Learn can be used by the student to turn in homework and access course materials.|
 |Identifying Information| Data that includes but is not restricted to Name, ID numbers (SSN), date of Birth, demographic information, location information, phone number, and school ID. If it can be used to isolate an individual from a group of people than it falls under this category. |
 |LDAP|(Lightweight Directory Access Protocol) is a software protocol for enabling anyone to locate organizations, individuals, and other resources on a corporate intranet or public internet.|
-|Link|A link (short for hyperlink) is an clickable section of text that allows you to move from either one website to another, or from one specific location on an application page to another when clicked or tapped.|
+|Link|A link (short for hyperlink) is a clickable section of text that allows you to move from either one website to another, or from one specific location on an application page to another when clicked or tapped.|
 |Mobile User|Anyone using the calendar app on a mobile device, such as a phone or tablet.|
 |Project Manager|The team member who oversees the project and works with the team leads to make sure the project fulfills the necessary requirements and is finished on time.|
 |Reader|All users, developers, and stakeholders will be viewing the site.|
@@ -317,11 +327,12 @@ Reading this document in the order it has been presented is highly recommended f
 | non-SSO |  Non-SSO, or Non-Single Sign-On, is an authentication process that doesn't give access to multiple systems. |
 | URL | Uniform Resource Locator; colloquially known as a website or web address. |
 
+
+
 ## 1.6 References
 
   [1] D. Zowghil & C. Coulin, "Requirements Elicitation: A Survey of Techniques, Approaches, and Tools" Engineering and Managing Software Requirements, pp. 19-46, 2005 [Online] Available: http://link.springer.com/chapter/10.1007%2F3-540-28244-0_2#page-1
-
-## 1.6 Overview of Document
+## 1.7 Overview of Document
 
 This document is broken out into multiple sections and each section covers different topics related to the overall design and specification of this application. Section 1.0 of this document covers the introduction and high-level outline for the document. Section 2.0 provides an overview of the application that will be implemented whereas section 3.0 begins the deeper technical specifications and functionality of the application. Section 4.0 of the document will cover the validation of the functional requirements.
 
@@ -436,19 +447,48 @@ Validation for these will be performed through Automated UI testing. The applica
 
 ## 2.5 Image References
 
-### 2.5.1 - Main Calendar View:<br/>
+The following images are representative examples and non-binding.
+
+### 2.5.1 - Example Main Calendar View:<br/>
+
+Main Calendar view is the primary screen that a user sees after logging in to the application. There are other times that this view is displayed. The user is taken to this page when the user selects the home button.<br/>
+
 <img  src="https://github.com/MCLifeLeader/CS364/blob/master/Final%20Document/Images/Main%20Calendar%20View.jpg" height="50%" width="50%"><br/>
-### 2.5.2 - Assignment Priority List View:<br/>
+
+### 2.5.2 - Example Assignment Priority List View:<br/>
+
+The Priority list view is the screen displayed when a user is viewing the list of assignments. The user will see this view when setting a priority ranking to an assignment. See section 3.2.4 for details of the priority list feature.
+
 <img  src="https://github.com/MCLifeLeader/CS364/blob/master/Final%20Document/Images/3.2.004.0_Diagram_attempt2.jpg"><br/>
-### 2.5.3 - Simplified "To-Do" List View:<br/>
+
+### 2.5.3 - Example Simplified "To-Do" List View:<br/>
+
+The Simplified "To-Do" List View is the screen displayed when the user is working on assignments in the to-do list. See section 3.2.24 for details of the to-do list feature.
+
 <img  src="https://github.com/MCLifeLeader/CS364/blob/master/Final%20Document/Images/Simplified%20to%20do%20list.jpg" height="50%" width="50%"><br/>
-### 2.5.4 - Login Page View:<br/>
+
+### 2.5.4 - Example Login Page View:<br/>
+
+The Login page is the first screen the user sees when opening the application. The user will see this page whenever their log in session has timed out due to inactivity. See section 3.2.32 for details of the sign-in feature.
+
 <img  src="https://github.com/MCLifeLeader/CS364/blob/master/Final%20Document/Images/Login-Page.jpg" height="50%" width="50%"><br/>
-### 2.5.5 - Settings Page View:<br/>
+
+### 2.5.5 - Example Settings Page View:<br/>
+
+The settings page will be seen by the user whenever the user is making changes to their personal settings of the feature. The settings may be opened from the Main Calendar Menu. See section 3.2.x for details of the user settings feature.
+
 <img  src="https://github.com/MCLifeLeader/CS364/blob/master/Final%20Document/Images/settings_window.png" height="50%" width="50%"><br/>
-### 2.5.6 - Notifications Window View:<br/>
+
+### 2.5.6 - Example Notifications Window View:<br/>
+
+The notification window is displayed whenever a notification is sent the user. See section 3.2.22 for details of the push notification feature.
+
 <img  src="https://github.com/MCLifeLeader/CS364/blob/master/Final%20Document/Images/Notifications%20View.jpg" height="50%" width="50%"><br/>
-### 2.5.7 - Daily Calendar Window View:<br/>
+
+### 2.5.7 - Example Daily Calendar Window View:<br/>
+
+The Daily Calendar Window view is displayed when the user selects the a specific day from the Main Calendar View. Any calendar events or assignments for the day will be enlarged and the name of the event or assignment will be displayed.  
+
 <img  src="https://github.com/MCLifeLeader/CS364/blob/master/Final%20Document/Images/Today%20View.jpg" height="50%" width="50%"><br/>
 
 ## 2.6 Technical Requirements
@@ -588,7 +628,7 @@ The calendar application will activated and run on a mobile platform such as a s
 |Trigger        | The user locates the application icon on their smart phone and then taps the icon. See basic path for details.|
 |Precondition   | The user must have the app installed from their app store.|
 |Basic Path	| 1. The user opens the calendar application on their smart phone. <br/>2. The calendar application displays the users upcoming items.<br/>
-|Alternate Path | User recieved a notification icon on their lock screen and when tapped launches the calendar application.|
+|Alternate Path | User received a notification icon on their lock screen and when tapped launches the calendar application.|
 |Post Condition	| The calendar application opens and displays the user's default user configured screen.|
 |Exception Paths| The calendar application when erroring out will request the user to send crash data to us.|
 |Other		      | None.|
@@ -597,7 +637,7 @@ The calendar application will activated and run on a mobile platform such as a s
 
 The calendar application will be activated and run on a desktop platform such as a desktop computer or laptop. The calendar application will provide access to a student's calendar and event data on a desktop browser. The application will function by complying with design standards for desktop web design.
 
-#### 3.2.2.1 Access From Web Browser
+#### 3.2.2.1 Access from Web Browser
 
 | Data          | Description |
 |:--------------|:----------------|
@@ -747,7 +787,7 @@ Within the application, the user should be able to set reminders for assignments
 
 The application will be able to accept several different types of links as input for events, assignments, or messages. The link could be anything from a website URL to a phone number.
 
-#### 3.2.8.1 Outside Resources
+#### 3.2.8.1 Links to Outside Resources
 
 | Data          | Description |
 |:--------------| :--------------|
@@ -755,11 +795,26 @@ The application will be able to accept several different types of links as input
 |Cross Reference | See 4.2.8.1 for verification details of this use case.| 
 |Trigger        | User taps on a link in a calendar item.|
 |Precondition   | The user is on the calendar page, and is viewing an event or assignment.|
-|Basic Path	    | 1. The user logs into I-Learn through the app. 2. The users taps on an event or assignment. 3. The user taps on a link. 4. The application will automatically take them to the website, address, or application.|
-|Alternate Path |1. The user logs into I-Learn through the app. 2. The users tap on an event or assignment. 3. The link type could be a phone number and a call would begin when tapped. |
+|Basic Path	    | 1. The user logs into I-Learn through the app. 2. The user taps on an event or assignment. 3. The user taps on a link. 4. The application will automatically take them to the website, address, or application.|
+|Alternate Path |1. The user logs into I-Learn through the app. 2. The user taps on an event or assignment. 3. The link type could be a phone number and a call would begin when tapped. |
 |Post Condition	| The user is taken to the destination of the link, the link turns purple signifying it has been tapped before. |
 |Exception Paths| If the link is invalid, An error message is displayed.|
 |Other		      | None.|
+
+
+#### 3.2.8.2 Links to Collaborative Tools
+
+| Data          | Description |
+|:--------------| :--------------|
+|Use Case Detail| As a user, I want to be able to click a link that takes me to a group chat in Google Hangouts.|
+|Cross Reference | See 4.2.32.1 for verification details of this use case.| 
+|Trigger        | The user opens an announcement or meeting and taps on the provided link.|
+|Precondition   | After the user has connected to I-Learn and has a group that is working on a project. |
+|Basic Path     | 1. User logs into I-Learn through app.<br> 2. User clicks the "Group" icon and the app shows his group.<br> 3. The user selects an announcement or meeting.<br> 4. The user taps on the provided link.|
+|Alternate Path | None|
+|Post Condition | The link turns another color notifying the user that it has been selected.|
+|Exception Paths| The link does not work and takes them to a 404 page.|
+|Other          | None|
 
 ### 3.2.9 Photo Upload Capabilities
 The application should have the ability to upload photos with the following extensions: JPEG, GIF, BMP, PNG, and TIFF.
@@ -780,9 +835,9 @@ The application should have the ability to upload photos with the following exte
 
 ### 3.2.10 Collapsible Calendar
 
-When the user views the Calendar, each day will contain a list of events for that given day. At first, only one event is shown, but the user can choose to show all of them by tapping a button labeled 'Show all'.
+When the user views the Calendar, each day will contain a list of events for that given day. At first, only one event is shown, but the user can choose to show all of them by tapping a button labeled 'Show all'. The user's device will also be able to adjust the size of the calendar and have the calendar items scale proportionately. The user will be able to zoom in on text of an item by clicking the appropriate day or hovering their mouse over the item.
 
-#### 3.2.10.1 Calendar list of events extended
+#### 3.2.10.1 Calendar List of Events Extended
 
 | Data          | Description |
 |:--------------| :--------------|
@@ -796,7 +851,35 @@ When the user views the Calendar, each day will contain a list of events for tha
 |Exception Paths| If there is nothing to show for that day, the user's calendar will not have the 'Show all' button. |
 |Other		      | None. |
 
-### 3.2.11 Group Communication 1: Message Chat
+#### 3.2.10.2 Mobile Tilting Functionality
+
+| Data          | Description |
+|:--------------| :--------------|
+|Use Case Detail| As a mobile user, I want to view my calendar in a landscape view rather than a portrait.|
+|Cross Reference | See 4.2.10.2 for verification details of this use case.| 
+|Trigger        | The user tilts their phone sideways.|
+|Precondition   | The user is in the main calendar view or the daily calendar view.|
+|Basic Path     | 1. The phone signals the application that it is turned on its side. <br /> 2. The app calculates the new width/height ratio.<br /> 3. The calendar and its items are rotated and scaled proportionately.|
+|Alternate Path | The user rotates their phone back to standing upright, and the app returns the original display.|
+|Post Condition |The main calendar is now displayed in a landscape view.|
+|Exception Paths| If the user is continually rotating their phone (e.g. spinning it) the app waits until the phone has stopped moving to complete the function.|
+|Other          | None |
+
+#### 3.2.10.3 Desktop Calendar Item Zooming
+
+| Data          | Description |
+|:--------------| :--------------|
+|Use Case Detail| As a desktop user, I want to zoom in on a particular item in my calendar to read the details.|
+|Cross Reference | See 4.2.10.3 for verification details of this use case.| 
+|Trigger        | The user hovers their mouse over an item in the calendar.|
+|Precondition   | The user is in the main calendar view or the daily calendar view.|
+|Basic Path     | 1. A window opens up in the middle of the screen. <br /> 2. The text of the item is display enlarged within the window. <br /> 3. The user moves the mouse away from the item to close the window.|
+|Alternate Path | The user moves the mouse from one item to another. The next item is displayed in the window instead of closing it.|
+|Post Condition |The user is able to view the full details of the item.|
+|Exception Paths| If an item that is selected does not contain a description, the zoom window displays "No item description." |
+|Other          | None. |
+
+### 3.2.11 Message Chat
 
 When a user has joined a group on the app, they will want to be in contact with their group members through text or email. The app will provide this information upon request and load it into the appropriate messaging app.
 
@@ -814,7 +897,7 @@ When a user has joined a group on the app, they will want to be in contact with 
 |Exception Paths| If the group member the user has selected has not provided a phone number or an email, the app will display a message stating such. |
 |Other		      | None.|
 
-### 3.2.12 Group Communication 2: Video Chat
+### 3.2.12 Video Chat
 
 With the press of a single button, a user can start a video conference call with their group from the app. The app will utilize Skype or Google Hangouts to perform the task for the user.
 
@@ -834,7 +917,7 @@ With the press of a single button, a user can start a video conference call with
 
 ### 3.2.13 FERPA Compliant
 
-The Family Educational Rights and Privacy Act (FERPA) is a Federal law designed to protect the privacy of student education and personal records. Some examples of the information protected under FERPA are: grades after they are submitted, grade point average (GPA), location, courses, attendence, and all other information mantained by the university directly related to a student. In order for our app to conform to federal law, out app must meet the following security standards.
+The Family Educational Rights and Privacy Act (FERPA) is a Federal law designed to protect the privacy of student education and personal records. Some examples of the information protected under FERPA are: grades after they are submitted, grade point average (GPA), location, courses, attendance, and all other information maintained by the university directly related to a student. In order for our app to conform to federal law, out app must meet the following security standards.
 
 #### 3.2.13.1 Prevent Legal Complications.
 
@@ -859,7 +942,7 @@ The Family Educational Rights and Privacy Act (FERPA) is a Federal law designed 
 |Trigger information| When the user logs into their I-Learn account through the app and chooses to share their student information by selecting the option and agree to the disclosure agreement. See basic path for more detail. |
 |Precondition   | The user is a student at BYU-I.|
 |Basic Path     | 1. The user logs in at the login screen.<br/> 2. The user taps the ‘Sync’ button.<br/> 3. The disclosure agreement pops-up on the screen (see 4.2.13.1.1 for an example of of a disclosure agreement). <br/> 4. User reads disclosure agreement and selects "I agree option"<br/>|
-|Alternate Path | 1. User chooses option to use a third-party company to improve experience using the calander app.<br/> 2. Disclosure agreement for third-party company pops-up. <br/> 3. If user agrees to the disclosure agreement share only information neccesary for calander application to work with third-party application.|
+|Alternate Path | 1. User chooses option to use a third-party company to improve experience using the calendar app.<br/> 2. Disclosure agreement for third-party company pops-up. <br/> 3. If user agrees to the disclosure agreement share only information necessary for calendar application to work with third-party application.|
 |Post Condition | Information that the user has shared with us remains isolated from any interaction with 3rd party companies like Google or Microsoft unless user gives these third parties permission to use their personal information. |
 |Exception Paths| 1. If user has already agreed to the disclosure agreement than that step of the process is skipped. <br/> 2. If a user does not agree to the disclosure agreement then the app returns to the login screen.|
 |Other          | This feature primarily concerns integrity and confidentiality of data. |
@@ -869,10 +952,10 @@ The Family Educational Rights and Privacy Act (FERPA) is a Federal law designed 
 | Data          | Description |
 |:--------------| :--------------|
 |Use Case Detail| Third-Party organizations only may use de-identified data for marketing, research, development of products, and other purposes. Third-parties must agree to not attempting to identify the owner of de-identified data and may not share de-identified data unless the party they share the data with agrees to not attempt to identify the de-identified data. |
-|Cross Reference |See 4.2.13.1.2 for verification details of this use case. Glossery for Definition of De-Identified Data and Identifying Information. FERPA Regulations 99.20, 99.21, and 99.22 | 
+|Cross Reference |See 4.2.13.1.2 for verification details of this use case. Glossary for Definition of De-Identified Data and Identifying Information. FERPA Regulations 99.20, 99.21, and 99.22 | 
 |Trigger information|The user syncs their data with our app using the "sync" function. |
-|Precondition   | Information being recieved is not already de-identified data or information is being sent to a non-unverstiy organization who has already agreed to not attempt to identify the owner of the information. |
-|Basic Path     | 1. User "syncs" information with third-party organiztion <br/> 2. Trigger above requirement for disclosure of information <br/> 3. Identifying Information is removed from the information to be sent to the third-party. <br/> 4. De-identified data is sent to third-party organization for its use.  |
+|Precondition   | Information being received is not already de-identified data or information is being sent to a non-unverstiy organization who has already agreed to not attempt to identify the owner of the information. |
+|Basic Path     | 1. User "syncs" information with third-party organization <br/> 2. Trigger above requirement for disclosure of information <br/> 3. Identifying Information is removed from the information to be sent to the third-party. <br/> 4. De-identified data is sent to third-party organization for its use.  |
 |Alternate Path | None. |
 |Post Condition | Third-party organization may use de-identified data as they wish. |
 |Exception Paths| If User refuses to agree to disclosure agreement then the de-identified data is not sent to the third-party organization and User is unable to use that particular third-party organization's services in support of this application unless disclosure agreement is agreed to. |
@@ -886,7 +969,7 @@ The Family Educational Rights and Privacy Act (FERPA) is a Federal law designed 
 |Cross Reference |See 4.2.13.1.3 for verification details of this use case. | 
 |Trigger information|The User or Client requests data that we hold that has been holding. |
 |Precondition   | Data belongs to the User requesting it. The Client requests a User's data that has been provided by the Client. |
-|Basic Path     | 1. Request is made by Client/User <br/> 2. Data requested is confirmed to belong to Client/User <br/> 3. Client/User is identified and confirmed to be who they say they are (in case of the Client they must be authorized to speak for the Client as an organization) <br/> 4. Data is sent to Client/User in a format and method that is convienent for them and secure for protection purposes.  |
+|Basic Path     | 1. Request is made by Client/User <br/> 2. Data requested is confirmed to belong to Client/User <br/> 3. Client/User is identified and confirmed to be who they say they are (in case of the Client they must be authorized to speak for the Client as an organization) <br/> 4. Data is sent to Client/User in a format and method that is convenient for them and secure for protection purposes.  |
 |Alternate Path | None.|
 |Post Condition | Client/User obtains requested Data |
 |Exception Paths| If the User is under the age of 18 years old then their Legal Guardian may act as the User for this interaction. |
@@ -904,7 +987,7 @@ This feature allows access to the I-Learn discussion boards through the calendar
 |Cross Reference | See 4.2.14.1 for verification details of this use case.|
 |Trigger        | The user taps the ‘I-Learn Discussion Board’ button and navigates to their discussion board. |
 |Precondition   | The app must have an internet connection and the user must have logged into the app with their I-Learn account. |
-|Basic Path     | 1. The user will navigate to one of their classes.<br/> 2.The user will select a discussion board to view.<br/> |
+|Basic Path     | 1. The user will navigate to one of their classes.<br/> 2. The user will select a discussion board to view.<br/> |
 |Alternate Path | None. |
 |Post Condition | The user is able to view the posts on the discussion board.|
 |Exception Paths| The user has no classes, or no open discussions available to them.|
@@ -918,7 +1001,7 @@ This feature allows access to the I-Learn discussion boards through the calendar
 |Cross Reference | See 4.2.14.2 for verification details of this use case.|
 |Trigger        | While viewing the posts in the discussion board, the user taps the appropriate button to make a new post. See basic path for more detail. |
 |Precondition   | The app must have an internet connection and the user must have logged into the app with their I-Learn account.|
-|Basic Path     | 1. The user will navigate to one of their classes.<br/> 2. The user will select a discussion board to view.<br/> 3.The user will press the ‘Reply’, or ‘Start New Thread’ button to create a new post.<br/>|
+|Basic Path     | 1. The user will navigate to one of their classes.<br/> 2. The user will select a discussion board to view.<br/> 3. The user will press the ‘Reply’, or ‘Start New Thread’ button to create a new post.<br/>|
 |Alternate Path | None. |
 |Post Condition | The user has made a new post to the discussion board. |
 |Exception Paths | The user has no classes, or no open discussions available to them.|
@@ -968,7 +1051,7 @@ When an assignment is graded by the user's instructor, the user will see the gra
 |:--------------|:-----------------|
 |Use Case Detail| As a student, I want to see the grade I got on assignments after I complete them because this information is important to me and time sensitive. |
 |Cross Reference | See 4.2.17.1 for verification details of this use case.| 
-|Trigger        | The professor grades a assignment that the user has submitted. See basic path for more detail.|
+|Trigger        | The professor grades an assignment that the user has submitted. See basic path for more detail.|
 |Precondition   | The user has completed an assignment and it has been graded by the user's instructor.|                       
 |Basic Path	| 1. User completes and submits an assignment.<br/> 2. User's instructor grades the assignment.<br/> 3. User logs into the app with their I-Learn account.<br/> 4. User navigates to the calendar to view grade.<br/> |
 |Alternate Path	| An e-mail with a notification about a grade change provides a link to the calendar's grade section.|			
@@ -1130,7 +1213,7 @@ The notification will be a reminder for the user of an upcoming event or assignm
 |Cross Reference | See 4.2.22.1 for verification details of this use case.| 
 |Trigger        | The user fills out the notification information and selects the "save notification" button. See basic path for details.|
 |Precondition   | From the main calendar view, the user selects the notification icon. The notification window appears and the user selects the "create notification" button.|
-|Basic Path     | 1.A notification form appears and prompts the user to fill in information about the new notification.<br>2.The user fills in the information and sets the time for the notification to be sent.<br/>3.The User selects the "save notification" button.| 
+|Basic Path     | 1. A notification form appears and prompts the user to fill in information about the new notification.<br>2. The user fills in the information and sets the time for the notification to be sent.<br/>3. The User selects the "save notification" button.| 
 |Alternate Path | The user may select a pre-existing event in the calendar and choose to have the Student Calendar app create a notification about the event to send at a later time.|
 |Post Condition | A new notification is saved to a list of calendar notifications. |
 |Exception Paths| If the user does not enter any information about the notification, he Application will display an error message and prompt the user to enter information. If the notification time is set to a date in the past, the application will display "invalid date" ad the user will be prompted to enter another date.|
@@ -1148,7 +1231,7 @@ This Feature allows the user to send an invitation to another user or a group of
 |Cross Reference | See 4.2.23.1 for verification details of this use case.| 
 |Trigger        | The user has selected an event from their calendar and has chosen to share it with one of their groups. See basic path for details.|
 |Precondition   | The user must have already created an event. The user must have permission from another user to send them invitations.|
-|Basic Path     | 1.The user selects an event to view the event details..<br>2.The event window is displayed and the user selects the "Invite" button.<br>3.The user selects the group or individual users to share the event with.<br/>4. The user selects the "send invitation" button.|
+|Basic Path     | 1. The user selects an event to view the event details..<br>2. The event window is displayed and the user selects the "Invite" button.<br>3. The user selects the group or individual users to share the event with.<br/>4. The user selects the "send invitation" button.|
 |Alternate Path |  The user may create an invitation that is not associated with a calendar event.|
 |Post Condition | The users to whom the invitation was sent receive a notification in their calendar, and have the option to view the invitation.|
 |Exception Paths| If the user does not select any users before attempting to send the notification, the application displays "You must select at least one user". |
@@ -1372,7 +1455,7 @@ The calendar application will provide a video tutorial on how to use the applica
 |Cross Reference | See 4.2.30.1 for verification details of this use case.| 
 |Trigger        | Entering the Application for the first time. See basic path for more detail.|
 |Precondition   | The user must be signing into the application for the first time.|
-|Basic Path     | 1. The user signs into the application.<br />2. A pop-up appears instructing the user: "Click The Link to Learn How to Use the App." <br />3. The user clicks on the link which takes them to Youtube.<br/>|
+|Basic Path     | 1. The user signs into the application.<br />2. A pop-up appears instructing the user: "Click The Link to Learn How to Use the App." <br />3. The user clicks on the link which takes them to YouTube.<br/>|
 |Alternate Path | Include a location labeled "help" which has the link to the tutorial video for those who would like to watch it again.|
 |Post Condition | After the individual has seen the pop-up for the first time it will not pop-up again. They will have to visit the help section to view the video again.|
 |Exception Paths| The pop-up may be left by clicking cancel at any time.|
@@ -1438,22 +1521,36 @@ Group owners should be able to set permissions for the users in the group. They 
 |Exception Paths| If a user has been rejected from a group, they cannot elicit the group again for an invitation after a third try. |
 |Other          | None. |
 
-### 3.2.32 Group Links
+### 3.2.32 Non-SSO
 
-Links are used to deep link to third party technologies for collaboration tools.
+The user will be required to log into the application with a single ID and password which will only give them access to the calendar application, no other domains.See 2.5.4 for an image reference of this feature.
 
-#### 3.2.32.1 Links to Collaborative Tools
+#### 3.2.32.1 Non-SSO Log In
 
 | Data          | Description |
 |:--------------| :--------------|
-|Use Case Detail| As a user, I want to be able to click a link that takes me to a group chat in Google Hangouts.|
-|Cross Reference | See 4.2.32.1 for verification details of this use case.| 
-|Trigger        | The user opens an announcement or meeting and taps on the provided link.|
-|Precondition   | After the user has connected to I-Learn and has a group that is working on a project. |
-|Basic Path     | 1. User logs into I-Learn through app.<br> 2. User clicks the "Group" icon and the app shows his group.<br> 3. The user selects an announcement or meeting.<br> 4. The user taps on the provided link.|
+|Use Case Detail| As a user I can log in to the calendar application with a username and password.|
+|Cross Reference | See 4.2.32.1 for verification details of this use case. See 2.5.4 for an image reference of this feature.|
+|Trigger        | The application is executed for the first time.|
+|Precondition   | The user is viewing the log in page.|
+|Basic Path     | 1. The user enters their username and password into the appropriate fields.<br> 2. The user then selects the "Log In" button.|
+|Alternate Path | If the password entered does not match, the user is prompted to re-enter it again.|
+|Post Condition | The user's calendar is open and functional.|
+|Exception Paths| If the username is not contained within the server database, the user will be asked to create a new account.|
+|Other          | None|
+
+#### 3.2.32.2 Non-SSO Log Out
+
+| Data          | Description |
+|:--------------| :--------------|
+|Use Case Detail| As a user I can log out of the calendar application.|
+|Cross Reference | See 4.2.32.2 for verification details of this use case.See 2.5.4 for an image reference of this feature.|
+|Trigger        | The user clicks the "Log Out" button.|
+|Precondition   | The user is currently logged in to the calendar application.|
+|Basic Path     | 1. The user clicks the "Log Out" button.<br> 2. The user is then asked if they are certain they want to log out. If the user selects yes, then they are logged out. If they select no, they will be returned to the calendar.|
 |Alternate Path | None|
-|Post Condition | The link turns another color notifying the user that it has been selected.|
-|Exception Paths| The link does not work and takes them to a 404 page.|
+|Post Condition | The user is presented with the log in screen as if they had launched the application for the first time.|
+|Exception Paths| None|
 |Other          | None|
 
 ### 3.2.33 Sort & Filter
@@ -1571,16 +1668,16 @@ This feature requires the user to log in to view their calendars which provides 
 |Exception Paths| If the username uses invalid characters, the process is ended and the user is notified about which characters are invalid.|
 |Other          | None.|
 
-### 3.2.38 Inspirational Quotes and Images
+### 3.2.37 Inspirational Quotes and Images
 
 The calendar will allow users to add inspirational quotes and images to their daily views for the purpose of motivating and encouraging the user in their assignments. This will give the users a means of customizing their own calendars.
 
-#### 3.2.38.1 Enter Quote Text
+#### 3.2.37.1 Enter Quote Text
 
 | Data          | Description |
 |:--------------| :--------------|
 |Use Case Detail| As a user, I want to add an inspirational quote to my calendar.|
-|Cross Reference | See 4.2.38.1 for verification details of this use case.| 
+|Cross Reference | See 4.2.37.1 for verification details of this use case.| 
 |Trigger        | The user selects the "Add a quote" button.|
 |Precondition   | The user is viewing the single day calendar view, which is opened up by selecting one day from the main calendar view.|
 |Basic Path     | 1.A window opens prompting the user to type in a quote into the first input field.<br /> 2. The next input field prompts the user to enter the name of the author. <br /> 3.The user selects the "add quote" button.  |
@@ -1589,12 +1686,12 @@ The calendar will allow users to add inspirational quotes and images to their da
 |Exception Paths| If the user does not enter any text, an error message occurs and they are prompted to try again or close the window.|
 |Other          | None.|
 
-#### 3.2.38.2 Insert an Inspirational Image
+#### 3.2.37.2 Insert an Inspirational Image
 
 | Data          | Description |
 |:--------------| :--------------|
 |Use Case Detail| As a user, I want to insert a meaningful image into my calendar view. This can be either from the internet or from my phone|
-|Cross Reference | See 4.2.38.2 for verification details of this use case.| 
+|Cross Reference | See 4.2.37.2 for verification details of this use case.| 
 |Trigger        | The user selects the "Add an image" button |
 |Precondition   | The user is viewing the single day calendar view, which is opened up by selecting one day from the main calendar view|
 |Basic Path     | 1.A window opens containing two buttons, "paste" and "import" <br /> 2. The user selects the paste button. <br /> 3.An image from the user's clipboard is pasted into the window<br /> 4.The user selects the "add image" button.|
@@ -1603,458 +1700,16 @@ The calendar will allow users to add inspirational quotes and images to their da
 |Exception Paths| If the user selects an invalid file or does not have any image on their clipboard, an error message is displayed and the user is prompted to try again or close the window.|
 |Other          | None|
 
-### 3.2.39 Adjustable Calendar/Calendar Item Size
-
-The user will be able to adjust the size of the calendar and have the calendar items scale proportionately. The user will be able to zoom in on text of an item by clicking the appropriate day or hovering their mouse over the item. Here an item is defined as any event or assignment.
-
-#### 3.2.39.1 Mobile Tilting Functionality
-
-| Data          | Description |
-|:--------------| :--------------|
-|Use Case Detail| As a mobile user, I want to view my calendar in a landscape view rather than a portrait.|
-|Cross Reference | See 4.2.39.1 for verification details of this use case.| 
-|Trigger        | The user tilts their phone sideways.|
-|Precondition   | The user is in the main calendar view or the daily calendar view.|
-|Basic Path     | 1. The phone signals the application that it is turned on its side. <br /> 2. The app calculates the new width/height ratio.<br /> 3. The calendar and its items are rotated and scaled proportionately.|
-|Alternate Path | The user rotates their phone back to standing upright, and the app returns the original display.|
-|Post Condition |The main calendar is now displayed in a landscape view.|
-|Exception Paths| If the user is continually rotating their phone (e.g. spinning it) the app waits until the phone has stopped moving to complete the function.|
-|Other          | None |
-
-#### 3.2.39.2 Desktop Calendar Item Zooming
-
-| Data          | Description |
-|:--------------| :--------------|
-|Use Case Detail| As a desktop user, I want to zoom in on a particular item in my calendar to read the details.|
-|Cross Reference | See 4.2.39.2 for verification details of this use case.| 
-|Trigger        | The user hovers their mouse over an item in the calendar.|
-|Precondition   | The user is in the main calendar view or the daily calendar view.|
-|Basic Path     | 1. A window opens up in the middle of the screen. <br /> 2. The text of the item is display enlarged within the window. <br /> 3. The user moves the mouse away from the item to close the window.|
-|Alternate Path | The user moves the mouse from one item to another. The next item is displayed in the window instead of closing it.|
-|Post Condition |The user is able to view the full details of the item.|
-|Exception Paths| If an item that is selected does not contain a description, the zoom window displays "No item description." |
-|Other          | None. |
-
-### 3.2.40 Share Calendar Feature
-The user can share their calendar and task data through their Facebook, Google Plus, and Twitter accounts. The user may also share their data through email. In addition to this, the user will also be able to post an advertisement for the app itself on their social media.
-
-
-#### 3.2.40.1 Connect to Social Media
-
-| Data          | Description |
-|:--------------| :--------------|
-|Use Case Detail| As a user, I can connect my calendar application to three variants of social media: Facebook, Google Plus, and Twitter.|
-|Cross Reference | See 4.2.40.1 for verification details of this use case.| 
-|Trigger        | The user clicks the "Share" button.|
-|Precondition   | By default, the user will see an option to share.|
-|Basic Path     | A window opens and four choices are presented after clicking "Share": "Facebook", "Google Plus", "Twitter", and "email". The user chooses any of the first three options. Depending on the social media selected the user will be presented with a login screen associated with the selected media where the user will enter their associated username and password. The user will then select the "Login" button and be presented with a message notifying the user that the application is connected to the chosen social media.|
-|Alternate Path | None.|
-|Post Condition | The share option will not direct the user to the login page for the specified social media anymore.|
-|Exception Paths| The user may select "Cancel" to exit at any point in the process.|
-|Other          | None.|
-
-#### 3.2.40.2 Share Calendar Application Advertisement Through Social Media
-
-| Data          | Description |
-|:--------------| :--------------|
-|Use Case Detail| As a user, I can share the advertisement for the application on social media. |
-|Cross Reference | See 4.2.40.1 for verification details of this use case.| 
-|Trigger        | The user clicks the "Share" button.|
-|Precondition   | The user has already connected the application to social media.|
-|Basic Path     | A window opens and four choices are presented after clicking "Share": "Facebook", "Google Plus", "Twitter", and "email". The user selects the social media they would like to share to. The user will then be asked to confirm whether they want to "Share" or "Cancel". If the user chooses to share, then they will be notified that the advertisement for the app has been shared. If they cancel, the share window will be closed.|
-|Alternate Path | None.|
-|Post Condition | The user is presented with a notification that the calendar is shared.|
-|Exception Paths| The user may select "Cancel" to exit at any point in the process.|
-|Other          | None.|
-
-#### 3.2.40.3 Share Calendar Through Email
-
-| Data          | Description |
-|:--------------| :--------------|
-|Use Case Detail| As a user, I can share the application by sending an email to potential recipients. |
-|Cross Reference | See 4.2.40.3 for verification details of this use case.| 
-|Trigger        | The user clicks the "Share" button.|
-|Precondition   | By default, the user will see an option to share.|
-|Basic Path     | A window opens and four choices are presented after clicking "Share": "Facebook", "Google Plus", "Twitter", and "email". The user chooses "email" and is presented with an email interface including a section for the recipient's email address and a text box for entering any messages to the recipient. 2. The user fills out both of these fields and then clicks the "Send" button. The user is then presented with a notification saying "Message Sent".|
-|Alternate Path | None.|
-|Post Condition | The user is presented with a notification that the calendar is sent.|
-|Exception Paths| The user may select "Cancel" to exit at any point in the process.|
-|Other          | None.|
-
-### 3.2.41 Weather
-
-When you click on an event it will include the predicted weather for that day.
-
-#### 3.2.41.1 Weather for Specific Days
-
-| Data          | Description |
-|:--------------|:----------------|
-|Use Case Detail| A user wants to know what the weather will be like for a specific day. |
-|Cross Reference | See 4.2.41.1 for verification details of this use case.| 
-|Trigger        | When the user selects a planned event, the event window will additionally display the predicted weather that day. You can also see the predicted weather in the event planning window as well.|
-|Precondition   | Have an account created and/or have an event planned.   |
-|Basic Path     | 1. Create account with Student Calendar. <br> 2. Select day where user would like to plan an event. <br> 3. System displays event creation window and on there the weather predicted shows up as well.               |
-|Alternate Path | 1. Select an event that has been created. 2. System displays the event window along with the predicted weather that day.                          |
-|Post Condition | User is updated with information about that days weather.|
-|Exception Paths| User can close event window at any time.                 |
-|Other          | None.                                                    |
-
-### 3.2.42 Tutor Integration
-
-The user will be able to schedule a tutor from the BYU-I website.
-
-#### 3.2.42.1 Schedule a Tutor
-
-| Data          | Description |
-|:--------------|:----------------|
-|Use Case Detail| As a user, I want to quickly set a tutor appointment. |
-|Cross Reference | See 4.2.42.1 for verification details of this use case.| 
-|Trigger        | The user presses the "Tutor Request" button. |
-|Precondition   | User must have a Student Calendar app account, available Internet access, and be enrolled at BYU-I.|
-|Basic Path     | 1. User presses the "Tutor Request" button. <br /> 2. A new window opens up redirecting the student to the BYU-I Tutor's website. |
-|Alternate Path | None. |
-|Post Condition | The event is created and has a section where the user can add information about the tutor session created. |
-|Exception Paths| The window can be closed at any time, thereby cancelling the tutor event.|
-|Other          | None.|
-
-### 3.2.43 School Functions
-
-The user will be reminded of upcoming social events.
-
-#### 3.2.43.1 School Functions Reminder
-
-| Data          | Description |
-|:--------------| :--------------|
-|Use Case Detail| As a social student, I want to be reminded of upcoming social events so that I may attend them.|
-|Cross Reference | See 4.2.43.1 for verification details of this use case.| 
-|Trigger        | The user clicks "Sign in to BYU-I" button. See basic path for more detail.|
-|Precondition   | Registered student at BYU-I college.|
-|Basic Path     | 1. Select Sign in. <br/>2. System finds event calendar on BYU-I website.<br />3. Side panel is filled in with the events. They are not put in the regular calender to avoid clutter.|
-|Alternate Path |None.| 
-|Post Condition | Student calendar has a side panel that is updated with the school functions and events.
-|Exception Paths| User could decide not to sign into BYU-I and therefore not have the school event list.
-|Other          |None.|
- 
- ### 3.2.044 Printing
-
-The user will be able to print off a schedule.
-
-#### 3.2.044.1 Printing
-
-| Data          | Description |
-|:--------------| :--------------|
-|Use Case Detail| The user wishes to print off their schedule to view offline/out of app. |
-|Cross Reference | See 4.2.044.1 for verification details of this use case.| 
-|Trigger        | User selects "Print" button at top of screen to print weekly or monthly view.|
-|Precondition   | Calendar is being viewed in monthly or weekly view and is connected to a printer. |
-|Basic Path     | 1. The user selects print option.<br>2. The user crops desired part of calendar. <br>3. The user selects print options (ex: color, page count).  <br>4. User selects print.|
-|Alternate Path | None.|
-|Post Condition | The calendar is left unchanged. The user has printed selection of the calendar.|
-|Exception Paths| None.|
-|Other          | None.|
-
-### 3.2.45 Badges
-
-Show badges indicating how many messages, notifications, or tasks that have not been seen.
-
-#### 3.2.45.1 View badges
-
-| Data          | Description |
-|:--------------| :--------------|
-|Use Case Detail| As a user, I want to see if there are new notifications in the app while outside of it.|
-|Cross Reference | See 4.2.045.1 for verification details of this use case.| 
-|Trigger        | User checks device to see if there are any notifications from the calendar app (badges).|
-|Precondition   | Events created, School functions connected.|
-|Basic Path     | 1. Select a badge <br/>2. Select from badges event or notification to view <br/>3. Continue looking through badges until out or until user has seen what they wanted to.<br/>|
-|Alternate Path |None.| 
-|Post Condition | Badges are cleared and system is ready to set more.|
-|Exception Paths| User may not check all the badges which leaves some notifications still up.|
-|Other          |None.|
-
-### 3.2.46 Quick Access
-
-The user has the option to be quickly directed to I-Learn and specifically individual classes within I-Learn.
-
-### 3.2.46.1 Quick Access Class Selection
-
-| Data          | Description |
-|:--------------| :--------------|
-|Use Case Detail| As a user I can access my classes in I-Learn through links.|
-|Cross Reference | See 4.2.045.1 for verification details of this use case.| 
-|Trigger        | The user clicks the "Quick Access" button.|
-|Precondition   | The user must be logged into the calendar application and be synced with I-Learn.|
-|Basic Path     | 1. After clicking "Quick Access" a drop-down menu is displayed with the user's current I-Learn courses. The user clicks one of these courses and is redirected to the I-Learn website and more specifically the class selected within the site using the device's default web browser.|
-|Alternate Path | None.|
-|Post Condition | The user is presented with a notification that the calendar is sent.|
-|Exception Paths| 1. If there is no internet access the user will receive an error message saying "No Internet Connection".|
-|Other          | None.|
-
-### 3.2.47 Assignment Alarm
-
-The user has the option to set an alarm for individual assignments that will let the user know when they should begin working on the assignment.
-
-### 3.2.47.1 Setting the Assignment Alarm
-
-| Data          | Description |
-|:--------------| :--------------|
-|Use Case Detail| As a user, I can set an alarm that lets me know when to work on an assignment. |
-|Cross Reference | See 4.2.045.1 for verification details of this use case.| 
-|Trigger        | The user clicks an existing assignment event on the calendar.|
-|Precondition   | An assignment event must already be created.|
-|Basic Path     | 1. After clicking an assignment event a window will pop up displaying the details of the event. The user will click the "Alarm" button. <br>2. The alarm interface will give the user drop-down options for date and time for the alarm to trigger. After selecting the date and time the user will have the option of clicking "Set" or "Cancel".  "Cancel" closes the alarm interface and "Set" sets the alarm.|
-|Alternate Path | None.|
-|Post Condition | The user will receive a notification that the alarm has been set for a specified date and time.  When the alarm triggers, the notification will include the name of the assignment for which the alarm was set.|
-|Exception Paths| None.|
-|Other          | None.|
-
-### 3.2.51 Google API
-
-The user will be able to sync their Google Calendar with our Student Calendar App.
-
-#### 3.2.51.1 Sync Google calendar
-
-| Data          | Description |
-|:--------------| :--------------|
-|Use Case Detail  | As a user, I would like to sync my Google Calendar into the app.|
-|Cross Reference | See 4.2.51.1 for verification details of this use case.| 
-|Trigger        | User login to Google Calendar|
-|Precondition   | User must have Google account|
-|Basic Path     | 1. Ask User for Google sign in. <br />2. Login using Google API. <br />3. Sync calendar items.|
-|Alternate Path | None|
-|Post Condition | Google Calendar items will be Synced|
-|Exception Paths| User can logout of Google account|
-|Other          | None|
-
-### 3.2.52 Apple API
-
-The user can sync their Apple Calendar with their Student Calendar App.
-
-#### 3.2.52.1 Sync Apple Calendar
-
-| Data          | Description |
-|:--------------| :--------------|
-|Use Case Detail  | The User would like to sync their Apple Calendar into the app|
-|Cross Reference | See 4.2.52.1 for verification details of this use case.| 
-|Trigger        | The user clicks "Apple Login"|
-|Precondition   | The user must have an Apple ID |
-|Basic Path     | 1. The user clicks on "Apple Login" <br> 2. The user is presented with an Apple login page <br> 3. The user enters their login information, and clicks "Login" <br> 4. The user is brought back to the calendar view|
-|Alternate Path | None|
-|Post Condition | The user's Apple calendar events with be synced and displayed in the calendar view. |
-|Exception Paths| The user can exit the login process or logout of their Apple account. |
-
-### 3.2.53 Outlook API
-
-The user can sync their Outlook Calendar with our Student Calendar App.
-
-#### 3.2.53.1 Sync Outlook Calendar
-
-| Data          | Description |
-|:--------------| :--------------|
-|Use Case Detail| As a user, I would like to sync my Outlook Calendar with the app.|
-|Cross Reference | See 4.2.53.1 for verification details of this use case.| 
-|Trigger        | The user clicks "Outlook Login".|
-|Precondition   | The user must have an Outlook account.|
-|Basic Path     | 1. The user clicks on "Outlook Login" <br>2. Login using Outlook API. <br> 3. The calendar syncs. |
-|Alternate Path | None|
-|Post Condition | The user's Outlook calendar events with be synced and displayed in the calendar view. |
-|Exception Paths| The user can exit the login process or logout of their Outlook account. |
-|Other          | None|
-
-### 3.2.54 Toolbox Bar
-
-This bar will have many other buttons and bars related to searching, timer, progress and meeting times.
-
-#### 3.2.54.1 Search Bar
-
-| Data          | Description |
-|:--------------| :--------------|
-|Use Case Detail| As a user, I want to search the calendar app.|
-|Cross Reference | See 4.2.54.1 for verification details of this use case.| 
-|Trigger        | User clicks on the search bar.|
-|Precondition   | User is logged into the calendar app.|
-|Basic Path     | 1. User selects the search bar and enters in keyword.|
-|Alternate Path | User selects search button and enters in keyword.|
-|Post Condition | User has searched for a keyword.|
-|Exception Paths| If the keyword is not found the user will be prompted to try a different keyword.|
-|Other          | None.|
-
-#### 3.2.54.2 Timer
-
-| Data          | Description |
-|:--------------| :--------------|
-|Use Case Detail| User has limited time to complete assignment, calendar app shows how long assignment will take to complete.|
-|Cross Reference | See 4.2.54.2 for verification details of this use case.| 
-|Trigger        | User has an assignment that needs to be completed.|
-|Precondition   | User is logged into calendar app and looking assignment.|
-|Basic Path     | 1. User selects the timer function to determine time needed to complete assignment.|
-|Alternate Path | None.|
-|Post Condition | User is given an estimate of how long it will take to complete given assignment.|
-|Exception Paths| If user hasn't completed any assignments then the timer will display a message to explain this.|
-|Other          | None.|
-
-#### 3.2.54.3 Assignment Progress Bar
-
-| Data          | Description |
-|:--------------| :--------------|
-|Use Case Detail| User wants to know how many assignments they have completed. |
-|Cross Reference | See 4.2.54.3 for verification details of this use case.| 
-|Trigger        | User has linked app with school.|
-|Precondition   | User is looking at assignments for given week.|
-|Basic Path     | 1. User selects the assignment progress bar.|
-|Alternate Path | None.|
-|Post Condition | User can see how many assignments have been completed for specific class and how many are left to complete.|
-|Exception Paths| If user hasn't added classes then there will be no progress bar.|
-|Other          | None.|
-
-#### 3.2.54.4 Suggest Meeting Times
-
-| Data          | Description |
-|:--------------| :--------------|
-|Use Case Detail| A user needs to know when they can meet with other students.|
-|Cross Reference | See 4.2.54.4 for verification details of this use case.| 
-|Trigger        | A user has selected the meet with others button.|
-|Precondition   | User has added associates to calendar app.|
-|Basic Path     | 1. User navigates to meet with others button.|
-|Alternate Path | None.|
-|Post Condition | User is able to see availability of associates.|
-|Exception Paths| User hasn't added anyone to app and is unable to see availability.|
-|Other          | None.|
-
-### 3.2.57 Custom Images and Icons
-
-The calendar should be able to be personalized. The user will have the ability to interact with the app to change things to their favorite images for the display options on their calendar.
-
-#### 3.2.57.1 Custom Images and Icons
-
-| Data            | Description |
-| :-------------- | :--------------|
-| Use Case Detail | As a user, I want to utilize custom images and icons to personalize the appearance of the calendar app|
-|Cross Reference | See 4.2.57.1 for verification details of this use case.| 
-| Trigger         | The user clicks the "Settings" button and then chooses the "Appearance" option|
-| Precondition    | By default, the user will have option to the settings menu throughout the app.|
-| Basic Path      | 1. The user selects the settings button and scroll to the "Appearance" option.<br/> 2. The user selects custom images for class icons, backgrounds and layout. |
-| Alternate Path  | The user can customize the appearance for other classes.|
-| Post Condition  | The user will have a customized view and appearance for each class and layout.|
-| Exception Paths | The user may select "Cancel" to exit at any point in the process.|
-| Other           | None.|
-
-### 3.2.58 Custom Videos
-
-The calendar will ask for camera permissions so that the user can use videos to customize their display options.
-
-#### 3.2.58.1 Custom Videos
-
-| Data          | Description |
-|:--------------| :--------------|
-|Use Case Detail| While interacting inside the app, the user can utilize and imbed videos to customize the display options.|
-|Cross Reference | See 4.2.58.1 for verification details of this use case.| 
-|Trigger        | The user would click the "Settings" button and then choose the option that offers customization. In this case it would be "Appearance".|
-|Precondition   | By default, the user will have option to the settings menu throughout the app.|
-|Basic Path     | 1. The user would select the settings button and scroll to the "Appearance" option. Then they will be given choices of customization with images for class icons, backgrounds and layout.|
-|Alternate Path | The user can have the ability to select a class and go to settings in each different class to customize the appearance.|
-|Post Condition | The user will have a customized view and appearance for each class and layout.|
-|Exception Paths| The user may select "Cancel" to exit at any point in the process.|
-|Other          | None.|
-
-### 3.2.60 Calendar View
-
-The User will be able to select the calendar view style that suits them best.
-
-#### 3.2.60.1 Various Calendar Views
-
-| Data            | Description|
-| :-------------- | :--------------|
-| Use Case Detail | The calendar includes Day, 5-day Week, 7-day Week, Month, Semester, and Year views. The user can easily switch views, and the current date will be highlighted.|
-|Cross Reference | See 4.2.60.1 for verification details of this use case.| 
-| Trigger         | The selected view will be used to display the calendar whenever the user opens the calendar portion of the app.|
-| Precondition    | The default view will be 'Month', and the user will have the ability to select their preference in Settings.|
-| Basic Path      | 1. Above the top of the calendar, there will be dedicated buttons to switch to Month, 7-day Week, and Day view.|
-| Alternate Path  | For the other views, the user will click 'Calendar Settings', and then 'Calendar View'. They will then make their selection from the available views.|
-| Post Condition  | The calendar's view setting will be updated and henceforth the calendar will be displayed in the view style that the user selected.|
-| Exception Paths | If the user wishes to undo their selection, they will simply select the view that they had previously been using.|
-| Other           | None.|
-
-### 3.2.61 Task Rewards
-
-The user has the option of enabling a rewards system to encompass different real-world tasks.
-
-#### 3.2.61.1 Goal/XP Bar
-
-| Data            | Description|
-| :-------------- | :--------------|
-| Use Case Detail | As a user, I want to use a video game-like point system, where I am rewarded with virtual points when I complete tasks.|
-|Cross Reference | See 4.2.61.1 for verification details of this use case.|
-| Trigger         | This feature will be enabled if the user decides to enable it from the settings menu, and it will be present when they create tasks, and when they mark them complete.|
-| Precondition    | The feature will only enable if the user wants to.|
-| Basic Path      | 1. The user clicks 'Settings'.<br> 2. The user clicks 'Adventure Mode'.<br> 3. The user toggles the mode's setting toggle to 'on'.|
-| Alternate Path  | None.|
-| Post Condition  | After enabling this feature, the sidebar will include a Points and XP 'character stats' display akin to those found in video games, the 'create task' dialogue will prompt the user for task's point values, and the app will award points upon task completion.|
-| Exception Paths | This setting can be disable with the same settings toggle that enabled it.|
-| Other           | If point system is disabled, points should be saved in the event the system is re-enabled. |
-
-### 3.2.62 User Task List
-
-The User has the option to view all upcoming tasks in their courses.
-
-#### 3.2.62.1 Assignment List
-
-| Data            | Description|
-| :-------------- | :--------------|
-| Use Case Detail | The app includes a list view where all the user's tasks from all classes and categories are visible.|
-|Cross Reference | See 4.2.62.1 for verification details of this use case.|
-| Trigger         | The user presses the 'list view' button.|
-| Precondition    | This feature has no precondition - If the user has not added any tasks yet, then the list will be empty.|
-| Basic Path      | 1. 'List view' button visible on main view of app.|
-| Alternate Path  | 'List view' button visible in app navigation drawer.|
-| Post Condition  | The list view is displayed.|
-| Exception Paths | The user can navigate back to the calendar view by simply pressing the 'calendar' button visible at the top of the list view display.|
-| Other           | None.|
-
-### 3.2.63 School Catalog
-
-This feature allows the user to view the entire catalog for BYU-Idaho students. Ideally this would work for other schools as well, but is not required.
-
-#### 3.2.63.1 View School Catalog
-
-| Data          | Description |
-|:--------------| :--------------|
-|Use Case Detail| As a user, I want to view the courses offered at my school.|
-|Cross Reference | See 4.2.63.1 for verification details of this use case.|
-|Trigger        | A user selects the view catalog button.|
-|Precondition   | A user must be enrolled at a school and connect that school with the app.|
-|Basic Path     | Go to the view catalog button and select it.|
-|Post Condition | The user is in the catalog view for their school.|
-|Exception Paths| A user is not registered for a school and receives an error message stating so.|
-|Other          | If the functionality is not available for other schools, then the view catalog button will only show for BYU-Idaho students.|
-
-### 3.2.64 Class Help
-
-This feature provides some links to websites that would be helpful for a given assignment or task.
-
-#### 3.2.64.1 Help with class
-
-| Data          | Description |
-|:--------------| :--------------|
-|Use Case Detail| As a user, I want to find help and information for my classes.|
-|Cross Reference | See 4.2.64.1 for verification details of this use case.|
-|Trigger        | A user selects the class help button.|
-|Precondition   | A user must have registered for classes. These classes must be recorded in the application.|
-|Basic Path     | A user navigates to the class help button and selects it.|
-|Post Condition | A user is viewing a selection of links.|
-|Exception Paths| No available links have been connected to this assignment and user receives an error message to alert them.|
-|Exception Paths| No assignment has been selected so no links are found, user is asked to select an assignment.|
-|Other          | |
-
-### 3.2.66 Night Mode
+### 3.2.38 Night Mode
 
 Night mode is a setting that allows the user to toggle a blue light filter to reduce eye strain.
 
-#### 3.2.66.1 Night Mode
+#### 3.2.38.1 Night Mode
 
 | Data          | Description |
 |:--------------| :--------------|
 |Use Case Detail| As a user, I want to apply a blue light filter to reduce the strain on my eyes from the screen, especially at night.|
-|Cross Reference | See 4.2.66.1 for verification details of this use case.|
+|Cross Reference | See 4.2.58.1 for verification details of this use case.|
 |Trigger        | A user toggles night mode in the settings. Additionally, the calendar can automatically switch to "Night Mode" at sunset according to location.|
 |Precondition   | A user opens the settings menu and toggles night mode or configures automatic option.|
 |Basic Path     | 1. User chooses to toggle night mode. <br> 2. User enters settings page. <br> 3. The user presses the night mode button. <br> 4. The application applies a blue light filter.|
@@ -2063,37 +1718,397 @@ Night mode is a setting that allows the user to toggle a blue light filter to re
 |Exception Paths| None.|
 |Other          | Blue light has been proven to alter circadian rhythm and increase eye-strain. |
 
-### 3.2.70 Non-SSO
+### 3.2.39 Share Calendar Feature
+The user can share their calendar and task data through their Facebook, Google Plus, and Twitter accounts. The user may also share their data through email. In addition to this, the user will also be able to post an advertisement for the app itself on their social media.
 
-The user will be required to log into the application with a single ID and password which will only give them access to the calendar application, no other domains.
 
-#### 3.2.70.1 Non-SSO Log In
-
-| Data          | Description |
-|:--------------| :--------------|
-|Use Case Detail| As a user I can log in to the calendar application with a username and password.|
-|Cross Reference | See 4.2.70.1 for verification details of this use case.|
-|Trigger        | The application is executed for the first time.|
-|Precondition   | The user is viewing the log in page.|
-|Basic Path     | 1. The user enters their username and password into the appropriate fields.<br> 2. The user then selects the "Log In" button.|
-|Alternate Path | If the password entered does not match, the user is prompted to re-enter it again.|
-|Post Condition | The user's calendar is open and functional.|
-|Exception Paths| If the username is not contained within the server database, the user will be asked to create a new account.|
-|Other          | None|
-
-#### 3.2.70.2 Non-SSO Log Out
+#### 3.2.39.1 Connect to Social Media
 
 | Data          | Description |
 |:--------------| :--------------|
-|Use Case Detail| As a user I can log out of the calendar application.|
-|Cross Reference | See 4.2.70.2 for verification details of this use case.|
-|Trigger        | The user clicks the "Log Out" button.|
-|Precondition   | The user is currently logged in to the calendar application.|
-|Basic Path     | 1. The user clicks the "Log Out" button.<br> 2. The user is then asked if they are certain they want to log out. If the user selects yes, then they are logged out. If they select no, they will be returned to the calendar.|
+|Use Case Detail| As a user, I can connect my calendar application to three variants of social media: Facebook, Google Plus, and Twitter.|
+|Cross Reference | See 4.2.39.1 for verification details of this use case.| 
+|Trigger        | The user clicks the "Share" button.|
+|Precondition   | By default, the user will see an option to share.|
+|Basic Path     | A window opens and four choices are presented after clicking "Share": "Facebook", "Google Plus", "Twitter", and "email". The user chooses any of the first three options. Depending on the social media selected the user will be presented with a login screen associated with the selected media where the user will enter their associated username and password. The user will then select the "Login" button and be presented with a message notifying the user that the application is connected to the chosen social media.|
+|Alternate Path | None.|
+|Post Condition | The share option will not direct the user to the login page for the specified social media anymore.|
+|Exception Paths| The user may select "Cancel" to exit at any point in the process.|
+|Other          | None.|
+
+#### 3.2.39.2 Share Calendar Application Advertisement Through Social Media
+
+| Data          | Description |
+|:--------------| :--------------|
+|Use Case Detail| As a user, I can share the advertisement for the application on social media. |
+|Cross Reference | See 4.2.39.1 for verification details of this use case.| 
+|Trigger        | The user clicks the "Share" button.|
+|Precondition   | The user has already connected the application to social media.|
+|Basic Path     | A window opens and four choices are presented after clicking "Share": "Facebook", "Google Plus", "Twitter", and "email". The user selects the social media they would like to share to. The user will then be asked to confirm whether they want to "Share" or "Cancel". If the user chooses to share, then they will be notified that the advertisement for the app has been shared. If they cancel, the share window will be closed.|
+|Alternate Path | None.|
+|Post Condition | The user is presented with a notification that the calendar is shared.|
+|Exception Paths| The user may select "Cancel" to exit at any point in the process.|
+|Other          | None.|
+
+#### 3.2.39.3 Share Calendar Through Email
+
+| Data          | Description |
+|:--------------| :--------------|
+|Use Case Detail| As a user, I can share the application by sending an email to potential recipients. |
+|Cross Reference | See 4.2.39.3 for verification details of this use case.| 
+|Trigger        | The user clicks the "Share" button.|
+|Precondition   | By default, the user will see an option to share.|
+|Basic Path     | A window opens and four choices are presented after clicking "Share": "Facebook", "Google Plus", "Twitter", and "email". The user chooses "email" and is presented with an email interface including a section for the recipient's email address and a text box for entering any messages to the recipient. 2. The user fills out both of these fields and then clicks the "Send" button. The user is then presented with a notification saying "Message Sent".|
+|Alternate Path | None.|
+|Post Condition | The user is presented with a notification that the calendar is sent.|
+|Exception Paths| The user may select "Cancel" to exit at any point in the process.|
+|Other          | None.|
+
+### 3.2.40 Weather
+
+When you click on an event it will include the predicted weather for that day.
+
+#### 3.2.40.1 Weather for Specific Days
+
+| Data          | Description |
+|:--------------|:----------------|
+|Use Case Detail| A user wants to know what the weather will be like for a specific day. |
+|Cross Reference | See 4.2.40.1 for verification details of this use case.| 
+|Trigger        | When the user selects a planned event, the event window will additionally display the predicted weather that day. You can also see the predicted weather in the event planning window as well.|
+|Precondition   | Have an account created and/or have an event planned.   |
+|Basic Path     | 1. Create account with Student Calendar. <br> 2. Select day where user would like to plan an event. <br> 3. System displays event creation window and on there the weather predicted shows up as well.               |
+|Alternate Path | 1. Select an event that has been created. 2. System displays the event window along with the predicted weather that day.                          |
+|Post Condition | User is updated with information about that days weather.|
+|Exception Paths| User can close event window at any time.                 |
+|Other          | None.                                                    |
+
+### 3.2.41 Tutor Integration
+
+The user will be able to schedule a tutor from the BYU-I website.
+
+#### 3.2.41.1 Schedule a Tutor
+
+| Data          | Description |
+|:--------------|:----------------|
+|Use Case Detail| As a user, I want to quickly set a tutor appointment. |
+|Cross Reference | See 4.2.41.1 for verification details of this use case.|
+|Trigger        | The user presses the "Tutor Request" button. |
+|Precondition   | User must have a Student Calendar app account, available Internet access, and be enrolled at BYU-I.|
+|Basic Path     | 1. User presses the "Tutor Request" button. <br /> 2. A new window opens up redirecting the student to the BYU-I Tutor's website. |
+|Alternate Path | None. |
+|Post Condition | The event is created and has a section where the user can add information about the tutor session created. |
+|Exception Paths| The window can be closed at any time, thereby cancelling the tutor event.|
+|Other          | None.|
+
+### 3.2.42 Class Help
+
+This feature provides some links to websites that would be helpful for a given assignment or task.
+
+#### 3.2.42.1 Help with class
+
+| Data          | Description |
+|:--------------| :--------------|
+|Use Case Detail| As a user, I want to find help and information for my classes.|
+|Cross Reference | See 4.2.42.1 for verification details of this use case.|
+|Trigger        | A user selects the class help button.|
+|Precondition   | A user must have registered for classes. These classes must be recorded in the application.|
+|Basic Path     | A user navigates to the class help button and selects it.|
+|Post Condition | A user is viewing a selection of links.|
+|Exception Paths| No available links have been connected to this assignment and user receives an error message to alert them.|
+|Exception Paths| No assignment has been selected so no links are found, user is asked to select an assignment.|
+|Other          | |
+
+### 3.2.43 Printing
+
+The user will be able to print off a schedule.
+
+#### 3.2.43.1 Printing
+
+| Data          | Description |
+|:--------------| :--------------|
+|Use Case Detail| The user wishes to print off their schedule to view offline/out of app. |
+|Cross Reference | See 4.2.43.1 for verification details of this use case.| 
+|Trigger        | The user clicks "Print" button after signing into their I-Learn accoutn. See basic path for more detail.|
+|Precondition   | Registered student at BYU-I college and Calendar is being viewed in monthly or weekly view and is connected to a printer.|
+|Basic Path     |1. The user signs in with their I-Learn account.<br/> 2. The user selects print option.<br/>3. The user crops desired part of calendar. <br/>4. The user selects print options (ex: color, page count).  <br/>5. User selects print.<br/>|
+|Alternate Path |None.| 
+|Post Condition | Student calendar has a side panel that is updated with the school functions and events.
+|Exception Paths| User could decide not to sign into BYU-I and therefore not have the school event list.
+|Other          |None.|
+
+### 3.2.44 Badges
+
+Show badges indicating how many messages, notifications, or tasks that have not been seen.
+
+#### 3.2.44.1 View badges
+
+| Data          | Description |
+|:--------------| :--------------|
+|Use Case Detail| As a user, I want to see if there are new notifications in the app while outside of it.|
+|Cross Reference | See 4.2.44.1 for verification details of this use case.| 
+|Trigger        | User checks device to see if there are any notifications from the calendar app (badges).|
+|Precondition   | Events created, School functions connected.|
+|Basic Path     | 1. Select a badge <br/>2. Select from badges event or notification to view <br/>3. Continue looking through badges until out or until user has seen what they wanted to.<br/>|
+|Alternate Path |None.| 
+|Post Condition | Badges are cleared and system is ready to set more.|
+|Exception Paths| User may not check all the badges which leaves some notifications still up.|
+|Other          |None.|
+
+### 3.2.45 Quick Access
+
+The user has the option to be quickly directed to I-Learn and specifically individual classes within I-Learn.
+
+### 3.2.45.1 Quick Access Class Selection
+
+| Data          | Description |
+|:--------------| :--------------|
+|Use Case Detail| As a user I can access my classes in I-Learn through links.|
+|Cross Reference | See 4.2.45.1 for verification details of this use case.| 
+|Trigger        | The user clicks the "Quick Access" button.|
+|Precondition   | The user must be logged into the calendar application and be synced with I-Learn.|
+|Basic Path     | 1. After clicking "Quick Access" a drop-down menu is displayed with the user's current I-Learn courses. The user clicks one of these courses and is redirected to the I-Learn website and more specifically the class selected within the site using the device's default web browser.|
+|Alternate Path | None.|
+|Post Condition | The user is presented with a notification that the calendar is sent.|
+|Exception Paths| 1. If there is no internet access the user will receive an error message saying "No Internet Connection".|
+|Other          | None.|
+
+### 3.2.46 Assignment Alarm
+
+The user has the option to set an alarm for individual assignments that will let the user know when they should begin working on the assignment.
+
+### 3.2.46.1 Setting the Assignment Alarm
+
+| Data          | Description |
+|:--------------| :--------------|
+|Use Case Detail| As a user, I can set an alarm that lets me know when to work on an assignment. |
+|Cross Reference | See 4.2.46.1 for verification details of this use case.| 
+|Trigger        | The user clicks an existing assignment event on the calendar.|
+|Precondition   | An assignment event must already be created.|
+|Basic Path     | 1. After clicking an assignment event a window will pop up displaying the details of the event. The user will click the "Alarm" button. <br>2. The alarm interface will give the user drop-down options for date and time for the alarm to trigger. After selecting the date and time the user will have the option of clicking "Set" or "Cancel".  "Cancel" closes the alarm interface and "Set" sets the alarm.|
+|Alternate Path | None.|
+|Post Condition | The user will receive a notification that the alarm has been set for a specified date and time.  When the alarm triggers, the notification will include the name of the assignment for which the alarm was set.|
+|Exception Paths| None.|
+|Other          | None.|
+
+### 3.2.47 Google API
+
+The user will be able to sync their Google Calendar with our Student Calendar App.
+
+#### 3.2.47.1 Sync Google calendar
+
+| Data          | Description |
+|:--------------| :--------------|
+|Use Case Detail  | As a user, I would like to sync my Google Calendar into the app.|
+|Cross Reference | See 4.2.47.1 for verification details of this use case.| 
+|Trigger        | User login to Google Calendar|
+|Precondition   | User must have Google account|
+|Basic Path     | 1. Ask User for Google sign in. <br />2. Login using Google API. <br />3. Sync calendar items.|
 |Alternate Path | None|
-|Post Condition | The user is presented with the log in screen as if they had launched the application for the first time.|
-|Exception Paths| None|
+|Post Condition | Google Calendar items will be Synced|
+|Exception Paths| User can logout of Google account|
 |Other          | None|
+
+### 3.2.48 Apple API
+
+The user can sync their Apple Calendar with their Student Calendar App.
+
+#### 3.2.48.1 Sync Apple Calendar
+
+| Data          | Description |
+|:--------------| :--------------|
+|Use Case Detail  | The User would like to sync their Apple Calendar into the app|
+|Cross Reference | See 4.2.48.1 for verification details of this use case.| 
+|Trigger        | The user clicks "Apple Login"|
+|Precondition   | The user must have an Apple ID |
+|Basic Path     | 1. The user clicks on "Apple Login" <br> 2. The user is presented with an Apple login page <br> 3. The user enters their login information, and clicks "Login" <br> 4. The user is brought back to the calendar view|
+|Alternate Path | None|
+|Post Condition | The user's Apple calendar events with be synced and displayed in the calendar view. |
+|Exception Paths| The user can exit the login process or logout of their Apple account. |
+
+### 3.2.49 Outlook API
+
+The user can sync their Outlook Calendar with our Student Calendar App.
+
+#### 3.2.49.1 Sync Outlook Calendar
+
+| Data          | Description |
+|:--------------| :--------------|
+|Use Case Detail| As a user, I would like to sync my Outlook Calendar with the app.|
+|Cross Reference | See 4.2.49.1 for verification details of this use case.| 
+|Trigger        | The user clicks "Outlook Login".|
+|Precondition   | The user must have an Outlook account.|
+|Basic Path     | 1. The user clicks on "Outlook Login" <br>2. Login using Outlook API. <br> 3. The calendar syncs. |
+|Alternate Path | None|
+|Post Condition | The user's Outlook calendar events with be synced and displayed in the calendar view. |
+|Exception Paths| The user can exit the login process or logout of their Outlook account. |
+|Other          | None|
+
+### 3.2.50 Toolbox Bar
+
+This bar will have many other buttons and bars related to searching, timer, progress and meeting times.
+
+#### 3.2.50.1 Search Bar
+
+| Data          | Description |
+|:--------------| :--------------|
+|Use Case Detail| As a user, I want to search the calendar app.|
+|Cross Reference | See 4.2.50.1 for verification details of this use case.| 
+|Trigger        | User clicks on the search bar.|
+|Precondition   | User is logged into the calendar app.|
+|Basic Path     | 1. User selects the search bar and enters in keyword.|
+|Alternate Path | User selects search button and enters in keyword.|
+|Post Condition | User has searched for a keyword.|
+|Exception Paths| If the keyword is not found the user will be prompted to try a different keyword.|
+|Other          | None.|
+
+#### 3.2.50.2 Timer
+
+| Data          | Description |
+|:--------------| :--------------|
+|Use Case Detail| User has limited time to complete assignment, calendar app shows how long assignment will take to complete.|
+|Cross Reference | See 4.2.50.2 for verification details of this use case.| 
+|Trigger        | User has an assignment that needs to be completed.|
+|Precondition   | User is logged into calendar app and looking assignment.|
+|Basic Path     | 1. User selects the timer function to determine time needed to complete assignment.|
+|Alternate Path | None.|
+|Post Condition | User is given an estimate of how long it will take to complete given assignment.|
+|Exception Paths| If user hasn't completed any assignments then the timer will display a message to explain this.|
+|Other          | None.|
+
+#### 3.2.50.3 Assignment Progress Bar
+
+| Data          | Description |
+|:--------------| :--------------|
+|Use Case Detail| User wants to know how many assignments they have completed. |
+|Cross Reference | See 4.2.50.3 for verification details of this use case.| 
+|Trigger        | User has linked app with school.|
+|Precondition   | User is looking at assignments for given week.|
+|Basic Path     | 1. User selects the assignment progress bar.|
+|Alternate Path | None.|
+|Post Condition | User can see how many assignments have been completed for specific class and how many are left to complete.|
+|Exception Paths| If user hasn't added classes then there will be no progress bar.|
+|Other          | None.|
+
+#### 3.2.50.4 Suggest Meeting Times
+
+| Data          | Description |
+|:--------------| :--------------|
+|Use Case Detail| A user needs to know when they can meet with other students.|
+|Cross Reference | See 4.2.50.4 for verification details of this use case.| 
+|Trigger        | A user has selected the meet with others button.|
+|Precondition   | User has added associates to calendar app.|
+|Basic Path     | 1. User navigates to meet with others button.|
+|Alternate Path | None.|
+|Post Condition | User is able to see availability of associates.|
+|Exception Paths| User hasn't added anyone to app and is unable to see availability.|
+|Other          | None.|
+
+### 3.2.51 Custom Images and Icons
+
+The calendar should be able to be personalized. The user will have the ability to interact with the app to change things to their favorite images for the display options on their calendar.
+
+#### 3.2.51.1 Custom Images and Icons
+
+| Data            | Description |
+| :-------------- | :--------------|
+| Use Case Detail | As a user, I want to utilize custom images and icons to personalize the appearance of the calendar app|
+|Cross Reference | See 4.2.51.1 for verification details of this use case.| 
+| Trigger         | The user clicks the "Settings" button and then chooses the "Appearance" option|
+| Precondition    | By default, the user will have option to the settings menu throughout the app.|
+| Basic Path      | 1. The user selects the settings button and scroll to the "Appearance" option.<br/> 2. The user selects custom images for class icons, backgrounds and layout. |
+| Alternate Path  | The user can customize the appearance for other classes.|
+| Post Condition  | The user will have a customized view and appearance for each class and layout.|
+| Exception Paths | The user may select "Cancel" to exit at any point in the process.|
+| Other           | None.|
+
+### 3.2.52 Custom Videos
+
+The calendar will ask for camera permissions so that the user can use videos to customize their display options.
+
+#### 3.2.52.1 Custom Videos
+
+| Data          | Description |
+|:--------------| :--------------|
+|Use Case Detail| While interacting inside the app, the user can utilize and imbed videos to customize the display options.|
+|Cross Reference | See 4.2.52.1 for verification details of this use case.| 
+|Trigger        | The user would click the "Settings" button and then choose the option that offers customization. In this case it would be "Appearance".|
+|Precondition   | By default, the user will have option to the settings menu throughout the app.|
+|Basic Path     | 1. The user would select the settings button and scroll to the "Appearance" option. Then they will be given choices of customization with images for class icons, backgrounds and layout.|
+|Alternate Path | The user can have the ability to select a class and go to settings in each different class to customize the appearance.|
+|Post Condition | The user will have a customized view and appearance for each class and layout.|
+|Exception Paths| The user may select "Cancel" to exit at any point in the process.|
+|Other          | None.|
+
+### 3.2.53 Calendar View
+
+The User will be able to select the calendar view style that suits them best.
+
+#### 3.2.53.1 Various Calendar Views
+
+| Data            | Description|
+| :-------------- | :--------------|
+| Use Case Detail | The calendar includes Day, 5-day Week, 7-day Week, Month, Semester, and Year views. The user can easily switch views, and the current date will be highlighted.|
+|Cross Reference | See 4.2.53.1 for verification details of this use case.| 
+| Trigger         | The selected view will be used to display the calendar whenever the user opens the calendar portion of the app.|
+| Precondition    | The default view will be 'Month', and the user will have the ability to select their preference in Settings.|
+| Basic Path      | 1. Above the top of the calendar, there will be dedicated buttons to switch to Month, 7-day Week, and Day view.|
+| Alternate Path  | For the other views, the user will click 'Calendar Settings', and then 'Calendar View'. They will then make their selection from the available views.|
+| Post Condition  | The calendar's view setting will be updated and henceforth the calendar will be displayed in the view style that the user selected.|
+| Exception Paths | If the user wishes to undo their selection, they will simply select the view that they had previously been using.|
+| Other           | None.|
+
+### 3.2.54 Task Rewards
+
+The user has the option of enabling a rewards system to encompass different real-world tasks.
+
+#### 3.2.54.1 Goal/XP Bar
+
+| Data            | Description|
+| :-------------- | :--------------|
+| Use Case Detail | As a user, I want to use a video game-like point system, where I am rewarded with virtual points when I complete tasks.|
+|Cross Reference | See 4.2.54.1 for verification details of this use case.|
+| Trigger         | This feature will be enabled if the user decides to enable it from the settings menu, and it will be present when they create tasks, and when they mark them complete.|
+| Precondition    | The feature will only enable if the user wants to.|
+| Basic Path      | 1. The user clicks 'Settings'.<br> 2. The user clicks 'Adventure Mode'.<br> 3. The user toggles the mode's setting toggle to 'on'.|
+| Alternate Path  | None.|
+| Post Condition  | After enabling this feature, the sidebar will include a Points and XP 'character stats' display akin to those found in video games, the 'create task' dialogue will prompt the user for task's point values, and the app will award points upon task completion.|
+| Exception Paths | This setting can be disable with the same settings toggle that enabled it.|
+| Other           | If point system is disabled, points should be saved in the event the system is re-enabled. |
+
+### 3.2.55 User Task List
+
+The User has the option to view all upcoming tasks in their courses.
+
+#### 3.2.55.1 Assignment List
+
+| Data            | Description|
+| :-------------- | :--------------|
+| Use Case Detail | The app includes a list view where all the user's tasks from all classes and categories are visible.|
+|Cross Reference | See 4.2.55.1 for verification details of this use case.|
+| Trigger         | The user presses the 'list view' button.|
+| Precondition    | This feature has no precondition - If the user has not added any tasks yet, then the list will be empty.|
+| Basic Path      | 1. 'List view' button visible on main view of app.|
+| Alternate Path  | 'List view' button visible in app navigation drawer.|
+| Post Condition  | The list view is displayed.|
+| Exception Paths | The user can navigate back to the calendar view by simply pressing the 'calendar' button visible at the top of the list view display.|
+| Other           | None.|
+
+### 3.2.56 School Catalog
+
+This feature allows the user to view the entire catalog for BYU-Idaho students. Ideally this would work for other schools as well, but is not required.
+
+#### 3.2.56.1 View School Catalog
+
+| Data          | Description |
+|:--------------| :--------------|
+|Use Case Detail| As a user, I want to view the courses offered at my school.|
+|Cross Reference | See 4.2.56.1 for verification details of this use case.|
+|Trigger        | A user selects the view catalog button.|
+|Precondition   | A user must be enrolled at a school and connect that school with the app.|
+|Basic Path     | Go to the view catalog button and select it.|
+|Post Condition | The user is in the catalog view for their school.|
+|Exception Paths| A user is not registered for a school and receives an error message stating so.|
+|Other          | If the functionality is not available for other schools, then the view catalog button will only show for BYU-Idaho students.|
 
 ## 3.3 Usability Requirements
 
@@ -2122,6 +2137,10 @@ New Users will be introduced to the Student Calendar functionality through tutor
 
 The application will offer a help menu that the user may select to learn how to find commonly used features.
 
+### 3.3.4 ADA
+
+[EDITORS / REVIEWERS: Add Text to fill in details for ADA]
+
 ## 3.4 Performance Requirements
 
 These performance metrics are dependent upon the user having a stable and reliable Internet connection.
@@ -2140,17 +2159,21 @@ There are three data entities involved with the application and the user account
 
 ## 3.6 Design Constraints
 
-Standards of compliance for FERPA, ADA, and BYU-Idaho must be met by the Student Calendar application. The FERPA standards will place constraints on how data may be transferred between the application and I-learn. ADA standards will require added functionality, such as voice recognition, so that disabled students may use the application. The Student Calendar system design must work with the Google Chrome and Mozilla Firefox web browsers. The user will be required to have an web browser to access the application.
+Standards of compliance for FERPA, ADA, and BYU-Idaho must be met by the Student Calendar application. The FERPA standards will place constraints on how data may be transferred between the application and I-learn. ADA standards will require added functionality, such as voice recognition, so that disabled students may use the application. The Student Calendar system design must work with the Google Chrome and Mozilla Firefox web browsers. The user will be required to have a web browser to access the application.
 
 ## 3.7 Software System Attributes
 
 ### 3.7.1 Availability
 
-The Student Calendar should be available to users twenty-four hours a day, seven days a week unless the software is undergoing scheduled maintenance.
+The Student Calendar shall be available to users twenty-four hours a day, seven days a week unless the software is undergoing scheduled maintenance.
 
 ### 3.7.2 Correctness
 
 The Student Calendar must display all user assignments and events in their correct times and dates. User groups must display correct contact information.
+
+Redundancies,
+Mitigation of correctness / error handling. Data errors.
+[EDITORS / REVIEWERS: How do we handle the negative case for correctness]
 
 ### 3.7.3 Maintainability
 
@@ -2186,7 +2209,7 @@ We will check if the application is available on iOS and Android, as well as usa
 
 Validation will be successful if the application is able to be pulled up in a web browser. The Student Calendar app will also verify that if the user's web browser is outdated or the browser is not supported by the Student Calendar app, an error message is sent to the user notifying them of the basic requirements needed to successfully run the application. See 3.2.2 for details
 
-#### 4.2.2.1 Access From Web Browser
+#### 4.2.2.1 Access from Web Browser
 
 The application will be tested on the Google Chrome and Mozilla Firefox web browsers to verify that it is web compatible.
 
@@ -2230,7 +2253,7 @@ Validation will be successful if the application can export to and import conten
 
 #### 4.2.6.1 I-Learn Import
 
-The testers will test the I-Learn import functionality and verify that all assignments from I-Learn's calendar is added to the application.The application will be tested to verify that if the user attempts to import assignments from I-learn without the proper permissions, an error message will notify the user that they must acquire permission by linking to their school account with the Student Calendar app. 
+The testers will test the I-Learn import functionality and verify that all assignments from I-Learn's calendar is added to the application. The application will be tested to verify that if the user attempts to import assignments from I-learn without the proper permissions, an error message will notify the user that they must acquire permission by linking to their school account with the Student Calendar app. 
 
 #### 4.2.6.2 Export
 
@@ -2238,7 +2261,7 @@ The testers will test the I-Learn import functionality and verify that all assig
 
 ### 4.2.7 Reminders
 
-Validation is achieved if the user is able to achieve alerts for events/assignments before they are due.
+Validation is achieved if the tester is able to receive alerts for events/assignments before they are due.
 
 #### 4.2.7.1 The user often forgets about assignments
 
@@ -2246,15 +2269,21 @@ This feature can be tested by giving users assignments and seeing if they are ab
 
 ### 4.2.8 Links
 
-We are able to receive validation if users are posting links to assignments or events.
+Validation successful if testers are able to attach links to assignments or events or if an error message displays when the link is invalid. Validation will also be successful when third party technologies for group work are linked and accessed from the calendar.
 
 #### 4.2.8.1 The users group uses outside resources like google docs.
 
 This can be tested by tapping on different links and confirming that the app deep links to the expected app or website.
 
+#### 4.2.8.2 Group has a link to a collaborative tool
+
+When the link is used the group will be able to access the third party technologies preferred from the calendar.
+
 ### 4.2.9 Photo Import
 
 Validation is achieved when a user can upload the desired photo whether from their camera or photo library.
+
+[EDITORS / REVIEWERS: Negative Case handling for validation]
 
 #### 4.2.9.1 The user wants to upload a photo to clarify their message
 
@@ -2267,6 +2296,14 @@ Validation is successful if a tester is able to adjust the list of calendar item
 #### 4.2.10.1 Calendar list of events extended.
 
 A tester should tap a button labeled 'Show all' in a day in the app calendar, which will prove the functionality of this feature.
+
+#### 4.2.10.2 Mobile Tilting Functionality
+
+A tester should load the app onto a mobile phone and turn the screen sideways. 
+
+#### 4.2.10.3 Desktop Calendar Item Zooming
+
+A tester will hover their desktop mouse over a calender item to test for the description window to appear.
 
 ### 4.2.11 Group Communication 1: Message Chat
 
@@ -2320,7 +2357,7 @@ Posting to discussion boards will be verified by making a post with one account 
 
 ### 4.2.15 Time Clock
 
-Validation will be successful if the times the student sees in their calendar app is accurately adjusted according to the time zone they entered.
+Validation will be successful if the times the student sees in their calendar app is accurately adjusted according to the time zone they entered. The application will be tested to verify that in the event the time cannot be set automatically, the user will be notified of the reason and an option to set the time automatically.
 
 #### 4.2.15.1 Set time zone
 
@@ -2328,7 +2365,7 @@ The correct time zone value will be verified by comparing the app time, to the a
 
 ### 4.2.16 Recurring Appointments
 
-Validation is successful if user is able to set and adjust recurring events in the calendar
+Validation is successful if user is able to set and adjust recurring events in the calendar. The application will be tested to verify that in the event the recurring event cannot be created, the user will be notified of the reason and an option to send a bug report.
 
 #### 4.2.16.1 User defines an appointment to repeat a certain number of times.
 
@@ -2336,7 +2373,7 @@ Post-completion testing will have a tester attempt to create an event on one day
 
 ### 4.2.17 Grades
 
-Validation is successful if the user is able to see the grade their instructor has given an assignment that has been completed.
+Validation is successful if the user is able to see the grade their instructor has given an assignment that has been completed. The application will be tested to verify that in the event the user cannot see their grades, the user will be notified of possible reasons with links to remediate the problem.
 
 #### 4.2.17.1 Scores in every assignments and overall grades
 
@@ -2344,7 +2381,7 @@ A tester will submit a test assignment, another tester will “grade” it, and 
 
 ### 4.2.18 Widget
 
-Validation is successful if the user is able to create an Android Widget for the app on their device.
+Validation is successful if the user is able to create an Android Widget for the app on their device. The application will be tested to verify that in the event the widget cannot be created, the user will be notified of the reason and an option to send a bug report.
 
 #### 4.2.18.1 Widget support for Android
 
@@ -2352,11 +2389,11 @@ Installing app on Android device and creating a widget will satisfy testing.
 
 ### 4.2.19 Active Directory/LDAP
 
-Validation will be successful if the user is able to see a student list from the class page and is allowed to send and receive data from students on that list.
+Validation will be successful if the user is able to see a student list from the class page and is allowed to send and receive data from students on that list. The application will be tested to verify that in the event the user cannot see the student list, the user will be notified with a list of possible reasons with links to remediate the problem and finally an option so submit a bug report.
 
 #### 4.2.19.1 Contact Class Member
 
-Multiple email clients, web browsers, and operating systems will be used between two students to confirm that an email can be sent and received with the correct data.
+Multiple email clients, web browsers, and operating systems will be used between two students to confirm that an email can be sent and received with the correct data. If the device being used does not have email capability or lacks network connectivity, the user will be notified with a warning notification saying "Unable to send email on this device".
 
 ### 4.2.20 Notification Control
 
@@ -2408,7 +2445,7 @@ Adding items to the list will be tested by selecting the "add to my to-do list" 
 
 ### 4.2.25 Continuous Calendar
 
-Verification will be complete if the user's can continuously scroll the calendar month view. Each of the months currently on screen will be different background colors. A header label will show which month the calendar is currently on.
+Verification will be complete if the users can continuously scroll the calendar month view. Each of the months currently on screen will be different background colors. A header label will show which month the calendar is currently on.
 
 #### 4.2.25.1 Continuous Calendar Month View
 
@@ -2416,7 +2453,7 @@ Tester will open the month view of the calendar, and verify that they can see th
 
 #### 4.2.25.2 Continuous Calendar Month Alternating Background Color
 
-The tester will verify that the background of last month's last week is a different color than the current month. They will also verify that the background of the first week of next month is a different background color. They will scroll down, and verify that the background color shifts with the month it corresponds to. For example, if June has a light green background and is the current month, then when scrolling down the light green will be on the last week of June displayed at the top of the view. July and it's corresponding color will be displayed as the current month view.
+The tester will verify that the background of last month's last week is a different color than the current month. They will also verify that the background of the first week of next month is a different background color. They will scroll down, and verify that the background color shifts with the month it corresponds to. For example, if June has a light green background and is the current month, then when scrolling down the light green will be on the last week of June displayed at the top of the view. July and its corresponding color will be displayed as the current month view.
 
 #### 4.2.25.3 Continuous Calendar Month Label
 
@@ -2488,13 +2525,17 @@ This will be tested by creating a group and setting certain permissions. After t
 
 Validation will be successful when permissions are set and group is aware of those permissions given or set.
 
-### 4.2.32 Group Links
+### 4.2.32 Non-SSO
 
-Validation will be successful when third party technologies for group work are linked and accessed from the calendar.
+Validation will be successful if application is able to provide the user with calendar functionality beyond that of the log in screen.
 
-#### 4.2.32.1 Group has a link to a collaborative tool
+#### 4.2.32.1 Non-SSO Log In
 
-When the link is used the group will be able to access the third party technologies preferred from the calendar.
+The calendar will be accessed from multiple devices and browsers to verify that a log-in is required each time.
+
+#### 4.2.32.2 Non-SSO Log Out
+
+Logging out from multiple devices and browsers will be performed to verify that logging out is required on each device.
 
 ### 4.2.33 Sort & Filter
 
@@ -2540,202 +2581,195 @@ A user will create a new account. The user will then login to their account with
 
 A user will create a new account. The account will be inserted into the database in a secure manner.
 
-### 4.2.38 Inspirational Quotes and Images
+### 4.2.37 Inspirational Quotes and Images
 
 Validation will be successful if the event has a designated area for the insertion of inspirational quotes and images.
 
-#### 4.2.38.1 Enter quote text
+#### 4.2.37.1 Enter quote text
 
 The user will add inspirational text to the designated area of the calendar event.
 
-#### 4.2.38.2 Insert an inspirational image
+#### 4.2.37.2 Insert an inspirational image
 
 The user will add an inspirational image to the designated area of the calendar event.
 
-### 4.2.40 Share Calendar Application
+### 4.2.38 Night Mode
+
+Verification will be successful upon having a blue light filter that can be toggled.
+
+#### 4.2.38.1 Night Mode
+
+A tester will toggle night mode on, and verify that the blue light filter appears.
+
+### 4.2.39 Share Calendar Application
 
 This will be tested by making sure events from this calendar can be shared with Facebook, Google Plus, and Twitter.
 
-#### 4.2.40.1 Connect to Social Media
+#### 4.2.39.1 Connect to Social Media
 
 Validation will be successful if you are able to connect to social media sites.
 
-#### 4.2.40.2 Share Calendar Application Through Social Media
+#### 4.2.39.2 Share Calendar Application Through Social Media
 
 Validation will be successful if you can share your calendars through social media sites.
 
-#### 4.2.40.3 Share Calendar Through Email
+#### 4.2.39.3 Share Calendar Through Email
 
 Validation will be successful if you can share your calendars through email.
 
-### 4.2.41 Weather
+### 4.2.40 Weather
 
 The calendar should correctly display the predicted weather.
 
-#### 4.2.41.1 Weather for Specific Days
+#### 4.2.40.1 Weather for Specific Days
 
 Should be able to click the weather section on the calendar and check the projected weather. Additionally when creating an event on a certain day the predicted weather should appear for that day as well. 
 
-### 4.2.42 Tutor Integration
+### 4.2.41 Tutor Integration
 
 Validation is successful when user clicks on link and is taken to the BYU-I tutor page.
 
-#### 4.2.42.1 Schedule a Tutor
+#### 4.2.41.1 Schedule a Tutor
 
 When the user returns to the calendar after scheduling with their tutor on the BYU-I page then the calendar should open a window so the user can put their tutor session in as an event.
 
-### 4.2.43 School Functions
+### 4.2.42 Class Help
 
-School functions list should update as BYU-I updates their list of School events. If the school has not updated then it should pull the current list and should appear the same on the calendars list of School Functions.
+This will be tested by following the links provided.
 
-### 4.2.44 Printing
+#### 4.2.42.1 Help with class
+
+Validation will be successful if various help links are provided.
+
+### 4.2.43 Printing
 
 Validation is successful when highlighted part of calendar chosen by the user is correctly printed out.
 
-### 4.2.45 Badges
+#### 4.2.43.1 Printing
+
+The tester should sign into a dummy I-Learn account and print out a faux schedule.
+
+### 4.2.44 Badges
 
 When the user needs to be notified of events, deadlines, group work or messages then badges should show up with the correct count of any of the above that have not been seen by the user. Additionally when the user goes through the badges the count should decrease as the badges are seen. If they have all been seen then that badge should disappear.
 
-### 4.2.46 Quick Access
+#### 4.2.44.1 View badges
+
+The tester will simple load the app onto a mobile device and then tap the “Badge” button to view the badges for notifications.
+ 
+ 
+### 4.2.45 Quick Access
 
 When the quick access button is clicked the system needs to redirect to I-Learn's main page. This process has to be significantly faster than the normal I-Learn login process.
 
-### 4.2.46.1 Quick Access Class Selection
+### 4.2.45.1 Quick Access Class Selection
 
 The User can select a class to go directly to from the app. Once again this process has to be faster than the normal process.
 
-### 4.2.47 Assignment Alarm
+### 4.2.46 Assignment Alarm
 
 The Assignment alarm feature needs to be precise and go off at the correct time. 
 
-### 4.2.47.1 Setting the Assignment Alarm
+### 4.2.46.1 Setting the Assignment Alarm
 
 The alarm set by the user has to go off at the exact time the user specifies.
 
-### 4.2.51 Google API
+### 4.2.47 Google API
 
 The calendar app is able to sync with a Google calendar.
 
-#### 4.2.51.1 Sync Google Calendar
+#### 4.2.47.1 Sync Google Calendar
 
 The calendar app correctly syncs with the selected Google calendar.
 
-### 4.2.52 Apple API
+### 4.2.48 Apple API
 
 The calendar app is able to sync with an Apple calendar
 
-#### 4.2.52.1 Sync Apple Calendar
+#### 4.2.48.1 Sync Apple Calendar
 
 The app correctly syncs to an Apple calendar
 
-### 4.2.53 Outlook API
+### 4.2.49 Outlook API
 
 The calendar app is able to sync with an Outlook calendar.
 
-#### 4.2.53.1 Sync Outlook Calendar
+#### 4.2.49.1 Sync Outlook Calendar
 
 The calendar syncs to the selected Outlook calendar.
 
-### 4.2.54 Toolbox Bar
+### 4.2.50 Toolbox Bar
 
 When the app is open the toolbox bar is present in the app.
 
-#### 4.2.54.1 Search Bar
+#### 4.2.50.1 Search Bar
 
 The tool box bar will have a search bar and it must be able to search for various items in the calendar app.
 
-#### 4.2.54.2 Timer
+#### 4.2.50.2 Timer
 
 After the timer function is selected the app displays the time left to complete the assignment.
 
-#### 4.2.54.3 Assignment Progress Bar
+#### 4.2.50.3 Assignment Progress Bar
 
 After the assignment process bar is selected the app displays the user's assignment progress.
 
-#### 4.2.54.4 Suggest Meeting Times
+#### 4.2.50.4 Suggest Meeting Times
 
 When this function is selected and associates calendars are checked the app will display the best times for the group to meet.
 
-### 4.2.57 Custom Images and Icons
+### 4.2.51 Custom Images and Icons
 
 Validation will be successful if the user can upload custom images and they are displayed successfully to the app.
 
-#### 4.2.57.1 Custom Images and Icons
+#### 4.2.51.1 Custom Images and Icons
 
 We will use multiple custom images and icons to verify this users can use their custom images to personalize their app.
 
-### 4.2.58 Custom Videos
+### 4.2.52 Custom Videos
 
 Validation will be successful if the user is first prompted to allow the app camera permissions.
 Then if the app displays custom videos successfully, it has been successfully validated.
 
-#### 4.2.58.1 Custom Videos
+#### 4.2.52.1 Custom Videos
 
 We will use several custom videos to verify that users can use their own custom videos.
 
-### 4.2.60 Calendar View
+### 4.2.53 Calendar View
 
 Validation will be success if the application loads the user's personal calendar style.
 
-#### 4.2.60.1 Various Calendar Views
+#### 4.2.53.1 Various Calendar Views
 
 We will test each calendar view, to verify the user can use each view successfully when viewing their own calendar.
 
-### 4.2.61 Task Rewards
+### 4.2.54 Task Rewards
 
 Verification will be successful task points are awarded successfully for completing tasks.
 
-#### 4.2.61.1 Goal/XP Bar
+#### 4.2.54.1 Goal/XP Bar
 
 We will use several task assignments to verify that task points are awarded correctly for completing assignments.
 
-### 4.2.62 User Task List
+### 4.2.55 User Task List
 
 Validation will be successful if all tasks are listed correctly in task list view.
 
-#### 4.2.62.1 Assignment List
+#### 4.2.55.1 Assignment List
 
 We will use several assignments to verify that tasks are loaded correctly into the task list view.
 
-### 4.2.63 School Catalog
+### 4.2.56 School Catalog
 
 This will be tested by accessing a BYU-I catalogue.
 
-#### 4.2.63.1 View School Catalog
+#### 4.2.56.1 View School Catalog
 
 Validation will be successful if the BYU-I catalogue is available through the app.
 
-### 4.2.64 Class Help
-
-This will be tested by following the links provided.
-
-#### 4.2.64.1 Help with class
-
-Validation will be successful if various help links are provided.
-
-### 4.2.66 Night Mode
-
-Verification will be successful upon having a blue light filter that can be toggled.
-
-#### 4.2.66.1 Night Mode
-
-A tester will toggle night mode on, and verify that the blue light filter appears.
-
-### 4.2.70 Non-SSO
-
-Validation will be successful if application is able to provide the user with calendar functionality beyond that of the log in screen.
-
-#### 4.2.70.1 Non-SSO Log In
-
-The calendar will be accessed from multiple devices and browsers to verify that a log-in is required each time.
-
-#### 4.2.70.2 Non-SSO Log Out
-
-Logging out from multiple devices and browsers will be performed to verify that logging out is required on each device.
-
 ## 4.3 Validate Usability Requirements
 
-Gathering a group of 20 users, the usability requirements will be validated by having each of them successfully add, modify, and remove an assignment.The users must also successfully add, modify, and remove an event item. Finally, the users must be able to navigate between the main calendar view, daily calendar view, to-do list, and help menu.
+Gathering a group of 20 users, the usability requirements will be validated by having each of them successfully add, modify, and remove an assignment. The users must also successfully add, modify, and remove an event item. Finally, the users must be able to navigate between the main calendar view, daily calendar view, to-do list, and help menu.
 
 ## 4.4 Verify Performance Requirements
 
@@ -2750,15 +2784,15 @@ BYU-Idaho has about 45k students and faculty. Our plan will be to test for memor
 
 ### 4.4.2 Stress Testing
 
-For stress testing the calendar app, it will be subjected to numerous and repeated UI tests. Each component of the app will be activated programmatically to check if fast sequential access to different features crashes the app, any delays will also be noted. Connection to the server will also be tested, Simulated connections to the server will test prolonged continuous access by a low, medium, and high loads. Sudden spikes in server load will be tested. Any crashes or errors at any point during stress testing will be carefully analyzed, then used to fix errors, and make sure the app remains secure even in the event of overload.
+For stress testing the calendar app, it will be subjected to numerous and repeated UI tests. Each component of the app will be activated programmatically to check if fast sequential access to different features crashes the app, any delays will also be noted. Connection to the server will also be tested. Simulated connections to the server will test prolonged continuous access by a low, medium, and high loads. Sudden spikes in server load will be tested. Any crashes or errors at any point during stress testing will be carefully analyzed, then used to fix errors, and make sure the app remains secure even in the event of overload.
 
 ### 4.4.3 Capacity Testing
 
-The goal is to be able to support all 45k of BYU-Idaho's students through this application, while allowing no more than 5 seconds of latency on any given request. We will test capacity by making requests as if we had all 45k students using the app throughout the day. If network requests are taking longer then another server will be added to the load balancer and the tests will be run again until the the desired results are demonstrated. This will allow minimized downtime and will help us have a better understanding of the capacity we can support as more users begin to use the application.
+The goal is to be able to support all 45k of BYU-Idaho's students through this application, while allowing no more than 5 seconds of latency on any given request. We will test capacity by making requests as if we had all 45k students using the app throughout the day. If network requests are taking longer than another server will be added to the load balancer and the tests will be run again until the desired results are demonstrated. This will allow minimized downtime and will help us have a better understanding of the capacity we can support as more users begin to use the application.
 
 ## 4.5 Verify Logical Database Requirements
 
-The logical database requirements will be verified by using the Calendar Assignments, Calendar Events, and Users relational tables as defined in section 3.5 to successfully store information from the I-learn system and retrieve the data for displaying user assignments and events on the Student Calendar. The tester will create a new assignment and event within the application which will be saved to the database. The tester will then log off of the application and sign back in to verify that the items where stored and retrieved successfully.
+The logical database requirements will be verified by using the Calendar Assignments, Calendar Events, and Users relational tables as defined in section 3.5 to successfully store information from the I-learn system and retrieve the data for displaying user assignments and events on the Student Calendar. The tester will create a new assignment and event within the application which will be saved to the database. The tester will then log off of the application and sign back in to verify that the items were stored and retrieved successfully.
 
 ## 4.6 Verify Design Constraints
 
