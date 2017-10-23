@@ -81,8 +81,9 @@ John Memmott<br/>
 ## 1.2 Scope of Project
 ## 1.3 Intended Audience
 ## 1.4 Glossary
-## 1.5 References
-## 1.6 Overview of Document
+## 1.5 Acronyms
+## 1.6 References
+## 1.7 Overview of Document
 ## 2.0 Overall Description
 ## 2.1 Product Perspective
 ## 2.2 Product Features
@@ -98,18 +99,18 @@ John Memmott<br/>
 ### 3.2.1 Calendar Application is Mobile
 ### 3.2.2 Calendar Application is Web
 ### 3.2.3 Calendar Application API
-### 3.2.4 Priority View
+### 3.2.4 Priority List
 ### 3.2.5 ADA Compliant
 ### 3.2.6 Export/Import
 ### 3.2.7 Reminders
 ### 3.2.8 Links
-### 3.2.9 Photo Import
+### 3.2.9 Photo Upload
 ### 3.2.10 Collapsible Calendar
 ### 3.2.11 Group Communication 1: Message Chat
 ### 3.2.12 Group Communication 2: Video Chat
 ### 3.2.13 FERPA Compliant
 ### 3.2.14 Discussion Board Integration
-### 3.2.15 Time Clock
+### 3.2.15 Time Zone Conversion
 ### 3.2.16 Recurring Appointments
 ### 3.2.17 Grades
 ### 3.2.18 Widget
@@ -126,69 +127,55 @@ John Memmott<br/>
 ### 3.2.29 Other Maps Integration
 ### 3.2.30 Video Tutorial
 ### 3.2.31 Group Permissions
-### 3.2.32 Group Links
+### 3.2.32 Non-SSO
 ### 3.2.33 Sort & Filter
 ### 3.2.34 Personal Assistant
 ### 3.2.35 Feedback
-### 3.2.36 Group Security
-### 3.2.37 Database for Account Usernames and Passwords
-### 3.2.38 Inspirational Quotes and Images
-### 3.2.39 Adjustable Calendar/Calendar Item Size
-### 3.2.40 Share Calendar Application
-### 3.2.41 Weather
-### 3.2.42 Tutor Integration
-### 3.2.43 School Functions
-### 3.2.44 Printing
-### 3.2.45 Badges
-### 3.2.46 Quick Access
-### 3.2.47 Assignment Alarm
-### 3.2.48 Share Option
-### 3.2.49 Sync and Success Share
-### 3.2.50 Priority Assignments
-### 3.2.51 Google API
-### 3.2.52 Apple API
-### 3.2.53 Outlook API
-### 3.2.54 Toolbox Bar
-### 3.2.55 Twitter
-### 3.2.56 Instagram
-### 3.2.57 Custom Images and Icons
-### 3.2.58 Custom Videos
-### 3.2.59 To-Do Task Engine
-### 3.2.60 Various Calendar Views
-### 3.2.61 Task Rewards
-### 3.2.62 Assignment List
-### 3.2.63 School Catalog
-### 3.2.64 Class Help
-### 3.2.65 Travel Time
-### 3.2.66 Night Mode
-### 3.2.67 Tutor Integration
-### 3.2.68 Quick Add
-### 3.2.69 Edit Event
-### 3.2.70 Non-SSO
+### 3.2.36 Database for Account Usernames and Passwords
+### 3.2.37 Inspirational Quotes and Images
+### 3.2.38 Night Mode
+### 3.2.39 Share Calendar Feature
+### 3.2.40 Weather
+### 3.2.41 Tutor Integration
+### 3.2.42 Class Help
+### 3.2.43 Printing
+### 3.2.44 Badges
+### 3.2.45 Quick Access
+### 3.2.46 Assignment Alarm
+### 3.2.47 Google API
+### 3.2.48 Apple API
+### 3.2.49 Outlook API
+### 3.2.50 Toolbox Bar
+### 3.2.51 Custom Images and Icons
+### 3.2.52 Custom Videos
+### 3.2.53 Calendar View
+### 3.2.54 Task Rewards
+### 3.2.55 User Task List
+### 3.2.56 School Catalog
+### 3.2.57 User Profile Settings
 ## 3.3 Usability Requirements
 ## 3.4 Performance Requirements
 ## 3.5 Logical Database Requirements
 ## 3.6 Design Constraints
 ## 3.7 Software System Attributes
-## 3.8 Supporting Information
 ## 4.0 Verification
 ## 4.1 Verify External Interface Requirements
 ## 4.2 Verify Functional Requirements
 ### 4.2.1 Calendar Application is Mobile
 ### 4.2.2 Calendar Application is Web
 ### 4.2.3 Calendar Application API
-### 4.2.4 Priority View
+### 4.2.4 Priority List
 ### 4.2.5 ADA Compliant
 ### 4.2.6 Export/Import
 ### 4.2.7 Reminders
 ### 4.2.8 Links
-### 4.2.9 Photo Import
+### 4.2.9 Photo Upload
 ### 4.2.10 Collapsible Calendar
 ### 4.2.11 Group Communication 1: Message Chat
 ### 4.2.12 Group Communication 2: Video Chat
 ### 4.2.13 FERPA Compliant
 ### 4.2.14 Discussion Board Integration
-### 4.2.15 Time Clock
+### 4.2.15 Time Zone Conversion
 ### 4.2.16 Recurring Appointments
 ### 4.2.17 Grades
 ### 4.2.18 Widget
@@ -197,7 +184,7 @@ John Memmott<br/>
 ### 4.2.21 Shared Calendar
 ### 4.2.22 Push Notifications
 ### 4.2.23 Invitations
-### 4.2.24 Simplified To-Do assignment display
+### 4.2.24 Simplified To-Do Assignment Display
 ### 4.2.25 Continuous Calendar
 ### 4.2.26 Holidays
 ### 4.2.27 Location
@@ -205,67 +192,52 @@ John Memmott<br/>
 ### 4.2.29 Other Maps Integration
 ### 4.2.30 Video Tutorial
 ### 4.2.31 Group Permissions
-### 4.2.32 Group Links
+### 4.2.32 Non-SSO
 ### 4.2.33 Sort & Filter
 ### 4.2.34 Personal Assistant
 ### 4.2.35 Feedback
-### 4.2.36 Group Security
-### 4.2.37 Database for Account Usernames and Passwords
-### 4.2.38 Inspirational Quotes and Images
-### 4.2.39 Adjustable Calendar/Calendar Item Size
-### 4.2.40 Share Calendar Application
-### 4.2.41 Weather
-### 4.2.42 Tutor Integration
-### 4.2.43 School Functions
-### 4.2.44 Printing
-### 4.2.45 Badges
-### 4.2.46 Quick Access
-### 4.2.47 Assignment Alarm
-### 4.2.48 Share Option
-### 4.2.49 Sync and Success Share
-### 4.2.50 Priority Assignments
-### 4.2.51 Google API
-### 4.2.52 Apple API
-### 4.2.53 Outlook API
-### 4.2.54 Toolbox Bar
-### 4.2.55 Twitter
-### 4.2.56 Instagram
-### 4.2.57 Custom Images and Icons
-### 4.2.58 Custom Videos
-### 4.2.59 To-Do Task Engine
-### 4.2.60 Various Calendar Views
-### 4.2.61 Task Rewards
-### 4.2.62 Assignment List
-### 4.2.63 School Catalog
-### 4.2.64 Class Help
-### 4.2.65 Travel Time
-### 4.2.66 Night Mode
-### 4.2.67 Tutor Integration
-### 4.2.68 Quick Add
-### 4.2.69 Edit Event
-### 4.2.70 Non-SSO
+### 4.2.36 Database for Account Usernames and Passwords
+### 4.2.37 Inspirational Quotes and Images
+### 4.2.38 Night Mode
+### 4.2.39 Share Calendar Feature
+### 4.2.40 Weather
+### 4.2.41 Tutor Integration
+### 4.2.42 Class Help
+### 4.2.43 Printing
+### 4.2.44 Badges
+### 4.2.45 Quick Access
+### 4.2.46 Assignment Alarm
+### 4.2.47 Google API
+### 4.2.48 Apple API
+### 4.2.49 Outlook API
+### 4.2.50 Toolbox Bar
+### 4.2.51 Custom Images and Icons
+### 4.2.52 Custom Videos
+### 4.2.53 Calendar View
+### 4.2.54 Task Rewards
+### 4.2.55 User Task List
+### 4.2.56 School Catalog
+### 4.2.57 User Profile Settings
 ## 4.3 Validate Usability Requirements
 ## 4.4 Verify Performance Requirements
 ## 4.5 Validate Logical Database Requirements
 ## 4.6 Validate Design Constraints
 ## 4.7 Validate Software System Attributes
-## 5.0 Appendices
-## 5.1 Assumptions and Dependencies
-## 5.2 Acronyms and Abbreviations
 ## Index
 
 # List of Figures
 
 | Name          | Image Item       | 
-|:--------------|:----------:|
+|:--------------|:----------|
 |Main Calendar View | Section 2.5.1 (Pg #)|
-|Assignment Priority List View| Section 2.5.2 |
-|Simplified "To-Do" List View| Section 2.5.3|
-|Login Page View| Section 2.5.4|
-|Settings Page View| Section 2.5.5|
-|Notifications Window View| Section 2.5.6|
-|Daily Calendar Window View| Section 2.5.7|
+|Assignment Priority List View| Section 2.5.2 (Pg #)|
+|Simplified "To-Do" List View| Section 2.5.3 (Pg #)|
+|Login Page View| Section 2.5.4 (Pg #)|
+|Settings Page View| Section 2.5.5 (Pg #)|
+|Notifications Window View| Section 2.5.6 (Pg #)|
+|Daily Calendar Window View| Section 2.5.7 (Pg #)|
 |Product Perspective Diagram| Section 2.5.8 (Pg #)|
+
 # 1.0 Introduction
 
 ## 1.1 Purpose
@@ -293,6 +265,7 @@ Reading this document in the order it has been presented is highly recommended f
 |Calendar program|A digital recreation of a calendar, A computer program that operates a schedule of events, and keeps track of your tasks and assignments.|
 |Calendar location|An address or place that is associated with an event. For example, your home address could be the location for a party.|
 |Client| In this context, the University or Brigham Young University - Idaho. |
+|COTS| This is a term used for third-party applications or services.|
 |Data| All information that the User provides to the Calendar program through the Client and/or Third-Party Technologies in order to utilize the Calendar program's features. |
 |De-Identified Data| Data that has had all Identifying Information removed from it. This Data is safe for Third-Party organizations and Technologies to use/receive so long as they do not attempt to identify the owner of the Data or to study/advertise/use the Data for any purpose other than those agreed to by the parties. |
 |Developers|The developers for this project are a team of students at Brigham Young University - Idaho.|
@@ -301,11 +274,14 @@ Reading this document in the order it has been presented is highly recommended f
 |Event|An event is an activity that a user can create with a specific time saved into the Student calendar application.|
 |FERPA| Family Educational Rights and Privacy Act - a law designed to protect the educational records and personal information of students and parents. |
 |Group| A group is two or more users who have the ability to engage in a calendar created and shared by one of the users. In addition, groups are users that work together on assignments.|
+|HREF| This is another term for Link, URL and identifies Hyper Text References.|
+|GUI| This is the user interface that the user will be presented and through which the user will interact with the software.|
 |I-Learn|I-Learn is a website service for students of BYU-Idaho. The website contains each student's classes and assignments. I-Learn can be used by the student to turn in homework and access course materials.|
 |Identifying Information| Data that includes but is not restricted to Name, ID numbers (SSN), date of Birth, demographic information, location information, phone number, and school ID. If it can be used to isolate an individual from a group of people than it falls under this category. |
 |LDAP|(Lightweight Directory Access Protocol) is a software protocol for enabling anyone to locate organizations, individuals, and other resources on a corporate intranet or public internet.|
 |Link|A link (short for hyperlink) is a clickable section of text that allows you to move from either one website to another, or from one specific location on an application page to another when clicked or tapped.|
 |Mobile User|Anyone using the calendar app on a mobile device, such as a phone or tablet.|
+|non-SSO| Is an authentication process that doesn't give access to multiple systems.|
 |Project Manager|The team member who oversees the project and works with the team leads to make sure the project fulfills the necessary requirements and is finished on time.|
 |Reader|All users, developers, and stakeholders will be viewing the site.|
 |Stakeholder|Any person who has an interest in our project, typically fellow college students and friends of developers.|
@@ -318,6 +294,8 @@ Reading this document in the order it has been presented is highly recommended f
 |Toggle|To switch from one effect, feature, or state to another.|
 |Tutorial|Self-paced instructional material that provides step by step information in presenting a concept or learning unit. Computer based tutorials use interactive methods such as hyperlinks, and audio and visual presentation of the subject matter, and provide feedback through question-answer exercises.|
 |User|Students that attend Brigham Young University - Idaho and who use our application.|
+|UI| Another term for GUI. |
+|URL| Is a term used or known as a website or web address.|
 
 ## 1.5 Acronyms
 
@@ -325,18 +303,19 @@ Reading this document in the order it has been presented is highly recommended f
 | ------------ | ------------ |
 | API | Application Programmers Interface. |
 | AWS | Amazon Web Service. |
-| COTS | Commercial Off The Shelf. This is a term used for third-party applications or services. |
-| HREF | Hyper Text Reference. Another term for URL. |
-| LDAP | Lightweight Directory Access Protocol |
-| SSO | Single Sign-On; A user signs in with one ID and gains access to multiple systems. |
-| non-SSO |  Non-SSO, or Non-Single Sign-On, is an authentication process that doesn't give access to multiple systems. |
-| URL | Uniform Resource Locator; colloquially known as a website or web address. |
+| COTS | Commercial Off The Shelf. |
+| HREF | Hyper Text Reference. |
+| UI | User Interface |
+| GUI | Graphical User Interface.|
+| LDAP | Lightweight Directory Access Protocol. |
+| SSO | Single Sign-On |
+| non-SSO |  Non-SSO, or Non-Single Sign-On. |
+| URL | Uniform Resource Locator. |
 ## 1.6 References
 
 ### 1.6.1 Requirements Elicitation Reference
 
 D. Zowghil & C. Coulin, "Requirements Elicitation: A Survey of Techniques, Approaches, and Tools" Engineering and Managing Software Requirements, pp. 19-46, 2005 [Online] Available: http://link.springer.com/chapter/10.1007%2F3-540-28244-0_2#page-1
-See Section: x.x.x.x
 
 ### 1.6.2 ADA Compliance Reference
 
@@ -345,19 +324,19 @@ See Section: 3.3.4 ADA
 
 ### 1.6.3 FERPA Disclosure Statements Reference
 
-http://familypolicy.ed.gov/content/model-notifications-rights-under-ferpa-postsecondary-institutions
+[Online] Available: http://familypolicy.ed.gov/content/model-notifications-rights-under-ferpa-postsecondary-institutions
 See Section: 4.2.13.2 Disclosure Statements
 
 ### 1.6.4 Holidays Reference
 
-https://www.opm.gov/policy-data-oversight/pay-leave/pay-administration/fact-sheets/holidays-work-schedules-and-pay.
+[Online] Available: https://www.opm.gov/policy-data-oversight/pay-leave/pay-administration/fact-sheets/holidays-work-schedules-and-pay.
 See Section: 4.2.26 Holidays
 
 ### 1.6.5 Performance Requirements Reference
 
-https://msdn.microsoft.com/en-us/library/bb924357.aspx
-https://www.radview.com/blog/4-types-of-load-testing-and-when-each-should-be-used/
-http://www.softwaretestinghelp.com/what-is-performance-testing-load-testing-stress-testing/ 
+[Online] Available: https://msdn.microsoft.com/en-us/library/bb924357.aspx
+[Online] Available: https://www.radview.com/blog/4-types-of-load-testing-and-when-each-should-be-used/
+[Online] Available: http://www.softwaretestinghelp.com/what-is-performance-testing-load-testing-stress-testing/ 
 See Section: 4.4 Verify Performance Requirements
 
 ## 1.7 Overview of Document
@@ -479,45 +458,45 @@ The following images are representative examples and non-binding.
 
 ### 2.5.1 - Example Main Calendar View:<br/>
 
-Main Calendar view is the primary screen that a user sees after logging in to the application. There are other times that this view is displayed. The user is taken to this page when the user selects the home button.<br/>
+Main Calendar view is the primary screen that a user sees after logging in to the application. There are other times that this view is displayed. The user is taken to this page when the user selects the home button.
 
-<img  src="https://github.com/MCLifeLeader/CS364/blob/master/Final%20Document/Images/Main%20Calendar%20View.jpg" height="50%" width="50%"><br/>
+<img src="https://github.com/MCLifeLeader/CS364/blob/master/Final%20Document/Images/Main%20Calendar%20View.jpg" height="50%" width="50%"><br/>
 
 ### 2.5.2 - Example Assignment Priority List View:<br/>
 
 The Priority list view is the screen displayed when a user is viewing the list of assignments. The user will see this view when setting a priority ranking to an assignment. See section 3.2.4 for details of the priority list feature.
 
-<img  src="https://github.com/MCLifeLeader/CS364/blob/master/Final%20Document/Images/3.2.004.0_Diagram_attempt2.jpg"><br/>
+<img src="https://github.com/MCLifeLeader/CS364/blob/master/Final%20Document/Images/3.2.004.0_Diagram_attempt2.jpg"><br/>
 
 ### 2.5.3 - Example Simplified "To-Do" List View:<br/>
 
 The Simplified "To-Do" List View is the screen displayed when the user is working on assignments in the to-do list. See section 3.2.24 for details of the to-do list feature.
 
-<img  src="https://github.com/MCLifeLeader/CS364/blob/master/Final%20Document/Images/Simplified%20to%20do%20list.jpg" height="50%" width="50%"><br/>
+<img src="https://github.com/MCLifeLeader/CS364/blob/master/Final%20Document/Images/Simplified%20to%20do%20list.jpg" height="50%" width="50%"><br/>
 
 ### 2.5.4 - Example Login Page View:<br/>
 
 The Login page is the first screen the user sees when opening the application. The user will see this page whenever their log in session has timed out due to inactivity. See section 3.2.32 for details of the sign-in feature.
 
-<img  src="https://github.com/MCLifeLeader/CS364/blob/master/Final%20Document/Images/Login-Page.jpg" height="50%" width="50%"><br/>
+<img src="https://github.com/MCLifeLeader/CS364/blob/master/Final%20Document/Images/Login-Page.jpg" height="50%" width="50%"><br/>
 
 ### 2.5.5 - Example Settings Page View:<br/>
 
-The settings page will be seen by the user whenever the user is making changes to their personal settings of the feature. The settings may be opened from the Main Calendar Menu. See section 3.2.x for details of the user settings feature.
+The settings page will be seen by the user whenever the user is making changes to their personal settings of the feature. The settings may be opened from the Main Calendar Menu. See section 3.2.57 for details of the user settings feature.
 
-<img  src="https://github.com/MCLifeLeader/CS364/blob/master/Final%20Document/Images/settings_window.png" height="50%" width="50%"><br/>
+<img src="https://github.com/MCLifeLeader/CS364/blob/master/Final%20Document/Images/settings_window.png" height="50%" width="50%"><br/>
 
 ### 2.5.6 - Example Notifications Window View:<br/>
 
 The notification window is displayed whenever a notification is sent the user. See section 3.2.22 for details of the push notification feature.
 
-<img  src="https://github.com/MCLifeLeader/CS364/blob/master/Final%20Document/Images/Notifications%20View.jpg" height="50%" width="50%"><br/>
+<img src="https://github.com/MCLifeLeader/CS364/blob/master/Final%20Document/Images/Notifications%20View.jpg" height="50%" width="50%"><br/>
 
 ### 2.5.7 - Example Daily Calendar Window View:<br/>
 
 The Daily Calendar Window view is displayed when the user selects a specific day from the Main Calendar View. Any calendar events or assignments for the day will be enlarged and the name of the event or assignment will be displayed.
 
-<img  src="https://github.com/MCLifeLeader/CS364/blob/master/Final%20Document/Images/Today%20View.jpg" height="50%" width="50%"><br/>
+<img src="https://github.com/MCLifeLeader/CS364/blob/master/Final%20Document/Images/Today%20View.jpg" height="50%" width="50%"><br/>
 
 ## 2.6 Technical Requirements
 
@@ -642,7 +621,7 @@ The calendar application is integrated with a number of third-party applications
 * Instagram
 * I-Learn
 * Outlook
-* Skype 
+* Skype
 * Twitter
 
 ## 3.2 Functional Requirements
@@ -834,7 +813,6 @@ The application will be able to accept several different types of links as input
 |Post Condition	| The user is taken to the destination of the link, the link turns purple signifying it has been tapped before. |
 |Exception Paths| If the link is invalid, an error message is displayed to the user.|
 |Other		      | None.|
-
 
 #### 3.2.8.2 Links to Collaborative Tools
 
@@ -1700,7 +1678,7 @@ This feature requires the user to log in to view their calendars which provides 
 |Alternate Path | If the password does not match up with the username, the user is notified and prompted to re-enter their information.|
 |Post Condition | The main calendar view is opened for the user to view their assignments.|
 |Exception Paths| If the Username does not exist within the database, the process is ended and the user is requested to create an account.|
-|Other          | None|
+|Other          | None.|
 
 #### 3.2.36.2 Create New Account
 
@@ -1746,7 +1724,7 @@ The calendar will allow users to add inspirational quotes and images to their da
 |Alternate Path | The user chooses to import the image and the phone's image library is opened up, allowing them to select a photo from the list. |
 |Post Condition | The prompt window closes and the image is displayed in the calendar view.|
 |Exception Paths| If the user selects an invalid file or does not have any image on their clipboard, an error message is displayed and the user is prompted to try again or close the window.|
-|Other          | None|
+|Other          | None.|
 
 ### 3.2.38 Night Mode
 
@@ -1907,7 +1885,7 @@ Show badges indicating how many messages, notifications, or tasks that have not 
 
 The user has the option to be quickly directed to I-Learn and specifically individual classes within I-Learn.
 
-### 3.2.45.1 Quick Access Class Selection
+#### 3.2.45.1 Quick Access Class Selection
 
 | Data          | Description |
 |:--------------| :--------------|
@@ -1925,7 +1903,7 @@ The user has the option to be quickly directed to I-Learn and specifically indiv
 
 The user has the option to set an alarm for individual assignments that will let the user know when they should begin working on the assignment.
 
-### 3.2.46.1 Setting the Assignment Alarm
+#### 3.2.46.1 Setting the Assignment Alarm
 
 | Data          | Description |
 |:--------------| :--------------|
@@ -2108,7 +2086,7 @@ The User will be able to select the calendar view style that suits them best.
 
 ### 3.2.54 Task Rewards
 
-The user has the option of enabling a rewards system to encompass different real-world tasks.
+The user has the option of enabling a rewards system to serve as a motivator to complete tasks and assignments. Students need to feel that they are making progress, so this reward system will allow users to earn experience points and see a progress bar when they complete tasks and assignments. More points will be awarded if assignments and tasks are completed on time. 
 
 #### 3.2.54.1 Goal/XP Bar
 
@@ -2120,7 +2098,7 @@ The user has the option of enabling a rewards system to encompass different real
 | Precondition    | The feature will only enable if the user wants to.|
 | Basic Path      | 1. The user clicks 'Settings'.<br> 2. The user clicks 'Adventure Mode'.<br> 3. The user toggles the mode's setting toggle to 'on'.|
 | Alternate Path  | None.|
-| Post Condition  | After enabling this feature, the sidebar will include a Points and XP 'character stats' display akin to those found in video games, the 'create task' dialogue will prompt the user for task's point values, and the app will award points upon task completion.|
+| Post Condition  | After enabling this feature, the sidebar will include a Points and XP 'character stats' display akin to those found in video games, the 'create task' dialogue will prompt the user for task's point values, and the app will award points upon task completion, for example, 20 points per assignment and 10 points per task completed.|
 | Exception Paths | This setting can be disable with the same settings toggle that enabled it.|
 | Other           | If point system is disabled, points should be saved in the event the system is re-enabled. |
 
@@ -2174,7 +2152,8 @@ The user can manage all user settings and control
 |Basic Path     | Profile Settings button will be in toolbox section at top of page|
 |Post Condition | User changes settings needing saved|
 |Exception Paths| User is not registered for profile on app|
-|Other          | None|
+|Other          | None.|
+
 ## 3.3 Usability Requirements
 
 The Student calendar must be uniform in its appearance and functionality to improve learnability for the user. This will be accomplished through the following criteria:
@@ -2262,8 +2241,6 @@ In this section of the document we will provide high level details on how we wil
 
 ### 4.2.1 Calendar Application is Mobile
 
-[EDITORS / AUTHORS: What about the error path]
-
 Validation will be successful if the application is available and usable on mobile platforms. The application will be tested to verify that in the event of a system crash, the user will be prompted to send an error report to the developers. 
 
 #### 4.2.1.1 Smartphone Application
@@ -2322,7 +2299,7 @@ The testers will test the I-Learn import functionality and verify that all assig
 
 #### 4.2.6.2 Export
 
- The export functionality will be tested to verify that the application's content is successfully added to other third-party applications such as Google Calendar and Apple Calendar. The application will be tested to verify that if the user attempts to export information from the Student Calendar app to another application without the proper permissions, an error message will notify the user that they must acquire permissions before exporting the information. 
+The export functionality will be tested to verify that the application's content is successfully added to other third-party applications such as Google Calendar and Apple Calendar. The application will be tested to verify that if the user attempts to export information from the Student Calendar app to another application without the proper permissions, an error message will notify the user that they must acquire permissions before exporting the information. 
 
 ### 4.2.7 Reminders
 
@@ -2387,7 +2364,7 @@ Testing is successful if tester is able to open a group video chat in Skype or G
  
 #### 4.2.12.1 Video Chat
 
-We will have a tester attempt to start a video chat after joining a group. If the third-party video chat app opens and the tester can talk to all other members, the feature is successfully implemented.
+The Video Chat feature will be tested by verifying that a third-party application, such as Skype or Google Hangouts, creates a video conference meeting that includes all members of a group. A successful implementation of the feature means that the chosen third-party tool opened up on a separte window and started a video conference with all the members of a group. 
 
 ### 4.2.13 FERPA Compliant
 
@@ -2495,9 +2472,16 @@ Validation will be successful if push notifications are received.
 
 Test notifications will be sent from multiple accounts on multiple devices to verify push notifications are working.
 Validation will be tested by sending notifications while the application is not running to verify that the push notifications are received either through email or the mobile device's notification bar. It will also be verified that if the user does not have email or mobile notification permissions turned on, the push notification will remain active inside of the application and will be visible to the user the next time the application is opened. The application will be tested to verify that the user may successfully create and add a new notification to their Calendar. It will be verified that invalid input from the user will not be accepted. Please see 3.2.22.1 for details on invalid input.
+
 ### 4.2.23 Invitations
 
-The application will be tested to verify that users may receive invitations about calendar events from other users. The application will verify that if the user attempts to send an invitation before selecting any users the proper error message will be displayed. See 3.2.23.1 for details of the error message. The application will verify that a user will not be able to send notifications to another user if invitation permissions have not been given.
+The application will be tested to verify that users may receive invitations about calendar events from other users. The application will verify that if the user attempts to send an invitation before selecting any users the proper error message will be displayed.
+
+#### 4.2.23.1 Send Event Invitations
+
+The application will verify that a user will not be able to send notifications to another user if invitation permissions have not been given. If the user does not select any users before attempting to send the notification, the application displays "You must select at least one user".
+
+If the user fails to select an event and send a notification to a user. The Calendar Application will let the user know that they need to select an event prior to sending it.
 
 ### 4.2.24 Simplified To-Do Assignment Display
 
@@ -2533,8 +2517,6 @@ The tester will verify that the current month is displayed at the top of the mon
 
 ### 4.2.26 Holidays
 
-[EDITORS / REVIEWERS: Below is a reference that should be put in the references section.]
-
 Verification will be complete when the user can see all major holidays as given by the following link: https://www.opm.gov/policy-data-oversight/pay-leave/pay-administration/fact-sheets/holidays-work-schedules-and-pay.
 
 #### 4.2.26.1 Labels for Holidays
@@ -2551,7 +2533,7 @@ Verification will be successful when users can add an address to an event, and t
 
 #### 4.2.27.1 Event Location
 
-Tester will create a calendar event and verify that they can add an address to the event.
+Tester will create a calendar event and verify that they can add an address to the event. 
 
 #### 4.2.27.2 Google Maps Integration
 
@@ -2563,11 +2545,11 @@ Validation will be successful if Apple device testers can have locations for eve
 
 #### 4.2.28.1 Support for Apple Maps on iPhone
 
-Tester will use an iPhone to see if calendar locations can be pulled up in Apple Maps.
+Tester will use an iPhone to see if calendar locations can be pulled up in Apple Maps.  If calendar fails to load the user will recieve an error message letting them know that it failed.
 
 #### 4.2.28.1 Support for Apple Maps on Mac computers
 
-Tester will use a Mac computer to see if calendar locations can be pulled up in Apple Maps.
+Tester will use a Mac computer to see if calendar locations can be pulled up in Apple Maps.  If calendar fails to load the user will recieve an error message letting them know that it failed.
 
 ### 4.2.29 Other Maps Integration
 
@@ -2575,19 +2557,20 @@ Validation will be successful if calendar locations can be pulled up in various 
 
 #### 4.2.29.1 Find a location
 
-We will test that calendar location can be pulled up in each of the different map applications, including: Here WeGo, Waze, MapFactor, Mapquest, Scout GPS, Maps.Me and InRoute.
+A test will be implemented to verify that a calendar location can be pulled up in each of the different map applications, including: Here WeGo, Waze, MapFactor, Mapquest, Scout GPS, Maps.Me and InRoute.
 
 ### 4.2.30 Video Tutorial
 
-Validation will be successful if we have a video, 10 minutes or less in length, that explains basic functionality for new calendar users. The video should cover how to create and edit a calendar item, how to use group events, and how to access different calendar views. The video should be displayed when a new user opens the application for the first time.
+Validation will be successful if a video, 10 minutes or less in length, is accessible. The video will explain basic functionality for new calendar users. The video should cover how to create and edit a calendar item, how to use group events, and how to access different calendar views. The video should be displayed when a new user opens the application for the first time.
 
 #### 4.2.30.1 Learning Application Capabilities
 
-We will test this by having a new user open the calendar, and verifying that the link to the tutorial video pops up. They will click the link, and after watching the new user will create a new calendar item, join a group event, and access different calendar views to verify that the tutorial was clear. If they fail then adjustment to the tutorial video is needed.
+A test will be implemented to verify that the link to the tutorial video works. A new window must appear after the link is clicked. In the case of first time users, a prompt box should appear allowing users to decide whether they want to watch the tutorial video or not. The prompt box must have an option to be properly dismissed.
 
 ### 4.2.31 Group Permissions
 
 Validation will be successful if the user can set restrictions and permissions within their groups. These permissions include the ability to do the following tasks, and will each be tested for.
+
  1. The user can give group announcements.
  2. The user can write in group chat.
  3. The user can schedule meetings.
@@ -2673,11 +2656,11 @@ The user will add an inspirational image to the designated area of the calendar 
 
 ### 4.2.38 Night Mode
 
-Verification will be successful upon having a blue light filter that can be toggled.
+This feature allows the app to function in a nighttime friendly mode.  Validation will be successful upon having the app appearance change to a blue light filter.
 
 #### 4.2.38.1 Night Mode
 
-A tester will toggle night mode on, and verify that the blue light filter appears.
+A tester will toggle night mode on, and verify that the blue light filter appears.  If the users phone is unable to use the blue light filter then they will receive a message letting them know and night mode will not be enabled.
 
 ### 4.2.39 Share Calendar Application
 
@@ -2694,6 +2677,7 @@ Validation will be successful if you can share your calendars through social med
 #### 4.2.39.3 Share Calendar Through Email
 
 Validation will be successful if you can share your calendars through email.  Testers will test this feature by sharing their calendar through an email application.  If there is no network connectivity then the app will alert the user that they will need to try again later.
+
 ### 4.2.40 Weather
 
 The calendar will correctly display the predicted weather based on the user's location. If the user's location can't be determined then a corresponding message will be displayed. If weather services are not functioning then the calendar application will inform the user that weather services are down.
@@ -2748,7 +2732,7 @@ The Assignment alarm feature needs to be precise and go off at the correct time.
 
 ### 4.2.46.1 Setting the Assignment Alarm
 
-The alarm set by the user has to go off at the exact time the user specifies.
+The alarm set by the user has to go off at the exact time the user specifies. If the user does not select an event the user is then notified to select an event before choosing a time to have the alarm go off.
 
 ### 4.2.47 Google API
 
@@ -2800,7 +2784,7 @@ Validation will be successful if the user can upload custom images and they are 
 
 #### 4.2.51.1 Custom Images and Icons
 
-We will use multiple custom images and icons to verify the users can use their custom images to personalize their app.  Testers will test that images upload correctly to app and that they are also viewable.  An error message will alert the user if the image doesn't upload properly or if it is an unaccepted file type.  If there is no network connectivity an error message will alert the user and ask them to try again later.  If images don't display properly there will be an error where the image should be alerting the user that the image is unviewable.
+Multiple custom images and icons will be used to verify that users can use custom images to personalize their app.  Testers will test that images upload correctly to the app and that they are also viewable.  An error message will alert the user if the image doesn't upload properly or if it is an unaccepted file type. If there is no network connectivity an error message will alert the user and ask them to try again later.  If images don't display properly, there will be an error where the image should be alerting the user that the image is unviewable.
 
 ### 4.2.52 Custom Videos
 
@@ -2809,7 +2793,7 @@ Then if the app displays custom videos successfully, it has been successfully va
 
 #### 4.2.52.1 Custom Videos
 
-We will use several custom videos to verify that users can use their own custom videos.  Testers will verify that custom videos can be uploaded to the app and that they recieve the appropriate prompts.  Testers will also ensure that these videos display properly within the app.  An error message will be displayed if the user hasn't granted the proper permissions for the app to use their camera.  An error message will be displayed if there is not connectivity and the video is unable to upload.  An error message will display if the video fails to play properly within the app.
+Testers will verify that custom videos can be uploaded to the app and that they receive the appropriate prompts.  Testers will also ensure that these videos display properly within the app.  An error message will be displayed if the user hasn't granted the proper permissions for the app to use their camera.  An error message will be displayed if there is not connectivity and the video is unable to upload.  An error message will display if the video fails to play properly within the app.
 
 ### 4.2.53 Calendar View
 
@@ -2823,11 +2807,13 @@ In the event the preferred style does not change when it's corresponding button 
 
 ### 4.2.54 Task Rewards
 
-Verification will be successful task points are awarded successfully for completing tasks.
+Verification will be successful if points are awarded successfully for completing tasks and assignments.
 
 #### 4.2.54.1 Goal/XP Bar
 
-We will use several task assignments to verify that task points are awarded correctly for completing assignments.
+Clicking on the Adventure Mode of the app should make a section appear on the sidebar containing information about percentage completion and experience points (XP) to be awarded. Users will be able to enter the amount of points they want to earn for completing tasks and assignments. Only positive integers can be entered. The system will be tested to verify that no negative integers, letters, or character symbols are allowed to be entered. Consequently, the system will be tested to verify that it alerts the user once an invalid input is entered. 
+
+A test will be performed to verify that points are awarded once assignments are marked as complete. The Goal/XP Bar will be tested to verify that exact progression is recorded. For example, if the user has only five assignments during a week,and two of those assignments are marked complete, then the goal bar should show that it is 40% complete. Points will also be awarded. In the example above, if the user had assigned 20 points to assignments, then the user should see that 20 points were awarded per assignment completed for a total of 40 XP points. Similarly, tasks will be worth whatever amount of points the users deem apropriate.
 
 ### 4.2.55 User Task List
 
@@ -2840,6 +2826,7 @@ Adding Assignments - Assignments need to have a button to be able to display on 
 Displaying Assignments - Assignments should be displayed by order of priority and class. If i have two assignments, one has priority the other does not, then the one with priority shows first. As well if there are several assignments from one class they should all be shown together.
 
 Empty List - If there are no assignments to display in the User Task list, then a page should be displayed that says "No assignments to display".
+
 ### 4.2.56 School Catalog
 
 This will be tested by accessing a BYU-I catalogue.
@@ -2847,7 +2834,6 @@ This will be tested by accessing a BYU-I catalogue.
 #### 4.2.56.1 View School Catalog
 
 Validation will be successful if the BYU-I catalogue is available through the app.  Availability is attained when the application is able to display the BYU-Idaho catalogue. In the event the catalog is not accessible, an error message is returned to the user, "The Catalog is not found or cannot be displayed".
-
 
 ### 4.2.57 User Profile Settings
 
@@ -2859,16 +2845,16 @@ The page will include Name, Address, Phone #, Email, School, a button for Accoun
 
 ## 4.3 Validate Usability Requirements
 
-Gathering a group of 20 users, the usability requirements will be validated by having each of them successfully add, modify, and remove an assignment. The users must also successfully add, modify, and remove an event item. Finally, the users must be able to navigate between the main calendar view, daily calendar view, to-do list, and help menu.
+Gathering a group of 20 users, the usability requirements will be validated by having each of them successfully add, modify, and remove an assignment. The users must also successfully add, modify, and remove an event item. Finally, the users must be able to navigate between the main calendar view, daily calendar view, to-do list, and help menu. Another step in validating usability requirements will be to use a UI Test Harness that will verify that the XPath used in the UI is usability compliant. A full round of usability testing and validation will be performed to confirm that the whole application can be used by the intended audience of users.
 
 ## 4.4 Verify Performance Requirements
 
-Performance is an important aspect of the application's usability for online students. The ability for the application to handle all active and inactive users interacing with the service is key to its use and adoptability by students. 
+Performance is an important aspect of the application's usability for online students. The ability for the application to handle all active and inactive users interacing with the service is key to its use and adoptability by students.
 See 1.6.5 Performance Requirements Reference
 
 ### 4.4.1 Load Testing
 
-BYU-Idaho has about 45k students and faculty. Our plan will be to test for memory leaks, and possible issues with bandwidth, network, and database components as we progressively increase the load on the system. As we perform this test, we will determine how the system behaves with a low, moderate, and large number  of users. Specifically, we will discover the number  of users that can perform tasks simultaneously. These tasks include: loading the application on different web browsers, creating an account, creating a custom calendar, adding and removing tasks, and using the chat and messaging feature. 
+BYU-Idaho has about 45k students and faculty. Our plan will be to test for memory leaks, and possible issues with bandwidth, network, and database components as we progressively increase the load on the system. As we perform this test, we will determine how the system behaves with a low, moderate, and large number  of users. Specifically, we will discover the number  of users that can perform tasks simultaneously. These tasks include: loading the application on different web browsers, creating an account, creating a custom calendar, adding and removing tasks, and using the chat and messaging feature.
 
 ### 4.4.2 Stress Testing
 
