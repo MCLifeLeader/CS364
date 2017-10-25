@@ -1,6 +1,6 @@
 #!/bin/sh
 
-dir_project="Final Document"
+dir_project="SRS"
 dir_sep="/"
 final_document_name="CS364_SRS_Document.md"
 files_to_add=(	

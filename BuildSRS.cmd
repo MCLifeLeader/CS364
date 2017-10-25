@@ -1,5 +1,5 @@
 @echo off
-cd "Final Document"
+cd "SRS"
 
 type "~i Title.md" > CS364_SRS_Document.md
 type "~ii Authors.md" >> CS364_SRS_Document.md
