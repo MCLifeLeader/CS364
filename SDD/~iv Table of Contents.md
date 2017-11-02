@@ -20,11 +20,12 @@ See page 40 of this document for details on the inital draft
 ### 3.3 Use Case Diagrams
 
 ## 4.0 Design Overview
-### 4.1 Introduction
-### 4.2 UML Diagram
-### 4.3.1 Design Viewpoint 1
-#### 4.3.1.1 Design View 1
-#### 4.3.1.2 Design Rationale
+### 4.1 System Architecture
+### 4.2.1 Design Viewpoint 1
+#### 4.2.1.1 Design View 1
+#### 4.2.1.2 Design Rationale 
+### 4.3 System Interfaces
+### 4.4 Constraints and Assumptions
 
 ## 5.0 Data Design
 ### 5.1 Entity Relationship Diagram
