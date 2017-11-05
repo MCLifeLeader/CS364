@@ -24,38 +24,38 @@ Daniel Craig<br/>
 
 ## Team 1 - UML / Class Diagrams
 
-Austin Golding
-Marcus Rhodes
-Jonathan Comeau
-Dallin Snell
-Kylor Kersavage
-Michael Flindt
+Austin Golding<br/>
+Marcus Rhodes<br/>
+Jonathan Comeau<br/>
+Dallin Snell<br/>
+Kylor Kersavage<br/>
+Michael Flindt<br/>
 
 ## Team 2 - Use Cases
 
-Aaron Shore
-Brian Robertson
-Joseph Keene
-Jacob Keene
-Zane West
-Rex Nesbit
+Aaron Shore<br/>
+Brian Robertson<br/>
+Joseph Keene<br/>
+Jacob Keene<br/>
+Zane West<br/>
+Rex Nesbit<br/>
 
 ## Team 3 - Data Modeling / Database
 
-John Memmott
-Jefferson Santos
-Keith Wheeler
-Tyler Sorenson
-Brandon Hartshorn
+John Memmott<br/>
+Jefferson Santos<br/>
+Keith Wheeler<br/>
+Tyler Sorenson<br/>
+Brandon Hartshorn<br/>
 
 ## Team 4 - UX / UI
 
-Micah Wilson
-Jason Catmull
-Sebastian Calle
-Marcus Hedgecock
-Jonah Green
-Fernando Gomez
+Micah Wilson<br/>
+Jason Catmull<br/>
+Sebastian Calle<br/>
+Marcus Hedgecock<br/>
+Jonah Green<br/>
+Fernando Gomez<br/>
 
 # Revision History
 
@@ -118,7 +118,7 @@ Content goes here: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed 
 
 Content goes here: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
-## 2.0 Glossary
+# 2.0 Glossary
 
 Content goes here: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
