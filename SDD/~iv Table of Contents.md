@@ -2,9 +2,6 @@
 ## Table of Contents
 ## Revision History
 
-# 1016-2009 IEEE Standard for Information Technology—Systems Design—Software Design Descriptions
-See page 40 of this document for details on the inital draft
-
 ## 1.0 Introduction
 ### 1.1 Purpose
 ### 1.2 Scope
