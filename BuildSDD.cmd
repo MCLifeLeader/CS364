@@ -171,6 +171,8 @@ type "5.3.0.0.md" >> CS364_SDD_Document.md
 
 type "6.0.0.0.md" >> CS364_SDD_Document.md
 type "6.1.0.0.md" >> CS364_SDD_Document.md
+type "6.2.0.0.md" >> CS364_SDD_Document.md
+type "6.2.1.0.md" >> CS364_SDD_Document.md
 type "6.2.6.0.md" >> CS364_SDD_Document.md
 type "6.2.16.0.md" >> CS364_SDD_Document.md
 type "6.2.20.0.md" >> CS364_SDD_Document.md
