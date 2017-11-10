@@ -67,9 +67,6 @@ Fernando Gomez<br/>
 ## Table of Contents
 ## Revision History
 
-# 1016-2009 IEEE Standard for Information Technology—Systems Design—Software Design Descriptions
-See page 40 of this document for details on the inital draft
-
 ## 1.0 Introduction
 ### 1.1 Purpose
 ### 1.2 Scope
@@ -138,6 +135,9 @@ Content goes here: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed 
 
 Content goes here: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
+## 3.4 Use Cases
+
+Content goes here: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 # 4.0 Design Overview
 
 Content goes here: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
@@ -198,5 +198,6 @@ Description goes here: Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
 image goes here<br/>
 Description goes here: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
-# Index
-
+<img  src="https://github.com/MCLifeLeader/CS364/blob/master/SDD/resources/3.2.6.jpg" height="50%" width="50%">
+<img  src="https://github.com/MCLifeLeader/CS364/blob/master/SDD/resources/3.2.16.jpg" height="50%" width="50%">
+<img  src="https://github.com/MCLifeLeader/CS364/blob/master/SDD/resources/3.2.20.jpg" height="50%" width="50%">
