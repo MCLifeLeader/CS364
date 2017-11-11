@@ -202,20 +202,20 @@ Content goes here: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed 
 6.2.6.0
 
 <img  src="https://github.com/MCLifeLeader/CS364/blob/master/SDD/resources/3.2.6.0.jpg" height="50%" width="50%">
+6.2.8.0
+
+<img  src="https://github.com/MCLifeLeader/CS364/blob/master/SDD/resources/3.2.8.0.png" height="50%" width="50%">
+
+<img  src="https://github.com/MCLifeLeader/CS364/blob/master/SDD/resources/3.2.8.1.png" height="50%" width="50%">
+
+<img  src="https://github.com/MCLifeLeader/CS364/blob/master/SDD/resources/3.2.8.2.png" height="50%" width="50%">
 6.2.9.0
 
-<img  src="https://github.com/MCLifeLeader/CS364/blob/master/SDD/resources/3.2.8.0.jpg" height="50%" width="50%">
+<img  src="https://github.com/MCLifeLeader/CS364/blob/master/SDD/resources/3.2.9.0.png" height="50%" width="50%">
 
-<img  src="https://github.com/MCLifeLeader/CS364/blob/master/SDD/resources/3.2.8.1.jpg" height="50%" width="50%">
+<img  src="https://github.com/MCLifeLeader/CS364/blob/master/SDD/resources/3.2.9.1.png" height="50%" width="50%">
 
-<img  src="https://github.com/MCLifeLeader/CS364/blob/master/SDD/resources/3.2.8.2.jpg" height="50%" width="50%">
-6.2.9.0
-
-<img  src="https://github.com/MCLifeLeader/CS364/blob/master/SDD/resources/3.2.9.0.jpg" height="50%" width="50%">
-
-<img  src="https://github.com/MCLifeLeader/CS364/blob/master/SDD/resources/3.2.9.1.jpg" height="50%" width="50%">
-
-<img  src="https://github.com/MCLifeLeader/CS364/blob/master/SDD/resources/3.2.9.2.jpg" height="50%" width="50%">
+<img  src="https://github.com/MCLifeLeader/CS364/blob/master/SDD/resources/3.2.9.2.png" height="50%" width="50%">
 6.2.16.0
 
 <img  src="https://github.com/MCLifeLeader/CS364/blob/master/SDD/resources/3.2.16.0.jpg" height="50%" width="50%">
