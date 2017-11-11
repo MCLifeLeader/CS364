@@ -197,8 +197,11 @@ Content goes here: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed 
 <img  src="https://github.com/MCLifeLeader/CS364/blob/master/SDD/resources/Main%20Calendar%20UX%20Flow%20chart.jpg" height="50%" width="50%"></br>
 #### Description:This image displays which features of the student calendar application are associated with the Main Calendar view and how the user can navigate between the pages.
 6.2.6.0
+
 <img  src="https://github.com/MCLifeLeader/CS364/blob/master/SDD/resources/3.2.6.0.jpg" height="50%" width="50%">
 6.2.16.0
+
 <img  src="https://github.com/MCLifeLeader/CS364/blob/master/SDD/resources/3.2.16.0.jpg" height="50%" width="50%">
 6.2.20.0
+
 <img  src="https://github.com/MCLifeLeader/CS364/blob/master/SDD/resources/3.2.20.0.jpg" height="50%" width="50%">
