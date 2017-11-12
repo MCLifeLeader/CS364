@@ -125,7 +125,30 @@ Content goes here: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed 
 
 ## 3.1 Identified Stakeholders and Design Concerns
 
-Content goes here: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+#### 3.1.1 Calendar Manager
+##### 3.1.1.1 Information
+The Calendar Manager is a user who works with student tasks, events, assignments, reminders, etc.
+There are several users who fall into the Calendar Manager category. Each user can perform similar
+actions, but for different reasons. For example, a teacher may want to highlight a test deadline for
+his or her students. A student may want to set reminders about a test or homework deadline throughout
+the week.
+3.1.1.1.1 Teacher
+3.1.1.1.2 Event Coordinator
+3.1.1.1.3 Student
+
+#### 3.1.2 Student Calendar
+##### 3.1.2.1 Information
+The Student Calendar represents the system and the actions it takes.
+
+#### 3.1.3 Administrative
+##### 3.1.3.1 Administrative User Information
+The Administrative User is a user who oversees account creation and administration. 
+
+#### 3.1.4 Public User
+##### 3.1.4.1 Public User Information
+The Public User is a generic user to represent the general user. They have been validated
+through the security measures and created a personal Student Calendar account.
+
 
 ## 3.2 List of Use Cases
 
@@ -216,6 +239,10 @@ Content goes here: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed 
 <img  src="https://github.com/MCLifeLeader/CS364/blob/master/SDD/resources/3.2.9.1.png" height="50%" width="50%">
 
 <img  src="https://github.com/MCLifeLeader/CS364/blob/master/SDD/resources/3.2.9.2.png" height="50%" width="50%">
+6.2.10.0
+
+<img  src="https://github.com/MCLifeLeader/CS364/blob/master/SDD/resources/3.2.10.0.png" height="50%" width="50%">
+
 6.2.16.0
 
 <img  src="https://github.com/MCLifeLeader/CS364/blob/master/SDD/resources/3.2.16.0.jpg" height="50%" width="50%">
