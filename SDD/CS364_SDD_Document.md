@@ -241,7 +241,11 @@ Content goes here: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed 
 <img  src="https://github.com/MCLifeLeader/CS364/blob/master/SDD/resources/3.2.9.2.png" height="50%" width="50%">
 6.2.10.0
 
+<<<<<<< HEAD
 <img  src="https://github.com/MCLifeLeader/CS364/blob/master/SDD/resources/3.2.10.0.png" height="50%" width="50%">
+=======
+<img  src="https://github.com/MCLifeLeader/CS364/blob/master/SDD/resources/3.2.9.2.png" height="50%" width="50%">
+>>>>>>> 00acb362c9fd856c0ab04f3148b4a4b98fb027f6
 
 6.2.16.0
 
