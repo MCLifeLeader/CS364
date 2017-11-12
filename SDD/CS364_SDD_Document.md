@@ -1,9 +1,9 @@
 # Software Design Document
 
 
-## Version 1.0
+## Version 1.1
 
-## November 4th, 2017
+## November 12th, 2017
 
 # Student Calendar Integration Application
 
@@ -62,6 +62,7 @@ Fernando Gomez<br/>
 | Name          | Date       | Reason for Changes        | Version |
 |:--------------|:----------:|:--------------------------|:-------:|
 | Initial       | 11/4/2017  | First Draft               |   1.0   |
+| Draft         | 11/12/2017 | Second Draft              |   1.1   |
 
 # Table of Contents
 ## Table of Contents
@@ -158,6 +159,20 @@ Content goes here: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed 
 
 Content goes here: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
+####3.3.1   Login Use Cases: login 
+
+| Data | Description |
+| --- |--- |
+| ScreenShot/Mockup: | |
+| Page Title: | Login |
+| Parent User Story:| N/A|
+| Actor(s)/Persona(s): | BYUI Student or Professor|
+| Pre-conditions/Product(s) Required: | 1. The user has created an account. <br> 2. The user has navigated to the login page.|
+| Post-conditions/Product(s) Produced: | 1. The user is now logged in. <br> 2. The calendar application now reflects the user's information and upcoming events.|
+| Links: | None.|
+| Description/Notes:| 1. The application will provide e-mail address and password fields for authentication. <br> 2. A user enters their username and password into the corresponding fields. <br> 3. The user clicks the LOGIN button. <br> 4. The user's credentials are verified via database query, and the user is presented with their calendar.|
+| Security: | 1. The password will be salted and hashed before entered into the database. <br> 2. The database will feature sanitized inputs to prevent SQL injection.  |
+
 ## 3.4 Use Cases
 
 Content goes here: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
@@ -169,15 +184,15 @@ Content goes here: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed 
 
 Content goes here: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
-## 4.2.1 Design Viewpoint 1
+## 4.2.0 Design Viewpoint 1
 
 Content goes here: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
-### 4.2.1.1 Design View 1
+### 4.2.0.1 Design View 1
 
 Content goes here: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
-### 4.2.1.2 Design Rationale
+### 4.2.0.2 Design Rationale
 
 Content goes here: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
@@ -270,4 +285,6 @@ Content goes here: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed 
 6.2.50.0
 
 <img  src="https://github.com/MCLifeLeader/CS364/blob/master/SDD/resources/3.2.50.0.jpg" height="50%" width="50%">
+
+# Index
 
