@@ -184,6 +184,7 @@ type "6.2.22.0.md" >> CS364_SDD_Document.md
 type "6.2.23.0.md" >> CS364_SDD_Document.md
 type "6.2.25.0.md" >> CS364_SDD_Document.md
 type "6.2.26.0.md" >> CS364_SDD_Document.md
+type "6.2.43.0.md" >> CS364_SDD_Document.md
 type "6.2.50.0.md" >> CS364_SDD_Document.md
 
 type "Index.md" >> CS364_SDD_Document.md
