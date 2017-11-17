@@ -171,7 +171,19 @@ Content goes here: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed 
 
 ## 3.4 Use Cases
 
-Content goes here: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+### 3.4.0.1 Use Case Template
+
+| Data | Description |
+| --- |--- |
+| ScreenShot/Mockup: | |
+| Page Title: | Lorem ipsum dolor sit amet,|
+| Parent User Story:| Lorem ipsum dolor sit amet,|
+| Actor(s)/Persona(s): | Lorem ipsum dolor sit amet,|
+| Pre-conditions/Product(s) Required: | Lorem ipsum dolor sit amet,|
+| Post-conditions/Product(s) Produced: | Lorem ipsum dolor sit amet,|
+| Links: | None.|
+| SRS Document | 3.2.x |
+| Description/Notes:| Lorem ipsum dolor sit amet,|
 
 # 4.0 Design Overview
 
@@ -265,6 +277,8 @@ Content goes here: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed 
 
 <img  src="https://github.com/MCLifeLeader/CS364/blob/master/SDD/resources/3.2.8.2.png" height="50%" width="50%">
 
+Inserted in 3.4.1.6 - Marked for deletion
+
 6.2.9.0
 
 <img  src="https://github.com/MCLifeLeader/CS364/blob/master/SDD/resources/3.2.9.0.png" height="50%" width="50%">
@@ -281,13 +295,19 @@ Content goes here: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed 
 
 <img  src="https://github.com/MCLifeLeader/CS364/blob/master/SDD/resources/3.2.16.0.jpg" height="50%" width="50%">
 
+Added to 3.4.1.2 - Marked for deletion.
+
 6.2.20.0
 
 <img  src="https://github.com/MCLifeLeader/CS364/blob/master/SDD/resources/3.2.20.0.jpg" height="50%" width="50%">
 
+Added to 3.4.2.0 and 3.4.6.0 - Marked for deletion.
+
 6.2.22.0
 
 <img  src="https://github.com/MCLifeLeader/CS364/blob/master/SDD/resources/3.2.22.0.jpg" height="50%" width="50%">
+
+Added to 3.4.2.1 - Marked for deletion
 
 6.2.23.0
 
@@ -297,17 +317,36 @@ Content goes here: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed 
 
 <img  src="https://github.com/MCLifeLeader/CS364/blob/master/SDD/resources/3.2.25.0.jpg" height="50%" width="50%">
 
+Added to 3.4.1.0 - Marked for deletion
+
 6.2.26.0
 
 <img  src="https://github.com/MCLifeLeader/CS364/blob/master/SDD/resources/3.2.26.0.jpg" height="50%" width="50%">
+
+Added to 3.4.1.8 - Marked for deletion
 
 6.2.43.0
 
 <img  src="https://github.com/MCLifeLeader/CS364/blob/master/SDD/resources/3.2.43.0.jpg" height="50%" width="50%">
 
+Added to 3.4.1.5 - Marked for deletion
+
+
+
+
+
+
+
+
+
+
+
+
 6.2.50.0
 
 <img  src="https://github.com/MCLifeLeader/CS364/blob/master/SDD/resources/3.2.50.0.jpg" height="50%" width="50%">
+
+Added to 3.4.3.0 - Marked for deletion
 
 # Index
 
