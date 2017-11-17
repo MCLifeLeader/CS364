@@ -1,9 +1,9 @@
 # Software Design Document
 
 
-## Version 1.1
+## Version 1.2
 
-## November 12th, 2017
+## November 18th, 2017
 
 # Student Calendar Integration Application
 
@@ -63,6 +63,7 @@ Fernando Gomez<br/>
 |:--------------|:----------:|:--------------------------|:-------:|
 | Initial       | 11/4/2017  | First Draft               |   1.0   |
 | Draft         | 11/12/2017 | Second Draft              |   1.1   |
+| Non-Required Draft | 11/12/2017 | Third Draft              |   1.2   |
 
 # Table of Contents
 ## Table of Contents
@@ -102,16 +103,22 @@ Fernando Gomez<br/>
 ## Index
 
 # 1.0 Introduction
+
 ## 1.1 Purpose
 
 Content goes here: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
 ## 1.2 Scope
+
 Content goes here: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
 ## 1.3 Context
 Content goes here: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
 ## 1.4 Summary
 
 Content goes here: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
 ## 1.5 References
 
 Content goes here: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
@@ -128,6 +135,7 @@ Content goes here: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed 
 
 #### 3.1.1 Calendar Manager
 ##### 3.1.1.1 Information
+
 The Calendar Manager is a user who works with student tasks, events, assignments, reminders, etc.
 There are several users who fall into the Calendar Manager category. Each user can perform similar
 actions, but for different reasons. For example, a teacher may want to highlight a test deadline for
@@ -139,17 +147,19 @@ the week.
 
 #### 3.1.2 Student Calendar
 ##### 3.1.2.1 Information
+
 The Student Calendar represents the system and the actions it takes.
 
 #### 3.1.3 Administrative
 ##### 3.1.3.1 Administrative User Information
+
 The Administrative User is a user who oversees account creation and administration. 
 
 #### 3.1.4 Public User
 ##### 3.1.4.1 Public User Information
+
 The Public User is a generic user to represent the general user. They have been validated
 through the security measures and created a personal Student Calendar account.
-
 
 ## 3.2 List of Use Cases
 
@@ -180,6 +190,7 @@ Content goes here: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed 
 # 4.0 Design Overview
 
 Content goes here: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
 ## 4.1 System Architecture
 
 Content goes here: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
@@ -223,6 +234,7 @@ Content goes here: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed 
 # 5.0 Data Design
 
 Content goes here: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
 ## 5.1 Entity Relationship Diagram
 Image goes here<br/>
 Content goes here: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
@@ -245,17 +257,18 @@ Content goes here: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed 
 
 ## 6.2 User Interface Images
 
-
-
 ### 6.2.1 Main Calendar View UX flow chart
 <img  src="https://github.com/MCLifeLeader/CS364/blob/master/SDD/resources/Main%20Calendar%20UX%20Flow%20chart.jpg" height="50%" width="50%"></br>
 #### Description:This image displays which features of the student calendar application are associated with the Main Calendar view and how the user can navigate between the pages.
+
 6.2.4.0
 
 <img  src="https://github.com/MCLifeLeader/CS364/blob/master/SDD/resources/3.2.4.0.jpg" height="50%" width="50%">
+
 6.2.6.0
 
 <img  src="https://github.com/MCLifeLeader/CS364/blob/master/SDD/resources/3.2.6.0.jpg" height="50%" width="50%">
+
 6.2.8.0
 
 <img  src="https://github.com/MCLifeLeader/CS364/blob/master/SDD/resources/3.2.8.0.png" height="50%" width="50%">
@@ -263,6 +276,7 @@ Content goes here: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed 
 <img  src="https://github.com/MCLifeLeader/CS364/blob/master/SDD/resources/3.2.8.1.png" height="50%" width="50%">
 
 <img  src="https://github.com/MCLifeLeader/CS364/blob/master/SDD/resources/3.2.8.2.png" height="50%" width="50%">
+
 6.2.9.0
 
 <img  src="https://github.com/MCLifeLeader/CS364/blob/master/SDD/resources/3.2.9.0.png" height="50%" width="50%">
@@ -270,6 +284,7 @@ Content goes here: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed 
 <img  src="https://github.com/MCLifeLeader/CS364/blob/master/SDD/resources/3.2.9.1.png" height="50%" width="50%">
 
 <img  src="https://github.com/MCLifeLeader/CS364/blob/master/SDD/resources/3.2.9.2.png" height="50%" width="50%">
+
 6.2.10.0
 
 <img  src="https://github.com/MCLifeLeader/CS364/blob/master/SDD/resources/3.2.10.0.png" height="50%" width="50%">
@@ -277,9 +292,11 @@ Content goes here: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed 
 6.2.16.0
 
 <img  src="https://github.com/MCLifeLeader/CS364/blob/master/SDD/resources/3.2.16.0.jpg" height="50%" width="50%">
+
 6.2.20.0
 
 <img  src="https://github.com/MCLifeLeader/CS364/blob/master/SDD/resources/3.2.20.0.jpg" height="50%" width="50%">
+
 6.2.22.0
 
 <img  src="https://github.com/MCLifeLeader/CS364/blob/master/SDD/resources/3.2.22.0.jpg" height="50%" width="50%">
@@ -291,9 +308,11 @@ Content goes here: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed 
 6.2.25.0
 
 <img  src="https://github.com/MCLifeLeader/CS364/blob/master/SDD/resources/3.2.25.0.jpg" height="50%" width="50%">
+
 6.2.26.0
 
 <img  src="https://github.com/MCLifeLeader/CS364/blob/master/SDD/resources/3.2.26.0.jpg" height="50%" width="50%">
+
 6.2.43.0
 
 <img  src="https://github.com/MCLifeLeader/CS364/blob/master/SDD/resources/3.2.43.0.jpg" height="50%" width="50%">
