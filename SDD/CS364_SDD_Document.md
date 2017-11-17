@@ -169,23 +169,21 @@ Content goes here: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed 
 
 Content goes here: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
-####3.3.1   Login Use Cases: login 
+## 3.4 Use Cases
+
+### 3.4.0.1 Use Case Template
 
 | Data | Description |
 | --- |--- |
 | ScreenShot/Mockup: | |
-| Page Title: | Login |
-| Parent User Story:| N/A|
-| Actor(s)/Persona(s): | BYUI Student or Professor|
-| Pre-conditions/Product(s) Required: | 1. The user has created an account. <br> 2. The user has navigated to the login page.|
-| Post-conditions/Product(s) Produced: | 1. The user is now logged in. <br> 2. The calendar application now reflects the user's information and upcoming events.|
+| Page Title: | Lorem ipsum dolor sit amet,|
+| Parent User Story:| Lorem ipsum dolor sit amet,|
+| Actor(s)/Persona(s): | Lorem ipsum dolor sit amet,|
+| Pre-conditions/Product(s) Required: | Lorem ipsum dolor sit amet,|
+| Post-conditions/Product(s) Produced: | Lorem ipsum dolor sit amet,|
 | Links: | None.|
-| Description/Notes:| 1. The application will provide e-mail address and password fields for authentication. <br> 2. A user enters their username and password into the corresponding fields. <br> 3. The user clicks the LOGIN button. <br> 4. The user's credentials are verified via database query, and the user is presented with their calendar.|
-| Security: | 1. The password will be salted and hashed before entered into the database. <br> 2. The database will feature sanitized inputs to prevent SQL injection.  |
-
-## 3.4 Use Cases
-
-Content goes here: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+| SRS Document | 3.2.x |
+| Description/Notes:| Lorem ipsum dolor sit amet,|
 
 # 4.0 Design Overview
 
@@ -199,17 +197,19 @@ Content goes here: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed 
 
 <table>
   <tr>
-    <th>Class Name: Student</th>
+    <th colspan = "3">Class Name: Student</th>
   </tr>
   <tr>
-    <td>Brief Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </td>
+    <td colspan = "3">Brief Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </td>
   </tr>
+  </table>
+  <table>
   <tr>
     <th>Attributes(Fields)</th>
-    <th>Attribute Description</th>
+    <th colspan = "2">Attribute Description</th>
   </tr>
   <tr>
-    <td></td><td></td>
+    <td></td><td colspan = "2"></td>
   </tr>
   <tr>
     <th>Methods(operations) </th>
@@ -277,6 +277,8 @@ Content goes here: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed 
 
 <img  src="https://github.com/MCLifeLeader/CS364/blob/master/SDD/resources/3.2.8.2.png" height="50%" width="50%">
 
+Inserted in 3.4.1.6 - Marked for deletion
+
 6.2.9.0
 
 <img  src="https://github.com/MCLifeLeader/CS364/blob/master/SDD/resources/3.2.9.0.png" height="50%" width="50%">
@@ -293,13 +295,19 @@ Content goes here: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed 
 
 <img  src="https://github.com/MCLifeLeader/CS364/blob/master/SDD/resources/3.2.16.0.jpg" height="50%" width="50%">
 
+Added to 3.4.1.2 - Marked for deletion.
+
 6.2.20.0
 
 <img  src="https://github.com/MCLifeLeader/CS364/blob/master/SDD/resources/3.2.20.0.jpg" height="50%" width="50%">
 
+Added to 3.4.2.0 and 3.4.6.0 - Marked for deletion.
+
 6.2.22.0
 
 <img  src="https://github.com/MCLifeLeader/CS364/blob/master/SDD/resources/3.2.22.0.jpg" height="50%" width="50%">
+
+Added to 3.4.2.1 - Marked for deletion
 
 6.2.23.0
 
@@ -309,17 +317,36 @@ Content goes here: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed 
 
 <img  src="https://github.com/MCLifeLeader/CS364/blob/master/SDD/resources/3.2.25.0.jpg" height="50%" width="50%">
 
+Added to 3.4.1.0 - Marked for deletion
+
 6.2.26.0
 
 <img  src="https://github.com/MCLifeLeader/CS364/blob/master/SDD/resources/3.2.26.0.jpg" height="50%" width="50%">
+
+Added to 3.4.1.8 - Marked for deletion
 
 6.2.43.0
 
 <img  src="https://github.com/MCLifeLeader/CS364/blob/master/SDD/resources/3.2.43.0.jpg" height="50%" width="50%">
 
+Added to 3.4.1.5 - Marked for deletion
+
+
+
+
+
+
+
+
+
+
+
+
 6.2.50.0
 
 <img  src="https://github.com/MCLifeLeader/CS364/blob/master/SDD/resources/3.2.50.0.jpg" height="50%" width="50%">
+
+Added to 3.4.3.0 - Marked for deletion
 
 # Index
 
