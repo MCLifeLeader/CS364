@@ -1,9 +1,9 @@
 # Software Design Document
 
 
-## Version 1.0
+## Version 1.2
 
-## November 4th, 2017
+## November 18th, 2017
 
 # Student Calendar Integration Application
 
