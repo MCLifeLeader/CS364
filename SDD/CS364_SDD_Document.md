@@ -218,7 +218,7 @@ through the security measures and created a personal Student Calendar account.
 
 Content goes here: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
-####3.3.1   Login Use Cases: login 
+#### 3.3.1   Login Use Cases: login 
 
 | Data | Description |
 | --- |--- |
@@ -657,8 +657,10 @@ The Design Overview will display a high level representation of the Student Cale
 Architecture section 4.1 presents a UML diagram to demonstrate the relationships between the software classes and how they will be integrated. This will provide the reader and user of the document a reference for the overall design. Further details of each design compenent is provided in section 4.2.
 
 ## 4.1 System Architecture
+
 <img  src="https://github.com/MCLifeLeader/CS364/blob/master/SDD/resources/System%20Architecture%20UML.jpg" height="50%" width="50%"></br>
-### Architecture Description: 
+
+### 4.1.0 Architecture Description 
 The architecture design for the Student Calendar application is centered around the MVC design model which is a popular pattern for internet browser based applications. The model classes, Student and Calendar Item, contain all of the data fields necessary for the insertion, modification, and deletion of student and calendar information. The Controller classes contain all the methods that are necessary to work with the data in the model classes. These Controller classes also interface with the Database Facade class, allowing data to be retrieved from and stored into the system database. The I-Learn Facade class works with the Calendar Item Controller class to retireve assignments from BYU-I's I-Learn service and store them in their appropriate location within the Student Calendar. The Calendar Integration Facade class allows the Student Calendar Application to interface with external API's in order to import/export calendar events from social media sites as well as other calendar applications. A further detailed description of each of these classes, their attributes, and methods is provided in the section directly below.
 
 ## 4.2.0 Class Description Example
@@ -1019,14 +1021,18 @@ The architecture design for the Student Calendar application is centered around 
   DatabaseFacade.addStudent(newStudent)</td>
   </tr>
 </table>
+
 ## 4.3 System Interfaces
 
 ### 4.3.1 User Interface
+
 The user interface for the system will allow the user to interact with the Student Calendar app. 
 The user will be able to add, remove, and modify any assignments and event on their calendar.
 The interface will include tabs at the top of the main calendar display to allow the user to switch
 between daily, weekly, and monthly views.
+
 ### 4.3.2 Software Interfaces
+
 The software will need to interface with a database management system to retrieve data
 from and store data on a user account databse. The connection will be a standard database
 connection.
@@ -1040,6 +1046,7 @@ Content goes here: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed 
 Content goes here: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
 ## 5.1 Entity Relationship Diagram
+
 Image goes here<br/>
 Content goes here: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
