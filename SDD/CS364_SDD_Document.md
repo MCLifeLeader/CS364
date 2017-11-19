@@ -113,6 +113,7 @@ Content goes here: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed 
 Content goes here: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
 ## 1.3 Context
+
 Content goes here: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
 
 <img  src="https://github.com/MCLifeLeader/CS364/blob/master/SDD/resources/piChart.jpg" height="50%" width="50%">
@@ -146,10 +147,9 @@ This section addresses the use cases and requirements to be met by the software 
 
 <img  src="https://github.com/MCLifeLeader/CS364/blob/master/SDD/resources/stakeholders.jpg" height="50%" width="50%">
 
+### 3.1.1 Calendar Manager
 
-
-#### 3.1.1 Calendar Manager
-##### 3.1.1.1 Information
+#### 3.1.1.1 Information
 
 The Calendar Manager is a user who works with student tasks, events, assignments, reminders, etc.
 There are several users who fall into the Calendar Manager category. Each user can perform similar
@@ -163,18 +163,21 @@ the week.
 
 3.1.1.1.3 Student
 
-#### 3.1.2 Student Calendar
-##### 3.1.2.1 Information
+### 3.1.2 Student Calendar
+
+#### 3.1.2.1 Information
 
 The Student Calendar represents the system and the actions it takes.
 
-#### 3.1.3 Administrative
-##### 3.1.3.1 Administrative User Information
+### 3.1.3 Administrative
+
+#### 3.1.3.1 Administrative User Information
 
 The Administrative User is a user who oversees account creation and administration. 
 
-#### 3.1.4 Public User
-##### 3.1.4.1 Public User Information
+### 3.1.4 Public User
+
+#### 3.1.4.1 Public User Information
 
 The Public User is a generic user to represent the general user. They have been validated
 through the security measures and created a personal Student Calendar account.
@@ -661,6 +664,7 @@ Architecture section 4.1 presents a UML diagram to demonstrate the relationships
 <img  src="https://github.com/MCLifeLeader/CS364/blob/master/SDD/resources/System%20Architecture%20UML.jpg" height="50%" width="50%"></br>
 
 ### 4.1.0 Architecture Description 
+
 The architecture design for the Student Calendar application is centered around the MVC design model which is a popular pattern for internet browser based applications. The model classes, Student and Calendar Item, contain all of the data fields necessary for the insertion, modification, and deletion of student and calendar information. The Controller classes contain all the methods that are necessary to work with the data in the model classes. These Controller classes also interface with the Database Facade class, allowing data to be retrieved from and stored into the system database. The I-Learn Facade class works with the Calendar Item Controller class to retireve assignments from BYU-I's I-Learn service and store them in their appropriate location within the Student Calendar. The Calendar Integration Facade class allows the Student Calendar Application to interface with external API's in order to import/export calendar events from social media sites as well as other calendar applications. A further detailed description of each of these classes, their attributes, and methods is provided in the section directly below.
 
 ## 4.2.0 Class Description Example
