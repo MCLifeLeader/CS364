@@ -1,9 +1,9 @@
 # Software Design Document
 
 
-## Version 1.2
+## Version 1.3
 
-## November 18th, 2017
+## November 25th, 2017
 
 # Student Calendar Integration Application
 
@@ -63,7 +63,8 @@ Fernando Gomez<br/>
 |:--------------|:----------:|:--------------------------|:-------:|
 | Initial       | 11/4/2017  | First Draft               |   1.0   |
 | Draft         | 11/12/2017 | Second Draft              |   1.1   |
-| Non-Required Draft | 11/12/2017 | Third Draft              |   1.2   |
+| Non-Required Draft | 11/18/2017 | Third Draft              |   1.2   |
+| Use Case Focus | 11/25/2017 | Fourth Draft              |   1.3   |
 
 # Table of Contents
 ## Table of Contents
@@ -342,48 +343,41 @@ Use cases define the interactions between the actors or personas and the system 
 
 | Data | Description |
 | --- |--- |
-| ScreenShot/Mockup: | <img  src="https://github.com/MCLifeLeader/CS364/blob/master/SDD/resources/3.2.8.0.png" height="50%" width="50%">
-
-<img  src="https://github.com/MCLifeLeader/CS364/blob/master/SDD/resources/3.2.8.1.png" height="50%" width="50%">
-
-<img  src="https://github.com/MCLifeLeader/CS364/blob/master/SDD/resources/3.2.8.2.png" height="50%" width="50%">|
-| Page Title: | Lorem ipsum dolor sit amet,|
-| Parent User Story:| Lorem ipsum dolor sit amet,|
-| Actor(s)/Persona(s): | Lorem ipsum dolor sit amet,|
-| Pre-conditions/Product(s) Required: | Lorem ipsum dolor sit amet,|
-| Post-conditions/Product(s) Produced: | Lorem ipsum dolor sit amet,|
+| ScreenShot/Mockup: | <img  src="https://github.com/MCLifeLeader/CS364/blob/master/SDD/resources/3.2.8.0.png" height="50%" width="50%"><br><img  src="https://github.com/MCLifeLeader/CS364/blob/master/SDD/resources/3.2.8.1.png" height="50%" width="50%"><br><img  src="https://github.com/MCLifeLeader/CS364/blob/master/SDD/resources/3.2.8.2.png" height="50%" width="50%">|
+| Page Title: | Access Assignment|
+| Parent User Story:| N/A|
+| Actor(s)/Persona(s): | System. Calendar Users|
+| Pre-conditions/Product(s) Required: | User is Logged in. Assignments have been imported.|
+| Post-conditions/Product(s) Produced: | Assignment is displayed correctly to the user.|
 | Links: | None.|
 | SRS Document | 3.2.8 |
-| Description/Notes:| Lorem ipsum dolor sit amet,|
-
+| Description/Notes:| Accessing An Assigment.<br>1. Assignments are displayed to the User on the Calendar as links.<br>   A. Users clicks on one of the links.<br>2. Assignment is displayed to the user.|
 #### 3.4.1.7 Calendar Display: Show Assignment Details
 
 | Data | Description |
 | --- |--- |
 | ScreenShot/Mockup: |See 3.4.1.6|
-| Page Title: | Lorem ipsum dolor sit amet,|
+| Page Title: | Show Assignment Details|
 | Parent User Story:|3.4.1.6|
 | Actor(s)/Persona(s): | System|
-| Pre-conditions/Product(s) Required: | Lorem ipsum dolor sit amet,|
-| Post-conditions/Product(s) Produced: | Lorem ipsum dolor sit amet,|
+| Pre-conditions/Product(s) Required: | User is logged in. Assignments have been imported.|
+| Post-conditions/Product(s) Produced: | Assigment details are shown and displayed correctly to the user.|
 | Links: | None.|
-| SRS Document | 3.2.x |
-| Description/Notes:| Lorem ipsum dolor sit amet,|
-
+| SRS Document | 3.2.6 |
+| Description/Notes:| Show Assignment Details<br>1. Show Details Button is displayed on the Calendar App by the Assignments.<br>a. User clicks Details Button.<br>2. Details are displayed to the User.<br>a. An option to collapse the details is shown as well.|
 #### 3.4.1.8 Calendar Display: Show Holidays
 
 | Data | Description |
 | --- |--- |
 | ScreenShot/Mockup: |<img  src="https://github.com/MCLifeLeader/CS364/blob/master/SDD/resources/3.2.26.0.jpg" height="50%" width="50%"> |
-| Page Title: | Lorem ipsum dolor sit amet,|
-| Parent User Story:| Lorem ipsum dolor sit amet,|
-| Actor(s)/Persona(s): | Lorem ipsum dolor sit amet,|
-| Pre-conditions/Product(s) Required: | Lorem ipsum dolor sit amet,|
-| Post-conditions/Product(s) Produced: | Lorem ipsum dolor sit amet,|
+| Page Title: | Show Holidays,|
+| Parent User Story:| N/A|
+| Actor(s)/Persona(s): | Calendar Users|
+| Pre-conditions/Product(s) Required: | User is logged in. Calendar is loaded.|
+| Post-conditions/Product(s) Produced: | The user will see a text label on national holidays.|
 | Links: | None.|
-| SRS Document | 3.2.x |
-| Description/Notes:| Lorem ipsum dolor sit amet,|
-
+| SRS Document | 3.2.26 |
+| Description/Notes:|Show Holidays<br>1. The user chooses to view the calendar by Day, by Week, and by Month.<br>2. The user will see a text label on national holidays.|
 ### 3.4.2 Calendar Event Notifications
 
 #### 3.4.2.0 Calendar Event Notifications: Enable/Disable Notifications - SRS Feature 3.2.20 & 3.2.22
@@ -667,15 +661,17 @@ Architecture section 4.1 presents a UML diagram to demonstrate the relationships
 
 The architecture design for the Student Calendar application is centered around the MVC design model which is a popular pattern for internet browser based applications. The model classes, Student and Calendar Item, contain all of the data fields necessary for the insertion, modification, and deletion of student and calendar information. The Controller classes contain all the methods that are necessary to work with the data in the model classes. These Controller classes also interface with the Database Facade class, allowing data to be retrieved from and stored into the system database. The I-Learn Facade class works with the Calendar Item Controller class to retireve assignments from BYU-I's I-Learn service and store them in their appropriate location within the Student Calendar. The Calendar Integration Facade class allows the Student Calendar Application to interface with external API's in order to import/export calendar events from social media sites as well as other calendar applications. A further detailed description of each of these classes, their attributes, and methods is provided in the section directly below.
 
-## 4.2.0 Class Description Example
+## 4.2.0 UML Class Descriptions
 
-### 4.2.x Student
+### 4.2.x Calendar Item Controller
 <table>
   <tr>
-    <th colspan = "3">Class Name: Student</th>
+    <th colspan = "3">Class Name: Calendar Item Controller</th>
   </tr>
   <tr>
-    <td colspan = "3">Brief Description: The Student class holds all data related to a user and works with the student controller class to save new insertions and modifications of user data. </td>
+    <td colspan = "3">Brief Description: The Calendar Item Controller(C.I. Controller) class is responsible for retrieving event and assignment data from the system and 
+	sending it to the user display.The C.I. Controller creates Assignments by accessing I-Learn through the I-Learn Facade class and stores the data in assignment class objects.
+	The C.I. Contoller stores calendar items into the system database by using the Database Facade class for future access. </td>
   </tr>
   </table>
   <table>
@@ -684,13 +680,100 @@ The architecture design for the Student Calendar application is centered around 
     <th colspan = "2">Attribute Description</th>
   </tr>
   <tr>
-    <td>name</td><td colspan = "2">The name of the student user</td>
+    <td>Current C.I.</td><td colspan = "2">The Calendar Item class object that the Controller class is currently working with.</td>
+  </tr>
+  <tr>
+    <td>I-Learn Facade</td><td colspan = "2">An Instance of the I-Learn Facade class that is used to pull data from the BYU-I I-Learn system.</td>
+  </tr>
+  <tr>
+    <th>Methods(operations) </th>
+    <th></th>
+  </tr>
+  <tr>
+    <td rowspan = "4">addEvent</td>
+    <th> Method Description</th>
+  </tr>
+  <tr>
+    <td>Creates a new Event calendar item to be added to the calendar. The user enters the event name, description, and sets how often the event will occur
+	on the calendar. The weekly occurence determines how often the event will reoccur for the long term(weekly, monthly, quarterly, etc.) and the daily occurence
+	determines which days of the week the event will occur on. This daily Occurence is passed in as a String array of days and is converted into an integer. This is called when the user selects the "Create Event" button. 
+	A new event is created with the passed parameters, stored in the database, and is then returned to the U.I. Controller class to display to the user. See use case 3.4.1.2 for details.</td>
+  </tr>
+  <tr>
+    <th>Method Pseudo Code</th>
+  </tr>
+  <tr>
+    <td>addEvent(eventName, eventDescription, eventWeeklyOccurence, eventDailyOccurence[]):</br> 
+  eventOccurenceNumber = convert Day Array into number(eventOccurence[])</br>	
+  newEvent = create Event(eventName, eventDescription, eventFrequency, eventOccurenceNumber)</br>
+  DatabaseFacade.addEvent(newEvent)</br>
+  return newEvent</td>
+  </tr>
+  <tr>
+    <td rowspan = "4">loadAssignments</td>
+    <th> Method Description</th>
+  </tr>
+  <tr>
+    <td>This method loads assignments from I-Learn through using the I-Learn Facade class. The assignments are pulled from I-learn, stored in an array
+	of assignment objects, and return to the C.I. Controller. The assignments are then stored into the database through the database facade class. Finally 
+	the assignments are sent to the U.I. Controller to be added to the calendar display. This method is called whenever the user chooses to import assignments
+	from I-Learn. See use case 3.4.7.0 for details.</td>
+  </tr>
+  <tr>
+    <th>Method Pseudo Code</th>
+  </tr>
+  <tr>
+    <td>loadAssignments(User):</br> 
+  I-LearnFacade.Login(User.username, User.password)</br>	
+  assignments = I-LearnFacade.getAssignments()</br>
+  DatabaseFacade.addAssignments(assignments)</br>
+  return assignments</td>
+  </tr>
+  <tr>
+    <td rowspan = "4">addNotification</td>
+    <th> Method Description</th>
+  </tr>
+  <tr>
+    <td>This method adds a notification to the system for the purpose of reminding the user of a calendar item at a later time. This method is called when the
+	user creates a new notification for one of the items on their calendar. The calendar item object is passed into the method, a notification object is created and is linked 
+	to the object. The notfication is stored into the database. If the method is successful then a boolean is returned as True to indicate success to the U.I.
+	If the method fails "False" is returned and the U.I. displays an error message.
+	See use case 3.4.2 for details of when this function is used.</td>
+  </tr>
+  <tr>
+    <th>Method Pseudo Code</th>
+  </tr>
+  <tr>
+    <td>addNotification(CalendarItem):</br> 
+  newNotification = create Notification(CalendarItem)</br>
+  DatabaseFacade.addNotification(newNotification)</br>
+  if successful:</br>
+  return true</br>
+  else</br>
+  return false </td>
+  </tr>
+  
+</table>
+
+### 4.2.x I-Learn Facade
+<table>
+  <tr>
+    <th colspan = "3">Class Name: I-Learn</th>
+  </tr>
+  <tr>
+    <td colspan = "3">Brief Description: The I-Learn class will pull the user's information, assignments and classes from I-Learn</td>
+  </tr>
+  </table>
+  <table>
+  <tr>
+    <th>Attributes(Fields)</th>
+    <th colspan = "2">Attribute Description</th>
+  </tr>
+  <tr>
+    <td>credentials</td><td colspan = "2">The users session credentials passed from I-Learn after authentication</td>
   </tr>
    <tr>
-    <td>username</td><td colspan = "2"> The username credential that the student uses to log in to the calendar</td>
-  </tr>
-   <tr>
-    <td>password</td><td colspan = "2">The password that the student uses to log in</td>
+    <td>userId</td><td colspan = "2"> The username credential that the student uses to log in to the calendar</td>
   </tr>
   <tr>
     <td></td><td colspan = "2"></td>
@@ -700,32 +783,228 @@ The architecture design for the Student Calendar application is centered around 
     <th></th>
   </tr>
   <tr>
-    <td rowspan = "4">Data getters</td>
+    <td rowspan = "4">login(username, password)</td>
     <th> Method Description</th>
   </tr>
   <tr>
-    <td>This serves as a place holder for all “getter” methods for the data elements that belong to this class.</td>
+    <td>Authenticate with I-Learn</td>
   </tr>
   <tr>
     <th>Method Pseudo Code</th>
   </tr>
   <tr>
-    <td>getValueofDataElement():</br> return dataElement</td>
+    <td>
+    credentials = post('https://secure.byui.edu/cas/login?entityId=https://byui.brightspace.com/shibboleth-sp&service=https://shib.byui.edu/idp/Authn/Cas', auth=(username, password))</br>
+    userId = get('https://byui.brightspace.com/d2l/api/lp/1.9/users/whoami')['id']
+    </td>
   </tr>
   <tr>
-    <td rowspan = "4">Data setters</td>
+    <td rowspan = "4">getClasses()</td>
     <th> Method Description</th>
   </tr>
   <tr>
-    <td>This serves as a place holder for all “setter” methods for the data elements that belong to this class.</td>
+    <td>This method uses the D2L API to get the users class list. It then filters to make sure the class is an active class</td>
   </tr>
   <tr>
     <th>Method Pseudo Code</th>
   </tr>
   <tr>
-    <td>setValueofDataElement(dataValue):</br> dataElement = dataValue</td>
+    <td>
+    classList = get('https://byui.brightspace.com/d2l/api/lp/1.9/enrollments/myenrollments/?sortBy=-StartDate')</br>
+    FOR class in classList['Items']</br>
+&nbsp;&nbsp;&nbsp;IF class['Access']['EndDate'] > currentDate and class['OrgUnit']['Type']['Id'] == 3</br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;tempClass = new Classes</br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;tempClass.setName(class['OrgUnit']['Name'])</br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;tempClass.setId(class['OrgUnit']['Id'])</br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;tempClass.setStartDate(class['Access']['StartDate'])</br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;tempClass.setEndDate(class['Access']['EndDate'])</br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;classes INSERT tempClass</br>
+    RETURN classes</br>
+    </td>
+  </tr>
+  <tr>
+    <td rowspan = "4">getAssignments()</td>
+    <th> Method Description</th>
+  </tr>
+  <tr>
+    <td>This method loops through each class and using the D2L API, pulls each assignment for that class. Each assignment is added to an assignment object and returned.</td>
+  </tr>
+  <tr>
+    <th>Method Pseudo Code</th>
+  </tr>
+  <tr>
+    <td>
+    FOR class in classes
+&nbsp;&nbsp;&nbsp;classAssignments = get('https://byui.brightspace.com/d2l/api/le/1.18/content/myItems/?orgUnitIdsCSV=' + class.getId())</br>
+&nbsp;&nbsp;&nbsp;FOR assignment in classAssignments</br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;tempAssignment = new Assignment</br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;tempAssignment.DueDate = assignment.DueDate</br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;tempAssignment.courseName = class.getName()</br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;tempAssignment.assignmentDescription = assignment.ItemName</br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;IF assignment.DueDate != NULL</br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;tempAssignment.assignmentCompleted = TRUE</br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ELSE</br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;tempAssignment.assignmentCompleted = FALSE</br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;assignments[class.getId()] INSERT tempAssignment</br>
+    RETURN assignments
+    </td>
   </tr>
 </table>
+
+### 4.2.x Classes
+<table>
+  <tr>
+    <th colspan = "3">Class Name: Classes</th>
+  </tr>
+  <tr>
+    <td colspan = "3">Brief Description: The Classes class stores the users classes pulled from I-Learn</td>
+  </tr>
+  </table>
+  <table>
+  <tr>
+    <th>Attributes(Fields)</th>
+    <th colspan = "2">Attribute Description</th>
+  </tr>
+  <tr>
+    <td>id</td><td colspan = "2">The unique identifier for the class</td>
+  </tr>
+   <tr>
+    <td>name</td><td colspan = "2">The name of the class</td>
+  </tr>
+  <tr>
+    <td>startDate</td><td colspan = "2">The start date for the class</td>
+  </tr>
+   <tr>
+    <td>endDate</td><td colspan = "2">The end date for the class</td>
+  </tr>
+  <tr>
+    <td></td><td colspan = "2"></td>
+  </tr>
+   <tr>
+    <th>Methods(operations) </th>
+    <th></th>
+  </tr>
+  <tr>
+    <td rowspan = "4">getId()</td>
+    <th> Method Description</th>
+  </tr>
+  <tr>
+    <td>Returns the class unique identifier</td>
+  </tr>
+  <tr>
+    <th>Method Pseudo Code</th>
+  </tr>
+  <tr>
+    <td>
+    RETURN id
+  </tr>
+  <tr>
+    <td rowspan = "4">getName()</td>
+    <th> Method Description</th>
+  </tr>
+  <tr>
+    <td>Returns the name of the class</td>
+  </tr>
+  <tr>
+    <th>Method Pseudo Code</th>
+  </tr>
+  <tr>
+    <td>
+    RETURN name
+    </td>
+  </tr>
+  <tr>
+    <td rowspan = "4">getStartDate()</td>
+    <th> Method Description</th>
+  </tr>
+  <tr>
+    <td>Returns the start date of the class</td>
+  </tr>
+  <tr>
+    <th>Method Pseudo Code</th>
+  </tr>
+  <tr>
+    <td>
+    RETURN startDate
+    </td>
+  </tr>
+  <tr>
+    <td rowspan = "4">getEndDate()</td>
+    <th> Method Description</th>
+  </tr>
+  <tr>
+    <td>Returns the end date of the class</td>
+  </tr>
+  <tr>
+    <th>Method Pseudo Code</th>
+  </tr>
+  <tr>
+    <td>
+    RETURN endDate
+    </td>
+  </tr>
+  <tr>
+    <td rowspan = "4">setId(id)</td>
+    <th> Method Description</th>
+  </tr>
+  <tr>
+    <td>Set the class unique identifier</td>
+  </tr>
+  <tr>
+    <th>Method Pseudo Code</th>
+  </tr>
+  <tr>
+    <td>
+    this->id = id
+    </td>
+  </tr>
+  <tr>
+    <td rowspan = "4">setName(name)</td>
+    <th> Method Description</th>
+  </tr>
+  <tr>
+    <td>Set the class name</td>
+  </tr>
+  <tr>
+    <th>Method Pseudo Code</th>
+  </tr>
+  <tr>
+    <td>
+    this->name = name
+    </td>
+  </tr>
+  <tr>
+    <td rowspan = "4">setStartDate(startDate)</td>
+    <th> Method Description</th>
+  </tr>
+  <tr>
+    <td>Set the class start date</td>
+  </tr>
+  <tr>
+    <th>Method Pseudo Code</th>
+  </tr>
+  <tr>
+    <td>
+    this->startDate = startDate
+    </td>
+  </tr>
+  <tr>
+    <td rowspan = "4">setEndDate(endDate)</td>
+    <th> Method Description</th>
+  </tr>
+  <tr>
+    <td>Set the class end date</td>
+  </tr>
+  <tr>
+    <th>Method Pseudo Code</th>
+  </tr>
+  <tr>
+    <td>
+    this->endDate = endDate
+    </td>
+  </tr>
+</table>
+
 
 ### 4.2.x Calendar Item
 <table>
@@ -1026,6 +1305,63 @@ The architecture design for the Student Calendar application is centered around 
   </tr>
 </table>
 
+### 4.2.x Student
+<table>
+  <tr>
+    <th colspan = "3">Class Name: Student</th>
+  </tr>
+  <tr>
+    <td colspan = "3">Brief Description: The Student class holds all data related to a user and works with the student controller class to save new insertions and modifications of user data. </td>
+  </tr>
+  </table>
+  <table>
+  <tr>
+    <th>Attributes(Fields)</th>
+    <th colspan = "2">Attribute Description</th>
+  </tr>
+  <tr>
+    <td>name</td><td colspan = "2">The name of the student user</td>
+  </tr>
+   <tr>
+    <td>username</td><td colspan = "2"> The username credential that the student uses to log in to the calendar</td>
+  </tr>
+   <tr>
+    <td>password</td><td colspan = "2">The password that the student uses to log in</td>
+  </tr>
+  <tr>
+    <td></td><td colspan = "2"></td>
+  </tr>
+   <tr>
+    <th>Methods(operations) </th>
+    <th></th>
+  </tr>
+  <tr>
+    <td rowspan = "4">Data getters</td>
+    <th> Method Description</th>
+  </tr>
+  <tr>
+    <td>This serves as a place holder for all “getter” methods for the data elements that belong to this class.</td>
+  </tr>
+  <tr>
+    <th>Method Pseudo Code</th>
+  </tr>
+  <tr>
+    <td>getValueofDataElement():</br> return dataElement</td>
+  </tr>
+  <tr>
+    <td rowspan = "4">Data setters</td>
+    <th> Method Description</th>
+  </tr>
+  <tr>
+    <td>This serves as a place holder for all “setter” methods for the data elements that belong to this class.</td>
+  </tr>
+  <tr>
+    <th>Method Pseudo Code</th>
+  </tr>
+  <tr>
+    <td>setValueofDataElement(dataValue):</br> dataElement = dataValue</td>
+  </tr>
+</table>
 ## 4.3 System Interfaces
 
 ### 4.3.1 User Interface
@@ -1047,20 +1383,16 @@ Content goes here: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed 
 
 # 5.0 Data Design
 
-Content goes here: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
 
 ## 5.1 Entity Relationship Diagram
 
-Image goes here<br/>
-Content goes here: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+<img  src="https://github.com/MCLifeLeader/CS364/blob/master/SDD/resources/FullDataModel.jpg" height="50%" width="50%"></br>
 
 ## 5.2 Internal Software Data Structure
 
-Content goes here: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-
 ## 5.3 Global Data Structure
 
-Content goes here: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
 # 6.0 User Interface Design
 
@@ -1145,6 +1477,17 @@ Added to 3.4.1.8 - Marked for deletion
 <img  src="https://github.com/MCLifeLeader/CS364/blob/master/SDD/resources/3.2.43.0.jpg" height="50%" width="50%">
 
 Added to 3.4.1.5 - Marked for deletion
+
+
+
+
+
+
+
+
+
+
+
 
 
 
