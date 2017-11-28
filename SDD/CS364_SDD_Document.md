@@ -265,7 +265,7 @@ Use cases define the interactions between the actors or personas and the system 
 
 | Data | Description |
 | --- |--- |
-| ScreenShot/Mockup: |<img  src="https://github.com/MCLifeLeader/CS364/blob/master/SDD/resources/3.2.25.0.jpg" height="50%" width="50%">|
+| ScreenShot/Mockup: |<img  src="https://github.com/MCLifeLeader/CS364/blob/master/SDD/resources/3.4.1.0.png" height="50%" width="50%">|
 | Page Title: | Home Page|
 | Parent User Story:|N/A|
 | Actor(s)/Persona(s): | Calendar Users|
