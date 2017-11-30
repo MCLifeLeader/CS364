@@ -1,13 +1,13 @@
-#### 3.4.6.1 Calendar Display: Set Time Zone
+#### 3.4.4.1 Calendar Display: Mark Assignment Done
 
 | Data | Description |
 | --- |--- |
 | ScreenShot/Mockup: | |
-| Page Title: | Set Time Zone|
-| Parent User Story:| 3.4.6.0|
+| Page Title: | Mark Assignment Done|
+| Parent User Story:| 3.4.4.0|
 | Actor(s)/Persona(s): | Calendar Users|
-| Pre-conditions/Product(s) Required: | User is logged in. User is inside settings page.|
-| Post-conditions/Product(s) Produced: | Settings page is open and options are shown to the user.|
+| Pre-conditions/Product(s) Required: | User is logged in. User is on To-Do List.|
+| Post-conditions/Product(s) Produced: | Calendar is displayed in the corresponding weekly, or “today” view with the user's events and assignments shown. |
 | Links: | None.|
-| SRS Document | 3.2.15 |
-| Description/Notes:| Time Zone option inside the settings menu can be selected and allows user to change to their current time zone. Thus, changing the due date times in sync with when they are due in MST.<br> 1. Time Zone option is selected.<br> a. Shows the current selected time zone.<br> b. The user can choose between all available time zones to reflect their current location.<br> c. The selected time zone selected will reflect throughout the calendar by changing the due date times to adjust based on their selected time zone.|
+| SRS Document | 3.2.24 |
+| Description/Notes:| There will be a checkbox next to each event or assignment listed in the To-Do List.<br> 1. To-Do List launched will show events displayed to the user has scheduled for the active week, or the Today view.<br> a. School assignments will be displayed as synced with I-Learn for the active week. The checkbox will be to the left of each listed assignment.<br> 2. Checkbox is checked. <br> a. The selected assignment will be grayed out so that the user will be able to focus on the next To-Do List item.
