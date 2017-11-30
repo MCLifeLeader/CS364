@@ -67,18 +67,6 @@ type "6.0.0.0.md" >> CS364_SDD_Document.md
 type "6.1.0.0.md" >> CS364_SDD_Document.md
 type "6.2.0.0.md" >> CS364_SDD_Document.md
 type "6.2.1.0.md" >> CS364_SDD_Document.md
-type "6.2.4.0.md" >> CS364_SDD_Document.md
-type "6.2.6.0.md" >> CS364_SDD_Document.md
-type "6.2.8.0.md" >> CS364_SDD_Document.md
-type "6.2.9.0.md" >> CS364_SDD_Document.md
-type "6.2.10.0.md" >> CS364_SDD_Document.md
-type "6.2.16.0.md" >> CS364_SDD_Document.md
-type "6.2.20.0.md" >> CS364_SDD_Document.md
-type "6.2.22.0.md" >> CS364_SDD_Document.md
-type "6.2.23.0.md" >> CS364_SDD_Document.md
-type "6.2.25.0.md" >> CS364_SDD_Document.md
-type "6.2.26.0.md" >> CS364_SDD_Document.md
-type "6.2.43.0.md" >> CS364_SDD_Document.md
-type "6.2.50.0.md" >> CS364_SDD_Document.md
+
 
 type "Index.md" >> CS364_SDD_Document.md
