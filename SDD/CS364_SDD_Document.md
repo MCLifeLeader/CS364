@@ -29,7 +29,6 @@ Marcus Rhodes<br/>
 Jonathan Comeau<br/>
 Dallin Snell<br/>
 Kylor Kersavage<br/>
-Michael Flindt<br/>
 
 ## Team 2 - Use Cases
 
@@ -56,7 +55,7 @@ Sebastian Calle<br/>
 Marcus Hedgecock<br/>
 Jonah Green<br/>
 Fernando Gomez<br/>
-MIchael Flindt<br/>
+Michael Flindt<br/>
 # Revision History
 
 | Name          | Date       | Reason for Changes        | Version |
