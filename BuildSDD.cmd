@@ -18,9 +18,6 @@ type "2.0.0.0.md" >> CS364_SDD_Document.md
 
 type "3.0.0.0.md" >> CS364_SDD_Document.md
 type "3.1.0.0.md" >> CS364_SDD_Document.md
-type "3.2.0.0.md" >> CS364_SDD_Document.md
-type "3.3.0.0.md" >> CS364_SDD_Document.md
-type "3.3.1.0.md" >> CS364_SDD_Document.md
 
 type "3.4.0.0.md" >> CS364_SDD_Document.md
 type "3.4.1.0.md" >> CS364_SDD_Document.md
@@ -32,11 +29,16 @@ type "3.4.1.5.md" >> CS364_SDD_Document.md
 type "3.4.1.6.md" >> CS364_SDD_Document.md
 type "3.4.1.7.md" >> CS364_SDD_Document.md
 type "3.4.1.8.md" >> CS364_SDD_Document.md
+type "3.4.1.9.md" >> CS364_SDD_Document.md
 type "3.4.2.0.md" >> CS364_SDD_Document.md
 type "3.4.2.1.md" >> CS364_SDD_Document.md
+type "3.4.2.2.md" >> CS364_SDD_Document.md
+type "3.4.2.3.md" >> CS364_SDD_Document.md
+type "3.4.2.4.md" >> CS364_SDD_Document.md
 type "3.4.3.0.md" >> CS364_SDD_Document.md
 type "3.4.4.0.md" >> CS364_SDD_Document.md
 type "3.4.4.1.md" >> CS364_SDD_Document.md
+type "3.4.4.2.md" >> CS364_SDD_Document.md
 type "3.4.5.0.md" >> CS364_SDD_Document.md
 type "3.4.5.1.md" >> CS364_SDD_Document.md
 type "3.4.5.2.md" >> CS364_SDD_Document.md
@@ -44,6 +46,8 @@ type "3.4.5.3.md" >> CS364_SDD_Document.md
 type "3.4.5.4.md" >> CS364_SDD_Document.md
 type "3.4.5.5.md" >> CS364_SDD_Document.md
 type "3.4.6.0.md" >> CS364_SDD_Document.md
+type "3.4.6.1.md" >> CS364_SDD_Document.md
+type "3.4.6.3.md" >> CS364_SDD_Document.md
 type "3.4.7.0.md" >> CS364_SDD_Document.md
 type "3.4.7.1.md" >> CS364_SDD_Document.md
 type "3.4.8.0.md" >> CS364_SDD_Document.md
