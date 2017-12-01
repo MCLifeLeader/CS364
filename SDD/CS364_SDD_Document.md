@@ -250,6 +250,507 @@ Use cases define the interactions between the actors or personas and the system 
 | SRS Document | The reference to the section in Software Requirements Specification pertaining to the use case.|
 | Description/Notes:| A complete description of the interactions that take place in the use case. These interactions include primary paths, alternate paths, and exception paths. This section also contains any additional notes and requirements pertaining to the use case.|
 
+### 3.4.1 Calendar Display
+
+#### 3.4.1.0 Calendar Display: Load Home Screen
+
+| Data | Description |
+| --- |--- |
+| ScreenShot/Mockup: |<img  src="https://github.com/MCLifeLeader/CS364/blob/master/SDD/resources/3.4.1.0.png" height="50%" width="50%">|
+| Page Title: | Home Page|
+| Parent User Story:|N/A|
+| Actor(s)/Persona(s): | Calendar Users|
+| Pre-conditions/Product(s) Required: | A compatible web browser such as Google Chrome, Firefox, Chromium, Safari, or Microsoft Edge.|
+| Post-conditions/Product(s) Produced: | The Home Screen is displayed.|
+| Links: | None.|
+| SRS Document | 3.2.2 |
+| Description/Notes:| 1. The calendar user will navigate to the URL of the calendar website.<br>2. The website's home page will be loaded and displayed.<br>a. The home page will load the user's specific calendar if they are logged in.<br>b. If the user has not logged in then a default calendar will be loaded on screen.<br>c. If the user is not logged in then a small modal box will pop up prompting the user to sign in or register an account. <br> d. If the user clicks the sign in button they will be redirected to the log-in screen. <br> e. If the user clicks the new user button they will be redirected to the account registration page.<br> 3. If the web browser is not supported by the web site then it will display a message explaining the compatibility issue.<br> 4. Pages that users try to access but do not exist on the web site domain will show an error message and have a link back to the home page.|
+
+#### 3.4.1.1 Calendar Display: Checking the Schedule
+
+| Data | Description |
+| --- |--- |
+| ScreenShot/Mockup: | |
+| Page Title: | Checking the Schedule|
+| Parent User Story:| N/A|
+| Actor(s)/Persona(s): | Calendar Users|
+| Pre-conditions/Product(s) Required: | User is logged in. |
+| Post-conditions/Product(s) Produced: | Calendar is up on display. |
+| Links: | None.|
+| SRS Document | 3.2.2 |
+| Description/Notes:| 1. When the user goes to the home page the calendar will be shown with the events the user has on their calendar. <br> a. Events will be displayed as user has scheduled. <br> b. School assignments will be displayed as synced with I-Learn. <br> 2. The user will be able to switch between daily, weekly, and monthly views. See 3.4.1.3. <br> 3. The assignment titles and due time will be displayed and resized to fit on the screen. a. If the assignment titles won't fit on a calendar day then the calendar will be resized to be larger. 3. The user can click the assignment to view its details.|
+
+#### 3.4.1.2 Calendar Display: Creating an Event
+
+| Data | Description |
+| --- |--- |
+| ScreenShot/Mockup: |<img  src="https://github.com/MCLifeLeader/CS364/blob/master/SDD/resources/3.2.16.0.jpg" height="50%" width="50%"> |
+| Page Title: | Creating an Event|
+| Parent User Story:| N/A|
+| Actor(s)/Persona(s): | Calendar Users|
+| Pre-conditions/Product(s) Required: | User is logged in. |
+| Post-conditions/Product(s) Produced: | Event is created and displays correctly on calendar.|
+| Links: | None.|
+| SRS Document | 3.2.16 |
+| Description/Notes:| Creating an Event <br> 1. Create Event button is displayed on the Calendar App. <br> a. User clicks Create Event button. <br> b. User prompted to select day(s) to schedule event. <br> c. User enters description of event. <br> 2. Event is added and displayed on User's Calendar. <br> a. User can interact with Event on Calendar. |
+
+#### 3.4.1.3 Calendar Display: Switching Views
+
+| Data | Description |
+| --- |--- |
+| ScreenShot/Mockup: | |
+| Page Title: | Switching Views|
+| Parent User Story:| 3.4.1.1|
+| Actor(s)/Persona(s): | Calendar Users|
+| Pre-conditions/Product(s) Required: | User is logged in. User is on home page.|
+| Post-conditions/Product(s) Produced: | Calendar is displayed in the corresponding daily, weekly, or monthly view with the user's events and assignments shown. |
+| Links: | None.|
+| SRS Document | 3.2.53 |
+| Description/Notes:| There will be 3 different tabs to switch between calendar views: Weekly, Monthly, and Daily. <br>1. Weekly View Tab <br> a. User can click the Weekly Tab if they are in monthly or daily view to view the Calendar for the current week. <br> b. Events will be displayed as user has scheduled for the active week. <br> c. School assignments will be displayed as synced with I-Learn for the active week.<br> d. The next arrow button can be clicked to advance the active week forward one week. <br> e. The previous arrow button can be clicked to go back one week from the active week. <br> f. Weekly view will be up by default when the display is loaded.<br> 2. Monthly View Tab <br> a. User can click the Monthly Tab to view the Calendar for the current month. <br> b. Events will be displayed as user has scheduled for the active month. <br> c. School assignments will be displayed as synced with I-Learn for the active month. <br> d. The next arrow button can be clicked to advance the active month forward one month. <br> e. The previous arrow button can be clicked to go back one month from the active month. <br> 3. Daily View Tab <br> a. User can click the Daily Tab to view the Calendar for the current day. <br> b. Events will be displayed as user has scheduled for the active day. <br> c. School assignments will be displayed as synced with I-Learn for the active day. <br> d. The next arrow button can be clicked to advance the active day forward one day. <br> e. The previous arrow button can be clicked to go back one day from the active day.|
+
+#### 3.4.1.4 Calendar Display Screen: Creating an Alert
+
+| Data | Description |
+| --- |--- |
+| ScreenShot/Mockup: | |
+| Page Title: | Creating an Alert|
+| Parent User Story:| N/A |
+| Actor(s)/Persona(s): | Calendar User, System|
+| Pre-conditions/Product(s) Required: |  1. An application event requiring an alert occurs. <br> 2. An error occurs that requires immediate user action or notification.|
+| Post-conditions/Product(s) Produced: | 1. The user is presented with the recommended course of action or the option to ignore. |
+| Links: | None.|
+| SRS Document | 3.2.22 |
+| Description/Notes:| 1. Warnings <br> a. An alert will appear when the user has performed or intends to perform an illegal or high-risk action, e.g.: creating an event with not reminders or deleting a calendar event. <br> 2. Reminders <br> a. Alerts will be used as a reminder in certain situations, e.g.: reminding the user that they have not synced their calendar in *x* days.   |
+#### 3.4.1.5 Calendar Display: Printing
+
+| Data | Description |
+| --- |--- |
+| ScreenShot/Mockup: | <img  src="https://github.com/MCLifeLeader/CS364/blob/master/SDD/resources/3.2.43.0.jpg" height="50%" width="50%">|
+| Page Title: | Print|
+| Parent User Story:|N/A|
+| Actor(s)/Persona(s): | Calendar Users|
+| Pre-conditions/Product(s) Required: | User is logged in and viewing calendar in monthly, weekly, or daily view.|
+| Post-conditions/Product(s) Produced: | The calendar will be printed with the user's events in the corresponding view.|
+| Links: | None.|
+| SRS Document | 3.2.43 |
+| Description/Notes:|1. The user will trigger the print screen by pressing the Ctrl + P hotkey or by selecting the print button.<br>2. The print screen will be shown with the following components:<br>   - The user will be able to select from a drop down list the printer to use for printing.<br>   - A drop down list will allow the user to choose the layout. The layouts possible are landscape or portrait.<br>   - A drop down list that will allow the user to change the Paper size.<br>   - An edit box that will allow the user to change the number of copies to make.<br>   - A preview of the calendar to be printed will be shown. The calendar to be printed will correspond to the user's view on the main screen, whether it be in monthly, weekly, or daily view. Additionally, the preview will be updated as the user selects the various printing options.<br>   - A print button will attempt to print according to the options selected, or display error messages if unsuccessful.<br>   - A cancel button will close the print window and return the user to the main screen, canceling the print operation.<br>3. The user will select the options according to their preference. Then they will select the print button.<br>4. The print options will be processed and the calendar will be printed according to those options.<br>5. If any of the options are invalid then no printing will be attempted and an error message indicating the cause of the invalid option will be displayed beside the corrupt option to the user.<br>6. If the process fails to connect to the printer an error message will be displayed under the printer selection indicating that the process failed to connect to printer.<br>|
+
+#### 3.4.1.6 Calendar Display: Access Assignment
+
+| Data | Description |
+| --- |--- |
+| ScreenShot/Mockup: | <img  src="https://github.com/MCLifeLeader/CS364/blob/master/SDD/resources/3.4.1.6.png" height="50%" width="50%">|
+| Page Title: | Access Assignment|
+| Parent User Story:| N/A|
+| Actor(s)/Persona(s): | System, Calendar Users|
+| Pre-conditions/Product(s) Required: | 1. User is Logged in <br> 2. Assignments have been imported.|
+| Post-conditions/Product(s) Produced: | Assignment is displayed correctly to the user.|
+| Links: | None.|
+| SRS Document | 3.2.8 |
+| Description/Notes:| Accessing An Assignment.<br>1. Assignments are displayed to the User on the Calendar as links.<br>  a. Users clicks on one of the links.<br> b. The correct assignment is pulled up on screen for the user. 2. Assignment details button is shown.<br> a. User clicks assignments details button.<br> b. User is able to interact with different features for the event. |
+
+#### 3.4.1.7 Calendar Display: Show Assignment Details
+
+| Data | Description |
+| --- |--- |
+| ScreenShot/Mockup: |See 3.4.1.6|
+| Page Title: | Show Assignment Details|
+| Parent User Story:|3.4.1.6|
+| Actor(s)/Persona(s): | System|
+| Pre-conditions/Product(s) Required: | 1. User is logged in<br> 2. Assignments have been imported.|
+| Post-conditions/Product(s) Produced: | Assignments details are shown and displayed correctly to the user.|
+| Links: | None.|
+| SRS Document | 3.2.6 |
+| Description/Notes:| Show Assignment Details<br>1. Show Details Button is displayed on the Calendar App by the Assignments.<br>a. User clicks Details Button.<br>2. Details are displayed to the User.<br>a. An option to collapse the details is shown as well.|
+
+#### 3.4.1.8 Calendar Display: Show Holidays
+
+| Data | Description |
+| --- |--- |
+| ScreenShot/Mockup: |<img  src="https://github.com/MCLifeLeader/CS364/blob/master/SDD/resources/3.4.1.8.png" height="50%" width="50%"> |
+| Page Title: | Show Holidays,|
+| Parent User Story:| N/A|
+| Actor(s)/Persona(s): | Calendar Users|
+| Pre-conditions/Product(s) Required: | User is logged in. Calendar is loaded.|
+| Post-conditions/Product(s) Produced: | The user will see a text label on national holidays.|
+| Links: | None.|
+| SRS Document | 3.2.26 |
+| Description/Notes:|Show Holidays<br>1. The user chooses to view the calendar by Day, by Week, and by Month.<br>2. The user will see a text label on national holidays.|
+
+#### 3.4.1.9 Calendar Display: Edit an Event
+
+| Data | Description |
+| --- |--- |
+| ScreenShot/Mockup: |<img  src="https://github.com/MCLifeLeader/CS364/blob/master/SDD/resources/3.2.16.0.jpg" height="50%" width="50%"> |
+| Page Title: | Edit Event|
+| Parent User Story:| N/A|
+| Actor(s)/Persona(s): | Calendar Users|
+| Pre-conditions/Product(s) Required: | User is logged in. |
+| Post-conditions/Product(s) Produced: | Event is updated and displays correctly on calendar.|
+| Links: | None.|
+| SRS Document | 3.2.16 |
+| Description/Notes:| Editing an Event <br> 1. Edit Event button is displayed on the Calendar App. <br> a. User clicks Edit Event button. <br> b. User prompted to update selected time(s) for the event. <br> c. User enters / edits description of event. <br> 2. Event is updated and displayed on User's Calendar. <br> a. User can interact with Event on Calendar. |
+
+### 3.4.2 Calendar Event Notifications
+
+#### 3.4.2.0 Calendar Event Notifications: Enable/Disable Notifications - SRS Feature 3.2.20 & 3.2.22
+
+| Data | Description |
+| --- |--- |
+| ScreenShot/Mockup: |<img  src="https://github.com/MCLifeLeader/CS364/blob/master/SDD/resources/3.2.20.0.jpg" height="50%" width="50%"> |
+| Page Title: | Enable/Disable Notifications|
+| Parent User Story:| N/A|
+| Actor(s)/Persona(s): | Calendar User|
+| Pre-conditions/Product(s) Required: | 1. Notification permissions are enabled.|
+| Post-conditions/Product(s) Produced: | 1. User will be able to toggle notifications. <br> 2. When notifications are disabled, a disabled notifications icon will be present within the application to remind the user that the application will not remind them of upcoming events.  |
+| Links: |3.4.6.0|
+| SRS Document | 3.2.20|
+| Description/Notes:| Enable/Disable Notifications <br> 1. Notifications will be enabled by default. <br> 2. The notification toggle will be found in the parent settings page. <br> 3. Warnings <br> a. If notifications or notification permissions are blocked by the operating system, a prompt will notify the user of this situation. <br> b. The notification will have the option to redirect the user to the permissions page of their operating system or browser to correct the error. <br> c. The notification will have the option to never allow the permission and never remind the user of the error.|
+
+#### 3.4.2.1 Calendar Event Notifications: Set Reminders
+
+| Data | Description |
+| --- |--- |
+| ScreenShot/Mockup: |<img  src="https://github.com/MCLifeLeader/CS364/blob/master/SDD/resources/3.4.2.1.png" height="50%" width="50%"> |
+| Page Title: | Set Reminders|
+| Parent User Story:| N/A|
+| Actor(s)/Persona(s): | System, Calendar User|
+| Pre-conditions/Product(s) Required: |1. User is logged in. <br> 2. An event has been created.|
+| Post-conditions/Product(s) Produced: |  1. A reminder is prepared. <br> 2. User is returned to their last viewed calendar.|
+| Links: | None.|
+| SRS Document | 3.2.22 |
+| Description/Notes:|1. The user will have options as to how they would like to be reminded about their upcoming events. <br> a. The user can select the timing of the notification, e.g.: 10 minutes before, 1 hour before, 1 day before. <br> b. The user can choose the means by which they will be reminded, e.g.: operating system reminder, e-mail or text message.|
+
+#### 3.4.2.2 Calendar Event Notifications: Send Notification
+
+| Data | Description |
+| --- |--- |
+| ScreenShot/Mockup: | |
+| Page Title: | Send Notification |
+| Parent User Story:| N/A|
+| Actor(s)/Persona(s): | System, Calendar User|
+| Pre-conditions/Product(s) Required: |1. User is logged in. <br> 2. An event has been created. <br> 3. Notification permissions are allowed. <br> 4. Notifications are enabled in the settings. |
+| Post-conditions/Product(s) Produced: |  1. A notification is prepared. <br> 2. User is returned to their last viewed calendar. <br> 3. Notification is sent to user based on their preference selected during the event creation.|
+| Links: | None.|
+| SRS Document | 3.2.22 |
+| Description/Notes:|Sent Notification <br> 1. Notification <br> a. Based on preference, an initial notification can be prepared and sent to the user informing them of the event details. <br> b. Based on the application preferences of each event guest, an additional reminder will also be prepared and reserved according to their reminder and notification preferences. <br> 2. Warning <br> a. An alert should warn the host that some invited guests may have reminders disabled and may not see the event. <br> b. If notification permissions are not allowed, this feature will not work. |
+
+#### 3.4.2.3 Calendar Event Notifications: View Missed Notifications
+
+| Data | Description |
+| --- |--- |
+| ScreenShot/Mockup: | |
+| Page Title: | View Missed Notifications |
+| Parent User Story:| N/A|
+| Actor(s)/Persona(s): | System, Calendar User|
+| Pre-conditions/Product(s) Required: |1. User is logged in. <br> 2. A notification has been created. <br> 3. Users have been sent a notification.|
+| Post-conditions/Product(s) Produced: |  1. A notification has been viewed. <br> 2. User is returned to their last viewed calendar. <br> 3. Missing notifications are empty.|
+| Links: | None.|
+| SRS Document |  |
+| Description/Notes:| Viewing Missed Notifications <br> 1. Missed Notification <br> a. A user has been sent a notification which hasn't been viewed yet. <br> b. User is notified that he/she has a missed notification. <br> c. User views missed notification, clearing the missed notifications. <br> 2. Warning <br> a. The user must view all missed notifications to clear all missed notifications. |
+#### 3.4.2.4 Calendar Event Notifications: Set Notification Methods
+
+| Data | Description |
+| --- |--- |
+| ScreenShot/Mockup: | |
+| Page Title: | Set Notification Methods |
+| Parent User Story:| N/A|
+| Actor(s)/Persona(s): | System, Calendar User|
+| Pre-conditions/Product(s) Required: |1. User is logged in. <br> 2. User goes to notification settings. |
+| Post-conditions/Product(s) Produced: |  1. User's notification methods have been updated. <br> 2. User is returned to their last viewed calendar.|
+| Links: | None.|
+| SRS Document |  |
+| Description/Notes:|Set Notification Methods <br> 1. Notification Methods <br> a. User is prompted to turn on or turn off notifications. <br> b. User selects to turn on notifications and is returned to last viewed calendar. <br> 2. Warning <br> a. User selects to turn off notifications and is given a warning that they won't receive notifcations when they disable this setting. |
+### 3.4.3.0 Toolbox Bar - SRS Feature 3.2.50
+
+| Data | Description |
+| --- |--- |
+| ScreenShot/Mockup: | <img src="https://github.com/MCLifeLeader/CS364/blob/master/SDD/resources/3.2.50.0.jpg" height="50%" width="50%">|
+| Page Title: | Lorem ipsum dolor sit amet,|
+| Parent User Story:| Lorem ipsum dolor sit amet,|
+| Actor(s)/Persona(s): | Lorem ipsum dolor sit amet,|
+| Pre-conditions/Product(s) Required: | Lorem ipsum dolor sit amet,|
+| Post-conditions/Product(s) Produced: | Lorem ipsum dolor sit amet,|
+| Links: | None.|
+| SRS Document | 3.2.50 |
+| Description/Notes:| Lorem ipsum dolor sit amet,|
+
+#### 3.4.4.0 Calendar Display: Load To-Do List
+
+| Data | Description |
+| --- |--- |
+| ScreenShot/Mockup: | <img  src="https://github.com/MCLifeLeader/CS364/blob/master/SDD/resources/3.4.4.0.png" height="50%" width="50%"> |
+| Page Title: | Load To-Do List|
+| Parent User Story:| 3.4.1.1|
+| Actor(s)/Persona(s): | Calendar Users|
+| Pre-conditions/Product(s) Required: | User is logged in. User is on home page.|
+| Post-conditions/Product(s) Produced: | Calendar is displayed in the corresponding daily, weekly, or monthly view with the user's events and assignments shown. |
+| Links: | None.|
+| SRS Document | 3.2.24 |
+| Description/Notes:| There will be a button to access and launch the To-DO List found near the views tabs. <br> 1. To-Do List launched will show events displayed to the user has scheduled for the active week.<br> a. School assignments will be displayed as synced with I-Learn for the active week.<br> b. Weekly view will be up by default when the display is loaded.<br> 2. Today View Tab <br> a. User can click the Today Tab to view the To-Do list for the current day. <br> b. School assignments will be displayed as synced with I-Learn for the active day. <br>
+
+
+#### 3.4.4.1 Calendar Display: Mark Assignment Done
+
+| Data | Description |
+| --- |--- |
+| ScreenShot/Mockup: | |
+| Page Title: | Mark Assignment Done|
+| Parent User Story:| 3.4.4.0|
+| Actor(s)/Persona(s): | Calendar Users|
+| Pre-conditions/Product(s) Required: | User is logged in. User is on To-Do List.|
+| Post-conditions/Product(s) Produced: | Calendar is displayed in the corresponding weekly, or “today” view with the user's events and assignments shown. |
+| Links: | None.|
+| SRS Document | 3.2.24 |
+| Description/Notes:| There will be a checkbox next to each event or assignment listed in the To-Do List.<br> 1. To-Do List launched will show events displayed to the user has scheduled for the active week, or the Today view.<br> a. School assignments will be displayed as synced with I-Learn for the active week. The checkbox will be to the left of each listed assignment.<br> 2. Checkbox is checked. <br> a. The selected assignment will be grayed out so that the user will be able to focus on the next To-Do List item. 
+
+
+#### 3.4.4.1 Sort by Time Length
+
+| Data | Description |
+| --- |--- |
+| ScreenShot/Mockup: | |
+| Page Title: | Time Sort|
+| Parent User Story:|N/A |
+| Actor(s)/Persona(s): | System, Assignments|
+| Pre-conditions/Product(s) Required: | 1. User is logged in. <br> 2. There are events in the date range.|
+| Post-conditions/Product(s) Produced: | A sorted list of assignments by time is made.|
+| Links: | None.|
+| SRS Document | 3.2.33 |
+| Description/Notes:|This function will take in a list of assignments from the specified date range, and will sort them by time. This will organize the calendar for doing shorter assignments first or doing longer assignments first. |
+### 3.4.5.0 Calendar Integrations - SRS Features 3.2.11-12, 3.2.28-29, 3.2.40-41, 3.2.47-49
+
+| Data | Description |
+| --- |--- |
+| ScreenShot/Mockup: | |
+| Page Title: | Lorem ipsum dolor sit amet,|
+| Parent User Story:| Lorem ipsum dolor sit amet,|
+| Actor(s)/Persona(s): | Lorem ipsum dolor sit amet,|
+| Pre-conditions/Product(s) Required: | Lorem ipsum dolor sit amet,|
+| Post-conditions/Product(s) Produced: | Lorem ipsum dolor sit amet,|
+| Links: | None.|
+| SRS Document | 3.2.x |
+| Description/Notes:| Lorem ipsum dolor sit amet,|
+
+#### 3.4.5.1 Calendar Integrations: Facebook
+
+| Data | Description |
+| --- |--- |
+| ScreenShot/Mockup: | |
+| Page Title: | Lorem ipsum dolor sit amet,|
+| Parent User Story:| Lorem ipsum dolor sit amet,|
+| Actor(s)/Persona(s): | Lorem ipsum dolor sit amet,|
+| Pre-conditions/Product(s) Required: | Lorem ipsum dolor sit amet,|
+| Post-conditions/Product(s) Produced: | Lorem ipsum dolor sit amet,|
+| Links: | None.|
+| SRS Document | 3.2.x |
+| Description/Notes:| Lorem ipsum dolor sit amet,|
+
+#### 3.4.5.2 Calendar Integrations: Google Calendar
+
+| Data | Description |
+| --- |--- |
+| ScreenShot/Mockup: | |
+| Page Title: | Lorem ipsum dolor sit amet,|
+| Parent User Story:| Lorem ipsum dolor sit amet,|
+| Actor(s)/Persona(s): | Lorem ipsum dolor sit amet,|
+| Pre-conditions/Product(s) Required: | Lorem ipsum dolor sit amet,|
+| Post-conditions/Product(s) Produced: | Lorem ipsum dolor sit amet,|
+| Links: | None.|
+| SRS Document | 3.2.x |
+| Description/Notes:| Lorem ipsum dolor sit amet,|
+
+#### 3.4.5.3 Calendar Integrations: Outlook
+
+| Data | Description |
+| --- |--- |
+| ScreenShot/Mockup: | |
+| Page Title: | Lorem ipsum dolor sit amet,|
+| Parent User Story:| Lorem ipsum dolor sit amet,|
+| Actor(s)/Persona(s): | Lorem ipsum dolor sit amet,|
+| Pre-conditions/Product(s) Required: | Lorem ipsum dolor sit amet,|
+| Post-conditions/Product(s) Produced: | Lorem ipsum dolor sit amet,|
+| Links: | None.|
+| SRS Document | 3.2.x |
+| Description/Notes:| Lorem ipsum dolor sit amet,|
+
+#### 3.4.5.4 Calendar Integrations: Apple Calendars
+
+| Data | Description |
+| --- |--- |
+| ScreenShot/Mockup: | |
+| Page Title: | Lorem ipsum dolor sit amet,|
+| Parent User Story:| Lorem ipsum dolor sit amet,|
+| Actor(s)/Persona(s): | Lorem ipsum dolor sit amet,|
+| Pre-conditions/Product(s) Required: | Lorem ipsum dolor sit amet,|
+| Post-conditions/Product(s) Produced: | Lorem ipsum dolor sit amet,|
+| Links: | None.|
+| SRS Document | 3.2.x |
+| Description/Notes:| Lorem ipsum dolor sit amet,|
+
+#### 3.4.5.5 Calendar Integrations: Map Programs
+
+| Data | Description |
+| --- |--- |
+| ScreenShot/Mockup: | |
+| Page Title: | Find a Route|
+| Parent User Story:| N/A|
+| Actor(s)/Persona(s): | System, Calendar User, Map|
+| Pre-conditions/Product(s) Required: | There must be a task with a meeting place.|
+| Post-conditions/Product(s) Produced: | Route linking the User location to the meeting place.|
+| Links: | None.|
+| SRS Document | 3.2.29 |
+| Description/Notes:| This function will take a meeting place as a paramater and return a route for the User to follow.|
+### 3.4.6.0 User Profile Settings - SRS Requirement 3.2.57
+
+| Data | Description |
+| --- |--- |
+| ScreenShot/Mockup: | <img  src="https://github.com/MCLifeLeader/CS364/blob/master/SDD/resources/3.2.20.0.jpg" height="50%" width="50%">|
+| Page Title: | |
+| Parent User Story:| |
+| Actor(s)/Persona(s): | |
+| Pre-conditions/Product(s) Required: | |
+| Post-conditions/Product(s) Produced: | |
+| Links: |3.4.2.0|
+| Description/Notes:| |
+
+#### 3.4.6.1 Calendar Display: Set Time Zone
+
+| Data | Description |
+| --- |--- |
+| ScreenShot/Mockup: | |
+| Page Title: | Set Time Zone|
+| Parent User Story:| 3.4.6.0|
+| Actor(s)/Persona(s): | Calendar Users|
+| Pre-conditions/Product(s) Required: | User is logged in. User is inside settings page.|
+| Post-conditions/Product(s) Produced: | Settings page is open and options are shown to the user.|
+| Links: | None.|
+| SRS Document | 3.2.15 |
+| Description/Notes:| Time Zone option inside the settings menu can be selected and allows user to change to their current time zone. Thus, changing the due date times in sync with when they are due in MST. <br> 1. Time Zone option is selected. <br> a. Shows the current selected time zone.<br> b. The user can choose between all available time zones to reflect their current location.<br> c. The selected time zone selected will reflect throughout the calendar by changing the due date times to adjust based on their selected time zone.|
+#### 3.4.6.3 Change Notification Settings - SRS Feature 3.2.20 & 3.2.22
+
+| Data | Description |
+| --- |--- |
+| ScreenShot/Mockup: ||
+| Page Title: | Change Notification Settings|
+| Parent User Story:| N/A|
+| Actor(s)/Persona(s): | Calendar User|
+| Pre-conditions/Product(s) Required: |1. User is logged in. <br> 2. User goes to notification settings. |
+| Post-conditions/Product(s) Produced: | 1. User's notification methods have been updated. <br> 2. User is returned to their last viewed calendar.|
+| Links: |3.4.6.0|
+| SRS Document | 3.2.20|
+| Description/Notes:| Enable/disable and change settings for notifications <br> 1. Notifications will be enabled by default. <br> 2. The notification toggle will be found in the parent settings page. <br> 3. Warnings <br> a. If notifications or notification permissions are blocked by the operating system, a prompt will notify the user of this situation. <br> b. The notification will have the option to redirect the user to the permissions page of their operating system or browser to correct the error. <br> c. The notification will have the option to never allow the permission and never remind the user of the error.<br> 4. Configureable settings <br> a. How often they receive notifications.<br> b. What email address or text messaging number to receive notifications at. <br> c. What they want to be notified about.|
+### 3.4.7.0 Import Assignments from I-Learn - SRS Feature 3.2.6
+
+| Data | Description |
+| --- |--- |
+| ScreenShot/Mockup: | <img src="https://github.com/MCLifeLeader/CS364/blob/master/SDD/resources/sketchFiles/3.2.6.0.png" height="50%" width="50%">|
+| Page Title: | Lorem ipsum dolor sit amet,|
+| Parent User Story:| Lorem ipsum dolor sit amet,|
+| Actor(s)/Persona(s): | Lorem ipsum dolor sit amet,|
+| Pre-conditions/Product(s) Required: | Lorem ipsum dolor sit amet,|
+| Post-conditions/Product(s) Produced: | Lorem ipsum dolor sit amet,|
+| Links: | None.|
+| SRS Document | 3.2.x |
+| Description/Notes:| Lorem ipsum dolor sit amet,|
+
+<img src="https://github.com/MCLifeLeader/CS364/blob/master/SDD/resources/sync.jpg" height="50%" width="50%">
+
+This image details the steps necessary to import Ilearn data into the calendar application. 
+
+### 3.4.7.1 Import Assignments from I-Learn: Calendar User
+
+| Data | Description |
+| --- |--- |
+| ScreenShot/Mockup: | <img  src="https://github.com/MCLifeLeader/CS364/blob/master/SDD/resources/3.2.6.0.jpg" height="50%" width="50%">|
+| Page Title: | Lorem ipsum dolor sit amet,|
+| Parent User Story:| Lorem ipsum dolor sit amet,|
+| Actor(s)/Persona(s): | Lorem ipsum dolor sit amet,|
+| Pre-conditions/Product(s) Required: | Lorem ipsum dolor sit amet,|
+| Post-conditions/Product(s) Produced: | Lorem ipsum dolor sit amet,|
+| Links: | None.|
+| SRS Document | 3.2.x |
+| Description/Notes:| Lorem ipsum dolor sit amet,|
+
+### 3.4.8 Log-In Use case
+
+#### 3.4.8.0 Log-In Use Case: Create account
+
+| Data | Description |
+| --- |--- |
+| ScreenShot/Mockup: | |
+| Page Title: | Create account |
+| Parent User Story:| N/A|
+| Actor(s)/Persona(s): | Calendar users |
+| Pre-conditions/Product(s) Required: | 1. Calendar Portal has been brought up and configured. |
+| Post-conditions/Product(s) Produced: | The user will be sent an email for account verrification. |
+| Links: | None.|
+| SRS Document | 3.2.32, 3.2.36|
+| Description/Notes:| 1. The user will be asked to input desired user name.<br>2. The user will be asked to input email address.<br>3. The user will be asked to input desired password.<br>4. The user will be instructed to click the link in an email they will receive to activate their calendar application account.<br>5. Following account creation, and activation, the user can then log onto the calendar app.|
+
+#### 3.4.8.1 Log-in Use Cases: Validation
+
+| Data | Description |
+| --- |--- |
+| ScreenShot/Mockup: | |
+| Page Title: | Log-in Validation |
+| Parent User Story:| N/A|
+| Actor(s)/Persona(s): | Calendar users |
+| Pre-conditions/Product(s) Required: | 1. Calendar Portal has been brought up and configured. <br>2. User has made an account for the Calendar application.|
+| Post-conditions/Product(s) Produced: | 1. If the user-name does not match any of the accounts created, the system will prompt the user to try again. <br>2. If the password does not match what the system has stored for the current user-name, then the system will prompt the user to try again. <br> 3. When both the user-name and password match an account the system has stored then the user will be logged in.|
+| Links: | None.|
+| SRS Document | 3.2.36 |
+| Description/Notes:| Validation <br>1. User-name input field <br>a. User-name input box will have auto focus by default. <br>b. As user types in their user-name, the auto-complete will detect previously used user-names for faster log in. <br>c. When login button is clicked system will verify to see if the user-name matches an account. <br>2. Password input field <br> a. Input field can be accessed by clicking or using the "tab" button on keyboard. <br> b. When login button is pushed it will verify that the password matches a user-name, which in full matches an account that has been created. <br> 3. Login button <br> a. Button will be active by default <br> b. When button is clicked both the user-name and password input fields will be checked to match an account.<br> c. While waiting for validation a loading spinner will appear. <br> d. IF user-name or password is not valid then user will be prompted to try again.<br> e. When user-name and password match an account, the user will be logged in and their content will be loaded. |
+
+#### 3.4.8.2 Log-Out Use Case
+
+| Data | Description |
+| --- |--- |
+| ScreenShot/Mockup: | |
+| Page Title: ||
+| Parent User Story:| N/A|
+| Actor(s)/Persona(s): | Calendar users |
+| Pre-conditions/Product(s) Required: | 1. Calendar site is running and user is logged in.|
+| Post-conditions/Product(s) Produced: |The system logs the user out of the system. The user is taken to the log-in page.|
+| Links: | None.|
+| SRS Document | 3.2.32.2 |
+| Description/Notes:|Primary path: <br>1. The user clicks on the "Sign Out" button. <br>2. The system will log the user out of the session.|
+
+#### 3.4.8.3 Log-in Use Cases: Forgot Password
+
+| Data | Description |
+| --- |--- |
+| ScreenShot/Mockup: | |
+| Page Title: | Forgot Password.|
+| Parent User Story:| 3.4.8.1 Log-in Use Cases: Validation.|
+| Actor(s)/Persona(s): | Calendar users. |
+| Pre-conditions/Product(s) Required: | 1. Calendar Portal has been brought up and configured. <br>2. User has made an account for the Calendar application.|
+| Post-conditions/Product(s) Produced: | 1. User is able to use the username and temporary password provided to either change the temporary password to something they will remember, or to login to the system.|
+| Links: | None.|
+| SRS Document | 3.2.32 |
+| Description/Notes:| Validation <br>1. User-name input field <br>a. User-name input box will have auto focus by default. <br>b. As user types in their user-name, the auto-complete will detect previously used user-names for faster log in. <br>c. When login button is clicked system will verify to see if the user-name matches an account. <br>2. Password input field <br> a. Input field can be accessed by clicking or using the "tab" button on keyboard. <br> b. When login button is pushed it will verify that the password matches a user-name, which in full matches an account that has been created. <br> 3. Login button <br> a. Button will be active by default <br> b. When button is clicked both the user-name and password input fields will be checked to match an account.<br> c. While waiting for validation a loading spinner will appear <br> d. If user-name or password is not valid then user will be prompted to try again<br> 4. Forgot password button <br> a.  When user selects the “forgot password” button, they will be asked to confirm the email address to have the reset password link sent to. <br> b. The user will then check their email and follow the link to set a new password. |
+
+#### 3.4.8.4 Log-in Use Cases: Forgot Account
+
+| Data | Description |
+| --- |--- |
+| ScreenShot/Mockup: | |
+| Page Title: | Log-in Page|
+| Parent User Story:| 3.4.8.1 Log-in Use Cases: Validation.|
+| Actor(s)/Persona(s): | Calendar users|
+| Pre-conditions/Product(s) Required: | 1. Calendar Portal has been brought up and configured. <br>2. User has made an account for the Calendar application with a registered e-mail address.|
+| Post-conditions/Product(s) Produced: | The user will receive an e-mail with their username.|
+| Links: |1. Prepared Statements https://docs.oracle.com/javase/tutorial/jdbc/basics/prepared.html |
+| SRS Document | 3.2.32 |
+| Description/Notes:| 1. Under the username field there will be a link that says "Forgot Username." <br>2. The user will click the link.<br>3. The system will prompt the user for the email address associated with the account.<br>4. The system will accept input securely by using prepared statements. <br>5. The system will retrieve the username associated with the e-mail and send the username to the provided e-mail.<br> 6. If the e-mail is not found, then the system will display an error message stating "The e-mail address is not registered to an account."|
+
+
+
+
+
+
+
+
 # 4.0 Design Overview
 
 The Design Overview will display a high level representation of the Student Calendar Application's system design. The System
