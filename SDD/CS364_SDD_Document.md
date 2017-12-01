@@ -646,7 +646,7 @@ Use cases define the interactions between the actors or personas and the system 
 
 | Data | Description |
 | --- |--- |
-| ScreenShot/Mockup: | <img src="https://github.com/MCLifeLeader/CS364/blob/master/SDD/resources/sketchFiles/3.2.6.0.png" height="50%" width="50%">|
+| ScreenShot/Mockup: | <img src="https://github.com/MCLifeLeader/CS364/blob/master/SDD/resources/sketchFiles/3.4.7.0.png" height="50%" width="50%">|
 | Page Title: | Lorem ipsum dolor sit amet,|
 | Parent User Story:| Lorem ipsum dolor sit amet,|
 | Actor(s)/Persona(s): | Lorem ipsum dolor sit amet,|
@@ -664,7 +664,7 @@ This image details the steps necessary to import Ilearn data into the calendar a
 
 | Data | Description |
 | --- |--- |
-| ScreenShot/Mockup: | <img  src="https://github.com/MCLifeLeader/CS364/blob/master/SDD/resources/3.2.6.0.jpg" height="50%" width="50%">|
+| ScreenShot/Mockup: | <img  src="https://github.com/MCLifeLeader/CS364/blob/master/SDD/resources/3.4.7.0.png" height="50%" width="50%">|
 | Page Title: | Lorem ipsum dolor sit amet,|
 | Parent User Story:| Lorem ipsum dolor sit amet,|
 | Actor(s)/Persona(s): | Lorem ipsum dolor sit amet,|
@@ -1459,7 +1459,7 @@ The architecture design for the Student Calendar application is centered around 
     <td>reminder time</td><td colspan = "2">The time for when the notification is to alert the user. Includes the date and time.</td>
   </tr>
    <tr>
-    <td>snoozed</td><td colspan = "2">A boolean value showing if the notification is to alert the user again at a later time.</td>
+    <td>snoozed</td><td colspan = "2">A boolean value showing if the notification is to alert the user again at a later time. The default snooze time for a notification is ten minutes, at which point this value is reset to false.</td>
   </tr>
   <tr>
     <td>calendar item</td><td colspan = "2">The item that the notification is connected to.</td>
