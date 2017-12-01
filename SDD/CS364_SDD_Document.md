@@ -145,6 +145,8 @@ Use case | a list of actions or event steps
 UX | User Experience; it refers to a person's emotions and attitudes about using a particular product, system or service
 # 3.0 Use Cases
 
+All Use Cases, as defined in this SDD, are based on 5.2.2 definition of the IEEE 1016-2009 document. Each Use Case should contain all of the Design Viewpoints as necessary to accurately describe the functional and technical underpinnings of the specified feature. Each Use Case should also cover, as needed, the descriptions as defined from the IEEE 1016-2009 document as outlined in sections 5.2, 5.3, 5.4, 5.5, 5.6, 5.7, 5.8, 5.9, 5.10, 5.11, 5.12, and 5.13 from the IEEE 1016-2009 document. It is important to note that not all section 5 items from the IEEE 1016-2009 document will be found in all or each Use Case. Those design elements that make most sense will be used.
+
 This section addresses the use cases and requirements to be met by the software design.
 
 | Section | Description|
