@@ -503,7 +503,7 @@ Use cases define the interactions between the actors or personas and the system 
 | Post-conditions/Product(s) Produced: | Calendar is displayed in the corresponding weekly, or “today” view with the user's events and assignments shown. |
 | Links: | None.|
 | SRS Document | 3.2.24 |
-| Description/Notes:| There will be a checkbox next to each event or assignment listed in the To-Do List.<br> 1. To-Do List launched will show events displayed to the user has scheduled for the active week, or the Today view.<br> a. School assignments will be displayed as synced with I-Learn for the active week. The checkbox will be to the left of each listed assignment.<br> 2. Checkbox is checked. <br> a. The selected assignment will be grayed out so that the user will be able to focus on the next To-Do List item. 
+| Description/Notes:| <br> 1. To-Do List launched will show events displayed to the user has scheduled for the active week, or the Today view.<br> a. School assignments will be displayed as synced with I-Learn for the active week.<br> 2. The To-Do item can be marked as completed.  In order to accomplish this, the user will simply click on the item, and then select 'Mark as Completed' from the dialogue that appears. <br> a. The selected assignment will be grayed out so that the user will be able to focus on the next To-Do List item. 
 
 
 #### 3.4.4.1 Sort by Time Length
@@ -607,14 +607,13 @@ Use cases define the interactions between the actors or personas and the system 
 | Data | Description |
 | --- |--- |
 | ScreenShot/Mockup: | <img  src="https://github.com/MCLifeLeader/CS364/blob/master/SDD/resources/3.2.20.0.jpg" height="50%" width="50%">|
-| Page Title: | |
-| Parent User Story:| |
-| Actor(s)/Persona(s): | |
-| Pre-conditions/Product(s) Required: | |
-| Post-conditions/Product(s) Produced: | |
+| Page Title: | Settings |
+| Parent User Story:| none. |
+| Actor(s)/Persona(s): | 1. Calendar User <br> 2. Technical Support |
+| Pre-conditions/Product(s) Required: | 1. Calendar user has an account. <br> 2. User is logged-in.|
+| Post-conditions/Product(s) Produced: | Settings page is up on the screen. |
 | Links: |3.4.2.0|
-| Description/Notes:| |
-
+| Description/Notes:| Password <br> 1. Change Password <br> a. User enters the new desired password for their calendar log in into the "New" input field. <br> b. User confirms password by retyping into the "Confirmation" input field. <br> c. System verifies that the "New" input field and the "Confirmation" input field have the same text. <br> Notifications <br> 1. Toggle Switch for Notifications <br> a. When notifications is switched on then a drop down will appear with all the different notifications the user can interact with.<br> While switch is off then none of the notifications will be active nor will they show up on the screen to interact with. <br> 2. Toggle Switch for Individual Notifications <br> a. Each notification can be turned on or off with the toggle switch next to each notification. <br> b. User will only receive notifications for those switched on.  |
 #### 3.4.6.1 Calendar Display: Set Time Zone
 
 | Data | Description |
@@ -646,14 +645,14 @@ Use cases define the interactions between the actors or personas and the system 
 | Data | Description |
 | --- |--- |
 | ScreenShot/Mockup: | <img src="https://github.com/MCLifeLeader/CS364/blob/master/SDD/resources/3.4.7.0.png" height="50%" width="50%">|
-| Page Title: | Lorem ipsum dolor sit amet,|
-| Parent User Story:| Lorem ipsum dolor sit amet,|
-| Actor(s)/Persona(s): | Lorem ipsum dolor sit amet,|
-| Pre-conditions/Product(s) Required: | Lorem ipsum dolor sit amet,|
-| Post-conditions/Product(s) Produced: | Lorem ipsum dolor sit amet,|
+| Page Title: | Import Assignments from I-Learn|
+| Parent User Story:| N/A|
+| Actor(s)/Persona(s): | Calendar User|
+| Pre-conditions/Product(s) Required: | 1. User is on our Calendar App.|
+| Post-conditions/Product(s) Produced: | 1. User is logged onto our Calendar App. <br>2. User is logged into their BYU-I account. <br>3. User has their assignments imported from I-Learn. <br>4. User can now access those assignments on our Calendar App.|
 | Links: | None.|
-| SRS Document | 3.2.x |
-| Description/Notes:| Lorem ipsum dolor sit amet,|
+| SRS Document | 3.2.6 |
+| Description/Notes:| Importing Assignments from I-Learn <br>1. User is prompted to log onto our Calendar Application<br>a. If user is already logged in, this prompt is skipped.<br>b. Once user has clicked "Submit", we check to see if the information matches.<br>c. If matched, they are logged in. If not, we reprompt them to re-enter their information.<br>2. User is prompted to enter their BYU-I Credentials<br>a. If user is already connected to their I-Learn account, this prompt is skipped.<br>b. Once user has clicked "Submit", we check to see if the information is correct.<br>c. If correct, they will be logged onto their BYU-I Account. If not, they will be prompted to re-enter their information.<br>3. Their Assignments on the calendar app will be synced with their assignments from I-Learn.<br>a. A pop-up box will display to the user saying "Please wait while your assignments are synced."<br>4. The user will be able to access their assignments now from our calendar application. |
 
 <img src="https://github.com/MCLifeLeader/CS364/blob/master/SDD/resources/sync.jpg" height="50%" width="50%">
 
@@ -664,14 +663,14 @@ This image details the steps necessary to import Ilearn data into the calendar a
 | Data | Description |
 | --- |--- |
 | ScreenShot/Mockup: | <img  src="https://github.com/MCLifeLeader/CS364/blob/master/SDD/resources/3.4.7.0.png" height="50%" width="50%">|
-| Page Title: | Lorem ipsum dolor sit amet,|
-| Parent User Story:| Lorem ipsum dolor sit amet,|
-| Actor(s)/Persona(s): | Lorem ipsum dolor sit amet,|
-| Pre-conditions/Product(s) Required: | Lorem ipsum dolor sit amet,|
-| Post-conditions/Product(s) Produced: | Lorem ipsum dolor sit amet,|
+| Page Title: | Import Assignments from I-Learn Automatically|
+| Parent User Story:| |
+| Actor(s)/Persona(s): | Calendar User|
+| Pre-conditions/Product(s) Required: | 1. User is logged into our Calendar Application.|
+| Post-conditions/Product(s) Produced: | 1. User is logged into their BYU-I account. <br> 2. User has the assignments synced automatically from I-Learn. <br> 3. User is able to access their assignments on our Calendar Application.|
 | Links: | None.|
-| SRS Document | 3.2.x |
-| Description/Notes:| Lorem ipsum dolor sit amet,|
+| SRS Document | 3.2.6 |
+| Description/Notes:| 1. User is prompted to log onto their BYU-I account <br> a. If user is already logged in, this prompt is skipped. <br>b. Once the user clicks the "Submit" button, we check to see if their information is correct.<br> c. If correct, the User is logged onto their account. If not, we prompt them to re-enter their information.<br> 2. User's assignments are synced automatically. <br>a. A pop-up box will display that says "Importing your Assignments from I-Learn. Please wait...".<br>b. The pop-up box will dissapear when we are done syncing their assignments.<br>3. The user is now able to access their assignments from our Calendar Application. |
 
 ### 3.4.8 Log-In Use case
 
@@ -1902,6 +1901,4 @@ Content goes here: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed 
 ### 6.2.1 Main Calendar View UX flow chart
 <img  src="https://github.com/MCLifeLeader/CS364/blob/master/SDD/resources/Main%20Calendar%20UX%20Flow%20chart.jpg" height="50%" width="50%"></br>
 #### Description:This image displays which features of the student calendar application are associated with the Main Calendar view and how the user can navigate between the pages.
-
-# Index
 
