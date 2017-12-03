@@ -66,6 +66,7 @@ type "3.4.8.4.md" >> CS364_SDD_Document.md
 type "4.0.0.0.md" >> CS364_SDD_Document.md
 type "4.1.0.0.md" >> CS364_SDD_Document.md
 type "4.2.0.0.md" >> CS364_SDD_Document.md
+type "4.2.1.0.md" >> CS364_SDD_Document.md
 type "4.3.0.0.md" >> CS364_SDD_Document.md
 type "4.4.0.0.md" >> CS364_SDD_Document.md
 
