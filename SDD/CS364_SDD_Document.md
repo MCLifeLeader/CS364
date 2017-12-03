@@ -2095,9 +2095,15 @@ Display “invalid credentials”
   </tr>
   <tr>
     <td>assignment.setCompleted(true)</br>
+<<<<<<< HEAD
             if assignment in taskList:</br>
 	    taskList.remove(assignment)</br>
 	    else if assignment in eventList:</br>
+=======
+            if assignment in taskList:
+	    taskList.remove(assignment)
+	    else if assignment in eventList:
+>>>>>>> 047a22fb39b6050903e1060f872962718da2f8cb
 	    eventList.remove(assignment)
     </td>
   </tr>
@@ -2112,11 +2118,19 @@ Display “invalid credentials”
     <th>Method Pseudo Code</th>
   </tr>
   <tr>
+<<<<<<< HEAD
     <td>assignment.setCompleted(false)</br>
            if isTask(assignment):</br>
 	   taskList.add(assignment)</br>
            if isEvent(assignment):</br>
            eventList.add(assignment)
+=======
+    <td>assignment.setCompleted(false)
+           if isTask(assignment):
+	   taskList.add(assignment)
+           if isEvent(assignment):
+           eventList.add(assignment)</td>
+>>>>>>> 047a22fb39b6050903e1060f872962718da2f8cb
   </tr>
   <tr>
     <td rowspan = "4">printTodoList</td>
@@ -2143,9 +2157,15 @@ Display “invalid credentials”
     <th>Method Pseudo Code</th>
   </tr>
   <tr>
+<<<<<<< HEAD
     <td>delete(eventList)</br>
     delete(taskList)</br>
     eventList = uiController.getEventList()</br>
+=======
+    <td>delete(eventList)
+    delete(taskList)
+    eventList = uiController.getEventList()
+>>>>>>> 047a22fb39b6050903e1060f872962718da2f8cb
     taskList = uiController.getEventList()
     </td>
   </tr>
