@@ -2095,7 +2095,7 @@ Display “invalid credentials”
   </tr>
   <tr>
     <td>assignment.setCompleted(true)</br>
-            if assignment in taskList:</br>
+      if assignment in taskList:</br>
 	    taskList.remove(assignment)</br>
 	    else if assignment in eventList:</br>
 	    eventList.remove(assignment)
