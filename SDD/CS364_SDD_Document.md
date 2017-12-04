@@ -2,10 +2,9 @@
 
 # Software Design Document
 
+## Version 1.4
 
-## Version 1.3
-
-## November 25th, 2017
+## December 2nd, 2017
 
 ### BYU-Idaho CS364 Software Engineering
 
@@ -53,8 +52,9 @@ Michael Flindt<br/>
 |:--------------|:----------:|:--------------------------|:-------:|
 | Initial       | 11/4/2017  | First Draft               |   1.0   |
 | Draft         | 11/12/2017 | Second Draft              |   1.1   |
-| Non-Required Draft | 11/18/2017 | Third Draft              |   1.2   |
-| Use Case Focus | 11/25/2017 | Fourth Draft              |   1.3   |
+| Non-Required Draft | 11/18/2017 | Third Draft          |   1.2   |
+| Use Case Focus | 11/25/2017 | Fourth Draft             |   1.3   |
+| Whole Document Work | 11/25/2017 | Fifth Draft         |   1.4   |
 
 # Table of Contents
 ## Table of Contents
@@ -143,6 +143,7 @@ UI | _user interface_; the space where interactions between humans and machines 
 UML | _Unified Modeling Language_; it is a modeling language intended to provide a standard way to visualize the design of a system
 Use case | a list of actions or event steps
 UX | _User Experience_; it refers to a person's emotions and attitudes about using a particular product, system or service
+
 # 3.0 Use Cases
 
 All Use Cases, as defined in this SDD, are based on 5.2.2 definition of the IEEE 1016-2009 document [1]. Each Use Case should contain all of the Design Viewpoints as necessary to accurately describe the functional and technical underpinnings of the specified feature. Each Use Case should also cover, as needed, the descriptions as defined from the IEEE 1016-2009 document as outlined in sections 5.2, 5.3, 5.4, 5.5, 5.6, 5.7, 5.8, 5.9, 5.10, 5.11, 5.12, and 5.13 from the IEEE 1016-2009 document. It is important to note that not all section 5 items from the IEEE 1016-2009 document will be found in all or each Use Case. Those design elements that make most sense will be used.
@@ -446,7 +447,7 @@ Use cases provide design viewpoints that show the interactions between the actor
 
 ### 3.4.5 Calendar Integrations
 <img  src="https://github.com/MCLifeLeader/CS364/blob/master/SDD/resources/UML_Communication/Calendar%20Integrations%20UML%20Communication%20Diagram.jpg" height="100%" width="100%"></br>
-#### 3.4.5.0 Calendar Integrations: Sync Settings
+#### 3.4.5.0 Calendar Integrations: Import Calendar
 
 | Data | Description |
 | --- |--- |
@@ -455,25 +456,26 @@ Use cases provide design viewpoints that show the interactions between the actor
 | Parent User Story:| N/A|
 | Actor(s)/Persona(s): | Calendar User|
 | Pre-conditions/Product(s) Required: | 1. Calendar Portal has been brought up and configured.<br/> 2. User has made an account for the Calendar application with a registered e-mail address. <br/> 3. User has logged into the Calendar Portal. <br/> 4. User has exported their third party calendars using the standard iCalendar format.|
-| Post-conditions/Product(s) Produced: | 1. The user will be directed to upload their iCalendar File. <br/> 2. Upon successful upload the user will be prompted to name this new calendar. |
-| Links: | None.|
-| SRS Document | 3.2.11-12, 3.2.28-29, 3.2.40-41, 3.2.47-49 |
-| Description/Notes:| 1. Supported third party calendar applications include:<br/> a. Google Calendar <br/> b. Apple Calendar <br/> c. Outlook Calendar <br/> d. Any calendar that supports exporting an iCalendar file <br/> 2. Each supported third party calendar will have a link allowing the user to upload their third party account's iCalendar file for the Calendar Portal.  |
-#### 3.4.5.1 Calendar Integrations: Facebook
+| Post-conditions/Product(s) Produced: | 1. The user will be directed to upload their iCalendar File. <br/> 2. Upon successful upload the user's events will be displayed in the calendar. |
+| Links: | 1. Standard for iCalendar: https://tools.ietf.org/html/rfc5545 |
+| SRS Document | 3.2.47-3.2.49 |
+| Description/Notes:| 1. Supported third party calendar applications include:<br/> a. Google Calendar <br/> b. Apple Calendar <br/> c. Outlook Calendar <br/> d. Any calendar that supports exporting an iCalendar file <br/> 2. Importing iCalendar <br> a. The user will click import on the calendar page. <br> b. The user will be prompted to select their iCalendar file that conforms to the IETF (Internet Engineering Task Force) standard. <br> c. The user will select their exported iCalendar file. <br> d. The import function will attempt to import the iCalendar. <br> e. If successful, the events will be added to the user's calendar. <br> f. If the file is corrupt or in an unexpected format, an error message will be displayed indicating such, and no events will be imported. |
+
+#### 3.4.5.1 Calendar Integrations: Export Calendar
 
 | Data | Description |
 | --- |--- |
-| ScreenShot/Mockup: | |
-| Page Title: | Lorem ipsum dolor sit amet,|
-| Parent User Story:| Lorem ipsum dolor sit amet,|
-| Actor(s)/Persona(s): | Lorem ipsum dolor sit amet,|
-| Pre-conditions/Product(s) Required: | Lorem ipsum dolor sit amet,|
-| Post-conditions/Product(s) Produced: | Lorem ipsum dolor sit amet,|
-| Links: | None.|
-| SRS Document | 3.2.x |
-| Description/Notes:| Lorem ipsum dolor sit amet,|
+| ScreenShot/Mockup: ||
+| Page Title: | Third Party Calendar Integration|
+| Parent User Story:| N/A|
+| Actor(s)/Persona(s): | Calendar User|
+| Pre-conditions/Product(s) Required: | 1. Calendar Portal has been brought up and configured.<br/> 2. User has made an account for the Calendar application with a registered e-mail address. <br/> 3. User has logged into the Calendar Portal.|
+| Post-conditions/Product(s) Produced: | 1. The user will download the calendar's events using the iCalendar format conforming to the IETF iCalendar standard. |
+| Links: | 1. Standard for iCalendar: https://tools.ietf.org/html/rfc5545 |
+| SRS Document | 3.2.47-3.2.49 |
+| Description/Notes:| 1. Supported third party calendar applications include:<br/> a. Google Calendar <br/> b. Apple Calendar <br/> c. Outlook Calendar <br/> d. Any calendar that supports importing an iCalendar file <br/> 2. Exporting iCalendar <br> a. The user will click export on the calendar page. <br> b. The system will create an iCalendar file. <br> c. The iCalendar file will attempt to be downloaded. <br> d. The iCalendar file may then be imported into the supported third party calendar applications by the user.|
 
-#### 3.4.5.2 Calendar Integrations: Google Calendar
+#### 3.4.5.2 Calendar Integrations: Google Calendar - Delete this file from word doc
 
 | Data | Description |
 | --- |--- |
@@ -487,7 +489,7 @@ Use cases provide design viewpoints that show the interactions between the actor
 | SRS Document | 3.2.47 |
 | Description/Notes:| N/A|
 
-#### 3.4.5.3 Calendar Integrations: Outlook
+#### 3.4.5.3 Calendar Integrations: Outlook - Delete this file from word doc
 
 | Data | Description |
 | --- |--- |
@@ -501,7 +503,7 @@ Use cases provide design viewpoints that show the interactions between the actor
 | SRS Document | 3.2.x |
 | Description/Notes:| Lorem ipsum dolor sit amet,|
 
-#### 3.4.5.4 Calendar Integrations: Apple Calendars
+#### 3.4.5.4 Calendar Integrations: Apple Calendars - Delete this file from word doc
 
 | Data | Description |
 | --- |--- |
@@ -625,7 +627,7 @@ This image details the steps necessary to import Ilearn data into the calendar a
 
 This image details the steps necessary to import Ilearn data into the calendar application.
 
-#### 3.4.7.3 Import Assignments from I-Learn: Graded Assignments
+#### 3.4.7.3 Import Assignments from I-Learn: Graded Assignments - Delete from word Doc
 
 | Data | Description |
 | --- |--- |
@@ -636,7 +638,7 @@ This image details the steps necessary to import Ilearn data into the calendar a
 | Pre-conditions/Product(s) Required: | Lorem ipsum dolor sit amet,|
 | Post-conditions/Product(s) Produced: | Lorem ipsum dolor sit amet,|
 | Links: | None.|
-| SRS Document | 3.2.x |
+| SRS Document | 3.2.17 |
 | Description/Notes:| Lorem ipsum dolor sit amet,|
 
 ### 3.4.8 Log-In Use case
@@ -710,17 +712,6 @@ This image details the steps necessary to import Ilearn data into the calendar a
 | Links: |1. Prepared Statements https://docs.oracle.com/javase/tutorial/jdbc/basics/prepared.html |
 | SRS Document | 3.2.32 |
 | Description/Notes:| 1. Under the username field there will be a link that says "Forgot Username." <br>2. The user will click the link.<br>3. The system will prompt the user for the email address associated with the account.<br>4. The system will accept input securely by using prepared statements. <br>5. The system will retrieve the username associated with the e-mail and send the username to the provided e-mail.<br> 6. If the e-mail is not found, then the system will display an error message stating "The e-mail address is not registered to an account."|
-
-
-
-
-
-
-
-
-
-
-
 
 # 4.0 Design Overview
 
@@ -2095,7 +2086,7 @@ Display “invalid credentials”
   </tr>
   <tr>
     <td>assignment.setCompleted(true)</br>
-      if assignment in taskList:</br>
+            if assignment in taskList:</br>
 	    taskList.remove(assignment)</br>
 	    else if assignment in eventList:</br>
 	    eventList.remove(assignment)
@@ -2183,10 +2174,7 @@ The Student Calendar Integration Application will operate within FERPA, namely n
 #### 4.4.2.1 University Authorization
 It is assumed that the University will allow students to login to their university account through the Student Calendar Integration Application and continue to pull course, assignment, group, activity and grade information through the authorized account. 
 
-
 # 5.0 Data Design
-
-
 
 ## 5.1 Entity Relationship Diagram
 
@@ -2196,47 +2184,5 @@ It is assumed that the University will allow students to login to their universi
 
 ## 5.3 Global Data Structure
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-# 6.0 User Interface Design
-
-Content goes here: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-
-## 6.1 Description of User Interface 
-
-Content goes here: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-
-## 6.2 User Interface Images
-
-### 6.2.1 Main Calendar View UX flow chart
-<img  src="https://github.com/MCLifeLeader/CS364/blob/master/SDD/resources/Main%20Calendar%20UX%20Flow%20chart.jpg" height="50%" width="50%"></br>
-#### Description:This image displays which features of the student calendar application are associated with the Main Calendar view and how the user can navigate between the pages.
+# Index
 

@@ -75,10 +75,5 @@ type "5.1.0.0.md" >> CS364_SDD_Document.md
 type "5.2.0.0.md" >> CS364_SDD_Document.md
 type "5.3.0.0.md" >> CS364_SDD_Document.md
 
-type "6.0.0.0.md" >> CS364_SDD_Document.md
-type "6.1.0.0.md" >> CS364_SDD_Document.md
-type "6.2.0.0.md" >> CS364_SDD_Document.md
-type "6.2.1.0.md" >> CS364_SDD_Document.md
-
 
 type "Index.md" >> CS364_SDD_Document.md
