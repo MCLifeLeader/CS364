@@ -2230,7 +2230,21 @@ Display “invalid credentials”
             Show Error message
             </td>
   </tr>
-  
+  <tr>
+    <td rowspan = "4">printCalendar()</td>
+    <th> Method Description</th>
+  </tr>
+  <tr>
+    <td>This method is called when the print button is pressed from the main calendar page view, and it invokes the system procedures for printing a page. Will open the default print dialog for printing a page in the web browser</td>
+  </tr>
+  <tr>
+    <th>Method Pseudo Code</th>
+  </tr>
+  <tr>
+    <td> 
+    uIController.print_todo_list()
+    </td>
+  </tr>
 </table>
 
 
