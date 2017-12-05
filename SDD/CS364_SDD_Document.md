@@ -2273,6 +2273,46 @@ Display “invalid credentials”
   <tr>
     <td>eventList.remove(event)</td>
   </tr>
+  <tr>
+    <td rowspan = "4">accessSettings()</td>
+    <th> Method Description</th>
+  </tr>
+  <tr>
+    <td>This function displays the settings page of the application.</td>
+  </tr>
+  <tr>
+    <th>Method Pseudo Code</th>
+  </tr>
+  <tr>
+    <td>
+      document.backgroundColor = settings.darkColor</br>
+      userSettings <- loadUserSettings()
+    </td>
+  </tr>
+  <tr>
+    <td rowspan = "4">accessNotifications()</td>
+    <th> Method Description</th>
+  </tr>
+  <tr>
+    <td>This function displays the notifications received by the user.</td>
+  </tr>
+  <tr>
+    <th>Method Pseudo Code</th>
+  </tr>
+  <tr>
+    <td>
+ 
+    document.backgroundColor =  notifications.darkColor</br>
+
+    IF browser does not support notifications</br>
+        PRINT this browser does not support notifications</br>
+
+    IF notifications permissions are granted</br>
+        showNotifications()</br>
+    ELSE </br>
+        requestNotificationPermission()
+    </td>
+  </tr>
 </table>
 
 
