@@ -2037,14 +2037,15 @@ Display “invalid credentials”
 </table>
 
 ### 4.2.x To-Do List View
+<table>
   <tr>
     <th colspan = "3">Class Name: ToDo List View</th>
   </tr>
   <tr>
     <td colspan = "3">This class represents the todo list view of the app. </td>
   </tr>
-  </table>
-  <table>
+</table>
+<table>
   <tr>
     <th>Attributes(Fields)</th>
     <th colspan = "2">Attribute Description</th>
@@ -2071,7 +2072,7 @@ Display “invalid credentials”
   </tr>
   <tr>
     <td>assignment.setCompleted(true)</br>
-            if assignment in taskList:</br>
+      if assignment in taskList:</br>
 	    taskList.remove(assignment)</br>
 	    else if assignment in eventList:</br>
 	    eventList.remove(assignment)
@@ -2089,10 +2090,10 @@ Display “invalid credentials”
   </tr>
   <tr>
     <td>assignment.setCompleted(false)</br>
-           if isTask(assignment):</br>
-	   taskList.add(assignment)</br>
-           if isEvent(assignment):</br>
-           eventList.add(assignment)
+      if isTask(assignment):</br>
+	    taskList.add(assignment)</br>
+      if isEvent(assignment):</br>
+      eventList.add(assignment)
   </tr>
   <tr>
     <td rowspan = "4">printTodoList</td>
@@ -2108,7 +2109,7 @@ Display “invalid credentials”
     <td>uiController.printTodoList()
     </td>
   </tr>
-    <tr>
+  <tr>
     <td rowspan = "4">updateTodoList()</td>
     <th> Method Description</th>
   </tr>
@@ -2120,10 +2121,112 @@ Display “invalid credentials”
   </tr>
   <tr>
     <td>delete(eventList)</br>
-    delete(taskList)</br>
-    eventList = uiController.getEventList()</br>
-    taskList = uiController.getEventList()
+      delete(taskList)</br>
+      eventList = uiController.getEventList()</br>
+      taskList = uiController.getEventList()
     </td>
+  </tr>
+</table>
+<table>
+  <tr>
+    <th colspan = "3">Class Name: Main Calendar Page View</th>
+  </tr>
+  <tr>
+    <td colspan = "3">This class represents the main calendar view of the app. </td>
+  </tr>
+</table>
+<table>
+  <tr>
+    <th>Attributes(Fields)</th>
+    <th colspan = "2">Attribute Description</th>
+  </tr>
+  <tr>
+    <td>taskList</td><td colspan = "2">The list of Ilearn tasks that are to be displayed</td>
+  </tr>
+  <tr>
+    <td>eventList</td><td colspan = "2">The list of user created events that are to be displayed.</td>
+  </tr>
+  <tr>
+    <th>Methods(operations) </th>
+    <th></th>
+  </tr>
+  <tr>
+    <td rowspan = "4">displayWeek(date)</td>
+    <th> Method Description</th>
+  </tr>
+  <tr>
+    <td> This method is called when the user toggles the display week view.  It will display according to the currently opened calendar view (i.e. Monthly View, Day View). If Month View is active, Week View will list days Sunday through Saturday and number them in correspondence to the first week of the Month View.  If Day View is selected, the method will find the corresponding week in Month View and will again display the week with a numbering consistent with the found week from Month View.  This week will be passed to another function to organize the week with any matching event or assignment items, and create the elements necessary to display them in the application.  The method “createCalendarWeek()” will also make style changes to a specific day if it matches the current date parameter.</td>
+  </tr>
+  <tr>
+    <th>Method Pseudo Code</th>
+  </tr>
+  <tr>
+    <td>    weekArray <- (“Sun”, “Mon”, “Tue”, “Wed”, “Thu”, “Fri”, “Sat”)</br>
+            timeArray <- (“1am”, “2am”, “3am”… “11pm”) </br>
+            weekArrayNumbering <- (“”)</br>
+            IF calendarDisplayElement == monthView</br>
+            weekArrayNumbering <- monthView week one numbering </br>
+            ELSE IF calendarDisplayElement == dayView</br>
+            FOR all the days in monthView</br>
+            IF dayView numbering is found in a week of monthView</br>
+            weekArrayNumbering <- this week of monthView numbering</br>
+            ELSE</br>
+            return;</br>
+            calendarBody  <- createCalendarWeek(weekArray, weekArrayNumbering, timeArray, getEvents(), getAssignments(), date)</br>
+            SET calendarDisplayElement <- calendarBody
+    </td>
+  </tr>
+  <tr>
+    <td rowspan = "4">displayMonth(date)</td>
+    <th> Method Description</th>
+  </tr>
+  <tr>
+    <td>This function toggles to a monthly view from any other view (weekly or daily)</td>
+  </tr>
+  <tr>
+    <th>Method Pseudo Code</th>
+  </tr>
+  <tr>
+    <td>monthNames <- ["January", "February", ... ,"December"]</br>
+        monthDays <- [1, 2, ..., 31]</br>
+        weekDays <- ["Mon", "Tue", ... , "Sun"]</br>
+        currentMonth <- getCurrentMonth(date)</br>
+        yearType <- isLeapYear(date)</br>
+        monthView <- drawCalendar(monthNames, monthDays, weekDays, currentMonth, yearType)</br>
+        SET calendarDisplayElement <- monthView
+    </td>	
+ </tr>
+  <tr>
+    <td rowspan = "4">displayDay(date)</td>
+    <th> Method Description</th>
+  </tr>
+  <tr>
+    <td>This method sets up the daily view</td>
+  </tr>
+  <tr>
+    <th>Method Pseudo Code</th>
+  </tr>
+  <tr>
+    <td>//TODO: Write this pseudocode
+    </td>
+  </tr>
+  <tr>
+    <td rowspan = "4">createEvent(eventDate, eventDescription)</td>
+    <th> Method Description</th>
+  </tr>
+  <tr>
+    <td>This method creates a new user created event (like other calendar tasks, but not from iLearn; created by the user instead). The user will be prompted with a field that allows them to select a date/time and give the event a description.</td>
+  </tr>
+  <tr>
+    <th>Method Pseudo Code</th>
+  </tr>
+  <tr>
+    <td>    API POST -> with eventDate and eventDescription in the body.</br>
+            IF RESPONSE.statusCode == 200</br>
+            Dismiss modal and show success message.</br>
+            ELSE</br>
+            Show Error message
+            </td>
   </tr>
   
 </table>
@@ -2168,6 +2271,4 @@ It is assumed that the University will allow students to login to their universi
 ## 5.2 Internal Software Data Structure
 
 ## 5.3 Global Data Structure
-
-# Index
 
