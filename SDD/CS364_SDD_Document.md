@@ -2301,12 +2301,9 @@ Display “invalid credentials”
   </tr>
   <tr>
     <td>
- 
     document.backgroundColor =  notifications.darkColor</br>
-
     IF browser does not support notifications</br>
         PRINT this browser does not support notifications</br>
-
     IF notifications permissions are granted</br>
         showNotifications()</br>
     ELSE </br>
