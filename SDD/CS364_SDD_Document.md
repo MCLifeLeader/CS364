@@ -2127,6 +2127,8 @@ Display “invalid credentials”
     </td>
   </tr>
 </table>
+
+### 4.2.x Calendar Page Main View
 <table>
   <tr>
     <th colspan = "3">Class Name: Main Calendar Page View</th>
