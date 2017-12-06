@@ -54,7 +54,8 @@ Michael Flindt<br/>
 | Draft         | 11/12/2017 | Second Draft              |   1.1   |
 | Non-Required Draft | 11/18/2017 | Third Draft          |   1.2   |
 | Use Case Focus | 11/25/2017 | Fourth Draft             |   1.3   |
-| Whole Document Work | 11/25/2017 | Fifth Draft         |   1.4   |
+| Whole Document Work | 12/2/2017 | Fifth Draft          |   1.4   |
+| Whole Document Work | 12/9/2017 | Sixth Draft          |   1.5   |
 
 # Table of Contents
 ## Table of Contents
@@ -179,6 +180,8 @@ Use cases provide design viewpoints that show the interactions between the actor
 | --- |--- |
 | ScreenShot/Mockup: | The screenshot/Mockup will contain a graphical illustration which will show the design view of the use case under consideration.|
 | Page Title: | The page title is the title of the web page corresponding to the use case or "N/A" if not applicable. |
+| Type: | Process. |
+| Purpose: | |
 | Parent User Story:| The Parent User Story links to the higher level use case that is parent to a particular use case.|
 | Actor(s)/Persona(s): | The design stakeholders that the use case pertains to.|
 | Pre-conditions/Product(s) Required: | The conditions, procedures, and requirements to be completed before the use case may be attempted.|
@@ -196,6 +199,8 @@ Use cases provide design viewpoints that show the interactions between the actor
 | --- |--- |
 | ScreenShot/Mockup: |<img  src="https://github.com/MCLifeLeader/CS364/blob/master/SDD/resources/3.2.1.0.png" height="50%" width="50%">|
 | Page Title: | Home Page|
+| Type: | Process. |
+| Purpose: | |
 | Parent User Story:|N/A|
 | Actor(s)/Persona(s): | Calendar Users|
 | Pre-conditions/Product(s) Required: | A compatible web browser such as Google Chrome, Firefox, Chromium, Safari, or Microsoft Edge.|
@@ -203,13 +208,14 @@ Use cases provide design viewpoints that show the interactions between the actor
 | Links: | None.|
 | SRS Document | 3.2.2 |
 | Description/Notes:| 1. The calendar user will navigate to the URL of the calendar website.<br>2. The website's home page will be loaded and displayed.<br>a. The home page will load the user's specific calendar if they are logged in.<br>b. If the user has not logged in then a default calendar will be loaded on screen.<br>c. If the user is not logged in then a small modal box will pop up prompting the user to sign in or register an account. <br> d. If the user clicks the sign in button they will be redirected to the log-in screen. <br> e. If the user clicks the new user button they will be redirected to the account registration page.<br> 3. If the web browser is not supported by the web site then it will display a message explaining the compatibility issue.<br> 4. Pages that users try to access but do not exist on the web site domain will show an error message and have a link back to the home page.|
-
 #### 3.2.1.1 Calendar Display: Checking the Schedule
 
 | Data | Description |
 | --- |--- |
 | ScreenShot/Mockup: | |
 | Page Title: | Checking the Schedule|
+| Type: | Process. |
+| Purpose: | |
 | Parent User Story:| N/A|
 | Actor(s)/Persona(s): | Calendar Users|
 | Pre-conditions/Product(s) Required: | User is logged in. |
@@ -224,6 +230,8 @@ Use cases provide design viewpoints that show the interactions between the actor
 | --- |--- |
 | ScreenShot/Mockup: |<img  src="https://github.com/MCLifeLeader/CS364/blob/master/SDD/resources/3.2.16.0.jpg" height="50%" width="50%"> |
 | Page Title: | Creating an Event|
+| Type: | Process. |
+| Purpose: | |
 | Parent User Story:| N/A|
 | Actor(s)/Persona(s): | Calendar Users|
 | Pre-conditions/Product(s) Required: | User is logged in. |
@@ -238,6 +246,8 @@ Use cases provide design viewpoints that show the interactions between the actor
 | --- |--- |
 | ScreenShot/Mockup: | |
 | Page Title: | Switching Views|
+| Type: | Process. |
+| Purpose: | |
 | Parent User Story:| 3.2.1.1|
 | Actor(s)/Persona(s): | Calendar Users|
 | Pre-conditions/Product(s) Required: | User is logged in. User is on home page.|
@@ -252,6 +262,8 @@ Use cases provide design viewpoints that show the interactions between the actor
 | --- |--- |
 | ScreenShot/Mockup: | |
 | Page Title: | Creating an Alert|
+| Type: | Process. |
+| Purpose: | |
 | Parent User Story:| N/A |
 | Actor(s)/Persona(s): | Calendar User, System|
 | Pre-conditions/Product(s) Required: |  1. An application event requiring an alert occurs. <br> 2. An error occurs that requires immediate user action or notification.|
@@ -260,26 +272,14 @@ Use cases provide design viewpoints that show the interactions between the actor
 | SRS Document | 3.2.22 |
 | Description/Notes:| 1. Warnings <br> a. An alert will appear when the user has performed or intends to perform an illegal or high-risk action, e.g.: creating an event with not reminders or deleting a calendar event. <br> 2. Reminders <br> a. Alerts will be used as a reminder in certain situations, e.g.: reminding the user that they have not synced their calendar in *x* days.   |
 
-#### 3.2.1.5 Calendar Display: Printing
-
-| Data | Description |
-| --- |--- |
-| ScreenShot/Mockup: | <img  src="https://github.com/MCLifeLeader/CS364/blob/master/SDD/resources/3.2.1.5.png" height="50%" width="50%">|
-| Page Title: | Print|
-| Parent User Story:|N/A|
-| Actor(s)/Persona(s): | Calendar Users|
-| Pre-conditions/Product(s) Required: | User is logged in and viewing calendar in monthly, weekly, or daily view.|
-| Post-conditions/Product(s) Produced: | The calendar will be printed with the user's events in the corresponding view.|
-| Links: | None.|
-| SRS Document | 3.2.43 |
-| Description/Notes:|1. The user will trigger the print screen by pressing the Ctrl + P hotkey or by selecting the print button.<br>2. The print screen will be shown with the following components:<br>   - The user will be able to select from a drop down list the printer to use for printing.<br>   - A drop down list will allow the user to choose the layout. The layouts possible are landscape or portrait.<br>   - A drop down list that will allow the user to change the Paper size.<br>   - An edit box that will allow the user to change the number of copies to make.<br>   - A preview of the calendar to be printed will be shown. The calendar to be printed will correspond to the user's view on the main screen, whether it be in monthly, weekly, or daily view. Additionally, the preview will be updated as the user selects the various printing options.<br>   - A print button will attempt to print according to the options selected, or display error messages if unsuccessful.<br>   - A cancel button will close the print window and return the user to the main screen, canceling the print operation.<br>3. The user will select the options according to their preference. Then they will select the print button.<br>4. The print options will be processed and the calendar will be printed according to those options.<br>5. If any of the options are invalid then no printing will be attempted and an error message indicating the cause of the invalid option will be displayed beside the corrupt option to the user.<br>6. If the process fails to connect to the printer an error message will be displayed under the printer selection indicating that the process failed to connect to printer.<br>|
-
-#### 3.2.1.6 Calendar Display: Access Assignment
+#### 3.2.1.5 Calendar Display: Access Assignment
 
 | Data | Description |
 | --- |--- |
 | ScreenShot/Mockup: | <img  src="https://github.com/MCLifeLeader/CS364/blob/master/SDD/resources/3.2.1.6.png" height="50%" width="50%">|
 | Page Title: | Access Assignment|
+| Type: | Process. |
+| Purpose: | |
 | Parent User Story:| N/A|
 | Actor(s)/Persona(s): | System, Calendar Users|
 | Pre-conditions/Product(s) Required: | 1. User is Logged in <br> 2. Assignments have been imported.|
@@ -287,27 +287,29 @@ Use cases provide design viewpoints that show the interactions between the actor
 | Links: | None.|
 | SRS Document | 3.2.8 |
 | Description/Notes:| Accessing An Assignment.<br>1. Assignments are displayed to the User on the Calendar as links.<br>  a. Users clicks on one of the links.<br> b. The correct assignment is pulled up on screen for the user. 2. Assignment details button is shown.<br> a. User clicks assignments details button.<br> b. User is able to interact with different features for the event. |
-
-#### 3.2.1.7 Calendar Display: Show Assignment Details
+#### 3.2.1.6 Calendar Display: Show Assignment Details
 
 | Data | Description |
 | --- |--- |
 | ScreenShot/Mockup: |See 3.2.1.6|
 | Page Title: | Show Assignment Details|
-| Parent User Story:|3.2.1.6|
+| Type: | Process. |
+| Purpose: | |
+| Parent User Story:|3.2.1.5|
 | Actor(s)/Persona(s): | System|
 | Pre-conditions/Product(s) Required: | 1. User is logged in<br> 2. Assignments have been imported.|
 | Post-conditions/Product(s) Produced: | Assignments details are shown and displayed correctly to the user.|
 | Links: | None.|
 | SRS Document | 3.2.6 |
 | Description/Notes:| Show Assignment Details<br>1. Show Details Button is displayed on the Calendar App by the Assignments.<br>a. User clicks Details Button.<br>2. Details are displayed to the User.<br>a. An option to collapse the details is shown as well.|
-
 #### 3.2.1.8 Calendar Display: Show Holidays
 
 | Data | Description |
 | --- |--- |
 | ScreenShot/Mockup: |<img  src="https://github.com/MCLifeLeader/CS364/blob/master/SDD/resources/3.2.1.8.png" height="50%" width="50%"> |
 | Page Title: | Show Holidays,|
+| Type: | Process. |
+| Purpose: | |
 | Parent User Story:| N/A|
 | Actor(s)/Persona(s): | Calendar Users|
 | Pre-conditions/Product(s) Required: | User is logged in. Calendar is loaded.|
@@ -315,13 +317,14 @@ Use cases provide design viewpoints that show the interactions between the actor
 | Links: | None.|
 | SRS Document | 3.2.26 |
 | Description/Notes:|Show Holidays<br>1. The user chooses to view the calendar by Day, by Week, and by Month.<br>2. The user will see a text label on national holidays.|
-
-#### 3.2.1.9 Calendar Display: Edit an Event
+#### 3.2.1.8 Calendar Display: Edit an Event
 
 | Data | Description |
 | --- |--- |
 | ScreenShot/Mockup: |<img  src="https://github.com/MCLifeLeader/CS364/blob/master/SDD/resources/3.2.16.0.jpg" height="50%" width="50%"> |
 | Page Title: | Edit Event|
+| Type: | Process. |
+| Purpose: | |
 | Parent User Story:| N/A|
 | Actor(s)/Persona(s): | Calendar Users|
 | Pre-conditions/Product(s) Required: | User is logged in. |
@@ -329,7 +332,6 @@ Use cases provide design viewpoints that show the interactions between the actor
 | Links: | None.|
 | SRS Document | 3.2.16 |
 | Description/Notes:| Editing an Event <br> 1. Edit Event button is displayed on the Calendar App. <br> a. User clicks Edit Event button. <br> b. User prompted to update selected time(s) for the event. <br> c. User enters / edits description of event. <br> 2. Event is updated and displayed on User's Calendar. <br> a. User can interact with Event on Calendar. |
-
 ### 3.2.2 Calendar Event Notifications
 <img  src="https://github.com/MCLifeLeader/CS364/blob/master/SDD/resources/UML_Communication/Notification%20UML%20Communication%20Diagram.jpg" height="100%" width="100%"></br>
 #### 3.2.2.0 Calendar Event Notifications: Enable/Disable Notifications
@@ -338,6 +340,8 @@ Use cases provide design viewpoints that show the interactions between the actor
 | --- |--- |
 | ScreenShot/Mockup: |<img  src="https://github.com/MCLifeLeader/CS364/blob/master/SDD/resources/3.2.20.0.jpg" height="50%" width="50%"> |
 | Page Title: | Enable/Disable Notifications|
+| Type: | Process. |
+| Purpose: | |
 | Parent User Story:| N/A|
 | Actor(s)/Persona(s): | Calendar User|
 | Pre-conditions/Product(s) Required: | 1. Notification permissions are enabled.|
@@ -352,6 +356,8 @@ Use cases provide design viewpoints that show the interactions between the actor
 | --- |--- |
 | ScreenShot/Mockup: |<img  src="https://github.com/MCLifeLeader/CS364/blob/master/SDD/resources/3.2.2.1.png" height="50%" width="50%"> |
 | Page Title: | Set Reminders|
+| Type: | Process. |
+| Purpose: | |
 | Parent User Story:| N/A|
 | Actor(s)/Persona(s): | System, Calendar User|
 | Pre-conditions/Product(s) Required: |1. User is logged in. <br> 2. An event has been created.|
@@ -366,6 +372,8 @@ Use cases provide design viewpoints that show the interactions between the actor
 | --- |--- |
 | ScreenShot/Mockup: | |
 | Page Title: | Send Notification |
+| Type: | Process. |
+| Purpose: | |
 | Parent User Story:| N/A|
 | Actor(s)/Persona(s): | System, Calendar User|
 | Pre-conditions/Product(s) Required: |1. User is logged in. <br> 2. An event has been created. <br> 3. Notification permissions are allowed. <br> 4. Notifications are enabled in the settings. |
@@ -380,6 +388,8 @@ Use cases provide design viewpoints that show the interactions between the actor
 | --- |--- |
 | ScreenShot/Mockup: | |
 | Page Title: | View Missed Notifications |
+| Type: | Process. |
+| Purpose: | |
 | Parent User Story:| N/A|
 | Actor(s)/Persona(s): | System, Calendar User|
 | Pre-conditions/Product(s) Required: |1. User is logged in. <br> 2. A notification has been created. <br> 3. Users have been sent a notification.|
@@ -393,6 +403,8 @@ Use cases provide design viewpoints that show the interactions between the actor
 | --- |--- |
 | ScreenShot/Mockup: | |
 | Page Title: | Set Notification Methods |
+| Type: | Process. |
+| Purpose: | |
 | Parent User Story:| N/A|
 | Actor(s)/Persona(s): | System, Calendar User|
 | Pre-conditions/Product(s) Required: |1. User is logged in. <br> 2. User goes to notification settings. |
@@ -400,19 +412,6 @@ Use cases provide design viewpoints that show the interactions between the actor
 | Links: | None.|
 | SRS Document | 3.2.20 |
 | Description/Notes:|Set Notification Methods <br> 1. Notification Methods <br> a. User is prompted to turn on or turn off notifications. <br> b. User selects to turn on notifications and is returned to last viewed calendar. <br> 2. Warning <br> a. User selects to turn off notifications and is given a warning that they won't receive notifcations when they disable this setting. |
-
-#### 3.2.2.5 Calendar Event Notifications: Feedback Notifications
-
-| Data | Description |
-| --- |--- |
-| ScreenShot/Mockup: | |
-| Page Title: | N/A|
-| Parent User Story:| N/A|
-| Actor(s)/Persona(s): | System, Calendar User|
-| Pre-conditions/Product(s) Required: |1. The user has a valid calendar login. <br> 2. The user has set up notifications. <br> 3. User has one or more assignments that have been submit, and recieved instructor feedback.|
-| Post-conditions/Product(s) Produced: |  1. The user recieves a notification in the standard manner, based on their notifications settings.|
-| Links: | None.|
-| Description/Notes:| Viewing Feedback Notifications <br> Feedback notifications are a specific type of notification that can be enabled that are sent whenever any of your work recieves new feedback from a teacher. They are handled and displayed like standard notifications, and can be setup in the notification settings menu.|
 
 ### 3.2.3 To-Do List
 <img  src="https://github.com/MCLifeLeader/CS364/blob/master/SDD/resources/UML_Communication/Assignment%20To-Do%20List%20UML%20Communication%20Diagram.jpg"></br>
@@ -422,6 +421,8 @@ Use cases provide design viewpoints that show the interactions between the actor
 | --- |--- |
 | ScreenShot/Mockup: | <img  src="https://github.com/MCLifeLeader/CS364/blob/master/SDD/resources/3.2.3.0.png" height="50%" width="50%"> |
 | Page Title: | Load To-Do List|
+| Type: | Process. |
+| Purpose: | |
 | Parent User Story:| 3.2.1.1|
 | Actor(s)/Persona(s): | Calendar Users|
 | Pre-conditions/Product(s) Required: | User is logged in. User is on home page.|
@@ -436,6 +437,8 @@ Use cases provide design viewpoints that show the interactions between the actor
 | --- |--- |
 | ScreenShot/Mockup: | |
 | Page Title: | Mark Assignment Done|
+| Type: | Process. |
+| Purpose: | |
 | Parent User Story:| 3.2.3.0|
 | Actor(s)/Persona(s): | Calendar Users|
 | Pre-conditions/Product(s) Required: | User is logged in. User is on To-Do List.|
@@ -450,6 +453,8 @@ Use cases provide design viewpoints that show the interactions between the actor
 | --- |--- |
 | ScreenShot/Mockup: | |
 | Page Title: | Sort|
+| Type: | Process. |
+| Purpose: | |
 | Parent User Story:|N/A |
 | Actor(s)/Persona(s): | System, User|
 | Pre-conditions/Product(s) Required: | 1. User is logged in. <br> 2. The user's courses have been added into the calendar. <br> 3. The user is on To-Do List View.|
@@ -464,6 +469,8 @@ Use cases provide design viewpoints that show the interactions between the actor
 | --- |--- |
 | ScreenShot/Mockup: | |
 | Page Title: | Filter by Class|
+| Type: | Process. |
+| Purpose: | |
 | Parent User Story:|N/A |
 | Actor(s)/Persona(s): | System, User|
 | Pre-conditions/Product(s) Required: | 1. User is logged in. <br> 2. The user's courses have been added into the calendar. <br> 3. The user is on To-Do List View.|
@@ -471,20 +478,6 @@ Use cases provide design viewpoints that show the interactions between the actor
 | Links: | None.|
 | SRS Document | 3.2.33 |
 | Description/Notes:|1. Filter by Class <br> a. The user opens the calendar and opens To-Do List. <br> b. The user selects the filter option and a pop-up box with the courses will show by which to filter. <br> c. The user selects the course from the pop-up they wish to see assignments for. <br> d. The calendar view updates to reflect only assignments by the filtered course. <br> 2. Warning <br> a. The filter will require coursework be entered into the calendar for atleast one course to be able to filter. If there are no courses then it will show "No courses" in the pop-up box after clicking filter. <br> b. The filter shall reset with each calendar user session to prevent the user from missing filtered assignments. |
-
-#### 3.2.3.4 To-Do List: Printing
-
-| Data | Description |
-| --- |--- |
-| ScreenShot/Mockup: | |
-| Page Title: | To-Do List: Printing|
-| Parent User Story:|N/A|
-| Actor(s)/Persona(s): | Calendar Users|
-| Pre-conditions/Product(s) Required: | 1. User is logged in and viewing calendar in monthly, weekly, or daily view.|
-| Post-conditions/Product(s) Produced: | 1. The to-do list will be printed with the user's events and assignments for the given timeframe. |
-| Links: | None.|
-| SRS Document | 3.2.43 |
-| Description/Notes:|1. To-Do List: Printing <br> a. The user will trigger the print screen by pressing the Ctrl + P hotkey or by selecting the print button.<br>b. The print screen will be shown with the following components:<br>   - The user will be able to select from a drop down list the printer to use for printing.<br>   - A drop down list will allow the user to choose the layout. The layouts possible are landscape or portrait.<br>   - A drop down list that will allow the user to change the paper size.<br>   - An edit box that will allow the user to change the number of copies to make.<br>   - A preview of the calendar to be printed will be shown. The calendar to be printed will correspond to the user's view on the main screen, whether it be in monthly, weekly, or daily view. Additionally, the preview will be updated as the user selects the various printing options.<br>   - A print button will attempt to print according to the options selected, or display error messages detailing the error(s), if unsuccessful.<br>   - A cancel button will close the print window and return the user to the main screen, canceling the print operation.<br>2. The user will select the options according to their preference. Then they will select the print button.<br>3. The print options will be processed and the to-do list will be printed according to those options.<br>4. If any of the options are invalid, then no printing will be attempted and an error message indicating the cause of the invalid option will be displayed beside the corrupt option to the user.<br> 5. If the process fails to connect to the printer an error message will be displayed under the printer selection indicating that the process failed to connect to printer.<br>|
 
 ### 3.2.4 Calendar Integrations
 <img  src="https://github.com/MCLifeLeader/CS364/blob/master/SDD/resources/UML_Communication/Calendar%20Integrations%20UML%20Communication%20Diagram.jpg" height="100%" width="100%"></br>
@@ -494,20 +487,23 @@ Use cases provide design viewpoints that show the interactions between the actor
 | --- |--- |
 | ScreenShot/Mockup: | <img  src="https://github.com/MCLifeLeader/CS364/blob/master/SDD/resources/Cal_upload_mock.PNG" height="50%" width="100%"><img  src="https://github.com/MCLifeLeader/CS364/blob/master/SDD/resources/Cal_name_mock.PNG" height="50%" width="100%">|
 | Page Title: | Third Party Calendar Integration|
+| Type: | Process. |
+| Purpose: | |
 | Parent User Story:| N/A|
 | Actor(s)/Persona(s): | Calendar User|
 | Pre-conditions/Product(s) Required: | 1. Calendar Portal has been brought up and configured.<br/> 2. User has made an account for the Calendar application with a registered e-mail address. <br/> 3. User has logged into the Calendar Portal. <br/> 4. User has exported their third party calendars using the standard iCalendar format.|
-| Post-conditions/Product(s) Produced: | 1. The user will be directed to upload their iCalendar File. <br/> 2. Upon successful upload the user's events will be displayed in the calendar. |
+| Post-conditions/Product(s) Produced: | 1. The user will be directed to upload their iCalendar File. <br/> 2. The uploaded iCalendar will be verified. <br/> 3. If an error is encountered with the iCalendar file the user will be prompted to verify file is correct and reupload. <br/> 4. Upon successful upload the user's events will be displayed in the calendar. |
 | Links: | 1. Standard for iCalendar: https://tools.ietf.org/html/rfc5545 |
 | SRS Document | 3.2.47-3.2.49 |
 | Description/Notes:| 1. Supported third party calendar applications include:<br/> a. Google Calendar <br/> b. Apple Calendar <br/> c. Outlook Calendar <br/> d. Any calendar that supports exporting an iCalendar file <br/> 2. Importing iCalendar <br> a. The user will click import on the calendar page. <br> b. The user will be prompted to select their iCalendar file that conforms to the IETF (Internet Engineering Task Force) standard. <br> c. The user will select their exported iCalendar file. <br> d. The import function will attempt to import the iCalendar. <br> e. If successful, the events will be added to the user's calendar. <br> f. If the file is corrupt or in an unexpected format, an error message will be displayed indicating such, and no events will be imported. |
-
 #### 3.2.4.1 Calendar Integrations: Export Calendar
 
 | Data | Description |
 | --- |--- |
 | ScreenShot/Mockup: ||
-| Page Title: | Third Party Calendar Integration|
+| Page Title: | Export Calendar |
+| Type: | Process. |
+| Purpose: | |
 | Parent User Story:| N/A|
 | Actor(s)/Persona(s): | Calendar User|
 | Pre-conditions/Product(s) Required: | 1. Calendar Portal has been brought up and configured.<br/> 2. User has made an account for the Calendar application with a registered e-mail address. <br/> 3. User has logged into the Calendar Portal.|
@@ -515,7 +511,6 @@ Use cases provide design viewpoints that show the interactions between the actor
 | Links: | 1. Standard for iCalendar: https://tools.ietf.org/html/rfc5545 |
 | SRS Document | 3.2.47-3.2.49 |
 | Description/Notes:| 1. Supported third party calendar applications include:<br/> a. Google Calendar <br/> b. Apple Calendar <br/> c. Outlook Calendar <br/> d. Any calendar that supports importing an iCalendar file <br/> 2. Exporting iCalendar <br> a. The user will click export on the calendar page. <br> b. The system will create an iCalendar file. <br> c. The iCalendar file will attempt to be downloaded. <br> d. The iCalendar file may then be imported into the supported third party calendar applications by the user.|
-
 ### 3.2.5 User Profile Settings
 
 #### 3.2.5.0 User Profile Settings: Load Settings Page
@@ -524,6 +519,8 @@ Use cases provide design viewpoints that show the interactions between the actor
 | --- |--- |
 | ScreenShot/Mockup: | <img  src="https://github.com/MCLifeLeader/CS364/blob/master/SDD/resources/3.2.20.0.jpg" height="50%" width="50%">|
 | Page Title: | Settings |
+| Type: | Process. |
+| Purpose: | |
 | Parent User Story:| none. |
 | Actor(s)/Persona(s): | 1. Calendar User <br> 2. Technical Support |
 | Pre-conditions/Product(s) Required: | 1. Calendar user has an account. <br> 2. User is logged-in.|
@@ -538,6 +535,8 @@ Use cases provide design viewpoints that show the interactions between the actor
 | --- |--- |
 | ScreenShot/Mockup: | |
 | Page Title: | Set Time Zone|
+| Type: | Process. |
+| Purpose: | |
 | Parent User Story:| 3.2.5.0|
 | Actor(s)/Persona(s): | Calendar Users|
 | Pre-conditions/Product(s) Required: | User is logged in. User is inside settings page.|
@@ -552,6 +551,8 @@ Use cases provide design viewpoints that show the interactions between the actor
 | --- |--- |
 | ScreenShot/Mockup: | |
 | Page Title: | Change Profile Settings|
+| Type: | Process. |
+| Purpose: | |
 | Parent User Story:| 3.2.5.2|
 | Actor(s)/Persona(s): | Calendar Users|
 | Pre-conditions/Product(s) Required: | 1. User is logged in.<br> 2.User is inside settings page.|
@@ -566,6 +567,8 @@ Use cases provide design viewpoints that show the interactions between the actor
 | --- |--- |
 | ScreenShot/Mockup: ||
 | Page Title: | Change Notification Settings|
+| Type: | Process. |
+| Purpose: | |
 | Parent User Story:| N/A|
 | Actor(s)/Persona(s): | Calendar User|
 | Pre-conditions/Product(s) Required: |1. User is logged in. <br> 2. User goes to notification settings. |
@@ -582,6 +585,8 @@ Use cases provide design viewpoints that show the interactions between the actor
 | --- |--- |
 | ScreenShot/Mockup: | <img src="https://github.com/MCLifeLeader/CS364/blob/master/SDD/resources/3.2.6.0.png" height="50%" width="50%">|
 | Page Title: | Import Assignments from I-Learn|
+| Type: | Process. |
+| Purpose: | |
 | Parent User Story:| N/A|
 | Actor(s)/Persona(s): | Calendar User|
 | Pre-conditions/Product(s) Required: | 1. User is on our Calendar App.|
@@ -600,6 +605,8 @@ This image details the steps necessary to import Ilearn data into the calendar a
 | --- |--- |
 | ScreenShot/Mockup: | <img  src="https://github.com/MCLifeLeader/CS364/blob/master/SDD/resources/3.2.6.0.png" height="50%" width="50%">|
 | Page Title: | Import Assignments from I-Learn Automatically|
+| Type: | Process. |
+| Purpose: | |
 | Parent User Story:| |
 | Actor(s)/Persona(s): | Calendar User|
 | Pre-conditions/Product(s) Required: | 1. User is logged into our Calendar Application.|
@@ -614,6 +621,8 @@ This image details the steps necessary to import Ilearn data into the calendar a
 | --- |--- |
 | ScreenShot/Mockup: | <img src="https://github.com/MCLifeLeader/CS364/blob/master/SDD/resources/3.2.6.0.png" height="50%" width="50%">|
 | Page Title: | Import Assignments from I-Learn Manually|
+| Type: | Process. |
+| Purpose: | |
 | Parent User Story:| |
 | Actor(s)/Persona(s): | Calendar User|
 | Pre-conditions/Product(s) Required: | 1. User is logged onto our Calendar Application<br> 2. User is logged onto their BYU-I Account.|
@@ -634,20 +643,23 @@ This image details the steps necessary to import Ilearn data into the calendar a
 | --- |--- |
 | ScreenShot/Mockup: | |
 | Page Title: | Create account |
+| Type: | Process. |
+| Purpose: | |
 | Parent User Story:| N/A|
 | Actor(s)/Persona(s): | Calendar users |
 | Pre-conditions/Product(s) Required: | 1. Calendar Portal has been brought up and configured. |
-| Post-conditions/Product(s) Produced: | The user will be sent an email for account verrification. |
+| Post-conditions/Product(s) Produced: | The user will be sent an email for account verification. |
 | Links: | None.|
 | SRS Document | 3.2.32, 3.2.36|
 | Description/Notes:| 1. The user will be asked to input desired user name.<br>2. The user will be asked to input email address.<br>3. The user will be asked to input desired password.<br>4. The user will be instructed to click the link in an email they will receive to activate their calendar application account.<br>5. Following account creation, and activation, the user can then log onto the calendar app.|
-
 #### 3.2.7.1 Log-in Use Cases: Validation
 
 | Data | Description |
 | --- |--- |
 | ScreenShot/Mockup: | |
 | Page Title: | Log-in Validation |
+| Type: | Process. |
+| Purpose: | |
 | Parent User Story:| N/A|
 | Actor(s)/Persona(s): | Calendar users |
 | Pre-conditions/Product(s) Required: | 1. Calendar Portal has been brought up and configured. <br>2. User has made an account for the Calendar application.|
@@ -662,6 +674,8 @@ This image details the steps necessary to import Ilearn data into the calendar a
 | --- |--- |
 | ScreenShot/Mockup: | |
 | Page Title: ||
+| Type: | Process. |
+| Purpose: | |
 | Parent User Story:| N/A|
 | Actor(s)/Persona(s): | Calendar users |
 | Pre-conditions/Product(s) Required: | 1. Calendar site is running and user is logged in.|
@@ -676,6 +690,8 @@ This image details the steps necessary to import Ilearn data into the calendar a
 | --- |--- |
 | ScreenShot/Mockup: | |
 | Page Title: | Forgot Password.|
+| Type: | Process. |
+| Purpose: | |
 | Parent User Story:| 3.2.7.1 Log-in Use Cases: Validation.|
 | Actor(s)/Persona(s): | Calendar users. |
 | Pre-conditions/Product(s) Required: | 1. Calendar Portal has been brought up and configured. <br>2. User has made an account for the Calendar application.|
@@ -690,6 +706,8 @@ This image details the steps necessary to import Ilearn data into the calendar a
 | --- |--- |
 | ScreenShot/Mockup: | |
 | Page Title: | Log-in Page|
+| Type: | Process. |
+| Purpose: | |
 | Parent User Story:| 3.2.7.1 Log-in Use Cases: Validation.|
 | Actor(s)/Persona(s): | Calendar users|
 | Pre-conditions/Product(s) Required: | 1. Calendar Portal has been brought up and configured. <br>2. User has made an account for the Calendar application with a registered e-mail address.|
@@ -709,1332 +727,19 @@ Architecture section 4.1 presents a UML diagram to demonstrate the relationships
 
 ### 4.1.0 Architecture Description 
 
-The architecture design for the Student Calendar application is centered around the MVC design model which is a popular pattern for internet browser based applications. The model classes, Student and Calendar Item, contain all of the data fields necessary for the insertion, modification, and deletion of student and calendar information. The Controller classes contain all the methods that are necessary to work with the data in the model classes. These Controller classes also interface with the Database Facade class, allowing data to be retrieved from and stored into the system database. The I-Learn Facade class works with the Calendar Item Controller class to retireve assignments from BYU-I's I-Learn service and store them in their appropriate location within the Student Calendar. The Calendar Integration Facade class allows the Student Calendar Application to interface with external API's in order to import/export calendar events from social media sites as well as other calendar applications. A further detailed description of each of these classes, their attributes, and methods is provided in the section directly below.
+The architecture design for the Student Calendar application is centered around the MVC(Model, View, Controller) design model which is a popular pattern for internet browser based applications. The model classes contain all of the data fields necessary for the insertion, modification, and deletion of student and calendar information. 
+
+The Controller classes contain all the methods that are necessary to work with the data in the model classes. These Controller classes also interface with the Database Facade class, allowing data to be retrieved from and stored into the system database. The I-Learn Facade class works with the Calendar Item Controller class to retireve assignments from BYU-I's I-Learn service and store them in their appropriate location within the Student Calendar. The Calendar Integration Facade class allows the Student Calendar Application to interface with external API's in order to import/export calendar events from social media sites as well as other calendar applications. 
+
+The View classes are responsible for displaying information to and gathering input from the user. They send signals to and receive data from the U.I. controller class. The U.I. Controller class serves as a bridge between the U.I. layer and the Business layer. It receives signals from the View classes and makes the necessary function calls to update the system. It then sends any updated data back to the view classes so that changes may be displayed to the user.
+
+A further detailed description of each of these classes, their attributes, and methods is provided in the section directly below.
 
 ## 4.2.0 UML Class Descriptions
 
-### 4.2.x Calendar Item Controller
-<table>
-  <tr>
-    <th colspan = "3">Class Name: Calendar Item Controller</th>
-  </tr>
-  <tr>
-    <td colspan = "3">Brief Description: The Calendar Item Controller(C.I. Controller) class is responsible for retrieving event and assignment data from the system and 
-	sending it to the user display.The C.I. Controller creates Assignments by accessing I-Learn through the I-Learn Facade class and stores the data in assignment class objects.
-	The C.I. Contoller stores calendar items into the system database by using the Database Facade class for future access. </td>
-  </tr>
-  </table>
-  <table>
-  <tr>
-    <th>Attributes(Fields)</th>
-    <th colspan = "2">Attribute Description</th>
-  </tr>
-  <tr>
-    <td>Assignment List</td><td colspan = "2">The List of I-learn Assignments for the student</td>
-  </tr>
-  <tr>
-    <td>Event List</td><td colspan = "2">The list of all calendar events that the user has created.</td>
-  </tr>
-  <tr>
-    <td>Notification List</td><td colspan = "2">The list of all notifications that the user has created.</td>
-  </tr>
-  <tr>
-    <td>I-Learn Facade</td><td colspan = "2">An Instance of the I-Learn Facade class that is used to pull data from the BYU-I I-Learn system.</td>
-  </tr>
-  <tr>
-    <td>Database Facade</td><td colspan = "2">An Instance of the Database Facade class that is used to store and retrieve data from the account database.</td>
-  </tr>
-  <tr>
-    <td>Student</td><td colspan = "2">The student class object. Holds the data for the student using the system.</td>
-  </tr>
-  <tr>
-    <th>Methods(operations) </th>
-    <th></th>
-  </tr>
-  <tr>
-    <td rowspan = "4">addEvent</td>
-    <th> Method Description</th>
-  </tr>
-  <tr>
-    <td>Creates a new Event calendar item to be added to the calendar. The user enters the event name, description, and sets how often the event will occur
-	on the calendar. The weekly occurence determines how often the event will reoccur for the long term(weekly, monthly, quarterly, etc.) and the daily occurence
-	determines which days of the week the event will occur on. This daily Occurence is passed in as a String array of days and is converted into an integer. This is called when the user selects the "Create Event" button. 
-	A new event is created with the passed parameters, stored in the database, and is then returned to the U.I. Controller class to display to the user. See use case 3.4.1.2 for details.</td>
-  </tr>
-  <tr>
-    <th>Method Pseudo Code</th>
-  </tr>
-  <tr>
-    <td>addEvent(eventName, eventDescription, eventWeeklyOccurence, eventDailyOccurence[]):</br> 
-  eventOccurenceNumber = convert Day Array into number(eventOccurence[])</br>	
-  newEvent = create Event(eventName, eventDescription, eventFrequency, eventOccurenceNumber)</br>
-  DatabaseFacade.addEvent(newEvent)</br>
-  return newEvent</td>
-  </tr>
-  <tr>
-    <td rowspan = "4">loadAssignments</td>
-    <th> Method Description</th>
-  </tr>
-  <tr>
-    <td>This method loads assignments from I-Learn through using the I-Learn Facade class. The assignments are pulled from I-learn, stored in an array
-	of assignment objects, and return to the C.I. Controller. The assignments are then stored into the database through the database facade class. Finally 
-	the assignments are sent to the U.I. Controller to be added to the calendar display. This method is called whenever the user chooses to import assignments
-	from I-Learn. See use case 3.4.7.0 for details.</td>
-  </tr>
-  <tr>
-    <th>Method Pseudo Code</th>
-  </tr>
-  <tr>
-    <td>loadAssignments(User):</br> 
-  I-LearnFacade.Login(User.username, User.password)</br>	
-  assignments = I-LearnFacade.getAssignments()</br>
-  DatabaseFacade.addAssignments(assignments)</br>
-  return assignments</td>
-  </tr>
-  <tr>
-    <td rowspan = "4">addNotification</td>
-    <th> Method Description</th>
-  </tr>
-  <tr>
-    <td>This method adds a notification to the system for the purpose of reminding the user of a calendar item at a later time. This method is called when the
-	user creates a new notification for one of the items on their calendar. The calendar item object is passed into the method, a notification object is created and is linked 
-	to the object. The notfication is stored into the database. If the method is successful then a boolean is returned as True to indicate success to the U.I.
-	If the method fails "False" is returned and the U.I. displays an error message.
-	See use case 3.4.2 for details of when this function is used.</td>
-  </tr>
-  <tr>
-    <th>Method Pseudo Code</th>
-  </tr>
-  <tr>
-    <td>addNotification(CalendarItem):</br> 
-  newNotification = create Notification(CalendarItem)</br>
-  DatabaseFacade.addNotification(newNotification)</br>
-  if successful:</br>
-  return true</br>
-  else</br>
-  return false </td>
-  </tr>
-  
-</table>
+## 4.2.1 View Classes
 
-### 4.2.x I-Learn Facade
-<table width="100%">
-  <tr>
-    <th colspan = "3">Class Name: I-Learn</th>
-  </tr>
-  <tr>
-    <td colspan = "3">Brief Description: The I-Learn class will pull the user's information, assignments and courses from I-Learn using the Desire To Learn API. This class will interact with the Callendar Item Controller class to provide assignments.</td>
-  </tr>
-  </table>
-  <table>
-  <tr>
-    <th>Attributes(Fields)</th>
-    <th colspan = "2">Attribute Description</th>
-  </tr>
-  <tr>
-    <td>credentials</td><td colspan = "2">The users session credentials passed from I-Learn after authentication</td>
-  </tr>
-   <tr>
-    <td>userId</td><td colspan = "2"> The users unique id that is used to retrieve student information</td>
-  </tr>
-  <tr>
-    <td></td><td colspan = "2"></td>
-  </tr>
-   <tr>
-    <th>Methods(operations) </th>
-    <th></th>
-  </tr>
-  <tr>
-    <td rowspan = "4">login(username, password)</td>
-    <th> Method Description</th>
-  </tr>
-  <tr>
-    <td>Authenticate with I-Learn</td>
-  </tr>
-  <tr>
-    <th>Method Pseudo Code</th>
-  </tr>
-  <tr>
-    <td>
-    credentials = post('https://secure.byui.edu/cas/login?entityId=https://byui.brightspace.com/shibboleth-sp&service=https://shib.byui.edu/idp/Authn/Cas', auth=(username, password))</br>
-    userId = get('https://byui.brightspace.com/d2l/api/lp/1.9/users/whoami')['id']
-    </td>
-  </tr>
-  <tr>
-    <td rowspan = "4">getCourse()</td>
-    <th> Method Description</th>
-  </tr>
-  <tr>
-    <td>This method uses the D2L API to get the users course list. It then filters to make sure the course is active</td>
-  </tr>
-  <tr>
-    <th>Method Pseudo Code</th>
-  </tr>
-  <tr>
-    <td>
-    courseList = get('https://byui.brightspace.com/d2l/api/lp/1.9/enrollments/myenrollments/?sortBy=-StartDate')</br>
-    FOR course in courseList['Items']</br>
-&nbsp;&nbsp;&nbsp;IF course['Access']['EndDate'] > currentDate and course['OrgUnit']['Type']['Id'] == 3</br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;tempCourse = new Course</br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;tempCourse.setName(course['OrgUnit']['Name'])</br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;tempCourse.setId(course['OrgUnit']['Id'])</br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;tempCourse.setStartDate(course['Access']['StartDate'])</br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;tempCourse.setEndDate(course['Access']['EndDate'])</br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;courses INSERT tempCourse</br>
-    RETURN courses</br>
-    </td>
-  </tr>
-  <tr>
-    <td rowspan = "4">getAssignments()</td>
-    <th> Method Description</th>
-  </tr>
-  <tr>
-    <td>This method loops through each class and using the D2L API, pulls each assignment for that class. Each assignment is added to an assignment object and returned.</td>
-  </tr>
-  <tr>
-    <th>Method Pseudo Code</th>
-  </tr>
-  <tr>
-    <td>
-    FOR course in courses</br>
-&nbsp;&nbsp;&nbsp;courseAssignments = get('https://byui.brightspace.com/d2l/api/le/1.18/content/myItems/?orgUnitIdsCSV=' + course.getId())</br>
-&nbsp;&nbsp;&nbsp;FOR assignment in courseAssignments</br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;tempAssignment = new Assignment</br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;tempAssignment.DueDate = assignment.DueDate</br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;tempAssignment.courseName = course.getName()</br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;tempAssignment.assignmentDescription = assignment.ItemName</br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;IF assignment.DueDate != NULL</br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;tempAssignment.assignmentCompleted = TRUE</br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ELSE</br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;tempAssignment.assignmentCompleted = FALSE</br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;tempAssignment.assignmentURL = assignment.href</br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;assignments[course.getId()] INSERT tempAssignment</br>
-    RETURN assignments
-    </td>
-  </tr>
-</table>
-
-### 4.2.x Course
-<table>
-  <tr>
-    <th colspan = "3">Class Name: Course</th>
-  </tr>
-  <tr>
-    <td colspan = "3">Brief Description: The Course class stores the users Course pulled from I-Learn. This class primarily interacts with the I-Learn Facade class to store course information.</td>
-  </tr>
-  </table>
-  <table>
-  <tr>
-    <th>Attributes(Fields)</th>
-    <th colspan = "2">Attribute Description</th>
-  </tr>
-  <tr>
-    <td>id</td><td colspan = "2">The unique identifier for the course</td>
-  </tr>
-   <tr>
-    <td>name</td><td colspan = "2">The name of the course</td>
-  </tr>
-  <tr>
-    <td>startDate</td><td colspan = "2">The start date for the course</td>
-  </tr>
-   <tr>
-    <td>endDate</td><td colspan = "2">The end date for the course</td>
-  </tr>
-  <tr>
-    <td></td><td colspan = "2"></td>
-  </tr>
-   <tr>
-    <th>Methods(operations) </th>
-    <th></th>
-  </tr>
-  <tr>
-    <td rowspan = "4">getId()</td>
-    <th> Method Description</th>
-  </tr>
-  <tr>
-    <td>Returns the course unique identifier</td>
-  </tr>
-  <tr>
-    <th>Method Pseudo Code</th>
-  </tr>
-  <tr>
-    <td>
-    RETURN id
-  </tr>
-  <tr>
-    <td rowspan = "4">getName()</td>
-    <th> Method Description</th>
-  </tr>
-  <tr>
-    <td>Returns the name of the course</td>
-  </tr>
-  <tr>
-    <th>Method Pseudo Code</th>
-  </tr>
-  <tr>
-    <td>
-    RETURN name
-    </td>
-  </tr>
-  <tr>
-    <td rowspan = "4">getStartDate()</td>
-    <th> Method Description</th>
-  </tr>
-  <tr>
-    <td>Returns the start date of the course</td>
-  </tr>
-  <tr>
-    <th>Method Pseudo Code</th>
-  </tr>
-  <tr>
-    <td>
-    RETURN startDate
-    </td>
-  </tr>
-  <tr>
-    <td rowspan = "4">getEndDate()</td>
-    <th> Method Description</th>
-  </tr>
-  <tr>
-    <td>Returns the end date of the course</td>
-  </tr>
-  <tr>
-    <th>Method Pseudo Code</th>
-  </tr>
-  <tr>
-    <td>
-    RETURN endDate
-    </td>
-  </tr>
-  <tr>
-    <td rowspan = "4">setId(id)</td>
-    <th> Method Description</th>
-  </tr>
-  <tr>
-    <td>Set the course unique identifier</td>
-  </tr>
-  <tr>
-    <th>Method Pseudo Code</th>
-  </tr>
-  <tr>
-    <td>
-    this->id = id
-    </td>
-  </tr>
-  <tr>
-    <td rowspan = "4">setName(name)</td>
-    <th> Method Description</th>
-  </tr>
-  <tr>
-    <td>Set the course name</td>
-  </tr>
-  <tr>
-    <th>Method Pseudo Code</th>
-  </tr>
-  <tr>
-    <td>
-    this->name = name
-    </td>
-  </tr>
-  <tr>
-    <td rowspan = "4">setStartDate(startDate)</td>
-    <th> Method Description</th>
-  </tr>
-  <tr>
-    <td>Set the course start date</td>
-  </tr>
-  <tr>
-    <th>Method Pseudo Code</th>
-  </tr>
-  <tr>
-    <td>
-    this->startDate = startDate
-    </td>
-  </tr>
-  <tr>
-    <td rowspan = "4">setEndDate(endDate)</td>
-    <th> Method Description</th>
-  </tr>
-  <tr>
-    <td>Set the course end date</td>
-  </tr>
-  <tr>
-    <th>Method Pseudo Code</th>
-  </tr>
-  <tr>
-    <td>
-    this->endDate = endDate
-    </td>
-  </tr>
-</table>
-
-
-### 4.2.x Calendar Item
-<table>
-  <tr>
-    <th colspan = "3">Class Name: Calendar Item</th>
-  </tr>
-  <tr>
-    <td colspan = "3">Brief Description: The Calendar Item class holds the common information that is shared by any object that can be added and displayed on the calendar. </td>
-  </tr>
-  </table>
-  <table>
-  <tr>
-    <th>Attributes(Fields)</th>
-    <th colspan = "2">Attribute Description</th>
-  </tr>
-  <tr>
-    <td>name</td><td colspan = "2">The name of the individual item that is diplayed on the calendar</td>
-  </tr>
-   <tr>
-    <td>Start Time</td><td colspan = "2"> The starting time of the Calendar Item. The value includes the hour and minute. This affects where the item is placed onto the calendar.</td>
-  </tr>
-  <td>Start Date</td><td colspan = "2"> The starting day of the Calendar Item. This value includes the day, month, and year in the following format 'DD-MON-YYYY'. This affects where the item is placed onto the calendar.</td>
-  </tr>
-   <tr>
-    <td>End Time</td><td colspan = "2">The Ending time of the Calendar Item. The value includes the hour and minute. This affects how much space the item takes on the calendar display.</td>
-  </tr>
-  <tr>
-    <td>End Date</td><td colspan = "2">The Ending day of the Calendar Item. This value includes the day, month, and year in the following format 'DD-MON-YYYY'. This determines the last occurence of a reoccuring event.</td>
-  </tr>
-  <tr>
-    <td></td><td colspan = "2"></td>
-  </tr>
-   <tr>
-    <th>Methods(operations) </th>
-    <th></th>
-  </tr>
-  <tr>
-    <td rowspan = "4">getName()</td>
-    <th> Method Description</th>
-  </tr>
-  <tr>
-    <td>Returns the calendar item name</td>
-  </tr>
-  <tr>
-    <th>Method Pseudo Code</th>
-  </tr>
-  <tr>
-    <td>
-    RETURN name
-  </tr>
-  <tr>
-    <td rowspan = "4">getStartTime()</td>
-    <th> Method Description</th>
-  </tr>
-  <tr>
-    <td>Returns the start time of the calendar item</td>
-  </tr>
-  <tr>
-    <th>Method Pseudo Code</th>
-  </tr>
-  <tr>
-    <td>
-    RETURN startTime
-    </td>
-  </tr>
-  <tr>
-    <td rowspan = "4">getStartDate()</td>
-    <th> Method Description</th>
-  </tr>
-  <tr>
-    <td>Returns the start date of the calendar item</td>
-  </tr>
-  <tr>
-    <th>Method Pseudo Code</th>
-  </tr>
-  <tr>
-    <td>
-    RETURN startDate
-    </td>
-  </tr>
-    <tr>
-    <td rowspan = "4">getEndTime()</td>
-    <th> Method Description</th>
-  </tr>
-  <tr>
-    <td>Returns the end time of the calendar item</td>
-  </tr>
-  <tr>
-    <th>Method Pseudo Code</th>
-  </tr>
-  <tr>
-    <td>
-    RETURN endTime
-    </td>
-  </tr>
-  <tr>
-    <td rowspan = "4">getEndDate()</td>
-    <th> Method Description</th>
-  </tr>
-  <tr>
-    <td>Returns the end date of the calendar item</td>
-  </tr>
-  <tr>
-    <th>Method Pseudo Code</th>
-  </tr>
-  <tr>
-    <td>
-    RETURN endDate
-    </td>
-  </tr>
-  <tr>
-    <td rowspan = "4">setName(name)</td>
-    <th> Method Description</th>
-  </tr>
-  <tr>
-    <td>Set the calendar item name</td>
-  </tr>
-  <tr>
-    <th>Method Pseudo Code</th>
-  </tr>
-  <tr>
-    <td>
-    this->name = name
-    </td>
-  </tr>
-   <tr>
-    <td rowspan = "4">setStartTime(startTime)</td>
-    <th> Method Description</th>
-  </tr>
-  <tr>
-    <td>Set the calendar item start time</td>
-  </tr>
-  <tr>
-    <th>Method Pseudo Code</th>
-  </tr>
-  <tr>
-    <td>
-    this->startTime = startTime
-    </td>
-  </tr>
-  <tr>
-    <td rowspan = "4">setStartDate(startDate)</td>
-    <th> Method Description</th>
-  </tr>
-  <tr>
-    <td>Set the calendar item start date</td>
-  </tr>
-  <tr>
-    <th>Method Pseudo Code</th>
-  </tr>
-  <tr>
-    <td>
-    this->startDate = startDate
-    </td>
-  </tr>
-    <tr>
-    <td rowspan = "4">setEndTime(End Time)</td>
-    <th> Method Description</th>
-  </tr>
-  <tr>
-    <td>Set the calendar item end time</td>
-  </tr>
-  <tr>
-    <th>Method Pseudo Code</th>
-  </tr>
-  <tr>
-    <td>
-    this->endTime = endTime
-    </td>
-  </tr>
-  <tr>
-    <td rowspan = "4">setEndDate(endDate)</td>
-    <th> Method Description</th>
-  </tr>
-  <tr>
-    <td>Set the calendar item end date</td>
-  </tr>
-  <tr>
-    <th>Method Pseudo Code</th>
-  </tr>
-  <tr>
-    <td>
-    this->endDate = endDate
-    </td>
-  </tr>
-</table>
-
-
-### 4.2.x Assignment
-<table>
-  <tr>
-    <th colspan = "3">Class Name: Assignment</th>
-  </tr>
-  <tr>
-    <td colspan = "3">Brief Description: The Assignment class is a type of calendar item. An assignment object contains all information related to a student's individual school assignment. When data is collected from I-Learn, each individual assignment is stored in an assignment instance and is then added into the Calendar's collection of visible items. This class includes all attributes that are found in the Calendar Item class.</td>
-  </tr>
-  </table>
-  <table>
-  <tr>
-    <th>Attributes(Fields)</th>
-    <th colspan = "2">Attribute Description</th>
-  </tr>
-  <tr>
-    <td>Due Date</td><td colspan = "2">The time when the assignment is due on I-Learn. Includes the date and time. This affects where the item is placed onto the calendar.</td>
-  </tr>
-   <tr>
-    <td>Course Name</td><td colspan = "2">The name of the course which the assignment belongs to.</td>
-  </tr>
-   <tr>
-    <td>Assignment Description</td><td colspan = "2">The description of the individual assignment.</td>
-  </tr>
-  <tr>
-    <td>Assignment Type</td><td colspan = "2">The type of the assignment. Used to set the priority level for the assignment.</td>
-  </tr>
-  <tr>
-    <td>Assignment Completed</td><td colspan = "2">A boolean value that shows if an assignment has been completed</td>
-  </tr>
-    <tr>
-    <td>Assignment URL</td><td colspan = "2">URL that points to the assignment</td>
-  </tr>
-   <tr>
-    <th>Methods(operations) </th>
-    <th></th>
-  </tr>
-  <tr>
-    <td rowspan = "4">getDueDate()</td>
-    <th> Method Description</th>
-  </tr>
-  <tr>
-    <td>Returns the assignment due date</td>
-  </tr>
-  <tr>
-    <th>Method Pseudo Code</th>
-  </tr>
-  <tr>
-    <td>
-    RETURN dueDate
-  </tr>
-  <tr>
-    <td rowspan = "4">getCourseName()</td>
-    <th> Method Description</th>
-  </tr>
-  <tr>
-    <td>Returns the assignment course name</td>
-  </tr>
-  <tr>
-    <th>Method Pseudo Code</th>
-  </tr>
-  <tr>
-    <td>
-    RETURN courseName
-    </td>
-  </tr>
-  <tr>
-    <td rowspan = "4">getAssignmentDescription()</td>
-    <th> Method Description</th>
-  </tr>
-  <tr>
-    <td>Returns the description of the assignment</td>
-  </tr>
-  <tr>
-    <th>Method Pseudo Code</th>
-  </tr>
-  <tr>
-    <td>
-    RETURN assignmentDescription
-    </td>
-  </tr>
-    <tr>
-    <td rowspan = "4">getAssignmentType()</td>
-    <th> Method Description</th>
-  </tr>
-  <tr>
-    <td>Returns the type of the assignment</td>
-  </tr>
-  <tr>
-    <th>Method Pseudo Code</th>
-  </tr>
-  <tr>
-    <td>
-    RETURN assignmentType
-    </td>
-  </tr>
-  <tr>
-    <td rowspan = "4">getAssignmentURL()</td>
-    <th> Method Description</th>
-  </tr>
-  <tr>
-    <td>Returns the assignment URL</td>
-  </tr>
-  <tr>
-    <th>Method Pseudo Code</th>
-  </tr>
-  <tr>
-    <td>
-    RETURN assignmentURL
-    </td>
-  </tr>
-  <tr>
-    <td rowspan = "4">setDueDate(dueDate)</td>
-    <th> Method Description</th>
-  </tr>
-  <tr>
-    <td>Set the assignment dueDate</td>
-  </tr>
-  <tr>
-    <th>Method Pseudo Code</th>
-  </tr>
-  <tr>
-    <td>
-    this->dueDate = dueDate
-    </td>
-  </tr>
-   <tr>
-    <td rowspan = "4">setCourseName(courseName)</td>
-    <th> Method Description</th>
-  </tr>
-  <tr>
-    <td>Set the assignment course name</td>
-  </tr>
-  <tr>
-    <th>Method Pseudo Code</th>
-  </tr>
-  <tr>
-    <td>
-    this->courseName = courseName
-    </td>
-  </tr>
-  <tr>
-    <td rowspan = "4">setAssignmentDescription(assignmentDescription)</td>
-    <th> Method Description</th>
-  </tr>
-  <tr>
-    <td>Set the assignment description</td>
-  </tr>
-  <tr>
-    <th>Method Pseudo Code</th>
-  </tr>
-  <tr>
-    <td>
-    this->assignmentDescription = assignmentDescription
-    </td>
-  </tr>
-    <tr>
-    <td rowspan = "4">setAssignmentType(assignmentType)</td>
-    <th> Method Description</th>
-  </tr>
-  <tr>
-    <td>Set the assignment type</td>
-  </tr>
-  <tr>
-    <th>Method Pseudo Code</th>
-  </tr>
-  <tr>
-    <td>
-    this->assignmentType = assignmentType
-    </td>
-  </tr>
-  <tr>
-    <td rowspan = "4">setAssignmentURL(assignmentURL)</td>
-    <th> Method Description</th>
-  </tr>
-  <tr>
-    <td>Set the assignment URL</td>
-  </tr>
-  <tr>
-    <th>Method Pseudo Code</th>
-  </tr>
-  <tr>
-    <td>
-    this->assignmentURL = assignmentURL
-    </td>
-  </tr>
-</table>
-
-### 4.2.x Event
-<table>
-  <tr>
-    <th colspan = "3">Class Name: Event</th>
-  </tr>
-  <tr>
-    <td colspan = "3">Brief Description: The Event class is a type of calendar item. Unlike an assignment object, an event object is generally created by the user rather than I-Learn and does not relate to a school assignment. An event object contains all information relating to a future event that the user needs to add to their calendar. Most importantly an event object can be reoccuring in the calendar. This class includes all attributes that are found in the Calendar Item class.</td>
-  </tr>
-  </table>
-  <table>
-  <tr>
-    <th>Attributes(Fields)</th>
-    <th colspan = "2">Attribute Description</th>
-  </tr>
-  <tr>
-    <td>location</td><td colspan = "2">A brief description of the location for the event.</td>
-  </tr>
-   <tr>
-    <td>event Description</td><td colspan = "2">A user generated description of the event.</td>
-  </tr>
-  <tr>
-    <td>event frequency</td><td colspan = "2"> a number representing how often the event is to be repeated. Frequencies include daily = 1 , weekly = 3, monthly = 7, quarterly = 11, semi-annually = 13, and annually = 17. </td>
-  </tr>
-  <tr>
-    <td>event day occurence</td><td colspan = "2"> a number representing which days of the week the event is to be displayed on the calendar. Each day of the week is represented by a factor of 2(ex. Sunday = 1, Monday = 2, Tuesday = 4 etc.) each day checked by the user adds the corrsponding day's value to get the final value, which determines the days that the event will be displayed.</td>
-  </tr>
-   <tr>
-    <th>Methods(operations) </th>
-    <th></th>
-  </tr>
-  <tr>
-    <td rowspan = "4">Data getters</td>
-    <th> Method Description</th>
-  </tr>
-  <tr>
-    <td>This serves as a place holder for all “getter” methods for the data elements that belong to this class.</td>
-  </tr>
-  <tr>
-    <th>Method Pseudo Code</th>
-  </tr>
-  <tr>
-    <td>getValueofDataElement():</br> return dataElement</td>
-  </tr>
-  <tr>
-    <td rowspan = "4">Data setters</td>
-    <th> Method Description</th>
-  </tr>
-  <tr>
-    <td>This serves as a place holder for all “setter” methods for the data elements that belong to this class.</td>
-  </tr>
-  <tr>
-    <th>Method Pseudo Code</th>
-  </tr>
-  <tr>
-    <td>setValueofDataElement(dataValue):</br> dataElement = dataValue</td>
-  </tr>
-  <tr>
-    <td rowspan = "4">Get day occurence</td>
-    <th> Method Description</th>
-  </tr>
-  <tr>
-    <td>Returns a list of weekdays for which the event is to occur on the calendar. It does this by seperating each number value from the total value</td>
-  </tr>
-   <tr>
-    <th>Method Pseudo Code</th>
-  </tr>
-  <tr>
-    <td>getDayOccurence():</br> 
-    dayArray = {sun, mon, tue, wed, thur, fri, sat}</br>
-    numberArray = {1, 2, 4, 8, 16, 32, 64}</br>
-    dayList = {}</br>
-    for each number in numberArray (starting at end){</br>
-    if number >= event day occurence:</br>
-    continue</br>
-    else:</br> 
-    event day occurence -= number</br>
-    add corresponding day to dayList }</br>
-    return dayList
-    </td>
-  </tr>
-</table>
-
-### 4.2.x Notification
-<table>
-  <tr>
-    <th colspan = "3">Class Name: Notification</th>
-  </tr>
-  <tr>
-    <td colspan = "3">Brief Description: The Notification class is a type of calendar item. A notification object is essentially a reminder for the user and can be connected to any calendar item found within a user's calendar. A notification is created in one of two ways: The user creates a reminder for a calendar item and sets it for a specific time, or the user has set their calendar to notify them when a assignment or event's start time is approaching the current time.</td>
-  </tr>
-  </table>
-  <table>
-  <tr>
-    <th>Attributes(Fields)</th>
-    <th colspan = "2">Attribute Description</th>
-  </tr>
-  <tr>
-    <td>reminder time</td><td colspan = "2">The time for when the notification is to alert the user. Includes the date and time.</td>
-  </tr>
-   <tr>
-    <td>snoozed</td><td colspan = "2">A boolean value showing if the notification is to alert the user again at a later time. The default snooze time for a notification is ten minutes, at which point this value is reset to false.</td>
-  </tr>
-  <tr>
-    <td>calendar item</td><td colspan = "2">The item that the notification is connected to.</td>
-  </tr>
-  <tr>
-    <th>Methods(operations) </th>
-    <th></th>
-  </tr>
-  <tr>
-    <td rowspan = "4">Data getters</td>
-    <th> Method Description</th>
-  </tr>
-  <tr>
-    <td>This serves as a place holder for all “getter” methods for the data elements that belong to this class.</td>
-  </tr>
-  <tr>
-    <th>Method Pseudo Code</th>
-  </tr>
-  <tr>
-    <td>getValueofDataElement():</br> return dataElement</td>
-  </tr>
-  <tr>
-    <td rowspan = "4">Data setters</td>
-    <th> Method Description</th>
-  </tr>
-  <tr>
-    <td>This serves as a place holder for all “setter” methods for the data elements that belong to this class.</td>
-  </tr>
-  <tr>
-    <th>Method Pseudo Code</th>
-  </tr>
-  <tr>
-    <td>setValueofDataElement(dataValue):</br> dataElement = dataValue</td>
-  </tr>
-</table>
-
-### 4.2.x Student Controller
-<table>
-  <tr>
-    <th colspan = "3">Class Name: Student Controller</th>
-  </tr>
-  <tr>
-    <td colspan = "3">Brief Description: The Student Controller class contains all the neccesary methods for creating, modifying and deleting Student class objects. It interfaces with the Database Facade class to save a student's information into the system database.The Student Controller class is used by the U.I. Controller class to pass student data between the system and the user.</td>
-  </tr>
-  </table>
-  <table>
-  <tr>
-    <th>Attributes(Fields)</th>
-    <th colspan = "2">Attribute Description</th>
-  </tr>
-  <tr>
-    <td>Current Student</td><td colspan = "2">The student model class object that the Controller class is currently working with.</td>
-  </tr>
-  <tr>
-    <th>Methods(operations) </th>
-    <th></th>
-  </tr>
-  <tr>
-    <td rowspan = "4">addStudent</td>
-    <th> Method Description</th>
-  </tr>
-  <tr>
-    <td>Creates a new Student model object using input provided by the User. This is called when a new user registers with the system for the first time.</td>
-  </tr>
-  <tr>
-    <th>Method Pseudo Code</th>
-  </tr>
-  <tr>
-    <td>addStudent(name, username, password):</br> 
-  newStudent = create student(name, username, password)</br>
-  DatabaseFacade.addStudent(newStudent)</td>
-  </tr>
-</table>
-
-### 4.2.x Student
-<table>
-  <tr>
-    <th colspan = "3">Class Name: Student</th>
-  </tr>
-  <tr>
-    <td colspan = "3">Brief Description: The Student class holds all data related to a user and works with the student controller class to save new insertions and modifications of user data. </td>
-  </tr>
-  </table>
-  <table>
-  <tr>
-    <th>Attributes(Fields)</th>
-    <th colspan = "2">Attribute Description</th>
-  </tr>
-  <tr>
-    <td>name</td><td colspan = "2">The name of the student user</td>
-  </tr>
-   <tr>
-    <td>username</td><td colspan = "2"> The username credential that the student uses to log in to the calendar</td>
-  </tr>
-   <tr>
-    <td>password</td><td colspan = "2">The password that the student uses to log in</td>
-  </tr>
-  <tr>
-    <td></td><td colspan = "2"></td>
-  </tr>
-   <tr>
-    <th>Methods(operations) </th>
-    <th></th>
-  </tr>
-  <tr>
-    <td rowspan = "4">Data getters</td>
-    <th> Method Description</th>
-  </tr>
-  <tr>
-    <td>This serves as a place holder for all “getter” methods for the data elements that belong to this class.</td>
-  </tr>
-  <tr>
-    <th>Method Pseudo Code</th>
-  </tr>
-  <tr>
-    <td>getValueofDataElement():</br> return dataElement</td>
-  </tr>
-  <tr>
-    <td rowspan = "4">Data setters</td>
-    <th> Method Description</th>
-  </tr>
-  <tr>
-    <td>This serves as a place holder for all “setter” methods for the data elements that belong to this class.</td>
-  </tr>
-  <tr>
-    <th>Method Pseudo Code</th>
-  </tr>
-  <tr>
-    <td>setValueofDataElement(dataValue):</br> dataElement = dataValue</td>
-  </tr>
-</table>
-
-### 4.2.x UI Controller
-<table>
-  <tr>
-    <th colspan = "3">Class Name: UI Controller</th>
-  </tr>
-  <tr>
-    <td colspan = "3">Brief Description: the UI controller class is responsible for controlling everything the users can interact with. This class communicates with the database facade class to verify user credentials, the I-Learn facade class to retrieve assignment information, the student controller class to retrieve information about the current user, and the calendar item controller class to retrieve and update information about the user’s calendar.</td>
-  </tr>
-  </table>
-
-
-  <table>
-  <tr>
-    <th>Attributes(Fields)</th>
-    <th colspan = "2">Attribute Description</th>
-  </tr>
-  <tr>
-    <td>eventId</td><td colspan = "2">The current event being viewed by the user.</td>
-  </tr>
-<tr>
-    <td>searchQuery</td><td colspan = "2">The search information that was entered by the user into the search bar.</td>
-  </tr>
-<tr>
-    <td>startDate</td><td colspan = "2">The date and time that an assignment becomes available.</td>
-  </tr>
-<tr>
-    <td>endDate</td><td colspan = "2">The date and time that an assignment is due.</td>
-  </tr>
-<tr>
-    <td>class</td><td colspan = "2">The school class that the user’s assignment was assigned from.</td>
-  </tr>
-
-
-
-  <tr>
-    <th>Methods(operations) </th>
-    <th></th>
-  </tr>
-
-<td rowspan = "4">openCalendar</td>
-    <th>Method Description</th>
-  </tr>
-  <tr>
-    <td>When the Calendar button is selected in the menu open the calendar view. The default view shows the current month.</td>
-  </tr>
-  <tr>
-    <th>Method Pseudo Code</th>
-  </tr> 
-  <tr>
-    <td>getEvents(filters)<br/>
-Return databaseQuery(filters)</td>
-  </tr>
-
-<td rowspan = "4">viewEvent</td>
-    <th>Method Description</th>
-  </tr>
-  <tr>
-    <td>When an event is clicked on in the Calendar</td>
-  </tr>
-  <tr>
-    <th>Method Pseudo Code</th>
-  </tr>
-  <tr>
-    <td>viewEvent(eventId)<br/>
-return event FROM eventTable WHERE eventId = eventId</td>
-  </tr>
-
-<td rowspan = "4">viewSelection</td>
-    <th>Method Description</th>
-  </tr>
-  <tr>
-    <td>Returns the event information for a specified calendar selection.</td>
-  </tr>
-  <tr>
-    <th>Method Pseudo Code</th>
-  </tr>
-  <tr>
-    <td>viewSelection(startDate, endDate, class)<br/>
-  If class has no data<br/>
-    return events FROM eventTable WHERE startDate = startDate AND endDate = endDate<br/>
-If only one class<br/>
-return events FROM eventTable WHERE startDate = startDate AND endDate = endDate AND class = class<br/>
-else<br/>
-  return for each class in class<br/>
-    events FROM eventTable WHERE startDate = startDate AND endDate = endDate AND class = class<br/></td>
-</tr>
-
-<td rowspan = "4">addEvent</td>
-    <th>Method Description</th>
-  </tr>
-  <tr>
-    <td>When the plus shaped button is selected on the bottom right of the calendar view it opens a form with different fields to be filled out by the user.</td>
-  </tr>
-  <tr>
-    <th>Method Pseudo Code</th>
-  </tr>
-  <tr>
-    <td>addEvent(event)<br/>
-INSERT INTO eventTable VALUES(event)</td>
-  </tr>
-
-<td rowspan = "4">searchCalendar</td>
-    <th>Method Description</th>
-  </tr>
-  <tr>
-    <td>When the search button is selected the search query that is filled into the search bar is compared to the data stored in the database for that user. All matching events and assignments are displayed on the screen.</td>
-  </tr>
-  <tr>
-    <th>Method Pseudo Code</th>
-  </tr>
-  <tr>
-    <td>searchCalendar(searchQuery)
-return events FROM eventTable WHERE eventName LIKE searchQuery OR eventDescription LIKE searchQuery
-  </tr>
-<td rowspan = "4">createAccount</td>
-    <th>Method Description</th>
-  </tr>
-  <tr>
-    <td>When the user clicks create account the I-Learn login credentials are passed to the iLearnFacade class which verifies if they are correct.</td>
-  </tr>
-  <tr>
-    <th>Method Pseudo Code</th>
-  </tr>
-  <tr>
-    <td>createAccount(username, password) {
-  If (verifyAccount(username, password)
-Display “account created”
-else
-Display “invalid credentials”
-  </tr>
-
-<td rowspan = "4">login</td>
-    <th>Method Description</th>
-  </tr>
-  <tr>
-    <td>When the user clicks login the login credentials are passed to the databaseFacade class which verifies if they are correct.</td>
-  </tr>
-  <tr>
-    <th>Method Pseudo Code</th>
-  </tr>
-  <tr>
-    <td>login(username, password) {
-  If (verifyLogin(username, password)
-Display “account created”
-else
-Display “invalid credentials”
-  </tr>
-
-<td rowspan = "4">printToDoList</td>
-    <th>Method Description</th>
-  </tr>
-  <tr>
-    <td>When the user clicks the print button at the bottom of the To-Do list page the To-Do list is sent to the printerFacade class which handles the print job.</td>
-  </tr>
-  <tr>
-    <th>Method Pseudo Code</th>
-  </tr>
-  <tr>
-    <td>printToDoList(toDoList[])  {
-  print(toDoList[])
-}
-  </tr>
-
-<td rowspan = "4">printCalendar</td>
-    <th>Method Description</th>
-  </tr>
-  <tr>
-    <td>When the user clicks the print button at the top of the calendar page the calendar is sent to the printerFacade class which handles the print job.</td>
-  </tr>
-  <tr>
-    <th>Method Pseudo Code</th>
-  </tr>
-  <tr>
-    <td>printCalendar(Calendar calendar)  {
-  print(calendar)
-}
-  </tr>
-
-<td rowspan = "4">createNotification</td>
-    <th>Method Description</th>
-  </tr>
-  <tr>
-    <td>The calendarController class will check periodically for upcoming due dates. When an assignment’s due date is close it will send the information to the createNotification function in the UI controller class which will generate a push notification.</td>
-  </tr>
-  <tr>
-    <th>Method Pseudo Code</th>
-  </tr>
-  <tr>
-    <td>createNotification(Assignment assignment) {
-  pushNotification(“Assignment: “ assignment.name “is due in 2 days.”) }
-  </tr>
-
-<td rowspan = "4">addToDoAssignment</td>
-    <th>Method Description</th>
-  </tr>
-  <tr>
-    <td>After the user clicks “Add To-Do Item” they are presented with a form to submit a custom entry in their To-Do list. Hitting submit will call this function which relays the information to the databaseFacade class where it will be stored in the database. </td>
-  </tr>
-  <tr>
-    <th>Method Pseudo Code</th>
-  </tr>
-  <tr>
-    <td>addToDoAssignment(toDo customToDo) {
-  INSERT INTO toDoList VALUES(customToDo) }
-  </tr>
-
-<td rowspan = "4">removeToDoAssignment</td>
-    <th>Method Description</th>
-  </tr>
-  <tr>
-    <td>After the user clicks “Remove To-Do Item” next to a To-Do list entry this function relays the information to the databaseFacade class where it will be removed from the database. </td>
-  </tr>
-  <tr>
-    <th>Method Pseudo Code</th>
-  </tr>
-  <tr>
-    <td>removeToDoAssignment(toDo toDo) {
-  REMOVE FROM toDoList VALUES(toDo) }
-  </tr>
-
-</table>
-
-
-
-### 4.2.x Database Facade 
-<table>
-  <tr>
-    <th colspan = "3">Class Name: DatabaseFacade</th>
-  </tr>
-  <tr>
-    <td colspan = "3">Brief Description: The Database Facade class is responsible for storing and retrieving data from the system database. The database facade class interfaces with each of the controller classes, allowing them to easily save and load data from the database.</td>
-  </tr>
-  </table>
-  <table>
-  <tr>
-    <th>Attributes(Fields)</th>
-    <th colspan = "2">Attribute Description</th>
-  </tr>
-  <tr>
-    <td>Connection</td><td colspan = "2">A connection that links the database facade to the database</td>
-  </tr>
-  <tr>
-    <td>Database URL</td><td colspan = "2">A string containing the address to the database.</td>
-  </tr>
-  <tr>
-    <td>Student</td><td colspan = "2">The student model class object that the Controller class is currently working with.</td>
-  </tr>
-  <tr>
-    <th>Methods(operations) </th>
-    <th></th>
-  </tr>
-  <tr>
-    <td rowspan = "4">saveEvent(Event)</td>
-    <th> Method Description</th>
-  </tr>
-  <tr>
-    <td>This method inserts a new event that a user has created into the system database. It returns true if the event was successfully saved
-	and false if there was an error.</td>
-  </tr>
-  <tr>
-    <th>Method Pseudo Code</th>
-  </tr>
-  <tr>
-    <td>saveEvent(Event):</br> 
-	  Open connection to database using Connection</br>
-	  Insert event into Event table in database</br>
-	  Close Connection</br>
-	  if successful: return true</br>
-	  else: return false</br>
-  </td>
-  </tr>
-  <tr>
-    <td rowspan = "4">SaveAssignments(Assignments[])</td>
-    <th> Method Description</th>
-  </tr>
-  <tr>
-    <td>This method inserts a list of assignments retrieved from I-Learn into the system database. It returns true if the assignments were successfully saved
-	and false if there was an error.</td>
-  </tr>
-  <tr>
-    <th>Method Pseudo Code</th>
-  </tr>
-  <tr>
-    <td>SaveAssignments(Assignments[]):</br> 
-	Open connection to database using Connection</br>
-	for each assignment in the list of Assignments:</br>
-	&nbsp;&nbsp;&nbsp;Insert assignment into assignment table in database</br>
-	Close Connection</br>
-	if successful: return true</br>
-	else: return false</br>
-    </td>
-  </tr>
-  <tr>
-    <td rowspan = "4">saveNotification(Notification)</td>
-    <th> Method Description</th>
-  </tr>
-  <tr>
-    <td>This method inserts a new notification that the user has created into the system database.It returns true if the notification was successfully saved
-	and false if there was an error.</td>
-  </tr>
-  <tr>
-    <th>Method Pseudo Code</th>
-  </tr>
-  <tr>
-    <td>saveNotification(Notification):</br> 
-	Open connection to database using Connection</br>
-	Insert Notification into notification table in database</br>
-	Close Connection</br>
-  if successful: return true</br>
-  else: return false</br>
-  </td>
-  </tr>
-  <tr>
-    <td rowspan = "4">saveStudent(Student)</td>
-    <th> Method Description</th>
-  </tr>
-  <tr>
-    <td>This method inserts a new Student into the database. This method is called whenever a user creates a new account or the user 
-	has modified some of their account information. It returns true if the Student was successfully saved
-	and false if there was an error.</td>
-  </tr>
-  <tr>
-    <th>Method Pseudo Code</th>
-  </tr>
-  <tr>
-    <td>saveStudent(Student):</br> 
-	Open connection to database using Connection</br>
-	Insert Student into Student table in database</br>
-	Close Connection</br>
-	if successful: return true</br>
-	else: return false</br>
-  </td>
-  </tr>
-  <tr>
-    <td rowspan = "4">verifyLogin(username, password)</td>
-    <th> Method Description</th>
-  </tr>
-  <tr>
-    <td>This method checks the database for a username and verifies that the password that is typed in by the user matches with the password
-	that is contained in the database. If the username and password found in the database match what was typed in by the user the method returns true. 
-	If the username is not found in the database or the passwords do not match, the method returns false.</td>
-  </tr>
-  <tr>
-    <th>Method Pseudo Code</th>
-  </tr>
-  <tr>
-    <td>verifyLogin(username, password):</br> 
-	Open connection to database using Connection</br>
-	Student = lookup username in Student table in database and return matching student</br>
-	Close Connection</br>
-	if username is not found:</br> 
-	&nbsp;&nbsp;&nbsp;return false </br>
-	if Student.password is equal to password:</br>
-	&nbsp;&nbsp;&nbsp;return true</br>
-	else: return false</br>
-  </td>
-  </tr>
-  
-</table>
+The view classes perform all of the functions related to visually displaying the system to the user as well as allowing the user to interface with the system. They send signals to and receive data from the U.I. controller class.  
 
 ### 4.2.x To-Do List View
 <table>
@@ -2313,6 +1018,1335 @@ Display “invalid credentials”
 </table>
 
 
+## 4.2.2 Controller Classes
+The Controller classes contain all the methods that are necessary to work with the data in the model classes. These Controller classes also include the facade classes which allow developers to more easily interact with interfaces such as the system database and external APIs.
+
+### 4.2.2.1 Calendar Item Controller
+<table>
+  <tr>
+    <th colspan = "3">Class Name: Calendar Item Controller</th>
+  </tr>
+  <tr>
+    <td colspan = "3">Brief Description: The Calendar Item Controller(C.I. Controller) class is responsible for retrieving event and assignment data from the system and 
+	sending it to the user display.The C.I. Controller creates Assignments by accessing I-Learn through the I-Learn Facade class and stores the data in assignment class objects.
+	The C.I. Contoller stores calendar items into the system database by using the Database Facade class for future access. </td>
+  </tr>
+  </table>
+  <table>
+  <tr>
+    <th>Attributes(Fields)</th>
+    <th colspan = "2">Attribute Description</th>
+  </tr>
+  <tr>
+    <td>Assignment List</td><td colspan = "2">The List of I-learn Assignments for the student</td>
+  </tr>
+  <tr>
+    <td>Event List</td><td colspan = "2">The list of all calendar events that the user has created.</td>
+  </tr>
+  <tr>
+    <td>Notification List</td><td colspan = "2">The list of all notifications that the user has created.</td>
+  </tr>
+  <tr>
+    <td>I-Learn Facade</td><td colspan = "2">An Instance of the I-Learn Facade class that is used to pull data from the BYU-I I-Learn system.</td>
+  </tr>
+  <tr>
+    <td>Database Facade</td><td colspan = "2">An Instance of the Database Facade class that is used to store and retrieve data from the account database.</td>
+  </tr>
+  <tr>
+    <td>Student</td><td colspan = "2">The student class object. Holds the data for the student using the system.</td>
+  </tr>
+  <tr>
+    <th>Methods(operations) </th>
+    <th></th>
+  </tr>
+  <tr>
+    <td rowspan = "4">addEvent</td>
+    <th> Method Description</th>
+  </tr>
+  <tr>
+    <td>Creates a new Event calendar item to be added to the calendar. The user enters the event name, description, and sets how often the event will occur
+	on the calendar. The weekly occurence determines how often the event will reoccur for the long term(weekly, monthly, quarterly, etc.) and the daily occurence
+	determines which days of the week the event will occur on. This daily Occurence is passed in as a String array of days and is converted into an integer. This is called when the user selects the "Create Event" button. 
+	A new event is created with the passed parameters, stored in the database, and is then returned to the U.I. Controller class to display to the user. See use case 3.4.1.2 for details.</td>
+  </tr>
+  <tr>
+    <th>Method Pseudo Code</th>
+  </tr>
+  <tr>
+    <td>addEvent(eventName, eventDescription, eventWeeklyOccurence, eventDailyOccurence[]):</br> 
+  eventOccurenceNumber = convert Day Array into number(eventOccurence[])</br>	
+  newEvent = create Event(eventName, eventDescription, eventFrequency, eventOccurenceNumber)</br>
+  DatabaseFacade.addEvent(newEvent)</br>
+  return newEvent</td>
+  </tr>
+  <tr>
+    <td rowspan = "4">loadAssignments</td>
+    <th> Method Description</th>
+  </tr>
+  <tr>
+    <td>This method loads assignments from I-Learn through using the I-Learn Facade class. The assignments are pulled from I-learn, stored in an array
+	of assignment objects, and return to the C.I. Controller. The assignments are then stored into the database through the database facade class. Finally 
+	the assignments are sent to the U.I. Controller to be added to the calendar display. This method is called whenever the user chooses to import assignments
+	from I-Learn. See use case 3.4.7.0 for details.</td>
+  </tr>
+  <tr>
+    <th>Method Pseudo Code</th>
+  </tr>
+  <tr>
+    <td>loadAssignments(User):</br> 
+  I-LearnFacade.Login(User.username, User.password)</br>	
+  assignments = I-LearnFacade.getAssignments()</br>
+  DatabaseFacade.addAssignments(assignments)</br>
+  return assignments</td>
+  </tr>
+  <tr>
+    <td rowspan = "4">addNotification</td>
+    <th> Method Description</th>
+  </tr>
+  <tr>
+    <td>This method adds a notification to the system for the purpose of reminding the user of a calendar item at a later time. This method is called when the
+	user creates a new notification for one of the items on their calendar. The calendar item object is passed into the method, a notification object is created and is linked 
+	to the object. The notfication is stored into the database. If the method is successful then a boolean is returned as True to indicate success to the U.I.
+	If the method fails "False" is returned and the U.I. displays an error message.
+	See use case 3.4.2 for details of when this function is used.</td>
+  </tr>
+  <tr>
+    <th>Method Pseudo Code</th>
+  </tr>
+  <tr>
+    <td>addNotification(CalendarItem):</br> 
+  newNotification = create Notification(CalendarItem)</br>
+  DatabaseFacade.addNotification(newNotification)</br>
+  if successful:</br>
+  return true</br>
+  else</br>
+  return false </td>
+  </tr>
+  
+</table>
+
+### 4.2.2.2 I-Learn Facade
+<table width="100%">
+  <tr>
+    <th colspan = "3">Class Name: I-Learn</th>
+  </tr>
+  <tr>
+    <td colspan = "3">Brief Description: The I-Learn class will pull the user's information, assignments and courses from I-Learn using the Desire To Learn API. This class will interact with the Callendar Item Controller class to provide assignments.</td>
+  </tr>
+  </table>
+  <table>
+  <tr>
+    <th>Attributes(Fields)</th>
+    <th colspan = "2">Attribute Description</th>
+  </tr>
+  <tr>
+    <td>credentials</td><td colspan = "2">The users session credentials passed from I-Learn after authentication</td>
+  </tr>
+   <tr>
+    <td>userId</td><td colspan = "2"> The users unique id that is used to retrieve student information</td>
+  </tr>
+  <tr>
+    <td></td><td colspan = "2"></td>
+  </tr>
+   <tr>
+    <th>Methods(operations) </th>
+    <th></th>
+  </tr>
+  <tr>
+    <td rowspan = "4">login(username, password)</td>
+    <th> Method Description</th>
+  </tr>
+  <tr>
+    <td>Authenticate with I-Learn</td>
+  </tr>
+  <tr>
+    <th>Method Pseudo Code</th>
+  </tr>
+  <tr>
+    <td>
+    credentials = post('https://secure.byui.edu/cas/login?entityId=https://byui.brightspace.com/shibboleth-sp&service=https://shib.byui.edu/idp/Authn/Cas', auth=(username, password))</br>
+    userId = get('https://byui.brightspace.com/d2l/api/lp/1.9/users/whoami')['id']
+    </td>
+  </tr>
+  <tr>
+    <td rowspan = "4">getCourse()</td>
+    <th> Method Description</th>
+  </tr>
+  <tr>
+    <td>This method uses the D2L API to get the users course list. It then filters to make sure the course is active</td>
+  </tr>
+  <tr>
+    <th>Method Pseudo Code</th>
+  </tr>
+  <tr>
+    <td>
+    courseList = get('https://byui.brightspace.com/d2l/api/lp/1.9/enrollments/myenrollments/?sortBy=-StartDate')</br>
+    FOR course in courseList['Items']</br>
+&nbsp;&nbsp;&nbsp;IF course['Access']['EndDate'] > currentDate and course['OrgUnit']['Type']['Id'] == 3</br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;tempCourse = new Course</br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;tempCourse.setName(course['OrgUnit']['Name'])</br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;tempCourse.setId(course['OrgUnit']['Id'])</br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;tempCourse.setStartDate(course['Access']['StartDate'])</br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;tempCourse.setEndDate(course['Access']['EndDate'])</br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;courses INSERT tempCourse</br>
+    RETURN courses</br>
+    </td>
+  </tr>
+  <tr>
+    <td rowspan = "4">getAssignments()</td>
+    <th> Method Description</th>
+  </tr>
+  <tr>
+    <td>This method loops through each class and using the D2L API, pulls each assignment for that class. Each assignment is added to an assignment object and returned.</td>
+  </tr>
+  <tr>
+    <th>Method Pseudo Code</th>
+  </tr>
+  <tr>
+    <td>
+    FOR course in courses</br>
+&nbsp;&nbsp;&nbsp;courseAssignments = get('https://byui.brightspace.com/d2l/api/le/1.18/content/myItems/?orgUnitIdsCSV=' + course.getId())</br>
+&nbsp;&nbsp;&nbsp;FOR assignment in courseAssignments</br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;tempAssignment = new Assignment</br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;tempAssignment.DueDate = assignment.DueDate</br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;tempAssignment.courseName = course.getName()</br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;tempAssignment.assignmentDescription = assignment.ItemName</br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;IF assignment.DueDate != NULL</br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;tempAssignment.assignmentCompleted = TRUE</br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ELSE</br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;tempAssignment.assignmentCompleted = FALSE</br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;tempAssignment.assignmentURL = assignment.href</br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;assignments[course.getId()] INSERT tempAssignment</br>
+    RETURN assignments
+    </td>
+  </tr>
+</table>
+
+
+### 4.2.2.3 Student Controller
+<table>
+  <tr>
+    <th colspan = "3">Class Name: Student Controller</th>
+  </tr>
+  <tr>
+    <td colspan = "3">Brief Description: The Student Controller class contains all the neccesary methods for creating, modifying and deleting Student class objects. It interfaces with the Database Facade class to save a student's information into the system database.The Student Controller class is used by the U.I. Controller class to pass student data between the system and the user.</td>
+  </tr>
+  </table>
+  <table>
+  <tr>
+    <th>Attributes(Fields)</th>
+    <th colspan = "2">Attribute Description</th>
+  </tr>
+  <tr>
+    <td>Current Student</td><td colspan = "2">The student model class object that the Controller class is currently working with.</td>
+  </tr>
+  <tr>
+    <th>Methods(operations) </th>
+    <th></th>
+  </tr>
+  <tr>
+    <td rowspan = "4">addStudent</td>
+    <th> Method Description</th>
+  </tr>
+  <tr>
+    <td>Creates a new Student model object using input provided by the User. This is called when a new user registers with the system for the first time.</td>
+  </tr>
+  <tr>
+    <th>Method Pseudo Code</th>
+  </tr>
+  <tr>
+    <td>addStudent(name, username, password):</br> 
+  newStudent = create student(name, username, password)</br>
+  DatabaseFacade.addStudent(newStudent)</td>
+  </tr>
+</table>
+
+### 4.2.2.4 UI Controller
+<table>
+  <tr>
+    <th colspan = "3">Class Name: UI Controller</th>
+  </tr>
+  <tr>
+    <td colspan = "3">Brief Description: the UI controller class is responsible for controlling everything the users can interact with. This class communicates with the database facade class to verify user credentials, the I-Learn facade class to retrieve assignment information, the student controller class to retrieve information about the current user, and the calendar item controller class to retrieve and update information about the user’s calendar.</td>
+  </tr>
+  </table>
+
+
+  <table>
+  <tr>
+    <th>Attributes(Fields)</th>
+    <th colspan = "2">Attribute Description</th>
+  </tr>
+  <tr>
+    <td>eventId</td><td colspan = "2">The current event being viewed by the user.</td>
+  </tr>
+<tr>
+    <td>searchQuery</td><td colspan = "2">The search information that was entered by the user into the search bar.</td>
+  </tr>
+<tr>
+    <td>startDate</td><td colspan = "2">The date and time that an assignment becomes available.</td>
+  </tr>
+<tr>
+    <td>endDate</td><td colspan = "2">The date and time that an assignment is due.</td>
+  </tr>
+<tr>
+    <td>class</td><td colspan = "2">The school class that the user’s assignment was assigned from.</td>
+  </tr>
+
+
+
+  <tr>
+    <th>Methods(operations) </th>
+    <th></th>
+  </tr>
+
+<td rowspan = "4">openCalendar</td>
+    <th>Method Description</th>
+  </tr>
+  <tr>
+    <td>When the Calendar button is selected in the menu open the calendar view. The default view shows the current month.</td>
+  </tr>
+  <tr>
+    <th>Method Pseudo Code</th>
+  </tr> 
+  <tr>
+    <td>getEvents(filters)<br/>
+Return databaseQuery(filters)</td>
+  </tr>
+
+<td rowspan = "4">viewEvent</td>
+    <th>Method Description</th>
+  </tr>
+  <tr>
+    <td>When an event is clicked on in the Calendar</td>
+  </tr>
+  <tr>
+    <th>Method Pseudo Code</th>
+  </tr>
+  <tr>
+    <td>viewEvent(eventId)<br/>
+return event FROM eventTable WHERE eventId = eventId</td>
+  </tr>
+
+<td rowspan = "4">viewSelection</td>
+    <th>Method Description</th>
+  </tr>
+  <tr>
+    <td>Returns the event information for a specified calendar selection.</td>
+  </tr>
+  <tr>
+    <th>Method Pseudo Code</th>
+  </tr>
+  <tr>
+    <td>viewSelection(startDate, endDate, class)<br/>
+  If class has no data<br/>
+    return events FROM eventTable WHERE startDate = startDate AND endDate = endDate<br/>
+If only one class<br/>
+return events FROM eventTable WHERE startDate = startDate AND endDate = endDate AND class = class<br/>
+else<br/>
+  return for each class in class<br/>
+    events FROM eventTable WHERE startDate = startDate AND endDate = endDate AND class = class<br/></td>
+</tr>
+
+<td rowspan = "4">createEvent</td>
+    <th>Method Description</th>
+  </tr>
+  <tr>
+    <td>When the plus shaped button is selected on the bottom right of the calendar view it opens a form with different fields to be filled out by the user.</td>
+  </tr>
+  <tr>
+    <th>Method Pseudo Code</th>
+  </tr>
+  <tr>
+    <td>createEvent(eventInfo)<br/>
+New Event = CalendarItemController.addEvent(EventInfo)
+return New Event</td>
+  </tr>
+
+<td rowspan = "4">searchCalendar</td>
+    <th>Method Description</th>
+  </tr>
+  <tr>
+    <td>When the search button is selected the search query that is filled into the search bar is compared to the data stored in the database for that user. All matching events and assignments are displayed on the screen.</td>
+  </tr>
+  <tr>
+    <th>Method Pseudo Code</th>
+  </tr>
+  <tr>
+    <td>searchCalendar(searchQuery)
+return events FROM eventTable WHERE eventName LIKE searchQuery OR eventDescription LIKE searchQuery
+  </tr>
+<td rowspan = "4">createAccount</td>
+    <th>Method Description</th>
+  </tr>
+  <tr>
+    <td>When the user clicks create account the I-Learn login credentials are passed to the iLearnFacade class which verifies if they are correct.</td>
+  </tr>
+  <tr>
+    <th>Method Pseudo Code</th>
+  </tr>
+  <tr>
+    <td>createAccount(username, password) {
+  If (verifyAccount(username, password)
+Display “account created”
+else
+Display “invalid credentials”
+  </tr>
+
+<td rowspan = "4">login</td>
+    <th>Method Description</th>
+  </tr>
+  <tr>
+    <td>When the user clicks login the login credentials are passed to the databaseFacade class which verifies if they are correct.</td>
+  </tr>
+  <tr>
+    <th>Method Pseudo Code</th>
+  </tr>
+  <tr>
+    <td>login(username, password) {
+  If (verifyLogin(username, password)
+Display “account created”
+else
+Display “invalid credentials”
+  </tr>
+
+<td rowspan = "4">printToDoList</td>
+    <th>Method Description</th>
+  </tr>
+  <tr>
+    <td>When the user clicks the print button at the bottom of the To-Do list page the To-Do list is sent to the printerFacade class which handles the print job.</td>
+  </tr>
+  <tr>
+    <th>Method Pseudo Code</th>
+  </tr>
+  <tr>
+    <td>printToDoList(toDoList[])  {
+  print(toDoList[])
+}
+  </tr>
+
+<td rowspan = "4">printCalendar</td>
+    <th>Method Description</th>
+  </tr>
+  <tr>
+    <td>When the user clicks the print button at the top of the calendar page the calendar is sent to the printerFacade class which handles the print job.</td>
+  </tr>
+  <tr>
+    <th>Method Pseudo Code</th>
+  </tr>
+  <tr>
+    <td>printCalendar(Calendar calendar)  {
+  print(calendar)
+}
+  </tr>
+
+<td rowspan = "4">createNotification</td>
+    <th>Method Description</th>
+  </tr>
+  <tr>
+    <td>The calendarController class will check periodically for upcoming due dates. When an assignment’s due date is close it will send the information to the createNotification function in the UI controller class which will generate a push notification.</td>
+  </tr>
+  <tr>
+    <th>Method Pseudo Code</th>
+  </tr>
+  <tr>
+    <td>createNotification(Assignment assignment) {
+  pushNotification(“Assignment: “ assignment.name “is due in 2 days.”) }
+  </tr>
+
+<td rowspan = "4">addToDoAssignment</td>
+    <th>Method Description</th>
+  </tr>
+  <tr>
+    <td>After the user clicks “Add To-Do Item” they are presented with a form to submit a custom entry in their To-Do list. Hitting submit will call this function which relays the information to the databaseFacade class where it will be stored in the database. </td>
+  </tr>
+  <tr>
+    <th>Method Pseudo Code</th>
+  </tr>
+  <tr>
+    <td>addToDoAssignment(toDo customToDo) {
+  INSERT INTO toDoList VALUES(customToDo) }
+  </tr>
+
+<td rowspan = "4">removeToDoAssignment</td>
+    <th>Method Description</th>
+  </tr>
+  <tr>
+    <td>After the user clicks “Remove To-Do Item” next to a To-Do list entry this function relays the information to the databaseFacade class where it will be removed from the database. </td>
+  </tr>
+  <tr>
+    <th>Method Pseudo Code</th>
+  </tr>
+  <tr>
+    <td>removeToDoAssignment(toDo toDo) {
+  REMOVE FROM toDoList VALUES(toDo) }
+  </tr>
+
+</table>
+
+
+
+### 4.2.2.5 Database Facade 
+<table>
+  <tr>
+    <th colspan = "3">Class Name: Database Facade</th>
+  </tr>
+  <tr>
+    <td colspan = "3">Brief Description: The Database Facade class is responsible for storing and retrieving data from the system database. The database facade class interfaces with each of the controller classes, allowing them to easily save and load data from the database. It's use in the overall scheme of the project is to allow the saving of user data to a given device. The abstraction of the database in this way allows for an easier implementation of its functions by other classes.</td>
+  </tr>
+  </table>
+  <table>
+  <tr>
+    <th>Attributes(Fields)</th>
+    <th colspan = "2">Attribute Description</th>
+  </tr>
+  <tr>
+    <td>Connection</td><td colspan = "2">A connection that links the database facade to the database</td>
+  </tr>
+  <tr>
+    <td>Database URL</td><td colspan = "2">A string containing the address to the database.</td>
+  </tr>
+  <tr>
+    <td>Student</td><td colspan = "2">The student model class object that the Controller class is currently working with.</td>
+  </tr>
+  <tr>
+    <th>Methods(operations) </th>
+    <th></th>
+  </tr>
+  <tr>
+    <td rowspan = "4">saveEvent(Event)</td>
+    <th> Method Description</th>
+  </tr>
+  <tr>
+    <td>This method inserts a new event that a user has created into the system database. It returns true if the event was successfully saved
+	and false if there was an error.</td>
+  </tr>
+  <tr>
+    <th>Method Pseudo Code</th>
+  </tr>
+  <tr>
+    <td>saveEvent(Event):</br> 
+	  Open connection to database using Connection</br>
+	  Insert event into Event table in database</br>
+	  Close Connection</br>
+	  if successful: return true</br>
+	  else: return false</br>
+  </td>
+  </tr>
+  <tr>
+    <td rowspan = "4">SaveAssignments(Assignments[])</td>
+    <th> Method Description</th>
+  </tr>
+  <tr>
+    <td>This method inserts a list of assignments retrieved from I-Learn into the system database. It returns true if the assignments were successfully saved
+	and false if there was an error.</td>
+  </tr>
+  <tr>
+    <th>Method Pseudo Code</th>
+  </tr>
+  <tr>
+    <td>SaveAssignments(Assignments[]):</br> 
+	Open connection to database using Connection</br>
+	for each assignment in the list of Assignments:</br>
+	&nbsp;&nbsp;&nbsp;Insert assignment into assignment table in database</br>
+	Close Connection</br>
+	if successful: return true</br>
+	else: return false</br>
+    </td>
+  </tr>
+  <tr>
+    <td rowspan = "4">saveNotification(Notification)</td>
+    <th> Method Description</th>
+  </tr>
+  <tr>
+    <td>This method inserts a new notification that the user has created into the system database.It returns true if the notification was successfully saved
+	and false if there was an error.</td>
+  </tr>
+  <tr>
+    <th>Method Pseudo Code</th>
+  </tr>
+  <tr>
+    <td>saveNotification(Notification):</br> 
+	Open connection to database using Connection</br>
+	Insert Notification into notification table in database</br>
+	Close Connection</br>
+  if successful: return true</br>
+  else: return false</br>
+  </td>
+  </tr>
+  <tr>
+    <td rowspan = "4">saveStudent(Student)</td>
+    <th> Method Description</th>
+  </tr>
+  <tr>
+    <td>This method inserts a new Student into the database. This method is called whenever a user creates a new account or the user 
+	has modified some of their account information. It returns true if the Student was successfully saved
+	and false if there was an error.</td>
+  </tr>
+  <tr>
+    <th>Method Pseudo Code</th>
+  </tr>
+  <tr>
+    <td>saveStudent(Student):</br> 
+	Open connection to database using Connection</br>
+	Insert Student into Student table in database</br>
+	Close Connection</br>
+	if successful: return true</br>
+	else: return false</br>
+  </td>
+  </tr>
+  <tr>
+    <td rowspan = "4">verifyLogin(username, password)</td>
+    <th> Method Description</th>
+  </tr>
+  <tr>
+    <td>This method checks the database for a username and verifies that the password that is typed in by the user matches with the password
+	that is contained in the database. If the username and password found in the database match what was typed in by the user the method returns true. 
+	If the username is not found in the database or the passwords do not match, the method returns false.</td>
+  </tr>
+  <tr>
+    <th>Method Pseudo Code</th>
+  </tr>
+  <tr>
+    <td>verifyLogin(username, password):</br> 
+	Open connection to database using Connection</br>
+	Student = lookup username in Student table in database and return matching student</br>
+	Close Connection</br>
+	if username is not found:</br> 
+	&nbsp;&nbsp;&nbsp;return false </br>
+	if Student.password is equal to password:</br>
+	&nbsp;&nbsp;&nbsp;return true</br>
+	else: return false</br>
+  </td>
+  </tr>
+  
+</table>
+## 4.2.3 Model Classes
+The model classes contain all of the data fields necessary for the insertion, modification, 
+and deletion of student and calendar information. They do not perform any functions other than sending and updating their information
+through getters and setters.
+
+### 4.2.3.1 Calendar Item
+<table>
+  <tr>
+    <th colspan = "3">Class Name: Calendar Item</th>
+  </tr>
+  <tr>
+    <td colspan = "3">Brief Description: The Calendar Item class holds the common information that is shared by any object that can be added and displayed on the calendar. </td>
+  </tr>
+  </table>
+  <table>
+  <tr>
+    <th>Attributes(Fields)</th>
+    <th colspan = "2">Attribute Description</th>
+  </tr>
+  <tr>
+    <td>name</td><td colspan = "2">The name of the individual item that is diplayed on the calendar</td>
+  </tr>
+   <tr>
+    <td>Start Time</td><td colspan = "2"> The starting time of the Calendar Item. The value includes the hour and minute. This affects where the item is placed onto the calendar.</td>
+  </tr>
+  <td>Start Date</td><td colspan = "2"> The starting day of the Calendar Item. This value includes the day, month, and year in the following format 'DD-MON-YYYY'. This affects where the item is placed onto the calendar.</td>
+  </tr>
+   <tr>
+    <td>End Time</td><td colspan = "2">The Ending time of the Calendar Item. The value includes the hour and minute. This affects how much space the item takes on the calendar display.</td>
+  </tr>
+  <tr>
+    <td>End Date</td><td colspan = "2">The Ending day of the Calendar Item. This value includes the day, month, and year in the following format 'DD-MON-YYYY'. This determines the last occurence of a reoccuring event.</td>
+  </tr>
+  <tr>
+    <td></td><td colspan = "2"></td>
+  </tr>
+   <tr>
+    <th>Methods(operations) </th>
+    <th></th>
+  </tr>
+  <tr>
+    <td rowspan = "4">getName()</td>
+    <th> Method Description</th>
+  </tr>
+  <tr>
+    <td>Returns the calendar item name</td>
+  </tr>
+  <tr>
+    <th>Method Pseudo Code</th>
+  </tr>
+  <tr>
+    <td>
+    RETURN name
+  </tr>
+  <tr>
+    <td rowspan = "4">getStartTime()</td>
+    <th> Method Description</th>
+  </tr>
+  <tr>
+    <td>Returns the start time of the calendar item</td>
+  </tr>
+  <tr>
+    <th>Method Pseudo Code</th>
+  </tr>
+  <tr>
+    <td>
+    RETURN startTime
+    </td>
+  </tr>
+  <tr>
+    <td rowspan = "4">getStartDate()</td>
+    <th> Method Description</th>
+  </tr>
+  <tr>
+    <td>Returns the start date of the calendar item</td>
+  </tr>
+  <tr>
+    <th>Method Pseudo Code</th>
+  </tr>
+  <tr>
+    <td>
+    RETURN startDate
+    </td>
+  </tr>
+    <tr>
+    <td rowspan = "4">getEndTime()</td>
+    <th> Method Description</th>
+  </tr>
+  <tr>
+    <td>Returns the end time of the calendar item</td>
+  </tr>
+  <tr>
+    <th>Method Pseudo Code</th>
+  </tr>
+  <tr>
+    <td>
+    RETURN endTime
+    </td>
+  </tr>
+  <tr>
+    <td rowspan = "4">getEndDate()</td>
+    <th> Method Description</th>
+  </tr>
+  <tr>
+    <td>Returns the end date of the calendar item</td>
+  </tr>
+  <tr>
+    <th>Method Pseudo Code</th>
+  </tr>
+  <tr>
+    <td>
+    RETURN endDate
+    </td>
+  </tr>
+  <tr>
+    <td rowspan = "4">setName(name)</td>
+    <th> Method Description</th>
+  </tr>
+  <tr>
+    <td>Set the calendar item name</td>
+  </tr>
+  <tr>
+    <th>Method Pseudo Code</th>
+  </tr>
+  <tr>
+    <td>
+    this->name = name
+    </td>
+  </tr>
+   <tr>
+    <td rowspan = "4">setStartTime(startTime)</td>
+    <th> Method Description</th>
+  </tr>
+  <tr>
+    <td>Set the calendar item start time</td>
+  </tr>
+  <tr>
+    <th>Method Pseudo Code</th>
+  </tr>
+  <tr>
+    <td>
+    this->startTime = startTime
+    </td>
+  </tr>
+  <tr>
+    <td rowspan = "4">setStartDate(startDate)</td>
+    <th> Method Description</th>
+  </tr>
+  <tr>
+    <td>Set the calendar item start date</td>
+  </tr>
+  <tr>
+    <th>Method Pseudo Code</th>
+  </tr>
+  <tr>
+    <td>
+    this->startDate = startDate
+    </td>
+  </tr>
+    <tr>
+    <td rowspan = "4">setEndTime(End Time)</td>
+    <th> Method Description</th>
+  </tr>
+  <tr>
+    <td>Set the calendar item end time</td>
+  </tr>
+  <tr>
+    <th>Method Pseudo Code</th>
+  </tr>
+  <tr>
+    <td>
+    this->endTime = endTime
+    </td>
+  </tr>
+  <tr>
+    <td rowspan = "4">setEndDate(endDate)</td>
+    <th> Method Description</th>
+  </tr>
+  <tr>
+    <td>Set the calendar item end date</td>
+  </tr>
+  <tr>
+    <th>Method Pseudo Code</th>
+  </tr>
+  <tr>
+    <td>
+    this->endDate = endDate
+    </td>
+  </tr>
+</table>
+
+
+### 4.2.3.2 Assignment
+<table>
+  <tr>
+    <th colspan = "3">Class Name: Assignment</th>
+  </tr>
+  <tr>
+    <td colspan = "3">Brief Description: The Assignment class is a type of calendar item. An assignment object contains all information related to a student's individual school assignment. When data is collected from I-Learn, each individual assignment is stored in an assignment instance and is then added into the Calendar's collection of visible items. This class includes all attributes that are found in the Calendar Item class.</td>
+  </tr>
+  </table>
+  <table>
+  <tr>
+    <th>Attributes(Fields)</th>
+    <th colspan = "2">Attribute Description</th>
+  </tr>
+  <tr>
+    <td>Due Date</td><td colspan = "2">The time when the assignment is due on I-Learn. Includes the date and time. This affects where the item is placed onto the calendar.</td>
+  </tr>
+   <tr>
+    <td>Course Name</td><td colspan = "2">The name of the course which the assignment belongs to.</td>
+  </tr>
+   <tr>
+    <td>Assignment Description</td><td colspan = "2">The description of the individual assignment.</td>
+  </tr>
+  <tr>
+    <td>Assignment Type</td><td colspan = "2">The type of the assignment. Used to set the priority level for the assignment.</td>
+  </tr>
+  <tr>
+    <td>Assignment Completed</td><td colspan = "2">A boolean value that shows if an assignment has been completed</td>
+  </tr>
+    <tr>
+    <td>Assignment URL</td><td colspan = "2">URL that points to the assignment</td>
+  </tr>
+   <tr>
+    <th>Methods(operations) </th>
+    <th></th>
+  </tr>
+  <tr>
+    <td rowspan = "4">getDueDate()</td>
+    <th> Method Description</th>
+  </tr>
+  <tr>
+    <td>Returns the assignment due date</td>
+  </tr>
+  <tr>
+    <th>Method Pseudo Code</th>
+  </tr>
+  <tr>
+    <td>
+    RETURN dueDate
+  </tr>
+  <tr>
+    <td rowspan = "4">getCourseName()</td>
+    <th> Method Description</th>
+  </tr>
+  <tr>
+    <td>Returns the assignment course name</td>
+  </tr>
+  <tr>
+    <th>Method Pseudo Code</th>
+  </tr>
+  <tr>
+    <td>
+    RETURN courseName
+    </td>
+  </tr>
+  <tr>
+    <td rowspan = "4">getAssignmentDescription()</td>
+    <th> Method Description</th>
+  </tr>
+  <tr>
+    <td>Returns the description of the assignment</td>
+  </tr>
+  <tr>
+    <th>Method Pseudo Code</th>
+  </tr>
+  <tr>
+    <td>
+    RETURN assignmentDescription
+    </td>
+  </tr>
+    <tr>
+    <td rowspan = "4">getAssignmentType()</td>
+    <th> Method Description</th>
+  </tr>
+  <tr>
+    <td>Returns the type of the assignment</td>
+  </tr>
+  <tr>
+    <th>Method Pseudo Code</th>
+  </tr>
+  <tr>
+    <td>
+    RETURN assignmentType
+    </td>
+  </tr>
+  <tr>
+    <td rowspan = "4">getAssignmentURL()</td>
+    <th> Method Description</th>
+  </tr>
+  <tr>
+    <td>Returns the assignment URL</td>
+  </tr>
+  <tr>
+    <th>Method Pseudo Code</th>
+  </tr>
+  <tr>
+    <td>
+    RETURN assignmentURL
+    </td>
+  </tr>
+  <tr>
+    <td rowspan = "4">setDueDate(dueDate)</td>
+    <th> Method Description</th>
+  </tr>
+  <tr>
+    <td>Set the assignment dueDate</td>
+  </tr>
+  <tr>
+    <th>Method Pseudo Code</th>
+  </tr>
+  <tr>
+    <td>
+    this->dueDate = dueDate
+    </td>
+  </tr>
+   <tr>
+    <td rowspan = "4">setCourseName(courseName)</td>
+    <th> Method Description</th>
+  </tr>
+  <tr>
+    <td>Set the assignment course name</td>
+  </tr>
+  <tr>
+    <th>Method Pseudo Code</th>
+  </tr>
+  <tr>
+    <td>
+    this->courseName = courseName
+    </td>
+  </tr>
+  <tr>
+    <td rowspan = "4">setAssignmentDescription(assignmentDescription)</td>
+    <th> Method Description</th>
+  </tr>
+  <tr>
+    <td>Set the assignment description</td>
+  </tr>
+  <tr>
+    <th>Method Pseudo Code</th>
+  </tr>
+  <tr>
+    <td>
+    this->assignmentDescription = assignmentDescription
+    </td>
+  </tr>
+    <tr>
+    <td rowspan = "4">setAssignmentType(assignmentType)</td>
+    <th> Method Description</th>
+  </tr>
+  <tr>
+    <td>Set the assignment type</td>
+  </tr>
+  <tr>
+    <th>Method Pseudo Code</th>
+  </tr>
+  <tr>
+    <td>
+    this->assignmentType = assignmentType
+    </td>
+  </tr>
+  <tr>
+    <td rowspan = "4">setAssignmentURL(assignmentURL)</td>
+    <th> Method Description</th>
+  </tr>
+  <tr>
+    <td>Set the assignment URL</td>
+  </tr>
+  <tr>
+    <th>Method Pseudo Code</th>
+  </tr>
+  <tr>
+    <td>
+    this->assignmentURL = assignmentURL
+    </td>
+  </tr>
+</table>
+
+### 4.2.3.3 Event
+<table>
+  <tr>
+    <th colspan = "3">Class Name: Event</th>
+  </tr>
+  <tr>
+    <td colspan = "3">Brief Description: The Event class is a type of calendar item. Unlike an assignment object, an event object is created by the user rather than I-Learn and does not relate to a school assignment. An event object contains all information relating to a future event that the user needs to add to their calendar. Most importantly an event object can be reoccuring in the calendar. This class includes all attributes that are found in the Calendar Item class.</td>
+  </tr>
+  </table>
+  <table>
+  <tr>
+    <th>Attributes(Fields)</th>
+    <th colspan = "2">Attribute Description</th>
+  </tr>
+  <tr>
+    <td>location</td><td colspan = "2">A brief description of the location for the event.</td>
+  </tr>
+   <tr>
+    <td>event Description</td><td colspan = "2">A user generated description of the event.</td>
+  </tr>
+  <tr>
+    <td>event frequency</td><td colspan = "2"> a number representing how often the event is to be repeated. Frequencies include daily = 1 , weekly = 3, monthly = 7, quarterly = 11, semi-annually = 13, and annually = 17. </td>
+  </tr>
+  <tr>
+    <td>event day occurence</td><td colspan = "2"> a number representing which days of the week the event is to be displayed on the calendar. Each day of the week is represented by a factor of 2(ex. Sunday = 1, Monday = 2, Tuesday = 4 etc.) each day checked by the user adds the corrsponding day's value to get the final value, which determines the days that the event will be displayed.</td>
+  </tr>
+   <tr>
+    <th>Methods(operations) </th>
+    <th></th>
+  </tr>
+  <tr>
+    <td rowspan = "4">Data getters</td>
+    <th> Method Description</th>
+  </tr>
+  <tr>
+    <td>This serves as a place holder for all “getter” methods for the data elements that belong to this class.</td>
+  </tr>
+  <tr>
+    <th>Method Pseudo Code</th>
+  </tr>
+  <tr>
+    <td>getValueofDataElement():</br> return dataElement</td>
+  </tr>
+  <tr>
+    <td rowspan = "4">Data setters</td>
+    <th> Method Description</th>
+  </tr>
+  <tr>
+    <td>This serves as a place holder for all “setter” methods for the data elements that belong to this class.</td>
+  </tr>
+  <tr>
+    <th>Method Pseudo Code</th>
+  </tr>
+  <tr>
+    <td>setValueofDataElement(dataValue):</br> dataElement = dataValue</td>
+  </tr>
+  <tr>
+    <td rowspan = "4">Get day occurence</td>
+    <th> Method Description</th>
+  </tr>
+  <tr>
+    <td>Returns a list of weekdays for which the event is to occur on the calendar. It does this by seperating each number value from the total value</td>
+  </tr>
+   <tr>
+    <th>Method Pseudo Code</th>
+  </tr>
+  <tr>
+    <td>getDayOccurence():</br> 
+    dayArray = {sun, mon, tue, wed, thur, fri, sat}</br>
+    numberArray = {1, 2, 4, 8, 16, 32, 64}</br>
+    dayList = {}</br>
+    for each number in numberArray (starting at end){</br>
+    if number >= event day occurence:</br>
+    continue</br>
+    else:</br> 
+    event day occurence -= number</br>
+    add corresponding day to dayList }</br>
+    return dayList
+    </td>
+  </tr>
+</table>
+
+### 4.2.3.4 Notification
+<table>
+  <tr>
+    <th colspan = "3">Class Name: Notification</th>
+  </tr>
+  <tr>
+    <td colspan = "3">Brief Description: The Notification class is a type of calendar item. A notification object is essentially a reminder for the user and can be connected to any calendar item found within a user's calendar. A notification is created in one of two ways: The user creates a reminder for a calendar item and sets it for a specific time, or the user has set their calendar to notify them when a assignment or event's start time is approaching the current time.</td>
+  </tr>
+  </table>
+  <table>
+  <tr>
+    <th>Attributes(Fields)</th>
+    <th colspan = "2">Attribute Description</th>
+  </tr>
+  <tr>
+    <td>reminder time</td><td colspan = "2">The time for when the notification is to alert the user. Includes the date and time.</td>
+  </tr>
+  <tr>
+    <td>calendar item</td><td colspan = "2">The item that the notification is connected to.</td>
+  </tr>
+  <tr>
+    <th>Methods(operations) </th>
+    <th></th>
+  </tr>
+  <tr>
+    <td rowspan = "4">Data getters</td>
+    <th> Method Description</th>
+  </tr>
+  <tr>
+    <td>This serves as a place holder for all “getter” methods for the data elements that belong to this class.</td>
+  </tr>
+  <tr>
+    <th>Method Pseudo Code</th>
+  </tr>
+  <tr>
+    <td>getValueofDataElement():</br> return dataElement</td>
+  </tr>
+  <tr>
+    <td rowspan = "4">Data setters</td>
+    <th> Method Description</th>
+  </tr>
+  <tr>
+    <td>This serves as a place holder for all “setter” methods for the data elements that belong to this class.</td>
+  </tr>
+  <tr>
+    <th>Method Pseudo Code</th>
+  </tr>
+  <tr>
+    <td>setValueofDataElement(dataValue):</br> dataElement = dataValue</td>
+  </tr>
+</table>
+
+### 4.2.3.5 Student
+<table>
+  <tr>
+    <th colspan = "3">Class Name: Student</th>
+  </tr>
+  <tr>
+    <td colspan = "3">Brief Description: The Student class holds all data related to a user and works with the student controller class to save new insertions and modifications of user data. </td>
+  </tr>
+  </table>
+  <table>
+  <tr>
+    <th>Attributes(Fields)</th>
+    <th colspan = "2">Attribute Description</th>
+  </tr>
+  <tr>
+    <td>name</td><td colspan = "2">The name of the student user</td>
+  </tr>
+   <tr>
+    <td>username</td><td colspan = "2"> The username credential that the student uses to log in to the calendar</td>
+  </tr>
+   <tr>
+    <td>password</td><td colspan = "2">The password that the student uses to log in</td>
+  </tr>
+  <tr>
+    <td></td><td colspan = "2"></td>
+  </tr>
+   <tr>
+    <th>Methods(operations) </th>
+    <th></th>
+  </tr>
+  <tr>
+    <td rowspan = "4">Data getters</td>
+    <th> Method Description</th>
+  </tr>
+  <tr>
+    <td>This serves as a place holder for all “getter” methods for the data elements that belong to this class.</td>
+  </tr>
+  <tr>
+    <th>Method Pseudo Code</th>
+  </tr>
+  <tr>
+    <td>getValueofDataElement():</br> return dataElement</td>
+  </tr>
+  <tr>
+    <td rowspan = "4">Data setters</td>
+    <th> Method Description</th>
+  </tr>
+  <tr>
+    <td>This serves as a place holder for all “setter” methods for the data elements that belong to this class.</td>
+  </tr>
+  <tr>
+    <th>Method Pseudo Code</th>
+  </tr>
+  <tr>
+    <td>setValueofDataElement(dataValue):</br> dataElement = dataValue</td>
+  </tr>
+</table>
+
+### 4.2.3.6 Course
+<table>
+  <tr>
+    <th colspan = "3">Class Name: Course</th>
+  </tr>
+  <tr>
+    <td colspan = "3">Brief Description: The Course class stores the users Course pulled from I-Learn. This class primarily interacts with the I-Learn Facade class to store course information.</td>
+  </tr>
+  </table>
+  <table>
+  <tr>
+    <th>Attributes(Fields)</th>
+    <th colspan = "2">Attribute Description</th>
+  </tr>
+  <tr>
+    <td>id</td><td colspan = "2">The unique identifier for the course</td>
+  </tr>
+   <tr>
+    <td>name</td><td colspan = "2">The name of the course</td>
+  </tr>
+  <tr>
+    <td>startDate</td><td colspan = "2">The start date for the course</td>
+  </tr>
+   <tr>
+    <td>endDate</td><td colspan = "2">The end date for the course</td>
+  </tr>
+  <tr>
+    <td></td><td colspan = "2"></td>
+  </tr>
+   <tr>
+    <th>Methods(operations) </th>
+    <th></th>
+  </tr>
+  <tr>
+    <td rowspan = "4">getId()</td>
+    <th> Method Description</th>
+  </tr>
+  <tr>
+    <td>Returns the course unique identifier</td>
+  </tr>
+  <tr>
+    <th>Method Pseudo Code</th>
+  </tr>
+  <tr>
+    <td>
+    RETURN id
+  </tr>
+  <tr>
+    <td rowspan = "4">getName()</td>
+    <th> Method Description</th>
+  </tr>
+  <tr>
+    <td>Returns the name of the course</td>
+  </tr>
+  <tr>
+    <th>Method Pseudo Code</th>
+  </tr>
+  <tr>
+    <td>
+    RETURN name
+    </td>
+  </tr>
+  <tr>
+    <td rowspan = "4">getStartDate()</td>
+    <th> Method Description</th>
+  </tr>
+  <tr>
+    <td>Returns the start date of the course</td>
+  </tr>
+  <tr>
+    <th>Method Pseudo Code</th>
+  </tr>
+  <tr>
+    <td>
+    RETURN startDate
+    </td>
+  </tr>
+  <tr>
+    <td rowspan = "4">getEndDate()</td>
+    <th> Method Description</th>
+  </tr>
+  <tr>
+    <td>Returns the end date of the course</td>
+  </tr>
+  <tr>
+    <th>Method Pseudo Code</th>
+  </tr>
+  <tr>
+    <td>
+    RETURN endDate
+    </td>
+  </tr>
+  <tr>
+    <td rowspan = "4">setId(id)</td>
+    <th> Method Description</th>
+  </tr>
+  <tr>
+    <td>Set the course unique identifier</td>
+  </tr>
+  <tr>
+    <th>Method Pseudo Code</th>
+  </tr>
+  <tr>
+    <td>
+    this->id = id
+    </td>
+  </tr>
+  <tr>
+    <td rowspan = "4">setName(name)</td>
+    <th> Method Description</th>
+  </tr>
+  <tr>
+    <td>Set the course name</td>
+  </tr>
+  <tr>
+    <th>Method Pseudo Code</th>
+  </tr>
+  <tr>
+    <td>
+    this->name = name
+    </td>
+  </tr>
+  <tr>
+    <td rowspan = "4">setStartDate(startDate)</td>
+    <th> Method Description</th>
+  </tr>
+  <tr>
+    <td>Set the course start date</td>
+  </tr>
+  <tr>
+    <th>Method Pseudo Code</th>
+  </tr>
+  <tr>
+    <td>
+    this->startDate = startDate
+    </td>
+  </tr>
+  <tr>
+    <td rowspan = "4">setEndDate(endDate)</td>
+    <th> Method Description</th>
+  </tr>
+  <tr>
+    <td>Set the course end date</td>
+  </tr>
+  <tr>
+    <th>Method Pseudo Code</th>
+  </tr>
+  <tr>
+    <td>
+    this->endDate = endDate
+    </td>
+  </tr>
+</table>
+
+
 ## 4.3 System Interfaces
 
 ### 4.3.1 User Interface
@@ -2352,4 +2386,6 @@ It is assumed that the University will allow students to login to their universi
 ## 5.2 Internal Software Data Structure
 
 ## 5.3 Global Data Structure
+
+# Index
 
