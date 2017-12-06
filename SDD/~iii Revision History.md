@@ -6,5 +6,6 @@
 | Draft         | 11/12/2017 | Second Draft              |   1.1   |
 | Non-Required Draft | 11/18/2017 | Third Draft          |   1.2   |
 | Use Case Focus | 11/25/2017 | Fourth Draft             |   1.3   |
-| Whole Document Work | 11/25/2017 | Fifth Draft         |   1.4   |
+| Whole Document Work | 12/2/2017 | Fifth Draft          |   1.4   |
+| Whole Document Work | 12/9/2017 | Sixth Draft          |   1.5   |
 
