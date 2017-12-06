@@ -34,7 +34,6 @@ type "3.2.2.1.md" >> CS364_SDD_Document.md
 type "3.2.2.2.md" >> CS364_SDD_Document.md
 type "3.2.2.3.md" >> CS364_SDD_Document.md
 type "3.2.2.4.md" >> CS364_SDD_Document.md
-type "3.2.2.5.md" >> CS364_SDD_Document.md
 type "3.2.3.0.md" >> CS364_SDD_Document.md
 type "3.2.3.1.md" >> CS364_SDD_Document.md
 type "3.2.3.2.md" >> CS364_SDD_Document.md
