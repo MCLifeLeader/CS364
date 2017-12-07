@@ -174,7 +174,7 @@ The Administrative User is a user who oversees account creation and administrati
 
 Use cases provide design viewpoints that show the interactions between the actors or personas and the system that are required. The following table is employed as a template to describe use cases in section 3.2. The left side of the table remains the same, while the right provides a description of the text that will be filled in according to the particular use case.
 
-#### 3.2.0.1 Use Case Template
+#### 3.2.0.0 Use Case Template
 
 | Data | Description |
 | --- |--- |
@@ -182,7 +182,7 @@ Use cases provide design viewpoints that show the interactions between the actor
 | Page Title: | The page title is the title of the web page corresponding to the use case or "N/A" if not applicable. |
 | Author: |  |
 | Type: | Process. |
-| Purpose: | |
+| Purpose: |A description of why the element exists. The purpose attribute shall provide the rationale for the creation of the element.|
 | Parent User Story:| The Parent User Story links to the higher level use case that is parent to a particular use case.|
 | Actor(s)/Persona(s): | The design stakeholders that the use case pertains to.|
 | Pre-conditions/Product(s) Required: | The conditions, procedures, and requirements to be completed before the use case may be attempted.|
@@ -202,7 +202,7 @@ Use cases provide design viewpoints that show the interactions between the actor
 | Page Title: | Home Page|
 | Author: |  |
 | Type: | Process. |
-| Purpose: | |
+| Purpose: |Calendar display allows the user to view past and upcoming events and to allow scheduling of future events.|
 | Parent User Story:|N/A|
 | Actor(s)/Persona(s): | Calendar Users|
 | Pre-conditions/Product(s) Required: | A compatible web browser such as Google Chrome, Firefox, Chromium, Safari, or Microsoft Edge.|
@@ -218,7 +218,7 @@ Use cases provide design viewpoints that show the interactions between the actor
 | Page Title: | Checking the Schedule|
 | Author: |  |
 | Type: | Process. |
-| Purpose: | |
+| Purpose: | The user must be able to check their schedule as it is a base function of a calendar.|
 | Parent User Story:| N/A|
 | Actor(s)/Persona(s): | Calendar Users|
 | Pre-conditions/Product(s) Required: | User is logged in. |
@@ -235,7 +235,7 @@ Use cases provide design viewpoints that show the interactions between the actor
 | Page Title: | Creating an Event|
 | Author: |  |
 | Type: | Process. |
-| Purpose: | |
+| Purpose: | Creating event in the calendar allows the user to schedule future events to assist in organization and productivity.|
 | Parent User Story:| N/A|
 | Actor(s)/Persona(s): | Calendar Users|
 | Pre-conditions/Product(s) Required: | User is logged in. |
@@ -252,7 +252,7 @@ Use cases provide design viewpoints that show the interactions between the actor
 | Page Title: | Switching Views|
 | Author: |  |
 | Type: | Process. |
-| Purpose: | |
+| Purpose: | Switching views allows the user to have alternative ways to view their calendar and increase productivity.|
 | Parent User Story:| 3.2.1.1|
 | Actor(s)/Persona(s): | Calendar Users|
 | Pre-conditions/Product(s) Required: | User is logged in. User is on home page.|
@@ -269,7 +269,7 @@ Use cases provide design viewpoints that show the interactions between the actor
 | Page Title: | Creating an Alert|
 | Author: |  |
 | Type: | Process. |
-| Purpose: | |
+| Purpose: |An alert allows the user to be notified as to what action is needed for different events.|
 | Parent User Story:| N/A |
 | Actor(s)/Persona(s): | Calendar User, System|
 | Pre-conditions/Product(s) Required: |  1. An application event requiring an alert occurs. <br> 2. An error occurs that requires immediate user action or notification.|
@@ -286,7 +286,7 @@ Use cases provide design viewpoints that show the interactions between the actor
 | Page Title: | Access Assignment|
 | Author: |  |
 | Type: | Process. |
-| Purpose: | |
+| Purpose: | The user is able to click links of assisngments in the calendar view to be directed to each assignment. |
 | Parent User Story:| N/A|
 | Actor(s)/Persona(s): | System, Calendar Users|
 | Pre-conditions/Product(s) Required: | 1. User is Logged in <br> 2. Assignments have been imported.|
@@ -302,7 +302,7 @@ Use cases provide design viewpoints that show the interactions between the actor
 | Page Title: | Show Assignment Details|
 | Author: |  |
 | Type: | Process. |
-| Purpose: | |
+| Purpose: | The assignment details are provided to the user for easier access and productivity while using the calendar.|
 | Parent User Story:|3.2.1.5|
 | Actor(s)/Persona(s): | System|
 | Pre-conditions/Product(s) Required: | 1. User is logged in<br> 2. Assignments have been imported.|
