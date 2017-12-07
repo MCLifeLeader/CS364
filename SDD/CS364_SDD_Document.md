@@ -180,6 +180,7 @@ Use cases provide design viewpoints that show the interactions between the actor
 | --- |--- |
 | ScreenShot/Mockup: | The screenshot/Mockup will contain a graphical illustration which will show the design view of the use case under consideration.|
 | Page Title: | The page title is the title of the web page corresponding to the use case or "N/A" if not applicable. |
+| Author: |  |
 | Type: | Process. |
 | Purpose: | |
 | Parent User Story:| The Parent User Story links to the higher level use case that is parent to a particular use case.|
@@ -199,6 +200,7 @@ Use cases provide design viewpoints that show the interactions between the actor
 | --- |--- |
 | ScreenShot/Mockup: |<img  src="https://github.com/MCLifeLeader/CS364/blob/master/SDD/resources/3.2.1.0.png" height="50%" width="50%">|
 | Page Title: | Home Page|
+| Author: |  |
 | Type: | Process. |
 | Purpose: | |
 | Parent User Story:|N/A|
@@ -214,6 +216,7 @@ Use cases provide design viewpoints that show the interactions between the actor
 | --- |--- |
 | ScreenShot/Mockup: | |
 | Page Title: | Checking the Schedule|
+| Author: |  |
 | Type: | Process. |
 | Purpose: | |
 | Parent User Story:| N/A|
@@ -230,6 +233,7 @@ Use cases provide design viewpoints that show the interactions between the actor
 | --- |--- |
 | ScreenShot/Mockup: |<img  src="https://github.com/MCLifeLeader/CS364/blob/master/SDD/resources/3.2.16.0.jpg" height="50%" width="50%"> |
 | Page Title: | Creating an Event|
+| Author: |  |
 | Type: | Process. |
 | Purpose: | |
 | Parent User Story:| N/A|
@@ -246,6 +250,7 @@ Use cases provide design viewpoints that show the interactions between the actor
 | --- |--- |
 | ScreenShot/Mockup: | |
 | Page Title: | Switching Views|
+| Author: |  |
 | Type: | Process. |
 | Purpose: | |
 | Parent User Story:| 3.2.1.1|
@@ -262,6 +267,7 @@ Use cases provide design viewpoints that show the interactions between the actor
 | --- |--- |
 | ScreenShot/Mockup: | |
 | Page Title: | Creating an Alert|
+| Author: |  |
 | Type: | Process. |
 | Purpose: | |
 | Parent User Story:| N/A |
@@ -278,6 +284,7 @@ Use cases provide design viewpoints that show the interactions between the actor
 | --- |--- |
 | ScreenShot/Mockup: | <img  src="https://github.com/MCLifeLeader/CS364/blob/master/SDD/resources/3.2.1.6.png" height="50%" width="50%">|
 | Page Title: | Access Assignment|
+| Author: |  |
 | Type: | Process. |
 | Purpose: | |
 | Parent User Story:| N/A|
@@ -293,6 +300,7 @@ Use cases provide design viewpoints that show the interactions between the actor
 | --- |--- |
 | ScreenShot/Mockup: |See 3.2.1.6|
 | Page Title: | Show Assignment Details|
+| Author: |  |
 | Type: | Process. |
 | Purpose: | |
 | Parent User Story:|3.2.1.5|
@@ -308,6 +316,7 @@ Use cases provide design viewpoints that show the interactions between the actor
 | --- |--- |
 | ScreenShot/Mockup: |<img  src="https://github.com/MCLifeLeader/CS364/blob/master/SDD/resources/3.2.1.8.png" height="50%" width="50%"> |
 | Page Title: | Show Holidays,|
+| Author: |  |
 | Type: | Process. |
 | Purpose: | |
 | Parent User Story:| N/A|
@@ -323,6 +332,7 @@ Use cases provide design viewpoints that show the interactions between the actor
 | --- |--- |
 | ScreenShot/Mockup: |<img  src="https://github.com/MCLifeLeader/CS364/blob/master/SDD/resources/3.2.16.0.jpg" height="50%" width="50%"> |
 | Page Title: | Edit Event|
+| Author: |  |
 | Type: | Process. |
 | Purpose: | |
 | Parent User Story:| N/A|
@@ -340,6 +350,7 @@ Use cases provide design viewpoints that show the interactions between the actor
 | --- |--- |
 | ScreenShot/Mockup: |<img  src="https://github.com/MCLifeLeader/CS364/blob/master/SDD/resources/3.2.20.0.jpg" height="50%" width="50%"> |
 | Page Title: | Enable/Disable Notifications|
+| Author: |  |
 | Type: | Process. |
 | Purpose: | |
 | Parent User Story:| N/A|
@@ -356,6 +367,7 @@ Use cases provide design viewpoints that show the interactions between the actor
 | --- |--- |
 | ScreenShot/Mockup: |<img  src="https://github.com/MCLifeLeader/CS364/blob/master/SDD/resources/3.2.2.1.png" height="50%" width="50%"> |
 | Page Title: | Set Reminders|
+| Author: |  |
 | Type: | Process. |
 | Purpose: | |
 | Parent User Story:| N/A|
@@ -372,6 +384,7 @@ Use cases provide design viewpoints that show the interactions between the actor
 | --- |--- |
 | ScreenShot/Mockup: | |
 | Page Title: | Send Notification |
+| Author: |  |
 | Type: | Process. |
 | Purpose: | |
 | Parent User Story:| N/A|
@@ -388,6 +401,7 @@ Use cases provide design viewpoints that show the interactions between the actor
 | --- |--- |
 | ScreenShot/Mockup: | |
 | Page Title: | View Missed Notifications |
+| Author: |  |
 | Type: | Process. |
 | Purpose: | |
 | Parent User Story:| N/A|
@@ -403,6 +417,7 @@ Use cases provide design viewpoints that show the interactions between the actor
 | --- |--- |
 | ScreenShot/Mockup: | |
 | Page Title: | Set Notification Methods |
+| Author: |  |
 | Type: | Process. |
 | Purpose: | |
 | Parent User Story:| N/A|
@@ -421,6 +436,7 @@ Use cases provide design viewpoints that show the interactions between the actor
 | --- |--- |
 | ScreenShot/Mockup: | <img  src="https://github.com/MCLifeLeader/CS364/blob/master/SDD/resources/3.2.3.0.png" height="50%" width="50%"> |
 | Page Title: | Load To-Do List|
+| Author: |  |
 | Type: | Process. |
 | Purpose: | |
 | Parent User Story:| 3.2.1.1|
@@ -437,6 +453,7 @@ Use cases provide design viewpoints that show the interactions between the actor
 | --- |--- |
 | ScreenShot/Mockup: | |
 | Page Title: | Mark Assignment Done|
+| Author: |  |
 | Type: | Process. |
 | Purpose: | |
 | Parent User Story:| 3.2.3.0|
@@ -453,6 +470,7 @@ Use cases provide design viewpoints that show the interactions between the actor
 | --- |--- |
 | ScreenShot/Mockup: | |
 | Page Title: | Sort|
+| Author: |  |
 | Type: | Process. |
 | Purpose: | |
 | Parent User Story:|N/A |
@@ -469,6 +487,7 @@ Use cases provide design viewpoints that show the interactions between the actor
 | --- |--- |
 | ScreenShot/Mockup: | |
 | Page Title: | Filter by Class|
+| Author: |  |
 | Type: | Process. |
 | Purpose: | |
 | Parent User Story:|N/A |
@@ -487,6 +506,7 @@ Use cases provide design viewpoints that show the interactions between the actor
 | --- |--- |
 | ScreenShot/Mockup: | <img  src="https://github.com/MCLifeLeader/CS364/blob/master/SDD/resources/Cal_upload_mock.PNG" height="50%" width="100%"><img  src="https://github.com/MCLifeLeader/CS364/blob/master/SDD/resources/Cal_name_mock.PNG" height="50%" width="100%">|
 | Page Title: | Third Party Calendar Integration|
+| Author: |  |
 | Type: | Process. |
 | Purpose: | |
 | Parent User Story:| N/A|
@@ -502,6 +522,7 @@ Use cases provide design viewpoints that show the interactions between the actor
 | --- |--- |
 | ScreenShot/Mockup: ||
 | Page Title: | Export Calendar |
+| Author: |  |
 | Type: | Process. |
 | Purpose: | |
 | Parent User Story:| N/A|
@@ -519,6 +540,7 @@ Use cases provide design viewpoints that show the interactions between the actor
 | --- |--- |
 | ScreenShot/Mockup: | <img  src="https://github.com/MCLifeLeader/CS364/blob/master/SDD/resources/3.2.20.0.jpg" height="50%" width="50%">|
 | Page Title: | Settings |
+| Author: |  |
 | Type: | Process. |
 | Purpose: | |
 | Parent User Story:| none. |
@@ -535,6 +557,7 @@ Use cases provide design viewpoints that show the interactions between the actor
 | --- |--- |
 | ScreenShot/Mockup: | |
 | Page Title: | Set Time Zone|
+| Author: |  |
 | Type: | Process. |
 | Purpose: | |
 | Parent User Story:| 3.2.5.0|
@@ -551,6 +574,7 @@ Use cases provide design viewpoints that show the interactions between the actor
 | --- |--- |
 | ScreenShot/Mockup: | |
 | Page Title: | Change Profile Settings|
+| Author: |  |
 | Type: | Process. |
 | Purpose: | |
 | Parent User Story:| 3.2.5.2|
@@ -567,6 +591,7 @@ Use cases provide design viewpoints that show the interactions between the actor
 | --- |--- |
 | ScreenShot/Mockup: ||
 | Page Title: | Change Notification Settings|
+| Author: |  |
 | Type: | Process. |
 | Purpose: | |
 | Parent User Story:| N/A|
@@ -585,6 +610,7 @@ Use cases provide design viewpoints that show the interactions between the actor
 | --- |--- |
 | ScreenShot/Mockup: | <img src="https://github.com/MCLifeLeader/CS364/blob/master/SDD/resources/3.2.6.0.png" height="50%" width="50%">|
 | Page Title: | Import Assignments from I-Learn|
+| Author: |  |
 | Type: | Process. |
 | Purpose: | |
 | Parent User Story:| N/A|
@@ -605,6 +631,7 @@ This image details the steps necessary to import Ilearn data into the calendar a
 | --- |--- |
 | ScreenShot/Mockup: | <img  src="https://github.com/MCLifeLeader/CS364/blob/master/SDD/resources/3.2.6.0.png" height="50%" width="50%">|
 | Page Title: | Import Assignments from I-Learn Automatically|
+| Author: |  |
 | Type: | Process. |
 | Purpose: | |
 | Parent User Story:| |
@@ -621,6 +648,7 @@ This image details the steps necessary to import Ilearn data into the calendar a
 | --- |--- |
 | ScreenShot/Mockup: | <img src="https://github.com/MCLifeLeader/CS364/blob/master/SDD/resources/3.2.6.0.png" height="50%" width="50%">|
 | Page Title: | Import Assignments from I-Learn Manually|
+| Author: |  |
 | Type: | Process. |
 | Purpose: | |
 | Parent User Story:| |
@@ -643,6 +671,7 @@ This image details the steps necessary to import Ilearn data into the calendar a
 | --- |--- |
 | ScreenShot/Mockup: | |
 | Page Title: | Create account |
+| Author: |  |
 | Type: | Process. |
 | Purpose: | |
 | Parent User Story:| N/A|
@@ -658,6 +687,7 @@ This image details the steps necessary to import Ilearn data into the calendar a
 | --- |--- |
 | ScreenShot/Mockup: | |
 | Page Title: | Log-in Validation |
+| Author: |  |
 | Type: | Process. |
 | Purpose: | |
 | Parent User Story:| N/A|
@@ -674,6 +704,7 @@ This image details the steps necessary to import Ilearn data into the calendar a
 | --- |--- |
 | ScreenShot/Mockup: | |
 | Page Title: ||
+| Author: |  |
 | Type: | Process. |
 | Purpose: | |
 | Parent User Story:| N/A|
@@ -690,6 +721,7 @@ This image details the steps necessary to import Ilearn data into the calendar a
 | --- |--- |
 | ScreenShot/Mockup: | |
 | Page Title: | Forgot Password.|
+| Author: |  |
 | Type: | Process. |
 | Purpose: | |
 | Parent User Story:| 3.2.7.1 Log-in Use Cases: Validation.|
@@ -706,6 +738,7 @@ This image details the steps necessary to import Ilearn data into the calendar a
 | --- |--- |
 | ScreenShot/Mockup: | |
 | Page Title: | Log-in Page|
+| Author: |  |
 | Type: | Process. |
 | Purpose: | |
 | Parent User Story:| 3.2.7.1 Log-in Use Cases: Validation.|
