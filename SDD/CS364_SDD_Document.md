@@ -2153,5 +2153,8 @@ It is assumed that the University will allow students to login to their universi
 
 ## 5.3 Global Data Structure
 
+## 5.4 Database Exceptions
+The Database management will perform a verification for exceptions or errors during its processing. Every entity with their fields will setup with a value type (e.g, int, varchar, decimal, date, time, etc). If application try to write a decimal in a date field, an exception will be throwed. The application will handle transaction management, handling errors and exceptions.
+
 # Index
 
