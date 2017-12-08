@@ -8,6 +8,7 @@ files_to_add=(
 		"~ii Authors.md"
 		"~iii Revision History.md"
 		"~iv Table of Contents.md"
+		"~v List of Figures.md"
 		"1.0.0.0.md"
 		"1.1.0.0.md"
 		"1.2.0.0.md"
