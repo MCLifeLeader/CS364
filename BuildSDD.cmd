@@ -5,6 +5,7 @@ type "~i Title.md" > CS364_SDD_Document.md
 type "~ii Authors.md" >> CS364_SDD_Document.md
 type "~iii Revision History.md" >> CS364_SDD_Document.md
 type "~iv Table of Contents.md" >> CS364_SDD_Document.md
+type "~v List of Figures.md" >> CS364_SDD_Document.md
 
 type "1.0.0.0.md" >> CS364_SDD_Document.md
 
