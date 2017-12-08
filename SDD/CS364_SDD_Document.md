@@ -212,7 +212,7 @@ Use cases provide design entities that show the interactions between the actors 
 | Type: | Process. |
 | Purpose: |A description of why the element exists. The purpose attribute shall provide the rationale for the creation of the element.|
 | Parent User Story:| The Parent User Story links to the higher level use case that is parent to a particular use case.|
-| Stakeholders: | The design stakeholders that the use case pertains to.|
+| Stakeholders: | Calendar Manager, Developers, Testers, Technical Support |
 | Pre-conditions/Product(s) Required: | The conditions, procedures, and requirements to be completed before the use case may be attempted.|
 | Post-conditions/Product(s) Produced: | The conditions, procedures, and requirements to be completed upon termination of the use case.|
 | Links: | Additional references either inside this document or external references.|
@@ -232,7 +232,7 @@ Use cases provide design entities that show the interactions between the actors 
 | Type: | Process. |
 | Purpose: |Calendar display allows the user to view past and upcoming events and to allow scheduling of future events.|
 | Parent User Story:|N/A|
-| Stakeholders: | Calendar Manager|
+| Stakeholders: | Calendar Manager, Developers, Testers, Technical Support |
 | Pre-conditions/Product(s) Required: | A compatible web browser such as Google Chrome, Firefox, Chromium, Safari, or Microsoft Edge.|
 | Post-conditions/Product(s) Produced: | The Home Screen is displayed.|
 | Links: | None.|
@@ -249,7 +249,7 @@ Use cases provide design entities that show the interactions between the actors 
 | Type: | Process. |
 | Purpose: | The user must be able to check their schedule as it is a base function of a calendar.|
 | Parent User Story:| N/A|
-| Stakeholders: | Calendar Manager|
+| Stakeholders: | Calendar Manager, Developers, Testers, Technical Support |
 | Pre-conditions/Product(s) Required: | User is logged in. |
 | Post-conditions/Product(s) Produced: | Calendar is up on display. |
 | Links: | None.|
@@ -266,7 +266,7 @@ Use cases provide design entities that show the interactions between the actors 
 | Type: | Process. |
 | Purpose: | Creating event in the calendar allows the user to schedule future events to assist in organization and productivity.|
 | Parent User Story:| N/A|
-| Stakeholders: | Calendar Manager|
+| Stakeholders: | Calendar Manager, Developers, Testers, Technical Support |
 | Pre-conditions/Product(s) Required: | User is logged in. |
 | Post-conditions/Product(s) Produced: | Event is created and displays correctly on calendar.|
 | Links: | None.|
@@ -283,7 +283,7 @@ Use cases provide design entities that show the interactions between the actors 
 | Type: | Process. |
 | Purpose: | Switching views allows the user to have alternative ways to view their calendar and increase productivity.|
 | Parent User Story:| 3.2.1.1|
-| Stakeholders: | Calendar Manager|
+| Stakeholders: | Calendar Manager, Developers, Testers, Technical Support |
 | Pre-conditions/Product(s) Required: | User is logged in. User is on home page.|
 | Post-conditions/Product(s) Produced: | Calendar is displayed in the corresponding daily, weekly, or monthly view with the user's events and assignments shown. |
 | Links: | None.|
@@ -300,7 +300,7 @@ Use cases provide design entities that show the interactions between the actors 
 | Type: | Process. |
 | Purpose: |An alert allows the user to be notified as to what action is needed for different events.|
 | Parent User Story:| N/A |
-| Stakeholders: | Calendar Manager, System|
+| Stakeholders: | Calendar Manager, Developers, Testers, Technical Support |
 | Pre-conditions/Product(s) Required: |  1. An application event requiring an alert occurs. <br> 2. An error occurs that requires immediate user action or notification.|
 | Post-conditions/Product(s) Produced: | 1. The user is presented with the recommended course of action or the option to ignore. |
 | Links: | None.|
@@ -317,7 +317,7 @@ Use cases provide design entities that show the interactions between the actors 
 | Type: | Process. |
 | Purpose: | The user is able to click links of assignments in the calendar view to be directed to each assignment. |
 | Parent User Story:| N/A|
-| Stakeholders: | System, Calendar Manager|
+| Stakeholders: | Calendar Manager, Developers, Testers, Technical Support |
 | Pre-conditions/Product(s) Required: | 1. User is Logged in <br> 2. Assignments have been imported.|
 | Post-conditions/Product(s) Produced: | Assignment is displayed correctly to the user.|
 | Links: | None.|
@@ -334,7 +334,7 @@ Use cases provide design entities that show the interactions between the actors 
 | Type: | Process. |
 | Purpose: | The assignment details are provided to the user for easier access and productivity while using the calendar.|
 | Parent User Story:|3.2.1.5|
-| Stakeholders: | System|
+| Stakeholders: | Calendar Manager, Developers, Testers, Technical Support |
 | Pre-conditions/Product(s) Required: | 1. User is logged in<br> 2. Assignments have been imported.|
 | Post-conditions/Product(s) Produced: | Assignments details are shown and displayed correctly to the user.|
 | Links: | None.|
@@ -351,7 +351,7 @@ Use cases provide design entities that show the interactions between the actors 
 | Type: | Process. |
 | Purpose: | Holidays will be shown on the users' calendars to help the users plan accordingly. |
 | Parent User Story:| N/A|
-| Stakeholders: | Calendar Manager|
+| Stakeholders: | Calendar Manager, Developers, Testers, Technical Support |
 | Pre-conditions/Product(s) Required: | User is logged in. Calendar is loaded.|
 | Post-conditions/Product(s) Produced: | The user will see a text label on national holidays.|
 | Links: | None.|
@@ -368,7 +368,7 @@ Use cases provide design entities that show the interactions between the actors 
 | Type: | Process. |
 | Purpose: | Users will be able to edit events to reflect the most current event information and respond to changes in the details of an event. |
 | Parent User Story:| N/A|
-| Stakeholders: | Calendar Manager|
+| Stakeholders: | Calendar Manager, Developers, Testers, Technical Support |
 | Pre-conditions/Product(s) Required: | User is logged in. |
 | Post-conditions/Product(s) Produced: | Event is updated and displays correctly on calendar.|
 | Links: | None.|
@@ -387,7 +387,7 @@ Use cases provide design entities that show the interactions between the actors 
 | Type: | Process. |
 | Purpose: | Calendar event notifications will help remind the user of upcoming events, activities, and holidays. |
 | Parent User Story:| N/A|
-| Stakeholders: | Calendar Manager|
+| Stakeholders: | Calendar Manager, Developers, Testers, Technical Support |
 | Pre-conditions/Product(s) Required: | 1. Notification permissions are enabled.|
 | Post-conditions/Product(s) Produced: | 1. User will be able to toggle notifications. <br> 2. When notifications are disabled, a disabled notifications icon will be present within the application to remind the user that the application will not remind them of upcoming events.  |
 | Links: |3.2.5.0|
@@ -404,7 +404,7 @@ Use cases provide design entities that show the interactions between the actors 
 | Type: | Process. |
 | Purpose: | Reminders will be available to the user to help remind them of upcomings events, activities and holidays.  |
 | Parent User Story:| N/A|
-| Stakeholders: | System, Calendar Manager|
+| Stakeholders: | Calendar Manager, Developers, Testers, Technical Support |
 | Pre-conditions/Product(s) Required: |1. User is logged in. <br> 2. An event has been created.|
 | Post-conditions/Product(s) Produced: |  1. A reminder is prepared. <br> 2. User is returned to their last viewed calendar.|
 | Links: | None.|
@@ -421,7 +421,7 @@ Use cases provide design entities that show the interactions between the actors 
 | Type: | Process. |
 | Purpose: | The application will send notifications to the users invited to each event to remind them of upcoming events, activities and holidays.|
 | Parent User Story:| N/A|
-| Stakeholders: | System, Calendar Manager|
+| Stakeholders: | Calendar Manager, Developers, Testers, Technical Support |
 | Pre-conditions/Product(s) Required: |1. User is logged in. <br> 2. An event has been created. <br> 3. Notification permissions are allowed. <br> 4. Notifications are enabled in the settings. |
 | Post-conditions/Product(s) Produced: |  1. A notification is prepared. <br> 2. User is returned to their last viewed calendar. <br> 3. Notification is sent to user based on their preference selected during the event creation.|
 | Links: | None.|
@@ -438,7 +438,7 @@ Use cases provide design entities that show the interactions between the actors 
 | Type: | Process. |
 | Purpose: | The application will send reminders about missed notifications to help ensure the user doesn't miss important events.|
 | Parent User Story:| N/A|
-| Stakeholders: | System, Calendar Manager|
+| Stakeholders: | Calendar Manager, Developers, Testers, Technical Support |
 | Pre-conditions/Product(s) Required: |1. User is logged in. <br> 2. A notification has been created. <br> 3. Users have been sent a notification.|
 | Post-conditions/Product(s) Produced: |  1. A notification has been viewed. <br> 2. User is returned to their last viewed calendar. <br> 3. Missing notifications are empty.|
 | Links: | None.|
@@ -454,7 +454,7 @@ Use cases provide design entities that show the interactions between the actors 
 | Type: | Process. |
 | Purpose: | To allow the user to decide which notifications they would like to recieve. |
 | Parent User Story:| N/A|
-| Stakeholders: | System, Calendar Manager|
+| Stakeholders: | Calendar Manager, Developers, Testers, Technical Support |
 | Pre-conditions/Product(s) Required: |1. User is logged in. <br> 2. User goes to notification settings. |
 | Post-conditions/Product(s) Produced: |  1. User's notification methods have been updated. <br> 2. User is returned to their last viewed calendar.|
 | Links: | None.|
@@ -473,7 +473,7 @@ Use cases provide design entities that show the interactions between the actors 
 | Type: | Process. |
 | Purpose: | Allow the user to see their list they have created of objectives they are trying to complete. |
 | Parent User Story:| 3.2.1.1|
-| Stakeholders: | Calendar Manager|
+| Stakeholders: | Calendar Manager, Developers, Testers, Technical Support |
 | Pre-conditions/Product(s) Required: | User is logged in. User is on home page.|
 | Post-conditions/Product(s) Produced: | To-Do list is shown with the user's assignments and events shown. |
 | Links: | None.|
@@ -490,7 +490,7 @@ Use cases provide design entities that show the interactions between the actors 
 | Type: | Process. |
 | Purpose: | Allow the user to keep track of assignments done by checking them as completed. |
 | Parent User Story:| 3.2.3.0|
-| Stakeholders: | Calendar Manager|
+| Stakeholders: | Calendar Manager, Developers, Testers, Technical Support |
 | Pre-conditions/Product(s) Required: | User is logged in. User is on To-Do List.|
 | Post-conditions/Product(s) Produced: | To-Do list is displayed with the user's incomplete events and assignments shown. |
 | Links: | None.|
@@ -507,7 +507,7 @@ Use cases provide design entities that show the interactions between the actors 
 | Type: | Process. |
 | Purpose: |To provide the user with a way to organize their assignments. |
 | Parent User Story:|N/A |
-| Stakeholders: | System, User|
+| Stakeholders: | Calendar Manager, Developers, Testers, Technical Support |
 | Pre-conditions/Product(s) Required: | 1. User is logged in. <br> 2. The user's courses have been added into the calendar. <br> 3. The user is on To-Do List View.|
 | Post-conditions/Product(s) Produced: | The assignments on the To-Do list page are sorted by the user's selected method.|
 | Links: | None.|
@@ -524,7 +524,7 @@ Use cases provide design entities that show the interactions between the actors 
 | Type: | Process. |
 | Purpose: | To provide the user with a way to search for all assignments related to a specific course. |
 | Parent User Story:|N/A |
-| Stakeholders: | System, User|
+| Stakeholders: | Calendar Manager, Developers, Testers, Technical Support |
 | Pre-conditions/Product(s) Required: | 1. User is logged in. <br> 2. The user's courses have been added into the calendar. <br> 3. The user is on To-Do List View.|
 | Post-conditions/Product(s) Produced: | 1. A filtered To-Do list is presented based on the class selected by the user.|
 | Links: | None.|
@@ -543,7 +543,7 @@ Use cases provide design entities that show the interactions between the actors 
 | Type: | Process. |
 | Purpose: | Allow users to connect other supporting calendars to have everything in one place, instead of having to get on multiple calendars to check different objectives. |
 | Parent User Story:| N/A|
-| Stakeholders: | Calendar Manager|
+| Stakeholders: | Calendar Manager, Developers, Testers, Technical Support |
 | Pre-conditions/Product(s) Required: | 1. Calendar Portal has been brought up and configured.<br/> 2. User has made an account for the Calendar application with a registered e-mail address. <br/> 3. User has logged into the Calendar Portal. <br/> 4. User has exported their third party calendars using the standard iCalendar format.|
 | Post-conditions/Product(s) Produced: | 1. The user will be directed to upload their iCalendar File. <br/> 2. The uploaded iCalendar will be verified. <br/> 3. If an error is encountered with the iCalendar file the user will be prompted to verify file is correct and re-upload. <br/> 4. Upon successful upload the user's events will be displayed in the calendar. |
 | Links: | 1. Standard for iCalendar: https://tools.ietf.org/html/rfc5545 |
@@ -560,7 +560,7 @@ Use cases provide design entities that show the interactions between the actors 
 | Type: | Process. |
 | Purpose: | Allow the user to export the calendar to work with other supporting calendars. |
 | Parent User Story:| N/A|
-| Stakeholders: | Calendar Manager|
+| Stakeholders: | Calendar Manager, Developers, Testers, Technical Support |
 | Pre-conditions/Product(s) Required: | 1. Calendar Portal has been brought up and configured.<br/> 2. User has made an account for the Calendar application with a registered e-mail address. <br/> 3. User has logged into the Calendar Portal.|
 | Post-conditions/Product(s) Produced: | 1. The user will download the calendar's events using the iCalendar format conforming to the IETF iCalendar standard. |
 | Links: | 1. Standard for iCalendar: https://tools.ietf.org/html/rfc5545 |
@@ -579,7 +579,7 @@ Use cases provide design entities that show the interactions between the actors 
 | Type: | Process. |
 | Purpose: | Allow the user to change personal settings to their account and so that the notifications act as the user prefers. |
 | Parent User Story:| none. |
-| Stakeholders: | 1. Calendar Manager <br> 2. Technical Support |
+| Stakeholders: | Calendar Manager, Developers, Testers, Technical Support |
 | Pre-conditions/Product(s) Required: | 1. Calendar Manager has an account. <br> 2. User is logged-in.|
 | Post-conditions/Product(s) Produced: | Settings page is up on the screen. |
 | Links: |3.2.2.0|
@@ -596,7 +596,7 @@ Use cases provide design entities that show the interactions between the actors 
 | Type: | Process. |
 | Purpose: | Calendar Manager can choose a time zone so that the due dates and times are adjusted and correct for their current location. |
 | Parent User Story:| 3.2.5.0|
-| Stakeholders: | Calendar Manager|
+| Stakeholders: | Calendar Manager, Developers, Testers, Technical Support |
 | Pre-conditions/Product(s) Required: | User is logged in. User is inside settings page.|
 | Post-conditions/Product(s) Produced: | Settings page is open and options are shown to the user.|
 | Links: | None.|
@@ -613,7 +613,7 @@ Use cases provide design entities that show the interactions between the actors 
 | Type: | Process. |
 | Purpose: | Allow the user to change and update personal information about themselves for their profile. |
 | Parent User Story:| 3.2.5.2|
-| Stakeholders: | Calendar Manager|
+| Stakeholders: | Calendar Manager, Developers, Testers, Technical Support |
 | Pre-conditions/Product(s) Required: | 1. User is logged in.<br> 2.User is inside settings page.|
 | Post-conditions/Product(s) Produced: | 1. If the Settings were validated, the message box with "Settings Saved" appears.<br> 2. Settings page is refreshed and settings changed are shown to the user.|
 | Links: | None.|
@@ -630,7 +630,7 @@ Use cases provide design entities that show the interactions between the actors 
 | Type: | Process. |
 | Purpose: | Allow the user to change their notifications so that they act the way the user prefers them. |
 | Parent User Story:| N/A|
-| Stakeholders: | Calendar Manager|
+| Stakeholders: | Calendar Manager, Developers, Testers, Technical Support |
 | Pre-conditions/Product(s) Required: |1. User is logged in. <br> 2. User goes to notification settings. |
 | Post-conditions/Product(s) Produced: | 1. User's notification methods have been updated. <br> 2. User is returned to their last viewed calendar.|
 | Links: |3.2.5.0|
@@ -649,7 +649,7 @@ Use cases provide design entities that show the interactions between the actors 
 | Type: | Process. |
 | Purpose: | Allow the user to import assignments from I-Learn to see their due dates and descriptions of the assignments on the calendar. |
 | Parent User Story:| N/A|
-| Stakeholders: | Calendar Manager|
+| Stakeholders: | Calendar Manager, Developers, Testers, Technical Support |
 | Pre-conditions/Product(s) Required: | 1. User is logged in on our Calendar App.|
 | Post-conditions/Product(s) Produced: | 1. User is logged onto our Calendar App. <br>2. User is logged into their BYU-I account. <br>3. User has their assignments imported from I-Learn. <br>4. User can now access those assignments on our Calendar App.|
 | Links: | None.|
@@ -670,7 +670,7 @@ This image details the steps necessary to import Ilearn data into the calendar a
 | Type: | Process. |
 | Purpose: | To have the assignments in I-Learn transfer over to the Calendar automatically to see their due dates and description of the assignments their in the Calendar. |
 | Parent User Story:| |
-| Stakeholders: | Calendar Manager|
+| Stakeholders: | Calendar Manager, Developers, Testers, Technical Support |
 | Pre-conditions/Product(s) Required: | 1. User is logged into our Calendar Application.|
 | Post-conditions/Product(s) Produced: | 1. User is logged into their BYU-I account. <br> 2. User has the assignments synced automatically from I-Learn. <br> 3. User is able to access their assignments on our Calendar Application.|
 | Links: | None.|
@@ -689,7 +689,7 @@ This image details the steps necessary to import Ilearn data into the calendar a
 | Type: | Process. |
 | Purpose: | To add user to the data base for them to be able to use the Calendar Application. |
 | Parent User Story:| N/A|
-| Stakeholders: | Calendar Manager |
+| Stakeholders: | Calendar Manager, Developers, Testers, Technical Support |
 | Pre-conditions/Product(s) Required: | 1. Calendar Portal has been brought up and configured. |
 | Post-conditions/Product(s) Produced: | The user will be sent an email for account verification. |
 | Links: | None.|
@@ -706,7 +706,7 @@ This image details the steps necessary to import Ilearn data into the calendar a
 | Type: | Process. |
 | Purpose: | To ensure that the correct user is logging into their corresponding account. |
 | Parent User Story:| N/A|
-| Stakeholders: | Calendar Manager |
+| Stakeholders: | Calendar Manager, Developers, Testers, Technical Support |
 | Pre-conditions/Product(s) Required: | 1. Calendar Portal has been brought up and configured. <br>2. User has made an account for the Calendar application.|
 | Post-conditions/Product(s) Produced: | 1. If the user-name does not match any of the accounts created, the system will prompt the user to try again. <br>2. If the password does not match what the system has stored for the current user-name, then the system will prompt the user to try again. <br> 3. When both the user-name and password match an account the system has stored then the user will be logged in.|
 | Links: | None.|
@@ -723,7 +723,7 @@ This image details the steps necessary to import Ilearn data into the calendar a
 | Type: | Process. |
 | Purpose: | Allow the user to sign out and close the application. |
 | Parent User Story:| N/A|
-| Stakeholders: | Calendar Manager |
+| Stakeholders: | Calendar Manager, Developers, Testers, Technical Support |
 | Pre-conditions/Product(s) Required: | 1. Calendar site is running and user is logged in.|
 | Post-conditions/Product(s) Produced: |The system logs the user out of the system. The user is taken to the log-in page.|
 | Links: | None.|
@@ -740,7 +740,7 @@ This image details the steps necessary to import Ilearn data into the calendar a
 | Type: | Process. |
 | Purpose: | Help the user get back into their account if they have forgotten their password. |
 | Parent User Story:| 3.2.7.1 Log-in Use Cases: Validation.|
-| Stakeholders: | Calendar Manager. |
+| Stakeholders: | Calendar Manager, Developers, Testers, Technical Support |
 | Pre-conditions/Product(s) Required: | 1. Calendar Portal has been brought up and configured. <br>2. User has made an account for the Calendar application.|
 | Post-conditions/Product(s) Produced: | 1. User is able to change their password to something they will remember, and to login to the system.|
 | Links: | None.|
@@ -757,7 +757,7 @@ This image details the steps necessary to import Ilearn data into the calendar a
 | Type: | Process. |
 | Purpose: | Help the user log back in to their account if they have forgotten their Username. |
 | Parent User Story:| 3.2.7.1 Log-in Use Cases: Validation.|
-| Stakeholders: | Calendar Manager|
+| Stakeholders: | Calendar Manager, Developers, Testers, Technical Support |
 | Pre-conditions/Product(s) Required: | 1. Calendar Portal has been brought up and configured. <br>2. User has made an account for the Calendar application with a registered e-mail address.|
 | Post-conditions/Product(s) Produced: | The user will receive an e-mail with their username.|
 | Links: |1. Prepared Statements https://docs.oracle.com/javase/tutorial/jdbc/basics/prepared.html |
