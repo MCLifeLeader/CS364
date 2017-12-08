@@ -94,6 +94,17 @@ Michael Flindt<br/>
 
 ## Index
 
+### LIST OF FIGURES
+
+
+#### Figure 1. "Figure Name Here" ..................................................................................................... "page number here"</br>
+#### Figure 2. "Figure Name Here" ........................................................................................................ 4</br>
+#### Figure 3. "Figure Name Here" .............................................................................................. 5</br>
+#### Figure 4. "Figure Name Here".................................................................................................. 10</br>
+#### Figure 5. "Figure Name Here" ....................................................... 11</br>
+#### Figure 6. "Figure Name Here" .................................................. 12</br>
+#### Figure 7. "Figure Name Here" .................................................................................... 13</br>
+#### Figure 8. "Figure Name Here" ............................................................................... 14</br>
 # 1.0 Introduction
 
 ## 1.1 Purpose
@@ -151,7 +162,6 @@ This section addresses the identified stakeholders and their design concerns in 
 
 ## 3.1 Identified Stakeholders and Design Concerns
 
-<img  src="https://github.com/MCLifeLeader/CS364/blob/master/SDD/resources/stakeholders.jpg" height="50%" width="50%">
 
 ### 3.1.1 Calendar Manager
 
@@ -168,6 +178,7 @@ the week. Another term for calendar manager would be "end users."
 - Calendar managers should be able to see a prioritized list of their assignments to increase their productivity.
 - Calendar managers should be able to use their existing calendar application in conjunction with ours.
 - Calendar managers should be able to change settings according to their preference.
+- Calendar managers should be able to import assignments from ILearn.
 - Calendar managers should have their data be secure and only accessible by them.
 
 ### 3.1.2 Developer
@@ -197,7 +208,7 @@ Technical Support are those that will be helping calendar managers to troublesho
 #### 3.1.4.1 Design Concerns
 
  - Technical support should know how the interactions between the user and the calendar application take place, including both the correct and incorrect usages.
- 
+
 ## 3.2 Use Case Tables and Descriptions
 
 Use cases provide design entities that show the interactions between the actors or personas and the system that are required. The following table is employed as a template to describe use cases in section 3.2. The left side of the table remains the same, while the right provides a description of the text that will be filled in according to the particular use case.
@@ -212,15 +223,26 @@ Use cases provide design entities that show the interactions between the actors 
 | Type: | Process. |
 | Purpose: |A description of why the element exists. The purpose attribute shall provide the rationale for the creation of the element.|
 | Parent User Story:| The Parent User Story links to the higher level use case that is parent to a particular use case.|
-| Stakeholders: | Calendar Manager, Developers, Testers, Technical Support |
+| Stakeholders: | The stakeholders that the use case pertains to. |
 | Pre-conditions/Product(s) Required: | The conditions, procedures, and requirements to be completed before the use case may be attempted.|
 | Post-conditions/Product(s) Produced: | The conditions, procedures, and requirements to be completed upon termination of the use case.|
 | Links: | Additional references either inside this document or external references.|
 | SRS Document | The reference to the section in Software Requirements Specification pertaining to the use case.|
 | Description/Notes:| A complete description of the process and interactions that take place in the use case. These interactions include design concerns, requirements, and design attributes. The description/notes section also contains any additional notes and requirements pertaining to the use case.|
 
+#### 3.2.0.1 Error Handling
+
+As a general policy any input received from the user interface will be validated to prevent injection attempts. Any unexpected input will display an error message that explains the error encountered. Use cases will explain specific error handling situations.
+
 ### 3.2.1 Calendar Display
 <img  src="https://github.com/MCLifeLeader/CS364/blob/master/SDD/resources/UML_Communication/Calendar%20Display%20UML%20Communication%20Diagram.jpg" height="100%" width="100%"></br>
+
+Design Concerns Addressed:
+- Calendar managers should be able to view a calendar with their scheduled assignments and events.
+- Developers and Testers should know of the expected inputs and outputs.
+- Developers should implement error handling and data validation in their code.
+- Testers should understand the processes associated to test all aspects of the product.
+- Technical support should know how the interactions between the user and the calendar application take place, including both the correct and incorrect usages.
 
 #### 3.2.1.0 Calendar Display: Load Home Screen
 
@@ -377,6 +399,14 @@ Use cases provide design entities that show the interactions between the actors 
 
 ### 3.2.2 Calendar Event Notifications
 <img  src="https://github.com/MCLifeLeader/CS364/blob/master/SDD/resources/UML_Communication/Notification%20UML%20Communication%20Diagram.jpg" height="100%" width="100%"></br>
+
+Design Concerns Addressed:
+- Calendar managers should be able to set reminders for their assignments so they won't forget.
+- Developers and Testers should know of the expected inputs and outputs.
+- Developers should implement error handling and data validation in their code.
+- Testers should understand the processes associated to test all aspects of the product.
+- Technical support should know how the interactions between the user and the calendar application take place, including both the correct and incorrect usages.
+
 #### 3.2.2.0 Calendar Event Notifications: Enable/Disable Notifications
 
 | Data | Description |
@@ -463,6 +493,14 @@ Use cases provide design entities that show the interactions between the actors 
 
 ### 3.2.3 To-Do List
 <img  src="https://github.com/MCLifeLeader/CS364/blob/master/SDD/resources/UML_Communication/Assignment%20To-Do%20List%20UML%20Communication%20Diagram.jpg"></br>
+
+Design Concerns Addressed:
+- Calendar managers should be able to see a prioritized list of their assignments to increase their productivity.
+- Developers and Testers should know of the expected inputs and outputs.
+- Developers should implement error handling and data validation in their code.
+- Testers should understand the processes associated to test all aspects of the product.
+- Technical support should know how the interactions between the user and the calendar application take place, including both the correct and incorrect usages.
+
 #### 3.2.3.0 To-Do List: Load List
 
 | Data | Description |
@@ -533,6 +571,14 @@ Use cases provide design entities that show the interactions between the actors 
 
 ### 3.2.4 Calendar Integrations
 <img  src="https://github.com/MCLifeLeader/CS364/blob/master/SDD/resources/UML_Communication/Calendar%20Integrations%20UML%20Communication%20Diagram.jpg" height="100%" width="100%"></br>
+
+Design Concerns Addressed:
+- Calendar managers should be able to use their existing calendar application in conjunction with ours.
+- Developers and Testers should know of the expected inputs and outputs.
+- Developers should implement error handling and data validation in their code.
+- Testers should understand the processes associated to test all aspects of the product.
+ - Technical support should know how the interactions between the user and the calendar application take place, including both the correct and incorrect usages.
+
 #### 3.2.4.0 Calendar Integrations: Import Calendar
 
 | Data | Description |
@@ -568,6 +614,13 @@ Use cases provide design entities that show the interactions between the actors 
 | Description/Notes:| 1. Supported third party calendar applications include:<br/> a. Google Calendar <br/> b. Apple Calendar <br/> c. Outlook Calendar <br/> d. Any calendar that supports importing an iCalendar file <br/> 2. Exporting iCalendar <br> a. The user will click export on the calendar page. <br> b. The system will create an iCalendar file. <br> c. The iCalendar file will attempt to be downloaded. <br> d. The iCalendar file may then be imported into the supported third party calendar applications by the user.|
 
 ### 3.2.5 User Profile Settings
+
+Design Concerns Addressed:
+- Calendar managers should be able to change settings according to their preference.
+- Developers and Testers should know of the expected inputs and outputs.
+- Developers should implement error handling and data validation in their code.
+- Testers should understand the processes associated to test all aspects of the product.
+ - Technical support should know how the interactions between the user and the calendar application take place, including both the correct and incorrect usages.
 
 #### 3.2.5.0 User Profile Settings: Load Settings Page
 
@@ -639,6 +692,14 @@ Use cases provide design entities that show the interactions between the actors 
 
 ### 3.2.6 Import Assignments from I-Learn
 <img  src="https://github.com/MCLifeLeader/CS364/blob/master/SDD/resources/UML_Communication/import%20from%20I-learn%20UML%20communication%20diagram.jpg" height="100%" width="100%"></br>
+
+Design Concerns Addressed:
+- Calendar managers should be able to import assignments from ILearn.
+- Developers and Testers should know of the expected inputs and outputs.
+- Developers should implement error handling and data validation in their code.
+- Testers should understand the processes associated to test all aspects of the product.
+ - Technical support should know how the interactions between the user and the calendar application take place, including both the correct and incorrect usages.
+
 #### 3.2.6.0 Import Assignments from I-Learn: Manual Sync
 
 | Data | Description |
@@ -679,6 +740,14 @@ This image details the steps necessary to import Ilearn data into the calendar a
 
 ### 3.2.7 Log-In Use case
 <img  src="https://github.com/MCLifeLeader/CS364/blob/master/SDD/resources/UML_Communication/Login%20(Non-SSO)%20UML%20Communication%20Diagram.jpg" height="100%" width="100%"></br>
+
+Design Concerns Addressed:
+- Calendar managers should have their data be secure and only accessible by them.
+- Developers and Testers should know of the expected inputs and outputs.
+- Developers should implement error handling and data validation in their code.
+- Testers should understand the processes associated to test all aspects of the product.
+ - Technical support should know how the interactions between the user and the calendar application take place, including both the correct and incorrect usages.
+
 #### 3.2.7.0 Log-In Use Case: Create account
 
 | Data | Description |
@@ -2152,9 +2221,6 @@ It is assumed that the University will allow students to login to their universi
 ## 5.2 Internal Software Data Structure
 
 ## 5.3 Global Data Structure
-
-## 5.4 Database Exceptions
-The Database management will perform a verification for exceptions or errors during its processing. Every entity with their fields will setup with a value type (e.g, int, varchar, decimal, date, time, etc). If application try to write a decimal in a date field, an exception will be throwed. The application will handle transaction management, handling errors and exceptions.
 
 # Index
 
