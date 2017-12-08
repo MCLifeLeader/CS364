@@ -217,7 +217,7 @@ Use cases provide design entities that show the interactions between the actors 
 
 | Data | Description |
 | --- |--- |
-| ScreenShot/Mockup: | The screenshot/Mockup will contain a graphical illustration which will show an overlay of the use case under consideration.|
+| Screenshot/Mockup: | The Screenshot/Mockup will contain a graphical illustration which will show an overlay of the use case under consideration.|
 | Page Title: | The page title is the title of the web page corresponding to the use case or "N/A" if not applicable. |
 | Author: | Robert Nelson |
 | Type: | Process. |
@@ -248,7 +248,7 @@ Design Concerns Addressed:
 
 | Data | Description |
 | --- |--- |
-| ScreenShot/Mockup: |<img  src="https://github.com/MCLifeLeader/CS364/blob/master/SDD/resources/3.2.1.0.png" height="50%" width="50%">|
+| Screenshot/Mockup: |<img  src="https://github.com/MCLifeLeader/CS364/blob/master/SDD/resources/3.2.1.0.png" height="50%" width="50%">|
 | Page Title: | Home Page|
 | Author: | Robert Nelson |
 | Type: | Process. |
@@ -265,7 +265,7 @@ Design Concerns Addressed:
 
 | Data | Description |
 | --- |--- |
-| ScreenShot/Mockup: | |
+| Screenshot/Mockup: | |
 | Page Title: | Checking the Schedule|
 | Author: | Aaron Shore |
 | Type: | Process. |
@@ -282,7 +282,7 @@ Design Concerns Addressed:
 
 | Data | Description |
 | --- |--- |
-| ScreenShot/Mockup: |<img  src="https://github.com/MCLifeLeader/CS364/blob/master/SDD/resources/3.2.16.0.jpg" height="50%" width="50%"> |
+| Screenshot/Mockup: |<img  src="https://github.com/MCLifeLeader/CS364/blob/master/SDD/resources/3.2.16.0.jpg" height="50%" width="50%"> |
 | Page Title: | Creating an Event|
 | Author: | Jacob Keene |
 | Type: | Process. |
@@ -299,7 +299,7 @@ Design Concerns Addressed:
 
 | Data | Description |
 | --- |--- |
-| ScreenShot/Mockup: | |
+| Screenshot/Mockup: | |
 | Page Title: | Switching Views|
 | Author: | Rex Nesbit |
 | Type: | Process. |
@@ -316,7 +316,7 @@ Design Concerns Addressed:
 
 | Data | Description |
 | --- |--- |
-| ScreenShot/Mockup: | |
+| Screenshot/Mockup: | |
 | Page Title: | Creating an Alert|
 | Author: | Zane West |
 | Type: | Process. |
@@ -333,7 +333,7 @@ Design Concerns Addressed:
 
 | Data | Description |
 | --- |--- |
-| ScreenShot/Mockup: | <img  src="https://github.com/MCLifeLeader/CS364/blob/master/SDD/resources/3.2.1.6.png" height="50%" width="50%">|
+| Screenshot/Mockup: | <img  src="https://github.com/MCLifeLeader/CS364/blob/master/SDD/resources/3.2.1.6.png" height="50%" width="50%">|
 | Page Title: | Access Assignment|
 | Author: | Joseph Keene |
 | Type: | Process. |
@@ -350,7 +350,7 @@ Design Concerns Addressed:
 
 | Data | Description |
 | --- |--- |
-| ScreenShot/Mockup: ||
+| Screenshot/Mockup: ||
 | Page Title: | Show Assignment Details|
 | Author: | Joseph Keene |
 | Type: | Process. |
@@ -363,11 +363,11 @@ Design Concerns Addressed:
 | SRS Document | 3.2.6 |
 | Description/Notes:| Show Assignment Details<br>1. Show Details Button is displayed on the Calendar App by the Assignments.<br>a. User clicks Details Button.<br>2. Details are displayed to the User.<br>a. An option to collapse the details is shown as well.|
 
-#### 3.2.1.8 Calendar Display: Show Holidays
+#### 3.2.1.7 Calendar Display: Show Holidays
 
 | Data | Description |
 | --- |--- |
-| ScreenShot/Mockup: |<img  src="https://github.com/MCLifeLeader/CS364/blob/master/SDD/resources/3.2.1.8.png" height="50%" width="50%"> |
+| Screenshot/Mockup: |<img  src="https://github.com/MCLifeLeader/CS364/blob/master/SDD/resources/3.2.1.8.png" height="50%" width="50%"> |
 | Page Title: | Show Holidays,|
 | Author: | Joseph Keene |
 | Type: | Process. |
@@ -384,7 +384,7 @@ Design Concerns Addressed:
 
 | Data | Description |
 | --- |--- |
-| ScreenShot/Mockup: |<img  src="https://github.com/MCLifeLeader/CS364/blob/master/SDD/resources/3.2.16.0.jpg" height="50%" width="50%"> |
+| Screenshot/Mockup: |<img  src="https://github.com/MCLifeLeader/CS364/blob/master/SDD/resources/3.2.16.0.jpg" height="50%" width="50%"> |
 | Page Title: | Edit Event|
 | Author: | Brian Robertson |
 | Type: | Process. |
@@ -411,7 +411,7 @@ Design Concerns Addressed:
 
 | Data | Description |
 | --- |--- |
-| ScreenShot/Mockup: |<img  src="https://github.com/MCLifeLeader/CS364/blob/master/SDD/resources/3.2.20.0.jpg" height="50%" width="50%"> |
+| Screenshot/Mockup: |<img  src="https://github.com/MCLifeLeader/CS364/blob/master/SDD/resources/3.2.20.0.jpg" height="50%" width="50%"> |
 | Page Title: | Enable/Disable Notifications|
 | Author: | Zane West |
 | Type: | Process. |
@@ -428,7 +428,7 @@ Design Concerns Addressed:
 
 | Data | Description |
 | --- |--- |
-| ScreenShot/Mockup: |<img  src="https://github.com/MCLifeLeader/CS364/blob/master/SDD/resources/3.2.2.1.png" height="50%" width="50%"> |
+| Screenshot/Mockup: |<img  src="https://github.com/MCLifeLeader/CS364/blob/master/SDD/resources/3.2.2.1.png" height="50%" width="50%"> |
 | Page Title: | Set Reminders|
 | Author: | Zane West |
 | Type: | Process. |
@@ -445,7 +445,7 @@ Design Concerns Addressed:
 
 | Data | Description |
 | --- |--- |
-| ScreenShot/Mockup: | |
+| Screenshot/Mockup: | |
 | Page Title: | Send Notification |
 | Author: | Zane West |
 | Type: | Process. |
@@ -462,7 +462,7 @@ Design Concerns Addressed:
 
 | Data | Description |
 | --- |--- |
-| ScreenShot/Mockup: | |
+| Screenshot/Mockup: | |
 | Page Title: | View Missed Notifications |
 | Author: | Jacob Keene |
 | Type: | Process. |
@@ -478,7 +478,7 @@ Design Concerns Addressed:
 
 | Data | Description |
 | --- |--- |
-| ScreenShot/Mockup: | |
+| Screenshot/Mockup: | |
 | Page Title: | Set Notification Methods |
 | Author: | Jacob Keene |
 | Type: | Process. |
@@ -505,7 +505,7 @@ Design Concerns Addressed:
 
 | Data | Description |
 | --- |--- |
-| ScreenShot/Mockup: | <img  src="https://github.com/MCLifeLeader/CS364/blob/master/SDD/resources/3.2.3.0.png" height="50%" width="50%"> |
+| Screenshot/Mockup: | <img  src="https://github.com/MCLifeLeader/CS364/blob/master/SDD/resources/3.2.3.0.png" height="50%" width="50%"> |
 | Page Title: | Load To-Do List|
 | Author: | Rex Nesbit |
 | Type: | Process. |
@@ -522,7 +522,7 @@ Design Concerns Addressed:
 
 | Data | Description |
 | --- |--- |
-| ScreenShot/Mockup: | |
+| Screenshot/Mockup: | |
 | Page Title: | Mark Assignment Done|
 | Author: | Rex Nesbit |
 | Type: | Process. |
@@ -539,7 +539,7 @@ Design Concerns Addressed:
 
 | Data | Description |
 | --- |--- |
-| ScreenShot/Mockup: | |
+| Screenshot/Mockup: | |
 | Page Title: | Sort|
 | Author: | Keith Wheeler |
 | Type: | Process. |
@@ -556,7 +556,7 @@ Design Concerns Addressed:
 
 | Data | Description |
 | --- |--- |
-| ScreenShot/Mockup: | |
+| Screenshot/Mockup: | |
 | Page Title: | Filter by Class|
 | Author: | Zane West |
 | Type: | Process. |
@@ -583,7 +583,7 @@ Design Concerns Addressed:
 
 | Data | Description |
 | --- |--- |
-| ScreenShot/Mockup: | <img  src="https://github.com/MCLifeLeader/CS364/blob/master/SDD/resources/Cal_upload_mock.PNG" height="50%" width="100%"><img  src="https://github.com/MCLifeLeader/CS364/blob/master/SDD/resources/Cal_name_mock.PNG" height="50%" width="100%">|
+| Screenshot/Mockup: | <img  src="https://github.com/MCLifeLeader/CS364/blob/master/SDD/resources/Cal_upload_mock.PNG" height="50%" width="100%"><img  src="https://github.com/MCLifeLeader/CS364/blob/master/SDD/resources/Cal_name_mock.PNG" height="50%" width="100%">|
 | Page Title: | Third Party Calendar Integration|
 | Author: | Tyler Sorenson, Robert Nelson |
 | Type: | Process. |
@@ -600,7 +600,7 @@ Design Concerns Addressed:
 
 | Data | Description |
 | --- |--- |
-| ScreenShot/Mockup: ||
+| Screenshot/Mockup: ||
 | Page Title: | Export Calendar |
 | Author: | Tyler Sorenson, Robert Nelson |
 | Type: | Process. |
@@ -626,7 +626,7 @@ Design Concerns Addressed:
 
 | Data | Description |
 | --- |--- |
-| ScreenShot/Mockup: | <img  src="https://github.com/MCLifeLeader/CS364/blob/master/SDD/resources/3.2.20.0.jpg" height="50%" width="50%">|
+| Screenshot/Mockup: | <img  src="https://github.com/MCLifeLeader/CS364/blob/master/SDD/resources/3.2.20.0.jpg" height="50%" width="50%">|
 | Page Title: | Settings |
 | Author: | Aaron Shore |
 | Type: | Process. |
@@ -643,7 +643,7 @@ Design Concerns Addressed:
 
 | Data | Description |
 | --- |--- |
-| ScreenShot/Mockup: | |
+| Screenshot/Mockup: | |
 | Page Title: | Set Time Zone|
 | Author: | Rex Nesbit |
 | Type: | Process. |
@@ -660,7 +660,7 @@ Design Concerns Addressed:
 
 | Data | Description |
 | --- |--- |
-| ScreenShot/Mockup: | |
+| Screenshot/Mockup: | |
 | Page Title: | Change Profile Settings|
 | Author: | Jefferson Santos |
 | Type: | Process. |
@@ -677,7 +677,7 @@ Design Concerns Addressed:
 
 | Data | Description |
 | --- |--- |
-| ScreenShot/Mockup: ||
+| Screenshot/Mockup: ||
 | Page Title: | Change Notification Settings|
 | Author: | Rex Nesbit |
 | Type: | Process. |
@@ -704,7 +704,7 @@ Design Concerns Addressed:
 
 | Data | Description |
 | --- |--- |
-| ScreenShot/Mockup: | <img src="https://github.com/MCLifeLeader/CS364/blob/master/SDD/resources/3.2.6.0.png" height="50%" width="50%">|
+| Screenshot/Mockup: | <img src="https://github.com/MCLifeLeader/CS364/blob/master/SDD/resources/3.2.6.0.png" height="50%" width="50%">|
 | Page Title: | Import Assignments from I-Learn|
 | Author: | Joseph Keene |
 | Type: | Process. |
@@ -725,7 +725,7 @@ This image details the steps necessary to import Ilearn data into the calendar a
 
 | Data | Description |
 | --- |--- |
-| ScreenShot/Mockup: | <img  src="https://github.com/MCLifeLeader/CS364/blob/master/SDD/resources/3.2.6.0.png" height="50%" width="50%">|
+| Screenshot/Mockup: | <img  src="https://github.com/MCLifeLeader/CS364/blob/master/SDD/resources/3.2.6.0.png" height="50%" width="50%">|
 | Page Title: | Import Assignments from I-Learn Automatically|
 | Author: | Joseph Keene |
 | Type: | Process. |
@@ -752,7 +752,7 @@ Design Concerns Addressed:
 
 | Data | Description |
 | --- |--- |
-| ScreenShot/Mockup: | |
+| Screenshot/Mockup: | |
 | Page Title: | Create account |
 | Author: | Brian Robertson |
 | Type: | Process. |
@@ -769,7 +769,7 @@ Design Concerns Addressed:
 
 | Data | Description |
 | --- |--- |
-| ScreenShot/Mockup: | |
+| Screenshot/Mockup: | |
 | Page Title: | Log-in Validation |
 | Author: | Aaron Shore |
 | Type: | Process. |
@@ -786,7 +786,7 @@ Design Concerns Addressed:
 
 | Data | Description |
 | --- |--- |
-| ScreenShot/Mockup: | |
+| Screenshot/Mockup: | |
 | Page Title: | Log-Out|
 | Author: | Robert Nelson |
 | Type: | Process. |
@@ -803,7 +803,7 @@ Design Concerns Addressed:
 
 | Data | Description |
 | --- |--- |
-| ScreenShot/Mockup: | |
+| Screenshot/Mockup: | |
 | Page Title: | Forgot Password.|
 | Author: | Rex Nesbit |
 | Type: | Process. |
@@ -820,7 +820,7 @@ Design Concerns Addressed:
 
 | Data | Description |
 | --- |--- |
-| ScreenShot/Mockup: | |
+| Screenshot/Mockup: | |
 | Page Title: | Log-in Page|
 | Author: | Robert Nelson |
 | Type: | Process. |
