@@ -489,7 +489,7 @@ Design Concerns Addressed:
 | Post-conditions/Product(s) Produced: |  1. User's notification methods have been updated. <br> 2. User is returned to their last viewed calendar.|
 | Links: | None.|
 | SRS Document | 3.2.20 |
-| Description/Notes:|Set Notification Methods <br> 1. Notification Methods <br> a. User is prompted to turn on or turn off notifications. <br> b. User selects to turn on notifications and is returned to last viewed calendar. <br> 2. Warning <br> a. User selects to turn off notifications and is given a warning that they won't receive notifcations when they disable this setting. |
+| Description/Notes:|Set Notification Methods <br> 1. Notification Methods <br> a. User is prompted to turn on or turn off notifications. <br> b. User selects to turn on notifications and is returned to last viewed calendar. <br> 2. Warning <br> a. User selects to turn off notifications and is given a warning that they won't receive notifications when they disable this setting. |
 
 ### 3.2.3 To-Do List
 <img  src="https://github.com/MCLifeLeader/CS364/blob/master/SDD/resources/UML_Communication/Assignment%20To-Do%20List%20UML%20Communication%20Diagram.jpg"></br>
