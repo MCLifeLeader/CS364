@@ -178,7 +178,7 @@ the week. Another term for calendar manager would be "end users."
 - Calendar managers should be able to see a prioritized list of their assignments to increase their productivity.
 - Calendar managers should be able to use their existing calendar application in conjunction with ours.
 - Calendar managers should be able to change settings according to their preference.
-- Calendar managers should be able to import assignments from ILearn.
+- Calendar managers should be able to import assignments from I-Learn.
 - Calendar managers should have their data be secure and only accessible by them.
 
 ### 3.1.2 Developer
@@ -222,7 +222,7 @@ Use cases provide design entities that show the interactions between the actors 
 | Author: | Robert Nelson |
 | Type: | Process. |
 | Purpose: |A description of why the element exists. The purpose attribute shall provide the rationale for the creation of the element.|
-| Parent User Story:| The Parent User Story links to the higher level use case that is parent to a particular use case.|
+| Parent User Story:| The Parent User Story links to the higher-level use case that is parent to a particular use case.|
 | Stakeholders: | The stakeholders that the use case pertains to. |
 | Pre-conditions/Product(s) Required: | The conditions, procedures, and requirements to be completed before the use case may be attempted.|
 | Post-conditions/Product(s) Produced: | The conditions, procedures, and requirements to be completed upon termination of the use case.|
@@ -411,7 +411,7 @@ Design Concerns Addressed:
 
 | Data | Description |
 | --- |--- |
-| Screenshot/Mockup: |<img  src="https://github.com/MCLifeLeader/CS364/blob/master/SDD/resources/3.2.20.0.jpg" height="50%" width="50%"> |
+| Screenshot/Mockup: |<img  src="https://github.com/MCLifeLeader/CS364/blob/master/SDD/resources/3.2.2.0.png" height="50%" width="50%"> |
 | Page Title: | Enable/Disable Notifications|
 | Author: | Zane West |
 | Type: | Process. |
@@ -694,7 +694,7 @@ Design Concerns Addressed:
 <img  src="https://github.com/MCLifeLeader/CS364/blob/master/SDD/resources/UML_Communication/import%20from%20I-learn%20UML%20communication%20diagram.jpg" height="100%" width="100%"></br>
 
 Design Concerns Addressed:
-- Calendar managers should be able to import assignments from ILearn.
+- Calendar managers should be able to import assignments from I-Learn.
 - Developers and Testers should know of the expected inputs and outputs.
 - Developers should implement error handling and data validation in their code.
 - Testers should understand the processes associated to test all aspects of the product.
@@ -719,7 +719,7 @@ Design Concerns Addressed:
 
 <img src="https://github.com/MCLifeLeader/CS364/blob/master/SDD/resources/sync.jpg" height="50%" width="50%">
 
-This image details the steps necessary to import Ilearn data into the calendar application.
+This image details the steps necessary to import I-Learn data into the calendar application.
 
 #### 3.2.6.1 Import Assignments from I-Learn: Automatic Sync
 
@@ -748,7 +748,7 @@ Design Concerns Addressed:
 - Testers should understand the processes associated to test all aspects of the product.
  - Technical support should know how the interactions between the user and the calendar application take place, including both the correct and incorrect usages.
 
-#### 3.2.7.0 Log-In Use Case: Create account
+#### 3.2.7.0 Log-In Use Case: Create Account
 
 | Data | Description |
 | --- |--- |
@@ -835,8 +835,8 @@ Design Concerns Addressed:
 
 # 4.0 Design Overview
 
-The Design Overview will display a high level representation of the Student Calendar Application's system design. The System
-Architecture section 4.1 presents a UML diagram to demonstrate the relationships between the software classes and how they will be integrated. This will provide the reader and user of the document a reference for the overall design. Further details of each design compenent is provided in section 4.2.
+The Design Overview will display a high-level representation of the Student Calendar Application's system design. The System
+Architecture section 4.1 presents a UML diagram to demonstrate the relationships between the software classes and how they will be integrated. This will provide the reader and user of the document a reference for the overall design. Further details of each design component is provided in section 4.2.
 
 ## 4.1 System Architecture
 
@@ -848,7 +848,7 @@ The architecture design for the Student Calendar application is centered around 
 
 The model classes contain all of the data fields necessary for the insertion, modification, and deletion of student and calendar information. The model classes do not perform any functions that make changes to the system. Their sole purpose is to hold student and calendar data in order to make it easier for the system to internally store and pass around data. These model classes are accessed by controller classes.
 
-The Controller classes contain all the methods that are necessary to work with the data in the model classes. These Controller classes also interface with the Database Facade class, allowing data to be retrieved from and stored into the system database. The I-Learn Facade class works with the Calendar Item Controller class to retireve assignments from BYU-I's I-Learn service and store them in their appropriate location within the Student Calendar. The Calendar Integration Facade class allows the Student Calendar Application to interface with external API's in order to import/export calendar events from social media sites as well as other calendar applications. 
+The Controller classes contain all the methods that are necessary to work with the data in the model classes. These Controller classes also interface with the Database Facade class, allowing data to be retrieved from and stored into the system database. The I-Learn Facade class works with the Calendar Item Controller class to retrieve assignments from BYU-I's I-Learn service and store them in their appropriate location within the Student Calendar. The Calendar Integration Facade class allows the Student Calendar Application to interface with external API's in order to import/export calendar events from social media sites as well as other calendar applications. 
 
 The View classes are responsible for displaying information to and gathering input from the user. They send signals to and receive data from the U.I. controller class. The U.I. Controller class serves as a bridge between the U.I. layer and the Business layer. It receives signals from the View classes and makes the necessary function calls to update the system. It then sends any updated data back to the view classes so that changes may be displayed to the user.
 
@@ -967,7 +967,7 @@ The view classes perform all of the functions related to visually displaying the
     <th colspan = "2">Attribute Description</th>
   </tr>
   <tr>
-    <td>taskList</td><td colspan = "2">The list of Ilearn tasks that are to be displayed</td>
+    <td>taskList</td><td colspan = "2">The list of I-Learn tasks that are to be displayed</td>
   </tr>
   <tr>
     <td>eventList</td><td colspan = "2">The list of user created events that are to be displayed.</td>
@@ -1020,7 +1020,7 @@ The view classes perform all of the functions related to visually displaying the
         yearType <- isLeapYear(date)</br>
         monthView <- drawCalendar(monthNames, monthDays, weekDays, currentMonth, yearType)</br>
         SET calendarDisplayElement <- monthView
-    </td>	
+    </td>
  </tr>
   <tr>
     <td rowspan = "4">displayDay(date)</td>
@@ -1041,7 +1041,7 @@ The view classes perform all of the functions related to visually displaying the
     <th> Method Description</th>
   </tr>
   <tr>
-    <td>This method creates a new user created event (like other calendar tasks, but not from iLearn; created by the user instead). The user will be prompted with a field that allows them to select a date/time and give the event a description.</td>
+    <td>This method creates a new user created event (like other calendar tasks, but not from I-Learn; created by the user instead). The user will be prompted with a field that allows them to select a date/time and give the event a description.</td>
   </tr>
   <tr>
     <th>Method Pseudo Code</th>
@@ -1065,7 +1065,7 @@ The view classes perform all of the functions related to visually displaying the
     <th>Method Pseudo Code</th>
   </tr>
   <tr>
-    <td> 
+    <td>
     uIController.print_todo_list()
     </td>
   </tr>
@@ -1080,7 +1080,7 @@ The view classes perform all of the functions related to visually displaying the
     <th>Method Pseudo Code</th>
   </tr>
   <tr>
-    <td> 
+    <td>
     open externalURL in new tab
     </td>
   </tr>
@@ -1136,6 +1136,86 @@ The view classes perform all of the functions related to visually displaying the
   </tr>
 </table>
 
+### 4.2.x Login Page View
+<table>
+  <tr>
+    <th colspan = "3">Class Name: Login Page View</th>
+  </tr>
+  <tr>
+    <td colspan = "3">The purpose of this class is to provide the user with a means or a gateway to access every functional aspect of the calendar application and draw from the feature sets contained within. It represents the user's identification and password as well as the methods needed to authenticate and create a new and existing accounts. It interfaces with the UI Controller class for the purpose of sending and verifying usernames and passwords.</td>
+  </tr>
+</table>
+<table>
+  <tr>
+    <th>Attributes(Fields)</th>
+    <th colspan = "2">Attribute Description</th>
+  </tr>
+  <tr>
+    <td>username</td><td colspan = "2">The identification used by the user to access the application. </td>
+  </tr>
+  <tr>
+    <td>password</td><td colspan = "2">The secret string of characters used in conjunction with a username to gain access to the application.</td>
+  </tr>
+  <tr>
+    <th>Methods(operations) </th>
+    <th></th>
+  </tr>
+  <tr>
+    <td rowspan = "4">login(username, password)</td>
+    <th> Method Description</th>
+  </tr>
+  <tr>
+    <td>This method authenticates the user and logs them in.</td>
+  </tr>
+  <tr>
+    <th>Method Pseudo Code</th>
+  </tr>
+  <tr>
+    <td>Pseudocode goes here...
+    </td>
+  </tr>
+  <tr>
+    <td rowspan = "4">createAccount()</td>
+    <th> Method Description</th>
+  </tr>
+  <tr>
+    <td>This method is to be called when the user attempts to create a new account with a new and unique username and new accompanying password.</td>
+  </tr>
+  <tr>
+    <th>Method Pseudo Code</th>
+  </tr>
+  <tr>
+    <td>createAccountButton.click()<br>
+        displayNewAccountForm()<br>
+        submitButton.click()<br>
+        SUBMIT newAccountForm<br>
+        Student Info <- input values from newAccountForm<br>
+        createStudent(Student Info)<br>
+        studentController.addstudent(Student Info)<br>
+        databaseFacade.saveStudent(Student)<br>
+        IF "successful"<br>
+        return to Login Page and alert user to successful account creation<br>
+        ELSE IF "unsuccessful"<br>
+        displayNewAccountForm() and alert user to error<br>
+
+  </tr>
+  <tr>
+    <td rowspan = "4">displayNewAccountForm()</td>
+    <th> Method Description</th>
+  </tr>
+  <tr>
+    <td>This method is to be called when a user has opted to create a new account. It is responsible for providing a user with a form containing fields for input such as a new username, new password, etc.</td>
+  </tr>
+  <tr>
+    <th>Method Pseudo Code</th>
+  </tr>
+  <tr>
+    <td>url <- URL of page containing New Account Form<br>
+        window.location(url)<br>
+    </td>
+  </tr>
+
+</table>
 ## 4.2.2 Controller Classes
 
 The Controller classes contain all the methods that are necessary to work with the data in the model classes. These Controller classes also include the facade classes which allow developers to more easily interact with interfaces such as the system database and external APIs.
@@ -1148,8 +1228,8 @@ The Controller classes contain all the methods that are necessary to work with t
   </tr>
   <tr>
     <td colspan = "3">Brief Description: The Calendar Item Controller(C.I. Controller) class is responsible for retrieving event and assignment data from the system and 
-	sending it to the user display.The C.I. Controller creates Assignments by accessing I-Learn through the I-Learn Facade class and stores the data in assignment class objects.
-	The C.I. Contoller stores calendar items into the system database by using the Database Facade class for future access. </td>
+	sending it to the user display. The C.I. Controller creates Assignments by accessing I-Learn through the I-Learn Facade class and stores the data in assignment class objects.
+	The C.I. Controller stores calendar items into the system database by using the Database Facade class for future access. </td>
   </tr>
   </table>
   <table>
@@ -1185,17 +1265,17 @@ The Controller classes contain all the methods that are necessary to work with t
   </tr>
   <tr>
     <td>Creates a new Event calendar item to be added to the calendar. The user enters the event name, description, and sets how often the event will occur
-	on the calendar. The weekly occurence determines how often the event will reoccur for the long term(weekly, monthly, quarterly, etc.) and the daily occurence
-	determines which days of the week the event will occur on. This daily Occurence is passed in as a String array of days and is converted into an integer. This is called when the user selects the "Create Event" button. 
+	on the calendar. The weekly occurrence determines how often the event will reoccur for the long term(weekly, monthly, quarterly, etc.) and the daily occurrence
+	determines which days of the week the event will occur on. This daily occurrence is passed in as a String array of days and is converted into an integer. This is called when the user selects the "Create Event" button. 
 	A new event is created with the passed parameters, stored in the database, and is then returned to the U.I. Controller class to display to the user. See use case 3.4.1.2 for details.</td>
   </tr>
   <tr>
     <th>Method Pseudo Code</th>
   </tr>
   <tr>
-    <td>addEvent(eventName, eventDescription, eventWeeklyOccurence, eventDailyOccurence[]):</br> 
-  eventOccurenceNumber = convert Day Array into number(eventOccurence[])</br>	
-  newEvent = create Event(eventName, eventDescription, eventFrequency, eventOccurenceNumber)</br>
+    <td>addEvent(eventName, eventDescription, eventWeeklyOccurrence, eventDailyOccurrence[]):</br> 
+  eventOccurrenceNumber = convert Day Array into number(eventOccurrence[])</br>	
+  newEvent = create Event(eventName, eventDescription, eventFrequency, eventOccurrenceNumber)</br>
   DatabaseFacade.addEvent(newEvent)</br>
   return newEvent</td>
   </tr>
@@ -1261,10 +1341,10 @@ The Controller classes contain all the methods that are necessary to work with t
     <th colspan = "2">Attribute Description</th>
   </tr>
   <tr>
-    <td>credentials</td><td colspan = "2">The users session credentials passed from I-Learn after authentication</td>
+    <td>credentials</td><td colspan = "2">The user's session credentials passed from I-Learn after authentication</td>
   </tr>
    <tr>
-    <td>userId</td><td colspan = "2"> The users unique id that is used to retrieve student information</td>
+    <td>userId</td><td colspan = "2"> The user's unique id that is used to retrieve student information</td>
   </tr>
    <tr>
     <th>Methods(operations) </th>
@@ -1544,7 +1624,7 @@ return events FROM eventTable WHERE eventName LIKE searchQuery OR eventDescripti
     <th>Method Description</th>
   </tr>
   <tr>
-    <td>When the user clicks create account the I-Learn login credentials are passed to the iLearnFacade class which verifies if they are correct.</td>
+    <td>When the user clicks create account the I-Learn login credentials are passed to the I-LearnFacade class which verifies if they are correct.</td>
   </tr>
   <tr>
     <th>Method Pseudo Code</th>
@@ -2212,6 +2292,25 @@ The Student Calendar Integration Application will operate within FERPA, namely n
 #### 4.4.2.1 University Authorization
 It is assumed that the University will allow students to login to their university account through the Student Calendar Integration Application and continue to pull course, assignment, group, activity and grade information through the authorized account. 
 
+## 4.5 Error Handling
+
+### 4.5.1 Database Facade Class Commit Errors
+
+All commits to the database will be wrapped in a transaction. If any commit to the database fails during a procedure called in the
+database facade class, then the entire transaction will be rolled back and an error message will be sent to the U.I. Layer. 
+
+### 4.5.2 Invalid Data Errors
+
+All data entered into the system by the user will be validated to determine if the data type entered matches with expected input
+(ex. a student name field should not contain any numbers). If the user attempts to enter invalid data into the system an exception will
+be thrown and the user will be notified that the data is invalid.
+
+### 4.5.3 I-Learn Importing Errors
+
+In the event that a user's credentials do not match up to their log in information for I-Learn, an error will be thrown and the user
+will be prompted to reenter their credentials or cancel importing their assignments from I-Learn. If any error results in the I-Learn
+API as it attempts to import assignment information into the system, the entire import process will be aborted and the user will be notified
+that an import error occured.
 # 5.0 Data Design
 
 ## 5.1 Entity Relationship Diagram
@@ -2221,6 +2320,4 @@ It is assumed that the University will allow students to login to their universi
 ## 5.2 Internal Software Data Structure
 
 ## 5.3 Global Data Structure
-
-# Index
 
