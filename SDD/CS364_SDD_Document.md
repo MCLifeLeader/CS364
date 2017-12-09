@@ -1033,7 +1033,12 @@ The view classes perform all of the functions related to visually displaying the
     <th>Method Pseudo Code</th>
   </tr>
   <tr>
-    <td>//TODO: Write this pseudocode
+    <td>  dayNames <- (“Sun”, “Mon”, “Tue”, “Wed”, “Thu”, “Fri”, “Sat”)</br>
+	    timeArray <- (“1am”, “2am”, “3am”… “11pm”)</br>
+	    dayOfTheWeek <- getDayOfTheWeek(date, dayNames)</br>
+	    dayView <- createCalendarDay(dayNames, dayOfTheWeek, timeArray, </br>
+	     getEvents(), getAssignments(), date) </br>
+             SET calendarDisplayElement <- dayView
     </td>
   </tr>
   <tr>
@@ -1171,7 +1176,7 @@ The view classes perform all of the functions related to visually displaying the
     <th>Method Pseudo Code</th>
   </tr>
   <tr>
-    <td>Pseudocode goes here...
+    <td>uIController.LoginStudent(username, password);
     </td>
   </tr>
   <tr>
