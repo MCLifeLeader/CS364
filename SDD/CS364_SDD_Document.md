@@ -282,7 +282,7 @@ Design Concerns Addressed:
 
 | Data | Description |
 | --- |--- |
-| Screenshot/Mockup: |<img  src="https://github.com/MCLifeLeader/CS364/blob/master/SDD/resources/3.2.16.0.jpg" height="50%" width="50%"> |
+| Screenshot/Mockup: |<img  src="https://github.com/MCLifeLeader/CS364/blob/master/SDD/resources/3.2.1.2.png" height="50%" width="50%"> |
 | Page Title: | Creating an Event|
 | Author: | Jacob Keene |
 | Type: | Process. |
