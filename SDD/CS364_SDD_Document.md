@@ -1516,7 +1516,7 @@ The Controller classes contain all the methods that are necessary to work with t
     <th colspan = "3">Class Name: UI Controller</th>
   </tr>
   <tr>
-    <td colspan = "3">Brief Description: the UI controller class is responsible for controlling everything the users can interact with. This class communicates with the database facade class to verify user credentials, the I-Learn facade class to retrieve assignment information, the student controller class to retrieve information about the current user, and the calendar item controller class to retrieve and update information about the user’s calendar.</td>
+    <td colspan = "3">Brief Description: The UI controller class is responsible for controlling everything the users can interact with. When a user interacts with anything in the app a request is sent to the UI controller class which will organize the inforamtion and send it to the appropriate class to be manipulated. If anything needs to be sent back for the user to view the UI controller class will recieve the information and send it back to the UI layer to be displayed to the user. This class communicates with the database facade class to verify user credentials, the I-Learn facade class to retrieve assignment information, the student controller class to retrieve information about the current user, and the calendar item controller class to retrieve and update information about the user’s calendar.</td>
   </tr>
   </table>
 
@@ -1553,7 +1553,7 @@ The Controller classes contain all the methods that are necessary to work with t
     <th>Method Description</th>
   </tr>
   <tr>
-    <td>When the Calendar button is selected in the menu open the calendar view. The default view shows the current month.</td>
+    <td>Allows the application to have a functioning calendar. When the Calendar button is selected in the menu open the calendar view. The default view shows the current month.</td>
   </tr>
   <tr>
     <th>Method Pseudo Code</th>
@@ -1567,7 +1567,7 @@ Return databaseQuery(filters)</td>
     <th>Method Description</th>
   </tr>
   <tr>
-    <td>When an event is clicked on in the Calendar</td>
+    <td>Allows the user to have and view events. When an event is clicked on in the Calendar a page is brought up that gives the event details.</td>
   </tr>
   <tr>
     <th>Method Pseudo Code</th>
@@ -1581,7 +1581,7 @@ return event FROM eventTable WHERE eventId = eventId</td>
     <th>Method Description</th>
   </tr>
   <tr>
-    <td>Returns the event information for a specified calendar selection.</td>
+    <td>Lets the user view all of their events in a specific date range. After a range is selected by the user the event information for the events included in that range are displayed back to the user.</td>
   </tr>
   <tr>
     <th>Method Pseudo Code</th>
@@ -1601,7 +1601,7 @@ else<br/>
     <th>Method Description</th>
   </tr>
   <tr>
-    <td>When the plus shaped button is selected on the bottom right of the calendar view it opens a form with different fields to be filled out by the user.</td>
+    <td>Allows the user to create their own unique events. When the plus shaped button is selected on the bottom right of the calendar view it opens a form with different fields to be filled out by the user.</td>
   </tr>
   <tr>
     <th>Method Pseudo Code</th>
@@ -1616,7 +1616,7 @@ return New Event</td>
     <th>Method Description</th>
   </tr>
   <tr>
-    <td>When the search button is selected the search query that is filled into the search bar is compared to the data stored in the database for that user. All matching events and assignments are displayed on the screen.</td>
+    <td>This method lets the user search their entire calendar for events and assignemnts. When the search button is selected the search query that is filled into the search bar is compared to the data stored in the database for that user. All matching events and assignments are displayed on the screen.</td>
   </tr>
   <tr>
     <th>Method Pseudo Code</th>
@@ -1625,11 +1625,12 @@ return New Event</td>
     <td>searchCalendar(searchQuery)
 return events FROM eventTable WHERE eventName LIKE searchQuery OR eventDescription LIKE searchQuery
   </tr>
+  
 <td rowspan = "4">createAccount</td>
     <th>Method Description</th>
   </tr>
   <tr>
-    <td>When the user clicks create account the I-Learn login credentials are passed to the I-LearnFacade class which verifies if they are correct.</td>
+    <td>Lets the user create an account so they can save all of their personal information and come back to it later. When the user clicks create account the I-Learn login credentials are passed to the I-LearnFacade class which verifies if they are correct.</td>
   </tr>
   <tr>
     <th>Method Pseudo Code</th>
@@ -1646,7 +1647,7 @@ Display “invalid credentials”
     <th>Method Description</th>
   </tr>
   <tr>
-    <td>When the user clicks login the login credentials are passed to the databaseFacade class which verifies if they are correct.</td>
+    <td>Allows the user to log back into their account and view all of their personal assignments and calendar. When the user clicks login the login credentials are passed to the databaseFacade class which verifies if they are correct.</td>
   </tr>
   <tr>
     <th>Method Pseudo Code</th>
@@ -1663,7 +1664,7 @@ Display “invalid credentials”
     <th>Method Description</th>
   </tr>
   <tr>
-    <td>When the user clicks the print button at the bottom of the To-Do list page the To-Do list is sent to the printerFacade class which handles the print job.</td>
+    <td>Allows the user to print out their To-Do list. When the user clicks the print button at the bottom of the To-Do list page the To-Do list is sent to the printerFacade class which handles the print job.</td>
   </tr>
   <tr>
     <th>Method Pseudo Code</th>
@@ -1678,7 +1679,7 @@ Display “invalid credentials”
     <th>Method Description</th>
   </tr>
   <tr>
-    <td>When the user clicks the print button at the top of the calendar page the calendar is sent to the printerFacade class which handles the print job.</td>
+    <td>Allow sthe user to print out their calendar. When the user clicks the print button at the top of the calendar page the calendar is sent to the printerFacade class which handles the print job.</td>
   </tr>
   <tr>
     <th>Method Pseudo Code</th>
@@ -1693,7 +1694,7 @@ Display “invalid credentials”
     <th>Method Description</th>
   </tr>
   <tr>
-    <td>The calendarController class will check periodically for upcoming due dates. When an assignment’s due date is close it will send the information to the createNotification function in the UI controller class which will generate a push notification.</td>
+    <td>This method is necessary to send the user notifications about their upcomng due dates and events. The calendarController class will check periodically for upcoming due dates. When an assignment’s due date is close it will send the information to the createNotification function in the UI controller class which will generate a push notification.</td>
   </tr>
   <tr>
     <th>Method Pseudo Code</th>
@@ -1707,7 +1708,7 @@ Display “invalid credentials”
     <th>Method Description</th>
   </tr>
   <tr>
-    <td>After the user clicks “Add To-Do Item” they are presented with a form to submit a custom entry in their To-Do list. Hitting submit will call this function which relays the information to the databaseFacade class where it will be stored in the database. </td>
+    <td>Allows the user to create their own entries to be added to the To-Do list. After the user clicks “Add To-Do Item” they are presented with a form to submit a custom entry in their To-Do list. Hitting submit will call this function which relays the information to the databaseFacade class where it will be stored in the database. </td>
   </tr>
   <tr>
     <th>Method Pseudo Code</th>
@@ -1721,7 +1722,7 @@ Display “invalid credentials”
     <th>Method Description</th>
   </tr>
   <tr>
-    <td>After the user clicks “Remove To-Do Item” next to a To-Do list entry this function relays the information to the databaseFacade class where it will be removed from the database. </td>
+    <td>Removes a user specified item from the To-Do list. After the user clicks “Remove To-Do Item” next to a To-Do list entry this function relays the information to the databaseFacade class where it will be removed from the database. </td>
   </tr>
   <tr>
     <th>Method Pseudo Code</th>
@@ -2316,6 +2317,10 @@ In the event that a user's credentials do not match up to their log in informati
 will be prompted to reenter their credentials or cancel importing their assignments from I-Learn. If any error results in the I-Learn
 API as it attempts to import assignment information into the system, the entire import process will be aborted and the user will be notified
 that an import error occured.
+
+### 4.5.4 UI Controller Class Errors
+
+All data passing through the UI Controller will be validated before being sent to the UI layer. If the data appears to be corrupted a new request will be sent to the respective controller. If the same problem is retrieved a second time an error will be displayed to the user and sent to the administrative logs. If the information is missing or incomplete an error will be passed to the UI layer which will notify the user of the issue.
 # 5.0 Data Design
 
 ## 5.1 Entity Relationship Diagram
@@ -2325,4 +2330,6 @@ that an import error occured.
 ## 5.2 Internal Software Data Structure
 
 ## 5.3 Global Data Structure
+
+# Index
 
