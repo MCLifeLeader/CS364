@@ -552,22 +552,22 @@ Design Concerns Addressed:
 | SRS Document | 3.2.33 |
 | Description/Notes:|The user will be presented with a variety of ways to sort their assignment, by class, by due date, or by priority. Once the user makes their selection the To-Do list page will be re-populated with their sorted results. There they will also have the option to view sorted results in an ascending or descending manner.|
 
-#### 3.2.3.3 To-Do List: Filter by Class
+#### 3.2.3.3 To-Do List: Filter
 
 | Data | Description |
 | --- |--- |
 | Screenshot/Mockup: | |
-| Page Title: | Filter by Class|
+| Page Title: | Filter|
 | Author: | Zane West |
 | Type: | Process. |
-| Purpose: | To provide the user with a way to search for all assignments related to a specific course. |
+| Purpose: | To provide the user with a way to filter assignments based on course, due-date, or priority. |
 | Parent User Story:|N/A |
 | Stakeholders: | Calendar Manager, Developers, Testers, Technical Support |
 | Pre-conditions/Product(s) Required: | 1. User is logged in. <br> 2. The user's courses have been added into the calendar. <br> 3. The user is on To-Do List View.|
-| Post-conditions/Product(s) Produced: | 1. A filtered To-Do list is presented based on the class selected by the user.|
+| Post-conditions/Product(s) Produced: | 1. A filtered To-Do list is presented based on the options selected by the user.|
 | Links: | None.|
 | SRS Document | 3.2.33 |
-| Description/Notes:|1. Filter by Class <br> a. The user opens the calendar and opens To-Do List. <br> b. The user selects the filter option and a pop-up box with the courses will show by which to filter. <br> c. The user selects the course from the pop-up they wish to see assignments for. <br> d. The calendar view updates to reflect only assignments by the filtered course. <br> 2. Warning <br> a. The filter will require coursework be entered into the calendar for at least one course to be able to filter. If there are no courses then it will show "No courses" in the pop-up box after clicking filter. <br> b. The filter shall reset with each Calendar Manager session to prevent the user from missing filtered assignments. |
+| Description/Notes:|1. Filter<br> a. The user opens the calendar and opens To-Do List. <br> b. The user selects the filter option and a pop-up box with the available filtering options will show by which to filter. <br> c. The user selects the course(s) they wish to view, or the date range they wish to view, or to filter by priority assignments. <br> d. The calendar view updates to reflect only assignments meeting the filter criteria. <br> 2. Warning <br> a. The filter will require coursework be entered into the calendar for at least one course to be able to filter. If there are no courses then it will show "No courses" in the pop-up box after clicking filter. <br> b. The filter shall reset with each Calendar Manager session to prevent the user from missing filtered assignments. |
 
 ### 3.2.4 Calendar Integrations
 <img  src="https://github.com/MCLifeLeader/CS364/blob/master/SDD/resources/UML_Communication/Calendar%20Integrations%20UML%20Communication%20Diagram.jpg" height="100%" width="100%"></br>
@@ -614,6 +614,7 @@ Design Concerns Addressed:
 | Description/Notes:| 1. Supported third party calendar applications include:<br/> a. Google Calendar <br/> b. Apple Calendar <br/> c. Outlook Calendar <br/> d. Any calendar that supports importing an iCalendar file <br/> 2. Exporting iCalendar <br> a. The user will click export on the calendar page. <br> b. The system will create an iCalendar file. <br> c. The iCalendar file will attempt to be downloaded. <br> d. The iCalendar file may then be imported into the supported third party calendar applications by the user.|
 
 ### 3.2.5 User Profile Settings
+<img  src="https://github.com/MCLifeLeader/CS364/blob/master/SDD/resources/UML_Communication/User%20Profile%20Settings%20UML%20Communication%20Diagram.jpg" height="100%" width="100%"></br>
 
 Design Concerns Addressed:
 - Calendar managers should be able to change settings according to their preference.
@@ -691,7 +692,7 @@ Design Concerns Addressed:
 | Description/Notes:| Enable/disable and change settings for notifications <br> 1. Notifications will be enabled by default. <br> 2. The notification toggle will be found in the parent settings page. <br> 3. Warnings <br> a. If notifications or notification permissions are blocked by the operating system, a prompt will notify the user of this situation. <br> b. The notification will have the option to redirect the user to the permissions page of their operating system or browser to correct the error. <br> c. The notification will have the option to never allow the permission and never remind the user of the error.<br> 4. Configurable settings <br> a. How often they receive notifications.<br> b. What email address or text messaging number to receive notifications at. <br> c. What they want to be notified about.|
 
 ### 3.2.6 Import Assignments from I-Learn
-<img  src="https://github.com/MCLifeLeader/CS364/blob/master/SDD/resources/UML_Communication/import%20from%20I-learn%20UML%20communication%20diagram.jpg" height="100%" width="100%"></br>
+<img  src="https://github.com/MCLifeLeader/CS364/blob/master/SDD/resources/UML_Communication/I-Learn%20Import%20UML%20Communication%20Diagram.jpg" height="100%" width="100%"></br>
 
 Design Concerns Addressed:
 - Calendar managers should be able to import assignments from I-Learn.
@@ -2325,7 +2326,7 @@ All data passing through the UI Controller will be validated before being sent t
 
 ## 5.1 Entity Relationship Diagram
 
-<img  src="https://github.com/MCLifeLeader/CS364/blob/master/SDD/resources/FullDataModel.jpg" height="50%" width="50%"></br>
+<img  src="https://github.com/MCLifeLeader/CS364/blob/master/SDD/resources/FullDataModel_final.jpg" height="50%" width="50%"></br>
 
 ## 5.2 Internal Software Data Structure
 
