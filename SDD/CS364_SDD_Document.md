@@ -2324,10 +2324,10 @@ that an import error occured.
 All data passing through the UI Controller will be validated before being sent to the UI layer. If the data appears to be corrupted a new request will be sent to the respective controller. If the same problem is retrieved a second time an error will be displayed to the user and sent to the administrative logs. If the information is missing or incomplete an error will be passed to the UI layer which will notify the user of the issue.
 # 5.0 Data Design
 
-# 5.0.1 Data Description
+# 5.1 Data Description
 
 A Relational Database to hold the data and SQL to communicate with the database. It will provide the ability to handle the many relationships that are in the application. It will also be able to maintain data integrity while scaling with the anticipated user base.
-# 5.0.2 Data Dictionary
+# 5.2 Data Dictionary
 
 Table Name | Field | Type | Null | Default
 --- | --- | --- | --- | ---
@@ -2373,7 +2373,7 @@ Event  | StartDate  | datetime  | Yes  | null
 Event  | EndDate  | datetime  | Yes  | null
 Event  | Location  | decimal(9,6)  | Yes  | null
 Event  | Frequency  | int  | Yes  | null
-## 5.1 Entity Relationship Diagram
+## 5.3 Entity Relationship Diagram
 
 <img  src="https://github.com/MCLifeLeader/CS364/blob/master/SDD/resources/FullDataModel_final.jpg" height="50%" width="50%"></br>
 
