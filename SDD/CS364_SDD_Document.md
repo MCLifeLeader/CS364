@@ -2327,3 +2327,53 @@ All data passing through the UI Controller will be validated before being sent t
 # 5.0.1 Data Description
 
 A Relational Database to hold the data and SQL to communicate with the database. It will provide the ability to handle the many relationships that are in the application. It will also be able to maintain data integrity while scaling with the anticipated user base.
+# 5.0.2 Data Dictionary
+
+Table Name | Field | Type | Null | Default
+--- | --- | --- | --- | ---
+Login  | LoginId  | int **PK Identity** | No  | NA
+Login | UserName | nvarchar(150) | No | NA
+Login  | UserPassword  | nvarchar(150)  | No  | NA
+Student  | StudentId  | int **PK Identity**  | No  | NA
+Student  | FirstName  | nvarchar(35)  | No  | NA
+Student  | LastName  | nvarchar(35)  | No  | NA
+Student  | AddressLine1  | nvarchar(50)  | Yes  | null
+Student  | AddressLine2  | nvarchar(50)  | Yes  | null
+Student  | PhoneNumber  | int(9)  | Yes  | null
+Student  | EmailSchool  | nvarchar(250)  | No  | NA
+Student  | SchoolName  | nvarchar(150)  | Yes  | NA
+Student  | NotificationsEnabled  | boolean  | No  | false
+Student  | LoginId  | int **FK Login**  | No  | NA
+Course  | CourseId  | int **PK Identity**  | No  | NA
+Course  | Title  | nvarchar(150)  | No  | NA
+Course  | Description  | nvarchar(300)  | Yes  | null
+Course  | Link  | nvarchar(250)  | Yes  | null
+Course  | StudentId  | int **FK Student**  | No  | NA
+Assignment  | AssignmentId  | int **PK Identity** | No  | NA
+Assignment  | Title  | nvarchar(150)  | No  | NA
+Assignment  | Description  | nvarchar(300)  | Yes  | null
+Assignment  | DueDateTime  | datetime  | Yes  | null
+Assignment  | IsCompleted  | boolean  | No  | false
+Assignment  | Link  | nvarchar(250)  | Yes  | null
+Assignment  | CourseId  | int **FK Course**  | No  | NA
+Assignment  | AssignmentTypeId  | int **FK AssignmentType**  | No  | NA
+AssignmentType  | AssignmentTypeId  | int **PK Identity** | No  | NA
+AssignmentType  | Name  | nvarchar(150)  | No  | NA
+Notification  | NotificationId  | int **PK Identity**  |  No | NA
+Notification  | Name  | nvarchar(150)  | No  | NA
+Notification  | Description  | nvarchar(300)  | Yes  | null
+Notification  | Time  | datetime  | Yes  | null
+Notification  | Snoozed  | boolean  | Yes  | null
+Notification  | SnoozeTime  | datetime  | Yes  | null
+Event  | EventId  | int **PK Identity**  | No  | NA
+Event  | Name  |  nvarchar(150) | No  | NA
+Event  | Description  | nvarchar(300)  | Yes  | null
+Event  | DayOccurence  | datetime  | Yes  | null
+Event  | StartDate  | datetime  | Yes  | null
+Event  | EndDate  | datetime  | Yes  | null
+Event  | Location  | decimal(9,6)  | Yes  | null
+Event  | Frequency  | int  | Yes  | null
+## 5.1 Entity Relationship Diagram
+
+<img  src="https://github.com/MCLifeLeader/CS364/blob/master/SDD/resources/FullDataModel_final.jpg" height="50%" width="50%"></br>
+
