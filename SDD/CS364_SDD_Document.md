@@ -552,22 +552,22 @@ Design Concerns Addressed:
 | SRS Document | 3.2.33 |
 | Description/Notes:|The user will be presented with a variety of ways to sort their assignment, by class, by due date, or by priority. Once the user makes their selection the To-Do list page will be re-populated with their sorted results. There they will also have the option to view sorted results in an ascending or descending manner.|
 
-#### 3.2.3.3 To-Do List: Filter by Class
+#### 3.2.3.3 To-Do List: Filter
 
 | Data | Description |
 | --- |--- |
 | Screenshot/Mockup: | |
-| Page Title: | Filter by Class|
+| Page Title: | Filter|
 | Author: | Zane West |
 | Type: | Process. |
-| Purpose: | To provide the user with a way to search for all assignments related to a specific course. |
+| Purpose: | To provide the user with a way to filter assignments based on course, due-date, or priority. |
 | Parent User Story:|N/A |
 | Stakeholders: | Calendar Manager, Developers, Testers, Technical Support |
 | Pre-conditions/Product(s) Required: | 1. User is logged in. <br> 2. The user's courses have been added into the calendar. <br> 3. The user is on To-Do List View.|
-| Post-conditions/Product(s) Produced: | 1. A filtered To-Do list is presented based on the class selected by the user.|
+| Post-conditions/Product(s) Produced: | 1. A filtered To-Do list is presented based on the options selected by the user.|
 | Links: | None.|
 | SRS Document | 3.2.33 |
-| Description/Notes:|1. Filter by Class <br> a. The user opens the calendar and opens To-Do List. <br> b. The user selects the filter option and a pop-up box with the courses will show by which to filter. <br> c. The user selects the course from the pop-up they wish to see assignments for. <br> d. The calendar view updates to reflect only assignments by the filtered course. <br> 2. Warning <br> a. The filter will require coursework be entered into the calendar for at least one course to be able to filter. If there are no courses then it will show "No courses" in the pop-up box after clicking filter. <br> b. The filter shall reset with each Calendar Manager session to prevent the user from missing filtered assignments. |
+| Description/Notes:|1. Filter<br> a. The user opens the calendar and opens To-Do List. <br> b. The user selects the filter option and a pop-up box with the available filtering options will show by which to filter. <br> c. The user selects the course(s) they wish to view, or the date range they wish to view, or to filter by priority assignments. <br> d. The calendar view updates to reflect only assignments meeting the filter criteria. <br> 2. Warning <br> a. The filter will require coursework be entered into the calendar for at least one course to be able to filter. If there are no courses then it will show "No courses" in the pop-up box after clicking filter. <br> b. The filter shall reset with each Calendar Manager session to prevent the user from missing filtered assignments. |
 
 ### 3.2.4 Calendar Integrations
 <img  src="https://github.com/MCLifeLeader/CS364/blob/master/SDD/resources/UML_Communication/Calendar%20Integrations%20UML%20Communication%20Diagram.jpg" height="100%" width="100%"></br>
@@ -614,6 +614,7 @@ Design Concerns Addressed:
 | Description/Notes:| 1. Supported third party calendar applications include:<br/> a. Google Calendar <br/> b. Apple Calendar <br/> c. Outlook Calendar <br/> d. Any calendar that supports importing an iCalendar file <br/> 2. Exporting iCalendar <br> a. The user will click export on the calendar page. <br> b. The system will create an iCalendar file. <br> c. The iCalendar file will attempt to be downloaded. <br> d. The iCalendar file may then be imported into the supported third party calendar applications by the user.|
 
 ### 3.2.5 User Profile Settings
+<img  src="https://github.com/MCLifeLeader/CS364/blob/master/SDD/resources/UML_Communication/User%20Profile%20Settings%20UML%20Communication%20Diagram.jpg" height="100%" width="100%"></br>
 
 Design Concerns Addressed:
 - Calendar managers should be able to change settings according to their preference.
@@ -671,7 +672,14 @@ Design Concerns Addressed:
 | Post-conditions/Product(s) Produced: | 1. If the Settings were validated, the message box with "Settings Saved" appears.<br> 2. Settings page is refreshed and settings changed are shown to the user.|
 | Links: | None.|
 | SRS Document | 3.2.57.1 |
-| Description/Notes:| 1. Change profile option inside the settings menu can be selected. <br> 2. Forms are showed with actual data. <br> <br> Validation <br>1. Name input box will be filled out with the actual name. <br> 2. Address input box will appear, with three lines to be filled out. <br> a. Address line 1, line 2 and line 3. <br> b. The zip code input box needs to follow the 5-digit numbers only. <br> 3. Phone input box will appear and needs to be filled out with the following pattern xxx-xxx-xxxx to be validated. <br> 4. E-mail input box will be filled out and validated with patterns of e-mail addresses, like xxx@xxx.xxx. <br> 5.School input box will be filled out with the complete name of the school and not with abbreviations e.g, BYU-I. <br> 6. Button for images and the button to delete profile will be sent to the server to delete the profile or to upload the respective photo to his profile. <br><br> Observations <br> 1. Any errors during the validation process, the respective input box will stay "red color" with the text in the side with the tip of data type must be filled out to be validated.|
+| Description/Notes:| 1. Change profile option inside the settings menu can be selected. <br> 2. Forms are showed with actual data. <br> <br> Validation <br>1. Name input box will be filled out with the actual name. <br> 2. Address input box will appear, with three lines to be filled out. <br> a. Address line 1, line 2 and line 3. <br> b. The zip code input box needs to follow the 5-digit numbers only. <br> 3. Phone input box will appear and needs to be filled out with the following pattern xxx-xxx-xxxx to be validated. <br> 4. E-mail input box will be filled out and validated with patterns of e-mail addresses, like xxx@xxx.xxx. This will follow the definitions as defined in the RFCs. 
+
+* https://tools.ietf.org/html/rfc5321
+* https://tools.ietf.org/html/rfc5322
+* https://tools.ietf.org/html/rfc6531
+* https://tools.ietf.org/html/rfc3696
+
+<br> 5.School input box will be filled out with the complete name of the school and not with abbreviations e.g, BYU-I. <br> 6. Button for images and the button to delete profile will be sent to the server to delete the profile or to upload the respective photo to his profile. <br><br> Observations <br> 1. Any errors during the validation process, the respective input box will stay "red color" with the text in the side with the tip of data type must be filled out to be validated.|
 
 #### 3.2.5.3 User Profile Settings: Change Notification Settings
 
@@ -691,7 +699,7 @@ Design Concerns Addressed:
 | Description/Notes:| Enable/disable and change settings for notifications <br> 1. Notifications will be enabled by default. <br> 2. The notification toggle will be found in the parent settings page. <br> 3. Warnings <br> a. If notifications or notification permissions are blocked by the operating system, a prompt will notify the user of this situation. <br> b. The notification will have the option to redirect the user to the permissions page of their operating system or browser to correct the error. <br> c. The notification will have the option to never allow the permission and never remind the user of the error.<br> 4. Configurable settings <br> a. How often they receive notifications.<br> b. What email address or text messaging number to receive notifications at. <br> c. What they want to be notified about.|
 
 ### 3.2.6 Import Assignments from I-Learn
-<img  src="https://github.com/MCLifeLeader/CS364/blob/master/SDD/resources/UML_Communication/import%20from%20I-learn%20UML%20communication%20diagram.jpg" height="100%" width="100%"></br>
+<img  src="https://github.com/MCLifeLeader/CS364/blob/master/SDD/resources/UML_Communication/I-Learn%20Import%20UML%20Communication%20Diagram.jpg" height="100%" width="100%"></br>
 
 Design Concerns Addressed:
 - Calendar managers should be able to import assignments from I-Learn.
@@ -1516,7 +1524,7 @@ The Controller classes contain all the methods that are necessary to work with t
     <th colspan = "3">Class Name: UI Controller</th>
   </tr>
   <tr>
-    <td colspan = "3">Brief Description: the UI controller class is responsible for controlling everything the users can interact with. This class communicates with the database facade class to verify user credentials, the I-Learn facade class to retrieve assignment information, the student controller class to retrieve information about the current user, and the calendar item controller class to retrieve and update information about the user’s calendar.</td>
+    <td colspan = "3">Brief Description: The UI controller class is responsible for controlling everything the users can interact with. When a user interacts with anything in the app a request is sent to the UI controller class which will organize the inforamtion and send it to the appropriate class to be manipulated. If anything needs to be sent back for the user to view the UI controller class will recieve the information and send it back to the UI layer to be displayed to the user. This class communicates with the database facade class to verify user credentials, the I-Learn facade class to retrieve assignment information, the student controller class to retrieve information about the current user, and the calendar item controller class to retrieve and update information about the user’s calendar.</td>
   </tr>
   </table>
 
@@ -1553,7 +1561,7 @@ The Controller classes contain all the methods that are necessary to work with t
     <th>Method Description</th>
   </tr>
   <tr>
-    <td>When the Calendar button is selected in the menu open the calendar view. The default view shows the current month.</td>
+    <td>Allows the application to have a functioning calendar. When the Calendar button is selected in the menu open the calendar view. The default view shows the current month.</td>
   </tr>
   <tr>
     <th>Method Pseudo Code</th>
@@ -1567,7 +1575,7 @@ Return databaseQuery(filters)</td>
     <th>Method Description</th>
   </tr>
   <tr>
-    <td>When an event is clicked on in the Calendar</td>
+    <td>Allows the user to have and view events. When an event is clicked on in the Calendar a page is brought up that gives the event details.</td>
   </tr>
   <tr>
     <th>Method Pseudo Code</th>
@@ -1581,7 +1589,7 @@ return event FROM eventTable WHERE eventId = eventId</td>
     <th>Method Description</th>
   </tr>
   <tr>
-    <td>Returns the event information for a specified calendar selection.</td>
+    <td>Lets the user view all of their events in a specific date range. After a range is selected by the user the event information for the events included in that range are displayed back to the user.</td>
   </tr>
   <tr>
     <th>Method Pseudo Code</th>
@@ -1601,7 +1609,7 @@ else<br/>
     <th>Method Description</th>
   </tr>
   <tr>
-    <td>When the plus shaped button is selected on the bottom right of the calendar view it opens a form with different fields to be filled out by the user.</td>
+    <td>Allows the user to create their own unique events. When the plus shaped button is selected on the bottom right of the calendar view it opens a form with different fields to be filled out by the user.</td>
   </tr>
   <tr>
     <th>Method Pseudo Code</th>
@@ -1616,7 +1624,7 @@ return New Event</td>
     <th>Method Description</th>
   </tr>
   <tr>
-    <td>When the search button is selected the search query that is filled into the search bar is compared to the data stored in the database for that user. All matching events and assignments are displayed on the screen.</td>
+    <td>This method lets the user search their entire calendar for events and assignemnts. When the search button is selected the search query that is filled into the search bar is compared to the data stored in the database for that user. All matching events and assignments are displayed on the screen.</td>
   </tr>
   <tr>
     <th>Method Pseudo Code</th>
@@ -1625,11 +1633,12 @@ return New Event</td>
     <td>searchCalendar(searchQuery)
 return events FROM eventTable WHERE eventName LIKE searchQuery OR eventDescription LIKE searchQuery
   </tr>
+  
 <td rowspan = "4">createAccount</td>
     <th>Method Description</th>
   </tr>
   <tr>
-    <td>When the user clicks create account the I-Learn login credentials are passed to the I-LearnFacade class which verifies if they are correct.</td>
+    <td>Lets the user create an account so they can save all of their personal information and come back to it later. When the user clicks create account the I-Learn login credentials are passed to the I-LearnFacade class which verifies if they are correct.</td>
   </tr>
   <tr>
     <th>Method Pseudo Code</th>
@@ -1646,7 +1655,7 @@ Display “invalid credentials”
     <th>Method Description</th>
   </tr>
   <tr>
-    <td>When the user clicks login the login credentials are passed to the databaseFacade class which verifies if they are correct.</td>
+    <td>Allows the user to log back into their account and view all of their personal assignments and calendar. When the user clicks login the login credentials are passed to the databaseFacade class which verifies if they are correct.</td>
   </tr>
   <tr>
     <th>Method Pseudo Code</th>
@@ -1663,7 +1672,7 @@ Display “invalid credentials”
     <th>Method Description</th>
   </tr>
   <tr>
-    <td>When the user clicks the print button at the bottom of the To-Do list page the To-Do list is sent to the printerFacade class which handles the print job.</td>
+    <td>Allows the user to print out their To-Do list. When the user clicks the print button at the bottom of the To-Do list page the To-Do list is sent to the printerFacade class which handles the print job.</td>
   </tr>
   <tr>
     <th>Method Pseudo Code</th>
@@ -1678,7 +1687,7 @@ Display “invalid credentials”
     <th>Method Description</th>
   </tr>
   <tr>
-    <td>When the user clicks the print button at the top of the calendar page the calendar is sent to the printerFacade class which handles the print job.</td>
+    <td>Allow sthe user to print out their calendar. When the user clicks the print button at the top of the calendar page the calendar is sent to the printerFacade class which handles the print job.</td>
   </tr>
   <tr>
     <th>Method Pseudo Code</th>
@@ -1693,7 +1702,7 @@ Display “invalid credentials”
     <th>Method Description</th>
   </tr>
   <tr>
-    <td>The calendarController class will check periodically for upcoming due dates. When an assignment’s due date is close it will send the information to the createNotification function in the UI controller class which will generate a push notification.</td>
+    <td>This method is necessary to send the user notifications about their upcomng due dates and events. The calendarController class will check periodically for upcoming due dates. When an assignment’s due date is close it will send the information to the createNotification function in the UI controller class which will generate a push notification.</td>
   </tr>
   <tr>
     <th>Method Pseudo Code</th>
@@ -1707,7 +1716,7 @@ Display “invalid credentials”
     <th>Method Description</th>
   </tr>
   <tr>
-    <td>After the user clicks “Add To-Do Item” they are presented with a form to submit a custom entry in their To-Do list. Hitting submit will call this function which relays the information to the databaseFacade class where it will be stored in the database. </td>
+    <td>Allows the user to create their own entries to be added to the To-Do list. After the user clicks “Add To-Do Item” they are presented with a form to submit a custom entry in their To-Do list. Hitting submit will call this function which relays the information to the databaseFacade class where it will be stored in the database. </td>
   </tr>
   <tr>
     <th>Method Pseudo Code</th>
@@ -1721,7 +1730,7 @@ Display “invalid credentials”
     <th>Method Description</th>
   </tr>
   <tr>
-    <td>After the user clicks “Remove To-Do Item” next to a To-Do list entry this function relays the information to the databaseFacade class where it will be removed from the database. </td>
+    <td>Removes a user specified item from the To-Do list. After the user clicks “Remove To-Do Item” next to a To-Do list entry this function relays the information to the databaseFacade class where it will be removed from the database. </td>
   </tr>
   <tr>
     <th>Method Pseudo Code</th>
@@ -2316,13 +2325,62 @@ In the event that a user's credentials do not match up to their log in informati
 will be prompted to reenter their credentials or cancel importing their assignments from I-Learn. If any error results in the I-Learn
 API as it attempts to import assignment information into the system, the entire import process will be aborted and the user will be notified
 that an import error occured.
+
+### 4.5.4 UI Controller Class Errors
+
+All data passing through the UI Controller will be validated before being sent to the UI layer. If the data appears to be corrupted a new request will be sent to the respective controller. If the same problem is retrieved a second time an error will be displayed to the user and sent to the administrative logs. If the information is missing or incomplete an error will be passed to the UI layer which will notify the user of the issue.
 # 5.0 Data Design
 
-## 5.1 Entity Relationship Diagram
+# 5.1 Data Description
 
-<img  src="https://github.com/MCLifeLeader/CS364/blob/master/SDD/resources/FullDataModel.jpg" height="50%" width="50%"></br>
+A Relational Database to hold the data and SQL to communicate with the database. It will provide the ability to handle the many relationships that are in the application. It will also be able to maintain data integrity while scaling with the anticipated user base.
+# 5.2 Data Dictionary
 
-## 5.2 Internal Software Data Structure
+Table Name | Field | Type | Null | Default
+--- | --- | --- | --- | ---
+Login  | LoginId  | int **PK Identity** | No  | NA
+Login | UserName | nvarchar(150) | No | NA
+Login  | UserPassword  | nvarchar(150)  | No  | NA
+Student  | StudentId  | int **PK Identity**  | No  | NA
+Student  | FirstName  | nvarchar(35)  | No  | NA
+Student  | LastName  | nvarchar(35)  | No  | NA
+Student  | AddressLine1  | nvarchar(50)  | Yes  | null
+Student  | AddressLine2  | nvarchar(50)  | Yes  | null
+Student  | PhoneNumber  | int(9)  | Yes  | null
+Student  | EmailSchool  | nvarchar(250)  | No  | NA
+Student  | SchoolName  | nvarchar(150)  | Yes  | NA
+Student  | NotificationsEnabled  | boolean  | No  | false
+Student  | LoginId  | int **FK Login**  | No  | NA
+Course  | CourseId  | int **PK Identity**  | No  | NA
+Course  | Title  | nvarchar(150)  | No  | NA
+Course  | Description  | nvarchar(300)  | Yes  | null
+Course  | Link  | nvarchar(250)  | Yes  | null
+Course  | StudentId  | int **FK Student**  | No  | NA
+Assignment  | AssignmentId  | int **PK Identity** | No  | NA
+Assignment  | Title  | nvarchar(150)  | No  | NA
+Assignment  | Description  | nvarchar(300)  | Yes  | null
+Assignment  | DueDateTime  | datetime  | Yes  | null
+Assignment  | IsCompleted  | boolean  | No  | false
+Assignment  | Link  | nvarchar(250)  | Yes  | null
+Assignment  | CourseId  | int **FK Course**  | No  | NA
+Assignment  | AssignmentTypeId  | int **FK AssignmentType**  | No  | NA
+AssignmentType  | AssignmentTypeId  | int **PK Identity** | No  | NA
+AssignmentType  | Name  | nvarchar(150)  | No  | NA
+Notification  | NotificationId  | int **PK Identity**  |  No | NA
+Notification  | Name  | nvarchar(150)  | No  | NA
+Notification  | Description  | nvarchar(300)  | Yes  | null
+Notification  | Time  | datetime  | Yes  | null
+Notification  | Snoozed  | boolean  | Yes  | null
+Notification  | SnoozeTime  | datetime  | Yes  | null
+Event  | EventId  | int **PK Identity**  | No  | NA
+Event  | Name  |  nvarchar(150) | No  | NA
+Event  | Description  | nvarchar(300)  | Yes  | null
+Event  | DayOccurence  | datetime  | Yes  | null
+Event  | StartDate  | datetime  | Yes  | null
+Event  | EndDate  | datetime  | Yes  | null
+Event  | Location  | decimal(9,6)  | Yes  | null
+Event  | Frequency  | int  | Yes  | null
+## 5.3 Entity Relationship Diagram
 
-## 5.3 Global Data Structure
+<img  src="https://github.com/MCLifeLeader/CS364/blob/master/SDD/resources/FullDataModel_final.jpg" height="50%" width="100%"></br>
 
