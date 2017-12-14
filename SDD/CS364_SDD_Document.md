@@ -113,7 +113,7 @@ The purpose of this Software Design Document is to define the design elements of
 
 ## 1.2 Scope
 
-This document supplies details for all features required in the initial release of the Student Calendar Integration Application. Specifically internal data models, user interface, overall design views, and relevant use cases are defined. 
+This document supplies details for all features required in the initial release of the Student Calendar Integration Application. Specifically, internal data models, user interface, overall design views, and relevant use cases are defined. 
 
 ## 1.3 Context
 
@@ -158,7 +158,7 @@ UX | _User Experience_; it refers to a person's emotions and attitudes about usi
 
 # 3.0 Use Cases
 
-This section addresses the identified stakeholders and their design concerns in 3.1. In section 3.2 we provide several context viewpoints including UML communication diagrams to provide an overview of each viewpoint, and use cases that are design entities that pertain to the corresponding context viewpoint. 
+This section addresses the identified stakeholders and their design concerns in 3.1. In section 3.2 we provide several context viewpoints including UML communication diagrams to provide an overview of each viewpoint and use cases that are designed entities that pertain to the corresponding context viewpoint. 
 
 ## 3.1 Identified Stakeholders and Design Concerns
 
@@ -203,7 +203,7 @@ Testers are those that make test cases and assist in testing the calendar applic
 
 ### 3.1.4 Technical Support
 
-Technical Support are those that will be helping calendar managers to troubleshoot problems that may arise with using the calendar application.
+Technical Support is those that will be helping calendar managers to troubleshoot problems that may arise with using the calendar application.
 
 #### 3.1.4.1 Design Concerns
 
@@ -222,7 +222,7 @@ Use cases provide design entities that show the interactions between the actors 
 | Author: | Robert Nelson |
 | Type: | Process. |
 | Purpose: |A description of why the element exists. The purpose attribute shall provide the rationale for the creation of the element.|
-| Parent User Story:| The Parent User Story links to the higher-level use case that is parent to a particular use case.|
+| Parent User Story:| The Parent User Story links to the higher-level use case that is a parent to a particular use case.|
 | Stakeholders: | The stakeholders that the use case pertains to. |
 | Pre-conditions/Product(s) Required: | The conditions, procedures, and requirements to be completed before the use case may be attempted.|
 | Post-conditions/Product(s) Produced: | The conditions, procedures, and requirements to be completed upon termination of the use case.|
@@ -232,7 +232,7 @@ Use cases provide design entities that show the interactions between the actors 
 
 #### 3.2.0.1 Error Handling
 
-As a general policy any input received from the user interface will be validated to prevent injection attempts. Any unexpected input will display an error message that explains the error encountered. Use cases will explain specific error handling situations.
+As a general policy, any input received from the user interface will be validated to prevent injection attempts. Any unexpected input will display an error message that explains the error encountered. Use cases will explain specific error handling situations.
 
 ### 3.2.1 Calendar Display
 <img  src="https://github.com/MCLifeLeader/CS364/blob/master/SDD/resources/UML_Communication/Calendar%20Display%20UML%20Communication%20Diagram.jpg" height="100%" width="100%"></br>
@@ -249,7 +249,7 @@ Design Concerns Addressed:
 | Data | Description |
 | --- |--- |
 | Screenshot/Mockup: |<img  src="https://github.com/MCLifeLeader/CS364/blob/master/SDD/resources/3.2.1.0.png" height="50%" width="50%">|
-| Page Title: | Home Page|
+| Page Title: | HomePage|
 | Author: | Robert Nelson |
 | Type: | Process. |
 | Purpose: |Calendar display allows the user to view past and upcoming events and to allow scheduling of future events.|
@@ -259,7 +259,7 @@ Design Concerns Addressed:
 | Post-conditions/Product(s) Produced: | The Home Screen is displayed.|
 | Links: | None.|
 | SRS Document | 3.2.2 |
-| Description/Notes:| 1. The Calendar Manager will navigate to the URL of the calendar website.<br>2. The website's home page will be loaded and displayed.<br>a. The home page will load the user's specific calendar if they are logged in.<br>b. If the user has not logged in then a default calendar will be loaded on screen.<br>c. If the user is not logged in then a small modal box will pop up prompting the user to sign in or register an account. <br> d. If the user clicks the sign in button they will be redirected to the log-in screen. <br> e. If the user clicks the new user button they will be redirected to the account registration page.<br> 3. If the web browser is not supported by the web site then it will display a message explaining the compatibility issue.<br> 4. Pages that users try to access but do not exist on the web site domain will show an error message and have a link back to the home page.|
+| Description/Notes:| 1. The Calendar Manager will navigate to the URL of the calendar website.<br>2. The website's homepage will be loaded and displayed.<br>a. The homepage will load the user's specific calendar if they are logged in.<br>b. If the user has not logged in then a default calendar will be loaded on screen.<br>c. If the user is not logged in then a small modal box will pop up prompting the user to sign in or register an account. <br> d. If the user clicks the sign in button they will be redirected to the log-in screen. <br> e. If the user clicks the new user button they will be redirected to the account registration page.<br> 3. If the web browser is not supported by the website then it will display a message explaining the compatibility issue.<br> 4. Pages that users try to access but do not exist on the web site domain will show an error message and have a link back to the homepage.|
 
 #### 3.2.1.1 Calendar Display: Checking the Schedule
 
@@ -276,7 +276,7 @@ Design Concerns Addressed:
 | Post-conditions/Product(s) Produced: | Calendar is up on display. |
 | Links: | None.|
 | SRS Document | 3.2.2 |
-| Description/Notes:| 1. When the user goes to the home page the calendar will be shown with the events the user has on their calendar. <br> a. Events will be displayed as user has scheduled. <br> b. School assignments will be displayed as synced with I-Learn. <br> 2. The user will be able to switch between daily, weekly, and monthly views. See 3.2.1.3. <br> 3. The assignment titles and due time will be displayed and resized to fit on the screen. a. If the assignment titles won't fit on a calendar day then the calendar will be resized to be larger. 3. The user can click the assignment to view its details.|
+| Description/Notes:| 1. When the user goes to the homepage the calendar will be shown with the events the user has on their calendar. <br> a. Events will be displayed as the user has scheduled. <br> b. School assignments will be displayed as synced with I-Learn. <br> 2. The user will be able to switch between daily, weekly, and monthly views. See 3.2.1.3. <br> 3. The assignment titles and due time will be displayed and resized to fit on the screen. a. If the assignment titles won't fit on a calendar day then, the calendar will be resized to be larger. 3. The user can click the assignment to view its details.|
 
 #### 3.2.1.2 Calendar Display: Creating an Event
 
@@ -286,11 +286,11 @@ Design Concerns Addressed:
 | Page Title: | Creating an Event|
 | Author: | Jacob Keene |
 | Type: | Process. |
-| Purpose: | Creating event in the calendar allows the user to schedule future events to assist in organization and productivity.|
+| Purpose: | Creating an event in the calendar allows the user to schedule future events to assist in organization and productivity.|
 | Parent User Story:| N/A|
 | Stakeholders: | Calendar Manager, Developers, Testers, Technical Support |
 | Pre-conditions/Product(s) Required: | User is logged in. |
-| Post-conditions/Product(s) Produced: | Event is created and displays correctly on calendar.|
+| Post-conditions/Product(s) Produced: | Event is created and displays correctly on the calendar.|
 | Links: | None.|
 | SRS Document | 3.2.16 |
 | Description/Notes:| Creating an Event <br> 1. Create Event button is displayed on the Calendar App. <br> a. User clicks Create Event button. <br> b. User prompted to select day(s) to schedule event. <br> c. User enters description of event. <br> 2. Event is added and displayed on User's Calendar. <br> a. User can interact with Event on Calendar. |
@@ -306,7 +306,7 @@ Design Concerns Addressed:
 | Purpose: | Switching views allows the user to have alternative ways to view their calendar and increase productivity.|
 | Parent User Story:| 3.2.1.1|
 | Stakeholders: | Calendar Manager, Developers, Testers, Technical Support |
-| Pre-conditions/Product(s) Required: | User is logged in. User is on home page.|
+| Pre-conditions/Product(s) Required: | User is logged in. User is on homepage.|
 | Post-conditions/Product(s) Produced: | Calendar is displayed in the corresponding daily, weekly, or monthly view with the user's events and assignments shown. |
 | Links: | None.|
 | SRS Document | 3.2.53 |
@@ -327,7 +327,7 @@ Design Concerns Addressed:
 | Post-conditions/Product(s) Produced: | 1. The user is presented with the recommended course of action or the option to ignore. |
 | Links: | None.|
 | SRS Document | 3.2.22 |
-| Description/Notes:| 1. Warnings <br> a. An alert will appear when the user has performed or intends to perform an illegal or high-risk action, e.g.: creating an event with not reminders or deleting a calendar event. <br> 2. Reminders <br> a. Alerts will be used as a reminder in certain situations, e.g.: reminding the user that they have not synced their calendar in *x* days.   |
+| Description/Notes:| 1. Warnings <br> a. An alert will appear when the user has performed or intends to perform an illegal or high-risk action, e.g.: creating an event with no reminders or deleting a calendar event. <br> 2. Reminders <br> a. Alerts will be used as a reminder in certain situations, e.g.: reminding the user that they have not synced their calendar in *x* days.   |
 
 #### 3.2.1.5 Calendar Display: Access Assignment
 
@@ -344,7 +344,7 @@ Design Concerns Addressed:
 | Post-conditions/Product(s) Produced: | Assignment is displayed correctly to the user.|
 | Links: | None.|
 | SRS Document | 3.2.8 |
-| Description/Notes:| Accessing An Assignment.<br>1. Assignments are displayed to the User on the Calendar as links.<br>  a. Users clicks on one of the links.<br> b. The correct assignment is pulled up on screen for the user. 2. Assignment details button is shown.<br> a. User clicks assignments details button.<br> b. User is able to interact with different features for the event. |
+| Description/Notes:| Accessing An Assignment.<br>1. Assignments are displayed to the User on the Calendar as links.<br>  a. Users click on one of the links.<br> b. The correct assignment is pulled up on screen for the user. 2. Assignment details button is shown.<br> a. User clicks assignments details button.<br> b. User is able to interact with different features for the event. |
 
 #### 3.2.1.6 Calendar Display: Show Assignment Details
 
@@ -432,14 +432,14 @@ Design Concerns Addressed:
 | Page Title: | Set Reminders|
 | Author: | Zane West |
 | Type: | Process. |
-| Purpose: | Reminders will be available to the user to help remind them of upcomings events, activities and holidays.  |
+| Purpose: | Reminders will be available to the user to help remind them of upcoming events, activities and holidays.  |
 | Parent User Story:| N/A|
 | Stakeholders: | Calendar Manager, Developers, Testers, Technical Support |
 | Pre-conditions/Product(s) Required: |1. User is logged in. <br> 2. An event has been created.|
 | Post-conditions/Product(s) Produced: |  1. A reminder is prepared. <br> 2. User is returned to their last viewed calendar.|
 | Links: | None.|
 | SRS Document | 3.2.22 |
-| Description/Notes:|1. The user will have options as to how they would like to be reminded about their upcoming events. <br> a. The user can select the timing of the notification, e.g.: 10 minutes before, 1 hour before, 1 day before. <br> b. The user can choose the means by which they will be reminded, e.g.: operating system reminder, e-mail or text message.|
+| Description/Notes:|1. The user will have options as to how they would like to be reminded of their upcoming events. <br> a. The user can select the timing of the notification, e.g.: 10 minutes before, 1 hour before, 1 day before. <br> b. The user can choose the means by which they will be reminded, e.g.: operating system reminder, e-mail or text message.|
 
 #### 3.2.2.2 Calendar Event Notifications: Send Notification
 
@@ -512,7 +512,7 @@ Design Concerns Addressed:
 | Purpose: | Allow the user to see their list they have created of objectives they are trying to complete. |
 | Parent User Story:| 3.2.1.1|
 | Stakeholders: | Calendar Manager, Developers, Testers, Technical Support |
-| Pre-conditions/Product(s) Required: | User is logged in. User is on home page.|
+| Pre-conditions/Product(s) Required: | User is logged in. User is on homepage.|
 | Post-conditions/Product(s) Produced: | To-Do list is shown with the user's assignments and events shown. |
 | Links: | None.|
 | SRS Document | 3.2.24 |
@@ -669,7 +669,7 @@ Design Concerns Addressed:
 | Parent User Story:| 3.2.5.2|
 | Stakeholders: | Calendar Manager, Developers, Testers, Technical Support |
 | Pre-conditions/Product(s) Required: | 1. User is logged in.<br> 2.User is inside settings page.|
-| Post-conditions/Product(s) Produced: | 1. If the Settings were validated, the message box with "Settings Saved" appears.<br> 2. Settings page is refreshed and settings changed are shown to the user.|
+| Post-conditions/Product(s) Produced: | 1. If the Settings were validated, the message box with "Settings Saved" appears.<br> 2. The settings page is refreshed and settings changed are shown to the user.|
 | Links: | None.|
 | SRS Document | 3.2.57.1 |
 | Description/Notes:| 1. Change profile option inside the settings menu can be selected. <br> 2. Forms are showed with actual data. <br> <br> Validation <br>1. Name input box will be filled out with the actual name. <br> 2. Address input box will appear, with three lines to be filled out. <br> a. Address line 1, line 2 and line 3. <br> b. The zip code input box needs to follow the 5-digit numbers only. <br> 3. Phone input box will appear and needs to be filled out with the following pattern xxx-xxx-xxxx to be validated. <br> 4. E-mail input box will be filled out and validated with patterns of e-mail addresses, like xxx@xxx.xxx. This will follow the definitions as defined in the RFCs. 
@@ -764,14 +764,14 @@ Design Concerns Addressed:
 | Page Title: | Create account |
 | Author: | Brian Robertson |
 | Type: | Process. |
-| Purpose: | To add user to the data base for them to be able to use the Calendar Application. |
+| Purpose: | To add user to the database for them to be able to use the Calendar Application. |
 | Parent User Story:| N/A|
 | Stakeholders: | Calendar Manager, Developers, Testers, Technical Support |
 | Pre-conditions/Product(s) Required: | 1. Calendar Portal has been brought up and configured. |
 | Post-conditions/Product(s) Produced: | The user will be sent an email for account verification. |
 | Links: | None.|
 | SRS Document | 3.2.32, 3.2.36|
-| Description/Notes:| 1. The user will be asked to input desired user name.<br>2. The user will be asked to input email address.<br>3. The user will be asked to input desired password.<br>4. The user will be instructed to click the link in an email they will receive to activate their calendar application account.<br>5. Following account creation, and activation, the user can then log onto the calendar app.|
+| Description/Notes:| 1. The user will be asked to input desired username.<br>2. The user will be asked to input email address.<br>3. The user will be asked to input desired password.<br>4. The user will be instructed to click the link in an email they will receive to activate their calendar application account.<br>5. Following account creation, and activation, the user can then log onto the calendar app.|
 
 #### 3.2.7.1 Log-in Use Cases: Validation
 
@@ -788,7 +788,7 @@ Design Concerns Addressed:
 | Post-conditions/Product(s) Produced: | 1. If the user-name does not match any of the accounts created, the system will prompt the user to try again. <br>2. If the password does not match what the system has stored for the current user-name, then the system will prompt the user to try again. <br> 3. When both the user-name and password match an account the system has stored then the user will be logged in.|
 | Links: | None.|
 | SRS Document | 3.2.36 |
-| Description/Notes:| Validation <br>1. User-name input field <br>a. User-name input box will have auto focus by default. <br>b. As user types in their user-name, the auto-complete will detect previously used user-names for faster log in. <br>c. When login button is clicked system will verify to see if the user-name matches an account. <br>2. Password input field <br> a. Input field can be accessed by clicking or using the "tab" button on keyboard. <br> b. When login button is pushed it will verify that the password matches a user-name, which in full matches an account that has been created. <br> 3. Login button <br> a. Button will be active by default <br> b. When button is clicked both the user-name and password input fields will be checked to match an account.<br> c. While waiting for validation a loading spinner will appear. <br> d. IF user-name or password is not valid then user will be prompted to try again.<br> e. When user-name and password match an account, the user will be logged in and their content will be loaded. |
+| Description/Notes:| Validation <br>1. User-name input field <br>a. User-name input box will have autofocus by default. <br>b. As user types in their user-name, the auto-complete will detect previously used user-names for faster log in. <br>c. When login button is clicked system will verify to see if the user-name matches an account. <br>2. Password input field <br> a. Input field can be accessed by clicking or using the "tab" button on keyboard. <br> b. When login button is pushed it will verify that the password matches a user-name, which in full matches an account that has been created. <br> 3. Login button <br> a. Button will be active by default <br> b. When button is clicked both the user-name and password input fields will be checked to match an account.<br> c. While waiting for validation a loading spinner will appear. <br> d. IF user-name or password is not valid then user will be prompted to try again.<br> e. When user-name and password match an account, the user will be logged in and their content will be loaded. |
 
 #### 3.2.7.2 Log-Out Use Case
 
@@ -822,7 +822,7 @@ Design Concerns Addressed:
 | Post-conditions/Product(s) Produced: | 1. User is able to change their password to something they will remember, and to login to the system.|
 | Links: | None.|
 | SRS Document | 3.2.32 |
-| Description/Notes:| Validation <br>1. User-name input field <br>a. User-name input box will have auto focus by default. <br>b. As user types in their user-name, the auto-complete will detect previously used user-names for faster log in. <br>c. When login button is clicked system will verify to see if the user-name matches an account. <br>2. Password input field <br> a. Input field can be accessed by clicking or using the "tab" button on keyboard. <br> b. When login button is pushed it will verify that the password matches a user-name, which in full matches an account that has been created. <br> 3. Login button <br> a. Button will be active by default <br> b. When button is clicked both the user-name and password input fields will be checked to match an account.<br> c. While waiting for validation a loading spinner will appear <br> d. If user-name or password is not valid then user will be prompted to try again<br> 4. Forgot password button <br> a.  When user selects the “forgot password” button, they will be asked to confirm the email address to have the reset password link sent to. <br> b. The user will then check their email and follow the link to set a new password. |
+| Description/Notes:| Validation <br>1. User-name input field <br>a. User-name input box will have autofocus by default. <br>b. As user types in their user-name, the auto-complete will detect previously used user-names for faster log in. <br>c. When login button is clicked system will verify to see if the user-name matches an account. <br>2. Password input field <br> a. Input field can be accessed by clicking or using the "tab" button on keyboard. <br> b. When login button is pushed it will verify that the password matches a user-name, which in full matches an account that has been created. <br> 3. Login button <br> a. Button will be active by default <br> b. When button is clicked both the user-name and password input fields will be checked to match an account.<br> c. While waiting for validation a loading spinner will appear <br> d. If user-name or password is not valid then user will be prompted to try again<br> 4. Forgot password button <br> a.  When user selects the “forgot password” button, they will be asked to confirm the email address to have the reset password link sent to. <br> b. The user will then check their email and follow the link to set a new password. |
 
 #### 3.2.7.4 Log-in Use Cases: Forgot Account
 
@@ -1155,7 +1155,7 @@ The view classes perform all of the functions related to visually displaying the
     <th colspan = "3">Class Name: Login Page View</th>
   </tr>
   <tr>
-    <td colspan = "3">The purpose of this class is to provide the user with a means or a gateway to access every functional aspect of the calendar application and draw from the feature sets contained within. It represents the user's identification and password as well as the methods needed to authenticate and create a new and existing accounts. It interfaces with the UI Controller class for the purpose of sending and verifying usernames and passwords.</td>
+    <td colspan = "3">The purpose of this class is to provide the user with a means or a gateway to access every functional aspect of the calendar application and draw from the feature sets contained within. It represents the user's identification and password as well as the methods needed to authenticate and create a new and existing account. It interfaces with the UI Controller class for the purpose of sending and verifying usernames and passwords.</td>
   </tr>
 </table>
 <table>
@@ -1923,7 +1923,7 @@ through getters and setters.
     <th> Method Description</th>
   </tr>
   <tr>
-    <td>This serves as a place holder for all “getter” methods for the data elements that belong to this class.</td>
+    <td>This serves as a placeholder for all “getter” methods for the data elements that belong to this class.</td>
   </tr>
   <tr>
     <th>Method Pseudo Code</th>
@@ -1936,7 +1936,7 @@ through getters and setters.
     <th> Method Description</th>
   </tr>
   <tr>
-    <td>This serves as a place holder for all “setter” methods for the data elements that belong to this class.</td>
+    <td>This serves as a placeholder for all “setter” methods for the data elements that belong to this class.</td>
   </tr>
   <tr>
     <th>Method Pseudo Code</th>
@@ -1988,7 +1988,7 @@ through getters and setters.
     <th> Method Description</th>
   </tr>
   <tr>
-    <td>This serves as a place holder for all “getter” methods for the data elements that belong to this class.</td>
+    <td>This serves as a placeholder for all “getter” methods for the data elements that belong to this class.</td>
   </tr>
   <tr>
     <th>Method Pseudo Code</th>
@@ -2001,7 +2001,7 @@ through getters and setters.
     <th> Method Description</th>
   </tr>
   <tr>
-    <td>This serves as a place holder for all “setter” methods for the data elements that belong to this class.</td>
+    <td>This serves as a placeholder for all “setter” methods for the data elements that belong to this class.</td>
   </tr>
   <tr>
     <th>Method Pseudo Code</th>
@@ -2046,7 +2046,7 @@ through getters and setters.
     <th> Method Description</th>
   </tr>
   <tr>
-    <td>This serves as a place holder for all “getter” methods for the data elements that belong to this class.</td>
+    <td>This serves as a placeholder for all “getter” methods for the data elements that belong to this class.</td>
   </tr>
   <tr>
     <th>Method Pseudo Code</th>
@@ -2059,7 +2059,7 @@ through getters and setters.
     <th> Method Description</th>
   </tr>
   <tr>
-    <td>This serves as a place holder for all “setter” methods for the data elements that belong to this class.</td>
+    <td>This serves as a placeholder for all “setter” methods for the data elements that belong to this class.</td>
   </tr>
   <tr>
     <th>Method Pseudo Code</th>
@@ -2122,7 +2122,7 @@ through getters and setters.
     <th> Method Description</th>
   </tr>
   <tr>
-    <td>This serves as a place holder for all “getter” methods for the data elements that belong to this class.</td>
+    <td>This serves as a placeholder for all “getter” methods for the data elements that belong to this class.</td>
   </tr>
   <tr>
     <th>Method Pseudo Code</th>
@@ -2135,7 +2135,7 @@ through getters and setters.
     <th> Method Description</th>
   </tr>
   <tr>
-    <td>This serves as a place holder for all “setter” methods for the data elements that belong to this class.</td>
+    <td>This serves as a placeholder for all “setter” methods for the data elements that belong to this class.</td>
   </tr>
   <tr>
     <th>Method Pseudo Code</th>
@@ -2195,7 +2195,7 @@ through getters and setters.
     <th> Method Description</th>
   </tr>
   <tr>
-    <td>This serves as a place holder for all “getter” methods for the data elements that belong to this class.</td>
+    <td>This serves as a placeholder for all “getter” methods for the data elements that belong to this class.</td>
   </tr>
   <tr>
     <th>Method Pseudo Code</th>
@@ -2208,7 +2208,7 @@ through getters and setters.
     <th> Method Description</th>
   </tr>
   <tr>
-    <td>This serves as a place holder for all “setter” methods for the data elements that belong to this class.</td>
+    <td>This serves as a placeholder for all “setter” methods for the data elements that belong to this class.</td>
   </tr>
   <tr>
     <th>Method Pseudo Code</th>
@@ -2253,7 +2253,7 @@ through getters and setters.
     <th> Method Description</th>
   </tr>
   <tr>
-    <td>This serves as a place holder for all “getter” methods for the data elements that belong to this class.</td>
+    <td>This serves as a placeholder for all “getter” methods for the data elements that belong to this class.</td>
   </tr>
   <tr>
     <th>Method Pseudo Code</th>
@@ -2266,7 +2266,7 @@ through getters and setters.
     <th> Method Description</th>
   </tr>
   <tr>
-    <td>This serves as a place holder for all “setter” methods for the data elements that belong to this class.</td>
+    <td>This serves as a placeholder for all “setter” methods for the data elements that belong to this class.</td>
   </tr>
   <tr>
     <th>Method Pseudo Code</th>
@@ -2322,7 +2322,7 @@ be thrown and the user will be notified that the data is invalid.
 ### 4.5.3 I-Learn Importing Errors
 
 In the event that a user's credentials do not match up to their log in information for I-Learn, an error will be thrown and the user
-will be prompted to reenter their credentials or cancel importing their assignments from I-Learn. If any error results in the I-Learn
+will be prompted to re-enter their credentials or cancel importing their assignments from I-Learn. If any error results in the I-Learn
 API as it attempts to import assignment information into the system, the entire import process will be aborted and the user will be notified
 that an import error occured.
 
