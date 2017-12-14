@@ -113,11 +113,11 @@ The purpose of this Software Design Document is to define the design elements of
 
 ## 1.2 Scope
 
-This document supplies details for all features required in the initial release of the Student Calendar Integration Application. Specifically, internal data models, user interface, overall design views, and relevant use cases are defined. 
+This document supplies details for all features required in the initial release of the Student Calendar Integration Application. Specifically internal data models, user interface, overall design views, and relevant use cases are defined. 
 
 ## 1.3 Context
 
-The Student Calendar Integration Application is an application to ease the tracking of class assignments for college students at BYU-Idaho. Teachers, class development staff, and technical support will also have access to the administrative interface of the application. It will be integrated with the OLP (Online Learning Platform) currently in use by the school, Brainhoney. The application will be accessed via mobile or web interface. The purpose is to assist students with meeting deadlines to maximise learning outcomes.
+The Student Calendar Integration Application is an application to ease the tracking of class assignments for college students at BYU-Idaho. Teachers, class development staff, and technical support will also have access to the administrative interface of the application. The application will be integrated with the OLP (Online Learning Platform) currently in use by the school, Brainhoney. The application will be accessed via mobile or web interface. The purpose is to assist students with meeting deadlines to maximize learning outcomes.
 
 <img  src="https://github.com/MCLifeLeader/CS364/blob/master/SDD/resources/piChart.jpg" height="50%" width="50%">
 
@@ -143,23 +143,30 @@ This document is divided into 6 sections:
 
 **Terms**   | **Definitions**
 --------|------------
-Actor | (in a UML context) someone or something that interacts with a given system
-API | _application programming interface_; a set of subroutine definitions, protocols, and tools for building application software
-Boolean | a binary variable, having two possible values called "true" and "false"
-Facade | a simplified interface
-Getter | a function in a software program that acts as a communicator to read from private data
-Pseudocode | an informal high-level description of the operating principle of a computer program
-Setter | a function in a software program that acts as a communicator to write to private data
-Stakeholder | a person or entity who has a voice in the development requirements
-UI | _user interface_; the space where interactions between humans and machines occur
-UML | _Unified Modeling Language_; it is a modeling language intended to provide a standard way to visualize the design of a system
-Use case | a list of actions or event steps
-UX | _User Experience_; it refers to a person's emotions and attitudes about using a particular product, system or service
+Actor | (In a UML context) Someone or something that interacts with a given system.
+API | _Application Programming Interface_; a set of subroutine definitions, protocols, and tools for building application software.
+Boolean | A binary variable, having two possible values called "true" and "false."
+Facade | A simplified interface.
+Getter | A function in a software program that acts as a communicator to read from private data.
+Pseudocode | An informal high-level description of the operating principle of a computer program.
+Sanitize | When referring to user input: input is "sanitized" in that any malicious actions that may be attempted through the input are safely removed.
+Setter | A function in a software program that acts as a communicator to write to private data.
+Stakeholder | A person or entity who has a voice in the development requirements
+SQL Injection | An attack on a system that involves "injecting" the attacker's own SQL code to perform unintended queries to a given database.
+UI | _User Interface_; The space where interactions between humans and machines occur.
+UML | _Unified Modeling Language_; This is a modeling language intended to provide a standard way to visualize the design of a system.
+Use case | A list of actions or event steps.
+UX | _User Experience_; This refers to a person's emotions and attitudes about using a particular product, system or service.
 
 # 3.0 Use Cases
 
-This section addresses the identified stakeholders and their design concerns in 3.1. In section 3.2 we provide several context viewpoints including UML communication diagrams to provide an overview of each viewpoint and use cases that are designed entities that pertain to the corresponding context viewpoint. 
+This section addresses the identified stakeholders and their design concerns in 3.1. In section 3.2, we provide several context viewpoints including UML communication diagrams to provide an overview of each viewpoint. We also provide use cases that are design entities that pertain to the corresponding context viewpoint. 
 
+Each UML communcation diagram displays the function calls that are associated with each use case.
+The function names are labeled with a preceding number indicating which use case the function call corresponds to
+(ex. the function labeled "0.1 addToDoAssignments()" located in the To-Do Assignment List diagram(3.2.3), corresponds
+to use case 3.2.3.0 "Load List" while "1.1 markAssignmentCompleted(Assignment)" corresponds to use case 3.2.3.1 "Mark Assignment Done")
+Each of these functions are defined in section 4.2 within their respective classes. 
 ## 3.1 Identified Stakeholders and Design Concerns
 
 
@@ -203,7 +210,7 @@ Testers are those that make test cases and assist in testing the calendar applic
 
 ### 3.1.4 Technical Support
 
-Technical Support is those that will be helping calendar managers to troubleshoot problems that may arise with using the calendar application.
+Technical Support are those that will be helping calendar managers to troubleshoot problems that may arise with using the calendar application.
 
 #### 3.1.4.1 Design Concerns
 
@@ -222,7 +229,7 @@ Use cases provide design entities that show the interactions between the actors 
 | Author: | Robert Nelson |
 | Type: | Process. |
 | Purpose: |A description of why the element exists. The purpose attribute shall provide the rationale for the creation of the element.|
-| Parent User Story:| The Parent User Story links to the higher-level use case that is a parent to a particular use case.|
+| Parent User Story:| The Parent User Story links to the higher-level use case that is parent to a particular use case.|
 | Stakeholders: | The stakeholders that the use case pertains to. |
 | Pre-conditions/Product(s) Required: | The conditions, procedures, and requirements to be completed before the use case may be attempted.|
 | Post-conditions/Product(s) Produced: | The conditions, procedures, and requirements to be completed upon termination of the use case.|
@@ -232,7 +239,7 @@ Use cases provide design entities that show the interactions between the actors 
 
 #### 3.2.0.1 Error Handling
 
-As a general policy, any input received from the user interface will be validated to prevent injection attempts. Any unexpected input will display an error message that explains the error encountered. Use cases will explain specific error handling situations.
+As a general policy any input received from the user interface will be validated to prevent injection attempts. Any unexpected input will display an error message that explains the error encountered. Use cases will explain specific error handling situations.
 
 ### 3.2.1 Calendar Display
 <img  src="https://github.com/MCLifeLeader/CS364/blob/master/SDD/resources/UML_Communication/Calendar%20Display%20UML%20Communication%20Diagram.jpg" height="100%" width="100%"></br>
@@ -249,7 +256,7 @@ Design Concerns Addressed:
 | Data | Description |
 | --- |--- |
 | Screenshot/Mockup: |<img  src="https://github.com/MCLifeLeader/CS364/blob/master/SDD/resources/3.2.1.0.png" height="50%" width="50%">|
-| Page Title: | HomePage|
+| Page Title: | Home Page|
 | Author: | Robert Nelson |
 | Type: | Process. |
 | Purpose: |Calendar display allows the user to view past and upcoming events and to allow scheduling of future events.|
@@ -259,7 +266,7 @@ Design Concerns Addressed:
 | Post-conditions/Product(s) Produced: | The Home Screen is displayed.|
 | Links: | None.|
 | SRS Document | 3.2.2 |
-| Description/Notes:| 1. The Calendar Manager will navigate to the URL of the calendar website.<br>2. The website's homepage will be loaded and displayed.<br>a. The homepage will load the user's specific calendar if they are logged in.<br>b. If the user has not logged in then a default calendar will be loaded on screen.<br>c. If the user is not logged in then a small modal box will pop up prompting the user to sign in or register an account. <br> d. If the user clicks the sign in button they will be redirected to the log-in screen. <br> e. If the user clicks the new user button they will be redirected to the account registration page.<br> 3. If the web browser is not supported by the website then it will display a message explaining the compatibility issue.<br> 4. Pages that users try to access but do not exist on the web site domain will show an error message and have a link back to the homepage.|
+| Description/Notes:| 1. The Calendar Manager will navigate to the URL of the calendar website.<br>2. The website's home page will be loaded and displayed.<br>a. The home page will load the user's specific calendar if they are logged in.<br>b. If the user has not logged in then a default calendar will be loaded on screen.<br>c. If the user is not logged in then a small modal box will pop up prompting the user to sign in or register an account. <br> d. If the user clicks the sign in button they will be redirected to the log-in screen. <br> e. If the user clicks the new user button they will be redirected to the account registration page.<br> 3. If the web browser is not supported by the web site then it will display a message explaining the compatibility issue.<br> 4. Pages that users try to access but do not exist on the web site domain will show an error message and have a link back to the home page.|
 
 #### 3.2.1.1 Calendar Display: Checking the Schedule
 
@@ -276,7 +283,7 @@ Design Concerns Addressed:
 | Post-conditions/Product(s) Produced: | Calendar is up on display. |
 | Links: | None.|
 | SRS Document | 3.2.2 |
-| Description/Notes:| 1. When the user goes to the homepage the calendar will be shown with the events the user has on their calendar. <br> a. Events will be displayed as the user has scheduled. <br> b. School assignments will be displayed as synced with I-Learn. <br> 2. The user will be able to switch between daily, weekly, and monthly views. See 3.2.1.3. <br> 3. The assignment titles and due time will be displayed and resized to fit on the screen. a. If the assignment titles won't fit on a calendar day then, the calendar will be resized to be larger. 3. The user can click the assignment to view its details.|
+| Description/Notes:| 1. When the user goes to the home page the calendar will be shown with the events the user has on their calendar. <br> a. Events will be displayed as user has scheduled. <br> b. School assignments will be displayed as synced with I-Learn. <br> 2. The user will be able to switch between daily, weekly, and monthly views. See 3.2.1.3. <br> 3. The assignment titles and due time will be displayed and resized to fit on the screen. a. If the assignment titles won't fit on a calendar day then the calendar will be resized to be larger. 3. The user can click the assignment to view its details.|
 
 #### 3.2.1.2 Calendar Display: Creating an Event
 
@@ -286,11 +293,11 @@ Design Concerns Addressed:
 | Page Title: | Creating an Event|
 | Author: | Jacob Keene |
 | Type: | Process. |
-| Purpose: | Creating an event in the calendar allows the user to schedule future events to assist in organization and productivity.|
+| Purpose: | Creating event in the calendar allows the user to schedule future events to assist in organization and productivity.|
 | Parent User Story:| N/A|
 | Stakeholders: | Calendar Manager, Developers, Testers, Technical Support |
 | Pre-conditions/Product(s) Required: | User is logged in. |
-| Post-conditions/Product(s) Produced: | Event is created and displays correctly on the calendar.|
+| Post-conditions/Product(s) Produced: | Event is created and displays correctly on calendar.|
 | Links: | None.|
 | SRS Document | 3.2.16 |
 | Description/Notes:| Creating an Event <br> 1. Create Event button is displayed on the Calendar App. <br> a. User clicks Create Event button. <br> b. User prompted to select day(s) to schedule event. <br> c. User enters description of event. <br> 2. Event is added and displayed on User's Calendar. <br> a. User can interact with Event on Calendar. |
@@ -306,7 +313,7 @@ Design Concerns Addressed:
 | Purpose: | Switching views allows the user to have alternative ways to view their calendar and increase productivity.|
 | Parent User Story:| 3.2.1.1|
 | Stakeholders: | Calendar Manager, Developers, Testers, Technical Support |
-| Pre-conditions/Product(s) Required: | User is logged in. User is on homepage.|
+| Pre-conditions/Product(s) Required: | User is logged in. User is on home page.|
 | Post-conditions/Product(s) Produced: | Calendar is displayed in the corresponding daily, weekly, or monthly view with the user's events and assignments shown. |
 | Links: | None.|
 | SRS Document | 3.2.53 |
@@ -327,7 +334,7 @@ Design Concerns Addressed:
 | Post-conditions/Product(s) Produced: | 1. The user is presented with the recommended course of action or the option to ignore. |
 | Links: | None.|
 | SRS Document | 3.2.22 |
-| Description/Notes:| 1. Warnings <br> a. An alert will appear when the user has performed or intends to perform an illegal or high-risk action, e.g.: creating an event with no reminders or deleting a calendar event. <br> 2. Reminders <br> a. Alerts will be used as a reminder in certain situations, e.g.: reminding the user that they have not synced their calendar in *x* days.   |
+| Description/Notes:| 1. Warnings <br> a. An alert will appear when the user has performed or intends to perform an illegal or high-risk action, e.g.: creating an event with not reminders or deleting a calendar event. <br> 2. Reminders <br> a. Alerts will be used as a reminder in certain situations, e.g.: reminding the user that they have not synced their calendar in *x* days.   |
 
 #### 3.2.1.5 Calendar Display: Access Assignment
 
@@ -344,7 +351,7 @@ Design Concerns Addressed:
 | Post-conditions/Product(s) Produced: | Assignment is displayed correctly to the user.|
 | Links: | None.|
 | SRS Document | 3.2.8 |
-| Description/Notes:| Accessing An Assignment.<br>1. Assignments are displayed to the User on the Calendar as links.<br>  a. Users click on one of the links.<br> b. The correct assignment is pulled up on screen for the user. 2. Assignment details button is shown.<br> a. User clicks assignments details button.<br> b. User is able to interact with different features for the event. |
+| Description/Notes:| Accessing An Assignment.<br>1. Assignments are displayed to the User on the Calendar as links.<br>  a. Users clicks on one of the links.<br> b. The correct assignment is pulled up on screen for the user. 2. Assignment details button is shown.<br> a. User clicks assignments details button.<br> b. User is able to interact with different features for the event. |
 
 #### 3.2.1.6 Calendar Display: Show Assignment Details
 
@@ -432,14 +439,14 @@ Design Concerns Addressed:
 | Page Title: | Set Reminders|
 | Author: | Zane West |
 | Type: | Process. |
-| Purpose: | Reminders will be available to the user to help remind them of upcoming events, activities and holidays.  |
+| Purpose: | Reminders will be available to the user to help remind them of upcomings events, activities and holidays.  |
 | Parent User Story:| N/A|
 | Stakeholders: | Calendar Manager, Developers, Testers, Technical Support |
 | Pre-conditions/Product(s) Required: |1. User is logged in. <br> 2. An event has been created.|
 | Post-conditions/Product(s) Produced: |  1. A reminder is prepared. <br> 2. User is returned to their last viewed calendar.|
 | Links: | None.|
 | SRS Document | 3.2.22 |
-| Description/Notes:|1. The user will have options as to how they would like to be reminded of their upcoming events. <br> a. The user can select the timing of the notification, e.g.: 10 minutes before, 1 hour before, 1 day before. <br> b. The user can choose the means by which they will be reminded, e.g.: operating system reminder, e-mail or text message.|
+| Description/Notes:|1. The user will have options as to how they would like to be reminded about their upcoming events. <br> a. The user can select the timing of the notification, e.g.: 10 minutes before, 1 hour before, 1 day before. <br> b. The user can choose the means by which they will be reminded, e.g.: operating system reminder, e-mail or text message.|
 
 #### 3.2.2.2 Calendar Event Notifications: Send Notification
 
@@ -512,7 +519,7 @@ Design Concerns Addressed:
 | Purpose: | Allow the user to see their list they have created of objectives they are trying to complete. |
 | Parent User Story:| 3.2.1.1|
 | Stakeholders: | Calendar Manager, Developers, Testers, Technical Support |
-| Pre-conditions/Product(s) Required: | User is logged in. User is on homepage.|
+| Pre-conditions/Product(s) Required: | User is logged in. User is on home page.|
 | Post-conditions/Product(s) Produced: | To-Do list is shown with the user's assignments and events shown. |
 | Links: | None.|
 | SRS Document | 3.2.24 |
@@ -669,7 +676,7 @@ Design Concerns Addressed:
 | Parent User Story:| 3.2.5.2|
 | Stakeholders: | Calendar Manager, Developers, Testers, Technical Support |
 | Pre-conditions/Product(s) Required: | 1. User is logged in.<br> 2.User is inside settings page.|
-| Post-conditions/Product(s) Produced: | 1. If the Settings were validated, the message box with "Settings Saved" appears.<br> 2. The settings page is refreshed and settings changed are shown to the user.|
+| Post-conditions/Product(s) Produced: | 1. If the Settings were validated, the message box with "Settings Saved" appears.<br> 2. Settings page is refreshed and settings changed are shown to the user.|
 | Links: | None.|
 | SRS Document | 3.2.57.1 |
 | Description/Notes:| 1. Change profile option inside the settings menu can be selected. <br> 2. Forms are showed with actual data. <br> <br> Validation <br>1. Name input box will be filled out with the actual name. <br> 2. Address input box will appear, with three lines to be filled out. <br> a. Address line 1, line 2 and line 3. <br> b. The zip code input box needs to follow the 5-digit numbers only. <br> 3. Phone input box will appear and needs to be filled out with the following pattern xxx-xxx-xxxx to be validated. <br> 4. E-mail input box will be filled out and validated with patterns of e-mail addresses, like xxx@xxx.xxx. This will follow the definitions as defined in the RFCs. 
@@ -764,14 +771,14 @@ Design Concerns Addressed:
 | Page Title: | Create account |
 | Author: | Brian Robertson |
 | Type: | Process. |
-| Purpose: | To add user to the database for them to be able to use the Calendar Application. |
+| Purpose: | To add user to the data base for them to be able to use the Calendar Application. |
 | Parent User Story:| N/A|
 | Stakeholders: | Calendar Manager, Developers, Testers, Technical Support |
 | Pre-conditions/Product(s) Required: | 1. Calendar Portal has been brought up and configured. |
 | Post-conditions/Product(s) Produced: | The user will be sent an email for account verification. |
 | Links: | None.|
 | SRS Document | 3.2.32, 3.2.36|
-| Description/Notes:| 1. The user will be asked to input desired username.<br>2. The user will be asked to input email address.<br>3. The user will be asked to input desired password.<br>4. The user will be instructed to click the link in an email they will receive to activate their calendar application account.<br>5. Following account creation, and activation, the user can then log onto the calendar app.|
+| Description/Notes:| 1. The user will be asked to input desired user name.<br>2. The user will be asked to input email address.<br>3. The user will be asked to input desired password.<br>4. The user will be instructed to click the link in an email they will receive to activate their calendar application account.<br>5. Following account creation, and activation, the user can then log onto the calendar app.|
 
 #### 3.2.7.1 Log-in Use Cases: Validation
 
@@ -788,7 +795,7 @@ Design Concerns Addressed:
 | Post-conditions/Product(s) Produced: | 1. If the user-name does not match any of the accounts created, the system will prompt the user to try again. <br>2. If the password does not match what the system has stored for the current user-name, then the system will prompt the user to try again. <br> 3. When both the user-name and password match an account the system has stored then the user will be logged in.|
 | Links: | None.|
 | SRS Document | 3.2.36 |
-| Description/Notes:| Validation <br>1. User-name input field <br>a. User-name input box will have autofocus by default. <br>b. As user types in their user-name, the auto-complete will detect previously used user-names for faster log in. <br>c. When login button is clicked system will verify to see if the user-name matches an account. <br>2. Password input field <br> a. Input field can be accessed by clicking or using the "tab" button on keyboard. <br> b. When login button is pushed it will verify that the password matches a user-name, which in full matches an account that has been created. <br> 3. Login button <br> a. Button will be active by default <br> b. When button is clicked both the user-name and password input fields will be checked to match an account.<br> c. While waiting for validation a loading spinner will appear. <br> d. IF user-name or password is not valid then user will be prompted to try again.<br> e. When user-name and password match an account, the user will be logged in and their content will be loaded. |
+| Description/Notes:| Validation <br>1. User-name input field <br>a. User-name input box will have auto focus by default. <br>b. As user types in their user-name, the auto-complete will detect previously used user-names for faster log in. <br>c. When login button is clicked system will verify to see if the user-name matches an account. <br>2. Password input field <br> a. Input field can be accessed by clicking or using the "tab" button on keyboard. <br> b. When login button is pushed it will verify that the password matches a user-name, which in full matches an account that has been created. <br> 3. Login button <br> a. Button will be active by default <br> b. When button is clicked both the user-name and password input fields will be checked to match an account.<br> c. While waiting for validation a loading spinner will appear. <br> d. IF user-name or password is not valid then user will be prompted to try again.<br> e. When user-name and password match an account, the user will be logged in and their content will be loaded. |
 
 #### 3.2.7.2 Log-Out Use Case
 
@@ -822,7 +829,7 @@ Design Concerns Addressed:
 | Post-conditions/Product(s) Produced: | 1. User is able to change their password to something they will remember, and to login to the system.|
 | Links: | None.|
 | SRS Document | 3.2.32 |
-| Description/Notes:| Validation <br>1. User-name input field <br>a. User-name input box will have autofocus by default. <br>b. As user types in their user-name, the auto-complete will detect previously used user-names for faster log in. <br>c. When login button is clicked system will verify to see if the user-name matches an account. <br>2. Password input field <br> a. Input field can be accessed by clicking or using the "tab" button on keyboard. <br> b. When login button is pushed it will verify that the password matches a user-name, which in full matches an account that has been created. <br> 3. Login button <br> a. Button will be active by default <br> b. When button is clicked both the user-name and password input fields will be checked to match an account.<br> c. While waiting for validation a loading spinner will appear <br> d. If user-name or password is not valid then user will be prompted to try again<br> 4. Forgot password button <br> a.  When user selects the “forgot password” button, they will be asked to confirm the email address to have the reset password link sent to. <br> b. The user will then check their email and follow the link to set a new password. |
+| Description/Notes:| Validation <br>1. User-name input field <br>a. User-name input box will have auto focus by default. <br>b. As user types in their user-name, the auto-complete will detect previously used user-names for faster log in. <br>c. When login button is clicked system will verify to see if the user-name matches an account. <br>2. Password input field <br> a. Input field can be accessed by clicking or using the "tab" button on keyboard. <br> b. When login button is pushed it will verify that the password matches a user-name, which in full matches an account that has been created. <br> 3. Login button <br> a. Button will be active by default <br> b. When button is clicked both the user-name and password input fields will be checked to match an account.<br> c. While waiting for validation a loading spinner will appear <br> d. If user-name or password is not valid then user will be prompted to try again<br> 4. Forgot password button <br> a.  When user selects the “forgot password” button, they will be asked to confirm the email address to have the reset password link sent to. <br> b. The user will then check their email and follow the link to set a new password. |
 
 #### 3.2.7.4 Log-in Use Cases: Forgot Account
 
@@ -862,19 +869,19 @@ The View classes are responsible for displaying information to and gathering inp
 
 The UML class diagram above serves as a pattern viewpoint demonstrating how each of the class entities is connected to one another. A further detailed description of each of these class entities, their attributes, and methods is provided in the section directly below.
 
-## 4.2.0 UML Class Descriptions
+## 4.2.0 Class Descriptions
 
 ## 4.2.1 View Classes
 
 The view classes perform all of the functions related to visually displaying the system to the user as well as allowing the user to interface with the system. They send signals to and receive data from the U.I. controller class.  
 
-### 4.2.x To-Do List View
+### 4.2.1.1 To-Do List View
 <table>
   <tr>
     <th colspan = "3">Class Name: ToDo List View</th>
   </tr>
   <tr>
-    <td colspan = "3">This class represents the todo list view of the app. </td>
+    <td colspan = "3">This class embodies the concept of a task list comprised of assignments the user needs to complete. It features the ability to delineate each assignment as complete or incomplete. The calendar application as a whole is designed to provide a student or teacher with tools to assist in the management of school schedules and tasks. As a result, this class provides a pertinent and necessary functionality that provides users with a means to monitor and manage one of the most crucial categories in their school focus, assignments. </td>
   </tr>
 </table>
 <table>
@@ -883,7 +890,7 @@ The view classes perform all of the functions related to visually displaying the
     <th colspan = "2">Attribute Description</th>
   </tr>
   <tr>
-    <td>taskList</td><td colspan = "2">The list of I-Learn tasks that are to be displayed</td>
+    <td>taskList</td><td colspan = "2">The list of I-Learn tasks that are to be displayed./td>
   </tr>
   <tr>
     <td>eventList</td><td colspan = "2">The list of user created events that are to be displayed.</td>
@@ -892,12 +899,17 @@ The view classes perform all of the functions related to visually displaying the
     <th>Methods(operations) </th>
     <th></th>
   </tr>
-  <tr>
+   <tr>
     <td rowspan = "4">markAssignmentCompleted</td>
     <th> Method Description</th>
   </tr>
   <tr>
-    <td>This method is to be called when the user marks an assignment completed (see 3.4.4.1) and takes the assignment object to be marked completed as a parameter</td>
+    <td>This method is to be called when the user marks an assignment completed (see 3.4.4.1). It takes the assignment object to be marked as a parameter.
+Parameters:
+Assignment - The Assignment object that the user has marked as completed.
+
+Return:
+None</td>
   </tr>
   <tr>
     <th>Method Pseudo Code</th>
@@ -915,7 +927,12 @@ The view classes perform all of the functions related to visually displaying the
     <th> Method Description</th>
   </tr>
   <tr>
-    <td>This method is to be called when the user marks an assignment as incomplete and takes the assignment object to be marked completed as a parameter.</td>
+    <td>This method is to be called when the user marks an assignment as incomplete. It takes the assignment object to be marked as a parameter.
+Parameters:
+Assignment - The Assignment object that the user has marked as incomplete.
+
+Return:
+None</td>
   </tr>
   <tr>
     <th>Method Pseudo Code</th>
@@ -928,25 +945,16 @@ The view classes perform all of the functions related to visually displaying the
       eventList.add(assignment)
   </tr>
   <tr>
-    <td rowspan = "4">printTodoList</td>
-    <th> Method Description</th>
-  </tr>
-  <tr>
-    <td>This method is called when the print button is pressed from the todo list view, and it invokes the system procedures for printing a page</td>
-  </tr>
-  <tr>
-    <th>Method Pseudo Code</th>
-  </tr>
-  <tr>
-    <td>uiController.printTodoList()
-    </td>
-  </tr>
-  <tr>
     <td rowspan = "4">updateTodoList()</td>
     <th> Method Description</th>
   </tr>
   <tr>
-    <td>This method is called when the user clicks the todo list button again, refreshing the list of tasks</td>
+    <td>This method is called when the user clicks the todo list button again, refreshing the list of tasks.
+Parameters:
+None
+
+Return:
+None</td>
   </tr>
   <tr>
     <th>Method Pseudo Code</th>
@@ -958,15 +966,44 @@ The view classes perform all of the functions related to visually displaying the
       taskList = uiController.getEventList()
     </td>
   </tr>
+  <tr>
+    <td rowspan = "2">sortAssignments(sort Categories)</td>
+    <th> Method Description</th>
+  </tr>
+  <tr>
+    <td>This method allows the user to sort their to do list items by class, due date, or priority level. The user selects which category they would like
+	to sort their to do list by. The categories are passed into the the system and the to do list items are sorted by either ascending or descending order
+	according to the category.
+Parameters:
+Sort Categories - String list of categories that determines how the to do list is sorted.
+
+Return:
+None</td>
+  </tr>
+</tr>
+<tr>
+    <td rowspan = "2">filterAssignments(filters)</td>
+    <th> Method Description</th>
+  </tr>
+  <tr>
+    <td>This method allows the user to filter their to do list assignments by course, due date, or priority level. The user selects the filters they want
+	for their to do list and the assignments are filtered accordingly.
+Parameters:
+Filters - String list that define how the assignments are filtered.
+
+Return:
+None</td>
+  </tr>
+</tr>
 </table>
 
-### 4.2.x Calendar Page Main View
+### 4.2.1.2 Main Calendar View
 <table>
   <tr>
     <th colspan = "3">Class Name: Main Calendar Page View</th>
   </tr>
   <tr>
-    <td colspan = "3">This class represents the main calendar view of the app. </td>
+    <td colspan = "3">This class is responsible for many of the main functionality of the calendar. This class would be akin to a homepage of a website or the main page of a mobile application. It serves to help the user navigate through dates. It allows for the changing of views between month, week, and day. It populates dates with information that may include, but is not limited to, assignments, events, tasks, meetings, links, etc. It provides the user with a visual representation of a user's personal calendar, with options to create and edit events for specified dates. It also contains the methods necessary for the application's settings and notifications functionality. It is the core class of the application and the hub from which many of the basic calendar features connect.</td>
   </tr>
 </table>
 <table>
@@ -981,6 +1018,9 @@ The view classes perform all of the functions related to visually displaying the
     <td>eventList</td><td colspan = "2">The list of user created events that are to be displayed.</td>
   </tr>
   <tr>
+    <td>Holidays</td><td colspan = "2">A collection of holiday dates that will be used to display holidays in their proper locations.</td>
+  </tr>
+  <tr>
     <th>Methods(operations) </th>
     <th></th>
   </tr>
@@ -989,7 +1029,7 @@ The view classes perform all of the functions related to visually displaying the
     <th> Method Description</th>
   </tr>
   <tr>
-    <td> This method is called when the user toggles the display week view.  It will display according to the currently opened calendar view (i.e. Monthly View, Day View). If Month View is active, Week View will list days Sunday through Saturday and number them in correspondence to the first week of the Month View.  If Day View is selected, the method will find the corresponding week in Month View and will again display the week with a numbering consistent with the found week from Month View.  This week will be passed to another function to organize the week with any matching event or assignment items, and create the elements necessary to display them in the application.  The method “createCalendarWeek()” will also make style changes to a specific day if it matches the current date parameter.</td>
+    <td> This method is called when the user toggles the display week view.  It will display according to the currently opened calendar view (i.e. Monthly View, Day View). If Month View is active, Week View will list days Sunday through Saturday and number them in correspondence to the first week of the Month View.  If Day View is selected, the method will find the corresponding week in Month View and will again display the week with a numbering consistent with the week found from Month View.  This week will be passed to another function to organize the week with any matching event or assignment items, and create the elements necessary to display them in the application.  The method “createCalendarWeek()” will also make style changes to a specific day if it matches the current date parameter.</td>
   </tr>
   <tr>
     <th>Method Pseudo Code</th>
@@ -1015,7 +1055,7 @@ The view classes perform all of the functions related to visually displaying the
     <th> Method Description</th>
   </tr>
   <tr>
-    <td>This function toggles to a monthly view from any other view (weekly or daily)</td>
+    <td>This function toggles to a monthly view from any other view (weekly or daily).</td>
   </tr>
   <tr>
     <th>Method Pseudo Code</th>
@@ -1035,7 +1075,7 @@ The view classes perform all of the functions related to visually displaying the
     <th> Method Description</th>
   </tr>
   <tr>
-    <td>This method sets up the daily view</td>
+    <td>This method sets up the daily view.</td>
   </tr>
   <tr>
     <th>Method Pseudo Code</th>
@@ -1068,21 +1108,6 @@ The view classes perform all of the functions related to visually displaying the
             </td>
   </tr>
   <tr>
-    <td rowspan = "4">printCalendar()</td>
-    <th> Method Description</th>
-  </tr>
-  <tr>
-    <td>This method is called when the print button is pressed from the main calendar page view, and it invokes the system procedures for printing a page. Will open the default print dialog for printing a page in the web browser</td>
-  </tr>
-  <tr>
-    <th>Method Pseudo Code</th>
-  </tr>
-  <tr>
-    <td>
-    uIController.print_todo_list()
-    </td>
-  </tr>
-  <tr>
     <td rowspan = "4">followLink(externalURL)</td>
     <th> Method Description</th>
   </tr>
@@ -1097,6 +1122,116 @@ The view classes perform all of the functions related to visually displaying the
     open externalURL in new tab
     </td>
   </tr>
+  <tr>
+    <td rowspan = "4">viewI-LearnAssignment(Assignment)</td>
+    <th> Method Description</th>
+  </tr>
+  <tr>
+    <td>This method opens the page in I-learn that correspnds to the assignment that is clicked on by the user in the student calendar app. The assignment
+	that is clicked on by the user is passed as a parameter. The method gets the assignment URL and opens a new tab to display the assignment to the user.</td>
+  </tr>
+  <tr>
+  </tr>
+  <tr>
+  </tr>
+</tr>
+<tr>
+    <td rowspan = "2">get Assignment Details(Assignment)</td>
+    <th> Method Description</th>
+  </tr>
+  <tr>
+    <td>This method gets the description of the assignment and displays it to the user. The assignment that the user clicks on is passed in as a 
+	parameter and the system gets the data for that assignment.</td>
+  </tr>
+</tr>
+<tr>
+    <td rowspan = "2">getHolidays(Month)</td>
+    <th> Method Description</th>
+  </tr>
+  <tr>
+    <td>This method searches the collection of holidays for any holidays that occur during the month that is passed in as a parameter. All corresponding 
+	holidays for that month are returned and displayed on the calendar.</td>
+  </tr>
+</tr>
+<tr>
+    <td rowspan = "2">editEvent(Event)</td>
+    <th> Method Description</th>
+  </tr>
+  <tr>
+    <td> This method updates the information for a calendar event based on the user input. The Event object is passed in as a parameter and the system 
+	updates the new event information into the database.</td>
+  </tr>
+</tr>
+<tr>
+    <td rowspan = "2">displayError()</td>
+    <th> Method Description</th>
+  </tr>
+  <tr>
+    <td> This method displays an error message to the user. The message is determined by the type of error that took place in the system.</td>
+  </tr>
+</tr>
+<tr>
+    <td rowspan = "2">sendMissedNotification(Notification)</td>
+    <th> Method Description</th>
+  </tr>
+  <tr>
+    <td> This method is called when a notification is activated but the user is currently not logged in to their student calendar application. It sends
+	a message to the user based on their personal notification settings.</td>
+  </tr>
+</tr>
+<tr>
+    <td rowspan = "2">activateNotification(Notification)</td>
+    <th> Method Description</th>
+  </tr>
+  <tr>
+    <td> This method is called when a notification is set to be sent to the user. The notification object is passed as a parameter which is then added to the
+	users list of notifications and the calendar shows the user that a new notification has activated.</td>
+  </tr>
+</tr>
+<tr>
+    <td rowspan = "2">sendReminder(notification, users)</td>
+    <th> Method Description</th>
+  </tr>
+  <tr>
+    <td> This method is called when a user wants to share a notification with other users. A notification is passed in as well as a list of users to be notified.</td>
+  </tr>
+</tr>
+<tr>
+    <td rowspan = "2">displayCalendarSyncOptions()</td>
+    <th> Method Description</th>
+  </tr>
+  <tr>
+    <td> This method is called when a user chooses to import or export their calendar information. A window is displayed allowing the user to select
+	which external calendar they would like to sync with. The options include all external calendars as defined in section 3.2.4.1</td>
+  </tr>
+</tr>
+<tr>
+    <td rowspan = "2">importCalendar()</td>
+    <th> Method Description</th>
+  </tr>
+  <tr>
+    <td> This method is called when a user chooses to import calendar information from an external calendar. The method calls on the UI Controller class
+	to import calendar events. The imported events are saved to the database and then the main display is updated to show the imported items.</td>
+  </tr>
+</tr>
+<tr>
+    <td rowspan = "2">exportCalendar()</td>
+    <th> Method Description</th>
+  </tr>
+  <tr>
+    <td> This method is called when a user chooses to export their Student Calendar information into an external calendar. The method calls on the UI Controller class
+	to export calendar events. If the process is successful it displays a success message to the user. If there is an error an error message is displayed.</td>
+  </tr>
+</tr>
+<tr>
+    <td rowspan = "2">syncAssignments()</td>
+    <th> Method Description</th>
+  </tr>
+  <tr>
+    <td> This method is called when a user chooses to sync their calendar information with their assignments on the I-learn website. The system pulls the
+	assignment information from the I-learn website, saves them to the database, and updates the calendar display to show new assignments that may have been added.</td>
+  </tr>
+</tr>
   <tr>
     <td rowspan = "4">deleteEvent(event)</td>
     <th> Method Description</th>
@@ -1149,13 +1284,13 @@ The view classes perform all of the functions related to visually displaying the
   </tr>
 </table>
 
-### 4.2.x Login Page View
+### 4.2.1.3 Login Page View
 <table>
   <tr>
     <th colspan = "3">Class Name: Login Page View</th>
   </tr>
   <tr>
-    <td colspan = "3">The purpose of this class is to provide the user with a means or a gateway to access every functional aspect of the calendar application and draw from the feature sets contained within. It represents the user's identification and password as well as the methods needed to authenticate and create a new and existing account. It interfaces with the UI Controller class for the purpose of sending and verifying usernames and passwords.</td>
+    <td colspan = "3">The purpose of this class is to provide the user with a means or a gateway to access every functional aspect of the calendar application and draw from the feature sets contained within. It represents the user's identification and password as well as the methods needed to authenticate and create a new and existing accounts. It interfaces with the UI Controller class for the purpose of sending and verifying usernames and passwords.</td>
   </tr>
 </table>
 <table>
@@ -1178,7 +1313,15 @@ The view classes perform all of the functions related to visually displaying the
     <th> Method Description</th>
   </tr>
   <tr>
-    <td>This method authenticates the user and logs them in.</td>
+    <td>This method authenticates the user and logs them in. If the user successfully logs in the main calendar page is displayed.
+	If either the username or password is incorrect the user will be notified and prompted
+	to reenter their credentials.</br>
+Parameters:
+Username - The username entered by the user attempting to log in.</br>
+Password - The password entered by the user attempting to log in.
+
+Return:
+None</td>
   </tr>
   <tr>
     <th>Method Pseudo Code</th>
@@ -1192,7 +1335,14 @@ The view classes perform all of the functions related to visually displaying the
     <th> Method Description</th>
   </tr>
   <tr>
-    <td>This method is to be called when the user attempts to create a new account with a new and unique username and new accompanying password.</td>
+    <td>This method is to be called when the user attempts to create a new account. This method opens a new account form window for the user to 
+enter their new account information. The information is then sent to the database, verified, and the new account is created. If the information is invalid an 
+error message is sent to the user.</br>
+Parameters:
+None
+
+Return:
+None</td>
   </tr>
   <tr>
     <th>Method Pseudo Code</th>
@@ -1217,7 +1367,12 @@ The view classes perform all of the functions related to visually displaying the
     <th> Method Description</th>
   </tr>
   <tr>
-    <td>This method is to be called when a user has opted to create a new account. It is responsible for providing a user with a form containing fields for input such as a new username, new password, etc.</td>
+    <td>This method is to be called when a user has opted to create a new account. It is responsible for providing a user with a form containing fields for input such as a new username, new password, etc.
+Parameters:
+None
+
+Return:
+None</td>
   </tr>
   <tr>
     <th>Method Pseudo Code</th>
@@ -1227,7 +1382,176 @@ The view classes perform all of the functions related to visually displaying the
         window.location(url)<br>
     </td>
   </tr>
+  <tr>
+    <td rowspan = "2">recoverPassword(email)</td>
+    <th> Method Description</th>
+  </tr>
+  <tr>
+    <td>This method allows the user to recover their password in the event that they have forgotten their login password. The system prompts the user to enter their
+	email which is passed into the system. If the email is verified to belong to the user an email is sent with a password recovery link. If the email is not
+	verified the user is notified and prompted to reenter an email address.
+Parameters:
+email - The email address entered by the user that will be verified by the system and used to send a recovery link.
 
+Return:
+None</td>
+  </tr>
+</tr>
+<tr>
+    <td rowspan = "2">recoverUsername(email)</td>
+    <th> Method Description</th>
+  </tr>
+  <tr>
+    <td>This method allows the user to recover their username in the event that they have forgotten their login information. The system prompts the user to enter their
+	email which is passed into the system. If the email is verified to belong to the user an email is sent with a username recovery link. If the email is not
+	verified the user is notified and prompted to reenter an email address.
+Parameters:
+email - The email address entered by the user that will be verified by the system and used to send a recovery link.
+
+Return:
+None</td>
+  </tr>
+</tr>
+<tr>
+    <td rowspan = "2">changePage(URL)</td>
+    <th> Method Description</th>
+  </tr>
+  <tr>
+    <td>This method is called when a user successfully logs in to their account. The URL for the main calendar page is passed into the method and the system takes the user to
+	the main calendar display screen.
+Parameters:
+URL - The URL address that determines which web page is displayed to the user.
+
+Return:
+None</td>
+  </tr>
+</tr>
+<tr>
+    <td rowspan = "2">displayLoginError()</td>
+    <th> Method Description</th>
+  </tr>
+  <tr>
+    <td>This method is called when a user enter the wrong credentials for their account. The user is notified that their credentials were incorrect and the user is 
+	prompted to reenter their username and password.
+Parameters:
+None
+
+Return:
+None</td>
+  </tr>
+</tr>
+<tr>
+    <td rowspan = "2">emailPasswordLink(email)</td>
+    <th> Method Description</th>
+  </tr>
+  <tr>
+    <td>This method is called when a user is attempting to recover their password. If the user is able to verify their email address then the method sends
+	them a password recovery link which will allow them to change their password.
+Parameters:
+email - The email address entered by the user that will be used to send a recovery link.
+
+Return:
+None</td>
+  </tr>
+</tr>
+<tr>
+    <td rowspan = "2">emailUsernameLink(email)</td>
+    <th> Method Description</th>
+  </tr>
+  <tr>
+    <td>This method is called when a user is attempting to recover their Username. If the user is able to verify their email address then the method sends
+	them an email notifying them of their username.
+Parameters:
+email - The email address entered by the user that will be used to send a recovery link.
+
+Return:
+None</td>
+  </tr>
+</tr>
+
+</table>
+
+### 4.2.1.4 Profile Settings View
+<table>
+  <tr>
+    <th colspan = "3">Class Name: Profile Settings View</th>
+  </tr>
+  <tr>
+    <td colspan = "3">This class allows the user to change settings about their profile on the profile settings page. It contains all information pertaining
+	to how the profile settings will be displayed to the user and provides the user with an interactive text fields for entering their account information.</td>
+  </tr>
+</table>
+<table>
+  <tr>
+    <th>Attributes(Fields)</th>
+    <th colspan = "2">Attribute Description</th>
+  </tr>
+  <tr>
+    <td>Text Fields</td><td colspan = "2">The fields through which the user enters all of their profile information. </td>
+  </tr>
+  <tr>
+    <td>Time Zones</td><td colspan = "2">A list of time zones which the user may choose from to change their time zone settings.</td>
+  </tr>
+  <tr>
+    <th>Methods(operations) </th>
+    <th></th>
+  </tr>
+  <tr>
+    <td rowspan = "2">updatePassword(new password)</td>
+    <th> Method Description</th>
+  </tr>
+  <tr>
+    <td>This method allows the user to update the password for their account. The method passes in the new password and updates the student's 
+	information in the database.
+Parameters:
+New Password - The password that the user has submitted as their new password.
+
+Return:
+None</td>
+  </tr>
+</tr>
+<tr>
+    <td rowspan = "2">setTimeZone(Time Zone)</td>
+    <th> Method Description</th>
+  </tr>
+  <tr>
+    <td>This method allows the user to update their time zone for their account. The user selects from the list of time zones. The time zone is then passed
+	into the system and the student's information is updated in the database.
+Parameters:
+Time Zone - The time zone indicating which time zone the user wants their account set to.
+
+Return:
+None</td>
+  </tr>
+</tr>
+<tr>
+    <td rowspan = "2">updateStudentInfo(Text Fields)</td>
+    <th> Method Description</th>
+  </tr>
+  <tr>
+    <td>This method allows the user to update their personal contact information for their account. The user enters their updated information into the 
+	text fields on the profile settings page. These text fields are then passed into the system and the student's information is updated in the database.
+Parameters:
+Text Fields - The information pulled from the profile settings page text fields. Used to update the student's information.
+
+Return:
+None</td>
+  </tr>
+</tr>
+<tr>
+    <td rowspan = "2">setNotification(toggle)</td>
+    <th> Method Description</th>
+  </tr>
+  <tr>
+    <td>This method allows the user to enable or disable their notifications. The page presents a toggle switch for the user to press on or off. This boolean value
+	is passed into the system and the notifications are either enabled or disabled depending on the state of the toggle switch.
+Parameters:
+Toggle - This boolean value that determines if the notifications are either enabled or disabled depending on the state of the toggle switch.
+
+Return:
+None</td>
+  </tr>
+</tr>
 </table>
 ## 4.2.2 Controller Classes
 
@@ -1293,7 +1617,7 @@ The Controller classes contain all the methods that are necessary to work with t
   return newEvent</td>
   </tr>
   <tr>
-    <td rowspan = "4">loadAssignments</td>
+    <td rowspan = "4">loadAssignments()</td>
     <th> Method Description</th>
   </tr>
   <tr>
@@ -1335,6 +1659,53 @@ The Controller classes contain all the methods that are necessary to work with t
   else</br>
   return false </td>
   </tr>
+  <tr>
+    <td rowspan = "2">editEvent(eventInfo)</td>
+    <th> Method Description</th>
+  </tr>
+  <tr>
+    <td>This method allows a user to modify the information for an event that already exists on their calendar. The method takes in the new event information
+	provided by the user and saves those changes into the system database.</td>
+  </tr>
+  <tr>
+    <td rowspan = "2">importCalendarItems(API name)</td>
+    <th> Method Description</th>
+  </tr>
+  <tr>
+    <td>This method allows a user to import external calendar information into the system. The method takes in the name of an API(Google, Apple, etc.) which is used to determine
+	which API call is needed in the Calendar Intgration Facade class. After the events are imported they are saved into the database and added to the display. If there
+	is an error during the import process the procedure is aborted and the user is notified through an error message.</td>
+  </tr>
+  <tr>
+    <td rowspan = "2">exportCalendarItems(API name)</td>
+    <th> Method Description</th>
+  </tr>
+  <tr>
+    <td>This method allows a user to export events from the Student Calendar system to an external calendar. The method takes in the name of an API(Google, Apple, etc.) which is used to determine
+	which API call is needed in the Calendar Intgration Facade class. After the events are exported the user is notified. If an error occurs the procedure is aborted and the user is notified through an error message.</td>
+  </tr>
+  <tr>
+  </tr>
+ <tr>
+  </tr>
+  <tr>
+    <td rowspan = "2">syncAssignments()</td>
+    <th> Method Description</th>
+  </tr>
+  <tr>
+    <td>This method allows the user to synchronize the assignments that are displayed on their Student Calendar with the assignments that exist on their I-learn account.
+	The method pulls a list of the user's assignments from I-learn, updates the list that exists in the system database, and adds new assignments to the display. 
+	If an error occurs the procedure is aborted and the user is notified through an error message.</td>
+  </tr>
+  <tr>
+    <td rowspan = "2">loadCalendarItems(Student)</td>
+    <th> Method Description</th>
+  </tr>
+  <tr>
+    <td>This method loads the user's calendar item's when the user first logs in to the system. The method passes in the student class object containing the user data. This is used by the 
+    database to retrieve all of the calendar items	associated with that student. If an error occurs the procedure is aborted and the user is notified through an error message.</td>
+  </tr>
+  </tr>
   
 </table>
 
@@ -1368,7 +1739,12 @@ The Controller classes contain all the methods that are necessary to work with t
     <th> Method Description</th>
   </tr>
   <tr>
-    <td>Authenticate with I-Learn</td>
+    <td>Authenticate with I-Learn, this is used by the Calendar Item Controller to first authenticate with I-Learn.</br>
+    
+  Parameters:</br>  
+  username - A string of the username the student uses to login to I-Learn</br>
+  password - A string of the password the student uses to login to I-Learn</br>
+  </td>
   </tr>
   <tr>
     <th>Method Pseudo Code</th>
@@ -1384,7 +1760,10 @@ The Controller classes contain all the methods that are necessary to work with t
     <th> Method Description</th>
   </tr>
   <tr>
-    <td>This method uses the D2L API to get the users course list. It then filters to make sure the course is active</td>
+    <td>This method uses the D2L API to get the users course list. It then filters to make sure the course is active. These courses are stored in the Course class.</br> 
+    Return:</br>
+    Course object with all courses retrieved from I-Learn
+    </td>
   </tr>
   <tr>
     <th>Method Pseudo Code</th>
@@ -1408,7 +1787,9 @@ The Controller classes contain all the methods that are necessary to work with t
     <th> Method Description</th>
   </tr>
   <tr>
-    <td>This method loops through each class and using the D2L API, pulls each assignment for that class. Each assignment is added to an assignment object and returned.</td>
+    <td>This method loops through each class and using the D2L API, pulls each assignment for that class. Each assignment is added to an assignment object and returned.</br>
+    Return:</br>
+    Assignment object with all assignments from each course</td>
   </tr>
   <tr>
     <th>Method Pseudo Code</th>
@@ -1436,15 +1817,14 @@ The Controller classes contain all the methods that are necessary to work with t
     <th> Method Description</th>
   </tr>
   <tr>
-    <td>Returns the url of the passed in assignment</td>
+    <td>Returns the url of the passed in assignment
+    </br>
+    Return:</br>
+    A string with the URL of the assignment</td>
   </tr>
   <tr>
-    <th>Method Pseudo Code</th>
   </tr>
   <tr>
-    <td>
-    RETURN assignment.getAssignmentURL()
-    </td>
   </tr>
 </table>
 
@@ -1475,7 +1855,11 @@ The Controller classes contain all the methods that are necessary to work with t
     <th> Method Description</th>
   </tr>
   <tr>
-    <td>Creates a new Student model object using input provided by the User. This is called when a new user registers with the system for the first time.</td>
+    <td>Creates a new Student model object using input provided by the User. This is called when a new user registers with the system for the first time.</br>
+    Parameters:
+    Name - A string with the name of the student</br>
+    Username - A string with the username of the student</br>
+    Password - A string with the password of the student</td>
   </tr>
   <tr>
     <th>Method Pseudo Code</th>
@@ -1490,7 +1874,13 @@ The Controller classes contain all the methods that are necessary to work with t
     <th> Method Description</th>
   </tr>
   <tr>
-    <td>Retrieves a student by username from the Database Facade and returns that student object</td>
+    <td>Retrieves a student by username from the Database Facade and returns that student object
+    </br>
+    Parameters:
+    </br>Username - A string with the username of the student</br>
+    </br>
+    Return:</br>
+    A student object with the desired student to retrieve</td>
   </tr>
   <tr>
     <th>Method Pseudo Code</th>
@@ -1506,7 +1896,9 @@ The Controller classes contain all the methods that are necessary to work with t
     <th> Method Description</th>
   </tr>
   <tr>
-    <td>Toggles notifications on or off for the student.</td>
+    <td>Toggles notifications on or off for the student.    </br>
+    Parameters:
+    </br>notificationToggle - A boolean with on or off state for notifications</td>
   </tr>
   <tr>
     <th>Method Pseudo Code</th>
@@ -1516,6 +1908,78 @@ The Controller classes contain all the methods that are necessary to work with t
   currentStudent.notifications = notificationToggle</br>
   DatabaseFacade.modifyStudentInfo(currentStudent)</td>
   </tr>
+    <tr>
+    <td rowspan = "4">verifyEmail(Email)</td>
+    <th> Method Description</th>
+  </tr>
+  <tr>
+    <td>Verifies that the email address is associated with an account
+        </br>
+    Parameters:
+    </br>Email - A string with the email of the student</br>
+    </br>
+    Return:</br>
+    A boolean if the email matches an existing student account</td>
+  </tr>
+  <tr>
+    <th>Method Pseudo Code</th>
+  </tr>
+  <tr>
+    <td>
+    IF currentStudent.email == Email</br>
+    &nbsp;&nbsp;&nbsp;RETURN true</br>
+    ELSE</br>
+    &nbsp;&nbsp;&nbsp;RETURN false   
+  	</td>
+  </tr>
+  <tr>
+    <td rowspan = "4">setTimeZone(timeZone)</td>
+    <th> Method Description</th>
+  </tr>
+  <tr>
+    <td>Sets the student's time zone
+    </br>
+    </br>
+    Parameters:</br>
+    timeZone - A string representation of the timezone
+    </td>
+  </tr>
+  <tr>
+  </tr>
+  <tr>
+  </tr>
+  <tr>
+    <td rowspan = "4">updatePassword(password)</td>
+    <th> Method Description</th>
+  </tr>
+  <tr>
+    <td>Updates the student's password in the database
+    </br>
+    </br>
+    Parameters:</br>
+    password - A string with the student's password</td>
+  </tr>
+    </tr>
+  <tr>
+  </tr>
+  <tr>
+  </tr>
+    <tr>
+    <td rowspan = "4">updateUserInfo(UserInfo)</td>
+    <th> Method Description</th>
+  </tr>
+  <tr>
+    <td>Updates the current student with new user information    
+    </br>
+    </br>
+    Parameters:</br>
+    UserInfo - A Student object with student information</td>
+  </tr>
+    </tr>
+  <tr>
+  </tr>
+  <tr>
+  </tr>
 </table>
 
 ### 4.2.2.4 UI Controller
@@ -1524,7 +1988,7 @@ The Controller classes contain all the methods that are necessary to work with t
     <th colspan = "3">Class Name: UI Controller</th>
   </tr>
   <tr>
-    <td colspan = "3">Brief Description: The UI controller class is responsible for controlling everything the users can interact with. When a user interacts with anything in the app a request is sent to the UI controller class which will organize the inforamtion and send it to the appropriate class to be manipulated. If anything needs to be sent back for the user to view the UI controller class will recieve the information and send it back to the UI layer to be displayed to the user. This class communicates with the database facade class to verify user credentials, the I-Learn facade class to retrieve assignment information, the student controller class to retrieve information about the current user, and the calendar item controller class to retrieve and update information about the user’s calendar.</td>
+    <td colspan = "3">Brief Description: The UI controller class is responsible for controlling everything the users can interact with. When a user interacts with anything in the app a request is sent to the UI controller class which will organize the information and send it to the appropriate class to be manipulated. If anything needs to be sent back for the user to view the UI controller class will receive the information and send it back to the UI layer to be displayed to the user. This class communicates with the database facade class to verify user credentials, the I-Learn facade class to retrieve assignment information, the student controller class to retrieve information about the current user, and the calendar item controller class to retrieve and update information about the user’s calendar.</td>
   </tr>
   </table>
 
@@ -1624,7 +2088,7 @@ return New Event</td>
     <th>Method Description</th>
   </tr>
   <tr>
-    <td>This method lets the user search their entire calendar for events and assignemnts. When the search button is selected the search query that is filled into the search bar is compared to the data stored in the database for that user. All matching events and assignments are displayed on the screen.</td>
+    <td>This method lets the user search their entire calendar for events and assignments. When the search button is selected the search query that is filled into the search bar is compared to the data stored in the database for that user. All matching events and assignments are displayed on the screen.</td>
   </tr>
   <tr>
     <th>Method Pseudo Code</th>
@@ -1687,7 +2151,7 @@ Display “invalid credentials”
     <th>Method Description</th>
   </tr>
   <tr>
-    <td>Allow sthe user to print out their calendar. When the user clicks the print button at the top of the calendar page the calendar is sent to the printerFacade class which handles the print job.</td>
+    <td>Allow the user to print out their calendar. When the user clicks the print button at the top of the calendar page the calendar is sent to the printerFacade class which handles the print job.</td>
   </tr>
   <tr>
     <th>Method Pseudo Code</th>
@@ -1702,7 +2166,7 @@ Display “invalid credentials”
     <th>Method Description</th>
   </tr>
   <tr>
-    <td>This method is necessary to send the user notifications about their upcomng due dates and events. The calendarController class will check periodically for upcoming due dates. When an assignment’s due date is close it will send the information to the createNotification function in the UI controller class which will generate a push notification.</td>
+    <td>This method is necessary to send the user notifications about their upcoming due dates and events. The calendarController class will check periodically for upcoming due dates. When an assignment’s due date is close it will send the information to the createNotification function in the UI controller class which will generate a push notification.</td>
   </tr>
   <tr>
     <th>Method Pseudo Code</th>
@@ -1750,7 +2214,7 @@ Display “invalid credentials”
     <th colspan = "3">Class Name: Database Facade</th>
   </tr>
   <tr>
-    <td colspan = "3">Brief Description: The Database Facade class is responsible for storing and retrieving data from the system database. The database facade class interfaces with each of the controller classes, allowing them to easily save and load data from the database. It's use in the overall scheme of the project is to allow the saving of user data to a given device. The abstraction of the database in this way allows for an easier implementation of its functions by other classes.</td>
+    <td colspan = "3">Description: The Database Facade class is responsible for storing and retrieving data from the system database. The database facade class interfaces with each of the controller classes, allowing them to easily save and load data from the database. It's use in the overall scheme of the project is to allow the saving of user data to a given device. The abstraction of the database in this way allows for an easier implementation of its functions by other classes.</td>
   </tr>
   </table>
   <table>
@@ -1877,6 +2341,149 @@ Display “invalid credentials”
 	else: return false</br>
   </td>
   </tr>
+   <tr>
+    <td rowspan = "2">loadCalendarItems(Student)</td>
+    <th> Method Description</th>
+  </tr>
+  <tr>
+    <td>This method loads the user's calendar item's when the user first logs in to the system. 
+	If an error occurs the procedure is aborted and the user is notified through an error message.
+	
+Parameters:
+Student - the student class object containing the user data. This is used by the 
+database to retrieve all of the calendar items associated with that student.
+
+Return:
+collection of Calendar Items associated with that student.</td>
+  </tr>
+  <tr>
+  </tr>
+    <tr>
+    <td rowspan = "2">loadToDoList()</td>
+    <th> Method Description</th>
+  </tr>
+  <tr>
+    <td>This method loads the user's assignments from the database to be included in the To do List.
+	If an error occurs the procedure is aborted and the user is notified through an error message.
+	
+Parameters:
+none
+
+Return:
+List of Assignments to be added to the To Do list.</td>
+  </tr>
+  <tr>
+  </tr>
+  <tr>
+    <td rowspan = "2">deleteToDoListItem(Assignment)</td>
+    <th> Method Description</th>
+  </tr>
+  <tr>
+    <td>This method removes a selected assignment from the database.
+	If an error occurs the procedure is aborted and the user is notified through an error message.
+
+Parameters:
+Assignment - the assignment object that has been marked by the Student for deletion from the Calendar.
+
+Return:
+Boolean that is true if the procedure was successful, false if an error occured.</td>
+  </tr>
+  <tr>
+  </tr>
+  <tr>
+    <td rowspan = "2">saveImportedCalendarItems(Events)</td>
+    <th> Method Description</th>
+  </tr>
+  <tr>
+    <td>This method stores all imported information received from an external calendar.
+	If an error occurs the procedure is aborted and the user is notified through an error message.
+
+Parameters:
+Events - Calendar Events imported from the external Calendar.
+
+Return:
+Boolean that is true if the procedure was successful, false if an error occured.</td>
+  </tr>
+  <tr>
+  </tr>
+   <tr>
+  </tr>
+  <tr>
+    <td rowspan = "2">modifyStudentInfo(Student)</td>
+    <th> Method Description</th>
+  </tr>
+  <tr>
+    <td>This method allows a user to modify their personal account information. The passed information is saved into the database.
+	If an error occurs the procedure is aborted and the user is notified through an error message.
+
+Parameters:
+Student - The Student object whose information is being updated through the profile settings.
+
+Return:
+Boolean that is true if the procedure was successful, false if an error occurred.</td>
+  </tr>
+  <tr>
+  </tr>
+</table>
+
+### 4.2.2.6 Calendar Integration Facade 
+<table>
+  <tr>
+    <th colspan = "3">Class Name: Calendar Integration Facade</th>
+  </tr>
+  <tr>
+    <td colspan = "3">Brief Description: The Calendar Integration Facade class (3.4.2) is responsible for interacting with external calendar APIs or iCalendar files. One aspect of the interaction is importing events in an external calendar into the Student Calendar (3.2.4.0). Another aspect of the interaction is to export calendar events from the Student Calendar to an external calendar (3.2.4.0).</td>
+  </tr>
+  </table>
+  <table>
+  <tr>
+    <th>Attributes(Fields)</th>
+    <th colspan = "2">Attribute Description</th>
+  </tr>
+  <tr>
+    <td>Google Calendar API</td><td colspan = "2">An interface with Google Calendar.</td>
+  </tr>
+  <tr>
+    <td>Apple Calendar API</td><td colspan = "2">An interface with Apple Calendar.</td>
+  </tr>
+  <tr>
+    <td>Outlook Calendar API</td><td colspan = "2">An interface with Outlook Calendar.</td>
+  </tr>
+    <tr>
+    <td>iCalendar</td><td colspan = "2">Holds iCalendar file information.</td>
+  </tr>
+  <tr>
+    <th>Methods(operations) </th>
+    <th></th>
+  </tr>
+  <tr>
+    <td rowspan = "4">getImportedCalendarItems()</td>
+    <th> Method Description</th>
+  </tr>
+  <tr>
+    <td>This method returns the imported calendar items.
+        </br>
+    </br>
+    Return:</br>
+    A list of Calendar Item objects with the items that are imported</td>
+  </tr>
+  <tr>
+  </tr>
+  <tr>
+  </tr>
+  <tr>
+    <td rowspan = "4">exportCalendarItems(Event)</td>
+    <th> Method Description</th>
+  </tr>
+  <tr>
+    <td>This method exports an event into the desired calendar integration.    </br>
+    Parameters:
+    </br>Event - A Calendar Item</br></td>
+  </tr>
+  <tr>
+  </tr>
+  <tr>
+  </tr>
   
 </table>
 
@@ -1923,7 +2530,7 @@ through getters and setters.
     <th> Method Description</th>
   </tr>
   <tr>
-    <td>This serves as a placeholder for all “getter” methods for the data elements that belong to this class.</td>
+    <td>This serves as a place holder for all “getter” methods for the data elements that belong to this class.</td>
   </tr>
   <tr>
     <th>Method Pseudo Code</th>
@@ -1936,7 +2543,7 @@ through getters and setters.
     <th> Method Description</th>
   </tr>
   <tr>
-    <td>This serves as a placeholder for all “setter” methods for the data elements that belong to this class.</td>
+    <td>This serves as a place holder for all “setter” methods for the data elements that belong to this class.</td>
   </tr>
   <tr>
     <th>Method Pseudo Code</th>
@@ -1988,7 +2595,7 @@ through getters and setters.
     <th> Method Description</th>
   </tr>
   <tr>
-    <td>This serves as a placeholder for all “getter” methods for the data elements that belong to this class.</td>
+    <td>This serves as a place holder for all “getter” methods for the data elements that belong to this class.</td>
   </tr>
   <tr>
     <th>Method Pseudo Code</th>
@@ -2001,7 +2608,7 @@ through getters and setters.
     <th> Method Description</th>
   </tr>
   <tr>
-    <td>This serves as a placeholder for all “setter” methods for the data elements that belong to this class.</td>
+    <td>This serves as a place holder for all “setter” methods for the data elements that belong to this class.</td>
   </tr>
   <tr>
     <th>Method Pseudo Code</th>
@@ -2046,7 +2653,7 @@ through getters and setters.
     <th> Method Description</th>
   </tr>
   <tr>
-    <td>This serves as a placeholder for all “getter” methods for the data elements that belong to this class.</td>
+    <td>This serves as a place holder for all “getter” methods for the data elements that belong to this class.</td>
   </tr>
   <tr>
     <th>Method Pseudo Code</th>
@@ -2059,7 +2666,7 @@ through getters and setters.
     <th> Method Description</th>
   </tr>
   <tr>
-    <td>This serves as a placeholder for all “setter” methods for the data elements that belong to this class.</td>
+    <td>This serves as a place holder for all “setter” methods for the data elements that belong to this class.</td>
   </tr>
   <tr>
     <th>Method Pseudo Code</th>
@@ -2122,7 +2729,7 @@ through getters and setters.
     <th> Method Description</th>
   </tr>
   <tr>
-    <td>This serves as a placeholder for all “getter” methods for the data elements that belong to this class.</td>
+    <td>This serves as a place holder for all “getter” methods for the data elements that belong to this class.</td>
   </tr>
   <tr>
     <th>Method Pseudo Code</th>
@@ -2135,7 +2742,7 @@ through getters and setters.
     <th> Method Description</th>
   </tr>
   <tr>
-    <td>This serves as a placeholder for all “setter” methods for the data elements that belong to this class.</td>
+    <td>This serves as a place holder for all “setter” methods for the data elements that belong to this class.</td>
   </tr>
   <tr>
     <th>Method Pseudo Code</th>
@@ -2195,7 +2802,7 @@ through getters and setters.
     <th> Method Description</th>
   </tr>
   <tr>
-    <td>This serves as a placeholder for all “getter” methods for the data elements that belong to this class.</td>
+    <td>This serves as a place holder for all “getter” methods for the data elements that belong to this class.</td>
   </tr>
   <tr>
     <th>Method Pseudo Code</th>
@@ -2208,7 +2815,7 @@ through getters and setters.
     <th> Method Description</th>
   </tr>
   <tr>
-    <td>This serves as a placeholder for all “setter” methods for the data elements that belong to this class.</td>
+    <td>This serves as a place holder for all “setter” methods for the data elements that belong to this class.</td>
   </tr>
   <tr>
     <th>Method Pseudo Code</th>
@@ -2253,7 +2860,7 @@ through getters and setters.
     <th> Method Description</th>
   </tr>
   <tr>
-    <td>This serves as a placeholder for all “getter” methods for the data elements that belong to this class.</td>
+    <td>This serves as a place holder for all “getter” methods for the data elements that belong to this class.</td>
   </tr>
   <tr>
     <th>Method Pseudo Code</th>
@@ -2266,7 +2873,7 @@ through getters and setters.
     <th> Method Description</th>
   </tr>
   <tr>
-    <td>This serves as a placeholder for all “setter” methods for the data elements that belong to this class.</td>
+    <td>This serves as a place holder for all “setter” methods for the data elements that belong to this class.</td>
   </tr>
   <tr>
     <th>Method Pseudo Code</th>
@@ -2288,15 +2895,15 @@ between daily, weekly, and monthly views.
 ### 4.3.2 Software Interfaces
 
 The software will need to interface with a database management system to retrieve data
-from and store data to a user account database. The connection will be a standard database
-connection.
+from and store data to a user account database. The connection will use a standard database
+connection technology.
 
 ## 4.4 Constraints and Assumptions
 
 ### 4.4.1 Contraints
 
 #### 4.4.1.1 Web Browser Compatibility
-Due to the large number of web browsers available and limited resources to ensure compatibility with every web browser, these browsers will be tested for compatiblity: Google Chrome, Firefox, Chromium, Safari, and Microsoft Edge.
+Due to the large number of web browsers available and limited resources to ensure compatibility with every web browser, these browsers will be tested for compatiblity: Google Chrome, Firefox, Chromium, Safari, and Microsoft Edge. The browsers will be tested using their respective minimum versions that are available as of 2017. 
 
 #### 4.4.1.2 Family Educational Rights and Privacy Act (FERPA)
 The Student Calendar Integration Application will operate within FERPA, namely not disclosing educational records of any kind to parties other than the authorized user.
@@ -2322,7 +2929,7 @@ be thrown and the user will be notified that the data is invalid.
 ### 4.5.3 I-Learn Importing Errors
 
 In the event that a user's credentials do not match up to their log in information for I-Learn, an error will be thrown and the user
-will be prompted to re-enter their credentials or cancel importing their assignments from I-Learn. If any error results in the I-Learn
+will be prompted to reenter their credentials or cancel importing their assignments from I-Learn. If any error results in the I-Learn
 API as it attempts to import assignment information into the system, the entire import process will be aborted and the user will be notified
 that an import error occured.
 
@@ -2334,6 +2941,9 @@ All data passing through the UI Controller will be validated before being sent t
 # 5.1 Data Description
 
 A Relational Database to hold the data and SQL to communicate with the database. It will provide the ability to handle the many relationships that are in the application. It will also be able to maintain data integrity while scaling with the anticipated user base.
+## 5.3 Entity Relationship Diagram
+
+<img  src="https://github.com/MCLifeLeader/CS364/blob/master/SDD/resources/FullDataModel_final.jpg" height="50%" width="100%"></br>
 # 5.2 Data Dictionary
 
 Table Name | Field | Type | Null | Default
@@ -2380,7 +2990,3 @@ Event  | StartDate  | datetime  | Yes  | null
 Event  | EndDate  | datetime  | Yes  | null
 Event  | Location  | decimal(9,6)  | Yes  | null
 Event  | Frequency  | int  | Yes  | null
-## 5.3 Entity Relationship Diagram
-
-<img  src="https://github.com/MCLifeLeader/CS364/blob/master/SDD/resources/FullDataModel_final.jpg" height="50%" width="100%"></br>
-
