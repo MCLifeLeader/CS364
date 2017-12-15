@@ -138,7 +138,14 @@ This document is divided into 6 sections:
 
  [2] Student Calendar Integration Application Software Requirements Specification
    - Version 1.8, Last Updated Oct 23, 2017
+   
+[3] Google Calendar API Reference.Last updated April 16, 2015. [Online] Available: https://developers.google.com/google-apps/calendar/v3/reference/
 
+[4] Apple Calendar EventKit Documentation. [Online] Available: https://developer.apple.com/documentation/eventkit
+
+[5] Outlook Calendar REST API Reference. [Online] Available: https://msdn.microsoft.com/en-us/office/office365/api/calendar-rest-operations
+
+[6] Brightspace API Reference. [Online] Available: http://docs.valence.desire2learn.com/reference.html
 # 2.0 Glossary
 
 **Terms**   | **Definitions**
@@ -1029,7 +1036,18 @@ None</td>
     <th> Method Description</th>
   </tr>
   <tr>
-    <td> This method is called when the user toggles the display week view.  It will display according to the currently opened calendar view (i.e. Monthly View, Day View). If Month View is active, Week View will list days Sunday through Saturday and number them in correspondence to the first week of the Month View.  If Day View is selected, the method will find the corresponding week in Month View and will again display the week with a numbering consistent with the week found from Month View.  This week will be passed to another function to organize the week with any matching event or assignment items, and create the elements necessary to display them in the application.  The method “createCalendarWeek()” will also make style changes to a specific day if it matches the current date parameter.</td>
+    <td> This method is called when the user toggles the display week view.  It will display according to the currently opened calendar view (i.e. Monthly View,
+	Day View). If Month View is active, Week View will list days Sunday through Saturday and number them in correspondence to the first week of the Month View.
+	If Day View is selected, the method will find the corresponding week in Month View and will again display the week with a numbering consistent with the week
+	found from Month View.  This week will be passed to another function to organize the week with any matching event or assignment items, and create the elements
+	necessary to display them in the application.  The method “createCalendarWeek()” will also make style changes to a specific day if it matches the current 
+	date parameter.
+	
+Parameters:
+Date - The current date that is being displayed on the Calendar. Determines the numbering to be displayed in the weekly view.
+
+Return:
+None</td>
   </tr>
   <tr>
     <th>Method Pseudo Code</th>
@@ -1055,7 +1073,13 @@ None</td>
     <th> Method Description</th>
   </tr>
   <tr>
-    <td>This function toggles to a monthly view from any other view (weekly or daily).</td>
+    <td>This function toggles to a monthly view from any other view (weekly or daily).
+	
+Parameters:
+Date - The current date that is being displayed on the Calendar.
+
+Return:
+None</td>
   </tr>
   <tr>
     <th>Method Pseudo Code</th>
@@ -1075,7 +1099,13 @@ None</td>
     <th> Method Description</th>
   </tr>
   <tr>
-    <td>This method sets up the daily view.</td>
+    <td>This method sets up the daily view.
+
+Parameters:
+Date - The current day date that is to be displayed on the Calendar.
+
+Return:
+None</td>
   </tr>
   <tr>
     <th>Method Pseudo Code</th>
@@ -1094,7 +1124,15 @@ None</td>
     <th> Method Description</th>
   </tr>
   <tr>
-    <td>This method creates a new user created event (like other calendar tasks, but not from I-Learn; created by the user instead). The user will be prompted with a field that allows them to select a date/time and give the event a description.</td>
+    <td>This method creates a new user created event (like other calendar tasks, but not from I-Learn; created by the user instead). 
+	The user will be prompted with a field that allows them to select a date/time and give the event a description.
+	
+Parameters:
+event Date - The date that the event is being created for.</br>
+event Description - The information entered by the user that will be used to create the event.</br>
+
+Return:
+None</td>
   </tr>
   <tr>
     <th>Method Pseudo Code</th>
@@ -1112,7 +1150,13 @@ None</td>
     <th> Method Description</th>
   </tr>
   <tr>
-    <td>This method is called when a user clicks an external link</td>
+    <td>This method is called when a user clicks an external link.
+	
+Parameters:
+ExternalURL - The URL link address that the user has clicked on.
+
+Return:
+None</td>
   </tr>
   <tr>
     <th>Method Pseudo Code</th>
@@ -1128,7 +1172,12 @@ None</td>
   </tr>
   <tr>
     <td>This method opens the page in I-learn that correspnds to the assignment that is clicked on by the user in the student calendar app. The assignment
-	that is clicked on by the user is passed as a parameter. The method gets the assignment URL and opens a new tab to display the assignment to the user.</td>
+	that is clicked on by the user is passed as a parameter. The method gets the assignment URL and opens a new tab to display the assignment to the user.
+Parameters:
+Assignment - The assignment object that the user has clicked on. This is used to get the correct I-Learn URL link.
+
+Return:
+None</td>
   </tr>
   <tr>
   </tr>
@@ -1141,7 +1190,13 @@ None</td>
   </tr>
   <tr>
     <td>This method gets the description of the assignment and displays it to the user. The assignment that the user clicks on is passed in as a 
-	parameter and the system gets the data for that assignment.</td>
+	parameter and the system gets the data for that assignment.
+	
+Parameters:
+Assignment - The assignment object that the user has clicked on. This is used to get the correct assignment details.
+
+Return:
+None</td>
   </tr>
 </tr>
 <tr>
@@ -1150,7 +1205,13 @@ None</td>
   </tr>
   <tr>
     <td>This method searches the collection of holidays for any holidays that occur during the month that is passed in as a parameter. All corresponding 
-	holidays for that month are returned and displayed on the calendar.</td>
+	holidays for that month are returned and displayed on the calendar.
+	
+Parameters:
+Month -  the current month being displayed on the calendar. All corresponding holidays for the month are displayed.
+
+Return:
+None</td>
   </tr>
 </tr>
 <tr>
@@ -1159,7 +1220,13 @@ None</td>
   </tr>
   <tr>
     <td> This method updates the information for a calendar event based on the user input. The Event object is passed in as a parameter and the system 
-	updates the new event information into the database.</td>
+	updates the new event information into the database.
+	
+Parameters:
+Event -  The Event object that is being edited by the user.
+
+Return:
+None</td>
   </tr>
 </tr>
 <tr>
@@ -1167,7 +1234,13 @@ None</td>
     <th> Method Description</th>
   </tr>
   <tr>
-    <td> This method displays an error message to the user. The message is determined by the type of error that took place in the system.</td>
+    <td> This method displays an error message to the user. The message is determined by the type of error that took place in the system.
+	
+Parameters:
+None
+
+Return:
+None</td>
   </tr>
 </tr>
 <tr>
@@ -1176,7 +1249,13 @@ None</td>
   </tr>
   <tr>
     <td> This method is called when a notification is activated but the user is currently not logged in to their student calendar application. It sends
-	a message to the user based on their personal notification settings.</td>
+	a message to the user based on their personal notification settings.
+	
+Parameters:
+Notification -  the notification object that has been activated.
+
+Return:
+None</td>
   </tr>
 </tr>
 <tr>
@@ -1185,7 +1264,13 @@ None</td>
   </tr>
   <tr>
     <td> This method is called when a notification is set to be sent to the user. The notification object is passed as a parameter which is then added to the
-	users list of notifications and the calendar shows the user that a new notification has activated.</td>
+	users list of notifications and the calendar shows the user that a new notification has activated.
+	
+Parameters:
+Notification -  the notification object that has been activated.
+
+Return:
+None</td>
   </tr>
 </tr>
 <tr>
@@ -1193,7 +1278,15 @@ None</td>
     <th> Method Description</th>
   </tr>
   <tr>
-    <td> This method is called when a user wants to share a notification with other users. A notification is passed in as well as a list of users to be notified.</td>
+    <td> This method is called when a user wants to share a notification with other users.
+	A notification is passed in as well as a list of users to be notified.
+	
+Parameters:
+Notification -  the notification object that the user wants to share with other users.</br>
+Users - the list of users that have been selected to receive the notification.
+
+Return:
+None</td>
   </tr>
 </tr>
 <tr>
@@ -1202,7 +1295,13 @@ None</td>
   </tr>
   <tr>
     <td> This method is called when a user chooses to import or export their calendar information. A window is displayed allowing the user to select
-	which external calendar they would like to sync with. The options include all external calendars as defined in section 3.2.4.1</td>
+	which external calendar they would like to sync with. The options include all external calendars as defined in section 3.2.4.1
+	
+Parameters:
+None
+
+Return:
+None</td>
   </tr>
 </tr>
 <tr>
@@ -1211,7 +1310,13 @@ None</td>
   </tr>
   <tr>
     <td> This method is called when a user chooses to import calendar information from an external calendar. The method calls on the UI Controller class
-	to import calendar events. The imported events are saved to the database and then the main display is updated to show the imported items.</td>
+	to import calendar events. The imported events are saved to the database and then the main display is updated to show the imported items.
+	
+Parameters:
+None
+
+Return:
+None</td>
   </tr>
 </tr>
 <tr>
@@ -1220,7 +1325,13 @@ None</td>
   </tr>
   <tr>
     <td> This method is called when a user chooses to export their Student Calendar information into an external calendar. The method calls on the UI Controller class
-	to export calendar events. If the process is successful it displays a success message to the user. If there is an error an error message is displayed.</td>
+	to export calendar events. If the process is successful it displays a success message to the user. If there is an error an error message is displayed.
+
+Parameters:
+None
+
+Return:
+None</td>
   </tr>
 </tr>
 <tr>
@@ -1229,7 +1340,13 @@ None</td>
   </tr>
   <tr>
     <td> This method is called when a user chooses to sync their calendar information with their assignments on the I-learn website. The system pulls the
-	assignment information from the I-learn website, saves them to the database, and updates the calendar display to show new assignments that may have been added.</td>
+	assignment information from the I-learn website, saves them to the database, and updates the calendar display to show new assignments that may have been added.
+	
+Parameters:
+None
+
+Return:
+None</td>
   </tr>
 </tr>
   <tr>
@@ -1237,7 +1354,13 @@ None</td>
     <th> Method Description</th>
   </tr>
   <tr>
-    <td>This method is called when the user chooses to delete an event.</td>
+    <td>This method is called when the user chooses to delete an event.
+	
+Parameters:
+Event - the event object that is clicked on by the user to be deleted.
+
+Return:
+None</td>
   </tr>
   <tr>
     <th>Method Pseudo Code</th>
@@ -1250,7 +1373,13 @@ None</td>
     <th> Method Description</th>
   </tr>
   <tr>
-    <td>This function displays the settings page of the application.</td>
+    <td>This function displays the settings page of the application.
+	
+Parameters:
+None
+
+Return:
+None</td>
   </tr>
   <tr>
     <th>Method Pseudo Code</th>
@@ -1266,7 +1395,13 @@ None</td>
     <th> Method Description</th>
   </tr>
   <tr>
-    <td>This function displays the notifications received by the user.</td>
+    <td>This function displays the notifications received by the user.
+	
+Parameters:
+None
+
+Return:
+None</td>
   </tr>
   <tr>
     <th>Method Pseudo Code</th>
@@ -1565,8 +1700,8 @@ The Controller classes contain all the methods that are necessary to work with t
   </tr>
   <tr>
     <td colspan = "3">Brief Description: The Calendar Item Controller(C.I. Controller) class is responsible for retrieving event and assignment data from the system and 
-	sending it to the user display. The C.I. Controller creates Assignments by accessing I-Learn through the I-Learn Facade class and stores the data in assignment class objects.
-	The C.I. Controller stores calendar items into the system database by using the Database Facade class for future access. </td>
+sending it to the user display. The C.I. Controller creates Assignments by accessing I-Learn through the I-Learn Facade class and stores the data in assignment class objects.
+The C.I. Controller stores calendar items(see 4.2.3.1 for definition of Calendar Item Class) into the system database by using the Database Facade class for future access. </td>
   </tr>
   </table>
   <table>
@@ -1575,13 +1710,13 @@ The Controller classes contain all the methods that are necessary to work with t
     <th colspan = "2">Attribute Description</th>
   </tr>
   <tr>
-    <td>Assignment List</td><td colspan = "2">The List of I-learn Assignments for the student</td>
+    <td>Assignment List</td><td colspan = "2">The List of I-learn Assignments for the student(see 4.2.3.2 for definition of Assignment Class).</td>
   </tr>
   <tr>
-    <td>Event List</td><td colspan = "2">The list of all calendar events that the user has created.</td>
+    <td>Event List</td><td colspan = "2">The list of all calendar events that the user has created(see 4.2.3.3 for definition of Event Class).</td>
   </tr>
   <tr>
-    <td>Notification List</td><td colspan = "2">The list of all notifications that the user has created.</td>
+    <td>Notification List</td><td colspan = "2">The list of all notifications that the user has created(see 4.2.3.4 for definition of Notification Class).</td>
   </tr>
   <tr>
     <td>I-Learn Facade</td><td colspan = "2">An Instance of the I-Learn Facade class that is used to pull data from the BYU-I I-Learn system.</td>
@@ -1601,10 +1736,17 @@ The Controller classes contain all the methods that are necessary to work with t
     <th> Method Description</th>
   </tr>
   <tr>
-    <td>Creates a new Event calendar item to be added to the calendar. The user enters the event name, description, and sets how often the event will occur
+    <td>This method creates a new Event calendar item to be added to the calendar. The user enters the event name, description, and sets how often the event will occur
 	on the calendar. The weekly occurrence determines how often the event will reoccur for the long term(weekly, monthly, quarterly, etc.) and the daily occurrence
-	determines which days of the week the event will occur on. This daily occurrence is passed in as a String array of days and is converted into an integer. This is called when the user selects the "Create Event" button. 
-	A new event is created with the passed parameters, stored in the database, and is then returned to the U.I. Controller class to display to the user. See use case 3.4.1.2 for details.</td>
+	determines which days of the week the event will occur on. 
+	A new event is created with the passed parameters, stored in the database, and is then returned to the U.I. Controller class to display to the user. See use case 3.4.1.2 for details.
+	
+Parameters:
+Event Info- Information submitted by the user including the event name, description, weekly occurence, and the daily occurence. This information is used to create a new event object.
+
+Return:
+The Event object that is created.
+	</td>
   </tr>
   <tr>
     <th>Method Pseudo Code</th>
@@ -1624,7 +1766,12 @@ The Controller classes contain all the methods that are necessary to work with t
     <td>This method loads assignments from I-Learn through using the I-Learn Facade class. The assignments are pulled from I-learn, stored in an array
 	of assignment objects, and return to the C.I. Controller. The assignments are then stored into the database through the database facade class. Finally 
 	the assignments are sent to the U.I. Controller to be added to the calendar display. This method is called whenever the user chooses to import assignments
-	from I-Learn. See use case 3.4.7.0 for details.</td>
+	from I-Learn. See use case 3.4.7.0 for details.
+Parameters:
+None
+
+Return:
+The list of assignments pulled from I-learn</td>
   </tr>
   <tr>
     <th>Method Pseudo Code</th>
@@ -1645,7 +1792,13 @@ The Controller classes contain all the methods that are necessary to work with t
 	user creates a new notification for one of the items on their calendar. The calendar item object is passed into the method, a notification object is created and is linked 
 	to the object. The notfication is stored into the database. If the method is successful then a boolean is returned as True to indicate success to the U.I.
 	If the method fails "False" is returned and the U.I. displays an error message.
-	See use case 3.4.2 for details of when this function is used.</td>
+	See use case 3.4.2 for details of when this function is used.
+	
+Parameters:
+Calendar Item - The calendar Item object which the new notification will become associated with.
+
+Return:
+Boolean that is true if the procedure was successful, false if an error occured.</td>
   </tr>
   <tr>
     <th>Method Pseudo Code</th>
@@ -1665,7 +1818,14 @@ The Controller classes contain all the methods that are necessary to work with t
   </tr>
   <tr>
     <td>This method allows a user to modify the information for an event that already exists on their calendar. The method takes in the new event information
-	provided by the user and saves those changes into the system database.</td>
+	provided by the user and saves those changes into the system database.
+	
+Parameters:
+Event Info - Information submitted by the user including the event name, description, 
+weekly occurence, and the daily occurence. This information is used to create a new event object..
+
+Return:
+Boolean that is true if the procedure was successful, false if an error occured.</td>
   </tr>
   <tr>
     <td rowspan = "2">importCalendarItems(API name)</td>
@@ -1674,7 +1834,14 @@ The Controller classes contain all the methods that are necessary to work with t
   <tr>
     <td>This method allows a user to import external calendar information into the system. The method takes in the name of an API(Google, Apple, etc.) which is used to determine
 	which API call is needed in the Calendar Intgration Facade class. After the events are imported they are saved into the database and added to the display. If there
-	is an error during the import process the procedure is aborted and the user is notified through an error message.</td>
+	is an error during the import process the procedure is aborted and the user is notified through an error message.
+	
+Parameters:
+API name - A string identifier of which API the method will be using. It determines
+	which API call is needed in the Calendar Intgration Facade class.
+
+Return:
+The imported calendar Items.</td>
   </tr>
   <tr>
     <td rowspan = "2">exportCalendarItems(API name)</td>
@@ -1682,7 +1849,14 @@ The Controller classes contain all the methods that are necessary to work with t
   </tr>
   <tr>
     <td>This method allows a user to export events from the Student Calendar system to an external calendar. The method takes in the name of an API(Google, Apple, etc.) which is used to determine
-	which API call is needed in the Calendar Intgration Facade class. After the events are exported the user is notified. If an error occurs the procedure is aborted and the user is notified through an error message.</td>
+	which API call is needed in the Calendar Intgration Facade class. After the events are exported the user is notified. If an error occurs the procedure is aborted and the user is notified through an error message.
+	
+Parameters:
+API name - A string identifier of which API the method will be using. It determines
+which API call is needed in the Calendar Intgration Facade class.
+
+Return:
+Boolean that is true if the procedure was successful, false if an error occured.</td></td>
   </tr>
   <tr>
   </tr>
@@ -1695,7 +1869,13 @@ The Controller classes contain all the methods that are necessary to work with t
   <tr>
     <td>This method allows the user to synchronize the assignments that are displayed on their Student Calendar with the assignments that exist on their I-learn account.
 	The method pulls a list of the user's assignments from I-learn, updates the list that exists in the system database, and adds new assignments to the display. 
-	If an error occurs the procedure is aborted and the user is notified through an error message.</td>
+	If an error occurs the procedure is aborted and the user is notified through an error message.
+	
+Parameters:
+None
+
+Return:
+The list of assignments pulled from I-Learn</td>
   </tr>
   <tr>
     <td rowspan = "2">loadCalendarItems(Student)</td>
@@ -1703,7 +1883,13 @@ The Controller classes contain all the methods that are necessary to work with t
   </tr>
   <tr>
     <td>This method loads the user's calendar item's when the user first logs in to the system. The method passes in the student class object containing the user data. This is used by the 
-    database to retrieve all of the calendar items	associated with that student. If an error occurs the procedure is aborted and the user is notified through an error message.</td>
+    database to retrieve all of the calendar items	associated with that student. If an error occurs the procedure is aborted and the user is notified through an error message.
+Parameters:
+Student - the student class object containing the user data. This is used by the 
+database to retrieve all of the calendar items associated with that student.
+
+Return:
+collection of Calendar Items associated with that student.</td>
   </tr>
   </tr>
   
@@ -1716,7 +1902,7 @@ The Controller classes contain all the methods that are necessary to work with t
     <th colspan = "3">Class Name: I-Learn</th>
   </tr>
   <tr>
-    <td colspan = "3">Brief Description: The I-Learn class will pull the user's information, assignments and courses from I-Learn using the Desire To Learn API. This class will interact with the Calendar Item Controller class to provide assignments (4.2.2.1). </td>
+    <td colspan = "3">Brief Description: The I-Learn class will pull the user's information, assignments and courses from I-Learn using the Desire To Learn API. This class will interact with the Calendar Item Controller class(4.2.2.1) to provide assignments (see 4.2.3.2 for definition of Assignment Class). </td>
   </tr>
   </table>
   <table>
@@ -2005,17 +2191,20 @@ The Controller classes contain all the methods that are necessary to work with t
     <td>searchQuery</td><td colspan = "2">The search information that was entered by the user into the search bar.</td>
   </tr>
 <tr>
-    <td>startDate</td><td colspan = "2">The date and time that an assignment becomes available.</td>
+    <td>I-Learn Facade</td><td colspan = "2">An Instance of the I-Learn Facade class that is used to pull data from the BYU-I I-Learn system.</td>
   </tr>
 <tr>
-    <td>endDate</td><td colspan = "2">The date and time that an assignment is due.</td>
+    <td>Database Facade</td><td colspan = "2">An Instance of the Database Facade class that is used to store and retrieve data from the account database.</td>
   </tr>
 <tr>
-    <td>class</td><td colspan = "2">The school class that the user’s assignment was assigned from.</td>
+    <td>Class</td><td colspan = "2">The university course that the user’s assignment was assigned from.</td>
   </tr>
-
-
-
+  <tr>
+    <td>Calendar View</td><td colspan = "2">The web app page that displays the user's calendar.</td>
+  </tr>
+  <tr>
+    <td>I-Learn Credentials</td><td colspan = "2">The unique username and password that the user has already established with their university to login to the I-Learn application.</td>
+  </tr>
   <tr>
     <th>Methods(operations) </th>
     <th></th>
@@ -2025,21 +2214,30 @@ The Controller classes contain all the methods that are necessary to work with t
     <th>Method Description</th>
   </tr>
   <tr>
-    <td>Allows the application to have a functioning calendar. When the Calendar button is selected in the menu open the calendar view. The default view shows the current month.</td>
+    <td>Allows the application to have a functioning calendar. When the Calendar button is selected in the menu open the calendar view. The default view shows the current month.<br>
+    Parameters:<br>
+    Filters - the calendar filters previously selected by the user.<br>
+    </td>
   </tr>
   <tr>
     <th>Method Pseudo Code</th>
   </tr> 
   <tr>
     <td>getEvents(filters)<br/>
-Return databaseQuery(filters)</td>
+        Return databaseQuery(filters)
+    </td>
   </tr>
 
 <td rowspan = "4">viewEvent</td>
     <th>Method Description</th>
   </tr>
   <tr>
-    <td>Allows the user to have and view events. When an event is clicked on in the Calendar a page is brought up that gives the event details.</td>
+    <td>Allows the user to have and view events. When an event is clicked on in the Calendar a page is brought up that gives the event details.<br>
+    Parameters:<br>
+    eventId - the ID for the event that was selected by the user.<br>
+    Return:<br>
+    An event from the event class to be displayed<br>
+    </td>
   </tr>
   <tr>
     <th>Method Pseudo Code</th>
@@ -2053,7 +2251,14 @@ return event FROM eventTable WHERE eventId = eventId</td>
     <th>Method Description</th>
   </tr>
   <tr>
-    <td>Lets the user view all of their events in a specific date range. After a range is selected by the user the event information for the events included in that range are displayed back to the user.</td>
+    <td>Lets the user view all of their events in a specific date range. After a range is selected by the user the event information for the events included in that range are displayed back to the user.<br>
+    Parameters:<br>
+    startDate - the date the user specifies to start listing events.<br>
+    endDate - the date the user specifies to stop listing events.<br>
+    class - the course the student is currently viewing.<br>
+    Return:<br>
+    Each event that falls within the specified range.<br>
+    </td>
   </tr>
   <tr>
     <th>Method Pseudo Code</th>
@@ -2073,14 +2278,17 @@ else<br/>
     <th>Method Description</th>
   </tr>
   <tr>
-    <td>Allows the user to create their own unique events. When the plus shaped button is selected on the bottom right of the calendar view it opens a form with different fields to be filled out by the user.</td>
+    <td>Allows the user to create their own unique events. When the plus shaped button is selected on the bottom right of the calendar view it opens a form with different fields to be filled out by the user.<br>
+    Parameters:<br>
+    eventId - the ID for the event that was selected by the user.<br>
+    </td>
   </tr>
   <tr>
     <th>Method Pseudo Code</th>
   </tr>
   <tr>
-    <td>createEvent(eventInfo)<br/>
-New Event = CalendarItemController.addEvent(EventInfo)
+    <td>createEvent(eventId)<br>
+New Event = CalendarItemController.addEvent(EventId)<br>
 return New Event</td>
   </tr>
 
@@ -2088,13 +2296,18 @@ return New Event</td>
     <th>Method Description</th>
   </tr>
   <tr>
-    <td>This method lets the user search their entire calendar for events and assignments. When the search button is selected the search query that is filled into the search bar is compared to the data stored in the database for that user. All matching events and assignments are displayed on the screen.</td>
+    <td>This method lets the user search their entire calendar for events and assignments. When the search button is selected the search query that is filled into the search bar is compared to the data stored in the database for that user. All matching events and assignments are displayed on the screen.<br>
+    Parameters:<br>
+    searchQuery - the text that was entered into the search bar.<br>
+    Return:<br>
+    Each event that matches the search query.<br>
+    </td>
   </tr>
   <tr>
     <th>Method Pseudo Code</th>
   </tr>
   <tr>
-    <td>searchCalendar(searchQuery)
+    <td>searchCalendar(searchQuery)<br>
 return events FROM eventTable WHERE eventName LIKE searchQuery OR eventDescription LIKE searchQuery
   </tr>
   
@@ -2102,71 +2315,76 @@ return events FROM eventTable WHERE eventName LIKE searchQuery OR eventDescripti
     <th>Method Description</th>
   </tr>
   <tr>
-    <td>Lets the user create an account so they can save all of their personal information and come back to it later. When the user clicks create account the I-Learn login credentials are passed to the I-LearnFacade class which verifies if they are correct.</td>
+    <td>Lets the user create an account so they can save all of their personal information and come back to it later. When the user clicks create account the I-Learn login credentials are passed to the I-LearnFacade class which verifies if they are correct.<br>
+    Parameters:<br>
+    username - the user's username.<br>
+    password - the user's password.<br>
+    Return:<br>
+    A boolean that is true if creating account was successful.<br>
+    </td>
   </tr>
   <tr>
     <th>Method Pseudo Code</th>
   </tr>
   <tr>
-    <td>createAccount(username, password) {
-  If (verifyAccount(username, password)
-Display “account created”
-else
-Display “invalid credentials”
+    <td>createAccount(username, password) {<br>
+  If (verifyAccount(username, password)<br>
+  return true
   </tr>
 
 <td rowspan = "4">login</td>
     <th>Method Description</th>
   </tr>
   <tr>
-    <td>Allows the user to log back into their account and view all of their personal assignments and calendar. When the user clicks login the login credentials are passed to the databaseFacade class which verifies if they are correct.</td>
+    <td>Allows the user to log back into their account and view all of their personal assignments and calendar. When the user clicks login the login credentials are passed to the databaseFacade class which verifies if they are correct.<br>
+    Parameters:<br>
+    username - the user's username.<br>
+    password - the user's password.<br>
+    Return:<br>
+    A boolean that is true if creating account was successful.<br>
+    </td>
   </tr>
   <tr>
     <th>Method Pseudo Code</th>
   </tr>
   <tr>
-    <td>login(username, password) {
-  If (verifyLogin(username, password)
-Display “account created”
-else
-Display “invalid credentials”
+    <td>login(username, password) {<br>
+  If (verifyLogin(username, password)<br>
+  return true
   </tr>
 
-<td rowspan = "4">printToDoList</td>
+<td rowspan = "2">recoverPassword</td>
     <th>Method Description</th>
   </tr>
   <tr>
-    <td>Allows the user to print out their To-Do list. When the user clicks the print button at the bottom of the To-Do list page the To-Do list is sent to the printerFacade class which handles the print job.</td>
-  </tr>
-  <tr>
-    <th>Method Pseudo Code</th>
-  </tr>
-  <tr>
-    <td>printToDoList(toDoList[])  {
-  print(toDoList[])
-}
+    <td>Allows the user to recover a forgotten password. The request is sent to the database facade class which sends the user an email to the email address provided allowing them to retrieve their information.<br>
+    Parameters:<br>
+    email - the user's email.<br>
+    Return:<br>
+    A boolean that is true if recovery was successful.<br>
+    </td>
   </tr>
 
-<td rowspan = "4">printCalendar</td>
+  <td rowspan = "2">recoverUsername</td>
     <th>Method Description</th>
   </tr>
   <tr>
-    <td>Allow the user to print out their calendar. When the user clicks the print button at the top of the calendar page the calendar is sent to the printerFacade class which handles the print job.</td>
-  </tr>
-  <tr>
-    <th>Method Pseudo Code</th>
-  </tr>
-  <tr>
-    <td>printCalendar(Calendar calendar)  {
-  print(calendar)
-}
+    <td>Allows the user to recover a username. The request is sent to the database facade class which sends the user an email to the email address provided allowing them to retrieve their information.<br>
+    Parameters:<br>
+    email - the user's email.<br>
+    Return:<br>
+    A boolean that is true if recovery was successful.<br>
+    </td>
   </tr>
 
 <td rowspan = "4">createNotification</td>
     <th>Method Description</th>
   </tr>
   <tr>
-    <td>This method is necessary to send the user notifications about their upcoming due dates and events. The calendarController class will check periodically for upcoming due dates. When an assignment’s due date is close it will send the information to the createNotification function in the UI controller class which will generate a push notification.</td>
+    <td>This method is necessary to send the user notifications about their upcoming due dates and events. The calendarController class will check periodically for upcoming due dates. When an assignment’s due date is close it will send the information to the createNotification function in the UI controller class which will generate a push notification.<br>
+    Parameters:<br>
+    assignment - an object of type Assignment that holds all of the information about the assignment that is due.<br>
+    </td>
   </tr>
   <tr>
     <th>Method Pseudo Code</th>
@@ -2180,33 +2398,92 @@ Display “invalid credentials”
     <th>Method Description</th>
   </tr>
   <tr>
-    <td>Allows the user to create their own entries to be added to the To-Do list. After the user clicks “Add To-Do Item” they are presented with a form to submit a custom entry in their To-Do list. Hitting submit will call this function which relays the information to the databaseFacade class where it will be stored in the database. </td>
+    <td>Allows the user to create their own entries to be added to the To-Do list. After the user clicks “Add To-Do Item” they are presented with a form to submit a custom entry in their To-Do list. Hitting submit will call this function which relays the information to the databaseFacade class where it will be stored in the database.<br>
+    Parameters:<br>
+    customToDo - a toDo object that holds all of the information about a to-do list entry.<br>
+    Return:<br>
+    A boolean that is true if adding the to-do list item was successful.<br>
+    </td>
   </tr>
   <tr>
     <th>Method Pseudo Code</th>
   </tr>
   <tr>
-    <td>addToDoAssignment(toDo customToDo) {
-  INSERT INTO toDoList VALUES(customToDo) }
+    <td>addToDoAssignment(toDo customToDo) {<br>
+  if (INSERT INTO toDoList VALUES(customToDo)) <br>
+    return true }
   </tr>
 
 <td rowspan = "4">removeToDoAssignment</td>
     <th>Method Description</th>
   </tr>
   <tr>
-    <td>Removes a user specified item from the To-Do list. After the user clicks “Remove To-Do Item” next to a To-Do list entry this function relays the information to the databaseFacade class where it will be removed from the database. </td>
+    <td>Removes a user specified item from the To-Do list. After the user clicks “Remove To-Do Item” next to a To-Do list entry this function relays the information to the databaseFacade class where it will be removed from the database.<br>
+     Parameters:<br>
+    toDo - a toDo object that holds all of the information about a to-do list entry.<br>
+    Return:<br>
+    A boolean that is true if adding the to-do list item was successful.<br>
+     </td>
   </tr>
   <tr>
     <th>Method Pseudo Code</th>
   </tr>
   <tr>
-    <td>removeToDoAssignment(toDo toDo) {
-  REMOVE FROM toDoList VALUES(toDo) }
+    <td>removeToDoAssignment(toDo toDo) { <br>
+    if REMOVE FROM toDoList VALUES(toDo)  <br>
+    return true }
   </tr>
 
+<td rowspan = "2">get_Ilearn_Assignments</td>
+    <th>Method Description</th>
+  </tr>
+  <tr>
+    <td>Allows the user to import their assignments from I-Learn. Sends a request to the I-Learn facade class which retrieves the assignments and sends them to the Database Facade class to be stored.</td>
+  </tr>
+
+  <td rowspan = "4">sendNotification</td>
+    <th>Method Description</th>
+  </tr>
+  <tr>
+    <td>This method allows the user to share a notification they have recieved with other users. To share the user clicks the share button when a notification is recieved and then specifies which users to share with. The UI Controller class sends this information to the other users and displays a confiramtion message to the user.<br>
+      Parameters:<br>
+    notification - the notification that will be sent to other user's.<br>
+    users - an array holding every user's ID that will recieve the notification.<br>
+    </td>
+  </tr>
+  <tr>
+    <th>Method Pseudo Code</th>
+  </tr>
+  <tr>
+    <td>sendNotification(notification, users) { <br>
+        for each user { <br>
+         notification.send(user[i]) } }
+  </tr>
+
+<td rowspan = "2">importCalendar</td>
+    <th>Method Description</th>
+  </tr>
+  <tr>
+    <td>Enables the user to import a calendar from one of the supported calendar APIs. In the calendar settings the user selects import calendar and specifies which calendar they would like to import. The UI controller class sends this information to the Calendar Item Controller which makes the request to the Calendar Integration Facade. The user is then notified if the integration was successful or not.<br>
+      Parameters:<br>
+    apiName - the name of the API that hosts the specified calendar.<br>
+    Return:<br>
+    A boolean that is true if adding the calendar was successful.<br>
+    </td>
+  </tr>
+
+  <td rowspan = "2">exportCalendar</td>
+    <th>Method Description</th>
+  </tr>
+  <tr>
+    <td>Enables the user to export their calendar to one of the supported calendar APIs. In the calendar settings the user selects export calendar and specifies which calendar api they would like to export to. The UI controller class sends this information to the Calendar Item Controller which makes the request to the Calendar Integration Facade. The user is then notified if the export was successful or not.<br>
+    Parameters:<br>
+    apiName - the name of the API that will recieve the user's calendar.<br>
+    Return:<br>
+    A boolean that is true if exporting the calendar was successful.<br>
+    </td>
+  </tr>
 </table>
-
-
 
 ### 4.2.2.5 Database Facade 
 <table>
@@ -2441,16 +2718,16 @@ Boolean that is true if the procedure was successful, false if an error occurred
     <th colspan = "2">Attribute Description</th>
   </tr>
   <tr>
-    <td>Google Calendar API</td><td colspan = "2">An interface with Google Calendar.</td>
+    <td>Google Calendar API</td><td colspan = "2">An interface with Google Calendar. Version 3 of the API will be implemented (see references 1.5 for details)</td>
   </tr>
   <tr>
-    <td>Apple Calendar API</td><td colspan = "2">An interface with Apple Calendar.</td>
+    <td>Apple Calendar API</td><td colspan = "2">An interface with Apple Calendar. This will be the EventKit Framework which allows the access of Apple Calendar events (see references 1.5 for details). The Minimum version available as of 2017 will be implemented.</td>
   </tr>
   <tr>
-    <td>Outlook Calendar API</td><td colspan = "2">An interface with Outlook Calendar.</td>
+    <td>Outlook Calendar API</td><td colspan = "2">An interface with Outlook Calendar. The Minimum version available as of 2017 will be implemented(see references 1.5 for details).</td>
   </tr>
     <tr>
-    <td>iCalendar</td><td colspan = "2">Holds iCalendar file information.</td>
+    <td>iCalendar</td><td colspan = "2">Holds iCalendar file information. Used for importing and exporting data to external calendars.</td>
   </tr>
   <tr>
     <th>Methods(operations) </th>
