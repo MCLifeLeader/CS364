@@ -341,8 +341,7 @@ Design Concerns Addressed:
 | Post-conditions/Product(s) Produced: | 1. The user is presented with the recommended course of action or the option to ignore. |
 | Links: | None.|
 | SRS Document | 3.2.22 |
-| Description/Notes:| 1. Warnings <br> a. An alert will appear when the user has performed or intends to perform an illegal or high-risk action, e.g.: creating an event with not reminders or deleting a calendar event. <br> 2. Reminders <br> a. Alerts will be used as a reminder in certain situations, e.g.: reminding the user that they have not synced their calendar in *x* days.   |
-
+| Description/Notes:| 1. Warnings <br> a. An alert will appear when the user has performed or intends to perform an illegal or high-risk action, e.g.: creating an event without reminders or deleting a calendar event. <br> 2. Reminders <br> a. Alerts will be used as a reminder in certain situations, e.g.: reminding the user that they have not synced their calendar in *x* days.   |
 #### 3.2.1.5 Calendar Display: Access Assignment
 
 | Data | Description |
@@ -358,8 +357,7 @@ Design Concerns Addressed:
 | Post-conditions/Product(s) Produced: | Assignment is displayed correctly to the user.|
 | Links: | None.|
 | SRS Document | 3.2.8 |
-| Description/Notes:| Accessing An Assignment.<br>1. Assignments are displayed to the User on the Calendar as links.<br>  a. Users clicks on one of the links.<br> b. The correct assignment is pulled up on screen for the user. 2. Assignment details button is shown.<br> a. User clicks assignments details button.<br> b. User is able to interact with different features for the event. |
-
+| Description/Notes:| Accessing An Assignment.<br>1. Assignments are displayed to the User on the Calendar as links.<br>  a. A user clicks on one of the links.<br> b. The correct assignment is pulled up on screen for the user. 2. The assignment details button is shown.<br> a. The user clicks the assignment details button.<br> b. The user is able to interact with different features for the event. |
 #### 3.2.1.6 Calendar Display: Show Assignment Details
 
 | Data | Description |
@@ -371,12 +369,11 @@ Design Concerns Addressed:
 | Purpose: | The assignment details are provided to the user for easier access and productivity while using the calendar.|
 | Parent User Story:|3.2.1.5|
 | Stakeholders: | Calendar Manager, Developers, Testers, Technical Support |
-| Pre-conditions/Product(s) Required: | 1. User is logged in<br> 2. Assignments have been imported.|
-| Post-conditions/Product(s) Produced: | Assignments details are shown and displayed correctly to the user.|
+| Pre-conditions/Product(s) Required: | 1. The user is logged in<br> 2. Assignments have been imported.|
+| Post-conditions/Product(s) Produced: | Assignment details are shown and displayed correctly to the user.|
 | Links: | None.|
 | SRS Document | 3.2.6 |
-| Description/Notes:| Show Assignment Details<br>1. Show Details Button is displayed on the Calendar App by the Assignments.<br>a. User clicks Details Button.<br>2. Details are displayed to the User.<br>a. An option to collapse the details is shown as well.|
-
+| Description/Notes:| Show Assignment Details<br>1. "Show Details Button" is displayed on the Calendar App by the "Assignments" section.<br>a. The user clicks the "Details" Button.<br>2. Details are displayed to the User.<br>a. An option to collapse the details is shown as well.|
 #### 3.2.1.7 Calendar Display: Show Holidays
 
 | Data | Description |
@@ -405,12 +402,11 @@ Design Concerns Addressed:
 | Purpose: | Users will be able to edit events to reflect the most current event information and respond to changes in the details of an event. |
 | Parent User Story:| N/A|
 | Stakeholders: | Calendar Manager, Developers, Testers, Technical Support |
-| Pre-conditions/Product(s) Required: | User is logged in. |
-| Post-conditions/Product(s) Produced: | Event is updated and displays correctly on calendar.|
+| Pre-conditions/Product(s) Required: | The user is logged in. |
+| Post-conditions/Product(s) Produced: | The event is updated and displays correctly on the calendar.|
 | Links: | None.|
 | SRS Document | 3.2.16 |
-| Description/Notes:| Editing an Event <br> 1. Edit Event button is displayed on the Calendar App. <br> a. User clicks Edit Event button. <br> b. User prompted to update selected time(s) for the event. <br> c. User enters / edits description of event. <br> 2. Event is updated and displayed on User's Calendar. <br> a. User can interact with Event on Calendar. |
-
+| Description/Notes:| Editing an Event <br> 1. The "Edit Event" button is displayed on the Calendar App. <br> a. The user clicks the "Edit Event" button. <br> b. The user is prompted to update selected time(s) for the event. <br> c. User enters / edits description of event. <br> 2. Event is updated and displayed on the user's calendar. <br> a. The user can interact with the event on the calendar. |
 ### 3.2.2 Calendar Event Notifications
 <img  src="https://github.com/MCLifeLeader/CS364/blob/master/SDD/resources/UML_Communication/Notification%20UML%20Communication%20Diagram.jpg" height="100%" width="100%"></br>
 
@@ -433,11 +429,10 @@ Design Concerns Addressed:
 | Parent User Story:| N/A|
 | Stakeholders: | Calendar Manager, Developers, Testers, Technical Support |
 | Pre-conditions/Product(s) Required: | 1. Notification permissions are enabled.|
-| Post-conditions/Product(s) Produced: | 1. User will be able to toggle notifications. <br> 2. When notifications are disabled, a disabled notifications icon will be present within the application to remind the user that the application will not remind them of upcoming events.  |
+| Post-conditions/Product(s) Produced: | 1. The user will be able to toggle notifications. <br> 2. When notifications are disabled, a disabled notifications icon will be present within the application to remind the user that the application will not remind them of upcoming events.  |
 | Links: |3.2.5.0|
 | SRS Document | 3.2.20|
 | Description/Notes:| Enable/Disable Notifications <br> 1. Notifications will be enabled by default. <br> 2. The notification toggle will be found in the parent settings page. <br> 3. Warnings <br> a. If notifications or notification permissions are blocked by the operating system, a prompt will notify the user of this situation. <br> b. The notification will have the option to redirect the user to the permissions page of their operating system or browser to correct the error. <br> c. The notification will have the option to never allow the permission and never remind the user of the error.|
-
 #### 3.2.2.1 Calendar Event Notifications: Set Reminders
 
 | Data | Description |
